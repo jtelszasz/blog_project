@@ -23,10 +23,15 @@ Baltimore City publishes several datasets on <a href="http://data.baltimorecity.
 
 ### Keep Holy The Sabbath
 
-What clearly stands out is the striking drop in arrests on Sundays.
+What is striking is the drop in arrests on Sundays, especially the regularity in comparison to Chicago.  Arrests are a proxy for actual crime - no police force is able to stop all crime.  So there are a few options as to what this might mean.
+
+* Less police on duty on Sundays (pious police)
+* Less crime is committed on Sundays (pious criminals)
+* Police are less likely to arrest for a given crime on Sundays (forgiving police)
+
 
 <figure>
   <img src="/images/BaltCrime_TS.png" align='middle'>
-  <figcaption>Caption describing these two images.</figcaption>
+  <figcaption>Total daily arrests for Baltimore and Chicago.</figcaption>
 </figure>
 
