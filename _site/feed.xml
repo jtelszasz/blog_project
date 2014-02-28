@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-02-23T21:30:23-05:00</updated>
+<updated>2014-02-27T18:48:00-05:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
@@ -15,7 +15,7 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Goalkeeper Analytics and Tabls]]></title>
+  <title type="html"><![CDATA[Goalkeeper Analytics and Tables]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/articles/GK-performance-tables" />
   <id>http://localhost:4000/articles/GK-performance-tables</id>
   <updated>2014-02-25T00:00:00-00:00</updated>
@@ -32,152 +32,1095 @@
   &lt;/header&gt;
 &lt;div id=&quot;drawer&quot;&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#goalkeeper-analytics&quot;&gt;Goalkeeper Analytics&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#heading-2&quot;&gt;Heading 2&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#heading-3&quot;&gt;Heading 3&lt;/a&gt;            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#heading-4&quot;&gt;Heading 4&lt;/a&gt;                &lt;ul&gt;
-                  &lt;li&gt;&lt;a href=&quot;#heading-5&quot;&gt;Heading 5&lt;/a&gt;                    &lt;ul&gt;
-                      &lt;li&gt;&lt;a href=&quot;#heading-6&quot;&gt;Heading 6&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#body-text&quot;&gt;Body text&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#blockquotes&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#list-types&quot;&gt;List Types&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#ordered-lists&quot;&gt;Ordered Lists&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#unordered-lists&quot;&gt;Unordered Lists&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#tables&quot;&gt;Tables&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#code-snippets&quot;&gt;Code Snippets&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#buttons&quot;&gt;Buttons&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#saves&quot;&gt;Saves&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#crosses&quot;&gt;Crosses&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#distribution&quot;&gt;Distribution&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;/div&gt;
 &lt;/section&gt;
 &lt;!-- /#table-of-contents --&gt;
 
-&lt;h1 id=&quot;goalkeeper-analytics&quot;&gt;Goalkeeper Analytics&lt;/h1&gt;
+&lt;p&gt;In 2012, Manchester City FC and &lt;a href=&quot;http://www.optasports.com&quot; title=&quot;Opta&quot;&gt;Opta&lt;/a&gt; (a sports analytics company) teamed up to release a season’s worth of granular data for the 2011-2012 season. Two datasets were released - one with 206 fields containing total game events by player, and another that included x-y locations for passes and shots for each player over the course of the entire season. There are plenty of other blogs that have been doing football analytics and looking at this data, and I’m likely not to break any new ground. I thought it would be a fun dataset with which to gain some new skills.&lt;/p&gt;
 
-&lt;p&gt;In 2012, Manchester City FC and Opta (a sports analytics company) teamed up to release a season’s worth of granular data for the 2011-2012 season. Two datasets were released - one with 206 fields containing total game events by player, and another that included x-y locations for passing data for each player by game over the course of the entire season.&lt;/p&gt;
+&lt;p&gt;Since I’m a goalkeeper, I became interested in measuring the performance of goalkeepers. Having surveyed a number of soccer analytics blogs, goalkeeping seems to be a lesser researched topic and is also potentially more difficult to analyze given the smaller number of events or actions a goalkeeper might take over the course of a game compared to field players.&lt;/p&gt;
 
-&lt;p&gt;Since I’m a goalkeeper, I became interested in measuring the performance of goalkeepers. Having surveyed a number of soccer analytics blogs, goalkeeping seems to be the least researched and is also potentially more difficult to analyze given the smaller number of events or actions a goalkeeper might take over the course of a game compared to field players.&lt;/p&gt;
+&lt;p&gt;To kick things off (ugh, I can’t possibly get away with that), I’ve provided some quick and hopefully useful stat tables for the overall season numbers for goalkeepers. I’m only looking at goalkeepers who played 1080 minutes or more (12 games) so we have a reasonable sample size for each goalkeeper. I’ll get to some potential visualizations later, but for now these stats are simple enough that ordered lists are a clear enough way to see some performance metrics. I’m actively choosing not to go the bar graph route; I think they’re terrible for three or more variables.&lt;/p&gt;
 
-&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;p&gt;This would also be a good time to mention the “P90” measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at [INSERT LINK] Statsbomb (which, if you’re at all interested in football analytics, you &lt;em&gt;have&lt;/em&gt; to check out).&lt;/p&gt;
 
-&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+&lt;h2 id=&quot;saves&quot;&gt;Saves&lt;/h2&gt;
 
-&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/images/Saves_Table.png&quot; /&gt;
+  &lt;figcaption&gt;Goalkeeper saves tables, 2011-2012 season .&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+&lt;p&gt;Thinking about this a bit, I think the Saves P90 (saves per 90) is a bit cloudy. The leakiness of a team’s defense is going to confound this quite a bit. In other words, you really don’t want to have the highest average saves per game; it means you’re working too hard. A bit of foreshadowing here - I think in the future we’re going to have to look at team defensive performance in order to better characterize goalkeeper performance.&lt;/p&gt;
 
-&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;/h6&gt;
+&lt;p&gt;Of course, the simple way of cracking that nut is just to rate them on save percentage (number of shots saved out of number of conceded shots on target). The dataset is also kind enough to us in that they provide short range saves/shots conceded and long range saves/shots conceded. This starts to drill down a bit more into the qualities of the goalkeeper. This is especially true of short range.  For long range shots in the Premier League it should take a true screamer to beat a goalkeeper, so these numbers &lt;em&gt;should&lt;/em&gt; all be at or near 100%, and are likely more reflective of the number of long-range blinders the team conceded than the keeper’s performance.&lt;/p&gt;
 
-&lt;h3 id=&quot;body-text&quot;&gt;Body text&lt;/h3&gt;
+&lt;p&gt;From the looks of it, de Gea is a top shot-stopper. I’ll discuss him a bit with regard to crosses as well.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
+&lt;p&gt;Szczesny was apparently not very good for Arsenal this season. All three save percentages (all, long-range, and short-range) are near bottom. Granted, these numbers don’t tell the whole story. Maybe Szczesny was seeing an abnormally high number of quality, well-placed shots at all ranges. Again, we’ll need to look at team defensive performance to get a better feel for this.&lt;/p&gt;
 
-&lt;p class=&quot;image-pull-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You also see the performance of Mignolet and Begovic starting to standing out. Both were with bottom half of the table teams and were likely facing many more decent chances than a Hart or a De Gea. Of course, Mignolet is now Liverpool’s starter and Belgium’s number two, and Begovic (despite a howler or two and a current injury) is highly touted.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
+&lt;h2 id=&quot;crosses&quot;&gt;Crosses&lt;/h2&gt;
 
-&lt;p&gt;HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.&lt;/p&gt;
+&lt;p&gt;This isn’t anything we didn’t already know. I’ll add my two cents on de Gea - he got quite a bit of flack in this, his first season in the Premier League. We’ll take a look at his cross numbers below, but from a goalkeeper’s prospective, I’d be flaky as all get out on crosses if I started in the Premier League at 23. It’s much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it’s hard to duplicate high pressure, game-like cross scenarios in training.&lt;/p&gt;
 
-&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
+&lt;h2 id=&quot;distribution&quot;&gt;Distribution&lt;/h2&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;list-types&quot;&gt;List Types&lt;/h2&gt;
-
-&lt;h3 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Item one
-    &lt;ol&gt;
-      &lt;li&gt;sub item one&lt;/li&gt;
-      &lt;li&gt;sub item two&lt;/li&gt;
-      &lt;li&gt;sub item three&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Item one&lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-  &lt;li&gt;Item three&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
-
-&lt;table rules=&quot;groups&quot;&gt;
+&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Header1&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Header2&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Header3&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Player Surname&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Successful Dist %&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reina&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.790&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Szczesny&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.747&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Schwarzer&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.724&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Vorm&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.717&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cech&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.716&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Friedel&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.711&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Al-Habsi&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.701&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hart&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.693&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Howard&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.680&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ruddy&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.677&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Begovic&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.672&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Jההskelהinen&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.667&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;De Gea&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.665&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Foster&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.632&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sרrensen&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.612&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Kenny&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.598&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Given&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.584&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hennessey&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.576&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Krul&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.571&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Bogdan&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.556&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mignolet&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.468&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Robinson&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.381&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Foot1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Foot2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Foot3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tfoot&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Player Surname&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Successful Dist P90&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Schwarzer&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11.700&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Vorm&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11.459&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Szczesny&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11.263&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Friedel&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10.895&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reina&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10.671&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Howard&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10.211&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Jההskelהinen&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9.889&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cech&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9.853&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ruddy&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9.488&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Foster&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9.459&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Al-Habsi&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9.263&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;De Gea&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8.897&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hart&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8.553&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Bogdan&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.900&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hennessey&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.882&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Begovic&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.665&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Given&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.320&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Krul&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.237&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Kenny&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.182&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sרrensen&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6.573&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mignolet&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6.156&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Robinson&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4.824&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Player Surname&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Dist P90&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Schwarzer&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;16.167&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Vorm&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15.973&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Friedel&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15.316&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Szczesny&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15.079&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Howard&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15.026&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Foster&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14.973&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Jההskelהinen&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14.833&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Bogdan&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14.200&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ruddy&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14.015&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cech&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13.765&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hennessey&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13.676&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reina&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13.501&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;De Gea&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13.379&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Al-Habsi&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13.211&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mignolet&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13.152&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Krul&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12.684&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Robinson&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12.676&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Given&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12.539&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hart&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12.342&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Kenny&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12.000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Begovic&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11.408&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sרrensen&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10.744&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;h2 id=&quot;buttons&quot;&gt;Buttons&lt;/h2&gt;
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/GK-performance-tables&quot;&gt;Goalkeeper Analytics and Tables&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lacking Rigor&lt;/a&gt; on February 23, 2014.&lt;/p&gt;</content>
+</entry>
 
-&lt;p&gt;Make any link standout more when applying the &lt;code&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
 
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;This is a button&lt;/a&gt;&lt;/div&gt;
+<entry>
+  <title type="html"><![CDATA[Gk Performance Tables]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/GK-performance-tables" />
+  <id>http://localhost:4000/GK-performance-tables</id>
+  <published>2014-02-23T00:00:00-05:00</published>
+  <updated>2014-02-23T00:00:00-05:00</updated>
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email>jtelszasz@gmail.com</email>
+  </author>
+  <content type="html">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;style&gt;html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/GK-performance-tables&quot;&gt;Goalkeeper Analytics and Tabls&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lacking Rigor&lt;/a&gt; on February 23, 2014.&lt;/p&gt;</content>
+body{
+  color:#444;
+  font-family:Georgia, Palatino, &#39;Palatino Linotype&#39;, Times, &#39;Times New Roman&#39;,
+              &quot;Hiragino Sans GB&quot;, &quot;STXihei&quot;, &quot;微软雅黑&quot;, serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: &quot; (&quot; attr(href) &quot;)&quot;; }
+  abbr[title]:after { content: &quot; (&quot; attr(title) &quot;)&quot;; }
+  .ir a:after, a[href^=&quot;javascript:&quot;]:after, a[href^=&quot;#&quot;]:after { content: &quot;&quot;; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+&lt;/style&gt;&lt;title&gt;2014-02-23-GK-performance-tables&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: Goalkeeper Analytics and Tables
+description: &quot;Introduction to the goalkeeper data and some initial numbers.&quot;
+modified: 2014-02-25
+category: articles
+tags: [soccer, mcfc-data, goalkeepers]
+image:
+  feature: texture-feature-05.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com&lt;/p&gt;
+&lt;hr /&gt;
+&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot; markdown=&quot;1&quot;&gt;
+*  Auto generated table of contents
+{:toc}
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;In 2012, Manchester City FC and [INSERT LINK] Opta (a sports analytics company) teamed up to release a season&#39;s worth of granular data for the 2011-2012 season. Two datasets were released - one with 206 fields containing total game events by player, and another that included x-y locations for passes and shots for each player over the course of the entire season. There are plenty of other blogs that have been doing football analytics and looking at this data, and I&#39;m likely not to break any new ground. I thought it would be a fun dataset with which to gain some new skills.&lt;/p&gt;
+&lt;p&gt;Since I&#39;m a goalkeeper, I became interested in measuring the performance of goalkeepers. Having surveyed a number of soccer analytics blogs, goalkeeping seems to be a lesser researched topic and is also potentially more difficult to analyze given the smaller number of events or actions a goalkeeper might take over the course of a game compared to field players.&lt;/p&gt;
+&lt;p&gt;To kick things off (ugh, I can&#39;t possibly get away with that), I&#39;ve provided some quick and hopefully useful stat tables for the overall season numbers for goalkeepers. I&#39;m only looking at goalkeepers who played 1080 minutes or more (12 games) so we have a reasonable sample size for each goalkeeper. I&#39;ll get to some potential visualizations later, but for now these stats are simple enough that ordered lists are a clear enough way to see some performance metrics. I&#39;m actively choosing not to go the bar graph route; I think they&#39;re terrible for three or more variables.&lt;/p&gt;
+&lt;p&gt;This would also be a good time to mention the &quot;P90&quot; measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at [INSERT LINK] Statsbomb (which, if you&#39;re at all interested in football analytics, you &lt;em&gt;have&lt;/em&gt; to check out).&lt;/p&gt;
+&lt;h2 id=&quot;saves&quot;&gt;Saves&lt;/h2&gt;
+&lt;p&gt;SHOW SAVE % and SHOTS CONCEDED P90, NOT SAVES P90&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Shots On Conceded P90&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Big Chances Faced P90&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Save %&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Long Range Save %&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Short Range Save %&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7.118&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;JŠŠskelŠinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2.667&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.767&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.946&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.671&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;6&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2.65&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.729&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.932&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.662&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;JŠŠskelŠinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;5.722&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2.548&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.723&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.921&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.635&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;5.639&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2.471&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.711&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.917&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.623&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;5.152&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2.228&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.71&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.906&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.617&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;5.081&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2.054&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.709&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.904&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.615&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;5.029&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;2.053&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.708&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.877&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.608&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.96&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.947&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.691&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.875&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.868&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.941&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.678&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.875&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.598&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.742&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.849&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.674&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.873&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.584&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.733&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.794&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.674&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.87&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.578&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.649&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.697&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.654&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;S¿rensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.844&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.571&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.605&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.684&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.651&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.83&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.566&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.586&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.676&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;S¿rensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.648&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.818&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.559&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.582&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;S¿rensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.643&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.643&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.816&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.551&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;S¿rensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.487&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.395&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.642&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.794&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.547&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.237&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.379&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.64&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.784&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;JŠŠskelŠinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.539&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3.912&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.367&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.632&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.783&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.537&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3.579&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.259&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.624&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.782&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.53&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3.579&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.211&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.618&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.78&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;S¿rensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.487&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3.5&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.209&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;JŠŠskelŠinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.602&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;JŠŠskelŠinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.778&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.471&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;3.39&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;1.079&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.556&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.733&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.459&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Thinking about this a bit, I think the Saves P90 (saves per 90) is a bit cloudy. The leakiness of a team&#39;s defense is going to confound this quite a bit. In other words, you really don&#39;t want to have the highest average saves per game; it means you&#39;re working too hard. A bit of foreshadowing here - I think in the future we&#39;re going to have to look at team defensive performance in order to better characterize goalkeeper performance.&lt;/p&gt;
+&lt;p&gt;Of course, the simple way of cracking that nut is just to rate them on save percentage (number of shots saved out of number of conceded shots on target). The dataset is also kind enough to us in that they provide short range saves/shots conceded and long range saves/shots conceded. This starts to drill down a bit more into the qualities of the goalkeeper. This is especially true of short range.  For long range shots in the Premier League it should take a true screamer to beat a goalkeeper, so these numbers &lt;em&gt;should&lt;/em&gt; all be at or near 100%, and are likely more reflective of the number of long-range blinders the team conceded than the keeper&#39;s performance.&lt;/p&gt;
+&lt;p&gt;From the looks of it, de Gea is a top shot-stopper. I&#39;ll discuss him a bit with regard to crosses as well.&lt;/p&gt;
+&lt;p&gt;Szczesny was apparently not very good for Arsenal this season. All three save percentages (all, long-range, and short-range) are near bottom. Granted, these numbers don&#39;t tell the whole story. Maybe Szczesny was seeing an abnormally high number of quality, well-placed shots at all ranges. Again, we&#39;ll need to look at team defensive performance to get a better feel for this.&lt;/p&gt;
+&lt;p&gt;You also see the performance of Mignolet and Begovic starting to standing out. Both were with bottom half of the table teams and were likely facing many more decent chances than a Hart or a De Gea. Of course, Mignolet is now Liverpool&#39;s starter and Belgium&#39;s number two, and Begovic (despite a howler or two and a current injury) is highly touted.&lt;/p&gt;
+&lt;h2 id=&quot;crosses&quot;&gt;Crosses&lt;/h2&gt;
+&lt;p&gt;This isn&#39;t anything we didn&#39;t already know. I&#39;ll add my two cents on de Gea - he got quite a bit of flack in this, his first season in the Premier League. We&#39;ll take a look at his cross numbers below, but from a goalkeeper&#39;s prospective, I&#39;d be flaky as all get out on crosses if I started in the Premier League at 23. It&#39;s much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it&#39;s hard to duplicate high pressure, game-like cross scenarios in training.&lt;/p&gt;
+&lt;h2 id=&quot;distribution&quot;&gt;Distribution&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Successful Dist %&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.790&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.747&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.724&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.717&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.716&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.711&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.701&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.693&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.680&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.677&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.672&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Jההskelהinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.667&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.632&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Sרrensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.612&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.598&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.584&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.576&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.571&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.556&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.468&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0.381&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Successful Dist P90&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;11.700&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;11.459&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;11.263&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;10.895&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;10.671&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;10.211&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Jההskelהinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;9.889&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;9.853&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;9.488&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;9.459&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;9.263&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8.897&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;8.553&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7.900&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7.882&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7.665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7.320&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7.237&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;7.182&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Sרrensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;6.573&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;6.156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;4.824&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Player Surname&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Dist P90&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Schwarzer&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;16.167&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Vorm&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;15.973&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Friedel&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;15.316&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Szczesny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;15.079&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Howard&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;15.026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Foster&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;14.973&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Jההskelהinen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;14.833&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Bogdan&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;14.200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ruddy&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;14.015&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Cech&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;13.765&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hennessey&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;13.676&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Reina&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;13.501&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;De Gea&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;13.379&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Al-Habsi&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;13.211&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Mignolet&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;13.152&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Krul&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;12.684&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Robinson&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;12.676&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Given&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;12.539&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hart&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;12.342&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Kenny&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;12.000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Begovic&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;11.408&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Sרrensen&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;10.744&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/GK-performance-tables&quot;&gt;Gk Performance Tables&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lacking Rigor&lt;/a&gt; on February 23, 2014.&lt;/p&gt;</content>
 </entry>
 
 
