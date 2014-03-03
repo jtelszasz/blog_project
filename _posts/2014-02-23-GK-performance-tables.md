@@ -27,7 +27,7 @@ Since I'm a goalkeeper, I became interested in measuring the performance of goal
 
 To kick things off (ugh, I can't possibly get away with that), I've provided some quick and hopefully useful stat tables for the overall season numbers for goalkeepers. I'm only looking at goalkeepers who played 1080 minutes or more (12 games) so we have a reasonable sample size for each goalkeeper. I'll get to some potential visualizations later, but for now these stats are simple enough that ordered lists are a clear enough way to see some performance metrics. I'm actively choosing not to go the bar graph route; I think they're terrible for three or more variables.
 
-This would also be a good time to mention the "P90" measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at [INSERT LINK] Statsbomb (which, if you're at all interested in football analytics, you *have* to check out).
+This would also be a good time to mention the "P90" measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at <a href='http://www.statsbomb.com' title='Statsbomb'>Statsbomb<a> (which, if anything I'm talking about is interesting to you, you *have* to check out).
 
 ## Saves
 
@@ -50,4 +50,10 @@ This isn't anything we didn't already know. I'll add my two cents on de Gea - he
 
 
 ## Distribution
+
+<figure>
+  <img src="/images/Dist_Table.png">
+  <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
+</figure>
+
 
