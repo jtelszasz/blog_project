@@ -44,11 +44,10 @@ Szczesny was apparently not very good for Arsenal this season. All three save pe
 
 You also see the performance of Mignolet and Begovic starting to stand out. Both were with bottom half of the table teams and were likely facing many more decent chances than a Hart or a De Gea. Of course, Mignolet is now Liverpool's starter and Belgium's number two, and Begovic (despite a howler or two and a current injury) is highly touted.
 
-
 ## Distribution
 
 <figure>
-  <a href="/images/Dist_Table.png"><img src="/images/Dist_Table.png"></a>
+  <a href="{{ site.url }}/images/Dist_Table.png"><img src="{{ site.url }}/images/Dist_Table.png"></a>
   <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
 </figure>
 
@@ -60,7 +59,7 @@ I definitely want to do some more work on distribution. You won't get through a 
 ## Crosses
 
 <figure>
-  <a href="/images/Cross_Table.png"><img src="/images/Cross_Table.png"></a>
+  <a href="{{ site.url }}/images/Cross_Table.png"><img src="{{ site.url }}/images/Cross_Table.png"></a>
   <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
 </figure>
 

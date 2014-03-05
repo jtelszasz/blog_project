@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://jtelszasz.github.io/blog_project/feed.xml" />
 <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project" />
-<updated>2014-03-05T12:49:50-05:00</updated>
+<updated>2014-03-05T12:57:20-05:00</updated>
 <id>http://jtelszasz.github.io/blog_project/</id>
 <author>
   <name>Justin Elszasz</name>
@@ -67,7 +67,7 @@
 &lt;h2 id=&quot;distribution&quot;&gt;Distribution&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -78,7 +78,7 @@
 &lt;h2 id=&quot;crosses&quot;&gt;Crosses&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
