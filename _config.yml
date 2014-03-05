@@ -2,8 +2,8 @@ title:            Out Of Your Element
 tagline:          In which a mechanical engineer with historically average statistical skills attempts “data science” in fields in which he is no expert.
 description:      
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
-#url:              http://jtelszasz.github.io/blog_project
+#url:              http://localhost:4000
+url:              http://jtelszasz.github.io/blog_project
 
 # Owner/author information
 owner:
