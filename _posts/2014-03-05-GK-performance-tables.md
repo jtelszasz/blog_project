@@ -32,7 +32,7 @@ This would also be a good time to mention the "P90" measures. Since not all play
 ## Saves
 
 <figure>
-  <a href="/images/Saves_Table.png"><img src="/images/Saves_Table.png"></a>
+  <a href="images/Saves_Table.png"><img src="images/Saves_Table.png"></a>
   <figcaption>Goalkeeper saves tables, 2011-2012 season .</figcaption>
 </figure>
 
