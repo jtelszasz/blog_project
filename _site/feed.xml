@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://jtelszasz.github.io/blog_project/feed.xml" />
 <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project" />
-<updated>2014-03-05T12:36:51-05:00</updated>
+<updated>2014-03-05T12:46:07-05:00</updated>
 <id>http://jtelszasz.github.io/blog_project/</id>
 <author>
   <name>Justin Elszasz</name>
@@ -52,7 +52,7 @@
 &lt;h2 id=&quot;saves&quot;&gt;Saves&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/Saves_Table.png&quot;&gt;&lt;img src=&quot;/images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;images/Saves_Table.png&quot;&gt;&lt;img src=&quot;images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper saves tables, 2011-2012 season .&lt;/figcaption&gt;
 &lt;/figure&gt;
 
