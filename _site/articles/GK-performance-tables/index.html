@@ -5,25 +5,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Goalkeeper Analytics and Tables &#8211; Lacking Rigor</title>
-<meta name="description" content="Introduction to the goalkeeper data and some initial numbers.">
-<meta name="keywords" content="soccer, mcfc-data, goalkeepers">
+<title>First Cut Goalkeeper Stats &#8211; Out Of Your Element</title>
+<meta name="description" content="Introduction to the MCFC/Opta data and some initial stats for keepers.">
+<meta name="keywords" content="soccer, mcfc-data, goalkeeper">
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Goalkeeper Analytics and Tables">
-<meta property="og:description" content="Introduction to the goalkeeper data and some initial numbers.">
+<meta property="og:title" content="First Cut Goalkeeper Stats">
+<meta property="og:description" content="Introduction to the MCFC/Opta data and some initial stats for keepers.">
 <meta property="og:url" content="http://localhost:4000/articles/GK-performance-tables">
-<meta property="og:site_name" content="Lacking Rigor">
+<meta property="og:site_name" content="Out Of Your Element">
 
 
 
 
 
 <link rel="canonical" href="http://localhost:4000/articles/GK-performance-tables">
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Lacking Rigor Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Out Of Your Element Feed">
 
 
 <!-- http://t.co/dKP3o1e -->
@@ -67,7 +67,7 @@
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://localhost:4000">Lacking Rigor</a>
+		<a href="http://localhost:4000">Out Of Your Element</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -84,7 +84,7 @@
 </div><!-- /.navigation-wrapper -->
 
 <div class="image-wrap">
-  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="Goalkeeper Analytics and Tables feature image" itemprop="primaryImageOfPage">
+  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="First Cut Goalkeeper Stats feature image" itemprop="primaryImageOfPage">
   <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
 </div><!-- /.image-wrap -->
 
@@ -92,7 +92,7 @@
   <div class="article-author-side">
     <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Justin Elszasz bio photo"></a>
 <h3>Justin Elszasz</h3>
-<p>Mechanical engineering background, indeterminate foreground.</p>
+<p>Engineering background, indeterminate foreground.</p>
 
 <a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
 
@@ -104,7 +104,7 @@
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <div class="headline-wrap">
-      <h1 itemprop="name">Goalkeeper Analytics and Tables</h1>
+      <h1 itemprop="name">First Cut Goalkeeper Stats</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap" itemprop="text">
@@ -115,26 +115,26 @@
 <div id="drawer">
 <ul id="markdown-toc">
   <li><a href="#saves">Saves</a></li>
-  <li><a href="#crosses">Crosses</a></li>
   <li><a href="#distribution">Distribution</a></li>
+  <li><a href="#crosses">Crosses</a></li>
 </ul>
 
   </div>
 </section>
 <!-- /#table-of-contents -->
 
-<p>In 2012, Manchester City FC and <a href="http://www.optasports.com" title="Opta">Opta</a> (a sports analytics company) teamed up to release a season’s worth of granular data for the 2011-2012 season. Two datasets were released - one with 206 fields containing total game events by player, and another that included x-y locations for passes and shots for each player over the course of the entire season. There are plenty of other blogs that have been doing football analytics and looking at this data, and I’m likely not to break any new ground. I thought it would be a fun dataset with which to gain some new skills.</p>
+<p>In 2012, Manchester City FC and <a href="http://www.optasports.com" title="Opta">Opta</a> (a sports analytics company) teamed up to release a season’s worth of granular data for the 2011-2012 season. Two datasets were released - one with 206 fields containing total game events by player, and another that included x-y locations for passes and shots for each player for the Bolton-Manchester City match on August 21, 2011. There are plenty of other blogs that have been doing football analytics and looking at this data, and I’m likely not to break any new ground. I thought it would be a fun dataset to look at.</p>
 
-<p>Since I’m a goalkeeper, I became interested in measuring the performance of goalkeepers. Having surveyed a number of soccer analytics blogs, goalkeeping seems to be a lesser researched topic and is also potentially more difficult to analyze given the smaller number of events or actions a goalkeeper might take over the course of a game compared to field players.</p>
+<p>Since I’m a goalkeeper, I became interested in measuring the performance of goalkeepers. Having surveyed a number of soccer analytics blogs, goalkeeping seems to be a lesser researched topic and is also potentially more difficult to analyze given the smaller number of events or actions a goalkeeper might take over the course of a game compared to field players. I shouldn’t suggest here that I’ll be breaking new ground or providing revolutionary keeper analysis - I’m no statistics whiz - just letting you on to my motivations.</p>
 
 <p>To kick things off (ugh, I can’t possibly get away with that), I’ve provided some quick and hopefully useful stat tables for the overall season numbers for goalkeepers. I’m only looking at goalkeepers who played 1080 minutes or more (12 games) so we have a reasonable sample size for each goalkeeper. I’ll get to some potential visualizations later, but for now these stats are simple enough that ordered lists are a clear enough way to see some performance metrics. I’m actively choosing not to go the bar graph route; I think they’re terrible for three or more variables.</p>
 
-<p>This would also be a good time to mention the “P90” measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at <a href="http://www.statsbomb.com" title="Statsbomb">Statsbomb<a> (which, if anything I’m talking about is interesting to you, you <em>have</em> to check out).</a></a></p>
+<p>This would also be a good time to mention the “P90” measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at <a href="http://www.statsbomb.com" title="Statsbomb">Statsbomb</a> (which, if anything I’m talking about is interesting to you, you <em>have</em> to check out).</p>
 
 <h2 id="saves">Saves</h2>
 
 <figure>
-  <img src="/images/Saves_Table.png" />
+  <a href="/images/Saves_Table.png"><img src="/images/Saves_Table.png" /></a>
   <figcaption>Goalkeeper saves tables, 2011-2012 season .</figcaption>
 </figure>
 
@@ -146,16 +146,31 @@
 
 <p>You also see the performance of Mignolet and Begovic starting to stand out. Both were with bottom half of the table teams and were likely facing many more decent chances than a Hart or a De Gea. Of course, Mignolet is now Liverpool’s starter and Belgium’s number two, and Begovic (despite a howler or two and a current injury) is highly touted.</p>
 
-<h2 id="crosses">Crosses</h2>
-
-<p>This isn’t anything we didn’t already know. I’ll add my two cents on de Gea - he got quite a bit of flack in this, his first season in the Premier League. We’ll take a look at his cross numbers below, but from a goalkeeper’s prospective, I’d be flaky as all get out on crosses if I started in the Premier League at 23. It’s much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it’s hard to duplicate high pressure, game-like cross scenarios in training.</p>
-
 <h2 id="distribution">Distribution</h2>
 
 <figure>
-  <img src="/images/Dist_Table.png" />
+  <a href="/images/Dist_Table.png"><img src="/images/Dist_Table.png" /></a>
   <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
 </figure>
+
+<p>As in all of these top level stats, the distribution numbers are confounded as well. I think team tactics has a pretty big role to play here. For a possession team, a goalkeeper is going to be picking out short balls and throws and trying to keep his numbers up. Other more direct or counter-attacking sides will want a goalkeeper to quickly get long balls down the field or to the flanks, possibly with lesser rates of success.</p>
+
+<p>I definitely want to do some more work on distribution. You won’t get through a televised broadcast of a Premier League match without a former (field) player (probably Mr. Chip-On-My-God-Damn-Shoulder Eric Wynalda or Robbie Mustoe) decrying the need for the <em>modern</em> goalkeeper to have the ability to assist a team in maintaining possession, meaning make simple passes to nearby defenders while under pressure. Besides just these distribution numbers (which are for distibution after a keeper catches), passing numbers should play a heavy role in determining the ability of a goalkeeper.</p>
+
+<h2 id="crosses">Crosses</h2>
+
+<figure>
+  <a href="/images/Cross_Table.png"><img src="/images/Cross_Table.png" /></a>
+  <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
+</figure>
+
+<p>De Gea and Reina quite clearly prefer punching or not challenging for the ball at all to catching. De Gea got quite a bit of flack in this, his first season in the Premier League. From a goalkeeper’s prospective, I’d be flaky as all get out on crosses if I started in the Premier League at 23 (granted he had XXX seasons at Atletico Madrid before). It’s much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it’s hard to duplicate high pressure, game-like cross scenarios in training.</p>
+
+<p>What these numbers don’t tell you is whether a punch was successful in clearing the ball out of danger or not. (For that we’d need to dig pretty deeply into X-Y coordinate data from another dataset.) Obviously if a keeper punches but the ball slips out to an opposing player for a shot, the keeper hasn’t really effectively dealt with the cross.</p>
+
+<p>All else being equal, I can’t imagine Liverpool and Manchester United were allowing any more dangerous crosses into their box than any other team (which might lead to more punches from the keeper), so I think it’s generally a bad thing that both of these keepers were preferring to punch so often. Of course it was De Gea’s first season at United, and Reina is no longer with Liverpool, so I guess there you have it.</p>
+
+<p>Anyways, hope some of these numbers are fun or useful to you. I’m definitely having fun digging into this dataset. </p>
 
 
       <hr />
@@ -163,7 +178,7 @@
         <div class="article-author-bottom">
           <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Justin Elszasz bio photo"></a>
 <h3>Justin Elszasz</h3>
-<p>Mechanical engineering background, indeterminate foreground.</p>
+<p>Engineering background, indeterminate foreground.</p>
 
 <a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
 
@@ -173,44 +188,14 @@
 
 
         </div>
-        <p class="byline"><strong>Goalkeeper Analytics and Tables</strong> was published on <time datetime="2014-02-23T00:00:00-05:00" itemprop="datePublished">February 23, 2014</time> and last modified on <time datetime="2014-02-25" itemprop="dateModified">February 25, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
+        <p class="byline"><strong>First Cut Goalkeeper Stats</strong> was published on <time datetime="2014-03-05T00:00:00-05:00" itemprop="datePublished">March 05, 2014</time> and last modified on <time datetime="2014-03-05" itemprop="dateModified">March 05, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   </article>
 </div><!-- /#main -->
 
 <div class="footer-wrap">
-  <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/articles">View all articles</a>)</small></h4>
-    <ul>
-    
-      
-      
-      
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="http://localhost:4000/articles/code-highlighting-post" title="Syntax Highlighting Post">Syntax Highlighting Post</a></li>
-      
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="http://localhost:4000/articles/readability-feature-post" title="Post with Large Feature Image and Text">Post with Large Feature Image and Text</a></li>
-      
-    
-    </ul>
-    <hr />
-  </div><!-- /.related-articles -->
+  
   <footer>
     <span>&copy; 2014 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
 
