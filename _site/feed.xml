@@ -3,27 +3,92 @@
 <title type="text">Out Of Your Element</title>
 <subtitle type="text">In which a mechanical engineer with historically average statistical skills attempts “data science” in fields in which he is no expert.</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://jtelszasz.github.io/blog_project/feed.xml" />
-<link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project" />
-<updated>2014-03-05T12:57:20-05:00</updated>
-<id>http://jtelszasz.github.io/blog_project/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2014-03-12T21:16:10-04:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
-  <uri>http://jtelszasz.github.io/blog_project/</uri>
+  <uri>http://localhost:4000/</uri>
   <email>jtelszasz@gmail.com</email>
 </author>
 
 
 <entry>
+  <title type="html"><![CDATA[BGE Smart Meter Data]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/BGE-Smart-Meter-Data" />
+  <id>http://localhost:4000/articles/BGE-Smart-Meter-Data</id>
+  <updated>2014-03-14T00:00:00-00:00</updated>
+  <published>2014-03-10T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email>jtelszasz@gmail.com</email>
+  </author>
+  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#bge-website-and-dashboard&quot;&gt;BGE Website and Dashboard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#comparisons-to-neighbors&quot;&gt;Comparisons to Neighbors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#use-categories&quot;&gt;Use Categories&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#green-button&quot;&gt;Green Button&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;Citizens of Baltimore and captive customers of Baltimore Gas &amp;amp; Electric! In the words of Gabriel, I bring you good tidings of great joy and data and stuff. For the last year or so BGE has been rolling out smart meters to their electricity customers. Our neighborhood was slated for this winter, and lo, our data hath appeared unto us.&lt;/p&gt;
+
+&lt;h2 id=&quot;bge-website-and-dashboard&quot;&gt;BGE Website and Dashboard&lt;/h2&gt;
+
+&lt;p&gt;The BGE website does slightly more than just show you historical use, the most prominent feature being the ability to compare your use to a comparable sample of your neighbors. There have been several studies regarding energy consumption reductions as a result of comparing personal use to neighbors. In fact, one of my friends published on what types of comparisons result in the largest reductions.&lt;/p&gt;
+
+&lt;h2 id=&quot;comparisons-to-neighbors&quot;&gt;Comparisons to Neighbors&lt;/h2&gt;
+&lt;p&gt;Since utilities (like any other company using data) have pretty serious privacy concerns, they use an average of a hundred or so customers that share your characteristics, all within a two or three mile radius of your house (ours average 0.4 miles from us). The initial comparison with which I was presented was way off base because our heating comes from electric resistance, but once I answered a few questions on the website about what appliances we have and the like, the comparison made much more sense (I presume we’re being compared against neighbors who all have electric resistance heating).&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-01.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-01.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;February comparison of our electricity use to an average of a hundred or so comparable neighbors (source: www.bgesmartenergymanager.com).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-02.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-02.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors (source: www.bgesmartenergymanager.com).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Of course, the comparisons of your monthly energy use could have been done with the monthly billing they would have anyways, without the use of smart meters. Using the smart meter data, it looks like soon we’ll be able to compare hour-to-hour use (lending what I would presume will be a more real-time competition feel to things) but this isn’t operational yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-categories&quot;&gt;Use Categories&lt;/h2&gt;
+
+&lt;p&gt;Another feature they provide is an estimated breakdown of your electricity consumption into categories (hetaing, lighting, etc.) Currently, these would have to be static estimates based solely on the answers I provided about our appliances and the like.     o having hourly data should make these estimates more accurate. Electricity consumption (and energy use in general) is pretty strongly correlated with the weather, which can of course vary &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-06.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-06.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Estimated breakdown of electricity consumption based on customer and building characteristics. (source: www.bgesmartenergymanager.com).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;green-button&quot;&gt;Green Button&lt;/h2&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/BGE-Smart-Meter-Data&quot;&gt;BGE Smart Meter Data&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;Out Of Your Element&lt;/a&gt; on March 10, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
   <title type="html"><![CDATA[First Cut Goalkeeper Stats]]></title>
-  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/GK-performance-tables" />
-  <id>http://jtelszasz.github.io/blog_project/articles/GK-performance-tables</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/GK-performance-tables" />
+  <id>http://localhost:4000/articles/GK-performance-tables</id>
   <updated>2014-03-05T00:00:00-00:00</updated>
   <published>2014-03-05T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://jtelszasz.github.io/blog_project</uri>
+    <uri>http://localhost:4000</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -52,7 +117,7 @@
 &lt;h2 id=&quot;saves&quot;&gt;Saves&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Saves_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Saves_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper saves tables, 2011-2012 season .&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -67,7 +132,7 @@
 &lt;h2 id=&quot;distribution&quot;&gt;Distribution&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -78,7 +143,7 @@
 &lt;h2 id=&quot;crosses&quot;&gt;Crosses&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -91,7 +156,7 @@
 &lt;p&gt;Anyways, hope some of these numbers are fun or useful to you. I’m definitely having fun digging into this dataset. &lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/GK-performance-tables&quot;&gt;First Cut Goalkeeper Stats&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;Out Of Your Element&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/GK-performance-tables&quot;&gt;First Cut Goalkeeper Stats&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;Out Of Your Element&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
