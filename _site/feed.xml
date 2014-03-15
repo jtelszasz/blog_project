@@ -3,27 +3,27 @@
 <title type="text">The Training Set</title>
 <subtitle type="text">In which a mechanical engineer with historically average statistical skills attempts “data science” in fields in which he is no expert.</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-03-14T13:02:53-04:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://jtelszasz.github.io/blog_project/feed.xml" />
+<link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project" />
+<updated>2014-03-15T19:24:16-04:00</updated>
+<id>http://jtelszasz.github.io/blog_project/</id>
 <author>
   <name>Justin Elszasz</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://jtelszasz.github.io/blog_project/</uri>
   <email>jtelszasz@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[BGE Smart Meters]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/BGE-Smart-Meter-Data" />
-  <id>http://localhost:4000/articles/BGE-Smart-Meter-Data</id>
-  <updated>2014-03-14T00:00:00-00:00</updated>
-  <published>2014-03-10T00:00:00-04:00</published>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meter-Data" />
+  <id>http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meter-Data</id>
+  <updated>2014-03-15T00:00:00-00:00</updated>
+  <published>2014-03-15T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -33,8 +33,7 @@
 &lt;div id=&quot;drawer&quot;&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#comparisons-to-neighbors&quot;&gt;Comparisons to Neighbors&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#use-categories&quot;&gt;Use Categories&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#green-button&quot;&gt;Green Button&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#disaggregation-and-savings-suggestions&quot;&gt;Disaggregation and Savings Suggestions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;/div&gt;
@@ -43,58 +42,65 @@
 
 &lt;p&gt;Citizens of Baltimore and captive customers of Baltimore Gas &amp;amp; Electric! In the words of Gabriel, I bring you good tidings of great joy and data and stuff. For the last year or so BGE has been rolling out smart meters to their electricity customers. Our neighborhood was &lt;a href=&quot;http://www.bge.com/smartenergy/smartgrid/smartmeters/Pages/Installation-Schedule.aspx&quot;&gt;slated for the second half of last year&lt;/a&gt;, and lo, our data hath appeared unto us.&lt;/p&gt;
 
-&lt;p&gt;BGE indicates that the smart meter upgrades they’ve been rolling out have two components - one being the electricity smart meter (which communicates every 4 hours) and an upgrade to the natural gas meter that also enables communication (though this only happens every 24 hours). Currently, my BGE dashboard is only showing my electricity consumption so most of the discussion below only applies to electricity. I’ve read their website extensively but have found no indication that we’ll also get to see hourly gas consumption. This is unfortunate for single family home owners who burn natural gas on site for space heating, since this is the &lt;a href=&quot;http://www.eia.gov/todayinenergy/detail.cfm?id=10271&amp;amp;src=%E2%80%B9%20Consumption%20%20%20%20%20%20Residential%20Energy%20Consumption%20Survey%20(RECS)-b1&quot;&gt;largest portion of their annual energy consumption&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;BGE indicates that the smart meter upgrades have two components - electricity meter replacement (which communicates every 4 hours) and an upgrade to the natural gas meter that also enables communication (though this only happens every 24 hours). Currently, my BGE dashboard is only showing my electricity consumption so most of the discussion below only applies to electricity. I’ve read their website extensively but have found no indication that we’ll also get to see hourly gas consumption. This is unfortunate for single family home owners who burn natural gas on site for space heating, since this is the &lt;a href=&quot;http://www.eia.gov/todayinenergy/detail.cfm?id=10271&amp;amp;src=%E2%80%B9%20Consumption%20%20%20%20%20%20Residential%20Energy%20Consumption%20Survey%20(RECS)-b1&quot;&gt;largest portion of their annual energy consumption&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It appears there are two primary functions the smart meters will initially serve: for providing information to their customers and to monitor the grid for outages. (Apparently even just partial implementation proved their case for grid outage notification during &lt;a href=&quot;http://www.greentechmedia.com/articles/read/bge-gets-a-taste-of-smart-meter-capabilities-during-sandy&quot;&gt;Hurricane Sandy&lt;/a&gt;.) These are two pretty straight-forward applications of the data, I’m wondering where BGE (and other utilities) is headed for the next-step analysis (predictive analytics, grid efficiency and repair, optimization, renewables and storage integration, etc.)&lt;/p&gt;
+
+&lt;p&gt;One interesting note on the BGE data privacy policy and a bit of wishful thinking: while BGE can’t disclose or sell individual customer interval data, the &lt;a href=&quot;http://www.bge.com/smartenergy/smartgrid/Pages/Data-Privacy-Policy.aspx&quot;&gt;BGE website&lt;/a&gt; states “Smart Meter interval energy use data that is not specific to the customer, such as combined data, is not included within the scope of this policy.” I think BGE could get ahead of the curve by providing block (or similar aggregate) data in the name of transparency and perhaps as a community service. As they indicate, aggregate data is not covered by the data privacy policy; moreover, the City of Baltimore has followed the suit of many other major cities by establishing an &lt;a href=&quot;https://data.baltimorecity.gov&quot;&gt;open data repository.&lt;/a&gt; Perhaps BGE and the city could work together to post aggregated interval data to Open Baltimore.&lt;/p&gt;
 
 &lt;h2 id=&quot;comparisons-to-neighbors&quot;&gt;Comparisons to Neighbors&lt;/h2&gt;
 
-&lt;p&gt;The BGE website does slightly more than just show you historical use, with the most prominent feature being the ability to compare your use to a sample of comparable neighbors. There have been many studies regarding energy consumption reductions as a result of real-time monitoring, feedback, and contextual comparisons (see &lt;a href=&quot;http://www1.eere.energy.gov/seeaction/pdfs/customerinformation_behavioral_status_summary.pdf &quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;&quot;&gt;here&lt;/a&gt;). In fact, a couple friends and a former professor did &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0378778811006499&quot;&gt;some work&lt;/a&gt; on the topic.&lt;/p&gt;
+&lt;p&gt;The BGE website does slightly more than just show you historical use, with the most prominent feature being the ability to compare your use to a sample of comparable neighbors. There have been many studies regarding energy consumption reductions as a result of real-time monitoring, feedback, and contextual comparisons (see &lt;a href=&quot;http://www1.eere.energy.gov/seeaction/pdfs/customerinformation_behavioral_status_summary.pdf &quot;&gt;here&lt;/a&gt;). In fact, a couple friends and a former professor did &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0378778813003782&quot;&gt;some work&lt;/a&gt; on the topic.&lt;/p&gt;
 
-&lt;p&gt;http://www.sciencedirect.com/science/article/pii/S0378778811006499&lt;/p&gt;
-
-&lt;p&gt;Since utilities (like any other company using data) have pretty serious data privacy concerns, they use an average of a hundred or so customers that share your characteristics, all within a two or three mile radius of your house (ours average 0.4 miles from us). The initial comparison with which I was presented was way off base because our heating comes from electric resistance, but once I answered a few questions on the website about what appliances we have and the like, the comparison made much more sense (I presume we’re being compared against neighbors who all have electric resistance heating).&lt;/p&gt;
+&lt;p&gt;In keeping with the data policy exclusion for aggregate data, they use an average of a hundred or so customers that share your characteristics, all within a two or three mile radius of your house (ours average 0.4 miles from us). The initial comparison with which I was presented was way off base because our heating comes from electric resistance, but once I answered a few questions on the website about what appliances we have and the like, the comparison made much more sense (I presume we’re being compared against neighbors who all have electric resistance heating).&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-01.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-01.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-01.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-01.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;February comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient. (source: www.bge.com)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-02.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-02.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient. (source: www.bge.com)&lt;/figcaption&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-02.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-02.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient (based on billing data, since smart meters weren&#39;t widespread for the shown timeframe). (source: www.bge.com)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Of course, the comparisons of your monthly energy use could have been done with the monthly billing they would have anyways, without the use of smart meters. Using the smart meter data, it looks like soon we’ll be able to compare hour-to-hour use (lending what I would presume will be a more real-time competition feel to things) but this isn’t operational yet.&lt;/p&gt;
+&lt;p&gt;Of course, the comparisons of your monthly energy use could have been done with the monthly billing they would have anyways, without the use of smart meters. Using the smart meter data, it looks like soon we’ll be able to compare hour-to-hour use (lending what I would presume will be a more real-time competition feel to things) but this isn’t operational yet. They are, however, displaying the hourly data along with the outdoor dry-bulb temperature for reference.&lt;/p&gt;
 
-&lt;h2 id=&quot;use-categories&quot;&gt;Use Categories&lt;/h2&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-04.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-04.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Hourly electricity consumption (kilowatt-hours) and outdoor temperature (degrees Fahrenheit) for March 11, 2014. (source: www.bge.com)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;My roommate was home this day. The drop in consumption in the afternoon could be from her leaving the house and shutting off lights and her computer, the weather, or both.  Later I’ll be looking into our apartment’s response to the weather so it might become a bit more apparent then.&lt;/p&gt;
+
+&lt;h2 id=&quot;disaggregation-and-savings-suggestions&quot;&gt;Disaggregation and Savings Suggestions&lt;/h2&gt;
 
 &lt;p&gt;Another feature they provide is an estimated breakdown of your electricity consumption into categories (heating, lighting, etc.) Currently, these would have to be static estimates based solely on the answers I provided about our appliances and the like. Farther down the road, the hourly data will have a larger role to play here. Electricity consumption (and energy use in general) is largely a function of two things: the weather and human behavior, both of which can change drastically hour to hour. They’ll likely need about a year’s worth of data to be able to tease out the portion of energy use that is your behavior and the portion that is your building’s response to weather. This is because whatever algorithm they are using to disaggregate weather from behavior will need to have seen your electricity consumption during all climates.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-06.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-06.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Estimated breakdown of electricity consumption based on customer and building characteristics. (source: www.bge.com).&lt;/figcaption&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-06.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-06.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Estimated breakdown of electricity consumption based on customer and building characteristics. Also shown, suggestions for reducing usage. (source: www.bge.com)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The disaggregation lends itself to targeted recommendations for how to reduce your electricity consumption. An interesting feature they’ve implemented for more social context is a counter of how many customers have indicated that they would try a particular recommendation (eg. “13,859 people will turn off their lights when not needed; 1,654 people will hang dry their laundry,” etc.) In the same way that “like”-ing a post on Facebook along with many others is in some way a validation that one likes the “right” things, I can see this feature serving to validate one’s choices about their energy consumption.&lt;/p&gt;
 
-&lt;p&gt;After a couple years of solid data, I hope BGE will publish a comprehensive and open report on the effect of their feedback in reducing energy consumption. &lt;/p&gt;
-
-&lt;h2 id=&quot;green-button&quot;&gt;Green Button&lt;/h2&gt;
+&lt;p&gt;All in all, this is a good thing. Concerns about radio frequency exposure are rather &lt;a href=&quot;http://www.epri.com/abstracts/Pages/ProductAbstract.aspx?ProductId=000000000001021829&quot;&gt;unfounded&lt;/a&gt; especially when we all carry cell phones in our pockets. If you are someone who has concerns about data privacy, nothing I have to say on the topic will likely alleviate your fears (particularly in light of the fact that I’m posting my energy usage data on a blog). In a later post, I’ll show you more about my data (in the hopes that you show me yours).&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/BGE-Smart-Meter-Data&quot;&gt;BGE Smart Meters&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on March 10, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meter-Data&quot;&gt;BGE Smart Meters&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on March 15, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[First Cut Goalkeeper Stats]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/GK-performance-tables" />
-  <id>http://localhost:4000/articles/GK-performance-tables</id>
-  <updated>2014-03-05T00:00:00-00:00</updated>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/GK-performance-tables" />
+  <id>http://jtelszasz.github.io/blog_project/articles/GK-performance-tables</id>
+  <updated>2014-03-15T00:00:00-00:00</updated>
   <published>2014-03-05T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -123,7 +129,7 @@
 &lt;h2 id=&quot;saves&quot;&gt;Saves&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Saves_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Saves_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper saves tables, 2011-2012 season .&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -138,22 +144,22 @@
 &lt;h2 id=&quot;distribution&quot;&gt;Distribution&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;As in all of these top level stats, the distribution numbers are confounded as well. I think team tactics has a pretty big role to play here. For a possession team, a goalkeeper is going to be picking out short balls and throws and trying to keep his numbers up. Other more direct or counter-attacking sides will want a goalkeeper to quickly get long balls down the field or to the flanks, possibly with lesser rates of success.&lt;/p&gt;
 
-&lt;p&gt;I definitely want to do some more work on distribution. You won’t get through a televised broadcast of a Premier League match without a former (field) player (probably Mr. Chip-On-My-God-Damn-Shoulder Eric Wynalda or Robbie Mustoe) decrying the need for the &lt;em&gt;modern&lt;/em&gt; goalkeeper to have the ability to assist a team in maintaining possession, meaning make simple passes to nearby defenders while under pressure. Besides just these distribution numbers (which are for distibution after a keeper catches), passing numbers should play a heavy role in determining the ability of a goalkeeper.&lt;/p&gt;
+&lt;p&gt;I definitely want to do some more work on distribution. You won’t get through a televised broadcast of a Premier League match without a former (field) player (probably Eric I-Need-Salsa-For-The-Big-Ass-Chip-On-My-God-Damn-Shoulder Wynalda or Robbie Mustoe) decrying the need for the &lt;em&gt;modern&lt;/em&gt; goalkeeper to be comfortable on the ball - to assist a team in maintaining possession, meaning make simple passes to nearby defenders while under pressure. Besides just these distribution numbers (which are for distibution after a keeper catches), passing numbers should play a heavy role in determining the ability of a goalkeeper.&lt;/p&gt;
 
 &lt;h2 id=&quot;crosses&quot;&gt;Crosses&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;De Gea and Reina quite clearly prefer punching or not challenging for the ball at all to catching. De Gea got quite a bit of flack in this, his first season in the Premier League. From a goalkeeper’s prospective, I’d be flaky as all get out on crosses if I started in the Premier League at 23 (granted he had XXX seasons at Atletico Madrid before). It’s much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it’s hard to duplicate high pressure, game-like cross scenarios in training.&lt;/p&gt;
+&lt;p&gt;De Gea and Reina quite clearly prefer punching or not challenging for the ball at all to catching. De Gea got quite a bit of flack in this, his first season in the Premier League. From a goalkeeper’s prospective, I’d be flaky as all get out on crosses if I started in the Premier League at 23 (granted he was a product of the Atletico Madrid youth academy and was first choice for the first team for about a season and a half there). It’s much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it’s hard to duplicate high pressure, game-like cross scenarios in training.&lt;/p&gt;
 
 &lt;p&gt;What these numbers don’t tell you is whether a punch was successful in clearing the ball out of danger or not. (For that we’d need to dig pretty deeply into X-Y coordinate data from another dataset.) Obviously if a keeper punches but the ball slips out to an opposing player for a shot, the keeper hasn’t really effectively dealt with the cross.&lt;/p&gt;
 
@@ -162,7 +168,7 @@
 &lt;p&gt;Anyways, hope some of these numbers are fun or useful to you. I’m definitely having fun digging into this dataset. &lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/GK-performance-tables&quot;&gt;First Cut Goalkeeper Stats&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/GK-performance-tables&quot;&gt;First Cut Goalkeeper Stats&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

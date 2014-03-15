@@ -2,7 +2,7 @@
 layout: post
 title: First Cut Goalkeeper Stats
 description: "Introduction to the MCFC/Opta data and some initial stats for keepers."
-modified: 2014-03-05
+modified: 2014-03-15
 category: articles
 tags: [soccer, mcfc-data, goalkeeper]
 image:
@@ -53,7 +53,7 @@ You also see the performance of Mignolet and Begovic starting to stand out. Both
 
 As in all of these top level stats, the distribution numbers are confounded as well. I think team tactics has a pretty big role to play here. For a possession team, a goalkeeper is going to be picking out short balls and throws and trying to keep his numbers up. Other more direct or counter-attacking sides will want a goalkeeper to quickly get long balls down the field or to the flanks, possibly with lesser rates of success.
 
-I definitely want to do some more work on distribution. You won't get through a televised broadcast of a Premier League match without a former (field) player (probably Mr. Chip-On-My-God-Damn-Shoulder Eric Wynalda or Robbie Mustoe) decrying the need for the *modern* goalkeeper to have the ability to assist a team in maintaining possession, meaning make simple passes to nearby defenders while under pressure. Besides just these distribution numbers (which are for distibution after a keeper catches), passing numbers should play a heavy role in determining the ability of a goalkeeper.
+I definitely want to do some more work on distribution. You won't get through a televised broadcast of a Premier League match without a former (field) player (probably Eric I-Need-Salsa-For-The-Big-Ass-Chip-On-My-God-Damn-Shoulder Wynalda or Robbie Mustoe) decrying the need for the *modern* goalkeeper to be comfortable on the ball - to assist a team in maintaining possession, meaning make simple passes to nearby defenders while under pressure. Besides just these distribution numbers (which are for distibution after a keeper catches), passing numbers should play a heavy role in determining the ability of a goalkeeper.
 
 
 ## Crosses
@@ -63,8 +63,7 @@ I definitely want to do some more work on distribution. You won't get through a 
   <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
 </figure>
 
-
-De Gea and Reina quite clearly prefer punching or not challenging for the ball at all to catching. De Gea got quite a bit of flack in this, his first season in the Premier League. From a goalkeeper's prospective, I'd be flaky as all get out on crosses if I started in the Premier League at 23 (granted he had XXX seasons at Atletico Madrid before). It's much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it's hard to duplicate high pressure, game-like cross scenarios in training.
+De Gea and Reina quite clearly prefer punching or not challenging for the ball at all to catching. De Gea got quite a bit of flack in this, his first season in the Premier League. From a goalkeeper's prospective, I'd be flaky as all get out on crosses if I started in the Premier League at 23 (granted he was a product of the Atletico Madrid youth academy and was first choice for the first team for about a season and a half there). It's much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it's hard to duplicate high pressure, game-like cross scenarios in training.
 
 What these numbers don't tell you is whether a punch was successful in clearing the ball out of danger or not. (For that we'd need to dig pretty deeply into X-Y coordinate data from another dataset.) Obviously if a keeper punches but the ball slips out to an opposing player for a shot, the keeper hasn't really effectively dealt with the cross.
 
