@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://jtelszasz.github.io/blog_project</loc>
+        <loc>http://localhost:4000</loc>
     </url>
     
     
     <url>
-        <loc>http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meter-Data</loc>
+        <loc>http://localhost:4000/articles/BGE-Smart-Meter-Data</loc>
     </url>
     
     <url>
-        <loc>http://jtelszasz.github.io/blog_project/articles/GK-performance-tables</loc>
+        <loc>http://localhost:4000/articles/GK-performance-tables</loc>
     </url>
     
 </urlset>
