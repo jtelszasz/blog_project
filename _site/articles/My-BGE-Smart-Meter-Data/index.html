@@ -1,0 +1,217 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>My Electricity Use &#8211; The Training Set</title>
+<meta name="description" content="First look at my electricity use from BGE smart meters.">
+<meta name="keywords" content="BGE, smart-meters, energy, data, electricity">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My Electricity Use">
+<meta property="og:description" content="First look at my electricity use from BGE smart meters.">
+<meta property="og:url" content="http://localhost:4000/articles/My-BGE-Smart-Meter-Data">
+<meta property="og:site_name" content="The Training Set">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="http://localhost:4000/assets/css/ie.min.css">
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="article" itemscope itemtype="http://schema.org/WebPage">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">The Training Set</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		    <ul>
+		        
+				<li><a href="http://localhost:4000/about/" >About</a></li>
+		        
+				<li><a href="http://localhost:4000/articles/" >Articles</a></li>
+		        
+		        <li><i class="icon-feed"></i> <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed">Feed</a>
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+<div class="image-wrap">
+  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="My Electricity Use feature image" itemprop="primaryImageOfPage">
+  <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
+</div><!-- /.image-wrap -->
+
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <div class="article-author-side">
+    <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Justin Elszasz bio photo"></a>
+<h3>Justin Elszasz</h3>
+<p>Engineering background, indeterminate foreground.</p>
+
+<a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+<a href="http://linkedin.com/in/justinelszasz" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
+
+<a href="http://github.com/jtelszasz" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+  </div>
+  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <div class="headline-wrap">
+      <h1 itemprop="name">My Electricity Use</h1>
+      <h2></h2>
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap" itemprop="text">
+      <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#green-button">Green Button</a></li>
+  <li><a href="#data">Data</a></li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<p>Previously, I laid out what BGE’s smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.</p>
+
+<h2 id="green-button">Green Button</h2>
+
+<p>Green Button is the standard by which utilities are providing data to their customers. It was prompted in 2011 by the U.S. Chief Technology Officer calling on industry to standardize accessibility and data format for customer smart meter data and parallels the <a href="">Blue Button</a> concept for health data. Customers can download their interval usage data and use as they see fit. A customer could provide the data to a solar panel installer to better inform the design of the installation, or the data could be used to develop apps that show opportunities for efficiency upgrades.</p>
+
+<h2 id="data">Data</h2>
+
+<p>I’ve downloaded my data from the first date available (Janurary 18, 2014) through the end of February 28, 2014. I’m able to access hourly electrical consumption in kilowatt-hours, and the file is a clean csv. Shown below are probability distributions over those 6 weeks or so. We have electric resistance heating (not central gas-fired heating) and so our consumption during the winter is quite high.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/MyEnergy_ElecHist.png"><img src="http://localhost:4000/images/MyEnergy_ElecHist.png" /></a>
+  <figcaption>Probability distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
+</figure>
+
+<p>Below is the cumulative distribution. For a given kilowatt-hour usage on the x-axis, the cumulative function gives the probability that an hour’s usage was that quanitity or less.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/MyEnergy_ElecCDF.png"><img src="http://localhost:4000/images/MyEnergy_ElecCDF.png" /></a>
+  <figcaption>Cumulative distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
+</figure>
+
+<p>Either figure shows that there are a concentration of hours spent consuming about 0.5 kilowatt-hours. It may take some weather data to tease out what might be going on there, and I plan to look at the influence of weather next.</p>
+
+<p>Something else to note is how our apartment’s monthly bills have compared to 100 or so of our neighbors. While I thought that </p>
+
+<figure>
+  <a href="http://localhost:4000/images/BGE-dashboard-02.png"><img src="http://localhost:4000/images/BGE-dashboard-02.png" /></a>
+  <figcaption>Comparison of monthly electricity billing data to 100 similar neighbors and 80th percentile in efficiency. (source: www.bge.com)</figcaption>
+</figure>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Justin Elszasz bio photo"></a>
+<h3>Justin Elszasz</h3>
+<p>Engineering background, indeterminate foreground.</p>
+
+<a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+<a href="http://linkedin.com/in/justinelszasz" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
+
+<a href="http://github.com/jtelszasz" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+        </div>
+        <p class="byline"><strong>My Electricity Use</strong> was published on <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">March 16, 2014</time> and last modified on <time datetime="2014-03-16" itemprop="dateModified">March 16, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/articles">View all articles</a>)</small></h4>
+    <ul>
+    
+      
+      
+        
+          
+        
+      
+      
+      <li><a href="http://localhost:4000/articles/BGE-Smart-Meter-Data" title="BGE Smart Meters">BGE Smart Meters</a></li>
+      
+    
+      
+      
+        
+          
+        
+      
+      
+      <li><a href="http://localhost:4000/articles/GK-performance-tables" title="First Cut Goalkeeper Stats">First Cut Goalkeeper Stats</a></li>
+      
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    <span>&copy; 2014 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+	        
+
+</body>
+</html>
