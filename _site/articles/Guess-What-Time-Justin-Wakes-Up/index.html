@@ -5,24 +5,24 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>My Electricity Use &#8211; The Training Set</title>
-<meta name="description" content="First look at my electricity use from BGE smart meters.">
+<title>Guess What Time Justin Wakes Up &#8211; The Training Set</title>
+<meta name="description" content="Exploring smart meter data from BGE.">
 <meta name="keywords" content="BGE, smart-meters, energy, data, electricity">
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My Electricity Use">
-<meta property="og:description" content="First look at my electricity use from BGE smart meters.">
-<meta property="og:url" content="http://localhost:4000/articles/My-BGE-Smart-Meter-Data">
+<meta property="og:title" content="Guess What Time Justin Wakes Up">
+<meta property="og:description" content="Exploring smart meter data from BGE.">
+<meta property="og:url" content="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up">
 <meta property="og:site_name" content="The Training Set">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data">
+<link rel="canonical" href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set Feed">
 
 
@@ -84,7 +84,7 @@
 </div><!-- /.navigation-wrapper -->
 
 <div class="image-wrap">
-  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="My Electricity Use feature image" itemprop="primaryImageOfPage">
+  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="Guess What Time Justin Wakes Up feature image" itemprop="primaryImageOfPage">
   <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
 </div><!-- /.image-wrap -->
 
@@ -104,7 +104,7 @@
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <div class="headline-wrap">
-      <h1 itemprop="name">My Electricity Use</h1>
+      <h1 itemprop="name">Guess What Time Justin Wakes Up</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap" itemprop="text">
@@ -114,37 +114,45 @@
   </header>
 <div id="drawer">
 <ul id="markdown-toc">
-  <li><a href="#green-button">Green Button</a></li>
-  <li><a href="#data">Data</a></li>
+  <li><a href="#the-correct-answer-is">The correct answer is…</a></li>
 </ul>
 
   </div>
 </section>
 <!-- /#table-of-contents -->
 
-<p>Previously, I laid out what BGE’s smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.</p>
+<p>For analysis tools, I’m mainly using Python (in the form of iPython notebooks) with the Pandas module for data analysis (the sklearn module for machine learning later). Suffice it to say it’s rad.  I also use Github, both for my analysis and modeling as well as this blog itself (as you can tell from the current web address), so you’re welcome to peruse or use any of my code from there.</p>
 
-<h2 id="green-button">Green Button</h2>
+<p>Pandas has been great for data analysis and makes things very intuitive and very quick.  As a mechanical engineer, a lot of my previous work was in Matlab.  It of course has its strengths but for data analysis it always took quite a bit of manual data munging, especially when it came to time series. </p>
 
-<p>Green Button is the standard by which utilities are providing data to their customers. It was prompted in 2011 by the U.S. Chief Technology Officer calling on industry to standardize accessibility and data format for customer smart meter data and parallels the <a href="">Blue Button</a> concept for health data. Customers can download their interval usage data and use as they see fit. A customer could provide the data to a solar panel installer to better inform the design of the installation, or the data could be used to develop apps that show opportunities for efficiency upgrades.</p>
+<p>Anyways, using the Python groupby function I can manipulate the time series of my hourly electricity consumption from my BGE smart data.  The data starts from January 18 and I now have a few full months of data.  Below is a quick code snipet of how I’m using groupby in this case.</p>
 
-<h2 id="data">Data</h2>
+<div class="highlight"><pre><code class="python"><span class="c"># elec_and_weather: hourly electricity usage</span>
+<span class="n">elec_and_weather</span><span class="o">.</span><span class="n">groupby</span><span class="p">([(</span><span class="n">elec_and_weather</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">elec_and_weather</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">6</span><span class="p">),</span><span class="n">elec_and_weather</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">hour</span><span class="p">])</span>
+</code></pre></div>
 
-<p>I’ve downloaded my data from the first date available (Janurary 18, 2014) through the end of February 28, 2014. I’m able to access hourly electrical consumption in kilowatt-hours, and the file is a clean csv. Shown below are probability distributions over those 6 weeks or so. We have electric resistance heating (not central gas-fired heating) and so our consumption during the winter is quite high.</p>
+<h2 id="the-correct-answer-is">The correct answer is…</h2>
 
-<figure>
-  <a href="http://localhost:4000/images/MyEnergy_ElecHist.png"><img src="http://localhost:4000/images/MyEnergy_ElecHist.png" /></a>
-  <figcaption>Probability distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
-</figure>
-
-<p>Below is the cumulative distribution. For a given kilowatt-hour usage on the horizontal axis, the cumulative function gives the probability that an hour’s usage was that quanitity or less.</p>
+<p>To arrive at the plot below, I actually first sliced the data by month and then applied the groupby shown above.</p>
 
 <figure>
-  <a href="http://localhost:4000/images/MyEnergy_ElecCDF.png"><img src="http://localhost:4000/images/MyEnergy_ElecCDF.png" /></a>
-  <figcaption>Cumulative distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
+  <a href="http://localhost:4000/images/AvgDays_Elec_Feb_March.png"><img src="http://localhost:4000/images/AvgDays_Elec_Feb_March.png" /></a>
+  <figcaption>Average weekday and weekend electricity consumption for February and March of 2014.</figcaption>
 </figure>
 
-<p>Both figures show that there is a higher number of hours spent consuming about 0.5 kilowatt-hours. It may take some weather data to tease out what might be going on there, and I plan to look at the influence of weather next.</p>
+<p>This is the “guess what time Justin wakes up for work” plot. The coffee pot consumes 900 W, and we typically have it on for about 20 minutes or so, which would amount to a spike of .3 kWh for that hour. The roommate’s hair dryer consumes 1,875 W and she uses it for about 5 minutes (so she claims, I think I want to see data for that), so that would make for about a .15 kWh spike. Of course that’s what I think a typical day looks like. Not every weekday looked like that (if I worked from home, I probably used the french press instead of the coffee maker, and sometimes the roommate showers the night before and so doesn’t blow dry the hair in the morn). Therefore, the 6am peak in the weekday averages is not quite that high. </p>
+
+<p>Since this spike should be strictly due to behavior, we don’t need to look at the difference between February and March.  We can look at the 5am-6am difference over all the weekday samples thusly:</p>
+
+<figure>
+  <a href="http://localhost:4000/images/Wkday_5am6amDiff - Feb_March.png"><img src="http://localhost:4000/images/Wkday_5am6amDiff - Feb_March.png" /></a>
+  <figcaption>5am to 6am difference across all weekday samples.</figcaption>
+</figure>
+
+<p>The average weekday difference between 5am and 6am is .253 kWh.  The 20 minute coffee maker run and the 5 minute blow dryer would amount to .45 kWh.  Looks like that was the case at least a couple of times.</p>
+
+<p>This is a good illustration of privacy concerns around ubiquitous data capture.  Measuring energy consumption is a proxy for measuring human behavior, and while I don’t share a lot of the privacy concerns that many out there do, I can understand why this is problematic.  Suffice it to say, I don’t care that a reader of this blog (are there any?) knows when I wake up (among other things).  Moreover, at larger scales than individual households - say at city block levels - these concerns should start to fade away, as aggregated data can effectively anonymize the information.  </p>
+
 
       <hr />
       <footer role="contentinfo">
@@ -161,7 +169,7 @@
 
 
         </div>
-        <p class="byline"><strong>My Electricity Use</strong> was published on <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">March 16, 2014</time> and last modified on <time datetime="2014-03-27" itemprop="dateModified">March 27, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
+        <p class="byline"><strong>Guess What Time Justin Wakes Up</strong> was published on <time datetime="2014-04-16T00:00:00-04:00" itemprop="datePublished">April 16, 2014</time> and last modified on <time datetime="2014-04-16" itemprop="dateModified">April 16, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   </article>
@@ -179,7 +187,7 @@
         
       
       
-      <li><a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
+      <li><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" title="My Electricity Use">My Electricity Use</a></li>
       
     
       

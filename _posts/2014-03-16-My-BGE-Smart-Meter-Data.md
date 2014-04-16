@@ -2,7 +2,7 @@
 layout: post
 title: My Electricity Use
 description: "First look at my electricity use from BGE smart meters."
-modified: 2014-03-16
+modified: 2014-03-27
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
 image:

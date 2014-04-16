@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Cut Goalkeeper Stats
+title: Goalkeeper Performance Stats
 description: "Introduction to the MCFC/Opta data and some initial stats for keepers."
 modified: 2014-03-15
 category: articles

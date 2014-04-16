@@ -15,7 +15,6 @@ I live in Baltimore and commute to DC for work everyday, and am often asked how 
 
 ## Me
 
-My name is Justin, and by training I'm a mechanical engineer.  I help write energy efficiency policy for the U.S. Department of Energy but am also interested in data analytics and urban planning.  I left a PhD program, and so I use this blog as a means for exploring and researching topics I find interesting.  If you have ideas, data, questions, or problems that you'd like me to explore let me know!
-
+My name is Justin, and by training I'm a mechanical engineer.  I help write energy efficiency policy for the U.S. Department of Energy but am also interested in data analytics and urban planning.  I'm one of the many fabled PhD dropouts, and so I use this blog as a means for exploring and researching topics I find interesting.  If you have ideas, data, questions, or problems hit me up!
 
 [^2]: Fancy avatars provided by [Brandon Mathis](http://brandonmathis.com/projects/fancy-avatars/demo/) under a [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/).
