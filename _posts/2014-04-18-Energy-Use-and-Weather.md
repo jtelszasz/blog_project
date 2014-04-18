@@ -39,7 +39,7 @@ Back to the temperature vs. electricity use question.  To start digging into the
 
 As we'd expect, as the outdoor temperature increases, the electricity use generally decreases.  
 
-## Model
+## Statistical Model
 
 To take a first crack at quantifying the relationship we can use an ordinary least squares regression to try and quantify that relationship.  As is typically the case with Python, someone has already coded the tools necessary so I just have to import the Statsmodels module and use the right tool.
 
@@ -69,6 +69,8 @@ This is what the model actually looks like on top of the data.
 
 So our R^2 shows that 48% of the variation in the electricity use can be explained by the outdoor temperature alone.  The remaining 52% would have to be explained by other variables or natural variability.
 
+# Engineering Model
+
 What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There's a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:
 
 
@@ -82,5 +84,5 @@ What are we saying by assuming that the model should be linear?  That (all else 
 
 If we were to assume that the behavior in the apartment was constant - the same lights were always on, the same devices were always charging, the refrigerator compressor was always running - if we assumed that the thermostat was always set at 70 degrees, and we assumed that the only part of the weather that ever changed was the temperature (humidity and wind were constant) the linear regression model we ran earlier would exactly mirror this equation.  The variation in the electricity consumption would be entirely explained by the change in outdoor temperature, and the slope of the line would be the overall heat transfer coefficient of the apartment (through walls, windows, doors, floors, ceilings, leakage, etc.) multiplied by the square area of the apartment boundary.  By installing higher R-value insulation in the walls or replacing our old drafty windows with triple-glazing, Argon-filled windows, we'd be altering the overall heat transfer coefficient <img src="http://latex.codecogs.com/png.latex?\inline h" alt="h"/> and effectively reducing the slope of the line we fit to the data.  We can also alter the line's slope by changing the thermostat setting; remember, the temperature difference <img src="http://latex.codecogs.com/png.latex?\inline \Delta T" alt="\Delta T"/> we're talking about is the difference between the outdoor and indoor temperatures.
 
-In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I've used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we've begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I'm imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.
+As in all things, there is no true black (statistics) and white (engineering) - there are only grays.  In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I've used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we've begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I'm imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.
 
