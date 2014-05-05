@@ -21,7 +21,7 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-If the goal is to predict the next hour's electricity consumption, a good predictor might be the consumption of the hour (or several hours) immediately prior.  One way to assess whether or not this is through the autocorrelation given by:
+If the goal is to predict the next hour's electricity consumption, a good predictor might be the consumption of the hour (or several hours) immediately prior.  One way to assess whether or not this is the case is through the autocorrelation given by:
 
 <img src="http://latex.codecogs.com/png.latex?R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}  " alt="R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}"/>
 
