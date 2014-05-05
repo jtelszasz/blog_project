@@ -5,13 +5,177 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-04-21T07:46:12-04:00</updated>
+<updated>2014-05-05T17:27:15-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://localhost:4000/</uri>
   <email>jtelszasz@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Starting In On Some Machine Learning]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" />
+  <id>http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines</id>
+  <updated>2014-05-10T00:00:00-00:00</updated>
+  <published>2014-05-10T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email>jtelszasz@gmail.com</email>
+  </author>
+  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#i-thought-we-had-a-model&quot;&gt;I Thought We Had a Model&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#enter-machine-learning&quot;&gt;Enter Machine Learning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#statistical-model&quot;&gt;Statistical Model&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#engineering-model&quot;&gt;Engineering Model&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I’ve since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-thought-we-had-a-model&quot;&gt;I Thought We Had a Model&lt;/h2&gt;
+
+&lt;p&gt;In &lt;a href=&quot;http://localhost:4000/articles/Energy-Use-and-Weather/&quot;&gt;another post&lt;/a&gt; I plotted electricity consumption against outdoor temperature and fit a straight line to the data.  &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Linear ordinary least squares regression model for electricity consumption using outdoor temperature.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Let’s be honest: in terms of predictive capacity, this model sucks.  What if I needed to predict what the electricity consumption would be in the next hour?  The prediction would be on the line - I measure what the outdoor temperature is and read off the corresponding consumption from the blue line.  But look at how far the actual usage is scattered.  Unless I got very lucky, I’d be way off.  (In fact, using Bayesian regression I could quantify that probability, but that’s for another post.)&lt;/p&gt;
+
+&lt;p&gt;Clearly the underlying linear physics, the heat transfer equation below, doesn’t tell the whole story.  It doesn’t capture other aspects of the weather (wind and sun) and human behavior that all influence the amount of electricity consumed.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?Q = hA \Delta T&quot; alt=&quot;Q = hA \Delta T&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;enter-machine-learning&quot;&gt;Enter Machine Learning&lt;/h2&gt;
+
+&lt;p&gt;Certainly there are other simpler modeling approaches I can take, and I’d like to learn more about those as well.  But because Python and Scikit-learn have made it so easy and intuitive, I jumped straight into the deep end with support vector machines.  Support vector machines find an &lt;em&gt;optimal&lt;/em&gt; decision surface or regression model for the training data provided while trying to minimize the complexity of the model (to prevent overfitting).&lt;/p&gt;
+
+&lt;h2 id=&quot;statistical-model&quot;&gt;Statistical Model&lt;/h2&gt;
+
+&lt;p&gt;To take a first crack at quantifying the relationship we can use an ordinary least squares regression to try and quantify that relationship.  As is typically the case with Python, someone has already coded the tools necessary so I just have to import the Statsmodels module and use the right tool.&lt;/p&gt;
+
+&lt;p&gt;Running the following block of code…&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OLS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;USAGE&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;tempF&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;…fits the model to our data and spits out the information about the model.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS_Output.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS_Output.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Ordinary least squares regression model.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is what the model actually looks like on top of the data.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Linear ordinary least squares regression model for electricity consumption using outdoor temperature.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;So our R^2 shows that 48% of the variation in the electricity use can be explained by the outdoor temperature alone.  The remaining 52% would have to be explained by other variables or natural variability.&lt;/p&gt;
+
+&lt;h1 id=&quot;engineering-model&quot;&gt;Engineering Model&lt;/h1&gt;
+
+&lt;p&gt;What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There’s a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?Q = hA \Delta T&quot; alt=&quot;Q = hA \Delta T&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline Q&quot; alt=&quot;Q&quot; /&gt; is a heat flow rate&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline h&quot; alt=&quot;h&quot; /&gt; is a characteristic heat transfer coefficient&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline A&quot; alt=&quot;A&quot; /&gt; is the perpendicular area through which heat is passing&lt;/li&gt;
+  &lt;li&gt;and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline \Delta T&quot; alt=&quot;\Delta T&quot; /&gt; is the temperature difference across the boundary through which heat is being transmitted, in this case outdoor and indoor temperature&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If we were to assume that the behavior in the apartment was constant - the same lights were always on, the same devices were always charging, the refrigerator compressor was always running - if we assumed that the thermostat was always set at 70 degrees, and we assumed that the only part of the weather that ever changed was the temperature (humidity and wind were constant) the linear regression model we ran earlier would exactly mirror this equation.  The variation in the electricity consumption would be entirely explained by the change in outdoor temperature, and the slope of the line would be the overall heat transfer coefficient of the apartment (through walls, windows, doors, floors, ceilings, leakage, etc.) multiplied by the square area of the apartment boundary.  By installing higher R-value insulation in the walls or replacing our old drafty windows with triple-glazing, Argon-filled windows, we’d be altering the overall heat transfer coefficient &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline h&quot; alt=&quot;h&quot; /&gt; and effectively reducing the slope of the line we fit to the data.  We can also alter the line’s slope by changing the thermostat setting; remember, the temperature difference &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline \Delta T&quot; alt=&quot;\Delta T&quot; /&gt; we’re talking about is the difference between the outdoor and indoor temperatures.&lt;/p&gt;
+
+&lt;p&gt;As in all things, there is no true black (statistics) and white (engineering) - there are only grays.  In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I’ve used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we’ve begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I’m imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;Starting In On Some Machine Learning&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on May 10, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Electricity Usage Autocorrelation]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Autocorrelation" />
+  <id>http://localhost:4000/articles/Autocorrelation</id>
+  <updated>2014-05-05T00:00:00-00:00</updated>
+  <published>2014-05-05T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email>jtelszasz@gmail.com</email>
+  </author>
+  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;If the goal is to predict the next hour’s electricity consumption, a good predictor might be the consumption of the hour (or several hours) immediately prior.  One way to assess whether or not this is through the autocorrelation given by:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}  &quot; alt=&quot;R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This measures the covariance between every point and a particular lag (or number of hours before) with respect to the overall variance.  This is calculated for every possible lag (for 1 hour all the way up to the length of the dataset) and plotted.  If the data were completely random, this would be zero at all time lags.  Again, I’m using the BGE smart meter data for my apartment for January 18 through March 31 of 2014.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Autocorrelation.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Autocorrelation.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Electricity consumption autocorrelation.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Confidence intervals of 95% and 99% are also plotted (solid and dashed horizontal lines, respectively) and so points outside these intervals are statistically significant; that is, the null hypothesis that there is no correlation between the data and its a particular lag is rejected.  For the apartment’s electricity data there is statistically significant from 1 hour lag to approximately 500 hours of lag - the previous 20 days of electricity use are correlated with a typical hour’s elecricity use.&lt;/p&gt;
+
+&lt;p&gt;There also appears to be a significant inverse relationship with lag times longer than 600 hours (25 days).  My guess is that this is due to the warming weather between February and March.  This relationship indicates that the electricity consumption for a given hour is typically less than in February - something common sense tells us, but this says that relationship is statistically significant.&lt;/p&gt;
+
+&lt;p&gt;If we want to use history as a means for predicting the next hour of consumption, including the entire history would become unwieldy.  To train  model we’d be using an N x N array for training where N is the number of hours for which we’ve been recording data.  For predicting the next hour, we would need a 1 X N vector of all of the N previous hours.  Instead, it would be more computationally efficient if we could reduce the training data set to N x A where A is a small number of strongly correlated indicator hours, say the past 6 hours or so.  To get at this, I’ve plotted a few example lags against the hour’s electricity consumption.  There’s nothing to say that these relationships &lt;em&gt;must&lt;/em&gt; be linear, but by plotting the scatter plot and checking the R^2 of the linear fit, it’s clear that for the most part the relationship (at least with immediate history) is linear.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Lag plot and linear regression, 1 hour lag.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Lag plot and linear regression, 6 hours lag.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Lag plot and linear regression, 12 hours lag.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Lag plot and linear regression, 24 hours lag.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As expected, as the size of the lag increases, the R^2 decreases, meaning the consumption 1 hour before is more relevant than the consumption 24 hours (or more) immediately prior.  If we want to build a predictive model, including the 1 hour lag would be wise.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Autocorrelation&quot;&gt;Electricity Usage Autocorrelation&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on May 05, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

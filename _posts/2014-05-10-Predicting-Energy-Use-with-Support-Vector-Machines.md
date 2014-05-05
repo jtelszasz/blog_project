@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Energy Use and Weather
-description: "Looking at the correlation between weather and energy (electricity) consumption."
-modified: 2014-04-18
+title: Starting In On Some Machine Learning
+description: "Using a machine learning algorithm for predicting next-hour electricity consumption."
+modified: 2014-05-10
 category: articles
-tags: [BGE, smart-meters, energy, data, electricity]
+tags: [machine-learning, smart-meters, predictive-analytics, electricity, demand-side, support-vector-machine]
 image:
   feature: texture-feature-05.jpg
   credit: Texture Lovers
@@ -21,23 +21,28 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-Stepping back, let's take a look at what the actual time series of the smart meter electricity data looks like for my apartment.  I'll also bring in the hourly outdoor temperature as measured at Baltimore-Washington International Airport (less than 10 miles away as the crow flies).  The data are obtained via the API at <a href='http://www.wunderground.com/weather/api'>Weather Underground</a>.  Again, you can follow along my line (curve, circle, some other obscure geometry) of thinking by taking a look at the <a href='http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy_And_Weather.ipynb?create=1'>iPython notebook</a>.
+As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I've since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.
+
+## I Thought We Had a Model
+
+In <a href="{{ site.url }}/articles/Energy-Use-and-Weather/">another post</a> I plotted electricity consumption against outdoor temperature and fit a straight line to the data.  
 
 <figure>
-  <a href="{{ site.url }}/images/Elec_and_Temp_TS.png"><img src="{{ site.url }}/images/Elec_and_Temp_TS.png"></a>
-  <figcaption>Time series of hourly electricity consumption and outdoor temperature.</figcaption>
+  <a href="{{ site.url }}/images/Elec_and_Temp_OLS.png"><img src="{{ site.url }}/images/Elec_and_Temp_OLS.png"></a>
+  <figcaption>Linear ordinary least squares regression model for electricity consumption using outdoor temperature.</figcaption>
 </figure>
 
-It looks as if there's an inverse relationship between the outdoor temperature and the apartment's electricity consumption.  We'd expect this even in the winter for our apartment due to our use of electric resistance heating.  (This is a minority case as many buildings, whether commercial, multi-family, or single-family residential, burn fossil fuels directly for providing heat.  As a precursor to a potential future analysis I'd like to work on using these data, there's often a debate whether the GHG emissions resulting from electric resistance heating are in fact on par or greater with burning natural gas directly in a furnace on site.  This is due to losses in the electric grid - first the combustion and thermal efficiency of the generation plant itself, then the various lossy inverters required for changing voltages and losses in the transmission lines themselves.  While this is an important question to ask, the broader picture and motivation should be the integration of renewables and storage to provide heat cleanly - electric resistance allows for this integration.)
+Let's be honest: in terms of predictive capacity, this model sucks.  What if I needed to predict what the electricity consumption would be in the next hour?  The prediction would be on the line - I measure what the outdoor temperature is and read off the corresponding consumption from the blue line.  But look at how far the actual usage is scattered.  Unless I got very lucky, I'd be way off.  (In fact, using Bayesian regression I could quantify that probability, but that's for another post.)
 
-Back to the temperature vs. electricity use question.  To start digging into the relationship a bit, we'll start with the scatter plot.
+Clearly the underlying linear physics, the heat transfer equation below, doesn't tell the whole story.  It doesn't capture other aspects of the weather (wind and sun) and human behavior that all influence the amount of electricity consumed.  
 
-<figure>
-  <a href="{{ site.url }}/images/Elec_and_Temp_Scatter.png"><img src="{{ site.url }}/images/Elec_and_Temp_Scatter.png"></a>
-  <figcaption>Scatter plot of hourly electricity consumption and outdoor temperature.</figcaption>
-</figure>
+<img src="http://latex.codecogs.com/png.latex?Q = hA \Delta T" alt="Q = hA \Delta T"/>
 
-As we'd expect, as the outdoor temperature increases, the electricity use generally decreases.  
+## Enter Machine Learning
+
+Certainly there are other simpler modeling approaches I can take, and I'd like to learn more about those as well.  But because Python and Scikit-learn have made it so easy and intuitive, I jumped straight into the deep end with support vector machines.  Support vector machines find an *optimal* decision surface or regression model for the training data provided while trying to minimize the complexity of the model (to prevent overfitting).
+
+
 
 ## Statistical Model
 
