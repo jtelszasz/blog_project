@@ -5,13 +5,71 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-04-18T17:57:49-04:00</updated>
+<updated>2014-05-05T17:49:50-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://localhost:4000/</uri>
   <email>jtelszasz@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Electricity Usage Autocorrelation]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Autocorrelation" />
+  <id>http://localhost:4000/articles/Autocorrelation</id>
+  <updated>2014-05-05T00:00:00-00:00</updated>
+  <published>2014-05-05T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email>jtelszasz@gmail.com</email>
+  </author>
+  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;If the goal is to predict the next hour’s electricity consumption, a good predictor might be the consumption of the hour (or several hours) immediately prior.  One way to assess whether or not this is through the autocorrelation given by:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}  &quot; alt=&quot;R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This measures the covariance between every point and a particular lag (or number of hours before) with respect to the overall variance.  This is calculated for every possible lag (for 1 hour all the way up to the length of the dataset) and plotted.  If the data were completely random, this would be zero at all time lags.  Again, I’m using the BGE smart meter data for my apartment for January 18 through March 31 of 2014.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Autocorrelation.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Autocorrelation.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Electricity consumption autocorrelation.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Confidence intervals of 95% and 99% are also plotted (solid and dashed horizontal lines, respectively) and so points outside these intervals are statistically significant; that is, the null hypothesis that there is no correlation between the data and its a particular lag is rejected.  For the apartment’s electricity data there is statistically significant from 1 hour lag to approximately 500 hours of lag - the previous 20 days of electricity use are correlated with a typical hour’s elecricity use.&lt;/p&gt;
+
+&lt;p&gt;There also appears to be a significant inverse relationship with lag times longer than 600 hours (25 days).  My guess is that this is due to the warming weather between February and March.  This relationship indicates that the electricity consumption for a given hour is typically less than in February - something common sense tells us, but this says that relationship is statistically significant.&lt;/p&gt;
+
+&lt;p&gt;If we want to use history as a means for predicting the next hour of consumption, including the entire history would become unwieldy.  To train  model we’d be using an N x N array for training where N is the number of hours for which we’ve been recording data.  For predicting the next hour, we would need a 1 X N vector of all of the N previous hours.  Instead, it would be more computationally efficient if we could reduce the training data set to N x A where A is a small number of strongly correlated indicator hours, say the past 6 hours or so.  To get at this, I’ve plotted a few example lags against the hour’s electricity consumption.  There’s nothing to say that these relationships &lt;em&gt;must&lt;/em&gt; be linear, but by plotting the scatter plot and checking the R^2 of the linear fit, it’s clear that for the most part the relationship (at least with immediate history) is linear.&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Lag plot and linear regression, 1 hour and 6 hour lag.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Lag plot and linear regression, 12 hour and 24 hour lag.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As expected, as the size of the lag increases, the R^2 decreases, meaning the consumption 1 hour before is more relevant than the consumption 24 hours (or more) immediately prior.  If we want to build a predictive model, including the 1 hour lag would be wise.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Autocorrelation&quot;&gt;Electricity Usage Autocorrelation&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on May 05, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

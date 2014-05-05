@@ -6,6 +6,10 @@
     
     
     <url>
+        <loc>http://localhost:4000/articles/Autocorrelation</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/articles/Energy-Use-and-Weather</loc>
     </url>
     
