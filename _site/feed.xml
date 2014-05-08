@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-05-05T17:27:15-04:00</updated>
+<updated>2014-05-08T12:33:56-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
@@ -34,8 +34,8 @@
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#i-thought-we-had-a-model&quot;&gt;I Thought We Had a Model&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#enter-machine-learning&quot;&gt;Enter Machine Learning&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#statistical-model&quot;&gt;Statistical Model&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#engineering-model&quot;&gt;Engineering Model&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#modeling&quot;&gt;Modeling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#support-vector-regression-with-scikit-learn&quot;&gt;Support Vector Regression with Scikit-learn&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;/div&gt;
@@ -53,59 +53,71 @@
   &lt;figcaption&gt;Linear ordinary least squares regression model for electricity consumption using outdoor temperature.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Let’s be honest: in terms of predictive capacity, this model sucks.  What if I needed to predict what the electricity consumption would be in the next hour?  The prediction would be on the line - I measure what the outdoor temperature is and read off the corresponding consumption from the blue line.  But look at how far the actual usage is scattered.  Unless I got very lucky, I’d be way off.  (In fact, using Bayesian regression I could quantify that probability, but that’s for another post.)&lt;/p&gt;
+&lt;p&gt;Let’s be honest: in terms of predictive capacity, this model sucks.  What if I needed to predict what the electricity consumption would be in the next hour?  The prediction would be on the line - I measure what the outdoor temperature is and read off the corresponding consumption from the blue line.  But look at how far the actual usage is scattered.  Unless I got very lucky, I’d be way off.  (In fact, I think using Bayesian regression I could quantify that probability, but that’s for another post.)&lt;/p&gt;
 
-&lt;p&gt;Clearly the underlying linear physics, the heat transfer equation below, doesn’t tell the whole story.  It doesn’t capture other aspects of the weather (wind and sun) and human behavior that all influence the amount of electricity consumed.  &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?Q = hA \Delta T&quot; alt=&quot;Q = hA \Delta T&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Clearly the linear assumption doesn’t tell the whole story.  It doesn’t capture other aspects of the weather (wind and sun) and especially human behavior that all influence the amount of electricity consumed.  &lt;/p&gt;
 
 &lt;h2 id=&quot;enter-machine-learning&quot;&gt;Enter Machine Learning&lt;/h2&gt;
 
-&lt;p&gt;Certainly there are other simpler modeling approaches I can take, and I’d like to learn more about those as well.  But because Python and Scikit-learn have made it so easy and intuitive, I jumped straight into the deep end with support vector machines.  Support vector machines find an &lt;em&gt;optimal&lt;/em&gt; decision surface or regression model for the training data provided while trying to minimize the complexity of the model (to prevent overfitting).&lt;/p&gt;
+&lt;p&gt;Certainly there are other simpler modeling approaches I can take, and I’d like to learn more about those as well.  But because Python and Scikit-learn have made it so easy and intuitive, I jumped straight into the deep end with support vector machines.  Support vector machines find an &lt;em&gt;optimal&lt;/em&gt; regression or classification model, minimizing both the error on the training data while minimizing the complexity of the model itself so that it will be generalized for new data (prediction).&lt;/p&gt;
 
-&lt;h2 id=&quot;statistical-model&quot;&gt;Statistical Model&lt;/h2&gt;
+&lt;p&gt;Support vector machines can be used for classification or regression.  As with other machine learning algorithms, the model is first “trained” using a (hopefully large) dataset.  The model parameters are optimized until a balance is struck between errors and model simplicity, a balance that is user adjusted.&lt;/p&gt;
 
-&lt;p&gt;To take a first crack at quantifying the relationship we can use an ordinary least squares regression to try and quantify that relationship.  As is typically the case with Python, someone has already coded the tools necessary so I just have to import the Statsmodels module and use the right tool.&lt;/p&gt;
+&lt;p&gt;I should also say very clearly that I’m not breaking any new ground here, in fact &lt;a href=&quot;http://web.eecs.utk.edu/~leparker/publications/Energy-Buildings-2012.pdf&quot;&gt;this paper&lt;/a&gt; compares several algorithms on similar household energy demand data sets to what I’m using (sensor-based time series) and using similar inputs (weather variables, hour of day, workday/holiday indicator).&lt;/p&gt;
 
-&lt;p&gt;Running the following block of code…&lt;/p&gt;
+&lt;h2 id=&quot;modeling&quot;&gt;Modeling&lt;/h2&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OLS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;USAGE&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;tempF&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;p&gt;Based on some of the &lt;a href=&quot;http://localhost:4000/articles/Autocorrelation&quot;&gt;previous explorations of the data&lt;/a&gt;, it looked like one hour’s electricity usage could be a very good predictor of the next hour’s usage.  In fact, it looked like it was a much better indicator than the &lt;a href=&quot;http://localhost:4000/articles/Energy-Use-and-Weather&quot;&gt;outdoor temperature&lt;/a&gt;.  I wonder how far that alone will get us.&lt;/p&gt;
+
+&lt;p&gt;Well, not completely alone.  There are two other easy time-related variables I’d like to include.  One is the hour of the day (1 through 24, though these each need a feature unto themselves to make each hour equal to a categorical 0 or 1) and a field for whether or not the day was a typical work day or not (“not” would include holidays, weekends, and days I worked from home).  I would expect there to be a pattern of electricity usage associated with both of these variables and we can include them at virtually no modeling expense.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/SVM_training_set.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SVM_training_set.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;The training set.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As a training set, I’m using the hourly data between January 18 and March 24.  The testing set will consist of March 25 through March 31.&lt;/p&gt;
+
+&lt;h2 id=&quot;support-vector-regression-with-scikit-learn&quot;&gt;Support Vector Regression with Scikit-learn&lt;/h2&gt;
+
+&lt;p&gt;The Scikit-learn package for Python makes using machine learning algorithms simple and clean.  There is even a preprocessing module that does the scaling/normalization that should be done before building a model.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;preprocessing&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pre&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scaler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pre&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StandardScaler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;X_train_scaled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scaler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;X_test_scaled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scaler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;…fits the model to our data and spits out the information about the model.&lt;/p&gt;
+&lt;p&gt;Then to actually train the support vector regression model, I simply call the &lt;em&gt;fit&lt;/em&gt; function of the SVR class using the training data-target pairs.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;SVR_model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SVR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;rbf&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gamma&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=.&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train_scaled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The kernel &lt;em&gt;rbf&lt;/em&gt; is a radial basis function.  This kernel transforms the data into a higher dimensional space when performing the regression.  This generally results in more robust modelling of nonlinearities.  The &lt;em&gt;C&lt;/em&gt; and &lt;em&gt;gamma&lt;/em&gt; parameters are the user-adjustments I alluded to earlier that allow the model to strike a balance between tightly fitting the training data while keeping the simplest model possible.  For this first test case, I just manually adjusted them by order of magnitude until the &lt;img src=&quot;http://latex.codecogs.com/png.latex?R^2&quot; alt=&quot;R^2&quot; /&gt;  I was getting over the test set was as high as possible.  A better approach would be to do a proper cross-validation that finds the best parameters for the these data.&lt;/p&gt;
+
+&lt;p&gt;Now to generate the prediction over the test data, I just call the &lt;em&gt;predict&lt;/em&gt; function on the &lt;em&gt;SVM_model&lt;/em&gt; object that I created (the trained model).&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;predict_y_array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SVR_model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test_scaled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Since I know what the actual hourly usage was over the testing period, I can calculate an &lt;img src=&quot;http://latex.codecogs.com/png.latex?R^2&quot; alt=&quot;R^2&quot; /&gt; for this testing set, which results in 0.732.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;SVR_model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test_scaled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS_Output.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS_Output.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Ordinary least squares regression model.&lt;/figcaption&gt;
+  &lt;a href=&quot;http://localhost:4000/images/SVM_predict_TS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SVM_predict_TS.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Predicted (SVR, next-hour) and actual hourly electricity usage.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;This is what the model actually looks like on top of the data.&lt;/p&gt;
+&lt;p&gt;It’s important to remember that this entire timespan wasn’t calculated in one go - each hour’s actual usage would have been used to help predict the next hour’s.  We’re always forecasting the next hour consumption in this scenario.&lt;/p&gt;
+
+&lt;p&gt;One way to visualize the accuracy of the predictions is to plot them against the actual values.  If the predictions were 100% accurate, all the points would lie on the 45 degree line shown in black.  It’s a good sign that the points are distributed rather evenly above and below the line; it suggests that there is little bias (systematic under- or over-estimating).  In another post I’ll dig in a little more on evaluating the model.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Linear ordinary least squares regression model for electricity consumption using outdoor temperature.&lt;/figcaption&gt;
+  &lt;a href=&quot;http://localhost:4000/images/SVM_plot_errors.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SVM_plot_errors.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Errors.&lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;p&gt;So our R^2 shows that 48% of the variation in the electricity use can be explained by the outdoor temperature alone.  The remaining 52% would have to be explained by other variables or natural variability.&lt;/p&gt;
-
-&lt;h1 id=&quot;engineering-model&quot;&gt;Engineering Model&lt;/h1&gt;
-
-&lt;p&gt;What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There’s a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?Q = hA \Delta T&quot; alt=&quot;Q = hA \Delta T&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline Q&quot; alt=&quot;Q&quot; /&gt; is a heat flow rate&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline h&quot; alt=&quot;h&quot; /&gt; is a characteristic heat transfer coefficient&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline A&quot; alt=&quot;A&quot; /&gt; is the perpendicular area through which heat is passing&lt;/li&gt;
-  &lt;li&gt;and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline \Delta T&quot; alt=&quot;\Delta T&quot; /&gt; is the temperature difference across the boundary through which heat is being transmitted, in this case outdoor and indoor temperature&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If we were to assume that the behavior in the apartment was constant - the same lights were always on, the same devices were always charging, the refrigerator compressor was always running - if we assumed that the thermostat was always set at 70 degrees, and we assumed that the only part of the weather that ever changed was the temperature (humidity and wind were constant) the linear regression model we ran earlier would exactly mirror this equation.  The variation in the electricity consumption would be entirely explained by the change in outdoor temperature, and the slope of the line would be the overall heat transfer coefficient of the apartment (through walls, windows, doors, floors, ceilings, leakage, etc.) multiplied by the square area of the apartment boundary.  By installing higher R-value insulation in the walls or replacing our old drafty windows with triple-glazing, Argon-filled windows, we’d be altering the overall heat transfer coefficient &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline h&quot; alt=&quot;h&quot; /&gt; and effectively reducing the slope of the line we fit to the data.  We can also alter the line’s slope by changing the thermostat setting; remember, the temperature difference &lt;img src=&quot;http://latex.codecogs.com/png.latex?\inline \Delta T&quot; alt=&quot;\Delta T&quot; /&gt; we’re talking about is the difference between the outdoor and indoor temperatures.&lt;/p&gt;
-
-&lt;p&gt;As in all things, there is no true black (statistics) and white (engineering) - there are only grays.  In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I’ve used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we’ve begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I’m imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.&lt;/p&gt;
 
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;Starting In On Some Machine Learning&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on May 10, 2014.&lt;/p&gt;</content>
