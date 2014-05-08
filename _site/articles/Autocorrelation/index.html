@@ -15,15 +15,15 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Electricity Usage Autocorrelation">
 <meta property="og:description" content="Examining how hourly electricity demand is predicted by previous demand.">
-<meta property="og:url" content="http://localhost:4000/articles/Autocorrelation">
+<meta property="og:url" content="http://jtelszasz.github.io/blog_project/articles/Autocorrelation">
 <meta property="og:site_name" content="The Training Set">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/articles/Autocorrelation">
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set Feed">
+<link rel="canonical" href="http://jtelszasz.github.io/blog_project/articles/Autocorrelation">
+<link href="http://jtelszasz.github.io/blog_project/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set Feed">
 
 
 <!-- http://t.co/dKP3o1e -->
@@ -34,30 +34,30 @@
 <!-- Google Webfonts -->
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
+<link rel="stylesheet" href="http://jtelszasz.github.io/blog_project/assets/css/main.min.css">
 
 <!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" href="http://localhost:4000/assets/css/ie.min.css">
+<link rel="stylesheet" href="http://jtelszasz.github.io/blog_project/assets/css/ie.min.css">
 <![endif]-->
 
 <meta http-equiv="cleartype" content="on">
 
 <!-- Load Modernizr -->
-<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="http://jtelszasz.github.io/blog_project/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<link rel="shortcut icon" href="http://jtelszasz.github.io/blog_project/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<link rel="shortcut icon" href="http://jtelszasz.github.io/blog_project/favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://jtelszasz.github.io/blog_project/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://jtelszasz.github.io/blog_project/images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://jtelszasz.github.io/blog_project/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://jtelszasz.github.io/blog_project/images/apple-touch-icon-144x144-precomposed.png">
 
 </head>
 
@@ -67,32 +67,32 @@
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://localhost:4000">The Training Set</a>
+		<a href="http://jtelszasz.github.io/blog_project">The Training Set</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		    <ul>
 		        
-				<li><a href="http://localhost:4000/about/" >About</a></li>
+				<li><a href="http://jtelszasz.github.io/blog_project/about/" >About</a></li>
 		        
-				<li><a href="http://localhost:4000/articles/" >Articles</a></li>
+				<li><a href="http://jtelszasz.github.io/blog_project/articles/" >Articles</a></li>
 		        
-				<li><a href="http://localhost:4000/the-work/" >The Work</a></li>
+				<li><a href="http://jtelszasz.github.io/blog_project/the-work/" >The Work</a></li>
 		        
-		        <li><i class="icon-feed"></i> <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed">Feed</a>
+		        <li><i class="icon-feed"></i> <a href="http://jtelszasz.github.io/blog_project/feed.xml" title="Atom/RSS feed">Feed</a>
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
 
 <div class="image-wrap">
-  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="Electricity Usage Autocorrelation feature image" itemprop="primaryImageOfPage">
+  <img src="http://jtelszasz.github.io/blog_project/images/texture-feature-05.jpg" alt="Electricity Usage Autocorrelation feature image" itemprop="primaryImageOfPage">
   <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
 </div><!-- /.image-wrap -->
 
 <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
   <div class="article-author-side">
-    <!--<img src="http://localhost:4000/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
+    <!--<img src="http://jtelszasz.github.io/blog_project/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
 <h3>Justin Elszasz</h3>
 <p>Engineering background, indeterminate foreground.</p>
 
@@ -127,7 +127,7 @@
 <p>This measures the covariance between every point and a particular lag (or number of hours before) with respect to the overall variance.  This is calculated for every possible lag (for 1 hour all the way up to the length of the dataset) and plotted.  If the data were completely random, this would be zero at all time lags.  Again, I’m using the BGE smart meter data for my apartment for January 18 through March 31 of 2014.</p>
 
 <figure>
-  <a href="http://localhost:4000/images/Elec_Autocorrelation.png"><img src="http://localhost:4000/images/Elec_Autocorrelation.png" /></a>
+  <a href="http://jtelszasz.github.io/blog_project/images/Elec_Autocorrelation.png"><img src="http://jtelszasz.github.io/blog_project/images/Elec_Autocorrelation.png" /></a>
   <figcaption>Electricity consumption autocorrelation.</figcaption>
 </figure>
 
@@ -138,14 +138,14 @@
 <p>If we want to use history as a means for predicting the next hour of consumption, including the entire history would become unwieldy.  To train  model we’d be using an N x N array for training where N is the number of hours for which we’ve been recording data.  For predicting the next hour, we would need a 1 X N vector of all of the N previous hours.  Instead, it would be more computationally efficient if we could reduce the training data set to N x A where A is a small number of strongly correlated indicator hours, say the past 6 hours or so.  To get at this, I’ve plotted a few example lags against the hour’s electricity consumption.  There’s nothing to say that these relationships <em>must</em> be linear, but by plotting the scatter plot and checking the R^2 of the linear fit, it’s clear that for the most part the relationship (at least with immediate history) is linear.</p>
 
 <figure class="half">
-  <a href="http://localhost:4000/images/Elec_Lag_1hour.png"><img src="http://localhost:4000/images/Elec_Lag_1hour.png" /></a>
-  <a href="http://localhost:4000/images/Elec_Lag_6hour.png"><img src="http://localhost:4000/images/Elec_Lag_6hour.png" /></a>
+  <a href="http://jtelszasz.github.io/blog_project/images/Elec_Lag_1hour.png"><img src="http://jtelszasz.github.io/blog_project/images/Elec_Lag_1hour.png" /></a>
+  <a href="http://jtelszasz.github.io/blog_project/images/Elec_Lag_6hour.png"><img src="http://jtelszasz.github.io/blog_project/images/Elec_Lag_6hour.png" /></a>
   <figcaption>Lag plot and linear regression, 1 hour and 6 hour lag.</figcaption>
 </figure>
 
 <figure class="half">
-  <a href="http://localhost:4000/images/Elec_Lag_12hour.png"><img src="http://localhost:4000/images/Elec_Lag_12hour.png" /></a>
-  <a href="http://localhost:4000/images/Elec_Lag_24hour.png"><img src="http://localhost:4000/images/Elec_Lag_24hour.png" /></a>
+  <a href="http://jtelszasz.github.io/blog_project/images/Elec_Lag_12hour.png"><img src="http://jtelszasz.github.io/blog_project/images/Elec_Lag_12hour.png" /></a>
+  <a href="http://jtelszasz.github.io/blog_project/images/Elec_Lag_24hour.png"><img src="http://jtelszasz.github.io/blog_project/images/Elec_Lag_24hour.png" /></a>
   <figcaption>Lag plot and linear regression, 12 hour and 24 hour lag.</figcaption>
 
 As expected, as the size of the lag increases, the R^2 decreases, meaning the consumption 1 hour before is more relevant than the consumption 24 hours (or more) immediately prior.  If we want to build a predictive model, including the 1 hour lag would be wise.
@@ -161,7 +161,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
       <hr />
       <footer role="contentinfo">
         <div class="article-author-bottom">
-          <!--<img src="http://localhost:4000/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
+          <!--<img src="http://jtelszasz.github.io/blog_project/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
 <h3>Justin Elszasz</h3>
 <p>Engineering background, indeterminate foreground.</p>
 
@@ -173,7 +173,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 
         </div>
-        <p class="byline"><strong>Electricity Usage Autocorrelation</strong> was published on <time datetime="2014-05-05T00:00:00-04:00" itemprop="datePublished">May 05, 2014</time> and last modified on <time datetime="2014-05-05" itemprop="dateModified">May 05, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
+        <p class="byline"><strong>Electricity Usage Autocorrelation</strong> was published on <time datetime="2014-05-05T00:00:00-04:00" itemprop="datePublished">May 05, 2014</time> and last modified on <time datetime="2014-05-05" itemprop="dateModified">May 05, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://jtelszasz.github.io/blog_project/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   </article>
@@ -181,7 +181,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <div class="footer-wrap">
   <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/articles">View all articles</a>)</small></h4>
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://jtelszasz.github.io/blog_project/articles">View all articles</a>)</small></h4>
     <ul>
     
       
@@ -191,7 +191,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
         
       
       
-      <li><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
+      <li><a href="http://jtelszasz.github.io/blog_project/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
       
     
       
@@ -201,7 +201,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
         
       
       
-      <li><a href="http://localhost:4000/articles/Energy-Use-and-Weather" title="Energy Use and Weather">Energy Use and Weather</a></li>
+      <li><a href="http://jtelszasz.github.io/blog_project/articles/Energy-Use-and-Weather" title="Energy Use and Weather">Energy Use and Weather</a></li>
       
     
       
@@ -211,7 +211,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
         
       
       
-      <li><a href="http://localhost:4000/articles/More-Smart-Meter-Data" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
+      <li><a href="http://jtelszasz.github.io/blog_project/articles/More-Smart-Meter-Data" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
       
     
     </ul>
@@ -224,8 +224,8 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 </div><!-- /.footer-wrap -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://jtelszasz.github.io/blog_project/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://jtelszasz.github.io/blog_project/assets/js/scripts.min.js"></script>
 	        
 
 </body>
