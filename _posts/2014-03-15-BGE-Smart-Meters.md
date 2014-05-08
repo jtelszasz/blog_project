@@ -2,7 +2,7 @@
 layout: post
 title: BGE Smart Meters
 description: "BGE roll out of smart meters in Baltimore metro area."
-modified: 2014-03-15
+modified: 2014-05-08
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
 image:
@@ -68,5 +68,4 @@ The disaggregation lends itself to targeted recommendations for how to reduce yo
 
 All in all, this is a good thing. Concerns about radio frequency exposure are rather <a href="http://www.epri.com/abstracts/Pages/ProductAbstract.aspx?ProductId=000000000001021829">unfounded</a> especially when we all carry cell phones in our pockets. If you are someone who has concerns about data privacy, nothing I have to say on the topic will likely alleviate your fears (particularly in light of the fact that I'm posting my energy usage data on a blog). In a later post, I'll show you more about my data (in the hopes that you show me yours).
 
-
-
+UPDATE (05-08-2014): I should mention that the data services and analytics that BGE displays are all powered by <a href='http://www.opower.com/'>OPower</a>, one of the leading smart meter analytics companies out there.
