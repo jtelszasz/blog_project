@@ -6,6 +6,10 @@
     
     
     <url>
+        <loc>http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/articles/Autocorrelation</loc>
     </url>
     
