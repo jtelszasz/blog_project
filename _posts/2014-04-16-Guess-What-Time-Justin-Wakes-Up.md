@@ -34,7 +34,7 @@ elec_and_weather.groupby([(elec_and_weather.index.dayofweek==5)|(elec_and_weathe
 
 {% endhighlight %}
 
-## The correct answer is...
+### The correct answer is...
 
 To arrive at the plot below, I actually first sliced the data by month and then applied the groupby shown above.
 

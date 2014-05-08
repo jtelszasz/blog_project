@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc>http://jtelszasz.github.io/blog_project</loc>
     </url>
     
     
     <url>
-        <loc>http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/Predicting-Energy-Use-with-Support-Vector-Machines</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Autocorrelation</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/Autocorrelation</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Energy-Use-and-Weather</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/Energy-Use-and-Weather</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/More-Smart-Meter-Data</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/More-Smart-Meter-Data</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/Guess-What-Time-Justin-Wakes-Up</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/My-BGE-Smart-Meter-Data</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/My-BGE-Smart-Meter-Data</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/BGE-Smart-Meters</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meters</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/GK-Performance-Stats</loc>
+        <loc>http://jtelszasz.github.io/blog_project/articles/GK-Performance-Stats</loc>
     </url>
     
 </urlset>

@@ -39,7 +39,7 @@ Back to the temperature vs. electricity use question.  To start digging into the
 
 As we'd expect, as the outdoor temperature increases, the electricity use generally decreases.  
 
-## Statistical Model
+### Statistical Model
 
 To take a first crack at quantifying the relationship we can use an ordinary least squares regression to try and quantify that relationship.  As is typically the case with Python, someone has already coded the tools necessary so I just have to import the Statsmodels module and use the right tool.
 
@@ -69,7 +69,7 @@ This is what the model actually looks like on top of the data.
 
 So our R^2 shows that 48% of the variation in the electricity use can be explained by the outdoor temperature alone.  The remaining 52% would have to be explained by other variables or natural variability.
 
-# Engineering Model
+### Engineering Model
 
 What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There's a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:
 

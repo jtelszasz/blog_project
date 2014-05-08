@@ -3,27 +3,27 @@
 <title type="text">The Training Set</title>
 <subtitle type="text">In which a mechanical engineer with historically average statistical skills attempts “data science” in fields in which he is no expert.</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-05-08T12:40:01-04:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://jtelszasz.github.io/blog_project/feed.xml" />
+<link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project" />
+<updated>2014-05-08T12:55:30-04:00</updated>
+<id>http://jtelszasz.github.io/blog_project/</id>
 <author>
   <name>Justin Elszasz</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://jtelszasz.github.io/blog_project/</uri>
   <email>jtelszasz@gmail.com</email>
 </author>
 
 
 <entry>
-  <title type="html"><![CDATA[Starting In On Some Machine Learning]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" />
-  <id>http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines</id>
+  <title type="html"><![CDATA[Forecasting with Machine Learning]]></title>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/Predicting-Energy-Use-with-Support-Vector-Machines" />
+  <id>http://jtelszasz.github.io/blog_project/articles/Predicting-Energy-Use-with-Support-Vector-Machines</id>
   <updated>2014-05-10T00:00:00-00:00</updated>
   <published>2014-05-10T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -44,12 +44,12 @@
 
 &lt;p&gt;As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I’ve since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.&lt;/p&gt;
 
-&lt;h2 id=&quot;i-thought-we-had-a-model&quot;&gt;I Thought We Had a Model&lt;/h2&gt;
+&lt;h3 id=&quot;i-thought-we-had-a-model&quot;&gt;I Thought We Had a Model&lt;/h3&gt;
 
-&lt;p&gt;In &lt;a href=&quot;http://localhost:4000/articles/Energy-Use-and-Weather/&quot;&gt;another post&lt;/a&gt; I plotted electricity consumption against outdoor temperature and fit a straight line to the data.  &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/Energy-Use-and-Weather/&quot;&gt;another post&lt;/a&gt; I plotted electricity consumption against outdoor temperature and fit a straight line to the data.  &lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_OLS.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_OLS.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Linear ordinary least squares regression model for electricity consumption using outdoor temperature.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;p&gt;Clearly the linear assumption doesn’t tell the whole story.  It doesn’t capture other aspects of the weather (wind and sun) and especially human behavior that all influence the amount of electricity consumed.  &lt;/p&gt;
 
-&lt;h2 id=&quot;enter-machine-learning&quot;&gt;Enter Machine Learning&lt;/h2&gt;
+&lt;h3 id=&quot;enter-machine-learning&quot;&gt;Enter Machine Learning&lt;/h3&gt;
 
 &lt;p&gt;Certainly there are other simpler modeling approaches I can take, and I’d like to learn more about those as well.  But because Python and Scikit-learn have made it so easy and intuitive, I jumped straight into the deep end with support vector machines.  Support vector machines find an &lt;em&gt;optimal&lt;/em&gt; regression or classification model, minimizing both the error on the training data while minimizing the complexity of the model itself so that it will be generalized for new data (prediction).&lt;/p&gt;
 
@@ -65,20 +65,20 @@
 
 &lt;p&gt;I should also say very clearly that I’m not breaking any new ground here, in fact &lt;a href=&quot;http://web.eecs.utk.edu/~leparker/publications/Energy-Buildings-2012.pdf&quot;&gt;this paper&lt;/a&gt; compares several algorithms on similar household energy demand data sets to what I’m using (sensor-based time series) and using similar inputs (weather variables, hour of day, workday/holiday indicator).&lt;/p&gt;
 
-&lt;h2 id=&quot;modeling&quot;&gt;Modeling&lt;/h2&gt;
+&lt;h3 id=&quot;modeling&quot;&gt;Modeling&lt;/h3&gt;
 
-&lt;p&gt;Based on some of the &lt;a href=&quot;http://localhost:4000/articles/Autocorrelation&quot;&gt;previous explorations of the data&lt;/a&gt;, it looked like one hour’s electricity usage could be a very good predictor of the next hour’s usage.  In fact, it looked like it was a much better indicator than the &lt;a href=&quot;http://localhost:4000/articles/Energy-Use-and-Weather&quot;&gt;outdoor temperature&lt;/a&gt;.  I wonder how far that alone will get us.&lt;/p&gt;
+&lt;p&gt;Based on some of the &lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/Autocorrelation&quot;&gt;previous explorations of the data&lt;/a&gt;, it looked like one hour’s electricity usage could be a very good predictor of the next hour’s usage.  In fact, it looked like it was a much better indicator than the &lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/Energy-Use-and-Weather&quot;&gt;outdoor temperature&lt;/a&gt;.  I wonder how far that alone will get us.&lt;/p&gt;
 
 &lt;p&gt;Well, not completely alone.  There are two other easy time-related variables I’d like to include.  One is the hour of the day (1 through 24, though these each need a feature unto themselves to make each hour equal to a categorical 0 or 1) and a field for whether or not the day was a typical work day or not (“not” would include holidays, weekends, and days I worked from home).  I would expect there to be a pattern of electricity usage associated with both of these variables and we can include them at virtually no modeling expense.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/SVM_training_set.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SVM_training_set.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/SVM_training_set.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/SVM_training_set.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;The training set.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;As a training set, I’m using the hourly data between January 18 and March 24.  The testing set will consist of March 25 through March 31.&lt;/p&gt;
 
-&lt;h2 id=&quot;support-vector-regression-with-scikit-learn&quot;&gt;Support Vector Regression with Scikit-learn&lt;/h2&gt;
+&lt;h3 id=&quot;support-vector-regression-with-scikit-learn&quot;&gt;Support Vector Regression with Scikit-learn&lt;/h3&gt;
 
 &lt;p&gt;The Scikit-learn package for Python makes using machine learning algorithms simple and clean.  There is even a preprocessing module that does the scaling/normalization that should be done before building a model.&lt;/p&gt;
 
@@ -106,7 +106,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/SVM_predict_TS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SVM_predict_TS.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/SVM_predict_TS.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/SVM_predict_TS.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Predicted (SVR, next-hour) and actual hourly electricity usage.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -115,25 +115,25 @@
 &lt;p&gt;One way to visualize the accuracy of the predictions is to plot them against the actual values.  If the predictions were 100% accurate, all the points would lie on the 45 degree line shown in black.  It’s a good sign that the points are distributed rather evenly above and below the line; it suggests that there is little bias (systematic under- or over-estimating).  In another post I’ll dig in a little more on evaluating the model.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/SVM_plot_errors.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SVM_plot_errors.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/SVM_plot_errors.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/SVM_plot_errors.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Errors.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;Starting In On Some Machine Learning&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on May 10, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;Forecasting with Machine Learning&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on May 10, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Electricity Usage Autocorrelation]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Autocorrelation" />
-  <id>http://localhost:4000/articles/Autocorrelation</id>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/Autocorrelation" />
+  <id>http://jtelszasz.github.io/blog_project/articles/Autocorrelation</id>
   <updated>2014-05-05T00:00:00-00:00</updated>
   <published>2014-05-05T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -157,7 +157,7 @@ If the goal is to predict the next hour’s electricity consumption, a good pred
 &lt;p&gt;This measures the covariance between every point and a particular lag (or number of hours before) with respect to the overall variance.  This is calculated for every possible lag (for 1 hour all the way up to the length of the dataset) and plotted.  If the data were completely random, this would be zero at all time lags.  Again, I’m using the BGE smart meter data for my apartment for January 18 through March 31 of 2014.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Autocorrelation.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Autocorrelation.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Autocorrelation.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Autocorrelation.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Electricity consumption autocorrelation.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -169,33 +169,33 @@ If the goal is to predict the next hour’s electricity consumption, a good pred
 
 &lt;p&gt;«««&amp;lt; HEAD
 &lt;figure class=&quot;half&quot;&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot; /&gt;&lt;/a&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/p&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_1hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_1hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_6hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_6hour.png&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;figcaption&gt;Lag plot and linear regression, 1 hour and 6 hour lag.&lt;/figcaption&gt;
 &lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot; /&gt;&lt;/a&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_12hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_12hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_24hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_24hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Lag plot and linear regression, 12 hour and 24 hour lag.&lt;/figcaption&gt;
 =======
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_1hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_1hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_1hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Lag plot and linear regression, 1 hour lag.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_6hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_6hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_6hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Lag plot and linear regression, 6 hours lag.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_12hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_12hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_12hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Lag plot and linear regression, 12 hours lag.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_Lag_24hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_24hour.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_Lag_24hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Lag plot and linear regression, 24 hours lag.&lt;/figcaption&gt;
 &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; body-of-work
 &lt;/figure&gt;
@@ -210,20 +210,20 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 &lt;/figure&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Autocorrelation&quot;&gt;Electricity Usage Autocorrelation&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on May 05, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/Autocorrelation&quot;&gt;Electricity Usage Autocorrelation&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on May 05, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Energy Use and Weather]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Energy-Use-and-Weather" />
-  <id>http://localhost:4000/articles/Energy-Use-and-Weather</id>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/Energy-Use-and-Weather" />
+  <id>http://jtelszasz.github.io/blog_project/articles/Energy-Use-and-Weather</id>
   <updated>2014-04-18T00:00:00-00:00</updated>
   <published>2014-04-18T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -243,7 +243,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;Stepping back, let’s take a look at what the actual time series of the smart meter electricity data looks like for my apartment.  I’ll also bring in the hourly outdoor temperature as measured at Baltimore-Washington International Airport (less than 10 miles away as the crow flies).  The data are obtained via the API at &lt;a href=&quot;http://www.wunderground.com/weather/api&quot;&gt;Weather Underground&lt;/a&gt;.  Again, you can follow along my line (curve, circle, some other obscure geometry) of thinking by taking a look at the &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy_And_Weather.ipynb?create=1&quot;&gt;iPython notebook&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_TS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_TS.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_TS.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_TS.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Time series of hourly electricity consumption and outdoor temperature.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -252,13 +252,13 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;Back to the temperature vs. electricity use question.  To start digging into the relationship a bit, we’ll start with the scatter plot.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_Scatter.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_Scatter.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_Scatter.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_Scatter.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Scatter plot of hourly electricity consumption and outdoor temperature.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;As we’d expect, as the outdoor temperature increases, the electricity use generally decreases.  &lt;/p&gt;
 
-&lt;h2 id=&quot;statistical-model&quot;&gt;Statistical Model&lt;/h2&gt;
+&lt;h3 id=&quot;statistical-model&quot;&gt;Statistical Model&lt;/h3&gt;
 
 &lt;p&gt;To take a first crack at quantifying the relationship we can use an ordinary least squares regression to try and quantify that relationship.  As is typically the case with Python, someone has already coded the tools necessary so I just have to import the Statsmodels module and use the right tool.&lt;/p&gt;
 
@@ -272,20 +272,20 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;…fits the model to our data and spits out the information about the model.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS_Output.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS_Output.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_OLS_Output.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_OLS_Output.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Ordinary least squares regression model.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;This is what the model actually looks like on top of the data.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Elec_and_Temp_OLS.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_OLS.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Elec_and_Temp_OLS.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Linear ordinary least squares regression model for electricity consumption using outdoor temperature.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;So our R^2 shows that 48% of the variation in the electricity use can be explained by the outdoor temperature alone.  The remaining 52% would have to be explained by other variables or natural variability.&lt;/p&gt;
 
-&lt;h1 id=&quot;engineering-model&quot;&gt;Engineering Model&lt;/h1&gt;
+&lt;h3 id=&quot;engineering-model&quot;&gt;Engineering Model&lt;/h3&gt;
 
 &lt;p&gt;What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There’s a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:&lt;/p&gt;
 
@@ -303,20 +303,20 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;As in all things, there is no true black (statistics) and white (engineering) - there are only grays.  In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I’ve used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we’ve begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I’m imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Energy-Use-and-Weather&quot;&gt;Energy Use and Weather&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on April 18, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/Energy-Use-and-Weather&quot;&gt;Energy Use and Weather&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on April 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[More Smart Meter Data...]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/More-Smart-Meter-Data" />
-  <id>http://localhost:4000/articles/More-Smart-Meter-Data</id>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/More-Smart-Meter-Data" />
+  <id>http://jtelszasz.github.io/blog_project/articles/More-Smart-Meter-Data</id>
   <updated>2014-04-17T00:00:00-00:00</updated>
   <published>2014-04-17T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -329,38 +329,38 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;/section&gt;
 &lt;!-- /#table-of-contents --&gt;
 
-&lt;p&gt;In an  &lt;a href=&quot;http://localhost:4000/articles/My-BGE-Smart-Meter-Data&quot;&gt;earlier post&lt;/a&gt;, I showed initial descriptive plots for my electricity use.  Now that we have some more data, we can break these up to see differences as the spring season progresses.&lt;/p&gt;
+&lt;p&gt;In an  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/My-BGE-Smart-Meter-Data&quot;&gt;earlier post&lt;/a&gt;, I showed initial descriptive plots for my electricity use.  Now that we have some more data, we can break these up to see differences as the spring season progresses.&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-  &lt;a href=&quot;http://localhost:4000/images/ElecHist - Feb2014.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/ElecHist - Feb2014.png&quot; /&gt;&lt;/a&gt;
-  &lt;a href=&quot;http://localhost:4000/images/ElecHist - Mar2014.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/ElecHist - Mar2014.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/ElecHist - Feb2014.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/ElecHist - Feb2014.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/ElecHist - Mar2014.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/ElecHist - Mar2014.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Histograms for February and March 2014 electricity consumption.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Another way of showing the difference in each month’s energy consumption patterns would be the cumulative distribution.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/ElecCDF - Feb_March2014.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/ElecCDF - Feb_March2014.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/ElecCDF - Feb_March2014.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/ElecCDF - Feb_March2014.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Histogram for February 2014 electricity consumption.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The plot above shows that for a given hourly kilowatt-hour amount, the proportion of hours at which the consumption was that amount or less is substantially higher in March than in April; of course, we’d expect that with the warmer weather.  For example, about 18% of the time in February the hourly consumption was 1 kilowatt-hour or less, while in March it was the case about 70% of the time.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/More-Smart-Meter-Data&quot;&gt;More Smart Meter Data...&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on April 17, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/More-Smart-Meter-Data&quot;&gt;More Smart Meter Data...&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on April 17, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Guess What Time Justin Wakes Up]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" />
-  <id>http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up</id>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/Guess-What-Time-Justin-Wakes-Up" />
+  <id>http://jtelszasz.github.io/blog_project/articles/Guess-What-Time-Justin-Wakes-Up</id>
   <updated>2014-04-16T00:00:00-00:00</updated>
   <published>2014-04-16T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -386,12 +386,12 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dayofweek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dayofweek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;the-correct-answer-is&quot;&gt;The correct answer is…&lt;/h2&gt;
+&lt;h3 id=&quot;the-correct-answer-is&quot;&gt;The correct answer is…&lt;/h3&gt;
 
 &lt;p&gt;To arrive at the plot below, I actually first sliced the data by month and then applied the groupby shown above.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/AvgDays_Elec_Feb_March.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/AvgDays_Elec_Feb_March.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/AvgDays_Elec_Feb_March.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/AvgDays_Elec_Feb_March.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Average weekday and weekend electricity consumption for February and March of 2014.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -400,7 +400,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;Since this spike should be strictly due to behavior, we don’t need to look at the difference between February and March.  We can look at the 5am-6am difference over all the weekday samples thusly:&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Wkday_5am6amDiff - Feb_March.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Wkday_5am6amDiff - Feb_March.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Wkday_5am6amDiff - Feb_March.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Wkday_5am6amDiff - Feb_March.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;5am to 6am difference across all weekday samples.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -409,20 +409,20 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;This is a good illustration of privacy concerns around ubiquitous data capture.  Measuring energy consumption is a proxy for measuring human behavior, and while I don’t share a lot of the privacy concerns that many out there do, I can understand why this is problematic.  Suffice it to say, I don’t care that a reader of this blog (are there any?) knows when I wake up (among other things).  Moreover, at larger scales than individual households - say at city block levels - these concerns should start to fade away, as aggregated data can effectively anonymize the information.  &lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;Guess What Time Justin Wakes Up&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on April 16, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;Guess What Time Justin Wakes Up&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on April 16, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[My Electricity Use]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" />
-  <id>http://localhost:4000/articles/My-BGE-Smart-Meter-Data</id>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/My-BGE-Smart-Meter-Data" />
+  <id>http://jtelszasz.github.io/blog_project/articles/My-BGE-Smart-Meter-Data</id>
   <updated>2014-03-27T00:00:00-00:00</updated>
   <published>2014-03-16T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -441,42 +441,42 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 &lt;p&gt;Previously, I laid out what BGE’s smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.&lt;/p&gt;
 
-&lt;h2 id=&quot;green-button&quot;&gt;Green Button&lt;/h2&gt;
+&lt;h3 id=&quot;green-button&quot;&gt;Green Button&lt;/h3&gt;
 
 &lt;p&gt;Green Button is the standard by which utilities are providing data to their customers. It was prompted in 2011 by the U.S. Chief Technology Officer calling on industry to standardize accessibility and data format for customer smart meter data and parallels the &lt;a href=&quot;&quot;&gt;Blue Button&lt;/a&gt; concept for health data. Customers can download their interval usage data and use as they see fit. A customer could provide the data to a solar panel installer to better inform the design of the installation, or the data could be used to develop apps that show opportunities for efficiency upgrades.&lt;/p&gt;
 
-&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+&lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
 
 &lt;p&gt;I’ve downloaded my data from the first date available (Janurary 18, 2014) through the end of February 28, 2014. I’m able to access hourly electrical consumption in kilowatt-hours, and the file is a clean csv. Shown below are probability distributions over those 6 weeks or so. We have electric resistance heating (not central gas-fired heating) and so our consumption during the winter is quite high.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/MyEnergy_ElecHist.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/MyEnergy_ElecHist.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/MyEnergy_ElecHist.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/MyEnergy_ElecHist.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Probability distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Below is the cumulative distribution. For a given kilowatt-hour usage on the horizontal axis, the cumulative function gives the probability that an hour’s usage was that quanitity or less.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/MyEnergy_ElecCDF.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/MyEnergy_ElecCDF.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/MyEnergy_ElecCDF.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/MyEnergy_ElecCDF.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Cumulative distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Both figures show that there is a higher number of hours spent consuming about 0.5 kilowatt-hours. It may take some weather data to tease out what might be going on there, and I plan to look at the influence of weather next.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/My-BGE-Smart-Meter-Data&quot;&gt;My Electricity Use&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on March 16, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/My-BGE-Smart-Meter-Data&quot;&gt;My Electricity Use&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on March 16, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[BGE Smart Meters]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/BGE-Smart-Meters" />
-  <id>http://localhost:4000/articles/BGE-Smart-Meters</id>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meters" />
+  <id>http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meters</id>
   <updated>2014-03-15T00:00:00-00:00</updated>
   <published>2014-03-15T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -501,37 +501,37 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 &lt;p&gt;One interesting note on the BGE data privacy policy and a bit of wishful thinking: while BGE can’t disclose or sell individual customer interval data, the &lt;a href=&quot;http://www.bge.com/smartenergy/smartgrid/Pages/Data-Privacy-Policy.aspx&quot;&gt;BGE website&lt;/a&gt; states “Smart Meter interval energy use data that is not specific to the customer, such as combined data, is not included within the scope of this policy.” I think BGE could get ahead of the curve by providing block (or similar aggregate) data in the name of transparency and perhaps as a community service. As they indicate, aggregate data is not covered by the data privacy policy; moreover, the City of Baltimore has followed the suit of many other major cities by establishing an &lt;a href=&quot;https://data.baltimorecity.gov&quot;&gt;open data repository.&lt;/a&gt; Perhaps BGE and the city could work together to post aggregated interval data to Open Baltimore.&lt;/p&gt;
 
-&lt;h2 id=&quot;comparisons-to-neighbors&quot;&gt;Comparisons to Neighbors&lt;/h2&gt;
+&lt;h3 id=&quot;comparisons-to-neighbors&quot;&gt;Comparisons to Neighbors&lt;/h3&gt;
 
 &lt;p&gt;The BGE website does slightly more than just show you historical use, with the most prominent feature being the ability to compare your use to a sample of comparable neighbors. There have been many studies regarding energy consumption reductions as a result of real-time monitoring, feedback, and contextual comparisons (see &lt;a href=&quot;http://www1.eere.energy.gov/seeaction/pdfs/customerinformation_behavioral_status_summary.pdf &quot;&gt;here&lt;/a&gt;). In fact, a couple friends and a former professor did &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0378778813003782&quot;&gt;some work&lt;/a&gt; on the topic.&lt;/p&gt;
 
 &lt;p&gt;In keeping with the data policy exclusion for aggregate data, they use an average of a hundred or so customers that share your characteristics, all within a two or three mile radius of your house (ours average 0.4 miles from us). The initial comparison with which I was presented was way off base because our heating comes from electric resistance, but once I answered a few questions on the website about what appliances we have and the like, the comparison made much more sense (I presume we’re being compared against neighbors who all have electric resistance heating).&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-01.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-01.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-01.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-01.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;February comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient. (source: www.bge.com)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-02.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-02.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-02.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-02.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient (based on billing data, since smart meters weren&#39;t widespread for the shown timeframe). (source: www.bge.com)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Of course, the comparisons of your monthly energy use could have been done with the monthly billing they would have anyways, without the use of smart meters. Using the smart meter data, it looks like soon we’ll be able to compare hour-to-hour use (lending what I would presume will be a more real-time competition feel to things) but this isn’t operational yet. They are, however, displaying the hourly data along with the outdoor dry-bulb temperature for reference.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-04.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-04.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-04.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-04.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Hourly electricity consumption (kilowatt-hours) and outdoor temperature (degrees Fahrenheit) for March 11, 2014. (source: www.bge.com)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;My roommate was home this day. The drop in consumption in the afternoon could be from her leaving the house and shutting off lights and her computer, the weather, or both.  Later I’ll be looking into our apartment’s response to the weather so it might become a bit more apparent then.&lt;/p&gt;
 
-&lt;h2 id=&quot;disaggregation-and-savings-suggestions&quot;&gt;Disaggregation and Savings Suggestions&lt;/h2&gt;
+&lt;h3 id=&quot;disaggregation-and-savings-suggestions&quot;&gt;Disaggregation and Savings Suggestions&lt;/h3&gt;
 
 &lt;p&gt;Another feature they provide is an estimated breakdown of your electricity consumption into categories (heating, lighting, etc.) Currently, these would have to be static estimates based solely on the answers I provided about our appliances and the like. Farther down the road, the hourly data will have a larger role to play here. Electricity consumption (and energy use in general) is largely a function of two things: the weather and human behavior, both of which can change drastically hour to hour. They’ll likely need about a year’s worth of data to be able to tease out the portion of energy use that is your behavior and the portion that is your building’s response to weather. This is because whatever algorithm they are using to disaggregate weather from behavior will need to have seen your electricity consumption during all climates.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/BGE-dashboard-06.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/BGE-dashboard-06.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-06.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/BGE-dashboard-06.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Estimated breakdown of electricity consumption based on customer and building characteristics. Also shown, suggestions for reducing usage. (source: www.bge.com)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -540,20 +540,20 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;All in all, this is a good thing. Concerns about radio frequency exposure are rather &lt;a href=&quot;http://www.epri.com/abstracts/Pages/ProductAbstract.aspx?ProductId=000000000001021829&quot;&gt;unfounded&lt;/a&gt; especially when we all carry cell phones in our pockets. If you are someone who has concerns about data privacy, nothing I have to say on the topic will likely alleviate your fears (particularly in light of the fact that I’m posting my energy usage data on a blog). In a later post, I’ll show you more about my data (in the hopes that you show me yours).&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/BGE-Smart-Meters&quot;&gt;BGE Smart Meters&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on March 15, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/BGE-Smart-Meters&quot;&gt;BGE Smart Meters&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on March 15, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Goalkeeper Performance Stats]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/GK-Performance-Stats" />
-  <id>http://localhost:4000/articles/GK-Performance-Stats</id>
+  <link rel="alternate" type="text/html" href="http://jtelszasz.github.io/blog_project/articles/GK-Performance-Stats" />
+  <id>http://jtelszasz.github.io/blog_project/articles/GK-Performance-Stats</id>
   <updated>2014-03-15T00:00:00-00:00</updated>
   <published>2014-03-05T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://jtelszasz.github.io/blog_project</uri>
     <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -579,10 +579,10 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 &lt;p&gt;This would also be a good time to mention the “P90” measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at &lt;a href=&quot;http://www.statsbomb.com&quot; title=&quot;Statsbomb&quot;&gt;Statsbomb&lt;/a&gt; (which, if anything I’m talking about is interesting to you, you &lt;em&gt;have&lt;/em&gt; to check out).&lt;/p&gt;
 
-&lt;h2 id=&quot;saves&quot;&gt;Saves&lt;/h2&gt;
+&lt;h3 id=&quot;saves&quot;&gt;Saves&lt;/h3&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Saves_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Saves_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Saves_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper saves tables, 2011-2012 season .&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -594,10 +594,10 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 &lt;p&gt;You also see the performance of Mignolet and Begovic starting to stand out. Both were with bottom half of the table teams and were likely facing many more decent chances than a Hart or a De Gea. Of course, Mignolet is now Liverpool’s starter and Belgium’s number two, and Begovic (despite a howler or two and a current injury) is highly touted.&lt;/p&gt;
 
-&lt;h2 id=&quot;distribution&quot;&gt;Distribution&lt;/h2&gt;
+&lt;h3 id=&quot;distribution&quot;&gt;Distribution&lt;/h3&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Dist_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -605,10 +605,10 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 &lt;p&gt;I definitely want to do some more work on distribution. You won’t get through a televised broadcast of a Premier League match without a former (field) player (probably Eric I-Need-Salsa-For-The-Big-Ass-Chip-On-My-God-Damn-Shoulder Wynalda or Robbie Mustoe) decrying the need for the &lt;em&gt;modern&lt;/em&gt; goalkeeper to be comfortable on the ball - to assist a team in maintaining possession, meaning make simple passes to nearby defenders while under pressure. Besides just these distribution numbers (which are for distibution after a keeper catches), passing numbers should play a heavy role in determining the ability of a goalkeeper.&lt;/p&gt;
 
-&lt;h2 id=&quot;crosses&quot;&gt;Crosses&lt;/h2&gt;
+&lt;h3 id=&quot;crosses&quot;&gt;Crosses&lt;/h3&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot;&gt;&lt;img src=&quot;http://jtelszasz.github.io/blog_project/images/Cross_Table.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Goalkeeper distribution tables, 2011-2012 season.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -621,7 +621,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;Anyways, hope some of these numbers are fun or useful to you. I’m definitely having fun digging into this dataset. &lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/GK-Performance-Stats&quot;&gt;Goalkeeper Performance Stats&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://jtelszasz.github.io/blog_project/articles/GK-Performance-Stats&quot;&gt;Goalkeeper Performance Stats&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://jtelszasz.github.io/blog_project&quot;&gt;The Training Set&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

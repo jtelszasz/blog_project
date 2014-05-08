@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starting In On Some Machine Learning
+title: Forecasting with Machine Learning
 description: "Using a machine learning algorithm for predicting next-hour electricity consumption."
 modified: 2014-05-10
 category: articles
@@ -23,7 +23,7 @@ image:
 
 As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I've since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.
 
-## I Thought We Had a Model
+### I Thought We Had a Model
 
 In <a href="{{ site.url }}/articles/Energy-Use-and-Weather/">another post</a> I plotted electricity consumption against outdoor temperature and fit a straight line to the data.  
 
@@ -36,7 +36,7 @@ Let's be honest: in terms of predictive capacity, this model sucks.  What if I n
 
 Clearly the linear assumption doesn't tell the whole story.  It doesn't capture other aspects of the weather (wind and sun) and especially human behavior that all influence the amount of electricity consumed.  
 
-## Enter Machine Learning
+### Enter Machine Learning
 
 Certainly there are other simpler modeling approaches I can take, and I'd like to learn more about those as well.  But because Python and Scikit-learn have made it so easy and intuitive, I jumped straight into the deep end with support vector machines.  Support vector machines find an *optimal* regression or classification model, minimizing both the error on the training data while minimizing the complexity of the model itself so that it will be generalized for new data (prediction).
 
@@ -44,7 +44,7 @@ Support vector machines can be used for classification or regression.  As with o
 
 I should also say very clearly that I'm not breaking any new ground here, in fact <a href='http://web.eecs.utk.edu/~leparker/publications/Energy-Buildings-2012.pdf'>this paper</a> compares several algorithms on similar household energy demand data sets to what I'm using (sensor-based time series) and using similar inputs (weather variables, hour of day, workday/holiday indicator).
 
-## Modeling
+### Modeling
 
 Based on some of the <a href='{{ site.url }}/articles/Autocorrelation'>previous explorations of the data</a>, it looked like one hour's electricity usage could be a very good predictor of the next hour's usage.  In fact, it looked like it was a much better indicator than the <a href='{{ site.url }}/articles/Energy-Use-and-Weather'>outdoor temperature</a>.  I wonder how far that alone will get us.
 
@@ -57,7 +57,7 @@ Well, not completely alone.  There are two other easy time-related variables I'd
 
 As a training set, I'm using the hourly data between January 18 and March 24.  The testing set will consist of March 25 through March 31.
 
-## Support Vector Regression with Scikit-learn
+### Support Vector Regression with Scikit-learn
 
 The Scikit-learn package for Python makes using machine learning algorithms simple and clean.  There is even a preprocessing module that does the scaling/normalization that should be done before building a model.
 

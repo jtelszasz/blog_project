@@ -29,7 +29,7 @@ It appears there are two primary functions the smart meters will initially serve
 
 One interesting note on the BGE data privacy policy and a bit of wishful thinking: while BGE can't disclose or sell individual customer interval data, the <a href="http://www.bge.com/smartenergy/smartgrid/Pages/Data-Privacy-Policy.aspx">BGE website</a> states "Smart Meter interval energy use data that is not specific to the customer, such as combined data, is not included within the scope of this policy." I think BGE could get ahead of the curve by providing block (or similar aggregate) data in the name of transparency and perhaps as a community service. As they indicate, aggregate data is not covered by the data privacy policy; moreover, the City of Baltimore has followed the suit of many other major cities by establishing an <a href="https://data.baltimorecity.gov">open data repository.</a> Perhaps BGE and the city could work together to post aggregated interval data to Open Baltimore.
 
-## Comparisons to Neighbors
+### Comparisons to Neighbors
 
 The BGE website does slightly more than just show you historical use, with the most prominent feature being the ability to compare your use to a sample of comparable neighbors. There have been many studies regarding energy consumption reductions as a result of real-time monitoring, feedback, and contextual comparisons (see <a href="http://www1.eere.energy.gov/seeaction/pdfs/customerinformation_behavioral_status_summary.pdf
 ">here</a>). In fact, a couple friends and a former professor did <a href="http://www.sciencedirect.com/science/article/pii/S0378778813003782">some work</a> on the topic.
@@ -55,7 +55,7 @@ Of course, the comparisons of your monthly energy use could have been done with 
 
 My roommate was home this day. The drop in consumption in the afternoon could be from her leaving the house and shutting off lights and her computer, the weather, or both.  Later I'll be looking into our apartment's response to the weather so it might become a bit more apparent then.
 
-## Disaggregation and Savings Suggestions
+### Disaggregation and Savings Suggestions
 
 Another feature they provide is an estimated breakdown of your electricity consumption into categories (heating, lighting, etc.) Currently, these would have to be static estimates based solely on the answers I provided about our appliances and the like. Farther down the road, the hourly data will have a larger role to play here. Electricity consumption (and energy use in general) is largely a function of two things: the weather and human behavior, both of which can change drastically hour to hour. They'll likely need about a year's worth of data to be able to tease out the portion of energy use that is your behavior and the portion that is your building's response to weather. This is because whatever algorithm they are using to disaggregate weather from behavior will need to have seen your electricity consumption during all climates.
 

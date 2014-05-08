@@ -29,7 +29,7 @@ To kick things off (ugh, I can't possibly get away with that), I've provided som
 
 This would also be a good time to mention the "P90" measures. Since not all players have played the same minutes, it makes sense to normalize their actions to their time played.  Instead of per minute (as in saves per minute or distributions per minute) I think it makes sense to do this on a per 90 minute basis.  Ted Knutson (among others) have done this over at <a href='http://www.statsbomb.com' title='Statsbomb'>Statsbomb</a> (which, if anything I'm talking about is interesting to you, you *have* to check out).
 
-## Saves
+### Saves
 
 <figure>
   <a href="{{ site.url }}/images/Saves_Table.png"><img src="{{ site.url }}/images/Saves_Table.png"></a>
@@ -44,7 +44,7 @@ Szczesny was apparently not very good for Arsenal this season. All three save pe
 
 You also see the performance of Mignolet and Begovic starting to stand out. Both were with bottom half of the table teams and were likely facing many more decent chances than a Hart or a De Gea. Of course, Mignolet is now Liverpool's starter and Belgium's number two, and Begovic (despite a howler or two and a current injury) is highly touted.
 
-## Distribution
+### Distribution
 
 <figure>
   <a href="{{ site.url }}/images/Dist_Table.png"><img src="{{ site.url }}/images/Dist_Table.png"></a>
@@ -56,7 +56,7 @@ As in all of these top level stats, the distribution numbers are confounded as w
 I definitely want to do some more work on distribution. You won't get through a televised broadcast of a Premier League match without a former (field) player (probably Eric I-Need-Salsa-For-The-Big-Ass-Chip-On-My-God-Damn-Shoulder Wynalda or Robbie Mustoe) decrying the need for the *modern* goalkeeper to be comfortable on the ball - to assist a team in maintaining possession, meaning make simple passes to nearby defenders while under pressure. Besides just these distribution numbers (which are for distibution after a keeper catches), passing numbers should play a heavy role in determining the ability of a goalkeeper.
 
 
-## Crosses
+### Crosses
 
 <figure>
   <a href="{{ site.url }}/images/Cross_Table.png"><img src="{{ site.url }}/images/Cross_Table.png"></a>

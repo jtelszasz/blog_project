@@ -23,11 +23,11 @@ image:
 
 Previously, I laid out what BGE's smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.
 
-## Green Button
+### Green Button
 
 Green Button is the standard by which utilities are providing data to their customers. It was prompted in 2011 by the U.S. Chief Technology Officer calling on industry to standardize accessibility and data format for customer smart meter data and parallels the <a href="">Blue Button</a> concept for health data. Customers can download their interval usage data and use as they see fit. A customer could provide the data to a solar panel installer to better inform the design of the installation, or the data could be used to develop apps that show opportunities for efficiency upgrades.
 
-## Data
+### Data
 
 I've downloaded my data from the first date available (Janurary 18, 2014) through the end of February 28, 2014. I'm able to access hourly electrical consumption in kilowatt-hours, and the file is a clean csv. Shown below are probability distributions over those 6 weeks or so. We have electric resistance heating (not central gas-fired heating) and so our consumption during the winter is quite high.
 

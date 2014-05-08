@@ -4,14 +4,14 @@ permalink: /about/index.html
 title: 
 tagline: 
 tags: [about, purpose]
-modified: 12-31-2013
+modified: 05-08-2014
 image:
   feature: texture-feature-02.jpg
   credit: Texture Lovers
   creditlink: http://texturelovers.com
 ---
 
-When I inform people that I commute from Baltimore to DC every day for work, the general response is one of either pity or disgust. But by taking the commuter train every day, I avoid two things that are very important to me: 1) living in Washington, DC and 2) driving anywhere near the DC beltway.  Moreover, I've effectively built in two hours every day to focus on whatever I choose.  Although reading, podcasts and other media are entertaining filler, after a short time I decided rather to spend my time productively.  This blog is the product of my efforts during my commute to learn more about data analysis techniques during my train commute.  
+When I inform people that I commute from Baltimore to DC every day for work, the general response is one of disbelief or pity. But by taking the commuter train every day, I avoid two things that are very important to me: 1) living in Washington, DC and 2) driving anywhere near the DC beltway.  Moreover, I've effectively built in two hours every day to focus on whatever I choose.  Although books, podcasts and other media are entertaining filler, after a short time I decided rather to spend my time productively and attempt to make a meaningful contribution.  This blog is the product of my efforts during my train commute to work with data.
 
 ### Me
 
