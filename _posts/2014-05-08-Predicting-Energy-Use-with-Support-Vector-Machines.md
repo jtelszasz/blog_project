@@ -2,7 +2,7 @@
 layout: post
 title: Forecasting with Machine Learning
 description: "Using a machine learning algorithm for predicting next-hour electricity consumption."
-modified: 2014-05-10
+modified: 2014-05-08
 category: articles
 tags: [machine-learning, smart-meters, predictive-analytics, electricity, demand-side, support-vector-machine]
 image:

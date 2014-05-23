@@ -5,24 +5,24 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>More Smart Meter Data... &#8211; The Training Set</title>
-<meta name="description" content="Downloaded another snapshot of the smart meter data.">
-<meta name="keywords" content="BGE, smart-meters, energy, data, electricity">
+<title>Closer Look at the Electricity SVR Forecast &#8211; The Training Set</title>
+<meta name="description" content="Inspecting the model's accuracy.">
+<meta name="keywords" content="machine-learning, smart-meters, predictive-analytics, electricity, demand-side, support-vector-machine">
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="More Smart Meter Data...">
-<meta property="og:description" content="Downloaded another snapshot of the smart meter data.">
-<meta property="og:url" content="http://localhost:4000/articles/More-Smart-Meter-Data">
+<meta property="og:title" content="Closer Look at the Electricity SVR Forecast">
+<meta property="og:description" content="Inspecting the model's accuracy.">
+<meta property="og:url" content="http://localhost:4000/articles/Closer-Look-At-SVM-Model">
 <meta property="og:site_name" content="The Training Set">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/articles/More-Smart-Meter-Data">
+<link rel="canonical" href="http://localhost:4000/articles/Closer-Look-At-SVM-Model">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set Feed">
 
 
@@ -86,7 +86,7 @@
 </div><!-- /.navigation-wrapper -->
 
 <div class="image-wrap">
-  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="More Smart Meter Data... feature image" itemprop="primaryImageOfPage">
+  <img src="http://localhost:4000/images/texture-feature-03.jpg" alt="Closer Look at the Electricity SVR Forecast feature image" itemprop="primaryImageOfPage">
   <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
 </div><!-- /.image-wrap -->
 
@@ -106,7 +106,7 @@
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <div class="headline-wrap">
-      <h1 itemprop="name">More Smart Meter Data...</h1>
+      <h1 itemprop="name">Closer Look at the Electricity SVR Forecast</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap" itemprop="text">
@@ -115,27 +115,56 @@
     <h3>Contents</h3>
   </header>
 <div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#accuracy-measures">Accuracy Measures</a>    <ul>
+      <li><a href="#root-mean-sqaure-error">Root Mean Sqaure Error</a></li>
+      <li><a href="#mape">MAPE</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#mean-bias-error">Mean Bias Error</a></li>
+    </ul>
+  </li>
+</ul>
 
   </div>
 </section>
 <!-- /#table-of-contents -->
 
-<p>In an  <a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data">earlier post</a>, I showed initial descriptive plots for my electricity use.  Now that we have some more data, we can break these up to see differences as the spring season progresses.</p>
-
-<figure class="half">
-  <a href="http://localhost:4000/images/ElecHist - Feb2014.png"><img src="http://localhost:4000/images/ElecHist - Feb2014.png" /></a>
-  <a href="http://localhost:4000/images/ElecHist - Mar2014.png"><img src="http://localhost:4000/images/ElecHist - Mar2014.png" /></a>
-  <figcaption>Histograms for February and March 2014 electricity consumption.</figcaption>
-</figure>
-
-<p>Another way of showing the difference in each month’s energy consumption patterns would be the cumulative distribution.</p>
+<p>In the <a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines">previous post</a> I trained a support vector machine model using electricity demand data.  The data I’m using are hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.</p>
 
 <figure>
-  <a href="http://localhost:4000/images/ElecCDF - Feb_March2014.png"><img src="http://localhost:4000/images/ElecCDF - Feb_March2014.png" /></a>
-  <figcaption>Histogram for February 2014 electricity consumption.</figcaption>
+  <a href="http://localhost:4000/images/SVM_predict_TS_zoom.png"><img src="http://localhost:4000/images/SVM_predict_TS_zoom.png" /></a>
+  <figcaption>Predicted (SVR, next-hour) and actual hourly electricity usage, March 25 and 26.</figcaption>
 </figure>
 
-<p>The plot above shows that for a given hourly kilowatt-hour amount, the proportion of hours at which the consumption was that amount or less is substantially higher in March than in April; of course, we’d expect that with the warmer weather.  For example, about 18% of the time in February the hourly consumption was 1 kilowatt-hour or less, while in March it was the case about 70% of the time.</p>
+<p>It looks like, with some exceptions, the prediction is generally one hour behind what the actual electricity demand is doing, especially looking at most of the peaks.  At first I thought (hoped) that this was an issue with how I was date indexing the predicted values after calculating them (assigning a timestamp one hour behind what it should have been). But after closer inspection and thinking about it, this actually makes sense.  In the post on <a href="http://localhost:4000/articles/Autocorrelation">autocorrelation</a> I showed the following lag plot: </p>
+
+<figure>
+  <a href="http://localhost:4000/images/Elec_Lag_1hour.png"><img src="http://localhost:4000/images/Elec_Lag_1hour.png" /></a>
+  <figcaption>Lag plot, 1 hour.</figcaption>
+</figure>
+
+<p>The slope of the linear fit is about 0.97 and the constant (y-intercept) is about 0.04.  In other words, the ratio between any hour’s electricity demand and the hour previous is about one.  So unless the time of day or workday-non-workday indicator is influential at any hour, the model will likely just predict the next hour to be the same as the current hour demand.  This will result in missing peaks by an hour, which if you’re a utility trying to schedule enough generation in the summer to meet the next hour’s air conditioning loads in a city, this is not so bueno.  I think the reason this is a product of the model is that a large fraction of the training samples used to build the model are <em>not</em> peaks, save for the <a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up">6am wake-up time</a>. </p>
+
+<p>Below are the same results, just resampled to daily instead of hourly.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/SVM_predict_DailyTotal.png"><img src="http://localhost:4000/images/SVM_predict_DailyTotal.png" /></a>
+  <figcaption>Hourly demand (actual and predicted) resampled to daily totals.</figcaption>
+</figure>
+
+<h3 id="accuracy-measures">Accuracy Measures</h3>
+
+<p>In order to compare the accuracy of any models, the following measures can be used.</p>
+
+<h4 id="root-mean-sqaure-error">Root Mean Sqaure Error</h4>
+
+<p><img src="http://latex.codecogs.com/png.latex?\Delta T" alt="\Delta T" /></p>
+
+<h4 id="mape">MAPE</h4>
+
+<h4 id="cv">CV</h4>
+
+<h4 id="mean-bias-error">Mean Bias Error</h4>
 
 
       <hr />
@@ -153,7 +182,7 @@
 
 
         </div>
-        <p class="byline"><strong>More Smart Meter Data...</strong> was published on <time datetime="2014-04-17T00:00:00-04:00" itemprop="datePublished">April 17, 2014</time> and last modified on <time datetime="2014-04-17" itemprop="dateModified">April 17, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
+        <p class="byline"><strong>Closer Look at the Electricity SVR Forecast</strong> was published on <time datetime="2014-05-11T00:00:00-04:00" itemprop="datePublished">May 11, 2014</time> and last modified on <time datetime="2014-05-11" itemprop="dateModified">May 11, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   </article>
@@ -163,16 +192,6 @@
   <div class="related-articles">
   <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/articles">View all articles</a>)</small></h4>
     <ul>
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
-      
     
       
       
@@ -186,6 +205,16 @@
       
       
       <li><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
+      
+    
+      
+      
+        
+          
+        
+      
+      
+      <li><a href="http://localhost:4000/articles/Autocorrelation" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
       
     
     </ul>
