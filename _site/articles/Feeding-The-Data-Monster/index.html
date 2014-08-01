@@ -1,0 +1,239 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Feeding the Data Monster &#8211; The Training Set</title>
+<meta name="description" content="Finding the right data to answer some energy use questions.">
+<meta name="keywords" content="home-monitoring, smart-meters, data, electricity">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Feeding the Data Monster">
+<meta property="og:description" content="Finding the right data to answer some energy use questions.">
+<meta property="og:url" content="http://localhost:4000/articles/Feeding-The-Data-Monster">
+<meta property="og:site_name" content="The Training Set">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/articles/Feeding-The-Data-Monster">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="http://localhost:4000/assets/css/ie.min.css">
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="article" itemscope itemtype="http://schema.org/WebPage">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">The Training Set</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		    <ul>
+		        
+				<li><a href="http://localhost:4000/about/" >About</a></li>
+		        
+				<li><a href="http://localhost:4000/articles/" >Articles</a></li>
+		        
+				<li><a href="http://localhost:4000/the-work/" >The Work</a></li>
+		        
+		        <li><i class="icon-feed"></i> <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed">Feed</a>
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+<div class="image-wrap">
+  <img src="http://localhost:4000/images/texture-feature-04.jpg" alt="Feeding the Data Monster feature image" itemprop="primaryImageOfPage">
+  <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
+</div><!-- /.image-wrap -->
+
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <div class="article-author-side">
+    <!--<img src="http://localhost:4000/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
+<h3>Justin Elszasz</h3>
+<p>Engineering background, indeterminate foreground.</p>
+
+<a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+<a href="http://linkedin.com/in/justinelszasz" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
+
+<a href="http://github.com/jtelszasz" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+  </div>
+  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <div class="headline-wrap">
+      <h1 itemprop="name">Feeding the Data Monster</h1>
+      <h2></h2>
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap" itemprop="text">
+      <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#green-button-sample-datasets">Green Button Sample Datasets</a></li>
+  <li><a href="#pecan-street-research-institute">Pecan Street Research Institute</a></li>
+  <li><a href="#jack-kelly-phd-student-at-imperial-college">Jack Kelly, PhD student at Imperial College</a></li>
+  <li><a href="#kaggle-competition-sample-data">Kaggle Competition Sample Data</a></li>
+  <li><a href="#uci-center-for-machine-learning-and-intelligent-systems">UCI Center for Machine Learning and Intelligent Systems</a></li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<p>There are a few research questions that I’d like to dig into but I haven’t quite found the right data yet for them.  Ideally I would use our apartment data, but I need at least some summer data (early June won’t count) and we actually just moved apartments.  There are some important differences between the previous and current apartment - namely central AC, larger but less leaky windows, a much larger floor plan, a dishwasher, and a dedicated apartment electric water heater.  </p>
+
+<p>I’ve done some digging to come up with some other candidate datasets, though this is by no means comprehensive.  I’m mainly looking for at least a year worth of hourly electricity data (or finer scale that could be resampled) for a household or apartment with moderate or high summer air conditioning loads. A lot of the publicly available electricity usage datasets I’ve found have been geared toward non-invasive appliance load monitoring (NIALM) research - test data for algorithms that can breakout appliance end uses based on the electricity signatures.  Generally these are very high frequency (sub-minute time scales) but cover much shorter spans than needed (really a full year).  Hopefully this compilation is useful for other researchers out there.</p>
+
+<p>I think I might also put some of these in an appropriate Github folder and turn this post into a readme for future use.  There are plenty more out there that are geared towards the NIALM stuff so if I get into that more, I can add it to the list there.</p>
+
+<h3 id="green-button-sample-datasets">Green Button Sample Datasets</h3>
+
+<p>Since BGE has signed on to use the Green Button data standard (like most utilities using smart meters have) I’m hoping to use a sample dataset, since it would easily be replaced by my own data once it’s available.</p>
+
+<p>The National Institute for Standards and Technology has a <a href="https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK">list of available sample datasets on their website</a> for the software development kit, or SDK.  It isn’t specified what type of building or location the samples are from, but they do provide hourly profiles that add up to a full year’s worth of data.</p>
+
+<p>The <a href="https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK">same NIST website</a> links to some data from San Diego Gas and Electric (SDGE).  There are multiple hourly datasets listed, and they specify a region within SDGE’s territory that the data have come from (coastal, inland, desert, etc.)</p>
+
+<p>I also found <a href="http://www.sdge.com/documents/green-button-60-min-meter-interval-sample-data-csv">this</a> sample on SDGE’s own website.  It’s one year worth of hourly interval electrcity usage data for a residence.  At least looking at this one dataset qualitatively, the A/C loads don’t peak nearly as badly as I’d expect in Baltimore during the summer so I probably won’t use this.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/SDGE_Data.png"><img src="http://localhost:4000/images/SDGE_data.png" /></a>
+  <figcaption>Sample SDGE Green Button electricity usage data.</figcaption>
+</figure>
+
+<h3 id="pecan-street-research-institute">Pecan Street Research Institute</h3>
+
+<p>The <a href="http://www.pecanstreet.org">Pecan Street Research Institute</a> curates possibly the largest residential energy and water consumption dataset.  The effort was initiated in 2009 and monitors the electricity, gas, and water use of over 900 homes in Texas at 1-minute resolution.  The electricity monitoring includes both whole house and up to 23 submetered circuits.  Unfortunately you have to be an active academic researcher to even obtain a free sample of the dataset, let alone full access to the whole shebang.</p>
+
+<h3 id="jack-kelly-phd-student-at-imperial-college">Jack Kelly, PhD student at Imperial College</h3>
+
+<p>Jack Kelly at Imperial College has been gracious enough to post his home monitoring datasets on <a href="https://www.github.com/jackkelly">Github</a>.  He’s been monitoring two homes for electricity usage and sub-minute timescales, neither of which include air-conditioning data.  The lack of air conditioning doesn’t really help me.</p>
+
+<h3 id="kaggle-competition-sample-data">Kaggle Competition Sample Data</h3>
+
+<p><a href="http://www.kaggle.com">Kaggle</a> hosts a platform for open competitions that usually ask competitors to devise machine learning or statistical predicitions, the most accurate prediction winning.  Several of the competitions have involved energy - either forecasting demand or disaggregating demand data into end uses (Kaggle’s actual business involves the application of machine learning for the energy industry).  The <a href="http://www.kaggle.com/c/belkin-energy-disaggregation-competition">disaggregation competition, sponsored by Belkin</a>, asked competitors to try and make use of a particular technique in order to tease out how much energy was used for various appliances.  The data used for this is very high frequency resolution for four houses.</p>
+
+<h3 id="uci-center-for-machine-learning-and-intelligent-systems">UCI Center for Machine Learning and Intelligent Systems</h3>
+
+<p>University of California at Irvine has a center in the computer science department that has sourced a <a href="http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">dataset from researchers in Clamart, France</a>.  It appears the minute-resolution, sub-metered data (more than 2 million rows) were recorded by Georges Hebrail et al. for a home in France, but I haven’t been able to find traceback information to confirm.  Unfortunately, while one of the three submeters supposedly captures a water heater and an air conditioner, it’s clear that household member behavior - particularly when it comes to air conditioning - is substantially different than ours.  (This is likely the result of higher energy prices driving reduced consumption, something Americans are only familiar with when gasoline prices jump.)  Since I know our electricity consumption will spike significantly higher this summer, I don’t think this will be a useful dataset.</p>
+
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          <!--<img src="http://localhost:4000/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
+<h3>Justin Elszasz</h3>
+<p>Engineering background, indeterminate foreground.</p>
+
+<a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+<a href="http://linkedin.com/in/justinelszasz" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
+
+<a href="http://github.com/jtelszasz" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+        </div>
+        <p class="byline"><strong>Feeding the Data Monster</strong> was published on <time datetime="2014-07-31T00:00:00-04:00" itemprop="datePublished">July 31, 2014</time> and last modified on <time datetime="2014-07-31" itemprop="dateModified">July 31, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/articles">View all articles</a>)</small></h4>
+    <ul>
+    
+      
+      
+        
+          
+        
+      
+      
+      <li><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></li>
+      
+    
+      
+      
+        
+          
+        
+      
+      
+      <li><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
+      
+    
+      
+      
+        
+          
+        
+      
+      
+      <li><a href="http://localhost:4000/articles/Feeding-The-Data-Monster" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
+      
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    <span>&copy; 2014 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+	        
+
+</body>
+</html>

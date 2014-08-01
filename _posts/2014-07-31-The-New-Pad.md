@@ -1,0 +1,63 @@
+---
+layout: post
+title: The New Pad
+description: "Comparing electricity usage at old and new apartments."
+modified: 2014-07-31
+category: articles
+tags: [BGE, smart-meters, energy, data, electricity]
+image:
+  feature: texture-feature-04.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
+---
+
+<section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
+Steph and I moved at the end on May 23.  I didn't manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we've now been there just over two months and so we've got some A/C load data to work with.
+
+The differences in the data are pretty staggering.  One issue is that we moved at the beginning of summer so our previous apartment with electric resistance heating has all the heating loads and the new apartment with central A/C has all the cooling loads.  The rest of the differences are described below.
+
+<figure>
+  <a href="{{ site.url }}/images/New-Old-TS.png"><img src="{{ site.url }}/images/New-Old-TS.png"></a>
+  <figcaption>Time series of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
+</figure>
+
+<figure>
+  <a href="{{ site.url }}/images/New-Old-Elec-Temp.png"><img src="{{ site.url }}/images/New-Old-Elec-Temp.png"></a>
+  <figcaption>Scatter plot of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
+</figure>
+
+### Physical Differences in Apartments
+
+Our old and new apartments are less than half a mile apart on the same street that runs north and south (St. Paul Street in Baltimore).  There are some important differences of note between the two apartments.
+
+
+**Size**. The new apartment is much larger in floor area, and has ceilings that appear even higher (though I didn't take measurements at the old apartment).  In addition to large living room and bedroom, the new apartment has two bathrooms, a much larger kitchen and attached dining space, and a large foyer.
+
+**Building Envelope and Fenestration**. The building itself is still row style, so our exterior exposure is limited to the front of the building and the back.  The old apartment only had exposure in the rear to a fire escape corridor down the center of the building, not to the very rear of the building.  Our new apartment has practically floor to ceiling windows in the front and back.  The new apartment windows are less than 10 years old, where the windows from the last apartment were original single pane and were considerably drafty.
+ 
+**Space Heating**.  Space heating at the old apartment was provided by electric resistance heating in two zones (living room and bedroom) from ductless split A/C units (the A/C compressor failed on the living room zone).  This means that the electricity data I've been using for the old apartment include heating loads.  The new apartment has an <a href='http://www.commercial.carrier.com/commercial/hvac/product_technical_literature/1,3069,CLI1_DIV41_ETI4922_PRD694,00.html'>80,000 Btu/h input natural gas-fired central furnace</a>.  We're lucky enough that it's a condensing furnace (efficient enough that flue gases cool below their condensing point) with an AFUE of 92.1%. The new data will not include heating loads since this is gas-fired, and the only information we'd have on gas use would be monthly.  We moved in at the end of May so there haven't been any heating loads yet.  
+
+**Space Cooling**.  The compressor for the ductless split A/C in the living room failed, and they were cheapskates and replaced it with a window unit.  An 11,000 Btu/h output unit for a family room and kitchen with high ceilings and drafty single pane windows.  In the new apartment, we have central A/C. (<a href='http://www.commercial.carrier.com/wcs/proddesc_display/0,2733,CLI1_DIV41_ETI4926_NBD_PRD1311,00.html'>This</a> is the evaporator coil, I haven't looked closely at the compressor outside yet.)  In both cases, we shut the A/C off during the day, and generally set the thermostat to 75 degrees Fahrenheit when we're home in evenings and on weekends.
+
+**Water Heating**. In our previous apartment, hot water was included.  In the new apartment, we have a dedicated <a href='http://products.geappliances.com/ApplProducts/Dispatcher?REQUEST=SpecPage&Sku=GE38S06AAG'>38-gallon electric water heater</a>.
+
+
+**Lighting**. There are many more light fixtures in the new apartment, though the vast majority use compact florescents. The former living room had only the light (incandescents) from a ceiling fan, while the new living room has 6 recessed lights and a ceiling fan light.  Additionally, there's a ceiling fan with chandelier in the foyer, 5 recessed ceiling lights in the kitchen and dining room, along with halogen lighting underneath the cabintery in the kitchen.
+
+
+**Appliances**.  The previous aparment had only the basics - a refrigerator, microwave (ours, and small), and gas oven range. Our new apartment additionally has a dishwasher and in-aparment laundry washer and dryer.
+
+
+**Usage**.  Generally, our schedules haven't really changed.  Like I mentioned previously, we shut the A/C off during the day, and only really use it in the evenings (after 7pm or so) and on weekends and only set it to 75 degrees Fahrenheit.
+
+
+
