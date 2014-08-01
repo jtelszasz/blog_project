@@ -10,6 +10,7 @@
 <meta name="keywords" content="BGE, smart-meters, energy, data, electricity">
 
 
+
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
@@ -31,14 +32,10 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Webfonts -->
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 <!-- For all browsers -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
-
-<!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" href="http://localhost:4000/assets/css/ie.min.css">
-<![endif]-->
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
 <meta http-equiv="cleartype" content="on">
 
@@ -59,57 +56,77 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
 
+
+
 </head>
 
-<body class="article" itemscope itemtype="http://schema.org/WebPage">
+<body id="post" class="feature">
 
-<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://localhost:4000">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://localhost:4000/images/bio-photo.jpg" alt="Justin Elszasz photo" class="author-photo">
+					<h4>Justin Elszasz</h4>
+					<p>Engineering background, indeterminate foreground.</p>
+				</li>
+				<li><a href="http://localhost:4000/about/">Learn More</a></li>
+				
+				
+				<li>
+					<a href="http://facebook.com/jtelszasz"><i class="fa fa-facebook"></i> Facebook</a>
+				</li>
+				
+				<li>
+					<a href="http://linkedin.com/in/justinelszasz"><i class="fa fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://github.com/jtelszasz"><i class="fa fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
+				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		<li><a href="http://localhost:4000/about/">About</a></li><li><a href="http://localhost:4000/the-work/">The Work</a></li>
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
 
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="http://localhost:4000">The Training Set</a>
-	</div><!-- /.site-name -->
-	<div class="top-navigation">
-		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		    <ul>
-		        
-				<li><a href="http://localhost:4000/about/" >About</a></li>
-		        
-				<li><a href="http://localhost:4000/articles/" >Articles</a></li>
-		        
-				<li><a href="http://localhost:4000/the-work/" >The Work</a></li>
-		        
-		        <li><i class="icon-feed"></i> <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed">Feed</a>
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-</div><!-- /.navigation-wrapper -->
-
-<div class="image-wrap">
-  <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="Electricity Usage Autocorrelation feature image" itemprop="primaryImageOfPage">
-  <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
-</div><!-- /.image-wrap -->
-
-<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
-  <div class="article-author-side">
-    <!--<img src="http://localhost:4000/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
-<h3>Justin Elszasz</h3>
-<p>Engineering background, indeterminate foreground.</p>
-
-<a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
-
-<a href="http://linkedin.com/in/justinelszasz" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
-
-<a href="http://github.com/jtelszasz" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
 
 
-  </div>
-  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-    <div class="headline-wrap">
-      <h1 itemprop="name">Electricity Usage Autocorrelation</h1>
-      <h2></h2>
-    </div><!--/ .headline-wrap -->
-    <div class="article-wrap" itemprop="text">
+<div class="entry-header">
+  <div class="image-credit">Image source: <a href="http://texturelovers.com">Texture Lovers</a></div><!-- /.image-credit -->
+  <div class="entry-image">
+    <img src="http://localhost:4000/images/texture-feature-05.jpg" alt="Electricity Usage Autocorrelation">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://localhost:4000/articles/Autocorrelation" rel="bookmark" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></h1>
+        
+        <h2>May 05, 2014</h2>
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
       <section id="table-of-contents" class="toc">
   <header>
     <h3>Contents</h3>
@@ -158,74 +175,54 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 </figure>
 
-      <hr />
-      <footer role="contentinfo">
-        <div class="article-author-bottom">
-          <!--<img src="http://localhost:4000/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
-<h3>Justin Elszasz</h3>
-<p>Engineering background, indeterminate foreground.</p>
-
-<a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
-
-<a href="http://linkedin.com/in/justinelszasz" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
-
-<a href="http://github.com/jtelszasz" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
-
-
-        </div>
-        <p class="byline"><strong>Electricity Usage Autocorrelation</strong> was published on <time datetime="2014-05-05T00:00:00-04:00" itemprop="datePublished">May 05, 2014</time> and last modified on <time datetime="2014-05-05" itemprop="dateModified">May 05, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://localhost:4000/about" title="About Justin Elszasz" itemprop="url">Justin Elszasz</a></span></span>.</p>
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#BGE" title="Pages tagged BGE" class="tag">BGE</a><a href="http://localhost:4000/tags/#smart-meters" title="Pages tagged smart-meters" class="tag">smart-meters</a><a href="http://localhost:4000/tags/#energy" title="Pages tagged energy" class="tag">energy</a><a href="http://localhost:4000/tags/#data" title="Pages tagged data" class="tag">data</a><a href="http://localhost:4000/tags/#electricity" title="Pages tagged electricity" class="tag">electricity</a></span>
+        <span><a href="http://localhost:4000/articles/Autocorrelation" rel="bookmark" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a> was published on <span class="entry-date date published updated"><time datetime="2014-05-05T00:00:00-04:00">May 05, 2014</time></span></span>
+        (revised: <span class="entry-date date modified"><time datetime="2014-05-05">05/05/2014</time></span>)
+        <span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+        
       </footer>
-    </div><!-- /.article-wrap -->
+    </div><!-- /.entry-content -->
+    
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="http://localhost:4000/articles/Energy-Use-and-Weather" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></h3>
+          <p>Comparing electricity usage at the old and new apartments. <a href="http://localhost:4000/articles/The-New-Pad">Continue reading</a></p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="http://localhost:4000/articles/Feeding-The-Data-Monster" title="Feeding the Data Monster">Feeding the Data Monster</a></h4>
+            <span>Published on July 31, 2014</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></h4>
+            <span>Published on June 18, 2014</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
   </article>
 </div><!-- /#main -->
 
-<div class="footer-wrap">
-  <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/articles">View all articles</a>)</small></h4>
-    <ul>
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></li>
-      
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="http://localhost:4000/articles/Feeding-The-Data-Monster" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
-      
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
-      
-    
-    </ul>
-    <hr />
-  </div><!-- /.related-articles -->
-  <footer>
-    <span>&copy; 2014 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
-
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2014 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
   </footer>
-</div><!-- /.footer-wrap -->
+</div><!-- /.footer-wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
 	        
 
 </body>

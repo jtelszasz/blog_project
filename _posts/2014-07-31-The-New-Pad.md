@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The New Pad
-description: "Comparing electricity usage at old and new apartments."
+description: "Comparing electricity usage at the old and new apartments."
 modified: 2014-07-31
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]

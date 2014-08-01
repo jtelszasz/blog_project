@@ -10,6 +10,7 @@
 <meta name="keywords" content="projects, previous-work">
 
 
+
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
@@ -31,14 +32,10 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Webfonts -->
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 <!-- For all browsers -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
-
-<!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" href="http://localhost:4000/assets/css/ie.min.css">
-<![endif]-->
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
 <meta http-equiv="cleartype" content="on">
 
@@ -59,51 +56,67 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
 
+
+
 </head>
 
-<body class="page" itemscope itemtype="http://schema.org/WebPage">
+<body id="page" >
 
-<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://localhost:4000">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://localhost:4000/images/bio-photo.jpg" alt="Justin Elszasz photo" class="author-photo">
+					<h4>Justin Elszasz</h4>
+					<p>Engineering background, indeterminate foreground.</p>
+				</li>
+				<li><a href="http://localhost:4000/about/">Learn More</a></li>
+				
+				
+				<li>
+					<a href="http://facebook.com/jtelszasz"><i class="fa fa-facebook"></i> Facebook</a>
+				</li>
+				
+				<li>
+					<a href="http://linkedin.com/in/justinelszasz"><i class="fa fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://github.com/jtelszasz"><i class="fa fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
+				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		<li><a href="http://localhost:4000/about/">About</a></li><li><a href="http://localhost:4000/the-work/">The Work</a></li>
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
 
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="http://localhost:4000">The Training Set</a>
-	</div><!-- /.site-name -->
-	<div class="top-navigation">
-		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		    <ul>
-		        
-				<li><a href="http://localhost:4000/about/" >About</a></li>
-		        
-				<li><a href="http://localhost:4000/articles/" >Articles</a></li>
-		        
-				<li><a href="http://localhost:4000/the-work/" >The Work</a></li>
-		        
-		        <li><i class="icon-feed"></i> <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed">Feed</a>
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-</div><!-- /.navigation-wrapper -->
 
 
 
-<div id="main" role="main"  itemprop="mainContentOfPage">
-  <div class="article-author-side">
-    <!--<img src="http://localhost:4000/images/" class="bio-photo" alt="Justin Elszasz bio photo"></a>-->
-<h3>Justin Elszasz</h3>
-<p>Engineering background, indeterminate foreground.</p>
-
-<a href="http://facebook.com/jtelszasz" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
-
-<a href="http://linkedin.com/in/justinelszasz" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
-
-<a href="http://github.com/jtelszasz" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
-
-
-  </div>
-  <article itemscope itemtype="http://schema.org/CreativeWork">
-    <h1 itemprop="name">Body of Work</h1>
-    <div class="article-wrap" itemprop="text">
+<div id="main" role="main">
+  <article class="entry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        <h1 class="entry-title">Body of Work</h1>
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
       <h2 id="ipython-notebooks">iPython Notebooks</h2>
 
 <p><a href="http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/Elec_SVM.ipynb?create=1">Support Vector Regression for Predicting Electricity Consumption</a></p>
@@ -121,20 +134,26 @@
 <p><a href="http://modi.mech.columbia.edu/">SharedSolar</a></p>
 
 
-    </div><!-- /.article-wrap -->
+      <footer class="entry-meta">
+        Body of Work was last modified on <span class="entry-date date modified"><time datetime="04-18-2014">04-18-2014</time></span>
+        <span class="author vcard fn">Justin Elszasz</span>
+        
+      </footer>
+    </div><!-- /.entry-content -->
+    
   </article>
-</div><!-- /#index -->
+</div><!-- /#main -->
 
-<div class="footer-wrap">
-  <footer>
-    <span>&copy; 2014 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
-
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2014 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
   </footer>
-</div><!-- /.footer-wrap -->
+</div><!-- /.footer-wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
           
 
 </body>

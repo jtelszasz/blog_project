@@ -8,9 +8,9 @@ url:              http://localhost:4000
 # Owner/author information
 owner:
   name:           Justin Elszasz
-  avatar:         #bio-photo.jpg
+  avatar:         bio-photo.jpg
   bio:            "Engineering background, indeterminate foreground."
-  email:          jtelszasz@gmail.com
+  # email:          jtelszasz@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
   facebook:       jtelszasz
@@ -33,8 +33,8 @@ bing_verify:
 links:
   - title: About
     url: /about/
-  - title: Articles
-    url: /articles/
+  #- title: Articles
+  #  url: /articles/
   - title: The Work
     url: /the-work/
   #- title: Made Mistakes
@@ -45,24 +45,28 @@ links:
 timezone:    America/New_York
 future:      true
 pygments:    true
+highlighter: pygments
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
+
+# Amount of post to show on home page
+paginate: 10
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  use_coderay: true
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers: nil
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

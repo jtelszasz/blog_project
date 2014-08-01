@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">The Training Set</title>
-<subtitle type="text">In which a mechanical engineer with historically average statistical skills attempts “data science” in fields in which he is no expert.</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-07-31T18:53:08-04:00</updated>
+<updated>2014-07-31T22:20:23-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://localhost:4000/</uri>
-  <email>jtelszasz@gmail.com</email>
+  <email></email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[The New Pad]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/The-New-Pad" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/The-New-Pad" />
   <id>http://localhost:4000/articles/The-New-Pad</id>
   <updated>2014-07-31T00:00:00-00:00</updated>
   <published>2014-07-31T00:00:00-04:00</published>
@@ -24,7 +23,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -80,7 +79,7 @@
 
 <entry>
   <title type="html"><![CDATA[Feeding the Data Monster]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Feeding-The-Data-Monster" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Feeding-The-Data-Monster" />
   <id>http://localhost:4000/articles/Feeding-The-Data-Monster</id>
   <updated>2014-07-31T00:00:00-00:00</updated>
   <published>2014-07-31T00:00:00-04:00</published>
@@ -88,7 +87,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -151,7 +150,7 @@
 
 <entry>
   <title type="html"><![CDATA[Closer Look at the Electricity SVR Forecast]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" />
   <id>http://localhost:4000/articles/Closer-Look-At-SVM-Model</id>
   <updated>2014-06-18T00:00:00-00:00</updated>
   <published>2014-06-18T00:00:00-04:00</published>
@@ -159,7 +158,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -246,79 +245,8 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Feeding the Data Monster]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Feeding-The-Data-Monster" />
-  <id>http://localhost:4000/articles/Feeding-The-Data-Monster</id>
-  <updated>2014-07-31T00:00:00-00:00</updated>
-  <published>2014-06-13T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
-  </author>
-  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
-  &lt;header&gt;
-    &lt;h3&gt;Contents&lt;/h3&gt;
-  &lt;/header&gt;
-&lt;div id=&quot;drawer&quot;&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#green-button-sample-datasets&quot;&gt;Green Button Sample Datasets&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#pecan-street-research-institute&quot;&gt;Pecan Street Research Institute&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#jack-kelly-phd-student-at-imperial-college&quot;&gt;Jack Kelly, PhD student at Imperial College&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#kaggle-competition-sample-data&quot;&gt;Kaggle Competition Sample Data&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#uci-center-for-machine-learning-and-intelligent-systems&quot;&gt;UCI Center for Machine Learning and Intelligent Systems&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /#table-of-contents --&gt;
-
-&lt;p&gt;There are a few research questions that I’d like to dig into but I haven’t quite found the right data yet for them.  Ideally I would use our apartment data, but I need at least some summer data (early June won’t count) and we actually just moved apartments.  There are some important differences between the previous and current apartment - namely central AC, larger but less leaky windows, a much larger floor plan, a dishwasher, and a dedicated apartment electric water heater.  &lt;/p&gt;
-
-&lt;p&gt;I’ve done some digging to come up with some other candidate datasets, though this is by no means comprehensive.  I’m mainly looking for at least a year worth of hourly electricity data (or finer scale that could be resampled) for a household or apartment with moderate or high summer air conditioning loads. A lot of the publicly available electricity usage datasets I’ve found have been geared toward non-invasive appliance load monitoring (NIALM) research - test data for algorithms that can breakout appliance end uses based on the electricity signatures.  Generally these are very high frequency (sub-minute time scales) but cover much shorter spans than needed (really a full year).  Hopefully this compilation is useful for other researchers out there.&lt;/p&gt;
-
-&lt;p&gt;I think I might also put some of these in an appropriate Github folder and turn this post into a readme for future use.  There are plenty more out there that are geared towards the NIALM stuff so if I get into that more, I can add it to the list there.&lt;/p&gt;
-
-&lt;h3 id=&quot;green-button-sample-datasets&quot;&gt;Green Button Sample Datasets&lt;/h3&gt;
-
-&lt;p&gt;Since BGE has signed on to use the Green Button data standard (like most utilities using smart meters have) I’m hoping to use a sample dataset, since it would easily be replaced by my own data once it’s available.&lt;/p&gt;
-
-&lt;p&gt;The National Institute for Standards and Technology has a &lt;a href=&quot;https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK&quot;&gt;list of available sample datasets on their website&lt;/a&gt; for the software development kit, or SDK.  It isn’t specified what type of building or location the samples are from, but they do provide hourly profiles that add up to a full year’s worth of data.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK&quot;&gt;same NIST website&lt;/a&gt; links to some data from San Diego Gas and Electric (SDGE).  There are multiple hourly datasets listed, and they specify a region within SDGE’s territory that the data have come from (coastal, inland, desert, etc.)&lt;/p&gt;
-
-&lt;p&gt;I also found &lt;a href=&quot;http://www.sdge.com/documents/green-button-60-min-meter-interval-sample-data-csv&quot;&gt;this&lt;/a&gt; sample on SDGE’s own website.  It’s one year worth of hourly interval electrcity usage data for a residence.  At least looking at this one dataset qualitatively, the A/C loads don’t peak nearly as badly as I’d expect in Baltimore during the summer so I probably won’t use this.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/SDGE_Data.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SDGE_data.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Sample SDGE Green Button electricity usage data.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h3 id=&quot;pecan-street-research-institute&quot;&gt;Pecan Street Research Institute&lt;/h3&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://www.pecanstreet.org&quot;&gt;Pecan Street Research Institute&lt;/a&gt; curates possibly the largest residential energy and water consumption dataset.  The effort was initiated in 2009 and monitors the electricity, gas, and water use of over 900 homes in Texas at 1-minute resolution.  The electricity monitoring includes both whole house and up to 23 submetered circuits.  Unfortunately you have to be an active academic researcher to even obtain a free sample of the dataset, let alone full access to the whole shebang.&lt;/p&gt;
-
-&lt;h3 id=&quot;jack-kelly-phd-student-at-imperial-college&quot;&gt;Jack Kelly, PhD student at Imperial College&lt;/h3&gt;
-
-&lt;p&gt;Jack Kelly at Imperial College has been gracious enough to post his home monitoring datasets on &lt;a href=&quot;https://www.github.com/jackkelly&quot;&gt;Github&lt;/a&gt;.  He’s been monitoring two homes for electricity usage and sub-minute timescales, neither of which include air-conditioning data.  The lack of air conditioning doesn’t really help me.&lt;/p&gt;
-
-&lt;h3 id=&quot;kaggle-competition-sample-data&quot;&gt;Kaggle Competition Sample Data&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.kaggle.com&quot;&gt;Kaggle&lt;/a&gt; hosts a platform for open competitions that usually ask competitors to devise machine learning or statistical predicitions, the most accurate prediction winning.  Several of the competitions have involved energy - either forecasting demand or disaggregating demand data into end uses (Kaggle’s actual business involves the application of machine learning for the energy industry).  The &lt;a href=&quot;http://www.kaggle.com/c/belkin-energy-disaggregation-competition&quot;&gt;disaggregation competition, sponsored by Belkin&lt;/a&gt;, asked competitors to try and make use of a particular technique in order to tease out how much energy was used for various appliances.  The data used for this is very high frequency resolution for four houses.&lt;/p&gt;
-
-&lt;h3 id=&quot;uci-center-for-machine-learning-and-intelligent-systems&quot;&gt;UCI Center for Machine Learning and Intelligent Systems&lt;/h3&gt;
-
-&lt;p&gt;University of California at Irvine has a center in the computer science department that has sourced a &lt;a href=&quot;http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption&quot;&gt;dataset from researchers in Clamart, France&lt;/a&gt;.  It appears the minute-resolution, sub-metered data (more than 2 million rows) were recorded by Georges Hebrail et al. for a home in France, but I haven’t been able to find traceback information to confirm.  Unfortunately, while one of the three submeters supposedly captures a water heater and an air conditioner, it’s clear that household member behavior - particularly when it comes to air conditioning - is substantially different than ours.  (This is likely the result of higher energy prices driving reduced consumption, something Americans are only familiar with when gasoline prices jump.)  Since I know our electricity consumption will spike significantly higher this summer, I don’t think this will be a useful dataset.&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Feeding-The-Data-Monster&quot;&gt;Feeding the Data Monster&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on June 13, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
   <title type="html"><![CDATA[Forecasting with Machine Learning]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" />
   <id>http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines</id>
   <updated>2014-05-08T00:00:00-00:00</updated>
   <published>2014-05-08T00:00:00-04:00</published>
@@ -326,7 +254,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -428,7 +356,7 @@
 
 <entry>
   <title type="html"><![CDATA[Electricity Usage Autocorrelation]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Autocorrelation" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Autocorrelation" />
   <id>http://localhost:4000/articles/Autocorrelation</id>
   <updated>2014-05-05T00:00:00-00:00</updated>
   <published>2014-05-05T00:00:00-04:00</published>
@@ -436,7 +364,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -492,7 +420,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <entry>
   <title type="html"><![CDATA[Energy Use and Weather]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Energy-Use-and-Weather" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Energy-Use-and-Weather" />
   <id>http://localhost:4000/articles/Energy-Use-and-Weather</id>
   <updated>2014-04-18T00:00:00-00:00</updated>
   <published>2014-04-18T00:00:00-04:00</published>
@@ -500,7 +428,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -585,7 +513,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <entry>
   <title type="html"><![CDATA[More Smart Meter Data...]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/More-Smart-Meter-Data" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/More-Smart-Meter-Data" />
   <id>http://localhost:4000/articles/More-Smart-Meter-Data</id>
   <updated>2014-04-17T00:00:00-00:00</updated>
   <published>2014-04-17T00:00:00-04:00</published>
@@ -593,7 +521,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -629,7 +557,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <entry>
   <title type="html"><![CDATA[Guess What Time Justin Wakes Up]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" />
   <id>http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up</id>
   <updated>2014-04-16T00:00:00-00:00</updated>
   <published>2014-04-16T00:00:00-04:00</published>
@@ -637,7 +565,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -691,7 +619,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <entry>
   <title type="html"><![CDATA[My Electricity Use]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" />
   <id>http://localhost:4000/articles/My-BGE-Smart-Meter-Data</id>
   <updated>2014-03-27T00:00:00-00:00</updated>
   <published>2014-03-16T00:00:00-04:00</published>
@@ -699,7 +627,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -745,7 +673,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <entry>
   <title type="html"><![CDATA[BGE Smart Meters]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/BGE-Smart-Meters" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/BGE-Smart-Meters" />
   <id>http://localhost:4000/articles/BGE-Smart-Meters</id>
   <updated>2014-05-08T00:00:00-00:00</updated>
   <published>2014-03-15T00:00:00-04:00</published>
@@ -753,7 +681,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
@@ -823,7 +751,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <entry>
   <title type="html"><![CDATA[Goalkeeper Performance Stats]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/GK-Performance-Stats" />
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/GK-Performance-Stats" />
   <id>http://localhost:4000/articles/GK-Performance-Stats</id>
   <updated>2014-03-15T00:00:00-00:00</updated>
   <published>2014-03-05T00:00:00-05:00</published>
@@ -831,7 +759,7 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
   <author>
     <name>Justin Elszasz</name>
     <uri>http://localhost:4000</uri>
-    <email>jtelszasz@gmail.com</email>
+    <email></email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
   &lt;header&gt;
