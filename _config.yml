@@ -2,8 +2,8 @@ title:            The Training Set
 tagline:          In which a mechanical engineer with historically average statistical skills attempts “data science” in fields in which he is no expert.
 description:      
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-#url:              http://localhost:4000
-url:              http://jtelszasz.github.io/blog_project
+url:              http://localhost:4000
+#url:              http://jtelszasz.github.io/blog_project
 
 # Owner/author information
 owner:
@@ -13,7 +13,7 @@ owner:
   # email:          jtelszasz@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
-  facebook:       jtelszasz
+  # facebook:       jtelszasz
   github:         jtelszasz
   linkedin:       justinelszasz
   instagram:      
@@ -31,8 +31,8 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about/
+  #- title: About
+  #  url: /about/
   #- title: Articles
   #  url: /articles/
   - title: The Work

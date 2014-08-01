@@ -21,7 +21,9 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-In the <a href='{{ site.url }}/articles/Predicting-Energy-Use-with-Support-Vector-Machines'>previous post</a> I trained a support vector machine model using electricity demand data.  The data I'm using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.
+NOTE: In the <a href='{{ site.url }}/articles/Predicting-Energy-Use-with-Support-Vector-Machines'>previous post</a> I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.
+
+The data I'm using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.
 
 <figure>
   <a href="{{ site.url }}/images/SVM_predict_TS_zoom.png"><img src="{{ site.url }}/images/SVM_predict_TS_zoom.png"></a>

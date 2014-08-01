@@ -4,13 +4,74 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-07-31T22:22:39-04:00</updated>
+<updated>2014-08-01T18:20:29-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://localhost:4000/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Mo Apartment, Mo Energy(?)]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy%3F" />
+  <id>http://localhost:4000/articles/Mo-Apartment-Mo-Energy?</id>
+  <updated>2014-08-01T00:00:00-00:00</updated>
+  <published>2014-08-01T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;Here’s a quick comparison of average weekdays and weekends in the new and old apartments.  It would appear that we’ve been using more at the new place, but take a look at the daily totals. &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/Average_Days_New_and_Old_Apts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/Average_Days_New_and_Old_Apts.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Average hourly electric usage for new and old apartments, March and June.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Of course we don’t have apples-to-apples comparisons here.  Of course this is partly due to weather.  The old apartment is shown for March, where we left the thermostat on all day at 65 degrees F so Willow The Cat wouldn’t freeze to death.  At the new apartment, we’re shutting off the thermostat entirely during the day, and at night kicking it on to 75 degrees F.  So for weekdays, we’re consuming much less during the day but evenings are much higher.  &lt;/p&gt;
+
+&lt;p&gt;However, the &lt;a href=&quot;http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;6am peak when we wake up&lt;/a&gt; is also much higher.  I’m sure that this is due to our own dedicated electric water heater at the new place.  Our two showers in the morning plus lighting loads are the 6am peak, while the evening hours are the A/C and any dishwashing we’re doing after dinner.&lt;/p&gt;
+
+&lt;p&gt;To do these average day plots I set up a quick function that uses groupby, that way I can reuse this for any time period.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Define a function to calculate average weekday and weekend&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;avg_day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# df is pandas df, has &amp;#39;USAGE&amp;#39; and &amp;#39;tempF&amp;#39; fields, indexed by pandas datetime&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# date_range is string for .ix call&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# returns average_weekend and average_weekday&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;df_dates&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    
+    &lt;span class=&quot;c&quot;&gt;# First groupby weekday/weekend and hour of day&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;weekday_weekend_hour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_dates&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_dates&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dayofweek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_dates&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dayofweek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_dates&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Calculate an average weekday and average weekend by hour (electricity and outdoor temp)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;average_day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weekday_weekend_hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;USAGE&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weekday_weekend_hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;tempF&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()])&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;average_weekend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;average_day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;average_weekday&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;average_day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;average_weekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;average_weekend&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Mo-Apartment-Mo-Energy%3F&quot;&gt;Mo Apartment, Mo Energy(?)&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on August 01, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -179,7 +240,9 @@
 &lt;/section&gt;
 &lt;!-- /#table-of-contents --&gt;
 
-&lt;p&gt;In the &lt;a href=&quot;http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;previous post&lt;/a&gt; I trained a support vector machine model using electricity demand data.  The data I’m using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.&lt;/p&gt;
+&lt;p&gt;NOTE: In the &lt;a href=&quot;http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;previous post&lt;/a&gt; I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.&lt;/p&gt;
+
+&lt;p&gt;The data I’m using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;a href=&quot;http://localhost:4000/images/SVM_predict_TS_zoom.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/SVM_predict_TS_zoom.png&quot; /&gt;&lt;/a&gt;
