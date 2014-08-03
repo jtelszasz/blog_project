@@ -4,22 +4,13 @@ title: Forecasting with Machine Learning
 description: "Using a machine learning algorithm for predicting next-hour electricity consumption."
 modified: 2014-05-08
 category: articles
+share: true
 tags: [machine-learning, smart-meters, predictive-analytics, electricity, demand-side, support-vector-machine]
 image:
   feature: texture-feature-05.jpg
   credit: Texture Lovers
   creditlink: http://texturelovers.com
 ---
-
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
 
 As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I've since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.
 

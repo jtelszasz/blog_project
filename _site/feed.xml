@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2014-08-03T13:35:44-04:00</updated>
+<updated>2014-08-03T13:49:42-04:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
@@ -56,7 +56,7 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Mo Apartment, Mo Energy]]></title>
+  <title type="html"><![CDATA[Mo Apartment, Mo Problems]]></title>
  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy" />
   <id>http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy</id>
   <updated>2014-08-01T00:00:00-00:00</updated>
@@ -104,7 +104,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy&quot;&gt;Mo Apartment, Mo Energy&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set&lt;/a&gt; on August 01, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy&quot;&gt;Mo Apartment, Mo Problems&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set&lt;/a&gt; on August 01, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -173,22 +173,7 @@
     <uri>http://www.thetrainingset.com</uri>
     <email></email>
   </author>
-  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
-  &lt;header&gt;
-    &lt;h3&gt;Contents&lt;/h3&gt;
-  &lt;/header&gt;
-&lt;div id=&quot;drawer&quot;&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#green-button-sample-datasets&quot;&gt;Green Button Sample Datasets&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#pecan-street-research-institute&quot;&gt;Pecan Street Research Institute&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#jack-kelly-phd-student-at-imperial-college&quot;&gt;Jack Kelly, PhD student at Imperial College&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#kaggle-competition-sample-data&quot;&gt;Kaggle Competition Sample Data&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#uci-center-for-machine-learning-and-intelligent-systems&quot;&gt;UCI Center for Machine Learning and Intelligent Systems&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /#table-of-contents --&gt;
+  <content type="html">&lt;p&gt;Scouring the internetz for some data.&lt;/p&gt;
 
 &lt;p&gt;There are a few research questions that I’d like to dig into but I haven’t quite found the right data yet for them.  Ideally I would use our apartment data, but I need at least some summer data (early June won’t count) and we actually just moved apartments.  There are some important differences between the previous and current apartment - namely central AC, larger but less leaky windows, a much larger floor plan, a dishwasher, and a dedicated apartment electric water heater.  &lt;/p&gt;
 
@@ -200,7 +185,7 @@
 
 &lt;p&gt;Since BGE has signed on to use the Green Button data standard (like most utilities using smart meters have) I’m hoping to use a sample dataset, since it would easily be replaced by my own data once it’s available.&lt;/p&gt;
 
-&lt;p&gt;The National Institute for Standards and Technology has a &lt;a href=&quot;https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK&quot;&gt;list of available sample datasets on their website&lt;/a&gt; for the software development kit, or SDK.  It isn’t specified what type of building or location the samples are from, but they do provide hourly profiles that add up to a full year’s worth of data.&lt;/p&gt;
+&lt;p&gt;The National Institute for Standards and Technology has a &lt;a href=&quot;https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK&quot;&gt;list of available sample datasets on their website&lt;/a&gt; for the software development kit, or SDK.  It isn’t specified what type of building or location the samples are from, but they do provide hourly profiles that add up to a full year’s worth of data.  This may be worth digging into.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK&quot;&gt;same NIST website&lt;/a&gt; links to some data from San Diego Gas and Electric (SDGE).  There are multiple hourly datasets listed, and they specify a region within SDGE’s territory that the data have come from (coastal, inland, desert, etc.)&lt;/p&gt;
 
@@ -244,26 +229,7 @@
     <uri>http://www.thetrainingset.com</uri>
     <email></email>
   </author>
-  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
-  &lt;header&gt;
-    &lt;h3&gt;Contents&lt;/h3&gt;
-  &lt;/header&gt;
-&lt;div id=&quot;drawer&quot;&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#accuracy-measures&quot;&gt;Accuracy Measures&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#root-mean-sqaure-error&quot;&gt;Root Mean Sqaure Error&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#mean-absolute-percent-error&quot;&gt;Mean Absolute Percent Error&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#coefficient-of-variation&quot;&gt;Coefficient of Variation&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#mean-bias-error&quot;&gt;Mean Bias Error&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /#table-of-contents --&gt;
-
-&lt;p&gt;NOTE: In the &lt;a href=&quot;http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;previous post&lt;/a&gt; I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.&lt;/p&gt;
+  <content type="html">&lt;p&gt;NOTE: In the &lt;a href=&quot;http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;previous post&lt;/a&gt; I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.&lt;/p&gt;
 
 &lt;p&gt;The data I’m using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.&lt;/p&gt;
 
@@ -342,23 +308,7 @@
     <uri>http://www.thetrainingset.com</uri>
     <email></email>
   </author>
-  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
-  &lt;header&gt;
-    &lt;h3&gt;Contents&lt;/h3&gt;
-  &lt;/header&gt;
-&lt;div id=&quot;drawer&quot;&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#i-thought-we-had-a-model&quot;&gt;I Thought We Had a Model&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#enter-machine-learning&quot;&gt;Enter Machine Learning&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#modeling&quot;&gt;Modeling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#support-vector-regression-with-scikit-learn&quot;&gt;Support Vector Regression with Scikit-learn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /#table-of-contents --&gt;
-
-&lt;p&gt;As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I’ve since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.&lt;/p&gt;
+  <content type="html">&lt;p&gt;As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I’ve since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.&lt;/p&gt;
 
 &lt;h3 id=&quot;i-thought-we-had-a-model&quot;&gt;I Thought We Had a Model&lt;/h3&gt;
 

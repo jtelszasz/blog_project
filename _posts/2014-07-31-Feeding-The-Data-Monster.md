@@ -11,15 +11,7 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+Scouring the internetz for some data.
 
 There are a few research questions that I'd like to dig into but I haven't quite found the right data yet for them.  Ideally I would use our apartment data, but I need at least some summer data (early June won't count) and we actually just moved apartments.  There are some important differences between the previous and current apartment - namely central AC, larger but less leaky windows, a much larger floor plan, a dishwasher, and a dedicated apartment electric water heater.  
 
@@ -31,7 +23,7 @@ I think I might also put some of these in an appropriate Github folder and turn 
 
 Since BGE has signed on to use the Green Button data standard (like most utilities using smart meters have) I'm hoping to use a sample dataset, since it would easily be replaced by my own data once it's available.
 
-The National Institute for Standards and Technology has a <a href='https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK'>list of available sample datasets on their website</a> for the software development kit, or SDK.  It isn't specified what type of building or location the samples are from, but they do provide hourly profiles that add up to a full year's worth of data.
+The National Institute for Standards and Technology has a <a href='https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK'>list of available sample datasets on their website</a> for the software development kit, or SDK.  It isn't specified what type of building or location the samples are from, but they do provide hourly profiles that add up to a full year's worth of data.  This may be worth digging into.
 
 The <a href='https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK'>same NIST website</a> links to some data from San Diego Gas and Electric (SDGE).  There are multiple hourly datasets listed, and they specify a region within SDGE's territory that the data have come from (coastal, inland, desert, etc.)
 

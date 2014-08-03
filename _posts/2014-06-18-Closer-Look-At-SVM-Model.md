@@ -4,22 +4,13 @@ title: Closer Look at the Electricity SVR Forecast
 description: "Inspecting the model's accuracy."
 modified: 2014-06-18
 category: articles
+share: true
 tags: [machine-learning, smart-meters, predictive-analytics, electricity, demand-side, support-vector-machine]
 image:
   feature: texture-feature-03.jpg
   credit: Texture Lovers
   creditlink: http://texturelovers.com
 ---
-
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
 
 NOTE: In the <a href='{{ site.url }}/articles/Predicting-Energy-Use-with-Support-Vector-Machines'>previous post</a> I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.
 
