@@ -48,6 +48,10 @@
 
     
     <url>
+        <loc>http://localhost:4000/articles/BGE-Pricing</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/articles/Mo-Apartment-Mo-Energy%3F</loc>
     </url>
     

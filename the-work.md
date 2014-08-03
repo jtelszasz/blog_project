@@ -9,6 +9,8 @@ modified: 04-18-2014
 
 ### iPython Notebooks
 
+<a href='http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/apt_compare.ipynb'>Comparing new and old apartments</a>
+
 <a href='http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/Elec_SVM.ipynb?create=1'>Support Vector Regression for Predicting Electricity Consumption</a>
 
 <a href='http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/Usage_Autocorrelation.ipynb?create=1'>Electricity Consumption Autocorrelation</a>

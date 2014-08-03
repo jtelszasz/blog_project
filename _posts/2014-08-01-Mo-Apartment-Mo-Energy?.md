@@ -11,17 +11,9 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+Here's a quick comparison of average weekdays and weekends in the new and old apartments.
 
-Here's a quick comparison of average weekdays and weekends in the new and old apartments.  It would appear that we've been using more at the new place, but take a look at the daily totals. 
+It would appear that we've been using more at the new place, but take a look at the daily totals. 
 
 <figure>
   <a href="{{ site.url }}/images/Average_Days_New_and_Old_Apts.png"><img src="{{ site.url }}/images/Average_Days_New_and_Old_Apts.png"></a>

@@ -11,17 +11,9 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+Steph and I moved on May 23.  
 
-Steph and I moved at the end on May 23.  I didn't manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we've now been there just over two months and so we've got some A/C load data to work with.
+I didn't manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we've now been there just over two months and so we've got some A/C load data to work with.
 
 The differences in the data are pretty staggering.  One issue is that we moved at the beginning of summer so our previous apartment with electric resistance heating has all the heating loads and the new apartment with central A/C has all the cooling loads.  The rest of the differences are described below.
 

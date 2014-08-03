@@ -9,7 +9,13 @@
 <meta name="description" content="Describe this nonsense.">
 <meta name="keywords" content="Jekyll, theme, themes, responsive, blog, modern">
 
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/abstract-4.jpg">
 
+<meta name="twitter:title" content="Latest Posts">
+<meta name="twitter:description" content="Describe this nonsense.">
+<meta name="twitter:creator" content="@jtelszasz">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
@@ -77,7 +83,9 @@
 				</li>
 				<li><a href="http://localhost:4000/about/">Learn More</a></li>
 				
-				
+				<li>
+					<a href="http://twitter.com/jtelszasz"><i class="fa fa-twitter"></i> Twitter</a>
+				</li>
 				
 				
 				<li>
@@ -121,6 +129,58 @@
 
 <div id="main" role="main">
   
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-03-16T00:00:00-04:00"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data">March 16, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" rel="bookmark" title="My Electricity Use" itemprop="url">My Electricity Use</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#green-button">Green Button</a></li>
+  <li><a href="#data">Data</a></li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<p>Previously, I laid out what BGE’s smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.</p>
+
+<h3 id="green-button">Green Button</h3>
+
+<p>Green Button is the standard by which utilities are providing data to their customers. It was prompted in 2011 by the U.S. Chief Technology Officer calling on industry to standardize accessibility and data format for customer smart meter data and parallels the <a href="">Blue Button</a> concept for health data. Customers can download their interval usage data and use as they see fit. A customer could provide the data to a solar panel installer to better inform the design of the installation, or the data could be used to develop apps that show opportunities for efficiency upgrades.</p>
+
+<h3 id="data">Data</h3>
+
+<p>I’ve downloaded my data from the first date available (Janurary 18, 2014) through the end of February 28, 2014. I’m able to access hourly electrical consumption in kilowatt-hours, and the file is a clean csv. Shown below are probability distributions over those 6 weeks or so. We have electric resistance heating (not central gas-fired heating) and so our consumption during the winter is quite high.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/MyEnergy_ElecHist.png"><img src="http://localhost:4000/images/MyEnergy_ElecHist.png" /></a>
+  <figcaption>Probability distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
+</figure>
+
+<p>Below is the cumulative distribution. For a given kilowatt-hour usage on the horizontal axis, the cumulative function gives the probability that an hour’s usage was that quanitity or less.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/MyEnergy_ElecCDF.png"><img src="http://localhost:4000/images/MyEnergy_ElecCDF.png" /></a>
+  <figcaption>Cumulative distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
+</figure>
+
+<p>Both figures show that there is a higher number of hours spent consuming about 0.5 kilowatt-hours. It may take some weather data to tease out what might be going on there, and I plan to look at the influence of weather next.</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
 <article class="hentry">
   <header>
     <div class="entry-meta">
