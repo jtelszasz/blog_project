@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Mo Apartment, Mo Energy(?)
+title: Mo Apartment, Mo Problems
 description: "Average daily consumption for the new and old apartments."
 modified: 2014-08-01
 category: articles
-tags: [BGE, smart-meters, energy, data, electricity, behavior]
+tags: [BGE, smart-meters, energy, data, electricity, behavior, apartments]
 image:
   feature: texture-feature-03.jpg
   credit: Texture Lovers

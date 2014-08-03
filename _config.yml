@@ -4,7 +4,6 @@ description:
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 #url:              http://localhost:4000
 url:              http://www.thetrainingset.com
-#url:              http://jtelszasz.github.io/blog_project
 
 # Owner/author information
 owner:
