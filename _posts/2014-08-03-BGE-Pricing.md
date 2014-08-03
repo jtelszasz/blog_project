@@ -4,6 +4,7 @@ title: BGE Residential Pricing Plans
 description: "Using Green Button sample data and BGE residential pricing plans."
 modified: 2014-08-03
 category: articles
+share: true
 tags: [BGE, Green-Button, data, electricity, cost]
 image:
   feature: texture-feature-01.jpg
