@@ -1,9 +1,10 @@
 title:            The Training Set
-tagline:          In which a mechanical engineer with historically average statistical skills attempts “data science” in fields in which he is no expert.
+tagline:          "Energy and Data, coming at you live from the MARC train."
 description:      
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 #url:              http://localhost:4000
 url:              http://www.thetrainingset.com
+#url:              http://jtelszasz.github.io/blog_project
 
 # Owner/author information
 owner:

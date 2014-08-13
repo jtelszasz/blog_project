@@ -16,7 +16,7 @@ Here's a quick comparison of average weekdays and weekends in the new and old ap
 It would appear that we've been using more at the new place, but take a look at the daily totals. 
 
 <figure>
-  <a href="{{ site.url }}/images/Average_Days_New_and_Old_Apts.png"><img src="{{ site.url }}/images/Average_Days_New_and_Old_Apts.png"></a>
+  <a href="{{ site.url }}/images/2014-08/Average_Days_New_and_Old_Apts.png"><img src="{{ site.url }}/images/2014-08/Average_Days_New_and_Old_Apts.png"></a>
   <figcaption>Average hourly electric usage for new and old apartments, March and June.</figcaption>
 </figure>
 
