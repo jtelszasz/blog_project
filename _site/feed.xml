@@ -4,13 +4,40 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2014-08-12T22:05:35-04:00</updated>
+<updated>2014-09-22T07:55:22-04:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://www.thetrainingset.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Summer Updates]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Summer-Update" />
+  <id>http://www.thetrainingset.com/articles/Summer-Update</id>
+  <updated>2014-09-22T00:00:00-00:00</updated>
+  <published>2014-09-22T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;It’s been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.&lt;/p&gt;
+
+&lt;p&gt;I didn’t have much time over the summer for this stuff.  My real job got pretty busy.  You don’t care about that though.&lt;/p&gt;
+
+&lt;p&gt;I did get a bit stalled.  As I’ve discussed previously, I’ve used iPython notebooks &lt;a href=&quot;http://www.thetrainingset.com/the-work&quot;&gt;quite a bit&lt;/a&gt; for conducting analyses.  These only got me so far.  I’ve been working on a demand-side storage model to figure out how to take advantage of time-of-use pricing now available from utility companies.  While the notebooks work great for documenting analyses and creating plots, building a model is nearly impossible with them.  They aren’t really useful if you need multiple functions and scripts.  I was encountering bugs early on in building the model and couldn’t fix them.  It was frustrating.&lt;/p&gt;
+
+&lt;p&gt;This type of scientific computing really calls for an integrated development environment, or IDE.  It’s the one thing I’ve been missing since starting in with Python in lieu of Matlab.  An IDE gives you an interactive console, debugging capabilities, and an editor all in one program.  After reading a bit online, it seemed the two big ones for Python were &lt;a href=&quot;http://www.eclipse.org&quot;&gt;Eclipse&lt;/a&gt; and &lt;a href=&quot;http://www.jetbrains.com/pycharm&quot;&gt;Pycharm&lt;/a&gt;.  I started with Eclipse.  I couldn’t for the life of me get it working, something about the external libraries I was using wasn’t getting set up right.  I tried every way imaginable, but this was as frustrating as the original bugs in my code.  I switched to Pycharm, and pretty quickly was up and running.&lt;/p&gt;
+
+&lt;p&gt;Long story short, with an IDE in hand I found my bugs pretty quickly and finished building the model over a weekend.  I definitely recommend Pycharm or another IDE (even trying Eclipse, if you can get it working) for anything more complicated than simple models or exploratory data analysis.  You could even write all your functions and scripts for a model in an IDE and then switch to notebooks for analysis and results of the model.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Summer-Update&quot;&gt;Summer Updates&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set&lt;/a&gt; on September 22, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

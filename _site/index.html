@@ -132,6 +132,31 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-09-22T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Summer-Update">September 22, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Summer-Update" rel="bookmark" title="Summer Updates" itemprop="url">Summer Updates</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>It’s been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.</p>
+
+<p>I didn’t have much time over the summer for this stuff.  My real job got pretty busy.  You don’t care about that though.</p>
+
+<p>I did get a bit stalled.  As I’ve discussed previously, I’ve used iPython notebooks <a href="http://www.thetrainingset.com/the-work">quite a bit</a> for conducting analyses.  These only got me so far.  I’ve been working on a demand-side storage model to figure out how to take advantage of time-of-use pricing now available from utility companies.  While the notebooks work great for documenting analyses and creating plots, building a model is nearly impossible with them.  They aren’t really useful if you need multiple functions and scripts.  I was encountering bugs early on in building the model and couldn’t fix them.  It was frustrating.</p>
+
+<p>This type of scientific computing really calls for an integrated development environment, or IDE.  It’s the one thing I’ve been missing since starting in with Python in lieu of Matlab.  An IDE gives you an interactive console, debugging capabilities, and an editor all in one program.  After reading a bit online, it seemed the two big ones for Python were <a href="http://www.eclipse.org">Eclipse</a> and <a href="http://www.jetbrains.com/pycharm">Pycharm</a>.  I started with Eclipse.  I couldn’t for the life of me get it working, something about the external libraries I was using wasn’t getting set up right.  I tried every way imaginable, but this was as frustrating as the original bugs in my code.  I switched to Pycharm, and pretty quickly was up and running.</p>
+
+<p>Long story short, with an IDE in hand I found my bugs pretty quickly and finished building the model over a weekend.  I definitely recommend Pycharm or another IDE (even trying Eclipse, if you can get it working) for anything more complicated than simple models or exploratory data analysis.  You could even write all your functions and scripts for a model in an IDE and then switch to notebooks for analysis and results of the model.</p>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-08-12T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Should-I-Switch-to-TOU-Pricing">August 12, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -689,48 +714,6 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 <p>If we were to assume that the behavior in the apartment was constant - the same lights were always on, the same devices were always charging, the refrigerator compressor was always running - if we assumed that the thermostat was always set at 70 degrees, and we assumed that the only part of the weather that ever changed was the temperature (humidity and wind were constant) the linear regression model we ran earlier would exactly mirror this equation.  The variation in the electricity consumption would be entirely explained by the change in outdoor temperature, and the slope of the line would be the overall heat transfer coefficient of the apartment (through walls, windows, doors, floors, ceilings, leakage, etc.) multiplied by the square area of the apartment boundary.  By installing higher R-value insulation in the walls or replacing our old drafty windows with triple-glazing, Argon-filled windows, we’d be altering the overall heat transfer coefficient <img src="http://latex.codecogs.com/png.latex?\inline h" alt="h" /> and effectively reducing the slope of the line we fit to the data.  We can also alter the line’s slope by changing the thermostat setting; remember, the temperature difference <img src="http://latex.codecogs.com/png.latex?\inline \Delta T" alt="\Delta T" /> we’re talking about is the difference between the outdoor and indoor temperatures.</p>
 
 <p>As in all things, there is no true black (statistics) and white (engineering) - there are only grays.  In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I’ve used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we’ve begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I’m imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.</p>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-04-17T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/More-Smart-Meter-Data">April 17, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/More-Smart-Meter-Data" rel="bookmark" title="More Smart Meter Data..." itemprop="url">More Smart Meter Data...</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer">
-
-  </div>
-</section>
-<!-- /#table-of-contents -->
-
-<p>In an  <a href="http://www.thetrainingset.com/articles/My-BGE-Smart-Meter-Data">earlier post</a>, I showed initial descriptive plots for my electricity use.  Now that we have some more data, we can break these up to see differences as the spring season progresses.</p>
-
-<figure class="half">
-  <a href="http://www.thetrainingset.com/images/ElecHist - Feb2014.png"><img src="http://www.thetrainingset.com/images/ElecHist - Feb2014.png" /></a>
-  <a href="http://www.thetrainingset.com/images/ElecHist - Mar2014.png"><img src="http://www.thetrainingset.com/images/ElecHist - Mar2014.png" /></a>
-  <figcaption>Histograms for February and March 2014 electricity consumption.</figcaption>
-</figure>
-
-<p>Another way of showing the difference in each month’s energy consumption patterns would be the cumulative distribution.</p>
-
-<figure>
-  <a href="http://www.thetrainingset.com/images/ElecCDF - Feb_March2014.png"><img src="http://www.thetrainingset.com/images/ElecCDF - Feb_March2014.png" /></a>
-  <figcaption>Histogram for February 2014 electricity consumption.</figcaption>
-</figure>
-
-<p>The plot above shows that for a given hourly kilowatt-hour amount, the proportion of hours at which the consumption was that amount or less is substantially higher in March than in April; of course, we’d expect that with the warmer weather.  For example, about 18% of the time in February the hourly consumption was 1 kilowatt-hour or less, while in March it was the case about 70% of the time.</p>
 
 
   </div><!-- /.entry-content -->
