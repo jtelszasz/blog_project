@@ -132,6 +132,106 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-09-23T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Intro-To-Storage-Model">September 23, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Intro-To-Storage-Model" rel="bookmark" title="Intro to Storage Model" itemprop="url">Intro to Storage Model</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Buying lead-acid batteries and switching to one of <a href="http://www.thetrainingset.com/articles/BGE-Pricing">BGE’s time-of-use pricing plans</a> may be a very good idea indeed.</p>
+
+<p>BGE (and many other utilities in the U.S.) are now offering a time-of-use pricing plan in which the price you pay for electricity depends on what time of day or season you are purchasing it.  This is one of the so-called “demand-side strategies” that could help utilities reduce peak loads and prevent blackouts.  In a <a href="http://www.thetrainingset.com/articles/Should-I-Switch-To-TOU-Pricing">previous post</a>, I looked at whether it would make financial sense for me to switch over to one of these plans.</p>
+
+<p>One can imagine taking further advantage of these plans by purchasing most or all electricity during off-peak (cheap) hours without having to buy much or any during peak hours.  In order to explore how this might work and how beneficial it would be, I built a model in Python that simulates the hourly energy flows for a home with lead-acid battery storage.</p>
+
+<p>There are two sources of data that drive the model.  First, I’ve used one of the <a href="http://www.thetrainingset.com/articles/Feeding-The-Data-Monster">Green Button sample data files</a>, specifically the one for an inland, single-family residence.  This is an hourly electricity demand profile for the whole residential building for all of 2011.  Second, I’ve again used <a href="http://www.thetrainingset.com/articles/BGE-Pricing">BGE’s time-of-use pricing schemes</a> to determine peak hours and costs.  Some of the ideas are based on <a href="http://sel.columbia.edu/matlab-assignment-1">a Matlab assignment I worked on in grad school</a>.  While I no longer have access to the top tier journals (Elsevier is a capitalist racket), I did find a couple papers <a href="https://www.thlab.net/wp-content/uploads/publications/pub_19.pdf">here</a> and <a href="http://www.ecs.umass.edu/~irwin/smartcharge.pdf">here</a> that are using similar algorithms.</p>
+
+<p>I’ve drawn out a flow chart to show how the model works.  During off-peak times, the demand is served directly from the grid and if the battery isn’t full, extra energy is purchased to charge the battery (there is a maximum rate at which this can occur).  During peak times, energy is first used out of the battery to serve the demand.  Only when the battery is drained (to an acceptable charge level, say 30%) is energy then purchased from the grid to serve demand directly.  No energy is purchased to charge the battery during peak hours.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-09/Demand-Side Storage Model Flow Chart.jpg"><img src="http://www.thetrainingset.com/images/2014-09/Demand-Side Storage Model Flow Chart.jpg" /></a>
+  <figcaption>Flow chart for storage simulation.</figcaption>
+</figure>
+</center>
+
+<p>If seeing the logic implemented in code would help, it’s below.  I’m not going to put all those functions below as well, needless to say they assign the proper values at each hour.  You could also get them from me on <a href="https://github.com/jtelszasz/demandside_storage">Github</a>.</p>
+
+<div class="highlight"><pre><code class="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s">&#39;USAGE&#39;</span><span class="p">])):</span>
+
+        <span class="c"># If at the end of the time series, break out</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s">&#39;USAGE&#39;</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">break</span>
+
+        <span class="c"># Peak hours operation</span>
+        <span class="k">elif</span> <span class="n">results</span><span class="p">[</span><span class="s">&#39;period&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;peak&#39;</span> <span class="ow">or</span> <span class="n">results</span><span class="p">[</span><span class="s">&#39;period&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;int&#39;</span><span class="p">:</span>
+
+            <span class="c"># If there is enough available in the battery, use it first</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s">&#39;storage_available&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">E_min</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">results</span><span class="p">[</span><span class="s">&#39;USAGE&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">results</span> <span class="o">=</span> <span class="n">peak_battery_only</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+
+            <span class="c"># Otherwise, use up remainder in battery and then buy from grid</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">results</span> <span class="o">=</span> <span class="n">peak_battery_and_grid</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+
+        <span class="c"># Off-peak hours operation</span>
+        <span class="k">else</span><span class="p">:</span>
+
+            <span class="c"># If the battery isn&#39;t full...</span>
+            <span class="k">if</span> <span class="n">results</span><span class="p">[</span><span class="s">&#39;storage_available&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">storage_size_kWh</span><span class="p">:</span>
+
+                <span class="c"># ... top off the battery if it is nearly full...</span>
+                <span class="k">if</span> <span class="n">storage_size_kWh</span> <span class="o">-</span> <span class="n">results</span><span class="p">[</span><span class="s">&#39;storage_available&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">P_max_charge</span><span class="p">:</span>
+                    <span class="n">results</span> <span class="o">=</span> <span class="n">offpeak_store_to_cap</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+                
+                <span class="c"># ... otherwise, charge as much as possible in one hour.</span>
+                <span class="k">else</span><span class="p">:</span>                    
+                    <span class="n">results</span> <span class="o">=</span> <span class="n">offpeak_store_partial</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+            
+            <span class="c"># If the battery is full, then it isn&#39;t necessary to purchase extra.</span>
+            <span class="k">else</span><span class="p">:</span>                
+                <span class="n">results</span> <span class="o">=</span> <span class="n">offpeak_battery_full</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+ 
+</code></pre></div>
+
+<p>In the plot below, I’ve shown the behavior of the system for a typical summer day.  Peak hours are shaded.  As you can see, during off-peak hours additional energy is purchased in order to recharge the battery.  During peak hours, the battery is discharged preferentially before purchasing any peak-hour electricity in order to minimize cost.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-09/Daily_Energy_State_13-July-2011.png"><img src="http://www.thetrainingset.com/images/2014-09/Daily_Energy_State_13-July-2011.png" /></a>
+  <figcaption>Model behavior for summer weekday, with peak period shaded in gray.</figcaption>
+</figure>
+</center>
+
+<p>In the above plot there are two energy flows from the grid - one going to serve demand directly and the other to storage.  (There are actually three shown since I separate peak from off-peak, but you get the idea.)  To make a bit clearer how much energy is being purchased at each hour, I’ve summed those two quanities and plotted below.  Clearly in the off-peak hours, a bit extra is being purchased to charge the batteries.  During the first part of the peak period, nothing has to be purchased from the grid since the battery is serving the demand.  Once that is depleted, energy has to be purchased during the remainder of the peak period.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-09/Daily_Energy_Purchased_13-July-2011.png"><img src="http://www.thetrainingset.com/images/2014-09/Daily_Energy_Purchased_13-July-2011.png" /></a>
+  <figcaption>Amount of energy purchased in storage model, with peak period shaded in gray.</figcaption>
+</figure>
+</center>
+
+<p>It’s important to remember that the actual quantity of killowatt-hours of electricity purchased over the course of the year isn’t different than without storage, it’s just being purchased from the grid at different hours.  The consumer doesn’t need to modify their gluttonous behavior in order to make this work.  The benefit to the consumer is saving money, and the benefit to the utility is shaving peak loads.  </p>
+
+<p>A bunch of questions are already popping up in my head:</p>
+
+<ul>
+  <li>What is the payback period for the battery system?</li>
+  <li>How do the size of the battery and the peak-off-peak cost differential affect the payback period?</li>
+  <li>What percent of hours/energy over the course of the year come through the storage system as opposed to directly from grid?</li>
+  <li>How much storage is needed so that peak hour electricity is never purchased and how much does this cost?  What is the payback period?</li>
+  <li>How does the cost of the system change with percent of peak-hour demand served by storage?</li>
+</ul>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-09-22T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Summer-Update">September 22, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -624,97 +724,6 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 
 </figure>
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-04-18T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Energy-Use-and-Weather">April 18, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Energy-Use-and-Weather" rel="bookmark" title="Energy Use and Weather" itemprop="url">Energy Use and Weather</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer">
-<ul id="markdown-toc">
-  <li><a href="#statistical-model">Statistical Model</a></li>
-  <li><a href="#engineering-model">Engineering Model</a></li>
-</ul>
-
-  </div>
-</section>
-<!-- /#table-of-contents -->
-
-<p>Stepping back, let’s take a look at what the actual time series of the smart meter electricity data looks like for my apartment.  I’ll also bring in the hourly outdoor temperature as measured at Baltimore-Washington International Airport (less than 10 miles away as the crow flies).  The data are obtained via the API at <a href="http://www.wunderground.com/weather/api">Weather Underground</a>.  Again, you can follow along my line (curve, circle, some other obscure geometry) of thinking by taking a look at the <a href="http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy_And_Weather.ipynb?create=1">iPython notebook</a>.</p>
-
-<figure>
-  <a href="http://www.thetrainingset.com/images/Elec_and_Temp_TS.png"><img src="http://www.thetrainingset.com/images/Elec_and_Temp_TS.png" /></a>
-  <figcaption>Time series of hourly electricity consumption and outdoor temperature.</figcaption>
-</figure>
-
-<p>It looks as if there’s an inverse relationship between the outdoor temperature and the apartment’s electricity consumption.  We’d expect this even in the winter for our apartment due to our use of electric resistance heating.  (This is a minority case as many buildings, whether commercial, multi-family, or single-family residential, burn fossil fuels directly for providing heat.  As a precursor to a potential future analysis I’d like to work on using these data, there’s often a debate whether the GHG emissions resulting from electric resistance heating are in fact on par or greater with burning natural gas directly in a furnace on site.  This is due to losses in the electric grid - first the combustion and thermal efficiency of the generation plant itself, then the various lossy inverters required for changing voltages and losses in the transmission lines themselves.  While this is an important question to ask, the broader picture and motivation should be the integration of renewables and storage to provide heat cleanly - electric resistance allows for this integration.)</p>
-
-<p>Back to the temperature vs. electricity use question.  To start digging into the relationship a bit, we’ll start with the scatter plot.</p>
-
-<figure>
-  <a href="http://www.thetrainingset.com/images/Elec_and_Temp_Scatter.png"><img src="http://www.thetrainingset.com/images/Elec_and_Temp_Scatter.png" /></a>
-  <figcaption>Scatter plot of hourly electricity consumption and outdoor temperature.</figcaption>
-</figure>
-
-<p>As we’d expect, as the outdoor temperature increases, the electricity use generally decreases.  </p>
-
-<h3 id="statistical-model">Statistical Model</h3>
-
-<p>To take a first crack at quantifying the relationship we can use an ordinary least squares regression to try and quantify that relationship.  As is typically the case with Python, someone has already coded the tools necessary so I just have to import the Statsmodels module and use the right tool.</p>
-
-<p>Running the following block of code…</p>
-
-<div class="highlight"><pre><code class="python"><span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">elec_and_weather</span><span class="p">[</span><span class="s">&#39;USAGE&#39;</span><span class="p">],</span><span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">elec_and_weather</span><span class="p">[</span><span class="s">&#39;tempF&#39;</span><span class="p">]))</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-<span class="k">print</span> <span class="n">res</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-</code></pre></div>
-
-<p>…fits the model to our data and spits out the information about the model.</p>
-
-<figure>
-  <a href="http://www.thetrainingset.com/images/Elec_and_Temp_OLS_Output.png"><img src="http://www.thetrainingset.com/images/Elec_and_Temp_OLS_Output.png" /></a>
-  <figcaption>Ordinary least squares regression model.</figcaption>
-</figure>
-
-<p>This is what the model actually looks like on top of the data.</p>
-
-<figure>
-  <a href="http://www.thetrainingset.com/images/Elec_and_Temp_OLS.png"><img src="http://www.thetrainingset.com/images/Elec_and_Temp_OLS.png" /></a>
-  <figcaption>Linear ordinary least squares regression model for electricity consumption using outdoor temperature.</figcaption>
-</figure>
-
-<p>So our R^2 shows that 48% of the variation in the electricity use can be explained by the outdoor temperature alone.  The remaining 52% would have to be explained by other variables or natural variability.</p>
-
-<h3 id="engineering-model">Engineering Model</h3>
-
-<p>What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There’s a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:</p>
-
-<p><img src="http://latex.codecogs.com/png.latex?Q = hA \Delta T" alt="Q = hA \Delta T" /></p>
-
-<ul>
-  <li>where <img src="http://latex.codecogs.com/png.latex?\inline Q" alt="Q" /> is a heat flow rate</li>
-  <li><img src="http://latex.codecogs.com/png.latex?\inline h" alt="h" /> is a characteristic heat transfer coefficient</li>
-  <li><img src="http://latex.codecogs.com/png.latex?\inline A" alt="A" /> is the perpendicular area through which heat is passing</li>
-  <li>and <img src="http://latex.codecogs.com/png.latex?\inline \Delta T" alt="\Delta T" /> is the temperature difference across the boundary through which heat is being transmitted, in this case outdoor and indoor temperature</li>
-</ul>
-
-<p>If we were to assume that the behavior in the apartment was constant - the same lights were always on, the same devices were always charging, the refrigerator compressor was always running - if we assumed that the thermostat was always set at 70 degrees, and we assumed that the only part of the weather that ever changed was the temperature (humidity and wind were constant) the linear regression model we ran earlier would exactly mirror this equation.  The variation in the electricity consumption would be entirely explained by the change in outdoor temperature, and the slope of the line would be the overall heat transfer coefficient of the apartment (through walls, windows, doors, floors, ceilings, leakage, etc.) multiplied by the square area of the apartment boundary.  By installing higher R-value insulation in the walls or replacing our old drafty windows with triple-glazing, Argon-filled windows, we’d be altering the overall heat transfer coefficient <img src="http://latex.codecogs.com/png.latex?\inline h" alt="h" /> and effectively reducing the slope of the line we fit to the data.  We can also alter the line’s slope by changing the thermostat setting; remember, the temperature difference <img src="http://latex.codecogs.com/png.latex?\inline \Delta T" alt="\Delta T" /> we’re talking about is the difference between the outdoor and indoor temperatures.</p>
-
-<p>As in all things, there is no true black (statistics) and white (engineering) - there are only grays.  In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I’ve used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we’ve begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I’m imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.</p>
-
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
