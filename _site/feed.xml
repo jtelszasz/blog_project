@@ -4,13 +4,109 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2014-09-23T12:31:49-04:00</updated>
+<updated>2014-10-09T07:55:23-04:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://www.thetrainingset.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Storage Model Details]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Storage-Model-Details" />
+  <id>http://www.thetrainingset.com/articles/Storage-Model-Details</id>
+  <updated>2014-10-09T00:00:00-00:00</updated>
+  <published>2014-10-09T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;This post fills in some more details of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the last post I presented a flow chart of how the logic works but didn’t give a diagram of what the physical system might look like.  That’s below.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-10/physical_system.jpg&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-10/physical_system.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Demand-side storage physical system.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;I’ve illustrated the switch as being a separate component so we can see that electricity could bypass actually being inverted and stored (electricity from the grid sometimes goes directly to the demand).  In reality, the inverter/switch/charge controller would be one system.  This unit and the batteries would be the initial costs for the system.&lt;/p&gt;
+
+&lt;h2 id=&quot;model-parameters&quot;&gt;Model Parameters&lt;/h2&gt;
+
+&lt;p&gt;For electricity going straight to serve demand (not being stored first), there are essentially no additonal losses.  However, batteries only accept DC electricity, so we need an inverter to turn the AC off the grid to DC and back.  There are losses associated with this conversion, and the batteries themselves are lossy.  For now I’ve set these efficiencies as constants, but implemented them in functions so they could in the future get more sophisticated modeling (charging efficiency for batteries is dependent on depth of charge).  The nominal efficiency values are taken from &lt;a href=&quot;http://www.amazon.com/Renewable-Efficient-Electric-Power-Systems/dp/0471280607/ref=sr_1_2?ie=UTF8&amp;amp;qid=1412769771&amp;amp;sr=8-2&amp;amp;keywords=renewable+and+efficient+electric+power+systems&quot;&gt;Renewable and Efficient Electric Power Systems by Gilbert Masters&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;inverter_efficiency&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;charging&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;eff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;discharging&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;eff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eff&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;battery_efficiency&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;charging&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;eff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;discharging&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;eff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eff&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;There are also several other system parameters that need to be initialized, including the size of the storage, costs, etc.  In future analyses these variables can be varied to assess the effects on costs and energy.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;inverter_controller_cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2000.&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# ballpark&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;storage_cost_perkWh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;200.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.2&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# cost per kWh; amazon.com lead-acid deep cycle&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;storage_size_kWh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;9.&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# storage size in kWh&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;P_max_charge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;100.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;12.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1000.&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# C/3 charge rate at 12 V (converted to kW)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;E_min_depth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# maximum depth of discharge in percent&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;E_min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E_min_depth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;storage_size_kWh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;Once the model has calculated all the energy flows for each hour over the course of the year, I calculate a set of key properties of the system behavior.  These results are shown in the table below.  These are the characteristics I’ll be interested in as the system parameters described above are varied (though I may modify this set).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;’% Peak Demand Battery’: Percent of the total peak demand over the year served from the battery&lt;/li&gt;
+  &lt;li&gt;’% Peak kWh Shaved’: Percent of the total demand during peak hours removed from the grid&lt;/li&gt;
+  &lt;li&gt;’% Purchased During Off-Peak’: Percent of annual electricity purchased during off-peak hours&lt;/li&gt;
+  &lt;li&gt;’% Purchased During Peak’: Percent of annual electricity purchased during peak hours&lt;/li&gt;
+  &lt;li&gt;‘Annual System Eff’: Total annual demand divided by total annual electricity purchased&lt;/li&gt;
+  &lt;li&gt;‘Annual Var Cost’: Annual electricity cost&lt;/li&gt;
+  &lt;li&gt;‘Hours Battery Depleted’: Number of hours in the year that battery is drained to maximum depth of discharge&lt;/li&gt;
+  &lt;li&gt;‘Hours Battery Full’: Number of hours in the year that battery is fully charged&lt;/li&gt;
+  &lt;li&gt;‘Hours on Battery Only’: Number of hours in the year that demand is served by battery alone&lt;/li&gt;
+  &lt;li&gt;‘Initial Cost’: Initial system cost (inverter + batteries)&lt;/li&gt;
+  &lt;li&gt;‘Peak kWh Shaved’: Total electricity during peak hours removed from the grid&lt;/li&gt;
+  &lt;li&gt;‘Total kWh Purchased’: Total annual electricity purchased&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Below are some initial values from the simulation with a storage size of 9 kWh.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;&amp;#39;% Peak Demand Battery&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.62841144933029902&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;% Peak kWh Shaved&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.54435814423603923&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;% Purchased During Off-Peak&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.90852312473716113&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;% Purchased During Peak&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.091476875262838833&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Annual System Eff&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.93101271339465896&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Annual Var Cost&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;572.33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Hours Battery Depleted&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1087&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Hours Battery Full&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1863&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Hours on Battery Only&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1169&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Initial Cost&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3500.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Peak kWh Shaved&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;979.38848750000284&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;#39;Total kWh Purchased&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;8961.5382045414281&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;For these initial values, what stood out to me was that I removed 54% of the residence’s annual peak demand from the grid (this is the ‘% Peak kWh Shaved’).  This is the reason utilities might want to think about incentivizing residential customers to purchase grid-tied battery systems such as this (beyond just the time-of-use-pricing incentive itself).  I should say that the current model is agnostic to exactly which peak hours load is being shaved from - it just uses the battery first until it’s depleted and then switches to grid during peak hours.  Utilities would want to be a bit more sensitive to this, since their peak time-of-use currently starts at 10am weekdays in the summer but the actual “peak” won’t hit until around 4pm.  In the current model I’ve created, the battery is used up first so I wouldn’t be shaving peak load at 4pm.  This could be addressed with some logic that is a bit more clever than what I’ve currently got.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Storage-Model-Details&quot;&gt;Storage Model Details&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set&lt;/a&gt; on October 09, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

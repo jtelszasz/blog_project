@@ -8,8 +8,8 @@ share: true
 tags: [Python]
 image:
   feature: design/new_york_concrete_textures_by_fudgegraphics/ny_concrete_5.JPG
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com
 ---
 
 It's been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.
