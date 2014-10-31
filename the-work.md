@@ -4,14 +4,16 @@ permalink: /the-work/index.html
 title: The Work
 tagline: 
 tags: [projects, previous-work]
-modified: 08-03-2014
+modified: 10-30-2014
 ---
 
 ### iPython Notebooks
 
+<a href='http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb'>Analysis of Demand-Side Storage Model</a>
+
 <a href='http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/TOU_pricing_and_storage.ipynb'>Demand-side Storage and BGE Residential TOU Pricing</a>
 
-<a href='http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/apt_compare.ipynb'>Comparing new and old apartments</a>
+<a href='http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/apt_compare.ipynb'>Comparing New and Old Apartments</a>
 
 <a href='http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/Elec_SVM.ipynb?create=1'>Support Vector Regression for Predicting Electricity Consumption</a>
 
@@ -32,7 +34,7 @@ I've been learning the ins and outs of Git and Github.  You can find most of my 
 
 ### Datasets
 
-<a href="https://github.com/jtelszasz/my_energy/tree/master/raw_data">My Apartments' Electricity Usage Data</a>
+<a href="https://github.com/jtelszasz/my_energy/tree/master/raw_data">Electricity Usage Data for My Apartment(s)</a>
 
 <a href="http://services.greenbuttondata.org/sample-data.html">Green Button Sample Data</a>
 
