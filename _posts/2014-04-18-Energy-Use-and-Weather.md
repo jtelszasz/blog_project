@@ -74,7 +74,7 @@ So our R^2 shows that 48% of the variation in the electricity use can be explain
 What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There's a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:
 
 
-<img src="http://latex.codecogs.com/png.latex?Q = hA \Delta T" alt="Q = hA \Delta T"/>
+<img src="http://latex.codecogs.com/png.latex?PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}" alt="PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}"/>
 
 
 * where <img src="http://latex.codecogs.com/png.latex?\inline Q" alt="Q"/> is a heat flow rate
