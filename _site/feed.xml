@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-11-11T08:22:47-05:00</updated>
+<updated>2014-11-11T08:27:23-05:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
@@ -18,7 +18,7 @@
  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Heat-Map" />
   <id>http://localhost:4000/articles/Heat-Map</id>
   <updated>2014-11-11T00:00:00-00:00</updated>
-  <published>2014-11-12T00:00:00-05:00</published>
+  <published>2014-11-11T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
@@ -36,7 +36,7 @@
 
 &lt;p&gt;This makes changes in hourly trends over the course of the year readily apparent, and even highlights differences day to day.  The 6am/7am peak is pretty clear, as are the evening hours in the summer.  Between midnight a 4am, the usage is clearly higher (deeper yellow) in the summer as well due to AC load.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Heat-Map&quot;&gt;Demand Heat Map&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on November 12, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Heat-Map&quot;&gt;Demand Heat Map&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on November 11, 2014.&lt;/p&gt;</content>
 </entry>
 
 
