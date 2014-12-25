@@ -2,7 +2,7 @@
 layout: post
 title: The New Pad
 description: "Comparing electricity usage at the old and new apartments."
-modified: 2014-07-31
+modified: 2014-12-17
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
 image:
@@ -17,15 +17,19 @@ I didn't manage to grab the data for the last three weeks of May before changing
 
 The differences in the data are pretty staggering.  One issue is that we moved at the beginning of summer so our previous apartment with electric resistance heating has all the heating loads and the new apartment with central A/C has all the cooling loads.  The rest of the differences are described below.
 
+<center>
 <figure>
-  <a href="{{ site.url }}/images/New-Old-TS.png"><img src="{{ site.url }}/images/New-Old-TS.png"></a>
+  <a href="{{ site.url }}/images/2014-07/New-Old-TS.png"><img src="{{ site.url }}/images/2014-07/New-Old-TS.png"></a>
   <figcaption>Time series of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
 </figure>
+</center>
 
+<center>
 <figure>
-  <a href="{{ site.url }}/images/New-Old-Elec-Temp.png"><img src="{{ site.url }}/images/New-Old-Elec-Temp.png"></a>
+  <a href="{{ site.url }}/images/2014-07/New-Old-Elec-Temp.png"><img src="{{ site.url }}/images/2014-07/New-Old-Elec-Temp.png"></a>
   <figcaption>Scatter plot of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
 </figure>
+</center>
 
 ### Physical Differences in Apartments
 

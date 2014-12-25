@@ -12,7 +12,9 @@ image:
   creditlink: http://http://www.dargadgetz.com/ios-8-abstract-wallpaper-pack-for-iphone-5s-5c-and-ipod-touch-retina/
 ---
 
-By varying parameters of the <a href='{{ site.url }}/articles/Intro-To-Storage-Model'>demand-side storage model</a> we can determine the economic plausibility and benefits of home grid-tied batteries.  While the actual logic and functions are in separate Python modules, I'm doing this analysis in an <a href='http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb'>iPython notebook</a> that you can check out for more detail and thought process.
+By varying parameters of the <a href='{{ site.url }}/articles/Intro-To-Storage-Model'>demand-side storage model</a> we can determine the economic plausibility and benefits of home grid-tied batteries.  
+
+While the actual logic and functions are in separate Python modules, I'm doing this analysis in an <a href='http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb'>iPython notebook</a> that you can check out for more detail and thought process.
  
 I set up some of summary metrics I was interested in in the <a href='{{ site.url }}/articles/Storage-Model-Details'>last post</a> .  One that I didn't have on that list that is an important economic indicator is the simple payback period, which is the number of years it would take to break even on the initial investment based on the yearly savings.
 

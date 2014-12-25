@@ -2,7 +2,7 @@
 layout: post
 title: Feeding the Data Monster
 description: "Finding the right data to answer some energy use questions."
-modified: 2014-07-31
+modified: 2014-12-17
 category: articles
 tags: [home-monitoring, smart-meters, data, electricity]
 image:
@@ -11,7 +11,7 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-Scouring the internetz for some data.
+Scouring the interwebz for some data.
 
 There are a few research questions that I'd like to dig into but I haven't quite found the right data yet for them.  Ideally I would use our apartment data, but I need at least some summer data (early June won't count) and we actually just moved apartments.  There are some important differences between the previous and current apartment - namely central AC, larger but less leaky windows, a much larger floor plan, a dishwasher, and a dedicated apartment electric water heater.  
 
@@ -29,10 +29,12 @@ The <a href='https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenB
 
 I also found <a href='http://www.sdge.com/documents/green-button-60-min-meter-interval-sample-data-csv'>this</a> sample on SDGE's own website.  It's one year worth of hourly interval electrcity usage data for a residence.  At least looking at this one dataset qualitatively, the A/C loads don't peak nearly as badly as I'd expect in Baltimore during the summer so I probably won't use this.
 
+<center>
 <figure>
-  <a href="{{ site.url }}/images/SDGE_Data.png"><img src="{{ site.url }}/images/SDGE_data.png"></a>
+  <a href="{{ site.url }}/images/2014-07/SDGE_Data.png"><img src="{{ site.url }}/images/2014-07/SDGE_data.png"></a>
   <figcaption>Sample SDGE Green Button electricity usage data.</figcaption>
 </figure>
+</center>
 
 ### Pecan Street Research Institute
 
