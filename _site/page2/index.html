@@ -132,6 +132,57 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-08-01T00:00:00-04:00"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy">August 01, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" rel="bookmark" title="Mo Apartment, Mo Problems" itemprop="url">Mo Apartment, Mo Problems</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Here’s a quick comparison of average weekdays and weekends in the new and old apartments.</p>
+
+<p>It would appear that we’ve been using more at the new place, but take a look at the daily totals. </p>
+
+<figure>
+  <a href="http://localhost:4000/images/2014-08/Average_Days_New_and_Old_Apts.png"><img src="http://localhost:4000/images/2014-08/Average_Days_New_and_Old_Apts.png" /></a>
+  <figcaption>Average hourly electric usage for new and old apartments, March and June.</figcaption>
+</figure>
+
+<p>Of course we don’t have apples-to-apples comparisons here.  Of course this is partly due to weather.  The old apartment is shown for March, where we left the thermostat on all day at 65 degrees F so Willow The Cat wouldn’t freeze to death.  At the new apartment, we’re shutting off the thermostat entirely during the day, and at night kicking it on to 75 degrees F.  So for weekdays, we’re consuming much less during the day but evenings are much higher.  </p>
+
+<p>However, the <a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up">6am peak when we wake up</a> is also much higher.  I’m sure that this is due to our own dedicated electric water heater at the new place.  Our two showers in the morning plus lighting loads are the 6am peak, while the evening hours are the A/C and any dishwashing we’re doing after dinner.</p>
+
+<p>To do these average day plots I set up a quick function that uses groupby, that way I can reuse this for any time period.</p>
+
+<div class="highlight"><pre><code class="python"><span class="c"># Define a function to calculate average weekday and weekend</span>
+
+<span class="k">def</span> <span class="nf">avg_day</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">start_date</span><span class="p">,</span><span class="n">end_date</span><span class="p">):</span>
+    <span class="c"># df is pandas df, has &#39;USAGE&#39; and &#39;tempF&#39; fields, indexed by pandas datetime</span>
+    <span class="c"># date_range is string for .ix call</span>
+    <span class="c"># returns average_weekend and average_weekday</span>
+    
+    <span class="n">df_dates</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">start_date</span><span class="p">:</span><span class="n">end_date</span><span class="p">]</span>
+    
+    <span class="c"># First groupby weekday/weekend and hour of day</span>
+    <span class="n">weekday_weekend_hour</span> <span class="o">=</span> <span class="n">df_dates</span><span class="o">.</span><span class="n">groupby</span><span class="p">([(</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">6</span><span class="p">),</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">hour</span><span class="p">])</span>
+
+    <span class="c"># Calculate an average weekday and average weekend by hour (electricity and outdoor temp)</span>
+    <span class="n">average_day</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">weekday_weekend_hour</span><span class="p">[</span><span class="s">&#39;USAGE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="n">weekday_weekend_hour</span><span class="p">[</span><span class="s">&#39;tempF&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()])</span>
+    
+    <span class="n">average_weekend</span> <span class="o">=</span> <span class="n">average_day</span><span class="p">[</span><span class="bp">True</span><span class="p">]</span>
+    <span class="n">average_weekday</span> <span class="o">=</span> <span class="n">average_day</span><span class="p">[</span><span class="bp">False</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">average_weekday</span><span class="p">,</span> <span class="n">average_weekend</span>
+</code></pre></div>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-07-31T00:00:00-04:00"><a href="http://localhost:4000/articles/The-New-Pad">July 31, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -711,77 +762,6 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 </center>
 
 <p>Both figures show that there is a higher number of hours spent consuming about 0.5 kilowatt-hours. It may take some weather data to tease out what might be going on there, and I plan to look at the influence of weather next.</p>
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-03-15T00:00:00-04:00"><a href="http://localhost:4000/articles/BGE-Smart-Meters">March 15, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/BGE-Smart-Meters" rel="bookmark" title="BGE Smart Meters" itemprop="url">BGE Smart Meters</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Citizens of Baltimore and captive customers of Baltimore Gas &amp; Electric! </p>
-
-<p>In the words of Gabriel, I bring you good tidings of great joy and data and stuff. For the last year or so BGE has been rolling out smart meters to their electricity customers. Our neighborhood was <a href="http://www.bge.com/smartenergy/smartgrid/smartmeters/Pages/Installation-Schedule.aspx">slated for the second half of last year</a>, and lo, our data hath appeared unto us.</p>
-
-<p>BGE indicates that the smart meter upgrades have two components - electricity meter replacement (which communicates every 4 hours) and an upgrade to the natural gas meter that also enables communication (though this only happens every 24 hours). Currently, my BGE dashboard is only showing my electricity consumption so most of the discussion below only applies to electricity. I’ve read their website extensively but have found no indication that we’ll also get to see hourly gas consumption. This is unfortunate for single family home owners who burn natural gas on site for space heating, since this is the <a href="http://www.eia.gov/todayinenergy/detail.cfm?id=10271&amp;src=%E2%80%B9%20Consumption%20%20%20%20%20%20Residential%20Energy%20Consumption%20Survey%20(RECS)-b1">largest portion of their annual energy consumption</a></p>
-
-<p>It appears there are two primary functions the smart meters will initially serve: for providing information to their customers and to monitor the grid for outages. (Apparently even just partial implementation proved their case for grid outage notification during <a href="http://www.greentechmedia.com/articles/read/bge-gets-a-taste-of-smart-meter-capabilities-during-sandy">Hurricane Sandy</a>.) These are two pretty straight-forward applications of the data, I’m wondering where BGE (and other utilities) is headed for the next-step analysis (predictive analytics, grid efficiency and repair, optimization, renewables and storage integration, etc.)</p>
-
-<p>One interesting note on the BGE data privacy policy and a bit of wishful thinking: while BGE can’t disclose or sell individual customer interval data, the <a href="http://www.bge.com/smartenergy/smartgrid/Pages/Data-Privacy-Policy.aspx">BGE website</a> states “Smart Meter interval energy use data that is not specific to the customer, such as combined data, is not included within the scope of this policy.” I think BGE could get ahead of the curve by providing block (or similar aggregate) data in the name of transparency and perhaps as a community service. As they indicate, aggregate data is not covered by the data privacy policy; moreover, the City of Baltimore has followed the suit of many other major cities by establishing an <a href="https://data.baltimorecity.gov">open data repository.</a> Perhaps BGE and the city could work together to post aggregated interval data to Open Baltimore.</p>
-
-<h3 id="comparisons-to-neighbors">Comparisons to Neighbors</h3>
-
-<p>The BGE website does slightly more than just show you historical use, with the most prominent feature being the ability to compare your use to a sample of comparable neighbors. There have been many studies regarding energy consumption reductions as a result of real-time monitoring, feedback, and contextual comparisons (see <a href="http://www1.eere.energy.gov/seeaction/pdfs/customerinformation_behavioral_status_summary.pdf ">here</a>). In fact, a couple friends and a former professor did <a href="http://www.sciencedirect.com/science/article/pii/S0378778813003782">some work</a> on the topic.</p>
-
-<p>In keeping with the data policy exclusion for aggregate data, they use an average of a hundred or so customers that share your characteristics, all within a two or three mile radius of your house (ours average 0.4 miles from us). The initial comparison with which I was presented was way off base because our heating comes from electric resistance, but once I answered a few questions on the website about what appliances we have and the like, the comparison made much more sense (I presume we’re being compared against neighbors who all have electric resistance heating).</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2014-03/BGE-dashboard-01.png"><img src="http://localhost:4000/images/2014-03/BGE-dashboard-01.png" /></a>
-  <figcaption>February comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient. (source: www.bge.com)</figcaption>
-</figure>
-</center>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2014-03/BGE-dashboard-02.png"><img src="http://localhost:4000/images/2014-03/BGE-dashboard-02.png" /></a>
-  <figcaption>Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient (based on billing data, since smart meters weren't widespread for the shown timeframe). (source: www.bge.com)</figcaption>
-</figure>
-</center>
-
-<p>Of course, the comparisons of your monthly energy use could have been done with the monthly billing they would have anyways, without the use of smart meters. Using the smart meter data, it looks like soon we’ll be able to compare hour-to-hour use (lending what I would presume will be a more real-time competition feel to things) but this isn’t operational yet. They are, however, displaying the hourly data along with the outdoor dry-bulb temperature for reference.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2014-03/BGE-dashboard-04.png"><img src="http://localhost:4000/images/2014-03/BGE-dashboard-04.png" /></a>
-  <figcaption>Hourly electricity consumption (kilowatt-hours) and outdoor temperature (degrees Fahrenheit) for March 11, 2014. (source: www.bge.com)</figcaption>
-</figure>
-</center>
-<p>My roommate was home this day. The drop in consumption in the afternoon could be from her leaving the house and shutting off lights and her computer, the weather, or both.  Later I’ll be looking into our apartment’s response to the weather so it might become a bit more apparent then.</p>
-
-<h3 id="disaggregation-and-savings-suggestions">Disaggregation and Savings Suggestions</h3>
-
-<p>Another feature they provide is an estimated breakdown of your electricity consumption into categories (heating, lighting, etc.) Currently, these would have to be static estimates based solely on the answers I provided about our appliances and the like. Farther down the road, the hourly data will have a larger role to play here. Electricity consumption (and energy use in general) is largely a function of two things: the weather and human behavior, both of which can change drastically hour to hour. They’ll likely need about a year’s worth of data to be able to tease out the portion of energy use that is your behavior and the portion that is your building’s response to weather. This is because whatever algorithm they are using to disaggregate weather from behavior will need to have seen your electricity consumption during all climates.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2014-03/BGE-dashboard-06.png"><img src="http://localhost:4000/images/2014-03/BGE-dashboard-06.png" /></a>
-  <figcaption>Estimated breakdown of electricity consumption based on customer and building characteristics. Also shown, suggestions for reducing usage. (source: www.bge.com)</figcaption>
-</figure>
-</center>
-
-<p>The disaggregation lends itself to targeted recommendations for how to reduce your electricity consumption. An interesting feature they’ve implemented for more social context is a counter of how many customers have indicated that they would try a particular recommendation (eg. “13,859 people will turn off their lights when not needed; 1,654 people will hang dry their laundry,” etc.) In the same way that “like”-ing a post on Facebook along with many others is in some way a validation that one likes the “right” things, I can see this feature serving to validate one’s choices about their energy consumption.</p>
-
-<p>All in all, this is a good thing. Concerns about radio frequency exposure are rather <a href="http://www.epri.com/abstracts/Pages/ProductAbstract.aspx?ProductId=000000000001021829">unfounded</a> especially when we all carry cell phones in our pockets. If you are someone who has concerns about data privacy, nothing I have to say on the topic will likely alleviate your fears (particularly in light of the fact that I’m posting my energy usage data on a blog). In a later post, I’ll show you more about my data (in the hopes that you show me yours).</p>
-
-<p>UPDATE (05-08-2014): I should mention that the data services and analytics that BGE displays are all powered by <a href="http://www.opower.com/">OPower</a>, one of the leading smart meter analytics companies out there.</p>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

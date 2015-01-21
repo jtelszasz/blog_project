@@ -4,13 +4,66 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2015-01-08T12:52:16-05:00</updated>
+<updated>2015-01-21T08:27:08-05:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://localhost:4000/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[The Lost Revenue of the Baltimore Traffic Cameras]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" />
+  <id>http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue</id>
+  <updated>2015-01-20T00:00:00-00:00</updated>
+  <published>2015-01-20T00:00:00-05:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;The title of the dataset I’m working with on Baltimore’s &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;open data portal&lt;/a&gt; is “Parking Citations.”  I downloaded a snapshot of the dataset which ended up being 2,689,647 total citations through January 12, 2015. &lt;/p&gt;
+
+&lt;center&gt;
+&lt;div&gt;&lt;iframe width=&quot;500px&quot; title=&quot;Parking Citations&quot; height=&quot;425px&quot; src=&quot;https://data.baltimorecity.gov/w/n4ma-fj3m/ta62-x9wp?cur=i5SwBTR0Hvd&amp;amp;from=root&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;a href=&quot;https://data.baltimorecity.gov/Transportation/Parking-Citations/n4ma-fj3m&quot; title=&quot;Parking Citations&quot; target=&quot;_blank&quot;&gt;Parking Citations&lt;/a&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href=&quot;http://www.socrata.com/&quot; target=&quot;_blank&quot;&gt;Powered by Socrata&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;p&gt;But parking is not the only thing captured in this set. Traffic camera violations are also here (“Fixed Speed Cameras,” “Mobile Speed Cameras,” and probably some “Red Light Violations” and “Right on Red” citations) which were far and away the city’s largest revenue generator out of all of the infraction types captured here.  The fixed speed cameras alone issued nearly $28 million in citations over a three year period, until the &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/sun-investigates/bs-md-speed-camera-hearing-20141201-story.html&quot;&gt;program was ended&lt;/a&gt;.  The last two rows appear to be one-off citations.  It’s also curious that the last record of a “Snow Emergency Route Violation” was in August. In Baltimore.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-01/Citation_Descriptions.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/Citation_Descriptions.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Citation descriptions sorted by total fines.  Highlighted in red are the least recent dates of the last recorded citation and the shortest data time spans, respectively.  Highlighted in green are the largest annual revenue generators.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This all isn’t quite syncing up with what the &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/sun-investigates/bs-md-speed-camera-hearing-20141201-story.html&quot;&gt;Baltimore Sun reported&lt;/a&gt; about the traffic camera program.  According to this article, the traffic camera program generated about $140 million over 10 years.  The data contained in Baltimore’s open data portal must be incomplete, since I’m seeing a total of about $127 million for all violation types, not just cameras.  &lt;/p&gt;
+
+&lt;p&gt;To show this a bit more dramatically, here’s the time series of total monthly citations issued for the top 10 revenue generator categories.  It’s pretty clear that the data are incomplete since the traffic camera categories should have dominated for 10 years straight, and we’re seeing no significant records before 2007, even though the earliest start dates shown in the table above show dates typically starting in 2002-2003, with “Red Light Violations” starting in 1999.  Unfortunately, the Baltimore open data portal does not provide a data dictionary or substantive description of what all is contained in the dataset and what each field represents.  For example, in addition to “violFine,” there are “balance,” “openFine,” and “openPenalty” fields which all include “$” signs in the records to indicate currency.  These aren’t defined anywhere.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-01/Top_10_Monthly_Citation_TS.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/Top_10_Monthly_Citation_TS.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Total monthly citations for top 10 revenue generators.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;I wouldn’t say that the lack of definitions and descriptions of the data render them completely useless, but it does make it more difficult to make apples-to-apples comparisons and draw conclusions.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;This is a new section I’m adding, inspired by Ben Wellington’s excellent blog &lt;a href=&quot;http://iquantny.tumblr.com&quot;&gt;I Quant NY&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and Microsoft Excel.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Inspiration from &lt;a href=&quot;http://iquantny.tumblr.com&quot;&gt;I Quant NY&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue&quot;&gt;The Lost Revenue of the Baltimore Traffic Cameras&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on January 20, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -1186,79 +1239,6 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 &lt;p&gt;Both figures show that there is a higher number of hours spent consuming about 0.5 kilowatt-hours. It may take some weather data to tease out what might be going on there, and I plan to look at the influence of weather next.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/My-BGE-Smart-Meter-Data&quot;&gt;My Electricity Use&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on March 16, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[BGE Smart Meters]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/BGE-Smart-Meters" />
-  <id>http://localhost:4000/articles/BGE-Smart-Meters</id>
-  <updated>2014-12-17T00:00:00-00:00</updated>
-  <published>2014-03-15T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;Citizens of Baltimore and captive customers of Baltimore Gas &amp;amp; Electric! &lt;/p&gt;
-
-&lt;p&gt;In the words of Gabriel, I bring you good tidings of great joy and data and stuff. For the last year or so BGE has been rolling out smart meters to their electricity customers. Our neighborhood was &lt;a href=&quot;http://www.bge.com/smartenergy/smartgrid/smartmeters/Pages/Installation-Schedule.aspx&quot;&gt;slated for the second half of last year&lt;/a&gt;, and lo, our data hath appeared unto us.&lt;/p&gt;
-
-&lt;p&gt;BGE indicates that the smart meter upgrades have two components - electricity meter replacement (which communicates every 4 hours) and an upgrade to the natural gas meter that also enables communication (though this only happens every 24 hours). Currently, my BGE dashboard is only showing my electricity consumption so most of the discussion below only applies to electricity. I’ve read their website extensively but have found no indication that we’ll also get to see hourly gas consumption. This is unfortunate for single family home owners who burn natural gas on site for space heating, since this is the &lt;a href=&quot;http://www.eia.gov/todayinenergy/detail.cfm?id=10271&amp;amp;src=%E2%80%B9%20Consumption%20%20%20%20%20%20Residential%20Energy%20Consumption%20Survey%20(RECS)-b1&quot;&gt;largest portion of their annual energy consumption&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It appears there are two primary functions the smart meters will initially serve: for providing information to their customers and to monitor the grid for outages. (Apparently even just partial implementation proved their case for grid outage notification during &lt;a href=&quot;http://www.greentechmedia.com/articles/read/bge-gets-a-taste-of-smart-meter-capabilities-during-sandy&quot;&gt;Hurricane Sandy&lt;/a&gt;.) These are two pretty straight-forward applications of the data, I’m wondering where BGE (and other utilities) is headed for the next-step analysis (predictive analytics, grid efficiency and repair, optimization, renewables and storage integration, etc.)&lt;/p&gt;
-
-&lt;p&gt;One interesting note on the BGE data privacy policy and a bit of wishful thinking: while BGE can’t disclose or sell individual customer interval data, the &lt;a href=&quot;http://www.bge.com/smartenergy/smartgrid/Pages/Data-Privacy-Policy.aspx&quot;&gt;BGE website&lt;/a&gt; states “Smart Meter interval energy use data that is not specific to the customer, such as combined data, is not included within the scope of this policy.” I think BGE could get ahead of the curve by providing block (or similar aggregate) data in the name of transparency and perhaps as a community service. As they indicate, aggregate data is not covered by the data privacy policy; moreover, the City of Baltimore has followed the suit of many other major cities by establishing an &lt;a href=&quot;https://data.baltimorecity.gov&quot;&gt;open data repository.&lt;/a&gt; Perhaps BGE and the city could work together to post aggregated interval data to Open Baltimore.&lt;/p&gt;
-
-&lt;h3 id=&quot;comparisons-to-neighbors&quot;&gt;Comparisons to Neighbors&lt;/h3&gt;
-
-&lt;p&gt;The BGE website does slightly more than just show you historical use, with the most prominent feature being the ability to compare your use to a sample of comparable neighbors. There have been many studies regarding energy consumption reductions as a result of real-time monitoring, feedback, and contextual comparisons (see &lt;a href=&quot;http://www1.eere.energy.gov/seeaction/pdfs/customerinformation_behavioral_status_summary.pdf &quot;&gt;here&lt;/a&gt;). In fact, a couple friends and a former professor did &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0378778813003782&quot;&gt;some work&lt;/a&gt; on the topic.&lt;/p&gt;
-
-&lt;p&gt;In keeping with the data policy exclusion for aggregate data, they use an average of a hundred or so customers that share your characteristics, all within a two or three mile radius of your house (ours average 0.4 miles from us). The initial comparison with which I was presented was way off base because our heating comes from electric resistance, but once I answered a few questions on the website about what appliances we have and the like, the comparison made much more sense (I presume we’re being compared against neighbors who all have electric resistance heating).&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-01.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-01.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;February comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient. (source: www.bge.com)&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-02.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-02.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient (based on billing data, since smart meters weren&#39;t widespread for the shown timeframe). (source: www.bge.com)&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;Of course, the comparisons of your monthly energy use could have been done with the monthly billing they would have anyways, without the use of smart meters. Using the smart meter data, it looks like soon we’ll be able to compare hour-to-hour use (lending what I would presume will be a more real-time competition feel to things) but this isn’t operational yet. They are, however, displaying the hourly data along with the outdoor dry-bulb temperature for reference.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-04.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-04.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Hourly electricity consumption (kilowatt-hours) and outdoor temperature (degrees Fahrenheit) for March 11, 2014. (source: www.bge.com)&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-&lt;p&gt;My roommate was home this day. The drop in consumption in the afternoon could be from her leaving the house and shutting off lights and her computer, the weather, or both.  Later I’ll be looking into our apartment’s response to the weather so it might become a bit more apparent then.&lt;/p&gt;
-
-&lt;h3 id=&quot;disaggregation-and-savings-suggestions&quot;&gt;Disaggregation and Savings Suggestions&lt;/h3&gt;
-
-&lt;p&gt;Another feature they provide is an estimated breakdown of your electricity consumption into categories (heating, lighting, etc.) Currently, these would have to be static estimates based solely on the answers I provided about our appliances and the like. Farther down the road, the hourly data will have a larger role to play here. Electricity consumption (and energy use in general) is largely a function of two things: the weather and human behavior, both of which can change drastically hour to hour. They’ll likely need about a year’s worth of data to be able to tease out the portion of energy use that is your behavior and the portion that is your building’s response to weather. This is because whatever algorithm they are using to disaggregate weather from behavior will need to have seen your electricity consumption during all climates.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-06.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-03/BGE-dashboard-06.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Estimated breakdown of electricity consumption based on customer and building characteristics. Also shown, suggestions for reducing usage. (source: www.bge.com)&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The disaggregation lends itself to targeted recommendations for how to reduce your electricity consumption. An interesting feature they’ve implemented for more social context is a counter of how many customers have indicated that they would try a particular recommendation (eg. “13,859 people will turn off their lights when not needed; 1,654 people will hang dry their laundry,” etc.) In the same way that “like”-ing a post on Facebook along with many others is in some way a validation that one likes the “right” things, I can see this feature serving to validate one’s choices about their energy consumption.&lt;/p&gt;
-
-&lt;p&gt;All in all, this is a good thing. Concerns about radio frequency exposure are rather &lt;a href=&quot;http://www.epri.com/abstracts/Pages/ProductAbstract.aspx?ProductId=000000000001021829&quot;&gt;unfounded&lt;/a&gt; especially when we all carry cell phones in our pockets. If you are someone who has concerns about data privacy, nothing I have to say on the topic will likely alleviate your fears (particularly in light of the fact that I’m posting my energy usage data on a blog). In a later post, I’ll show you more about my data (in the hopes that you show me yours).&lt;/p&gt;
-
-&lt;p&gt;UPDATE (05-08-2014): I should mention that the data services and analytics that BGE displays are all powered by &lt;a href=&quot;http://www.opower.com/&quot;&gt;OPower&lt;/a&gt;, one of the leading smart meter analytics companies out there.&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/BGE-Smart-Meters&quot;&gt;BGE Smart Meters&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set&lt;/a&gt; on March 15, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
