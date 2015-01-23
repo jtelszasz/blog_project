@@ -132,6 +132,46 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-08-03T00:00:00-04:00"><a href="http://localhost:4000/articles/BGE-Pricing">August 03, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/articles/BGE-Pricing" rel="bookmark" title="BGE Residential Pricing Plans" itemprop="url">BGE Residential Pricing Plans</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>A quick blurb on a couple of pieces of the demand-side storage puzzle I’m working on.</p>
+
+<p>First, turns out I’m going to use the Green Button sample data that I <a href="http://localhost:4000/articles/feeding-the-data-monster">previously found</a>.  They have <a href="http://services.greenbuttondata.org/sample-data.html">several of these datasets posted</a> that may be interesting for comparison later.  It took an embarassing amount of time to sort out my first time parsing an XML file.  Word of advice for you data/Python peoples: don’t use ElementTree, I used BeautifulSoup and it was much simpler.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png"><img src="http://localhost:4000/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png" /></a>
+  <figcaption>Green Button sample hourly data for inland single family residence, resampled to daily.</figcaption>
+</figure>
+
+<p>Definitely nice to have a full year worth of clean data.  You can also clearly see the bump up in summer usage from A/C loads.</p>
+
+<p>In sorting out the demand-side storage question, I also took a look at what pricing schemes BGE has on offer.  They currently have the normal <a href="http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/P3_SCH_R.pdf">residential plan (“R”)</a>, a <a href="http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/P3_SCH_RL.pdf">residential time-of-use, or TOU, plan (“RL”)</a>, and a <a href="http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/ScheduleEV.pdf">plan for electric vehicle customers (“EV”)</a>.  All of the actual costs for peak, off-peak, and intermediate are found <a href="http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/Rdr_1.pdf">here</a>.  Obviously, there are a proverbial shit-ton of other nickel-and-dime tariffs, but since they’re paid per kilowatt-hour and aren’t tied to the actual price of electricity itself.  I’m assuming for the sake of comparison that the total number of kilowatt-hours you use is independent of the pricing plan you have. </p>
+
+<p>Here’s what the three pricing plans look like for weekdays in summer and non-summer periods.</p>
+
+<figure>
+  <a href="http://localhost:4000/images/2014-08/BGE_Pricing_Summer.png"><img src="http://localhost:4000/images/2014-08/BGE_Pricing_Summer.png" /></a>
+  <figcaption>BGE residential pricing plans, summer weekday.</figcaption>
+</figure>
+
+<figure>
+  <a href="http://localhost:4000/images/2014-08/BGE_Pricing_Non-Summer.png"><img src="http://localhost:4000/images/2014-08/BGE_Pricing_Non-Summer.png" /></a>
+  <figcaption>BGE residential pricing plans, non-summer weekday.</figcaption>
+</figure>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-08-01T00:00:00-04:00"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy">August 01, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -720,48 +760,6 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 <p>This is a good illustration of privacy concerns around ubiquitous data capture.  Measuring energy consumption is a proxy for measuring human behavior, and while I don’t share a lot of the privacy concerns that many out there do, I can understand why this is problematic.  Suffice it to say, I don’t care that a reader of this blog (are there any?) knows when I wake up (among other things).  Moreover, at larger scales than individual households - say at city block levels - these concerns should start to fade away, as aggregated data can effectively anonymize the information.  </p>
 
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-03-16T00:00:00-04:00"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data">March 16, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" rel="bookmark" title="My Electricity Use" itemprop="url">My Electricity Use</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Previously, I laid out what BGE’s smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.</p>
-
-<h3 id="green-button">Green Button</h3>
-
-<p>Green Button is the standard by which utilities are providing data to their customers. It was prompted in 2011 by the U.S. Chief Technology Officer calling on industry to standardize accessibility and data format for customer smart meter data and parallels the <a href="">Blue Button</a> concept for health data. Customers can download their interval usage data and use as they see fit. A customer could provide the data to a solar panel installer to better inform the design of the installation, or the data could be used to develop apps that show opportunities for efficiency upgrades.</p>
-
-<h3 id="data">Data</h3>
-
-<p>I’ve downloaded my data from the first date available (Janurary 18, 2014) through the end of February 28, 2014. I’m able to access hourly electrical consumption in kilowatt-hours, and the file is a clean csv. Shown below are probability distributions over those 6 weeks or so. We have electric resistance heating (not central gas-fired heating) and so our consumption during the winter is quite high.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2014-03/MyEnergy_ElecHist.png"><img src="http://localhost:4000/images/2014-03/MyEnergy_ElecHist.png" /></a>
-  <figcaption>Probability distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
-</figure>
-</center>
-
-<p>Below is the cumulative distribution. For a given kilowatt-hour usage on the horizontal axis, the cumulative function gives the probability that an hour’s usage was that quanitity or less.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2014-03/MyEnergy_ElecCDF.png"><img src="http://localhost:4000/images/2014-03/MyEnergy_ElecCDF.png" /></a>
-  <figcaption>Cumulative distribution for hourly electricity usage. Data collected January 18, 2014, through February 28, 2014.</figcaption>
-</figure>
-</center>
-
-<p>Both figures show that there is a higher number of hours spent consuming about 0.5 kilowatt-hours. It may take some weather data to tease out what might be going on there, and I plan to look at the influence of weather next.</p>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

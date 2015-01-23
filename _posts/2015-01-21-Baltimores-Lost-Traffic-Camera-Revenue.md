@@ -22,7 +22,7 @@ But parking is not the only thing captured in this set. Traffic camera violation
 
 <center>
 <figure>
-  <a href='{{ site.url }}/images/2015-01/Citation_Descriptions.png'><img src='{{ site.url }}/images/2015-01/Citation_Descriptions.png'></a>
+  <a href='{{ site.url }}/images/2015-01/citation_desc_date_range_OLD.png'><img src='{{ site.url }}/images/2015-01/citation_desc_date_range_OLD.png'></a>
   <figcaption>Citation descriptions sorted by total fines.  Highlighted in red are the least recent dates of the last recorded citation and the shortest data time spans, respectively.  Highlighted in green are the largest annual revenue generators.</figcaption>
 </figure>
 </center>
@@ -33,7 +33,7 @@ To show this a bit more dramatically, here's the time series of total monthly ci
 
 <center>
 <figure>
-  <a href='{{ site.url }}/images/2015-01/Top_10_Monthly_Citation_TS.png'><img src='{{ site.url }}/images/2015-01/Top_10_Monthly_Citation_TS.png'></a>
+  <a href='{{ site.url }}/images/2015-01/Top10_Monthly_Citation_TS_OLD.png'><img src='{{ site.url }}/images/2015-01/Top10_Monthly_Citation_TS_OLD.png'></a>
   <figcaption>Total monthly citations for top 10 revenue generators.</figcaption>
 </figure>
 </center>
