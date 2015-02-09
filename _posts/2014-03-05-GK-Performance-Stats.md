@@ -5,10 +5,10 @@ description: "Introduction to the MCFC/Opta data and some initial stats for keep
 modified: 2014-12-17
 category: articles
 tags: [soccer, mcfc-data, goalkeeper]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 --- 
 
 Starting off by looking at some footy data.

@@ -6,10 +6,10 @@ modified: 2014-05-08
 category: articles
 share: true
 tags: [machine-learning, smart-meters, predictive-analytics, electricity, demand-side, support-vector-machine]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Taking a big jump into machine learning now.

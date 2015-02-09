@@ -5,10 +5,10 @@ description: "Comparing electricity usage at the old and new apartments."
 modified: 2014-12-17
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
-image:
-  feature: texture-feature-04.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Steph and I moved on May 23.  

@@ -5,10 +5,10 @@ description: "Finding the right data to answer some energy use questions."
 modified: 2014-12-17
 category: articles
 tags: [home-monitoring, smart-meters, data, electricity]
-image:
-  feature: texture-feature-04.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Scouring the interwebz for some data.

@@ -6,10 +6,10 @@ modified: 2014-10-09
 category: articles
 share: true
 tags: [BGE, Green-Button, data, electricity, dynamic-pricing, storage, model, demand-side]
-image:
-  feature: design/abstract-12.jpg
-  credit: dargadgetz
-  creditlink: http://http://www.dargadgetz.com/ios-8-abstract-wallpaper-pack-for-iphone-5s-5c-and-ipod-touch-retina/
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 This post fills in some more details of the <a href='{{ site.url }}/articles/Intro-To-Storage-Model'>demand-side storage model</a>.

@@ -5,10 +5,10 @@ description: "Average daily consumption for the new and old apartments."
 modified: 2014-08-01
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity, behavior, apartments]
-image:
-  feature: texture-feature-03.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Here's a quick comparison of average weekdays and weekends in the new and old apartments.

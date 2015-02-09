@@ -6,10 +6,10 @@ modified: 2014-12-25
 category: articles
 share: true
 tags: [BGE, electricity, data-viz]
-image:
-  feature: design/abstract-8.jpg
-  credit: dargadgetz
-  creditlink: http://http://www.dargadgetz.com/ios-8-abstract-wallpaper-pack-for-iphone-5s-5c-and-ipod-touch-retina/
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Christmas Day.  I'm bored.  

@@ -6,10 +6,10 @@ modified: 2015-01-08
 category: articles
 share: true
 tags: [python, Pandas]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.  

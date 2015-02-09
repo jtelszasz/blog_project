@@ -5,10 +5,10 @@ description: "Downloaded another snapshot of the smart meter data."
 modified: 2014-04-17
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 In an  <a href="{{ site.url }}/articles/My-BGE-Smart-Meter-Data">earlier post</a>, I showed initial descriptive plots for my electricity use.  Now that we have some more data, we can break these up to see differences as the spring season progresses.

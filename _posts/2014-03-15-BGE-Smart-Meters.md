@@ -5,10 +5,10 @@ description: "BGE roll out of smart meters in Baltimore metro area."
 modified: 2014-12-17
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Citizens of Baltimore and captive customers of Baltimore Gas & Electric! 

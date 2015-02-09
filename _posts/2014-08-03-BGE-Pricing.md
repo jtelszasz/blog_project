@@ -6,10 +6,10 @@ modified: 2014-08-03
 category: articles
 share: true
 tags: [BGE, Green-Button, data, electricity, cost, dynamic-pricing]
-image:
-  feature: texture-feature-01.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 A quick blurb on a couple of pieces of the demand-side storage puzzle I'm working on.

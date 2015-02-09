@@ -6,10 +6,10 @@ modified: 2015-01-23
 category: articles
 share: true
 tags: [Baltimore, cities, parking, transportation, police]
-image:
-  feature: texture-feature-03.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Within hours of publishing my last post on <a href='{{ site.url }}/articles/Baltimores-Lost-Traffic-Camera-Revenue/'>Baltimore's parking (etc.) citation dataset</a>, the issues were corrected thanks to Sharon Paley at <a href='http://www.hackbaltimore.org'>Hack Baltimore</a> and Heather Hudson, Baltimore's Chief Data Officer in the <a href='http://moit.baltimorecity.gov/Home.aspx'>Mayor's Office of Information Technology</a>.

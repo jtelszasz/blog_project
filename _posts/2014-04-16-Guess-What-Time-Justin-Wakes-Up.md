@@ -5,10 +5,10 @@ description: "Exploring smart meter data from BGE."
 modified: 2014-04-16
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 First, a little bit on my tools.

@@ -5,10 +5,10 @@ description: "Looking at the correlation between weather and energy (electricity
 modified: 2014-04-18
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Stepping back, let's take a look at what the actual time series of the smart meter electricity data looks like for my apartment.

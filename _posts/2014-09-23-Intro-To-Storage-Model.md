@@ -6,10 +6,10 @@ modified: 2014-09-23
 category: articles
 share: true
 tags: [BGE, Green-Button, data, electricity, dynamic-pricing, storage, model, demand-side]
-image:
-  feature: texture-feature-04.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Buying lead-acid batteries and switching to one of <a href='{{ site.url }}/articles/BGE-Pricing'>BGE's time-of-use pricing plans</a> may be a very good idea indeed.

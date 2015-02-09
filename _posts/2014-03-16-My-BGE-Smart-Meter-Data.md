@@ -5,10 +5,10 @@ description: "First look at my electricity use from BGE smart meters."
 modified: 2014-03-27
 category: articles
 tags: [BGE, smart-meters, energy, data, electricity]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Previously, I laid out what BGE's smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.

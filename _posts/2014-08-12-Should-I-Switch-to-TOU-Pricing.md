@@ -6,10 +6,10 @@ modified: 2014-08-12
 category: articles
 share: true
 tags: [BGE, Green-Button, data, electricity, cost, dynamic-pricing]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 Now that I've got BGE's available <a href='{{ site.url }}/articles/BGE-Pricing'>residential time-of-use plans</a>, I can evaluate whether I would save money by switching to one.
