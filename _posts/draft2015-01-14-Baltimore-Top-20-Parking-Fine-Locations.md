@@ -6,10 +6,10 @@ modified: 2015-01-14
 category: articles
 share: true
 tags: [Baltimore, cities, parking, transportation]
-image:
-  feature: texture-feature-05.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+<!-- image:
+  feature: design/ny_concrete_10.JPG
+  credit: Fudgegraphics
+  creditlink: http://www.fudgegraphics.com -->
 ---
 
 The title of the dataset I'm working with on Baltimore's <a href='http://data.baltimorecity.gov/'>open data portal</a> is "Parking Citations."

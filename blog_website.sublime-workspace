@@ -59,30 +59,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 177,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 1340,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.md",
-			"settings":
-			{
-				"buffer_size": 54,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -167,89 +143,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_config.yml",
-					"settings":
-					{
-						"buffer_size": 177,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								177,
-								177
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_layouts/default.html",
-					"settings":
-					{
-						"buffer_size": 1340,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1340,
-								1340
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 253.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.md",
-					"settings":
-					{
-						"buffer_size": 54,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14,
-								14
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
