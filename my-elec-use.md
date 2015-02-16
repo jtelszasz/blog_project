@@ -12,7 +12,7 @@ image:
   creditlink: http://www.fudgegraphics.com
 ---
 
-# Electricity Use Visualizations
+# Interactive Electricity Use Visualizations
 
 My electricity data are obtained via the <a href='http://energy.gov/data/green-button'>Green Button protocol</a> and I usually download the hourly data once a month and update these visualizations.  They're done using iPython notebooks and <a href='https://plot.ly/'>Plotly</a>.
 
