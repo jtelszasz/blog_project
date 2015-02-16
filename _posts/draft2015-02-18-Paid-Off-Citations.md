@@ -1,8 +1,8 @@
 ---
 layout: post
-title: My Block is a Target.
-description: "Baltimore City's CDO quickly responded to issues with citation data."
-modified: 2015-02-10
+title: Unpaid citations
+description: ""
+modified: 2015-02-18
 category: articles
 share: true
 tags: [Baltimore, cities, parking, transportation, police, civic-hacking]
@@ -13,15 +13,21 @@ tags: [Baltimore, cities, parking, transportation, police, civic-hacking]
 ---
 
 Now that we can be sure of having a <a href='{{ site.url }}/articles/Quick-Response-From-Baltimore-Chief-Data-Officer'>complete data set</a> for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.
-
+asdf
 <center>
 <figure>
-  <a href='{{ site.url }}/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png'><img src='{{ site.url }}/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png'></a>
+  <a href='{{ site.url }}/images/2015-02/Daily_Total_Fines_Unpaid.png'><img src='{{ site.url }}/images/2015-02/Daily_Total_Fines_Unpaid.png'></a>
   <figcaption>Total monthly citations for top 10 types of citation fines issued.</figcaption>
 </figure>
 </center>
 
 Since the <a href='http://www.baltimoresun.com/news/maryland/sun-investigates/bs-md-speed-camera-hearing-20141201-story.html'>traffic camera program ended in Baltimore in 2013</a> it appears enforcement policies have taken a dramatic turn to make up some of the lost revenue.  Moreover, judging by the spike this past December, I'd hazard a guess that either year-end budgets were looking tight or that goals or quotas had been set at the beginning of the year and were not being met.
+
+<div>
+    <a href="https://plot.ly/~jtelszasz/32/" target="_blank" title="Justin&#39;s Energy Usage" style="display: block; text-align: center;"><img src="https://plot.ly/~jtelszasz/32.png" alt="Justin&#39;s Energy Usage" style="max-width: 100%;width: 400px;"  width="400" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="jtelszasz:32" src="https://plot.ly/embed.js" async></script>
+</div>
+
 
 ## What locations are they targeting?
 

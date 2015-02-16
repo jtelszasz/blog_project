@@ -38,6 +38,8 @@ links:
   #  url: /articles/
   - title: The Work
     url: /the-work/
+  - title: My Electricity Use
+    url: /my-elec-use/
   #- title: Made Mistakes
   #  url: http://mademistakes.com
   #  external: true

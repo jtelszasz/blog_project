@@ -4,13 +4,104 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-02-08T21:31:56-05:00</updated>
+<updated>2015-02-16T18:09:02-05:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://www.thetrainingset.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Introducing "My Electricity Use" Visualization Page]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site" />
+  <id>http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site</id>
+  <updated>2015-02-16T00:00:00-00:00</updated>
+  <published>2015-02-16T00:00:00-05:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “&lt;a href=&quot;http://www.thetrainingset.com/my-elec-use/&quot;&gt;My Electricity Use&lt;/a&gt;.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the &lt;a href=&quot;http://plot.ly&quot;&gt;Plotly&lt;/a&gt; game, but I’ll be using it a lot more regularly going forward.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site&quot;&gt;Introducing "My Electricity Use" Visualization Page&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 16, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[My Block is a Target.]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/My-Block-Is-A-Target" />
+  <id>http://www.thetrainingset.com/articles/My-Block-Is-A-Target</id>
+  <updated>2015-02-10T00:00:00-00:00</updated>
+  <published>2015-02-10T00:00:00-05:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Now that we can be sure of having a &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;complete data set&lt;/a&gt; for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Total monthly citations for top 10 types of citation fines issued.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Since the &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/sun-investigates/bs-md-speed-camera-hearing-20141201-story.html&quot;&gt;traffic camera program ended in Baltimore in 2013&lt;/a&gt; it appears enforcement policies have taken a dramatic turn to make up some of the lost revenue.  Moreover, judging by the spike this past December, I’d hazard a guess that either year-end budgets were looking tight or that goals or quotas had been set at the beginning of the year and were not being met.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-locations-are-they-targeting&quot;&gt;What locations are they targeting?&lt;/h2&gt;
+
+&lt;p&gt;Between January 20, 2013 and January 20, 2015, citations were issued at 38,597 unique locations.  &lt;strong&gt;1.2% of those locations account for 45.8% of the total value of fines issued.&lt;/strong&gt;  What were the target locations?  Here are the top 20 locations in terms of total fines issued.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Top 20 Target Citation Locations.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;university-of-baltimore&quot;&gt;University of Baltimore&lt;/h3&gt;
+
+&lt;p&gt;I would post a map, but I haven’t been able to confirm that “U/B” is University of Baltimore, especially since some of the street names aren’t near the university.  University students are prime candidates for parking tickets though, so it does make sense that so many citations are issued there.&lt;/p&gt;
+
+&lt;h3 id=&quot;block-of-n-charles-st&quot;&gt;1200 Block of N. Charles St.&lt;/h3&gt;
+
+&lt;p&gt;The 1200 block of N. Charles St. just happens to be the block I live on.  As soon as I discovered that, I had an inkling as to the reason why this would be the case and the data back this up.  This road turns into a major thoroughfare for commuters driving north out of downtown to head back to the ‘burbs, and as far as Charles St. goes this block is probably the block on which cars are most likely to be stopped and blocking traffic due to the number of businesses and close proximity of University of Baltimore.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Total fines issued at 1200 block of N. Charles St. in Baltimore, MD between January 20, 2013 and January 20, 2015.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;There’s a Starbucks on one corner with a Chipotle next to it, immediately in front of which there is a bus stop.  In addition to the Starbucks and Chipotle, there are a number of other businesses (frozen yogurt, licquor store, other restaurants) that presumably all take deliveries at regular intervals.  On numerous occasions I’ve walked past and a large truck or semi is parked at the bus stop with a ticket on its windshield.  This would explain at least the “In Transit Zone/Stop,” but I do wonder at how consistent parking police are in their coding of citations.&lt;/p&gt;
+
+&lt;p&gt;Street parking immediately behind the bus stop shown below is prohibited weekdays between 4pm and 6pm, which the data show is another large revenue generator.   &lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1423505612169!6m8!1m7!1sfA92b-gWtpBw7_rLxBABSQ!2m2!1d39.30448!2d-76.616122!3f141.43900848353474!4f-17.57579463067043!5f0.7820865974627469&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Starbucks on 1200 block of N. Charles St. in Baltimore, MD with bus stop.&lt;/figcaption&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It’s interesting that such a large number of fines are coded as “No Stopping/Parking Stadium Event Cambden”  since Cambden Yards isn’t nearby or even on Charles St.  Again, makes me wonder at how the parking police are trained to code the infractions.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I recently had my laptop stolen. I don’t feel like purchasing Microsoft Office, so I’m using a combination of Apple Numbers and Google Docs for spreadsheets now.&lt;/em&gt;&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/My-Block-Is-A-Target&quot;&gt;My Block is a Target.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 10, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -1153,98 +1244,6 @@ As expected, as the size of the lag increases, the R^2 decreases, meaning the co
 
 
   &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Energy-Use-and-Weather&quot;&gt;Energy Use and Weather&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 18, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[More Smart Meter Data...]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/More-Smart-Meter-Data" />
-  <id>http://www.thetrainingset.com/articles/More-Smart-Meter-Data</id>
-  <updated>2014-04-17T00:00:00-00:00</updated>
-  <published>2014-04-17T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;In an  &lt;a href=&quot;http://www.thetrainingset.com/articles/My-BGE-Smart-Meter-Data&quot;&gt;earlier post&lt;/a&gt;, I showed initial descriptive plots for my electricity use.  Now that we have some more data, we can break these up to see differences as the spring season progresses.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure class=&quot;half&quot;&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-04/ElecHist - Feb2014.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-04/ElecHist - Feb2014.png&quot; /&gt;&lt;/a&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-04/ElecHist - Mar2014.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-04/ElecHist - Mar2014.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Histograms for February and March 2014 electricity consumption.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;Another way of showing the difference in each month’s energy consumption patterns would be the cumulative distribution.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-04/ElecCDF - Feb_March2014.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-04/ElecCDF - Feb_March2014.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Histogram for February 2014 electricity consumption.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The plot above shows that for a given hourly kilowatt-hour amount, the proportion of hours at which the consumption was that amount or less is substantially higher in March than in April; of course, we’d expect that with the warmer weather.  For example, about 18% of the time in February the hourly consumption was 1 kilowatt-hour or less, while in March it was the case about 70% of the time.&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/More-Smart-Meter-Data&quot;&gt;More Smart Meter Data...&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 17, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Guess What Time Justin Wakes Up]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up" />
-  <id>http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up</id>
-  <updated>2014-04-16T00:00:00-00:00</updated>
-  <published>2014-04-16T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;First, a little bit on my tools.&lt;/p&gt;
-
-&lt;p&gt;For analysis tools, I’m mainly using Python (in the form of iPython notebooks) with the &lt;a href=&quot;http://pandas.pydata.org/&quot;&gt;Pandas&lt;/a&gt; module for data analysis (the sklearn module for machine learning later). Suffice it to say it’s rad.  I also use &lt;a href=&quot;https://github.com/jtelszasz&quot;&gt;Github&lt;/a&gt;, both for my analysis and modeling as well as this blog itself (as you can tell from the current web address), so you’re welcome to peruse or use any of my code from there.  I’ll try to keep my iPython notebooks pretty clean and explained well as a supplement to the blog.  You can find the notebook for the analysis below &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy.ipynb?create=1&quot;&gt;here&lt;/a&gt;.  (Just click the link - you don’t need anything special to be able to view the notebook.)&lt;/p&gt;
-
-&lt;p&gt;Pandas has been great for data analysis and makes things intuitive and quick.  As a mechanical engineer, a lot of my previous work was in Matlab.  It of course has its strengths but for data analysis it always took quite a bit of manual data munging, especially when it came to time series. &lt;/p&gt;
-
-&lt;p&gt;Anyways, using the Python groupby function I can manipulate the time series of my hourly electricity consumption from my BGE smart data.  The data starts from January 18 and I now have a few full months of data.  Below is a quick code snipet of how I’m using groupby in this case.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# elec_and_weather: hourly electricity usage&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dayofweek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dayofweek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elec_and_weather&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;the-correct-answer-is&quot;&gt;The correct answer is…&lt;/h3&gt;
-
-&lt;p&gt;To arrive at the plot below, I actually first sliced the data by month and then applied the groupby shown above.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-04/AvgDays_Elec_Feb_March.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-04/AvgDays_Elec_Feb_March.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Average weekday and weekend electricity consumption for February and March of 2014.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;This is the “guess what time Justin wakes up for work” plot. The coffee pot consumes 900 W, and we typically have it on for about 20 minutes or so, which would amount to a spike of .3 kWh for that hour. The roommate’s hair dryer consumes 1,875 W and she uses it for about 5 minutes (so she claims, I think I want to see data for that), so that would make for about a .15 kWh spike. Of course that’s what I think a typical day looks like. Not every weekday looked like that (if I worked from home, I probably used the french press instead of the coffee maker, and sometimes the roommate showers the night before and so doesn’t blow dry the hair in the morn). Therefore, the 6am peak in the weekday averages is not quite that high. &lt;/p&gt;
-
-&lt;p&gt;Since this spike should be strictly due to behavior, we don’t need to look at the difference between February and March.  We can look at the 5am-6am difference over all the weekday samples thusly:&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-04/Wkday_5am6amDiff - Feb_March.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-04/Wkday_5am6amDiff - Feb_March.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;5am to 6am difference across all weekday samples.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The average weekday difference over this time period between 5am and 6am is .253 kWh.  The 20 minute coffee maker run and the 5 minute blow dryer would amount to .45 kWh.  Looks like that was the case at least a couple of times.&lt;/p&gt;
-
-&lt;p&gt;This is a good illustration of privacy concerns around ubiquitous data capture.  Measuring energy consumption is a proxy for measuring human behavior, and while I don’t share a lot of the privacy concerns that many out there do, I can understand why this is problematic.  Suffice it to say, I don’t care that a reader of this blog (are there any?) knows when I wake up (among other things).  Moreover, at larger scales than individual households - say at city block levels - these concerns should start to fade away, as aggregated data can effectively anonymize the information.  &lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;Guess What Time Justin Wakes Up&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 16, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
