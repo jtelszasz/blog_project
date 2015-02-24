@@ -132,6 +132,94 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-04-18T00:00:00-04:00"><a href="http://localhost:4000/articles/Energy-Use-and-Weather">April 18, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/articles/Energy-Use-and-Weather" rel="bookmark" title="Energy Use and Weather" itemprop="url">Energy Use and Weather</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Stepping back, let’s take a look at what the actual time series of the smart meter electricity data looks like for my apartment.</p>
+
+<p>I’ll bring in the hourly outdoor temperature as measured at Baltimore-Washington International Airport (less than 10 miles away as the crow flies).  The data are obtained via the API at <a href="http://www.wunderground.com/weather/api">Weather Underground</a>.  Again, you can follow along my line (curve, circle, some other obscure geometry) of thinking by taking a look at the <a href="http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy_And_Weather.ipynb?create=1">iPython notebook</a>.</p>
+
+<center>
+<figure>
+  <a href="http://localhost:4000/images/2014-04/Elec_and_Temp_TS.png"><img src="http://localhost:4000/images/2014-04/Elec_and_Temp_TS.png" /></a>
+  <figcaption>Time series of hourly electricity consumption and outdoor temperature.</figcaption>
+</figure>
+</center>
+
+<p>It looks as if there’s an inverse relationship between the outdoor temperature and the apartment’s electricity consumption.  We’d expect this even in the winter for our apartment due to our use of electric resistance heating.  (This is a minority case as many buildings, whether commercial, multi-family, or single-family residential, burn fossil fuels directly for providing heat.  As a precursor to a potential future analysis I’d like to work on using these data, there’s often a debate whether the GHG emissions resulting from electric resistance heating are in fact on par or greater with burning natural gas directly in a furnace on site.  This is due to losses in the electric grid - first the combustion and thermal efficiency of the generation plant itself, then the various lossy inverters required for changing voltages and losses in the transmission lines themselves.  While this is an important question to ask, the broader picture and motivation should be the integration of renewables and storage to provide heat cleanly - electric resistance allows for this integration.)</p>
+
+<p>Back to the temperature vs. electricity use question.  To start digging into the relationship a bit, we’ll start with the scatter plot.</p>
+
+<center>
+<figure>
+  <a href="http://localhost:4000/images/2014-04/Elec_and_Temp_Scatter.png"><img src="http://localhost:4000/images/2014-04/Elec_and_Temp_Scatter.png" /></a>
+  <figcaption>Scatter plot of hourly electricity consumption and outdoor temperature.</figcaption>
+</figure>
+</center>
+
+<p>As we’d expect, as the outdoor temperature increases, the electricity use generally decreases.  </p>
+
+<h3 id="statistical-model">Statistical Model</h3>
+
+<p>To take a first crack at quantifying the relationship we can use an ordinary least squares regression to try and quantify that relationship.  As is typically the case with Python, someone has already coded the tools necessary so I just have to import the Statsmodels module and use the right tool.</p>
+
+<p>Running the following block of code…</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">elec_and_weather</span><span class="p">[</span><span class="s">&#39;USAGE&#39;</span><span class="p">],</span><span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">elec_and_weather</span><span class="p">[</span><span class="s">&#39;tempF&#39;</span><span class="p">]))</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="k">print</span> <span class="n">res</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span></code></pre></div>
+
+<p>…fits the model to our data and spits out the information about the model.</p>
+
+<center>
+<figure>
+  <a href="http://localhost:4000/images/2014-04/Elec_and_Temp_OLS_Output.png"><img src="http://localhost:4000/images/2014-04/Elec_and_Temp_OLS_Output.png" /></a>
+  <figcaption>Ordinary least squares regression model.</figcaption>
+</figure>
+</center>
+
+<p>This is what the model actually looks like on top of the data.</p>
+
+<center>
+<figure>
+  <a href="http://localhost:4000/images/2014-04/Elec_and_Temp_OLS.png"><img src="http://localhost:4000/images/2014-04/Elec_and_Temp_OLS.png" /></a>
+  <figcaption>Linear ordinary least squares regression model for electricity consumption using outdoor temperature.</figcaption>
+</figure>
+</center>
+
+<p>So our R^2 shows that 48% of the variation in the electricity use can be explained by the outdoor temperature alone.  The remaining 52% would have to be explained by other variables or natural variability.</p>
+
+<h3 id="engineering-model">Engineering Model</h3>
+
+<p>What are we saying by assuming that the model should be linear?  That (all else being equal) for every degree increase in the outdoor temperature, there should be a proportional decrease in the electricity consumption.  There’s a reason this is a valid assumption, again negelecting the otherwise stochastic behavior as a result of weather and occupancy/behavior.  The underlying heat transfer equation is:</p>
+
+<center>
+<img src="http://latex.codecogs.com/png.latex?PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}" alt="PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}" />
+</center>
+
+<ul>
+  <li>where <img src="http://latex.codecogs.com/png.latex?\inline Q" alt="Q" /> is a heat flow rate</li>
+  <li><img src="http://latex.codecogs.com/png.latex?\inline h" alt="h" /> is a characteristic heat transfer coefficient</li>
+  <li><img src="http://latex.codecogs.com/png.latex?\inline A" alt="A" /> is the perpendicular area through which heat is passing</li>
+  <li>and <img src="http://latex.codecogs.com/png.latex?\inline \Delta T" alt="\Delta T" /> is the temperature difference across the boundary through which heat is being transmitted, in this case outdoor and indoor temperature</li>
+</ul>
+
+<p>If we were to assume that the behavior in the apartment was constant - the same lights were always on, the same devices were always charging, the refrigerator compressor was always running - if we assumed that the thermostat was always set at 70 degrees, and we assumed that the only part of the weather that ever changed was the temperature (humidity and wind were constant) the linear regression model we ran earlier would exactly mirror this equation.  The variation in the electricity consumption would be entirely explained by the change in outdoor temperature, and the slope of the line would be the overall heat transfer coefficient of the apartment (through walls, windows, doors, floors, ceilings, leakage, etc.) multiplied by the square area of the apartment boundary.  By installing higher R-value insulation in the walls or replacing our old drafty windows with triple-glazing, Argon-filled windows, we’d be altering the overall heat transfer coefficient <img src="http://latex.codecogs.com/png.latex?\inline h" alt="h" /> and effectively reducing the slope of the line we fit to the data.  We can also alter the line’s slope by changing the thermostat setting; remember, the temperature difference <img src="http://latex.codecogs.com/png.latex?\inline \Delta T" alt="\Delta T" /> we’re talking about is the difference between the outdoor and indoor temperatures.</p>
+
+<p>As in all things, there is no true black (statistics) and white (engineering) - there are only grays.  In this regard smart meters can  obviously help us learn about buildings in addition to occupancy/behavior.  With clever algorithms (not the simple linear model I’ve used above) we can start to disaggregate energy consumption into its constituent parts - building response to weather and occupancy behavior.  Indeed, we’ve begun to do this.  For example, BGE recommends different energy efficiency actions I can take based on my consumption patterns.  But this is just a first step in how these data can be used, even just at individual residence level.  I’m imagining exploring in future analyses how to use these data to size battery storage and solar photovoltaics.</p>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-04-17T00:00:00-04:00"><a href="http://localhost:4000/articles/More-Smart-Meter-Data">April 17, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
