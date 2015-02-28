@@ -1,5 +1,5 @@
 title:            The Training Set.
-tagline:          "Energy and Data, coming at you live from the MARC train."
+tagline:          "Data from various sources, coming at you live from the MARC train."
 description:      
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 #url:              http://localhost:4000
@@ -40,6 +40,8 @@ links:
     url: /the-work/
   - title: My Electricity Use
     url: /my-elec-use/
+  - title: Subscribe
+    url: /subscribe/
   #- title: Made Mistakes
   #  url: http://mademistakes.com
   #  external: true
