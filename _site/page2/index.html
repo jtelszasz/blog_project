@@ -132,6 +132,105 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-11-14T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/Assessing-System-Performance">November 14, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Assessing-System-Performance" rel="bookmark" title="Assessing Demand-Side Storage System Performance" itemprop="url">Assessing Demand-Side Storage System Performance</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>By varying parameters of the <a href="http://www.thetrainingset.com/articles/Intro-To-Storage-Model">demand-side storage model</a> we can determine the economic plausibility and benefits of home grid-tied batteries.  </p>
+
+<p>While the actual logic and functions are in separate Python modules, I’m doing this analysis in an <a href="http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb">iPython notebook</a> that you can check out for more detail and thought process.</p>
+
+<p>I set up some of summary metrics I was interested in in the <a href="http://www.thetrainingset.com/articles/Storage-Model-Details">last post</a> .  One that I didn’t have on that list that is an important economic indicator is the simple payback period, which is the number of years it would take to break even on the initial investment based on the yearly savings.</p>
+
+<center>
+<img src="http://latex.codecogs.com/png.latex?PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}" alt="PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}" />
+</center>
+
+<p>The summary metrics I’ve calculated should indicate the benefits of having a home battery system to the consumer/household as well as the grid (system operator and grid).  Of course, these are going to be particular to the load profile I’m using (Green Button sample data), but another one-year hourly load profile could easily be supplanted to see how it would work out for other buildings.  </p>
+
+<h2 id="summary-metrics-v-storage-capacity">Summary Metrics v. Storage Capacity</h2>
+
+<p>One question that can be asked of the model is how certain summary metrics vary with the total battery capacity.  For example, an increase in battery size would allow the building to purchase more of the cheaper electricity during off-peak hours increasing the annual savings, but the initial investment also increases.  </p>
+
+<p>All of the other parameters are held constant, with battery and inverter efficiencies during charging and discharging all set to 0.85 (the “inverter_efficiency” and “battery_efficiency” below are function handles).  The charge rate estimate is assuming it take 8 hours to fully charge the battery.  I’ve estimated the cost of deep-discharge lead acid batteries as being about $166 per kilowatt-hour of storage (based on a quick Amazon.com search that dug up $200 for a 1.2 kWh battery).  The model currently isn’t sophisticated enough to vary the charge and discharge rates based on voltage and current as should be done, but this should suffice for a rough estimate.  For an initial estimate, I also have not factored in battery replacement to the payback period, though this should have a substantial effect and I’ll need to do this at some point.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">system_param</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s">&#39;Inverter Cost&#39;</span> <span class="p">:</span> <span class="mf">1500.</span><span class="p">,</span> <span class="c"># ballpark</span>
+        <span class="s">&#39;Storage Cost&#39;</span> <span class="p">:</span> <span class="mf">200.</span> <span class="o">/</span> <span class="mf">1.2</span><span class="p">,</span> <span class="c"># cost per kilowatt-hour based on link above</span>
+        <span class="s">&#39;Storage Size&#39;</span> <span class="p">:</span> <span class="n">bat_size</span><span class="p">,</span>  <span class="c"># storage size in kilowatt-hours</span>
+        <span class="s">&#39;Max Charge Rate&#39;</span> <span class="p">:</span> <span class="n">bat_size</span> <span class="o">/</span> <span class="mf">8.</span><span class="p">,</span>
+        <span class="s">&#39;Max DOD&#39;</span> <span class="p">:</span> <span class="n">max_dod</span><span class="p">,</span> <span class="c"># DOD</span>
+        <span class="s">&#39;Bat Depleted&#39;</span> <span class="p">:</span> <span class="n">max_dod</span> <span class="o">*</span> <span class="n">bat_size</span><span class="p">,</span>
+        <span class="s">&#39;Inverter Efficiency&#39;</span> <span class="p">:</span> <span class="n">inverter_efficiency</span><span class="p">,</span>
+        <span class="s">&#39;Battery Efficiency&#39;</span> <span class="p">:</span> <span class="n">battery_efficiency</span><span class="p">,</span>
+    <span class="p">}</span></code></pre></div>
+
+<p>In the <a href="http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb">analysis notebook</a> I create an array with all of the battery sizes, and loop through them each time setting the bat_size variable to the next size in the array.  Each time, the model creates the output over the entire year (all 8,760 hours) and then calculates the summary metrics.  The result is a dataframe of all the summary metrics indexed by summary size.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-11/metrics_snapshot_stor_cap.jpg"><img src="http://www.thetrainingset.com/images/2014-11/metrics_snapshot_stor_cap.jpg" /></a>
+  <figcaption>Simple payback period for demand-side storage (home battery) system.</figcaption>
+</figure>
+</center>
+
+<p>Now it’s easy to create some plots to illustrate how these metrics change with storage capacity.</p>
+
+<h3 id="cost-savings-and-payback-period">Cost Savings and Payback Period</h3>
+
+<p>The expectation is that there are diminishing returns, since there is a limited number of peak hours energy demand that can be supplied by electricity purchased during off-peak hours, while of course the amount of battery storage we can purchase is unlimited.  Based on this plot, the most storage we should purchase is 15 kWh worth.  The percent savings calculated is with respect to the default static BGE residential electricity prices, in other words what this home would have paid over the course of the year in electricity supplied (not including fixed tariffs and charges).</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-11/cost_savings_stor_cap.png"><img src="http://www.thetrainingset.com/images/2014-11/cost_savings_stor_cap.png" /></a>
+  <figcaption>Annual cost savings for demand-side storage (home battery) system.</figcaption>
+</figure>
+</center>
+
+<p>In general, the payback periods are a bit longer than I thought they would be.  There’s a clear optimum solution at a storage capacity of 5 kWh with the payback period being about 14.5 years.  What’s really driving the cost effectiveness (I think) is the difference between the peak and off-peak cost of electricity.  A wider difference between these prices will make it more cost effective to purchase storage and electricity during off-peak hours.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-11/PBP_stor_cap.png"><img src="http://www.thetrainingset.com/images/2014-11/PBP_stor_cap.png" /></a>
+  <figcaption>Simple payback period for demand-side storage (home battery) system.</figcaption>
+</figure>
+</center>
+
+<h3 id="grid-benefits-load-shaving">Grid Benefits (Load Shaving)</h3>
+
+<p>This pretty closely mirrors the cost savings, and understandably so since the costs are directly proportional to the amount of electricity being removed from peak-hours and purchased instead during off-peak hours.  At 15 kWh of storage we’ve just about maxed out the amount of peak time kilowatt-hours we can shave, which is all off the electricity demand for this house occuring during peak hours.  This is about 1800 kWh for this house’s load profile.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-11/peak_shaved_stor_cap.png"><img src="http://www.thetrainingset.com/images/2014-11/peak_shaved_stor_cap.png" /></a>
+  <figcaption>Peak load shaving for demand-side storage (home battery) system.</figcaption>
+</figure>
+</center>
+
+<h3 id="efficiency">Efficiency</h3>
+
+<p>Since electricity purchased simultanesously with demand (not shifted using storage) doesn’t go through any other equipment, the system’s efficiency is effectively 100% since all the electricity purchased goes directly to the serve the demand.  However, electricity purchased during off-peak hours for use at a later time first goes through the inverter to become DC, then is stored in the battery (also lossy), and takes the opposite process on the way out.  That means that the quantity of kilowatt-hours purchased from the grid becomes higher as more electricity is bought and stored.  For this reason, the “efficiency” (the total annual kWh demand divided by the total kWh purchased from the grid) drops as storage size increases. </p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-11/sys_eff_stor_cap.png"><img src="http://www.thetrainingset.com/images/2014-11/sys_eff_stor_cap.png" /></a>
+  <figcaption>Total kWh purchased during year for demand-side storage (home battery) system.</figcaption>
+</figure>
+</center>
+
+<p>This is an important (albeit predictable) result since it means we’ve effectively increased the carbon footprint of the home, assuming the electricity mix is dominated by carbon-intensive power sources.  What such a system could allow for, however, is that intermittent renewable resources could more readily integrate with storage acting as a buffer between demand and intermittent supply.</p>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-11-11T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/Heat-Map">November 11, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -612,99 +711,6 @@
 
 <p>University of California at Irvine has a center in the computer science department that has sourced a <a href="http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">dataset from researchers in Clamart, France</a>.  It appears the minute-resolution, sub-metered data (more than 2 million rows) were recorded by Georges Hebrail et al. for a home in France, but I haven’t been able to find traceback information to confirm.  Unfortunately, while one of the three submeters supposedly captures a water heater and an air conditioner, it’s clear that household member behavior - particularly when it comes to air conditioning - is substantially different than ours.  (This is likely the result of higher energy prices driving reduced consumption, something Americans are only familiar with when gasoline prices jump.)  Since I know our electricity consumption will spike significantly higher this summer, I don’t think this will be a useful dataset.</p>
 
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-06-18T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Closer-Look-At-SVM-Model">June 18, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Closer-Look-At-SVM-Model" rel="bookmark" title="Closer Look at the Electricity SVR Forecast" itemprop="url">Closer Look at the Electricity SVR Forecast</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>First a disclaimer on cross-validation:</p>
-
-<p>In the <a href="http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines">previous post</a> I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.</p>
-
-<p>The data I’m using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.</p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2014-06/SVM_predict_TS_zoom.png"><img src="http://www.thetrainingset.com/images/2014-06/SVM_predict_TS_zoom.png" /></a>
-  <figcaption>Predicted (SVR, next-hour) and actual hourly electricity usage, March 25 and 26.</figcaption>
-</figure>
-</center>
-
-<p>It looks like, with some exceptions, the prediction is generally one hour behind what the actual electricity demand is doing, especially looking at most of the peaks.  At first I thought (hoped) that this was an issue with how I was date indexing the predicted values after calculating them (assigning a timestamp one hour behind what it should have been). But after closer inspection and thinking about it, this actually makes sense.  In the post on <a href="http://www.thetrainingset.com/articles/Autocorrelation">autocorrelation</a> I showed the following lag plot: </p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2014-06/Elec_Lag_1hour.png"><img src="http://www.thetrainingset.com/images/2014-06/Elec_Lag_1hour.png" /></a>
-  <figcaption>Lag plot, 1 hour.</figcaption>
-</figure>
-</center>
-
-<p>The slope of the linear fit is about 0.97 and the constant (y-intercept) is about 0.04.  In other words, the ratio between any hour’s electricity demand and the hour previous is about one.  So unless the time of day or workday-non-workday indicator is <em>very</em> influential at any hour (like <a href="http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up">6am</a>), the model will likely just predict the next hour to be the same as the current hour demand.  This will result in missing peaks by an hour, which if you’re a utility trying to schedule enough generation in the summer to meet the next hour’s air conditioning loads in a city, this is not so bueno.  I think the reason this is a product of the model is that a large fraction of the training samples used to build the model are <em>not</em> peaks, save for the <a href="http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up">6am wake-up time</a>. </p>
-
-<p>Below are the same results, just resampled to daily instead of hourly.</p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2014-06/SVM_predict_DailyTotal.png"><img src="http://www.thetrainingset.com/images/2014-06/SVM_predict_DailyTotal.png" /></a>
-  <figcaption>Hourly demand (actual and predicted) resampled to daily totals.</figcaption>
-</figure>
-</center>
-
-<h3 id="accuracy-measures">Accuracy Measures</h3>
-
-<p>In order to compare the accuracy of any models, the following measures can be used.  The file <a href="http://www.github.com/jtelszasz/my_energy/forecasts/">“errors.py”</a> has all of these functions for future use.</p>
-
-<p>I’ve calculated and reported the values below and while some do have some absolute meaning, we’ll need to test out some more models to see the relative performance of the model.</p>
-
-<h4 id="root-mean-sqaure-error">Root Mean Sqaure Error</h4>
-
-<p>This is effectively the standard error of the model, and is in the same units as those of the predicted variable (or kilowatt-hours here).</p>
-
-<center>
-<img src="http://latex.codecogs.com/gif.latex?RMSE=\sqrt{\frac{\sum_{1}^{N}(y-\hat{y})^{2}}{N}}" title="RMSE=\sqrt{\frac{\sum_{1}^{N}(y-\bar{y})^{2}}{N}}" />
-</center>
-
-<p>The standard error for the <a href="http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines">initial SVM model</a> is 0.17 kilowatt-hours.</p>
-
-<h4 id="mean-absolute-percent-error">Mean Absolute Percent Error</h4>
-
-<p>With this measure, the absolute percent error between each predicted value and actual value is calculated and the average is taken; the unit of measure is a percentage. If the absolute value wasn’t taken and there was little bias in the model, you’d end up with something close to zero and the measure would be worthless.  (No I couldn’t get the damn absolute value brackets working in the equation editor and I stopped caring.)</p>
-
-<center>
-<img src="http://latex.codecogs.com/gif.latex?MAPE=\frac{1}{N}\sum_{1}^{N}\frac{abs(y-\hat{y})}{y}" title="MAPE=\frac{1}{N}\sum_{1}^{N}\frac{abs(y-\hat{y})}{y}" />
-</center>
-
-<p>The mean absolute percent error for the SVM model is 19%.</p>
-
-<h4 id="coefficient-of-variation">Coefficient of Variation</h4>
-
-<p>This is similar to the RMSE measure, except it is normalized to the mean.  It indicates how much variation there is with respect to the mean.</p>
-
-<center>
-<img src="http://latex.codecogs.com/gif.latex?CV=\sqrt{\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})^{2}}{\bar{y}}}" title="CV=\sqrt{\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})^{2}}{\bar{y}}}" />
-</center>
-
-<p>The coefficient of variation for the SVM model is 0.21.</p>
-
-<h4 id="mean-bias-error">Mean Bias Error</h4>
-
-<p>The mean bias error gives an indication of how the model over- or underestimates.</p>
-
-<center>
-<img src="http://latex.codecogs.com/gif.latex?MBE=\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})}{\bar{y}}" title="MBE=\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})}{\bar{y}}" />
-</center>
-
-<p>The mean bias error for the initial SVM model is -0.02, which indicates the model isn’t systematically over- or underestimating the hourly kilowatt-hour consumption.</p>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

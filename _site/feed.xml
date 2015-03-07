@@ -4,13 +4,86 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-03-03T20:38:40-05:00</updated>
+<updated>2015-03-07T10:33:33-05:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://www.thetrainingset.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[When Not To Park On N. Charles St.]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles" />
+  <id>http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles</id>
+  <updated>2015-03-07T00:00:00-00:00</updated>
+  <published>2015-03-07T00:00:00-05:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;In a recent posts I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charlest Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+&lt;iframe src=&quot;https://www.google.com/maps/d/embed?mid=z14mtc2vy9S0.k5pYuRXb6j84&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Five blocks on North Charles Street that have increasingly become target parking enforcement locations.  Blocks are colored and labeled by difference between September 2013 and March 2014 citation totals.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;So when is that stretch being targeted?  Here are the hourly total citation counts for those five blocks on North Charles St.  Looks like you’re safe before 10am on the weekends, and maybe have a shot if you need a quick spot around 3pm.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;You’re also probably safer on Sundays.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;dot--baltimore-it-should-provide-new-citation-description-options&quot;&gt;DOT &amp;amp; Baltimore IT Should Provide New Citation Description Options&lt;/h2&gt;
+
+&lt;p&gt;Of course as we’ve seen in the past, parking police are using the “All Other Parking Meter Violations” predominantly, which masks the true cause of the citation.  In this instance, these are metered parking spots so my guess is their time has expired.  This is something that DOT and Baltimore Mayor’s Office of IT could easily provide a new description code for so we know that this is the cause.  &lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Total tickets issued on five blocks of N. Charles St. in Baltimore by description.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -51,7 +124,7 @@
 &lt;/figure&gt;
 &lt;/center&gt;
 
-&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 8, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something over nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
+&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 8, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -1105,101 +1178,6 @@
 
 
   &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Feeding-The-Data-Monster&quot;&gt;Feeding the Data Monster&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on July 31, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Closer Look at the Electricity SVR Forecast]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Closer-Look-At-SVM-Model" />
-  <id>http://www.thetrainingset.com/articles/Closer-Look-At-SVM-Model</id>
-  <updated>2014-12-17T00:00:00-00:00</updated>
-  <published>2014-06-18T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;First a disclaimer on cross-validation:&lt;/p&gt;
-
-&lt;p&gt;In the &lt;a href=&quot;http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;previous post&lt;/a&gt; I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.&lt;/p&gt;
-
-&lt;p&gt;The data I’m using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-06/SVM_predict_TS_zoom.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-06/SVM_predict_TS_zoom.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Predicted (SVR, next-hour) and actual hourly electricity usage, March 25 and 26.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;It looks like, with some exceptions, the prediction is generally one hour behind what the actual electricity demand is doing, especially looking at most of the peaks.  At first I thought (hoped) that this was an issue with how I was date indexing the predicted values after calculating them (assigning a timestamp one hour behind what it should have been). But after closer inspection and thinking about it, this actually makes sense.  In the post on &lt;a href=&quot;http://www.thetrainingset.com/articles/Autocorrelation&quot;&gt;autocorrelation&lt;/a&gt; I showed the following lag plot: &lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-06/Elec_Lag_1hour.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-06/Elec_Lag_1hour.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Lag plot, 1 hour.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The slope of the linear fit is about 0.97 and the constant (y-intercept) is about 0.04.  In other words, the ratio between any hour’s electricity demand and the hour previous is about one.  So unless the time of day or workday-non-workday indicator is &lt;em&gt;very&lt;/em&gt; influential at any hour (like &lt;a href=&quot;http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;6am&lt;/a&gt;), the model will likely just predict the next hour to be the same as the current hour demand.  This will result in missing peaks by an hour, which if you’re a utility trying to schedule enough generation in the summer to meet the next hour’s air conditioning loads in a city, this is not so bueno.  I think the reason this is a product of the model is that a large fraction of the training samples used to build the model are &lt;em&gt;not&lt;/em&gt; peaks, save for the &lt;a href=&quot;http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;6am wake-up time&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;Below are the same results, just resampled to daily instead of hourly.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-06/SVM_predict_DailyTotal.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-06/SVM_predict_DailyTotal.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Hourly demand (actual and predicted) resampled to daily totals.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;h3 id=&quot;accuracy-measures&quot;&gt;Accuracy Measures&lt;/h3&gt;
-
-&lt;p&gt;In order to compare the accuracy of any models, the following measures can be used.  The file &lt;a href=&quot;http://www.github.com/jtelszasz/my_energy/forecasts/&quot;&gt;“errors.py”&lt;/a&gt; has all of these functions for future use.&lt;/p&gt;
-
-&lt;p&gt;I’ve calculated and reported the values below and while some do have some absolute meaning, we’ll need to test out some more models to see the relative performance of the model.&lt;/p&gt;
-
-&lt;h4 id=&quot;root-mean-sqaure-error&quot;&gt;Root Mean Sqaure Error&lt;/h4&gt;
-
-&lt;p&gt;This is effectively the standard error of the model, and is in the same units as those of the predicted variable (or kilowatt-hours here).&lt;/p&gt;
-
-&lt;center&gt;
-&lt;img src=&quot;http://latex.codecogs.com/gif.latex?RMSE=\sqrt{\frac{\sum_{1}^{N}(y-\hat{y})^{2}}{N}}&quot; title=&quot;RMSE=\sqrt{\frac{\sum_{1}^{N}(y-\bar{y})^{2}}{N}}&quot; /&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The standard error for the &lt;a href=&quot;http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines&quot;&gt;initial SVM model&lt;/a&gt; is 0.17 kilowatt-hours.&lt;/p&gt;
-
-&lt;h4 id=&quot;mean-absolute-percent-error&quot;&gt;Mean Absolute Percent Error&lt;/h4&gt;
-
-&lt;p&gt;With this measure, the absolute percent error between each predicted value and actual value is calculated and the average is taken; the unit of measure is a percentage. If the absolute value wasn’t taken and there was little bias in the model, you’d end up with something close to zero and the measure would be worthless.  (No I couldn’t get the damn absolute value brackets working in the equation editor and I stopped caring.)&lt;/p&gt;
-
-&lt;center&gt;
-&lt;img src=&quot;http://latex.codecogs.com/gif.latex?MAPE=\frac{1}{N}\sum_{1}^{N}\frac{abs(y-\hat{y})}{y}&quot; title=&quot;MAPE=\frac{1}{N}\sum_{1}^{N}\frac{abs(y-\hat{y})}{y}&quot; /&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The mean absolute percent error for the SVM model is 19%.&lt;/p&gt;
-
-&lt;h4 id=&quot;coefficient-of-variation&quot;&gt;Coefficient of Variation&lt;/h4&gt;
-
-&lt;p&gt;This is similar to the RMSE measure, except it is normalized to the mean.  It indicates how much variation there is with respect to the mean.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;img src=&quot;http://latex.codecogs.com/gif.latex?CV=\sqrt{\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})^{2}}{\bar{y}}}&quot; title=&quot;CV=\sqrt{\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})^{2}}{\bar{y}}}&quot; /&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The coefficient of variation for the SVM model is 0.21.&lt;/p&gt;
-
-&lt;h4 id=&quot;mean-bias-error&quot;&gt;Mean Bias Error&lt;/h4&gt;
-
-&lt;p&gt;The mean bias error gives an indication of how the model over- or underestimates.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;img src=&quot;http://latex.codecogs.com/gif.latex?MBE=\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})}{\bar{y}}&quot; title=&quot;MBE=\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})}{\bar{y}}&quot; /&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The mean bias error for the initial SVM model is -0.02, which indicates the model isn’t systematically over- or underestimating the hourly kilowatt-hour consumption.&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Closer-Look-At-SVM-Model&quot;&gt;Closer Look at the Electricity SVR Forecast&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on June 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
