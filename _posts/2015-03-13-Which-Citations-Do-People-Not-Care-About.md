@@ -12,7 +12,7 @@ tags: [Baltimore, cities, parking, transportation, civic-hacking, data-journalis
   creditlink: http://www.fudgegraphics.com -->
 ---
 
-In a recent post I've shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.
+In a recent posts I've shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charlest Street right around the corner from my apartment is one of those target locations.
 
 <center>
 <figure>

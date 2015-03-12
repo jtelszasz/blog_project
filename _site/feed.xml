@@ -4,13 +4,86 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-03-07T10:33:33-05:00</updated>
+<updated>2015-03-12T08:02:26-04:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://www.thetrainingset.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[When Not To Park On N. Charles St.]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About" />
+  <id>http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About</id>
+  <updated>2015-03-07T00:00:00-00:00</updated>
+  <published>2015-03-13T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;In a recent posts I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charlest Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+&lt;iframe src=&quot;https://www.google.com/maps/d/embed?mid=z14mtc2vy9S0.k5pYuRXb6j84&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Five blocks on North Charles Street that have increasingly become target parking enforcement locations.  Blocks are colored and labeled by difference between September 2013 and March 2014 citation totals.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;So when is that stretch being targeted?  Here are the hourly total citation counts for those five blocks on North Charles St.  Looks like you’re safe before 10am on the weekends, and maybe have a shot if you need a quick spot around 3pm.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;You’re also probably safer on Sundays.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;dot--baltimore-it-should-provide-new-citation-description-options&quot;&gt;DOT &amp;amp; Baltimore IT Should Provide New Citation Description Options&lt;/h2&gt;
+
+&lt;p&gt;Of course as we’ve seen in the past, parking police are using the “All Other Parking Meter Violations” predominantly, which masks the true cause of the citation.  In this instance, these are metered parking spots so my guess is their time has expired.  This is something that DOT and Baltimore Mayor’s Office of IT could easily provide a new description code for so we know that this is the cause.  &lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Total tickets issued on five blocks of N. Charles St. in Baltimore by description.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 13, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -25,7 +98,7 @@
     <uri>http://www.thetrainingset.com</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;In a recent posts I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charlest Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
+  <content type="html">&lt;p&gt;In a recent post I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
@@ -124,7 +197,7 @@
 &lt;/figure&gt;
 &lt;/center&gt;
 
-&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 8, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
+&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -1120,64 +1193,6 @@
 
 
   &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/The-New-Pad&quot;&gt;The New Pad&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on July 31, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Feeding the Data Monster]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Feeding-The-Data-Monster" />
-  <id>http://www.thetrainingset.com/articles/Feeding-The-Data-Monster</id>
-  <updated>2014-12-17T00:00:00-00:00</updated>
-  <published>2014-07-31T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;Scouring the interwebz for some data.&lt;/p&gt;
-
-&lt;p&gt;There are a few research questions that I’d like to dig into but I haven’t quite found the right data yet for them.  Ideally I would use our apartment data, but I need at least some summer data (early June won’t count) and we actually just moved apartments.  There are some important differences between the previous and current apartment - namely central AC, larger but less leaky windows, a much larger floor plan, a dishwasher, and a dedicated apartment electric water heater.  &lt;/p&gt;
-
-&lt;p&gt;I’ve done some digging to come up with some other candidate datasets, though this is by no means comprehensive.  I’m mainly looking for at least a year worth of hourly electricity data (or finer scale that could be resampled) for a household or apartment with moderate or high summer air conditioning loads. A lot of the publicly available electricity usage datasets I’ve found have been geared toward non-invasive appliance load monitoring (NIALM) research - test data for algorithms that can breakout appliance end uses based on the electricity signatures.  Generally these are very high frequency (sub-minute time scales) but cover much shorter spans than needed (really a full year).  Hopefully this compilation is useful for other researchers out there.&lt;/p&gt;
-
-&lt;p&gt;I think I might also put some of these in an appropriate Github folder and turn this post into a readme for future use.  There are plenty more out there that are geared towards the NIALM stuff so if I get into that more, I can add it to the list there.&lt;/p&gt;
-
-&lt;h3 id=&quot;green-button-sample-datasets&quot;&gt;Green Button Sample Datasets&lt;/h3&gt;
-
-&lt;p&gt;Since BGE has signed on to use the Green Button data standard (like most utilities using smart meters have) I’m hoping to use a sample dataset, since it would easily be replaced by my own data once it’s available.&lt;/p&gt;
-
-&lt;p&gt;The National Institute for Standards and Technology has a &lt;a href=&quot;https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK&quot;&gt;list of available sample datasets on their website&lt;/a&gt; for the software development kit, or SDK.  It isn’t specified what type of building or location the samples are from, but they do provide hourly profiles that add up to a full year’s worth of data.  This may be worth digging into.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK&quot;&gt;same NIST website&lt;/a&gt; links to some data from San Diego Gas and Electric (SDGE).  There are multiple hourly datasets listed, and they specify a region within SDGE’s territory that the data have come from (coastal, inland, desert, etc.)&lt;/p&gt;
-
-&lt;p&gt;I also found &lt;a href=&quot;http://www.sdge.com/documents/green-button-60-min-meter-interval-sample-data-csv&quot;&gt;this&lt;/a&gt; sample on SDGE’s own website.  It’s one year worth of hourly interval electrcity usage data for a residence.  At least looking at this one dataset qualitatively, the A/C loads don’t peak nearly as badly as I’d expect in Baltimore during the summer so I probably won’t use this.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-07/SDGE_Data.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-07/SDGE_data.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Sample SDGE Green Button electricity usage data.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;h3 id=&quot;pecan-street-research-institute&quot;&gt;Pecan Street Research Institute&lt;/h3&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://www.pecanstreet.org&quot;&gt;Pecan Street Research Institute&lt;/a&gt; curates possibly the largest residential energy and water consumption dataset.  The effort was initiated in 2009 and monitors the electricity, gas, and water use of over 900 homes in Texas at 1-minute resolution.  The electricity monitoring includes both whole house and up to 23 submetered circuits.  Unfortunately you have to be an active academic researcher to even obtain a free sample of the dataset, let alone full access to the whole shebang.&lt;/p&gt;
-
-&lt;h3 id=&quot;jack-kelly-phd-student-at-imperial-college&quot;&gt;Jack Kelly, PhD student at Imperial College&lt;/h3&gt;
-
-&lt;p&gt;Jack Kelly at Imperial College has been gracious enough to post his home monitoring datasets on &lt;a href=&quot;https://www.github.com/jackkelly&quot;&gt;Github&lt;/a&gt;.  He’s been monitoring two homes for electricity usage and sub-minute timescales, neither of which include air-conditioning data.  The lack of air conditioning doesn’t really help me.&lt;/p&gt;
-
-&lt;h3 id=&quot;kaggle-competition-sample-data&quot;&gt;Kaggle Competition Sample Data&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.kaggle.com&quot;&gt;Kaggle&lt;/a&gt; hosts a platform for open competitions that usually ask competitors to devise machine learning or statistical predicitions, the most accurate prediction winning.  Several of the competitions have involved energy - either forecasting demand or disaggregating demand data into end uses (Kaggle’s actual business involves the application of machine learning for the energy industry).  The &lt;a href=&quot;http://www.kaggle.com/c/belkin-energy-disaggregation-competition&quot;&gt;disaggregation competition, sponsored by Belkin&lt;/a&gt;, asked competitors to try and make use of a particular technique in order to tease out how much energy was used for various appliances.  The data used for this is very high frequency resolution for four houses.&lt;/p&gt;
-
-&lt;h3 id=&quot;uci-center-for-machine-learning-and-intelligent-systems&quot;&gt;UCI Center for Machine Learning and Intelligent Systems&lt;/h3&gt;
-
-&lt;p&gt;University of California at Irvine has a center in the computer science department that has sourced a &lt;a href=&quot;http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption&quot;&gt;dataset from researchers in Clamart, France&lt;/a&gt;.  It appears the minute-resolution, sub-metered data (more than 2 million rows) were recorded by Georges Hebrail et al. for a home in France, but I haven’t been able to find traceback information to confirm.  Unfortunately, while one of the three submeters supposedly captures a water heater and an air conditioner, it’s clear that household member behavior - particularly when it comes to air conditioning - is substantially different than ours.  (This is likely the result of higher energy prices driving reduced consumption, something Americans are only familiar with when gasoline prices jump.)  Since I know our electricity consumption will spike significantly higher this summer, I don’t think this will be a useful dataset.&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Feeding-The-Data-Monster&quot;&gt;Feeding the Data Monster&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on July 31, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

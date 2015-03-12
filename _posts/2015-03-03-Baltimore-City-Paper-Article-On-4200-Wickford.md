@@ -38,7 +38,7 @@ In fact, here is the full list of citations at the 4200 block of Wickford Rd. fr
 </figure>
 </center>
 
-It truly pales in comparison to some of the <a href='{{ site.url }}/articles/Rapid-Increase-In-Citations/'>blocks I've been looking at recently</a>.  The article claims that parking tickets have appeared in the middle of the night, "depicting the parking enforcement agents as thieves in the night."  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 8, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.
+It truly pales in comparison to some of the <a href='{{ site.url }}/articles/Rapid-Increase-In-Citations/'>blocks I've been looking at recently</a>.  The article claims that parking tickets have appeared in the middle of the night, "depicting the parking enforcement agents as thieves in the night."  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.
 
 ---
 *Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore.</a>*
