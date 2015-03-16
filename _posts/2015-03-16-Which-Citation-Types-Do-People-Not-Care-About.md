@@ -33,7 +33,7 @@ The dataset that gets posted on <a href='http://data.baltimorecity.gov'>the Open
 
 <center>
 <figure>
-  <a href='{{ site.url }}/images/2015-03/Ticket_Counts_by_Year.png'><img src='{{ site.url }}/images/2015-03/Ticket_Counts_by_Year.png'></a>
+  <a href='{{ site.url }}/images/2015-03/Ticket_Counts_By_Year.png'><img src='{{ site.url }}/images/2015-03/Ticket_Counts_By_Year.png'></a>
   <figcaption>Total ticket counts by category and year.</figcaption>
 </figure>
 </center>
