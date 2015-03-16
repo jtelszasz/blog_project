@@ -2,27 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">The Training Set.</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
-<link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-03-16T08:30:31-04:00</updated>
-<id>http://www.thetrainingset.com/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2015-03-16T08:31:16-04:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
-  <uri>http://www.thetrainingset.com/</uri>
+  <uri>http://localhost:4000/</uri>
   <email></email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Which citations do people not care about paying?]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" />
-  <id>http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" />
+  <id>http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
   <updated>2015-03-16T00:00:00-00:00</updated>
-  <published>2015-03-13T00:00:00-04:00</published>
+  <published>2015-03-16T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.&lt;/p&gt;
@@ -33,7 +33,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Percent of total citations that have a balance as of February 28, 2015.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -46,7 +46,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Year.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Year.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Year.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Year.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total ticket counts by category and year.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -70,20 +70,20 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 13, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 16, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[DOT Needs More Citation Categories]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories" />
-  <id>http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" />
+  <id>http://localhost:4000/articles/DOT-Needs-More-Citation-Categories</id>
   <updated>2015-03-12T00:00:00-00:00</updated>
   <published>2015-03-12T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;Here’s a suggestion directed at the Department of Transportation for improving their citation system.  &lt;/p&gt;
@@ -92,7 +92,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citation counts in Baltimore by category.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -116,20 +116,20 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[When Not To Park On N. Charles St.]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles" />
-  <id>http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" />
+  <id>http://localhost:4000/articles/When-Not-To-Park-On-Charles</id>
   <updated>2015-03-07T00:00:00-00:00</updated>
   <published>2015-03-07T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;In a recent post I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
@@ -145,7 +145,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -154,7 +154,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -165,7 +165,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total tickets issued on five blocks of N. Charles St. in Baltimore by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -189,20 +189,20 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Investigating City Paper's Claims About 4200 Wickford]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford" />
-  <id>http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" />
+  <id>http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford</id>
   <updated>2015-03-03T00:00:00-00:00</updated>
   <published>2015-03-03T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;Baltimore’s City Paper recently &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;took a look at a unique parking situation&lt;/a&gt; in Baltimore at the 4200 block of Wickford Road.  Unfortunately, they didn’t take a peek at the same open data for parking citations I’ve been investigating lately.&lt;/p&gt;
@@ -219,7 +219,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -227,11 +227,11 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford_Citation_Table.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford_Citation_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
-&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
+&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -252,27 +252,27 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford&quot;&gt;Investigating City Paper's Claims About 4200 Wickford&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 03, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford&quot;&gt;Investigating City Paper's Claims About 4200 Wickford&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 03, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Biasing Citations Towards Those Who Pay]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Daily-Unpaid-Citations" />
-  <id>http://www.thetrainingset.com/articles/Daily-Unpaid-Citations</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Daily-Unpaid-Citations" />
+  <id>http://localhost:4000/articles/Daily-Unpaid-Citations</id>
   <updated>2015-02-27T00:00:00-00:00</updated>
   <published>2015-02-27T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
+  <content type="html">&lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Daily_Citations_Unpaid.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Daily_Citations_Unpaid.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -304,27 +304,27 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Daily-Unpaid-Citations&quot;&gt;Biasing Citations Towards Those Who Pay&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 27, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Daily-Unpaid-Citations&quot;&gt;Biasing Citations Towards Those Who Pay&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 27, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Rapid Increase in Citations]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations" />
-  <id>http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Rapid-Increase-In-Citations" />
+  <id>http://localhost:4000/articles/Rapid-Increase-In-Citations</id>
   <updated>2015-02-24T00:00:00-00:00</updated>
   <published>2015-02-24T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;The total number of parking citations in Baltimore exploded between September 2013 and March 2014.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Total_Monthly_Citations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Total_Monthly_Citations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -333,7 +333,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 25 locations, difference in September 2013 and March 2014 total citations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -352,7 +352,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Citations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Citations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -361,7 +361,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -386,7 +386,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 400 lot of Jones Falls Expressway (JFA) by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -397,46 +397,46 @@
 &lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations&quot;&gt;Rapid Increase in Citations&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 24, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations&quot;&gt;Rapid Increase in Citations&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 24, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Introducing "My Electricity Use" Visualization Page]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site" />
-  <id>http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site" />
+  <id>http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site</id>
   <updated>2015-02-16T00:00:00-00:00</updated>
   <published>2015-02-16T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “&lt;a href=&quot;http://www.thetrainingset.com/my-elec-use/&quot;&gt;My Electricity Use&lt;/a&gt;.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the &lt;a href=&quot;http://plot.ly&quot;&gt;Plotly&lt;/a&gt; game, but I’ll be using it a lot more regularly going forward.&lt;/p&gt;
+  <content type="html">&lt;p&gt;This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “&lt;a href=&quot;http://localhost:4000/my-elec-use/&quot;&gt;My Electricity Use&lt;/a&gt;.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the &lt;a href=&quot;http://plot.ly&quot;&gt;Plotly&lt;/a&gt; game, but I’ll be using it a lot more regularly going forward.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site&quot;&gt;Introducing "My Electricity Use" Visualization Page&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 16, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site&quot;&gt;Introducing "My Electricity Use" Visualization Page&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 16, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[My Block is a Target.]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/My-Block-Is-A-Target" />
-  <id>http://www.thetrainingset.com/articles/My-Block-Is-A-Target</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/My-Block-Is-A-Target" />
+  <id>http://localhost:4000/articles/My-Block-Is-A-Target</id>
   <updated>2015-02-10T00:00:00-00:00</updated>
   <published>2015-02-10T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;Now that we can be sure of having a &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;complete data set&lt;/a&gt; for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Now that we can be sure of having a &lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;complete data set&lt;/a&gt; for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations for top 10 types of citation fines issued.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -449,7 +449,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top20_Target_Locations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top20_Target_Locations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 20 Target Citation Locations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -464,7 +464,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/1200_Block_N_Charles.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/1200_Block_N_Charles.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total fines issued at 1200 block of N. Charles St. in Baltimore, MD between January 20, 2013 and January 20, 2015.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -488,23 +488,23 @@
 &lt;p&gt;&lt;em&gt;I recently had my laptop stolen. I don’t feel like purchasing Microsoft Office, so I’m using a combination of Apple Numbers and Google Docs for spreadsheets now.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/My-Block-Is-A-Target&quot;&gt;My Block is a Target.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 10, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/My-Block-Is-A-Target&quot;&gt;My Block is a Target.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 10, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Quick Response from Baltimore Chief Data Officer]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" />
-  <id>http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" />
+  <id>http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer</id>
   <updated>2015-01-23T00:00:00-00:00</updated>
   <published>2015-01-23T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;Within hours of publishing my last post on &lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue/&quot;&gt;Baltimore’s parking (etc.) citation dataset&lt;/a&gt;, the issues were corrected thanks to Sharon Paley at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt; and Heather Hudson, Baltimore’s Chief Data Officer in the &lt;a href=&quot;http://moit.baltimorecity.gov/Home.aspx&quot;&gt;Mayor’s Office of Information Technology&lt;/a&gt;.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Within hours of publishing my last post on &lt;a href=&quot;http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue/&quot;&gt;Baltimore’s parking (etc.) citation dataset&lt;/a&gt;, the issues were corrected thanks to Sharon Paley at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt; and Heather Hudson, Baltimore’s Chief Data Officer in the &lt;a href=&quot;http://moit.baltimorecity.gov/Home.aspx&quot;&gt;Mayor’s Office of Information Technology&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Sharon was kind enough to forward my work on to Heather, who removed old and extraneous data and added some description to some of the citation data fields.  With Heather’s permission I’ve excerpted her email below.&lt;/p&gt;
 
@@ -530,7 +530,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations for top 10 revenue generators.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -553,20 +553,20 @@
 &lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and Microsoft Excel.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;Quick Response from Baltimore Chief Data Officer&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;Quick Response from Baltimore Chief Data Officer&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Lost Revenue of the Baltimore Traffic Cameras]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue" />
-  <id>http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" />
+  <id>http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue</id>
   <updated>2015-01-21T00:00:00-00:00</updated>
   <published>2015-01-21T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;The title of the dataset I’m working with on Baltimore’s &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;open data portal&lt;/a&gt; is “Parking Citations.”  I downloaded a snapshot of the dataset which ended up being 2,689,647 total citations through January 12, 2015. &lt;/p&gt;
@@ -579,7 +579,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-01/citation_desc_date_range_OLD.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-01/citation_desc_date_range_OLD.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-01/citation_desc_date_range_OLD.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/citation_desc_date_range_OLD.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Citation descriptions sorted by total fines.  Highlighted in red are the least recent dates of the last recorded citation and the shortest data time spans, respectively.  Highlighted in green are the largest annual revenue generators.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -590,7 +590,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations for top 10 revenue generators.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -606,20 +606,20 @@
 
 &lt;p&gt;&lt;em&gt;Inspiration from &lt;a href=&quot;http://iquantny.tumblr.com&quot;&gt;I Quant NY&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue&quot;&gt;The Lost Revenue of the Baltimore Traffic Cameras&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on January 21, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue&quot;&gt;The Lost Revenue of the Baltimore Traffic Cameras&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on January 21, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Importing Lots of CSV's]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Importing-CSV-Files" />
-  <id>http://www.thetrainingset.com/articles/Importing-CSV-Files</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Importing-CSV-Files" />
+  <id>http://localhost:4000/articles/Importing-CSV-Files</id>
   <updated>2015-01-08T00:00:00-00:00</updated>
   <published>2015-01-08T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.  &lt;/p&gt;
@@ -645,60 +645,60 @@
 &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;full_dataset.csv&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Importing-CSV-Files&quot;&gt;Importing Lots of CSV's&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on January 08, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Importing-CSV-Files&quot;&gt;Importing Lots of CSV's&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on January 08, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Excessive Data Visualization]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/More-Pointless-Data-Viz" />
-  <id>http://www.thetrainingset.com/articles/More-Pointless-Data-Viz</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/More-Pointless-Data-Viz" />
+  <id>http://localhost:4000/articles/More-Pointless-Data-Viz</id>
   <updated>2014-12-25T00:00:00-00:00</updated>
   <published>2014-12-25T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;Christmas Day.  I’m bored.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-12/Average_Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-12/Average_Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-12/Average_Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-12/Average_Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Average daily electricity usage.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-12/Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-12/Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-12/Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-12/Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;All days and average consumption.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/More-Pointless-Data-Viz&quot;&gt;Excessive Data Visualization&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on December 25, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/More-Pointless-Data-Viz&quot;&gt;Excessive Data Visualization&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on December 25, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Assessing Demand-Side Storage System Performance]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Assessing-System-Performance" />
-  <id>http://www.thetrainingset.com/articles/Assessing-System-Performance</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Assessing-System-Performance" />
+  <id>http://localhost:4000/articles/Assessing-System-Performance</id>
   <updated>2014-11-14T00:00:00-00:00</updated>
   <published>2014-11-14T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;By varying parameters of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt; we can determine the economic plausibility and benefits of home grid-tied batteries.  &lt;/p&gt;
+  <content type="html">&lt;p&gt;By varying parameters of the &lt;a href=&quot;http://localhost:4000/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt; we can determine the economic plausibility and benefits of home grid-tied batteries.  &lt;/p&gt;
 
 &lt;p&gt;While the actual logic and functions are in separate Python modules, I’m doing this analysis in an &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb&quot;&gt;iPython notebook&lt;/a&gt; that you can check out for more detail and thought process.&lt;/p&gt;
 
-&lt;p&gt;I set up some of summary metrics I was interested in in the &lt;a href=&quot;http://www.thetrainingset.com/articles/Storage-Model-Details&quot;&gt;last post&lt;/a&gt; .  One that I didn’t have on that list that is an important economic indicator is the simple payback period, which is the number of years it would take to break even on the initial investment based on the yearly savings.&lt;/p&gt;
+&lt;p&gt;I set up some of summary metrics I was interested in in the &lt;a href=&quot;http://localhost:4000/articles/Storage-Model-Details&quot;&gt;last post&lt;/a&gt; .  One that I didn’t have on that list that is an important economic indicator is the simple payback period, which is the number of years it would take to break even on the initial investment based on the yearly savings.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;http://latex.codecogs.com/png.latex?PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}&quot; alt=&quot;PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}&quot; /&gt;
@@ -727,7 +727,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/metrics_snapshot_stor_cap.jpg&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/metrics_snapshot_stor_cap.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-11/metrics_snapshot_stor_cap.jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/metrics_snapshot_stor_cap.jpg&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Simple payback period for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -740,7 +740,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/cost_savings_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/cost_savings_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-11/cost_savings_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/cost_savings_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Annual cost savings for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -749,7 +749,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/PBP_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/PBP_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-11/PBP_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/PBP_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Simple payback period for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -760,7 +760,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/peak_shaved_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/peak_shaved_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-11/peak_shaved_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/peak_shaved_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Peak load shaving for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -771,7 +771,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/sys_eff_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/sys_eff_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-11/sys_eff_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/sys_eff_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total kWh purchased during year for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -779,56 +779,56 @@
 &lt;p&gt;This is an important (albeit predictable) result since it means we’ve effectively increased the carbon footprint of the home, assuming the electricity mix is dominated by carbon-intensive power sources.  What such a system could allow for, however, is that intermittent renewable resources could more readily integrate with storage acting as a buffer between demand and intermittent supply.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Assessing-System-Performance&quot;&gt;Assessing Demand-Side Storage System Performance&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on November 14, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Assessing-System-Performance&quot;&gt;Assessing Demand-Side Storage System Performance&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on November 14, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Demand Heat Map]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Heat-Map" />
-  <id>http://www.thetrainingset.com/articles/Heat-Map</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Heat-Map" />
+  <id>http://localhost:4000/articles/Heat-Map</id>
   <updated>2014-11-11T00:00:00-00:00</updated>
   <published>2014-11-11T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;Opower posted &lt;a href=&quot;http://blog.opower.com/2014/09/ami-data-integration/&quot;&gt;a heat map of hourly electricity demand&lt;/a&gt; that I wanted to replicate for our data. &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/my_usage_heatmap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/my_usage_heatmap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-11/my_usage_heatmap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/my_usage_heatmap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Hourly heat map of our electricity usage.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 &lt;p&gt;This makes changes in hourly trends over the course of the year readily apparent, and even highlights differences day to day.  The 6am/7am peak is pretty clear, as are the evening hours in the summer.  Between midnight a 4am, the usage is clearly higher (deeper yellow) in the summer as well due to AC load.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Heat-Map&quot;&gt;Demand Heat Map&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on November 11, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Heat-Map&quot;&gt;Demand Heat Map&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on November 11, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Storage Model Details]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Storage-Model-Details" />
-  <id>http://www.thetrainingset.com/articles/Storage-Model-Details</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Storage-Model-Details" />
+  <id>http://localhost:4000/articles/Storage-Model-Details</id>
   <updated>2014-10-09T00:00:00-00:00</updated>
   <published>2014-10-09T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;This post fills in some more details of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt;.&lt;/p&gt;
+  <content type="html">&lt;p&gt;This post fills in some more details of the &lt;a href=&quot;http://localhost:4000/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In the last post I presented a flow chart of how the logic works but didn’t give a diagram of what the physical system might look like.  That’s below.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-10/physical_system.jpg&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-10/physical_system.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-10/physical_system.jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-10/physical_system.jpg&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Demand-side storage physical system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -899,35 +899,35 @@
 &lt;p&gt;For these initial values, what stood out to me was that I removed 54% of the residence’s annual peak demand from the grid (this is the ‘% Peak kWh Shaved’).  This is the reason utilities might want to think about incentivizing residential customers to purchase grid-tied battery systems such as this (beyond just the time-of-use-pricing incentive itself).  I should say that the current model is agnostic to exactly which peak hours load is being shaved from - it just uses the battery first until it’s depleted and then switches to grid during peak hours.  Utilities would want to be a bit more sensitive to this, since their peak time-of-use currently starts at 10am weekdays in the summer but the actual “peak” won’t hit until around 4pm.  In the current model I’ve created, the battery is used up first so I wouldn’t be shaving peak load at 4pm.  This could be addressed with some logic that is a bit more clever than what I’ve currently got.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Storage-Model-Details&quot;&gt;Storage Model Details&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on October 09, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Storage-Model-Details&quot;&gt;Storage Model Details&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on October 09, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Intro to Storage Model]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Intro-To-Storage-Model" />
-  <id>http://www.thetrainingset.com/articles/Intro-To-Storage-Model</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Intro-To-Storage-Model" />
+  <id>http://localhost:4000/articles/Intro-To-Storage-Model</id>
   <updated>2014-09-23T00:00:00-00:00</updated>
   <published>2014-09-23T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;Buying lead-acid batteries and switching to one of &lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;BGE’s time-of-use pricing plans&lt;/a&gt; may be a very good idea indeed.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Buying lead-acid batteries and switching to one of &lt;a href=&quot;http://localhost:4000/articles/BGE-Pricing&quot;&gt;BGE’s time-of-use pricing plans&lt;/a&gt; may be a very good idea indeed.&lt;/p&gt;
 
-&lt;p&gt;BGE (and many other utilities in the U.S.) are now offering a time-of-use pricing plan in which the price you pay for electricity depends on what time of day or season you are purchasing it.  This is one of the so-called “demand-side strategies” that could help utilities reduce peak loads and prevent blackouts.  In a &lt;a href=&quot;http://www.thetrainingset.com/articles/Should-I-Switch-To-TOU-Pricing&quot;&gt;previous post&lt;/a&gt;, I looked at whether it would make financial sense for me to switch over to one of these plans.&lt;/p&gt;
+&lt;p&gt;BGE (and many other utilities in the U.S.) are now offering a time-of-use pricing plan in which the price you pay for electricity depends on what time of day or season you are purchasing it.  This is one of the so-called “demand-side strategies” that could help utilities reduce peak loads and prevent blackouts.  In a &lt;a href=&quot;http://localhost:4000/articles/Should-I-Switch-To-TOU-Pricing&quot;&gt;previous post&lt;/a&gt;, I looked at whether it would make financial sense for me to switch over to one of these plans.&lt;/p&gt;
 
 &lt;p&gt;One can imagine taking further advantage of these plans by purchasing most or all electricity during off-peak (cheap) hours without having to buy much or any during peak hours.  In order to explore how this might work and how beneficial it would be, I built a model in Python that simulates the hourly energy flows for a home with lead-acid battery storage.&lt;/p&gt;
 
-&lt;p&gt;There are two sources of data that drive the model.  First, I’ve used one of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Feeding-The-Data-Monster&quot;&gt;Green Button sample data files&lt;/a&gt;, specifically the one for an inland, single-family residence.  This is an hourly electricity demand profile for the whole residential building for all of 2011.  Second, I’ve again used &lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;BGE’s time-of-use pricing schemes&lt;/a&gt; to determine peak hours and costs.  Some of the ideas are based on &lt;a href=&quot;http://sel.columbia.edu/matlab-assignment-1&quot;&gt;a Matlab assignment I worked on in grad school&lt;/a&gt;.  While I no longer have access to the top tier journals (Elsevier is a capitalist racket), I did find a couple papers &lt;a href=&quot;https://www.thlab.net/wp-content/uploads/publications/pub_19.pdf&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://www.ecs.umass.edu/~irwin/smartcharge.pdf&quot;&gt;here&lt;/a&gt; that are using similar algorithms.&lt;/p&gt;
+&lt;p&gt;There are two sources of data that drive the model.  First, I’ve used one of the &lt;a href=&quot;http://localhost:4000/articles/Feeding-The-Data-Monster&quot;&gt;Green Button sample data files&lt;/a&gt;, specifically the one for an inland, single-family residence.  This is an hourly electricity demand profile for the whole residential building for all of 2011.  Second, I’ve again used &lt;a href=&quot;http://localhost:4000/articles/BGE-Pricing&quot;&gt;BGE’s time-of-use pricing schemes&lt;/a&gt; to determine peak hours and costs.  Some of the ideas are based on &lt;a href=&quot;http://sel.columbia.edu/matlab-assignment-1&quot;&gt;a Matlab assignment I worked on in grad school&lt;/a&gt;.  While I no longer have access to the top tier journals (Elsevier is a capitalist racket), I did find a couple papers &lt;a href=&quot;https://www.thlab.net/wp-content/uploads/publications/pub_19.pdf&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://www.ecs.umass.edu/~irwin/smartcharge.pdf&quot;&gt;here&lt;/a&gt; that are using similar algorithms.&lt;/p&gt;
 
 &lt;p&gt;I’ve drawn out a flow chart to show how the model works.  During off-peak times, the demand is served directly from the grid and if the battery isn’t full, extra energy is purchased to charge the battery (there is a maximum rate at which this can occur).  During peak times, energy is first used out of the battery to serve the demand.  Only when the battery is drained (to an acceptable charge level, say 30%) is energy then purchased from the grid to serve demand directly.  No energy is purchased to charge the battery during peak hours.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-09/Demand-Side Storage Model Flow Chart.jpg&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-09/Demand-Side Storage Model Flow Chart.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-09/Demand-Side Storage Model Flow Chart.jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-09/Demand-Side Storage Model Flow Chart.jpg&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Flow chart for storage simulation.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -973,7 +973,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-09/Daily_Energy_State_13-July-2011.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-09/Daily_Energy_State_13-July-2011.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-09/Daily_Energy_State_13-July-2011.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-09/Daily_Energy_State_13-July-2011.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Model behavior for summer weekday, with peak period shaded in gray.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -982,7 +982,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-09/Daily_Energy_Purchased_13-July-2011.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-09/Daily_Energy_Purchased_13-July-2011.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-09/Daily_Energy_Purchased_13-July-2011.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-09/Daily_Energy_Purchased_13-July-2011.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Amount of energy purchased in storage model, with peak period shaded in gray.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -999,104 +999,104 @@
   &lt;li&gt;How does the cost of the system change with percent of peak-hour demand served by storage?&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;Intro to Storage Model&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on September 23, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Intro-To-Storage-Model&quot;&gt;Intro to Storage Model&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on September 23, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Summer Updates]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Summer-Update" />
-  <id>http://www.thetrainingset.com/articles/Summer-Update</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Summer-Update" />
+  <id>http://localhost:4000/articles/Summer-Update</id>
   <updated>2014-09-22T00:00:00-00:00</updated>
   <published>2014-09-22T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;It’s been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.&lt;/p&gt;
 
 &lt;p&gt;I didn’t have much time over the summer for this stuff.  My real job got pretty busy.  You don’t care about that though.&lt;/p&gt;
 
-&lt;p&gt;I did get a bit stalled.  As I’ve discussed previously, I’ve used iPython notebooks &lt;a href=&quot;http://www.thetrainingset.com/the-work&quot;&gt;quite a bit&lt;/a&gt; for conducting analyses.  These only got me so far.  I’ve been working on a demand-side storage model to figure out how to take advantage of time-of-use pricing now available from utility companies.  While the notebooks work great for documenting analyses and creating plots, building a model is nearly impossible with them.  They aren’t really useful if you need multiple functions and scripts.  I was encountering bugs early on in building the model and couldn’t fix them.  It was frustrating.&lt;/p&gt;
+&lt;p&gt;I did get a bit stalled.  As I’ve discussed previously, I’ve used iPython notebooks &lt;a href=&quot;http://localhost:4000/the-work&quot;&gt;quite a bit&lt;/a&gt; for conducting analyses.  These only got me so far.  I’ve been working on a demand-side storage model to figure out how to take advantage of time-of-use pricing now available from utility companies.  While the notebooks work great for documenting analyses and creating plots, building a model is nearly impossible with them.  They aren’t really useful if you need multiple functions and scripts.  I was encountering bugs early on in building the model and couldn’t fix them.  It was frustrating.&lt;/p&gt;
 
 &lt;p&gt;This type of scientific computing really calls for an integrated development environment, or IDE.  It’s the one thing I’ve been missing since starting in with Python in lieu of Matlab.  An IDE gives you an interactive console, debugging capabilities, and an editor all in one program.  After reading a bit online, it seemed the two big ones for Python were &lt;a href=&quot;http://www.eclipse.org&quot;&gt;Eclipse&lt;/a&gt; and &lt;a href=&quot;http://www.jetbrains.com/pycharm&quot;&gt;Pycharm&lt;/a&gt;.  I started with Eclipse.  I couldn’t for the life of me get it working, something about the external libraries I was using wasn’t getting set up right.  I tried every way imaginable, but this was as frustrating as the original bugs in my code.  I switched to Pycharm, and pretty quickly was up and running.&lt;/p&gt;
 
 &lt;p&gt;Long story short, with an IDE in hand I found my bugs pretty quickly and finished building the model over a weekend.  I definitely recommend Pycharm or another IDE (even trying Eclipse, if you can get it working) for anything more complicated than simple models or exploratory data analysis.  You could even write all your functions and scripts for a model in an IDE and then switch to notebooks for analysis and results of the model.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Summer-Update&quot;&gt;Summer Updates&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on September 22, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Summer-Update&quot;&gt;Summer Updates&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on September 22, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Should I Switch to Time-of-Use Pricing?]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Should-I-Switch-to-TOU-Pricing" />
-  <id>http://www.thetrainingset.com/articles/Should-I-Switch-to-TOU-Pricing</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing" />
+  <id>http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing</id>
   <updated>2014-08-12T00:00:00-00:00</updated>
   <published>2014-08-12T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;Now that I’ve got BGE’s available &lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;residential time-of-use plans&lt;/a&gt;, I can evaluate whether I would save money by switching to one.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Now that I’ve got BGE’s available &lt;a href=&quot;http://localhost:4000/articles/BGE-Pricing&quot;&gt;residential time-of-use plans&lt;/a&gt;, I can evaluate whether I would save money by switching to one.&lt;/p&gt;
 
 &lt;p&gt;At each hour, I multiply the cost of electricty by the electricity usage for that hour.  To give an apples-to-apples comparison, I’m using the current 2014-2015 rates and assuming there weren’t any rate changes.  Also, I’m only looking at the actual cost of the commodity, not all the fees and rates (“riders”) that get tacked on.  Those additional costs add up to about 40% of your electricity bill, but since they’re not affected by the rate being charged for the electricity they’d be the same for each plan.  (In fact there was a change at on June 1, 2014, and there always will be changes.)  Again, the plans are “R” (basic), “RL” (time-of-use), and “EV” (aggressive time-of-use for electric vehicle owners).  The plot below shows the savings for the “RL” and “EV” plans as compared to what I would have paid with the “R” plan.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/My_Cost_Savings_TOU_Pricing.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/My_Cost_Savings_TOU_Pricing.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-08/My_Cost_Savings_TOU_Pricing.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-08/My_Cost_Savings_TOU_Pricing.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Cost savings in U.S. dollars on monthly electricity bill compared to BGE residential &quot;R&quot; plan.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 &lt;p&gt;As a sanity check, the actual electricity cost for July on the “R” plan matches pretty closely what’s actually on our bill for July.  The bill is for 670 kWh at $0.08857/kWh for a total electricity supply cost of $59.34.  My hourly data shows 671.6 kWh usage for July (not sure why there is a difference here from the bill) and with the regular “R” plan at $.08975/kWh the supply cost would have been $57.87.  (As a sidenote, I’m unclear as to what what the difference is between the $.08857/kWh cost that is billed and the $.08975/kWh cost that is listed as the summer kWh prices as of June 1, 2014. &lt;a href=&quot;http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Rates%20Information%20Documents/POLR_Rates_PTC_MiscCharges.pdf&quot;&gt;This&lt;/a&gt; lists both of those figures, but footnote 1 in the table in the upper right table doesn’t really explain the adjustment that well.)&lt;/p&gt;
 
-&lt;p&gt;In terms of savings with dynamic pricing plans, we’d pretty clearly benefit during the summer months.  At the new place during the week, we shut pretty much everything off during the day and only use air conditioning at night.  Moreover, our water heating is electric which leads to much higher peak electricity demands during early mornings and late evenings (particularly in the mornings when we shower).  We’d therefore be taking advantage of the cheaper electricity prices during off-peak hours.  At the old place our heat is part (large part) of the electricity load and during the winter and spring months, our thermostat was operational most hours of most days, and so there are less opportunities for savings since our load isn’t skewed towards off-peak hours.  Shown below again is our typical usage at the old (March 2014) and new (June 2014) apartments (original post is &lt;a href=&quot;http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy&quot;&gt;here&lt;/a&gt;).  &lt;/p&gt;
+&lt;p&gt;In terms of savings with dynamic pricing plans, we’d pretty clearly benefit during the summer months.  At the new place during the week, we shut pretty much everything off during the day and only use air conditioning at night.  Moreover, our water heating is electric which leads to much higher peak electricity demands during early mornings and late evenings (particularly in the mornings when we shower).  We’d therefore be taking advantage of the cheaper electricity prices during off-peak hours.  At the old place our heat is part (large part) of the electricity load and during the winter and spring months, our thermostat was operational most hours of most days, and so there are less opportunities for savings since our load isn’t skewed towards off-peak hours.  Shown below again is our typical usage at the old (March 2014) and new (June 2014) apartments (original post is &lt;a href=&quot;http://localhost:4000/articles/Mo-Apartment-Mo-Energy&quot;&gt;here&lt;/a&gt;).  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/Average_Days_New_and_Old_Apts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/Average_Days_New_and_Old_Apts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-08/Average_Days_New_and_Old_Apts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-08/Average_Days_New_and_Old_Apts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Cost savings in U.S. dollars on monthly electricity bill compared to BGE residential &quot;R&quot; plan.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
-&lt;p&gt;Shown below is the same monthly savings analysis, this time for the &lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;Green Button sample data&lt;/a&gt; for an inland single family residence.&lt;/p&gt;
+&lt;p&gt;Shown below is the same monthly savings analysis, this time for the &lt;a href=&quot;http://localhost:4000/articles/BGE-Pricing&quot;&gt;Green Button sample data&lt;/a&gt; for an inland single family residence.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/GB_Cost_Savings_TOU_Pricing.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/GB_Cost_Savings_TOU_Pricing.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-08/GB_Cost_Savings_TOU_Pricing.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-08/GB_Cost_Savings_TOU_Pricing.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Cost savings in U.S. dollars on monthly electricity bill compared to BGE residential &quot;R&quot; plan.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 &lt;p&gt;The total annual savings for the sample set would be $27.23 for the “RL” plan compared to the regular “R” plan, and $60.25 for the “EV” plan.  These aren’t large chunks, but I think that’s probably by design.  BGE doesn’t want to lose an excessive amount of revenue by having people switch over to dynamic pricing plans.  At the same time, providing some incentive to switch, especially for electric vehicle owners (mind you this would be a different analysis), makes for a more reliable grid during the peak hours of the summer months by shaving or shifting load.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Should-I-Switch-to-TOU-Pricing&quot;&gt;Should I Switch to Time-of-Use Pricing?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on August 12, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing&quot;&gt;Should I Switch to Time-of-Use Pricing?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on August 12, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[BGE Residential Pricing Plans]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/BGE-Pricing" />
-  <id>http://www.thetrainingset.com/articles/BGE-Pricing</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/BGE-Pricing" />
+  <id>http://localhost:4000/articles/BGE-Pricing</id>
   <updated>2014-08-03T00:00:00-00:00</updated>
   <published>2014-08-03T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;A quick blurb on a couple of pieces of the demand-side storage puzzle I’m working on.&lt;/p&gt;
 
-&lt;p&gt;First, turns out I’m going to use the Green Button sample data that I &lt;a href=&quot;http://www.thetrainingset.com/articles/feeding-the-data-monster&quot;&gt;previously found&lt;/a&gt;.  They have &lt;a href=&quot;http://services.greenbuttondata.org/sample-data.html&quot;&gt;several of these datasets posted&lt;/a&gt; that may be interesting for comparison later.  It took an embarassing amount of time to sort out my first time parsing an XML file.  Word of advice for you data/Python peoples: don’t use ElementTree, I used BeautifulSoup and it was much simpler.&lt;/p&gt;
+&lt;p&gt;First, turns out I’m going to use the Green Button sample data that I &lt;a href=&quot;http://localhost:4000/articles/feeding-the-data-monster&quot;&gt;previously found&lt;/a&gt;.  They have &lt;a href=&quot;http://services.greenbuttondata.org/sample-data.html&quot;&gt;several of these datasets posted&lt;/a&gt; that may be interesting for comparison later.  It took an embarassing amount of time to sort out my first time parsing an XML file.  Word of advice for you data/Python peoples: don’t use ElementTree, I used BeautifulSoup and it was much simpler.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Green Button sample hourly data for inland single family residence, resampled to daily.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1107,30 +1107,30 @@
 &lt;p&gt;Here’s what the three pricing plans look like for weekdays in summer and non-summer periods.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Summer.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Summer.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-08/BGE_Pricing_Summer.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-08/BGE_Pricing_Summer.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;BGE residential pricing plans, summer weekday.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Non-Summer.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Non-Summer.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-08/BGE_Pricing_Non-Summer.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-08/BGE_Pricing_Non-Summer.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;BGE residential pricing plans, non-summer weekday.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;BGE Residential Pricing Plans&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on August 03, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/BGE-Pricing&quot;&gt;BGE Residential Pricing Plans&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on August 03, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Mo Apartment, Mo Problems]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy" />
-  <id>http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy</id>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" />
+  <id>http://localhost:4000/articles/Mo-Apartment-Mo-Energy</id>
   <updated>2014-08-01T00:00:00-00:00</updated>
   <published>2014-08-01T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email></email>
   </author>
   <content type="html">&lt;p&gt;Here’s a quick comparison of average weekdays and weekends in the new and old apartments.&lt;/p&gt;
@@ -1138,13 +1138,13 @@
 &lt;p&gt;It would appear that we’ve been using more at the new place, but take a look at the daily totals. &lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/Average_Days_New_and_Old_Apts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/Average_Days_New_and_Old_Apts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2014-08/Average_Days_New_and_Old_Apts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-08/Average_Days_New_and_Old_Apts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Average hourly electric usage for new and old apartments, March and June.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Of course we don’t have apples-to-apples comparisons here.  Of course this is partly due to weather.  The old apartment is shown for March, where we left the thermostat on all day at 65 degrees F so Willow The Cat wouldn’t freeze to death.  At the new apartment, we’re shutting off the thermostat entirely during the day, and at night kicking it on to 75 degrees F.  So for weekdays, we’re consuming much less during the day but evenings are much higher.  &lt;/p&gt;
 
-&lt;p&gt;However, the &lt;a href=&quot;http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;6am peak when we wake up&lt;/a&gt; is also much higher.  I’m sure that this is due to our own dedicated electric water heater at the new place.  Our two showers in the morning plus lighting loads are the 6am peak, while the evening hours are the A/C and any dishwashing we’re doing after dinner.&lt;/p&gt;
+&lt;p&gt;However, the &lt;a href=&quot;http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up&quot;&gt;6am peak when we wake up&lt;/a&gt; is also much higher.  I’m sure that this is due to our own dedicated electric water heater at the new place.  Our two showers in the morning plus lighting loads are the 6am peak, while the evening hours are the A/C and any dishwashing we’re doing after dinner.&lt;/p&gt;
 
 &lt;p&gt;To do these average day plots I set up a quick function that uses groupby, that way I can reuse this for any time period.&lt;/p&gt;
 
@@ -1169,7 +1169,7 @@
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;average_weekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;average_weekend&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy&quot;&gt;Mo Apartment, Mo Problems&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on August 01, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Mo-Apartment-Mo-Energy&quot;&gt;Mo Apartment, Mo Problems&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on August 01, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
