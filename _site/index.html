@@ -132,49 +132,81 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-03-13T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About">March 13, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2015-03-13T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About">March 13, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About" rel="bookmark" title="When Not To Park On N. Charles St." itemprop="url">When Not To Park On N. Charles St.</a></h1>
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" rel="bookmark" title="Which citations do people not care about paying?" itemprop="url">Which citations do people not care about paying?</a></h1>
     
   </header>
   <div class="entry-content">
-    <p>In a recent posts I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charlest Street right around the corner from my apartment is one of those target locations.</p>
+    <p>The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.</p>
+
+<p>With this information we can look at the rates of unpaid citations by citation type.  Below I’ve calculated these ratios for all description types, but have only included for comparison those categories that had more than 100 citations in the database (so we hopefully have meaningful comparisons).</p>
+
+<h3 id="news-flash-abandoned-vehicle-citations-are-more-likely-to-be-unpaid">News flash: abandoned vehicle citations are more likely to be unpaid.</h3>
 
 <center>
 <figure>
-<iframe src="https://www.google.com/maps/d/embed?mid=z14mtc2vy9S0.k5pYuRXb6j84" width="640" height="480"></iframe>
-<figcaption>Five blocks on North Charles Street that have increasingly become target parking enforcement locations.  Blocks are colored and labeled by difference between September 2013 and March 2014 citation totals.</figcaption>
+  <a href="http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png"><img src="http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png" /></a>
+  <figcaption>Percent of total citations that have a balance as of February 28, 2015.</figcaption>
 </figure>
 </center>
 
-<p>So when is that stretch being targeted?  Here are the hourly total citation counts for those five blocks on North Charles St.  Looks like you’re safe before 10am on the weekends, and maybe have a shot if you need a quick spot around 3pm.</p>
+<!--The red light violations, however, should be of particular concern since they pose a safety risk.  While many of us in Baltimore have independently come to the same conclusion that the red lights are poorly timed, this does not excuse ignoring them.  The fact that red light violations have a higher portion of unpaid citations seems to indicate that the perhaps a stiffer penalty increase is warranted in order to curb this behavior.-->
+
+<h2 id="another-suggestion-for-baltimore-dot-and-mayors-office-of-it">Another suggestion for Baltimore DOT and Mayor’s Office of IT</h2>
+
+<p>The dataset that gets posted on <a href="http://data.baltimorecity.gov">the Open Baltimore data portal</a> could really use better documenatation.  Here’s another example of why.  Since the speed camera program was halted in Baltimore, certain citations are no longer captured by this dataset, since parking enforcers don’t issue any kind of moving violations.  Some of those types are still in this dataset, however - a hold over from when the camera program was still in effect.  They should be removed before any analysis or comparisons.  </p>
 
 <center>
 <figure>
-  <a href="http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png"><img src="http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png" /></a>
-  <figcaption>Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.</figcaption>
+  <a href="http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Year.png"><img src="http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Year.png" /></a>
+  <figcaption>Total ticket counts by category and year.</figcaption>
 </figure>
 </center>
 
-<p>You’re also probably safer on Sundays.</p>
+<hr />
+<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore.</a></em></p>
+
+<p><em>Analysis conducted using <a href="http://www.python.org">Python</a> and <a href="http://pandas.pydata.org">Pandas</a></em></p>
+
+<p><em>Full analysis IPython notebook can be found <a href="http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb">here</a>.</em></p>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58835878-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-03-12T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories">March 12, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories" rel="bookmark" title="DOT Needs More Citation Categories" itemprop="url">DOT Needs More Citation Categories</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Here’s a suggestion directed at the Department of Transportation for improving their citation system.  </p>
+
+<p>I’ve alluded to this in previous posts, but this should make it clear as day.  Looking at all citations since February of 2013, the category “All Other Parking Meter Violations” trumps all of the other citation types by a wide margin.  My guess is that, given its prominence, these are citations for time expiring on a parking meter.  But why code it as “all other?”  An “other” option should be a last resort, when all other codes don’t apply.  If parking enforcers are having to use this code so extensively, it suggests that they need more nuanced options for coding parking infringements.  This is essentially information about parking in the city that’s up for grabs and we’re leaving it on the table.</p>
 
 <center>
 <figure>
-  <a href="http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png"><img src="http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png" /></a>
-  <figcaption>Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.</figcaption>
-</figure>
-</center>
-
-<h2 id="dot--baltimore-it-should-provide-new-citation-description-options">DOT &amp; Baltimore IT Should Provide New Citation Description Options</h2>
-
-<p>Of course as we’ve seen in the past, parking police are using the “All Other Parking Meter Violations” predominantly, which masks the true cause of the citation.  In this instance, these are metered parking spots so my guess is their time has expired.  This is something that DOT and Baltimore Mayor’s Office of IT could easily provide a new description code for so we know that this is the cause.  </p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png"><img src="http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png" /></a>
-  <figcaption>Total tickets issued on five blocks of N. Charles St. in Baltimore by description.</figcaption>
+  <a href="http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png"><img src="http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png" /></a>
+  <figcaption>Total citation counts in Baltimore by category.</figcaption>
 </figure>
 </center>
 
@@ -674,43 +706,6 @@
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-01-08T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/Importing-CSV-Files">January 08, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Importing-CSV-Files" rel="bookmark" title="Importing Lots of CSV's" itemprop="url">Importing Lots of CSV's</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.  </p>
-
-<p>It’s uber-simple - just loops through all the csv’s in a directory, appends them to one Pandas dataframe, and saves the new csv.  It also tacks on the filenames of each file if separating into the original files is needed later.  This also assumes all the fields are named exactly the same in all the csv files.  Sure beats reading each individually and merging after.</p>
-
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">glob</span>
-
-<span class="n">path</span> <span class="o">=</span> <span class="s">&#39;data_csv&#39;</span>
-
-<span class="n">allFiles</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s">&#39;/*.csv&#39;</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">allFiles</span><span class="p">):</span>
-
-    <span class="n">df_file</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">df_file</span><span class="p">[</span><span class="s">&#39;filename&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">filename</span>
-    <span class="n">df_file</span><span class="p">[</span><span class="s">&#39;file_ID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
-
-    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_file</span><span class="p">)</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">&#39;full_dataset.csv&#39;</span><span class="p">)</span></code></pre></div>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
 
 <div class="pagination">
   
@@ -732,6 +727,12 @@
       <li>
         
           <a href="http://www.thetrainingset.com/page3">3</a>
+        
+      </li>
+    
+      <li>
+        
+          <a href="http://www.thetrainingset.com/page4">4</a>
         
       </li>
     

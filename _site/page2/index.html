@@ -132,6 +132,43 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-01-08T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/Importing-CSV-Files">January 08, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Importing-CSV-Files" rel="bookmark" title="Importing Lots of CSV's" itemprop="url">Importing Lots of CSV's</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.  </p>
+
+<p>It’s uber-simple - just loops through all the csv’s in a directory, appends them to one Pandas dataframe, and saves the new csv.  It also tacks on the filenames of each file if separating into the original files is needed later.  This also assumes all the fields are named exactly the same in all the csv files.  Sure beats reading each individually and merging after.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+
+<span class="n">path</span> <span class="o">=</span> <span class="s">&#39;data_csv&#39;</span>
+
+<span class="n">allFiles</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s">&#39;/*.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">allFiles</span><span class="p">):</span>
+
+    <span class="n">df_file</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">df_file</span><span class="p">[</span><span class="s">&#39;filename&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">filename</span>
+    <span class="n">df_file</span><span class="p">[</span><span class="s">&#39;file_ID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_file</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">&#39;full_dataset.csv&#39;</span><span class="p">)</span></code></pre></div>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-12-25T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/More-Pointless-Data-Viz">December 25, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -635,61 +672,6 @@
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-07-31T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/The-New-Pad">July 31, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/The-New-Pad" rel="bookmark" title="The New Pad" itemprop="url">The New Pad</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Steph and I moved on May 23.  </p>
-
-<p>I didn’t manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we’ve now been there just over two months and so we’ve got some A/C load data to work with.</p>
-
-<p>The differences in the data are pretty staggering.  One issue is that we moved at the beginning of summer so our previous apartment with electric resistance heating has all the heating loads and the new apartment with central A/C has all the cooling loads.  The rest of the differences are described below.</p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2014-07/New-Old-TS.png"><img src="http://www.thetrainingset.com/images/2014-07/New-Old-TS.png" /></a>
-  <figcaption>Time series of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
-</figure>
-</center>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2014-07/New-Old-Elec-Temp.png"><img src="http://www.thetrainingset.com/images/2014-07/New-Old-Elec-Temp.png" /></a>
-  <figcaption>Scatter plot of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
-</figure>
-</center>
-
-<h3 id="physical-differences-in-apartments">Physical Differences in Apartments</h3>
-
-<p>Our old and new apartments are less than half a mile apart on the same street that runs north and south (St. Paul Street in Baltimore).  There are some important differences of note between the two apartments.</p>
-
-<p><strong>Size</strong>. The new apartment is much larger in floor area, and has ceilings that appear even higher (though I didn’t take measurements at the old apartment).  In addition to large living room and bedroom, the new apartment has two bathrooms, a much larger kitchen and attached dining space, and a large foyer.</p>
-
-<p><strong>Building Envelope and Fenestration</strong>. The building itself is still row style, so our exterior exposure is limited to the front of the building and the back.  The old apartment only had exposure in the rear to a fire escape corridor down the center of the building, not to the very rear of the building.  Our new apartment has practically floor to ceiling windows in the front and back.  The new apartment windows are less than 10 years old, where the windows from the last apartment were original single pane and were considerably drafty.</p>
-
-<p><strong>Space Heating</strong>.  Space heating at the old apartment was provided by electric resistance heating in two zones (living room and bedroom) from ductless split A/C units (the A/C compressor failed on the living room zone).  This means that the electricity data I’ve been using for the old apartment include heating loads.  The new apartment has an <a href="http://www.commercial.carrier.com/commercial/hvac/product_technical_literature/1,3069,CLI1_DIV41_ETI4922_PRD694,00.html">80,000 Btu/h input natural gas-fired central furnace</a>.  We’re lucky enough that it’s a condensing furnace (efficient enough that flue gases cool below their condensing point) with an AFUE of 92.1%. The new data will not include heating loads since this is gas-fired, and the only information we’d have on gas use would be monthly.  We moved in at the end of May so there haven’t been any heating loads yet.  </p>
-
-<p><strong>Space Cooling</strong>.  The compressor for the ductless split A/C in the living room failed, and they were cheapskates and replaced it with a window unit.  An 11,000 Btu/h output unit for a family room and kitchen with high ceilings and drafty single pane windows.  In the new apartment, we have central A/C. (<a href="http://www.commercial.carrier.com/wcs/proddesc_display/0,2733,CLI1_DIV41_ETI4926_NBD_PRD1311,00.html">This</a> is the evaporator coil, I haven’t looked closely at the compressor outside yet.)  In both cases, we shut the A/C off during the day, and generally set the thermostat to 75 degrees Fahrenheit when we’re home in evenings and on weekends.</p>
-
-<p><strong>Water Heating</strong>. In our previous apartment, hot water was included.  In the new apartment, we have a dedicated <a href="http://products.geappliances.com/ApplProducts/Dispatcher?REQUEST=SpecPage&amp;Sku=GE38S06AAG">38-gallon electric water heater</a>.</p>
-
-<p><strong>Lighting</strong>. There are many more light fixtures in the new apartment, though the vast majority use compact florescents. The former living room had only the light (incandescents) from a ceiling fan, while the new living room has 6 recessed lights and a ceiling fan light.  Additionally, there’s a ceiling fan with chandelier in the foyer, 5 recessed ceiling lights in the kitchen and dining room, along with halogen lighting underneath the cabintery in the kitchen.</p>
-
-<p><strong>Appliances</strong>.  The previous aparment had only the basics - a refrigerator, microwave (ours, and small), and gas oven range. Our new apartment additionally has a dishwasher and in-aparment laundry washer and dryer.</p>
-
-<p><strong>Usage</strong>.  Generally, our schedules haven’t really changed.  Like I mentioned previously, we shut the A/C off during the day, and only really use it in the evenings (after 7pm or so) and on weekends and only set it to 75 degrees Fahrenheit.</p>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
 
 <div class="pagination">
   
@@ -713,6 +695,12 @@
       <li>
         
           <a href="http://www.thetrainingset.com/page3">3</a>
+        
+      </li>
+    
+      <li>
+        
+          <a href="http://www.thetrainingset.com/page4">4</a>
         
       </li>
     

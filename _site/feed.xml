@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-03-12T08:02:26-04:00</updated>
+<updated>2015-03-16T08:30:31-04:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
@@ -14,10 +14,10 @@
 
 
 <entry>
-  <title type="html"><![CDATA[When Not To Park On N. Charles St.]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About" />
-  <id>http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About</id>
-  <updated>2015-03-07T00:00:00-00:00</updated>
+  <title type="html"><![CDATA[Which citations do people not care about paying?]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" />
+  <id>http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
+  <updated>2015-03-16T00:00:00-00:00</updated>
   <published>2015-03-13T00:00:00-04:00</published>
   
   <author>
@@ -25,41 +25,29 @@
     <uri>http://www.thetrainingset.com</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;In a recent posts I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charlest Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
+  <content type="html">&lt;p&gt;The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.&lt;/p&gt;
+
+&lt;p&gt;With this information we can look at the rates of unpaid citations by citation type.  Below I’ve calculated these ratios for all description types, but have only included for comparison those categories that had more than 100 citations in the database (so we hopefully have meaningful comparisons).&lt;/p&gt;
+
+&lt;h3 id=&quot;news-flash-abandoned-vehicle-citations-are-more-likely-to-be-unpaid&quot;&gt;News flash: abandoned vehicle citations are more likely to be unpaid.&lt;/h3&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-&lt;iframe src=&quot;https://www.google.com/maps/d/embed?mid=z14mtc2vy9S0.k5pYuRXb6j84&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
-&lt;figcaption&gt;Five blocks on North Charles Street that have increasingly become target parking enforcement locations.  Blocks are colored and labeled by difference between September 2013 and March 2014 citation totals.&lt;/figcaption&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Percent of total citations that have a balance as of February 28, 2015.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
-&lt;p&gt;So when is that stretch being targeted?  Here are the hourly total citation counts for those five blocks on North Charles St.  Looks like you’re safe before 10am on the weekends, and maybe have a shot if you need a quick spot around 3pm.&lt;/p&gt;
+&lt;!--The red light violations, however, should be of particular concern since they pose a safety risk.  While many of us in Baltimore have independently come to the same conclusion that the red lights are poorly timed, this does not excuse ignoring them.  The fact that red light violations have a higher portion of unpaid citations seems to indicate that the perhaps a stiffer penalty increase is warranted in order to curb this behavior.--&gt;
+
+&lt;h2 id=&quot;another-suggestion-for-baltimore-dot-and-mayors-office-of-it&quot;&gt;Another suggestion for Baltimore DOT and Mayor’s Office of IT&lt;/h2&gt;
+
+&lt;p&gt;The dataset that gets posted on &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;the Open Baltimore data portal&lt;/a&gt; could really use better documenatation.  Here’s another example of why.  Since the speed camera program was halted in Baltimore, certain citations are no longer captured by this dataset, since parking enforcers don’t issue any kind of moving violations.  Some of those types are still in this dataset, however - a hold over from when the camera program was still in effect.  They should be removed before any analysis or comparisons.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;You’re also probably safer on Sundays.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;h2 id=&quot;dot--baltimore-it-should-provide-new-citation-description-options&quot;&gt;DOT &amp;amp; Baltimore IT Should Provide New Citation Description Options&lt;/h2&gt;
-
-&lt;p&gt;Of course as we’ve seen in the past, parking police are using the “All Other Parking Meter Violations” predominantly, which masks the true cause of the citation.  In this instance, these are metered parking spots so my guess is their time has expired.  This is something that DOT and Baltimore Mayor’s Office of IT could easily provide a new description code for so we know that this is the cause.  &lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total tickets issued on five blocks of N. Charles St. in Baltimore by description.&lt;/figcaption&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Year.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Year.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Total ticket counts by category and year.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -82,7 +70,53 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Which-Citations-Do-People-Not-Care-About&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 13, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 13, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[DOT Needs More Citation Categories]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories" />
+  <id>http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories</id>
+  <updated>2015-03-12T00:00:00-00:00</updated>
+  <published>2015-03-12T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Here’s a suggestion directed at the Department of Transportation for improving their citation system.  &lt;/p&gt;
+
+&lt;p&gt;I’ve alluded to this in previous posts, but this should make it clear as day.  Looking at all citations since February of 2013, the category “All Other Parking Meter Violations” trumps all of the other citation types by a wide margin.  My guess is that, given its prominence, these are citations for time expiring on a parking meter.  But why code it as “all other?”  An “other” option should be a last resort, when all other codes don’t apply.  If parking enforcers are having to use this code so extensively, it suggests that they need more nuanced options for coding parking infringements.  This is essentially information about parking in the city that’s up for grabs and we’re leaving it on the table.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Total citation counts in Baltimore by category.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1136,63 +1170,6 @@
 
 
   &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy&quot;&gt;Mo Apartment, Mo Problems&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on August 01, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[The New Pad]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/The-New-Pad" />
-  <id>http://www.thetrainingset.com/articles/The-New-Pad</id>
-  <updated>2014-12-17T00:00:00-00:00</updated>
-  <published>2014-07-31T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;Steph and I moved on May 23.  &lt;/p&gt;
-
-&lt;p&gt;I didn’t manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we’ve now been there just over two months and so we’ve got some A/C load data to work with.&lt;/p&gt;
-
-&lt;p&gt;The differences in the data are pretty staggering.  One issue is that we moved at the beginning of summer so our previous apartment with electric resistance heating has all the heating loads and the new apartment with central A/C has all the cooling loads.  The rest of the differences are described below.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-07/New-Old-TS.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-07/New-Old-TS.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Time series of hourly electricity consumption and outdoor temperature for new and old apartments.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-07/New-Old-Elec-Temp.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-07/New-Old-Elec-Temp.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Scatter plot of hourly electricity consumption and outdoor temperature for new and old apartments.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;h3 id=&quot;physical-differences-in-apartments&quot;&gt;Physical Differences in Apartments&lt;/h3&gt;
-
-&lt;p&gt;Our old and new apartments are less than half a mile apart on the same street that runs north and south (St. Paul Street in Baltimore).  There are some important differences of note between the two apartments.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Size&lt;/strong&gt;. The new apartment is much larger in floor area, and has ceilings that appear even higher (though I didn’t take measurements at the old apartment).  In addition to large living room and bedroom, the new apartment has two bathrooms, a much larger kitchen and attached dining space, and a large foyer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Building Envelope and Fenestration&lt;/strong&gt;. The building itself is still row style, so our exterior exposure is limited to the front of the building and the back.  The old apartment only had exposure in the rear to a fire escape corridor down the center of the building, not to the very rear of the building.  Our new apartment has practically floor to ceiling windows in the front and back.  The new apartment windows are less than 10 years old, where the windows from the last apartment were original single pane and were considerably drafty.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Space Heating&lt;/strong&gt;.  Space heating at the old apartment was provided by electric resistance heating in two zones (living room and bedroom) from ductless split A/C units (the A/C compressor failed on the living room zone).  This means that the electricity data I’ve been using for the old apartment include heating loads.  The new apartment has an &lt;a href=&quot;http://www.commercial.carrier.com/commercial/hvac/product_technical_literature/1,3069,CLI1_DIV41_ETI4922_PRD694,00.html&quot;&gt;80,000 Btu/h input natural gas-fired central furnace&lt;/a&gt;.  We’re lucky enough that it’s a condensing furnace (efficient enough that flue gases cool below their condensing point) with an AFUE of 92.1%. The new data will not include heating loads since this is gas-fired, and the only information we’d have on gas use would be monthly.  We moved in at the end of May so there haven’t been any heating loads yet.  &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Space Cooling&lt;/strong&gt;.  The compressor for the ductless split A/C in the living room failed, and they were cheapskates and replaced it with a window unit.  An 11,000 Btu/h output unit for a family room and kitchen with high ceilings and drafty single pane windows.  In the new apartment, we have central A/C. (&lt;a href=&quot;http://www.commercial.carrier.com/wcs/proddesc_display/0,2733,CLI1_DIV41_ETI4926_NBD_PRD1311,00.html&quot;&gt;This&lt;/a&gt; is the evaporator coil, I haven’t looked closely at the compressor outside yet.)  In both cases, we shut the A/C off during the day, and generally set the thermostat to 75 degrees Fahrenheit when we’re home in evenings and on weekends.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Water Heating&lt;/strong&gt;. In our previous apartment, hot water was included.  In the new apartment, we have a dedicated &lt;a href=&quot;http://products.geappliances.com/ApplProducts/Dispatcher?REQUEST=SpecPage&amp;amp;Sku=GE38S06AAG&quot;&gt;38-gallon electric water heater&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Lighting&lt;/strong&gt;. There are many more light fixtures in the new apartment, though the vast majority use compact florescents. The former living room had only the light (incandescents) from a ceiling fan, while the new living room has 6 recessed lights and a ceiling fan light.  Additionally, there’s a ceiling fan with chandelier in the foyer, 5 recessed ceiling lights in the kitchen and dining room, along with halogen lighting underneath the cabintery in the kitchen.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Appliances&lt;/strong&gt;.  The previous aparment had only the basics - a refrigerator, microwave (ours, and small), and gas oven range. Our new apartment additionally has a dishwasher and in-aparment laundry washer and dryer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;.  Generally, our schedules haven’t really changed.  Like I mentioned previously, we shut the A/C off during the day, and only really use it in the evenings (after 7pm or so) and on weekends and only set it to 75 degrees Fahrenheit.&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/The-New-Pad&quot;&gt;The New Pad&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on July 31, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
