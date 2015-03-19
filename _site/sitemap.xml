@@ -1,190 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc>http://www.thetrainingset.com</loc>
     </url>
     
     
     <url>
-        <loc>http://localhost:4000/404.html</loc>
+        <loc>http://www.thetrainingset.com/404.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/about/index.html</loc>
+        <loc>http://www.thetrainingset.com/about/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/feed.xml</loc>
+        <loc>http://www.thetrainingset.com/feed.xml</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/index.html</loc>
+        <loc>http://www.thetrainingset.com/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/my-elec-use/index.html</loc>
+        <loc>http://www.thetrainingset.com/my-elec-use/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/posts/</loc>
+        <loc>http://www.thetrainingset.com/posts/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/sitemap.xml</loc>
+        <loc>http://www.thetrainingset.com/sitemap.xml</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/subscribe/index.html</loc>
+        <loc>http://www.thetrainingset.com/subscribe/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/tags/</loc>
+        <loc>http://www.thetrainingset.com/tags/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/the-work/index.html</loc>
+        <loc>http://www.thetrainingset.com/the-work/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/theme-setup/index.html</loc>
+        <loc>http://www.thetrainingset.com/theme-setup/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/page2/index.html</loc>
+        <loc>http://www.thetrainingset.com/page2/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/page3/index.html</loc>
+        <loc>http://www.thetrainingset.com/page3/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/page4/index.html</loc>
+        <loc>http://www.thetrainingset.com/page4/index.html</loc>
     </url>
     
 
     
     <url>
-        <loc>http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About</loc>
+        <loc>http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/DOT-Needs-More-Citation-Categories</loc>
+        <loc>http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/When-Not-To-Park-On-Charles</loc>
+        <loc>http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford</loc>
+        <loc>http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Daily-Unpaid-Citations</loc>
+        <loc>http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Rapid-Increase-In-Citations</loc>
+        <loc>http://www.thetrainingset.com/articles/Daily-Unpaid-Citations</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site</loc>
+        <loc>http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/My-Block-Is-A-Target</loc>
+        <loc>http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer</loc>
+        <loc>http://www.thetrainingset.com/articles/My-Block-Is-A-Target</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue</loc>
+        <loc>http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Importing-CSV-Files</loc>
+        <loc>http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/More-Pointless-Data-Viz</loc>
+        <loc>http://www.thetrainingset.com/articles/Importing-CSV-Files</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Assessing-System-Performance</loc>
+        <loc>http://www.thetrainingset.com/articles/More-Pointless-Data-Viz</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Heat-Map</loc>
+        <loc>http://www.thetrainingset.com/articles/Assessing-System-Performance</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Storage-Model-Details</loc>
+        <loc>http://www.thetrainingset.com/articles/Heat-Map</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Intro-To-Storage-Model</loc>
+        <loc>http://www.thetrainingset.com/articles/Storage-Model-Details</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Summer-Update</loc>
+        <loc>http://www.thetrainingset.com/articles/Intro-To-Storage-Model</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing</loc>
+        <loc>http://www.thetrainingset.com/articles/Summer-Update</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/BGE-Pricing</loc>
+        <loc>http://www.thetrainingset.com/articles/Should-I-Switch-to-TOU-Pricing</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Mo-Apartment-Mo-Energy</loc>
+        <loc>http://www.thetrainingset.com/articles/BGE-Pricing</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/The-New-Pad</loc>
+        <loc>http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Feeding-The-Data-Monster</loc>
+        <loc>http://www.thetrainingset.com/articles/The-New-Pad</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Closer-Look-At-SVM-Model</loc>
+        <loc>http://www.thetrainingset.com/articles/Feeding-The-Data-Monster</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines</loc>
+        <loc>http://www.thetrainingset.com/articles/Closer-Look-At-SVM-Model</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Autocorrelation</loc>
+        <loc>http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Energy-Use-and-Weather</loc>
+        <loc>http://www.thetrainingset.com/articles/Autocorrelation</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/More-Smart-Meter-Data</loc>
+        <loc>http://www.thetrainingset.com/articles/Energy-Use-and-Weather</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up</loc>
+        <loc>http://www.thetrainingset.com/articles/More-Smart-Meter-Data</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/My-BGE-Smart-Meter-Data</loc>
+        <loc>http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/BGE-Smart-Meters</loc>
+        <loc>http://www.thetrainingset.com/articles/My-BGE-Smart-Meter-Data</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/GK-Performance-Stats</loc>
+        <loc>http://www.thetrainingset.com/articles/BGE-Smart-Meters</loc>
+    </url>
+    
+    <url>
+        <loc>http://www.thetrainingset.com/articles/GK-Performance-Stats</loc>
     </url>
     
 </urlset>
