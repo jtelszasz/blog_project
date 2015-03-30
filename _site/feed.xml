@@ -4,13 +4,63 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-03-19T12:45:50-04:00</updated>
+<updated>2015-03-30T07:35:48-04:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://www.thetrainingset.com/</uri>
-  <email></email>
+  <email>jtelszasz@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Know More, B'more.]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Know-More-Bmore" />
+  <id>http://www.thetrainingset.com/articles/Know-More-Bmore</id>
+  <updated>2015-03-30T00:00:00-00:00</updated>
+  <published>2015-03-30T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email>jtelszasz@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I took a quick look at the Vital Signs dataset from the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore (data also available at &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;) and created some &lt;a href=&quot;http://www.gapminder.org/&quot;&gt;Hans Rosling-style plots&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a &lt;a href=&quot;http://bniajfi.org/vital_signs/&quot;&gt;website for mapping data&lt;/a&gt; and they were rightly lauded for cleaning and opening up this data for public use, but not I’m seeing only a handful of correlations and analysis based on the Vital Signs datasets.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;div&gt;
+    &lt;a href=&quot;https://plot.ly/~jtelszasz/211/&quot; target=&quot;_blank&quot; title=&quot;Baltimore: Too Many Kids in Poverty&quot; style=&quot;display: block; text-align: center;&quot;&gt;&lt;img src=&quot;https://plot.ly/~jtelszasz/211.png&quot; alt=&quot;Baltimore: Too Many Kids in Poverty&quot; style=&quot;max-width: 100%;width: 500px;&quot; width=&quot;500&quot; onerror=&quot;this.onerror=null;this.src=&#39;https://plot.ly/404.png&#39;;&quot; /&gt;&lt;/a&gt;
+    &lt;script data-plotly=&quot;jtelszasz:211&quot; src=&quot;https://plot.ly/embed.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In this first plot, the bubbles are sized according to the total number of children between the ages of 5 and 18 (school age) living in each neighborhood.&lt;/p&gt;
+
+&lt;p&gt;Definitely check out BNIA’s website, and &lt;a href=&quot;http://www.urban.org/UploadedPDF/413219-NNIP-an-Open-Data-in-Baltimore.pdf&quot;&gt;this&lt;/a&gt; is a good synopsis of open data in Baltimore.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt; and the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Know-More-Bmore&quot;&gt;Know More, B'more.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 30, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -23,7 +73,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;I was able to get in contact with Edward Ericson Jr. over at Baltimore’s City Paper concerning the &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;parking investigation at 4200 Wickford Rd&lt;/a&gt;.  Ed was kind enough to bounce my findings in a &lt;a href=&quot;http://www.citypaper.com/blogs/the-news-hole/bcp-wandering-eye-a-neonoir-crime-blotter-date-on-parking-in-baltimore-and-more-20150305,0,1269875.story&quot;&gt;quick update blurb&lt;/a&gt;.  Full text is below.&lt;/p&gt;
 
@@ -64,7 +114,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.&lt;/p&gt;
 
@@ -125,7 +175,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Here’s a suggestion directed at the Department of Transportation for improving their citation system.  &lt;/p&gt;
 
@@ -171,7 +221,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;In a recent post I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
 
@@ -244,7 +294,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Baltimore’s City Paper recently &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;took a look at a unique parking situation&lt;/a&gt; in Baltimore at the 4200 block of Wickford Road.  Unfortunately, they didn’t take a peek at the same open data for parking citations I’ve been investigating lately.&lt;/p&gt;
 
@@ -307,7 +357,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
 
@@ -359,7 +409,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;The total number of parking citations in Baltimore exploded between September 2013 and March 2014.  &lt;/p&gt;
 
@@ -452,7 +502,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “&lt;a href=&quot;http://www.thetrainingset.com/my-elec-use/&quot;&gt;My Electricity Use&lt;/a&gt;.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the &lt;a href=&quot;http://plot.ly&quot;&gt;Plotly&lt;/a&gt; game, but I’ll be using it a lot more regularly going forward.&lt;/p&gt;
 
@@ -471,7 +521,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Now that we can be sure of having a &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;complete data set&lt;/a&gt; for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.&lt;/p&gt;
 
@@ -543,7 +593,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Within hours of publishing my last post on &lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue/&quot;&gt;Baltimore’s parking (etc.) citation dataset&lt;/a&gt;, the issues were corrected thanks to Sharon Paley at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt; and Heather Hudson, Baltimore’s Chief Data Officer in the &lt;a href=&quot;http://moit.baltimorecity.gov/Home.aspx&quot;&gt;Mayor’s Office of Information Technology&lt;/a&gt;.&lt;/p&gt;
 
@@ -608,7 +658,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;The title of the dataset I’m working with on Baltimore’s &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;open data portal&lt;/a&gt; is “Parking Citations.”  I downloaded a snapshot of the dataset which ended up being 2,689,647 total citations through January 12, 2015. &lt;/p&gt;
 
@@ -661,7 +711,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.  &lt;/p&gt;
 
@@ -700,7 +750,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Christmas Day.  I’m bored.  &lt;/p&gt;
 
@@ -733,7 +783,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;By varying parameters of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt; we can determine the economic plausibility and benefits of home grid-tied batteries.  &lt;/p&gt;
 
@@ -834,7 +884,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Opower posted &lt;a href=&quot;http://blog.opower.com/2014/09/ami-data-integration/&quot;&gt;a heat map of hourly electricity demand&lt;/a&gt; that I wanted to replicate for our data. &lt;/p&gt;
 
@@ -861,7 +911,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;This post fills in some more details of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt;.&lt;/p&gt;
 
@@ -954,7 +1004,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Buying lead-acid batteries and switching to one of &lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;BGE’s time-of-use pricing plans&lt;/a&gt; may be a very good idea indeed.&lt;/p&gt;
 
@@ -1054,7 +1104,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;It’s been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.&lt;/p&gt;
 
@@ -1081,7 +1131,7 @@
   <author>
     <name>Justin Elszasz</name>
     <uri>http://www.thetrainingset.com</uri>
-    <email></email>
+    <email>jtelszasz@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Now that I’ve got BGE’s available &lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;residential time-of-use plans&lt;/a&gt;, I can evaluate whether I would save money by switching to one.&lt;/p&gt;
 
@@ -1117,48 +1167,6 @@
 &lt;p&gt;The total annual savings for the sample set would be $27.23 for the “RL” plan compared to the regular “R” plan, and $60.25 for the “EV” plan.  These aren’t large chunks, but I think that’s probably by design.  BGE doesn’t want to lose an excessive amount of revenue by having people switch over to dynamic pricing plans.  At the same time, providing some incentive to switch, especially for electric vehicle owners (mind you this would be a different analysis), makes for a more reliable grid during the peak hours of the summer months by shaving or shifting load.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Should-I-Switch-to-TOU-Pricing&quot;&gt;Should I Switch to Time-of-Use Pricing?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on August 12, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[BGE Residential Pricing Plans]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/BGE-Pricing" />
-  <id>http://www.thetrainingset.com/articles/BGE-Pricing</id>
-  <updated>2014-08-03T00:00:00-00:00</updated>
-  <published>2014-08-03T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;A quick blurb on a couple of pieces of the demand-side storage puzzle I’m working on.&lt;/p&gt;
-
-&lt;p&gt;First, turns out I’m going to use the Green Button sample data that I &lt;a href=&quot;http://www.thetrainingset.com/articles/feeding-the-data-monster&quot;&gt;previously found&lt;/a&gt;.  They have &lt;a href=&quot;http://services.greenbuttondata.org/sample-data.html&quot;&gt;several of these datasets posted&lt;/a&gt; that may be interesting for comparison later.  It took an embarassing amount of time to sort out my first time parsing an XML file.  Word of advice for you data/Python peoples: don’t use ElementTree, I used BeautifulSoup and it was much simpler.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Green Button sample hourly data for inland single family residence, resampled to daily.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Definitely nice to have a full year worth of clean data.  You can also clearly see the bump up in summer usage from A/C loads.&lt;/p&gt;
-
-&lt;p&gt;In sorting out the demand-side storage question, I also took a look at what pricing schemes BGE has on offer.  They currently have the normal &lt;a href=&quot;http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/P3_SCH_R.pdf&quot;&gt;residential plan (“R”)&lt;/a&gt;, a &lt;a href=&quot;http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/P3_SCH_RL.pdf&quot;&gt;residential time-of-use, or TOU, plan (“RL”)&lt;/a&gt;, and a &lt;a href=&quot;http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/ScheduleEV.pdf&quot;&gt;plan for electric vehicle customers (“EV”)&lt;/a&gt;.  All of the actual costs for peak, off-peak, and intermediate are found &lt;a href=&quot;http://www.bge.com/myaccount/billsrates/ratestariffs/electricservice/Electric%20Services%20Rates%20and%20Tariffs/Rdr_1.pdf&quot;&gt;here&lt;/a&gt;.  Obviously, there are a proverbial shit-ton of other nickel-and-dime tariffs, but since they’re paid per kilowatt-hour and aren’t tied to the actual price of electricity itself.  I’m assuming for the sake of comparison that the total number of kilowatt-hours you use is independent of the pricing plan you have. &lt;/p&gt;
-
-&lt;p&gt;Here’s what the three pricing plans look like for weekdays in summer and non-summer periods.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Summer.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Summer.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;BGE residential pricing plans, summer weekday.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Non-Summer.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Non-Summer.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;BGE residential pricing plans, non-summer weekday.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/BGE-Pricing&quot;&gt;BGE Residential Pricing Plans&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on August 03, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

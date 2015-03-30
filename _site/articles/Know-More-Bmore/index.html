@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Which citations do people not care about paying? &#8211; The Training Set.</title>
-<meta name="description" content="Quick look at which citations have open fines remaining.">
-<meta name="keywords" content="Baltimore, cities, parking, transportation, civic-hacking, data-journalism">
+<title>Know More, B'more. &#8211; The Training Set.</title>
+<meta name="description" content="Plotting some relatively clean data from Open Baltimore and Baltimore Neighborhood Indicators Alliance.">
+<meta name="keywords" content="Baltimore, cities, poverty, know-more-bmore, civic-hacking, data-journalism">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://www.thetrainingset.com/images/">
-<meta name="twitter:title" content="Which citations do people not care about paying?">
-<meta name="twitter:description" content="Quick look at which citations have open fines remaining.">
+<meta name="twitter:title" content="Know More, B'more.">
+<meta name="twitter:description" content="Plotting some relatively clean data from Open Baltimore and Baltimore Neighborhood Indicators Alliance.">
 <meta name="twitter:creator" content="@jtelszasz">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Which citations do people not care about paying?">
-<meta property="og:description" content="Quick look at which citations have open fines remaining.">
-<meta property="og:url" content="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About">
+<meta property="og:title" content="Know More, B'more.">
+<meta property="og:description" content="Plotting some relatively clean data from Open Baltimore and Baltimore Neighborhood Indicators Alliance.">
+<meta property="og:url" content="http://www.thetrainingset.com/articles/Know-More-Bmore">
 <meta property="og:site_name" content="The Training Set.">
 
 
 
 
 
-<link rel="canonical" href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About">
+<link rel="canonical" href="http://www.thetrainingset.com/articles/Know-More-Bmore">
 <link href="http://www.thetrainingset.com/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set. Feed">
 
 
@@ -120,45 +120,34 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" rel="bookmark" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></h1>
+          <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Know-More-Bmore" rel="bookmark" title="Know More, B'more.">Know More, B'more.</a></h1>
         
-        <h2>March 16, 2015</h2>
+        <h2>March 30, 2015</h2>
         
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <p>The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.</p>
+      <p>I took a quick look at the Vital Signs dataset from the<a href="http://www.bniajfi.org/indicators"> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)</a> at the University of Baltimore (data also available at <a href="http://data.baltimorecity.gov/">Open Baltimore</a>) and created some <a href="http://www.gapminder.org/">Hans Rosling-style plots</a>.</p>
 
-<p>With this information we can look at the rates of unpaid citations by citation type.  Below I’ve calculated these ratios for all description types, but have only included for comparison those categories that had more than 100 citations in the database (so we hopefully have meaningful comparisons).</p>
-
-<h3 id="news-flash-abandoned-vehicle-citations-are-more-likely-to-be-unpaid">News flash: abandoned vehicle citations are more likely to be unpaid.</h3>
+<p>These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a <a href="http://bniajfi.org/vital_signs/">website for mapping data</a> and they were rightly lauded for cleaning and opening up this data for public use, but not I’m seeing only a handful of correlations and analysis based on the Vital Signs datasets.</p>
 
 <center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png"><img src="http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png" /></a>
-  <figcaption>Percent of total citations that have a balance as of February 28, 2015.</figcaption>
-</figure>
+<div>
+    <a href="https://plot.ly/~jtelszasz/211/" target="_blank" title="Baltimore: Too Many Kids in Poverty" style="display: block; text-align: center;"><img src="https://plot.ly/~jtelszasz/211.png" alt="Baltimore: Too Many Kids in Poverty" style="max-width: 100%;width: 500px;" width="500" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="jtelszasz:211" src="https://plot.ly/embed.js" async=""></script>
+</div>
 </center>
 
-<!--The red light violations, however, should be of particular concern since they pose a safety risk.  While many of us in Baltimore have independently come to the same conclusion that the red lights are poorly timed, this does not excuse ignoring them.  The fact that red light violations have a higher portion of unpaid citations seems to indicate that the perhaps a stiffer penalty increase is warranted in order to curb this behavior.-->
+<p>In this first plot, the bubbles are sized according to the total number of children between the ages of 5 and 18 (school age) living in each neighborhood.</p>
 
-<h2 id="another-suggestion-for-baltimore-dot-and-mayors-office-of-it">Another suggestion for Baltimore DOT and Mayor’s Office of IT</h2>
-
-<p>The dataset that gets posted on <a href="http://data.baltimorecity.gov">the Open Baltimore data portal</a> could really use better documenatation.  Here’s another example of why.  Since the speed camera program was halted in Baltimore, certain citations are no longer captured by this dataset, since parking enforcers don’t issue any kind of moving violations.  Some of those types are still in this dataset, however - a hold over from when the camera program was still in effect.  They should be removed before any analysis or comparisons.  </p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2015-03/Ticket_Counts_By_Year.png"><img src="http://www.thetrainingset.com/images/2015-03/Ticket_Counts_By_Year.png" /></a>
-  <figcaption>Total ticket counts by category and year.</figcaption>
-</figure>
-</center>
+<p>Definitely check out BNIA’s website, and <a href="http://www.urban.org/UploadedPDF/413219-NNIP-an-Open-Data-in-Baltimore.pdf">this</a> is a good synopsis of open data in Baltimore.</p>
 
 <hr />
-<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore.</a></em></p>
+<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a> and the<a href="http://www.bniajfi.org/indicators"> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.</a></em></p>
 
-<p><em>Analysis conducted using <a href="http://www.python.org">Python</a> and <a href="http://pandas.pydata.org">Pandas</a></em></p>
+<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, and <a href="http://www.plot.ly">Plot.ly</a>.</em></p>
 
-<p><em>Full analysis IPython notebook can be found <a href="http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb">here</a>.</em></p>
+<p><em>Full analysis IPython notebook can be found <a href="http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb">here</a>.</em></p>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -173,15 +162,15 @@
 
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="http://www.thetrainingset.com/tags/#Baltimore" title="Pages tagged Baltimore" class="tag">Baltimore</a><a href="http://www.thetrainingset.com/tags/#cities" title="Pages tagged cities" class="tag">cities</a><a href="http://www.thetrainingset.com/tags/#parking" title="Pages tagged parking" class="tag">parking</a><a href="http://www.thetrainingset.com/tags/#transportation" title="Pages tagged transportation" class="tag">transportation</a><a href="http://www.thetrainingset.com/tags/#civic-hacking" title="Pages tagged civic-hacking" class="tag">civic-hacking</a><a href="http://www.thetrainingset.com/tags/#data-journalism" title="Pages tagged data-journalism" class="tag">data-journalism</a></span>
-        <span><a href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" rel="bookmark" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a> was published on <span class="entry-date date published updated"><time datetime="2015-03-16T00:00:00-04:00">March 16, 2015</time></span></span>
-        (revised: <span class="entry-date date modified"><time datetime="2015-03-16">03/16/2015</time></span>)
+        <span class="entry-tags"><a href="http://www.thetrainingset.com/tags/#Baltimore" title="Pages tagged Baltimore" class="tag">Baltimore</a><a href="http://www.thetrainingset.com/tags/#cities" title="Pages tagged cities" class="tag">cities</a><a href="http://www.thetrainingset.com/tags/#poverty" title="Pages tagged poverty" class="tag">poverty</a><a href="http://www.thetrainingset.com/tags/#know-more-bmore" title="Pages tagged know-more-bmore" class="tag">know-more-bmore</a><a href="http://www.thetrainingset.com/tags/#civic-hacking" title="Pages tagged civic-hacking" class="tag">civic-hacking</a><a href="http://www.thetrainingset.com/tags/#data-journalism" title="Pages tagged data-journalism" class="tag">data-journalism</a></span>
+        <span><a href="http://www.thetrainingset.com/articles/Know-More-Bmore" rel="bookmark" title="Know More, B'more.">Know More, B'more.</a> was published on <span class="entry-date date published updated"><time datetime="2015-03-30T00:00:00-04:00">March 30, 2015</time></span></span>
+        (revised: <span class="entry-date date modified"><time datetime="2015-03-30">03/30/2015</time></span>)
         <span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
         <div class="social-share">
           <ul class="socialcount socialcount-small inline-list">
-            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-            <li class="googleplus"><a href="https://plus.google.com/share?url=http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.thetrainingset.com/articles/Know-More-Bmore" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://www.thetrainingset.com/articles/Know-More-Bmore" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=http://www.thetrainingset.com/articles/Know-More-Bmore" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
           </ul>
         </div><!-- /.social-share -->
       </footer>
@@ -191,18 +180,18 @@
     <div class="read-more">
       
         <div class="read-more-header">
-          <a href="http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories" class="read-more-btn">Read More</a>
+          <a href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" class="read-more-btn">Read More</a>
         </div><!-- /.read-more-header -->
         <div class="read-more-content">
-          <h3><a href="http://www.thetrainingset.com/articles/Know-More-Bmore" title="Know More, B'more.">Know More, B'more.</a></h3>
-          <p>Plotting some relatively clean data from Open Baltimore and Baltimore Neighborhood Indicators Alliance. <a href="http://www.thetrainingset.com/articles/Know-More-Bmore">Continue reading</a></p>
+          <h3><a href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></h3>
+          <p>City Paper gives a shoutout to The Training Set for Looking Into 4200 Wickford. <a href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis">Continue reading</a></p>
         </div><!-- /.read-more-content -->
       
       <div class="read-more-list">
         
           <div class="list-item">
-            <h4><a href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></h4>
-            <span>Published on March 19, 2015</span>
+            <h4><a href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></h4>
+            <span>Published on March 16, 2015</span>
           </div><!-- /.list-item -->
         
           <div class="list-item">
