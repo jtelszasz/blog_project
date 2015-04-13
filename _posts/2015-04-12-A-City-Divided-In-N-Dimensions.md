@@ -26,7 +26,7 @@ As you can imagine, many of the variables are strongly correlated with each othe
 
 On the plot below, each bubble is a neighborhood in Baltimore and is sized by the population living in that neighborhood.  One can delineate groups or "clusters" of neighborhoods.  These are clusters of neighborhoods that are more socio-economically similar.  We can specify a number of clusters and using an algorithm (K-means clustering, described below) we can find the best way to divide the neighborhoods into clusters; each color represents a different cluster and the X's are the centers of each cluster.  The number of clusters I've chosen (seven) is somewhat arbitrary.  No axes labels are shown since the actual values output from the principal component analysis (discussed below) are meaningless.
 
-What results is effectively a socio-economic map of Baltimore.  Use your cursor to hover over each bubble to see the name of the neighborhood.  **Again, the farther apart one bubble is from another, the more socio-economically dissimilar those neighborhoods are.**  For example, find the "Inner Harbor/Federal Hill" (upper right, orange) and "Greater Rosemont" (West Baltimore, adjacent to Gwynn Falls Park; lower left, purple) neighborhoods.
+What results is effectively a socio-economic map of Baltimore.  Use your cursor to hover over each bubble to see the name of the neighborhood.  **Again, the farther apart one bubble is from another, the more socio-economically dissimilar those neighborhoods are.**  For example, find the "Inner Harbor/Federal Hill" (upper right, grey) and "Greater Rosemont" (West Baltimore, adjacent to Gwynn Falls Park; lower left, light blue) neighborhoods.
 
 <center>
 <div>
