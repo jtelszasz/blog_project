@@ -14,7 +14,7 @@ tags: [Baltimore, cities, poverty, know-more-bmore, civic-hacking, data-journali
 
 I took a quick look at the Vital Signs dataset from the<a href='http://www.bniajfi.org/indicators'> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)</a> at the University of Baltimore (data also available at <a href='http://data.baltimorecity.gov/'>Open Baltimore</a>) and created some <a href='http://www.gapminder.org/'>Hans Rosling-style plots</a>.
 
-These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a <a href='http://bniajfi.org/vital_signs/'>website for mapping data</a> and they were rightly lauded for cleaning and opening up this data for public use, but not I'm seeing only a handful of correlations and analysis based on the Vital Signs datasets.
+These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a <a href='http://bniajfi.org/vital_signs/'>website for mapping data</a> and they were rightly lauded for cleaning and opening up this data for public use, but I've seen only a handful of analyses based on the Vital Signs datasets.
 
 <center>
 <div>
