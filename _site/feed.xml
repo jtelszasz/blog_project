@@ -4,13 +4,47 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-04-12T21:03:28-04:00</updated>
+<updated>2015-04-14T08:13:09-04:00</updated>
 <id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
   <uri>http://www.thetrainingset.com/</uri>
   <email>thetrainingset@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[ShowYourWork Election Campaign]]></title>
+ <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Show-Your-Work" />
+  <id>http://www.thetrainingset.com/articles/Show-Your-Work</id>
+  <updated>2015-04-14T00:00:00-00:00</updated>
+  <published>2015-04-14T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://www.thetrainingset.com</uri>
+    <email>thetrainingset@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Here’s a small idea that I think would make the upcoming election cycle incrementally more bearable.  &lt;/p&gt;
+
+&lt;p&gt;Politicians seemingly pick numbers, figures, statistics, and trends out of thin air.  This can be infuriating no matter where you fall on the political spectrum.  Why don’t we push politicians to post annotated transcripts of their speeches and debates that provide citations?  Surely they have an intern or two that they can promote from sticking signs on front lawns to transcribing and footnoting.  This would be a big step in the direction of transparency and a substantive way to keep politicians honest.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I’d propose we call it the &lt;a href=&quot;https://twitter.com/search?q=%23showyourwork&amp;amp;src=typd&quot;&gt;#ShowYourWork&lt;/a&gt; campaign.&lt;/strong&gt;  If elementary school kids can show their work on math problems and high schoolers can cite their references in English papers, surely our politicians can follow their lead.  Moreover, it would signal a commitment to and appreciation for the STEM fields that politicians like to pay lip service to when it comes to job growth.&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Show-Your-Work&quot;&gt;ShowYourWork Election Campaign&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 14, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -39,7 +73,7 @@
 
 &lt;p&gt;On the plot below, each bubble is a neighborhood in Baltimore and is sized by the population living in that neighborhood.  One can delineate groups or “clusters” of neighborhoods.  These are clusters of neighborhoods that are more socio-economically similar.  We can specify a number of clusters and using an algorithm (K-means clustering, described below) we can find the best way to divide the neighborhoods into clusters; each color represents a different cluster and the X’s are the centers of each cluster.  The number of clusters I’ve chosen (seven) is somewhat arbitrary.  No axes labels are shown since the actual values output from the principal component analysis (discussed below) are meaningless.&lt;/p&gt;
 
-&lt;p&gt;What results is effectively a socio-economic map of Baltimore.  Use your cursor to hover over each bubble to see the name of the neighborhood.  &lt;strong&gt;Again, the farther apart one bubble is from another, the more socio-economically dissimilar those neighborhoods are.&lt;/strong&gt;  For example, find the “Inner Harbor/Federal Hill” (upper right, orange) and “Greater Rosemont” (West Baltimore, adjacent to Gwynn Falls Park; lower left, purple) neighborhoods.&lt;/p&gt;
+&lt;p&gt;What results is effectively a socio-economic map of Baltimore.  Use your cursor to hover over each bubble to see the name of the neighborhood.  &lt;strong&gt;Again, the farther apart one bubble is from another, the more socio-economically dissimilar those neighborhoods are.&lt;/strong&gt;  For example, find the “Inner Harbor/Federal Hill” (upper right, grey) and “Greater Rosemont” (West Baltimore, adjacent to Gwynn Falls Park; lower left, light blue) neighborhoods.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;div&gt;
@@ -101,7 +135,7 @@
   </author>
   <content type="html">&lt;p&gt;I took a quick look at the Vital Signs dataset from the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore (data also available at &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;) and created some &lt;a href=&quot;http://www.gapminder.org/&quot;&gt;Hans Rosling-style plots&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a &lt;a href=&quot;http://bniajfi.org/vital_signs/&quot;&gt;website for mapping data&lt;/a&gt; and they were rightly lauded for cleaning and opening up this data for public use, but not I’m seeing only a handful of correlations and analysis based on the Vital Signs datasets.&lt;/p&gt;
+&lt;p&gt;These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a &lt;a href=&quot;http://bniajfi.org/vital_signs/&quot;&gt;website for mapping data&lt;/a&gt; and they were rightly lauded for cleaning and opening up this data for public use, but I’ve seen only a handful of analyses based on the Vital Signs datasets.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;div&gt;
@@ -1165,33 +1199,6 @@
 &lt;/ul&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;Intro to Storage Model&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on September 23, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Summer Updates]]></title>
- <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Summer-Update" />
-  <id>http://www.thetrainingset.com/articles/Summer-Update</id>
-  <updated>2014-09-22T00:00:00-00:00</updated>
-  <published>2014-09-22T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">&lt;p&gt;It’s been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.&lt;/p&gt;
-
-&lt;p&gt;I didn’t have much time over the summer for this stuff.  My real job got pretty busy.  You don’t care about that though.&lt;/p&gt;
-
-&lt;p&gt;I did get a bit stalled.  As I’ve discussed previously, I’ve used iPython notebooks &lt;a href=&quot;http://www.thetrainingset.com/the-work&quot;&gt;quite a bit&lt;/a&gt; for conducting analyses.  These only got me so far.  I’ve been working on a demand-side storage model to figure out how to take advantage of time-of-use pricing now available from utility companies.  While the notebooks work great for documenting analyses and creating plots, building a model is nearly impossible with them.  They aren’t really useful if you need multiple functions and scripts.  I was encountering bugs early on in building the model and couldn’t fix them.  It was frustrating.&lt;/p&gt;
-
-&lt;p&gt;This type of scientific computing really calls for an integrated development environment, or IDE.  It’s the one thing I’ve been missing since starting in with Python in lieu of Matlab.  An IDE gives you an interactive console, debugging capabilities, and an editor all in one program.  After reading a bit online, it seemed the two big ones for Python were &lt;a href=&quot;http://www.eclipse.org&quot;&gt;Eclipse&lt;/a&gt; and &lt;a href=&quot;http://www.jetbrains.com/pycharm&quot;&gt;Pycharm&lt;/a&gt;.  I started with Eclipse.  I couldn’t for the life of me get it working, something about the external libraries I was using wasn’t getting set up right.  I tried every way imaginable, but this was as frustrating as the original bugs in my code.  I switched to Pycharm, and pretty quickly was up and running.&lt;/p&gt;
-
-&lt;p&gt;Long story short, with an IDE in hand I found my bugs pretty quickly and finished building the model over a weekend.  I definitely recommend Pycharm or another IDE (even trying Eclipse, if you can get it working) for anything more complicated than simple models or exploratory data analysis.  You could even write all your functions and scripts for a model in an IDE and then switch to notebooks for analysis and results of the model.&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Summer-Update&quot;&gt;Summer Updates&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on September 22, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
