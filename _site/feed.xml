@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">The Training Set.</title>
-<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2015-04-22T07:40:13-04:00</updated>
-<id>http://localhost:4000/</id>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
+<updated>2015-04-22T13:06:06-04:00</updated>
+<id>http://www.thetrainingset.com/</id>
 <author>
   <name>Justin Elszasz</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://www.thetrainingset.com/</uri>
   <email>thetrainingset@gmail.com</email>
 </author>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Baltimore Police Department Overtime & Bonuses]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" />
-  <id>http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" />
+  <id>http://www.thetrainingset.com/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay</id>
   <updated>2015-04-22T00:00:00-00:00</updated>
   <published>2015-04-22T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;As if the police haven’t been in the &lt;a href=&quot;https://twitter.com/search?q=%23blacklivesmatter&amp;amp;src=typd&quot;&gt;public eye&lt;/a&gt; enough lately, Baltimore Brew has been &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/26/police-overtime-declines-but-is-still-targeted-to-reach-record/&quot;&gt;beating the drum&lt;/a&gt; regarding police overtime budget.  According to the Brew’s reporting, Mayor Stephanie Rawlings-Blake promised tax cuts for residents that would be paid for by incoming tax revenue from the casino.  The mayor &lt;a href=&quot;https://www.baltimorebrew.com/2015/04/13/its-now-official-sagging-casino-revenues-equal-no-property-tax-cut-this-year/&quot;&gt;recently announced&lt;/a&gt;, however, that these cuts would not come to fruition as planned, since revenues from the casino are &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/25/horseshoe-casino-will-pay-only-4-million-in-lease-revenues-this-year/&quot;&gt;nowhere near the levels predicted&lt;/a&gt;.  Meanwhile, police are able to rake in sweet, sweet overtime pay by providing a security detail at the casino.  We won’t be able to see the resulting change in overtime due to the casino yet since it opened in FY2015, but in the meantime it’s worth scrutinizing Baltimore police overtime and bonus closely given the broader discussion of cost-effectiveness in policing.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;As if the police haven’t been in the &lt;a href=&quot;https://twitter.com/search?q=%23blacklivesmatter&amp;amp;src=typd&quot;&gt;public eye&lt;/a&gt; enough lately, Baltimore Brew has been &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/26/police-overtime-declines-but-is-still-targeted-to-reach-record/&quot;&gt;beating the drum&lt;/a&gt; regarding police overtime budget.  According to the Brew’s reporting, Mayor Stephanie Rawlings-Blake promised tax cuts for residents that would be paid for by incoming tax revenue from the casino.  The mayor &lt;a href=&quot;https://www.baltimorebrew.com/2015/04/13/its-now-official-sagging-casino-revenues-equal-no-property-tax-cut-this-year/&quot;&gt;recently announced&lt;/a&gt;, however, that these cuts would not come to fruition as planned, since revenues from the casino are &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/25/horseshoe-casino-will-pay-only-4-million-in-lease-revenues-this-year/&quot;&gt;nowhere near the levels predicted&lt;/a&gt;.  Meanwhile, police are able to rake in sweet, sweet overtime pay by providing a security detail at the casino.  We won’t be able to see the resulting change in overtime due to the casino yet since it opened in FY2015, but in the meantime it’s worth scrutinizing Baltimore police overtime and bonus closely given the broader discussion of cost-effectiveness in policing.&lt;/p&gt;
 
 &lt;p&gt;In fact, &lt;a href=&quot;http://articles.baltimoresun.com/2010-06-30/news/bs-md-ci-baltimore-overtime-20100602_1_overtime-earners-deputy-mayor-christopher-thomaskutty-councilwoman-belinda-conaway&quot;&gt;concerns about overtime pay predate&lt;/a&gt; the data we have through Open Baltimore, though older data might be available in &lt;a href=&quot;http://data.baltimoresun.com/salary_database/&quot;&gt;other forms&lt;/a&gt;.&lt;/p&gt;
 
@@ -59,7 +62,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -77,7 +80,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -87,7 +90,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -97,7 +100,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -107,7 +110,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -137,23 +140,28 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay&quot;&gt;Baltimore Police Department Overtime & Bonuses&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 22, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay&quot;&gt;Baltimore Police Department Overtime &amp; Bonuses&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 22, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[ShowYourWork Election Campaign]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Show-Your-Work" />
-  <id>http://localhost:4000/articles/Show-Your-Work</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Show-Your-Work" />
+  <id>http://www.thetrainingset.com/articles/Show-Your-Work</id>
   <updated>2015-04-14T00:00:00-00:00</updated>
   <published>2015-04-14T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Here’s a small idea that I think would make the upcoming election cycle incrementally more bearable.  &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Here’s a small idea that I think would make the upcoming election cycle incrementally more bearable.  &lt;/p&gt;
 
 &lt;p&gt;Politicians seemingly pick numbers, figures, statistics, and trends out of thin air.  This can be infuriating no matter where you fall on the political spectrum.  Why don’t we push politicians to post annotated transcripts of their speeches and debates that provide citations?  Surely they have an intern or two that they can promote from sticking signs on front lawns to transcribing and footnoting.  This would be a big step in the direction of transparency and a substantive way to keep politicians honest.&lt;/p&gt;
 
@@ -171,27 +179,32 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Show-Your-Work&quot;&gt;ShowYourWork Election Campaign&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 14, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Show-Your-Work&quot;&gt;ShowYourWork Election Campaign&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 14, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[A City Divided (in N dimensions)]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" />
-  <id>http://localhost:4000/articles/A-City-Divided-In-N-Dimensions</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions" />
+  <id>http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions</id>
   <updated>2015-04-12T00:00:00-00:00</updated>
   <published>2015-04-12T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;It’s no secret that most American cities are segregated.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;It’s no secret that most American cities are segregated.&lt;/p&gt;
 
 &lt;p&gt;When I tell people I live in Baltimore, that I love living there and that it’s a great American city, what I really mean is that the neighborhoods I typically experience are great.  Baltimore of course has its many ills, and it’s very easy for white, college-educated individuals like myself to find themselves experiencing a very different reality than most in the city.&lt;/p&gt;
 
-&lt;p&gt;There are many socio-economic variables that would describe such segregation - something I hinted at with the &lt;a href=&quot;http://localhost:4000/articles/Know-More-Bmore&quot;&gt;last post&lt;/a&gt;.  Luckily, the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore has made it their mission to provide a clean, concise set of indicators that illustrate the health and wealth of the city.  There are 152 socio-economic indicators in the Vital Signs dataset, and some are reported for multiple years which results in 295 total variables for each of the 56 Baltimore neighborhoods captured.  For this analysis, I’m throwing them all in the mixer.&lt;/p&gt;
+&lt;p&gt;There are many socio-economic variables that would describe such segregation - something I hinted at with the &lt;a href=&quot;http://www.thetrainingset.com/articles/Know-More-Bmore&quot;&gt;last post&lt;/a&gt;.  Luckily, the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore has made it their mission to provide a clean, concise set of indicators that illustrate the health and wealth of the city.  There are 152 socio-economic indicators in the Vital Signs dataset, and some are reported for multiple years which results in 295 total variables for each of the 56 Baltimore neighborhoods captured.  For this analysis, I’m throwing them all in the mixer.&lt;/p&gt;
 
 &lt;p&gt;As you can imagine, many of the variables are strongly correlated with each other (e.g. the percent of the population in a neighborhood that is white is inversely proportional to the percent that aren’t white, so you don’t necessarily need both depending on what you’re trying to do with the data).  Rather than try plotting all of these variables against one another, it’s possible to illustrate the degree to which the city is segregated by distilling the 295 variables into only a couple - in other words, teasing out the principal socio-economic “directions” in which communities may be close or far from each other.&lt;/p&gt;
 
@@ -245,23 +258,28 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/A-City-Divided-In-N-Dimensions&quot;&gt;A City Divided (in N dimensions)&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions&quot;&gt;A City Divided (in N dimensions)&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Know More, B'more.]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Know-More-Bmore" />
-  <id>http://localhost:4000/articles/Know-More-Bmore</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Know-More-Bmore" />
+  <id>http://www.thetrainingset.com/articles/Know-More-Bmore</id>
   <updated>2015-03-30T00:00:00-00:00</updated>
   <published>2015-03-30T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;I took a quick look at the Vital Signs dataset from the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore (data also available at &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;) and created some &lt;a href=&quot;http://www.gapminder.org/&quot;&gt;Hans Rosling-style plots&lt;/a&gt;.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;I took a quick look at the Vital Signs dataset from the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore (data also available at &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;) and created some &lt;a href=&quot;http://www.gapminder.org/&quot;&gt;Hans Rosling-style plots&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a &lt;a href=&quot;http://bniajfi.org/vital_signs/&quot;&gt;website for mapping data&lt;/a&gt; and they were rightly lauded for cleaning and opening up this data for public use, but I’ve seen only a handful of analyses based on the Vital Signs datasets.&lt;/p&gt;
 
@@ -295,23 +313,28 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Know-More-Bmore&quot;&gt;Know More, B'more.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 30, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Know-More-Bmore&quot;&gt;Know More, B&#39;more.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 30, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[City Paper Bounces The Training Set Parking Analysis]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" />
-  <id>http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" />
+  <id>http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis</id>
   <updated>2015-03-19T00:00:00-00:00</updated>
   <published>2015-03-19T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;I was able to get in contact with Edward Ericson Jr. over at Baltimore’s City Paper concerning the &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;parking investigation at 4200 Wickford Rd&lt;/a&gt;.  Ed was kind enough to bounce my findings in a &lt;a href=&quot;http://www.citypaper.com/blogs/the-news-hole/bcp-wandering-eye-a-neonoir-crime-blotter-date-on-parking-in-baltimore-and-more-20150305,0,1269875.story&quot;&gt;quick update blurb&lt;/a&gt;.  Full text is below.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;I was able to get in contact with Edward Ericson Jr. over at Baltimore’s City Paper concerning the &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;parking investigation at 4200 Wickford Rd&lt;/a&gt;.  Ed was kind enough to bounce my findings in a &lt;a href=&quot;http://www.citypaper.com/blogs/the-news-hole/bcp-wandering-eye-a-neonoir-crime-blotter-date-on-parking-in-baltimore-and-more-20150305,0,1269875.story&quot;&gt;quick update blurb&lt;/a&gt;.  Full text is below.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Parking being what it is in Baltimore, it’s not surprising that a light-hearted look at the lengths city councilmembers are required to go on behalf of constituents who are inconvenienced by tickets—which City Paper published in December—would be met by data hounds. Now comes Justin Elszasz, who analyzed the city’s parking ticket database to conclude that—surprise—the issue is not so big, in the grand scheme of things. “What is curious is that the open data for parking citations at the 4200 block of Wickford Rd. are not showing a rampant citation issue as the article or residents suggest,” the blog post says, above a bar graph depicting more than 20 citations in April of 2014 and 15 in November-December. But the data looks like exactly the sort of thing the residents complained (and CP wrote) about—sporatic, complaint-driven hard-assery. We were careful not to quantify the damage because we did not have the tools or time to do the analysis Elszasz did. And he confirms what City Paper reported, right down to our tone. We said the residents—who actually have garages on their back alley—are inconvenienced by the law prohibiting them from parking on the curb, facing the wrong way. Elszasz says: “It truly pales in comparison to some of the blocks I’ve been looking at recently. The article claims that parking tickets have appeared in the middle of the night, ‘depicting the parking enforcement agents as thieves in the night.’ It looks like that actually was the case a couple few times - around 4:30am on April 4 and 8, 2014, and around 2:30am on April 18, 2014. But overall, this article and the residents on this block appear to be making something out of nothing. The grand total of fines issued for the 41 citations above is $1,312.” - Edward Ericson Jr.&lt;/p&gt;
@@ -336,23 +359,28 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis&quot;&gt;City Paper Bounces The Training Set Parking Analysis&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 19, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis&quot;&gt;City Paper Bounces The Training Set Parking Analysis&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 19, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Which citations do people not care about paying?]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" />
-  <id>http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" />
+  <id>http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
   <updated>2015-03-16T00:00:00-00:00</updated>
   <published>2015-03-16T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.&lt;/p&gt;
 
 &lt;p&gt;With this information we can look at the rates of unpaid citations by citation type.  Below I’ve calculated these ratios for all description types, but have only included for comparison those categories that had more than 100 citations in the database (so we hopefully have meaningful comparisons).&lt;/p&gt;
 
@@ -360,7 +388,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Percent of total citations that have a balance as of February 28, 2015.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -373,7 +401,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_By_Year.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_By_Year.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_By_Year.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_By_Year.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total ticket counts by category and year.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -397,29 +425,34 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 16, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 16, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[DOT Needs More Citation Categories]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" />
-  <id>http://localhost:4000/articles/DOT-Needs-More-Citation-Categories</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories" />
+  <id>http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories</id>
   <updated>2015-03-12T00:00:00-00:00</updated>
   <published>2015-03-12T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Here’s a suggestion directed at the Department of Transportation for improving their citation system.  &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Here’s a suggestion directed at the Department of Transportation for improving their citation system.  &lt;/p&gt;
 
 &lt;p&gt;I’ve alluded to this in previous posts, but this should make it clear as day.  Looking at all citations since February of 2013, the category “All Other Parking Meter Violations” trumps all of the other citation types by a wide margin.  My guess is that, given its prominence, these are citations for time expiring on a parking meter.  But why code it as “all other?”  An “other” option should be a last resort, when all other codes don’t apply.  If parking enforcers are having to use this code so extensively, it suggests that they need more nuanced options for coding parking infringements.  This is essentially information about parking in the city that’s up for grabs and we’re leaving it on the table.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citation counts in Baltimore by category.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -443,23 +476,28 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[When Not To Park On N. Charles St.]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" />
-  <id>http://localhost:4000/articles/When-Not-To-Park-On-Charles</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles" />
+  <id>http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles</id>
   <updated>2015-03-07T00:00:00-00:00</updated>
   <published>2015-03-07T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;In a recent post I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;In a recent post I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
@@ -472,7 +510,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -481,7 +519,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -492,7 +530,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total tickets issued on five blocks of N. Charles St. in Baltimore by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -516,23 +554,28 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Investigating City Paper's Claims About 4200 Wickford]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" />
-  <id>http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford" />
+  <id>http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford</id>
   <updated>2015-03-03T00:00:00-00:00</updated>
   <published>2015-03-03T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Baltimore’s City Paper recently &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;took a look at a unique parking situation&lt;/a&gt; in Baltimore at the 4200 block of Wickford Road.  Unfortunately, they didn’t take a peek at the same open data for parking citations I’ve been investigating lately.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Baltimore’s City Paper recently &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;took a look at a unique parking situation&lt;/a&gt; in Baltimore at the 4200 block of Wickford Road.  Unfortunately, they didn’t take a peek at the same open data for parking citations I’ve been investigating lately.&lt;/p&gt;
 
 &lt;p&gt;This road is a small two-way street in a quiet, wealthy neighborhood adjacent to the Johns Hopkins University campus called Keswick.  The street is narrow, and so vehicles typically park on either side with their tires past the curb which is illegal.  Apparently they also occasionally park on the left facing the wrong direction.  &lt;/p&gt;
 
@@ -546,7 +589,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -554,11 +597,11 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford_Citation_Table.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford_Citation_Table.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
-&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
+&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -579,27 +622,32 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford&quot;&gt;Investigating City Paper's Claims About 4200 Wickford&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 03, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford&quot;&gt;Investigating City Paper&#39;s Claims About 4200 Wickford&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 03, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Biasing Citations Towards Those Who Pay]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Daily-Unpaid-Citations" />
-  <id>http://localhost:4000/articles/Daily-Unpaid-Citations</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Daily-Unpaid-Citations" />
+  <id>http://www.thetrainingset.com/articles/Daily-Unpaid-Citations</id>
   <updated>2015-02-27T00:00:00-00:00</updated>
   <published>2015-02-27T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Daily_Citations_Unpaid.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Daily_Citations_Unpaid.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -631,27 +679,32 @@
 &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Daily-Unpaid-Citations&quot;&gt;Biasing Citations Towards Those Who Pay&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 27, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Daily-Unpaid-Citations&quot;&gt;Biasing Citations Towards Those Who Pay&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 27, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Rapid Increase in Citations]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Rapid-Increase-In-Citations" />
-  <id>http://localhost:4000/articles/Rapid-Increase-In-Citations</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations" />
+  <id>http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations</id>
   <updated>2015-02-24T00:00:00-00:00</updated>
   <published>2015-02-24T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;The total number of parking citations in Baltimore exploded between September 2013 and March 2014.  &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;The total number of parking citations in Baltimore exploded between September 2013 and March 2014.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Total_Monthly_Citations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Total_Monthly_Citations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -660,7 +713,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 25 locations, difference in September 2013 and March 2014 total citations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -679,7 +732,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Citations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Citations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -688,7 +741,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -713,7 +766,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 400 lot of Jones Falls Expressway (JFA) by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -724,46 +777,56 @@
 &lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations&quot;&gt;Rapid Increase in Citations&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 24, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations&quot;&gt;Rapid Increase in Citations&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 24, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Introducing "My Electricity Use" Visualization Page]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site" />
-  <id>http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site" />
+  <id>http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site</id>
   <updated>2015-02-16T00:00:00-00:00</updated>
   <published>2015-02-16T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “&lt;a href=&quot;http://localhost:4000/my-elec-use/&quot;&gt;My Electricity Use&lt;/a&gt;.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the &lt;a href=&quot;http://plot.ly&quot;&gt;Plotly&lt;/a&gt; game, but I’ll be using it a lot more regularly going forward.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “&lt;a href=&quot;http://www.thetrainingset.com/my-elec-use/&quot;&gt;My Electricity Use&lt;/a&gt;.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the &lt;a href=&quot;http://plot.ly&quot;&gt;Plotly&lt;/a&gt; game, but I’ll be using it a lot more regularly going forward.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site&quot;&gt;Introducing "My Electricity Use" Visualization Page&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 16, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site&quot;&gt;Introducing &quot;My Electricity Use&quot; Visualization Page&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 16, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[My Block is a Target.]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/My-Block-Is-A-Target" />
-  <id>http://localhost:4000/articles/My-Block-Is-A-Target</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/My-Block-Is-A-Target" />
+  <id>http://www.thetrainingset.com/articles/My-Block-Is-A-Target</id>
   <updated>2015-02-10T00:00:00-00:00</updated>
   <published>2015-02-10T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Now that we can be sure of having a &lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;complete data set&lt;/a&gt; for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Now that we can be sure of having a &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;complete data set&lt;/a&gt; for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations for top 10 types of citation fines issued.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -776,7 +839,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top20_Target_Locations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top20_Target_Locations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 20 Target Citation Locations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -791,7 +854,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/1200_Block_N_Charles.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/1200_Block_N_Charles.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total fines issued at 1200 block of N. Charles St. in Baltimore, MD between January 20, 2013 and January 20, 2015.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -815,23 +878,28 @@
 &lt;p&gt;&lt;em&gt;I recently had my laptop stolen. I don’t feel like purchasing Microsoft Office, so I’m using a combination of Apple Numbers and Google Docs for spreadsheets now.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/My-Block-Is-A-Target&quot;&gt;My Block is a Target.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 10, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/My-Block-Is-A-Target&quot;&gt;My Block is a Target.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 10, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Quick Response from Baltimore Chief Data Officer]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" />
-  <id>http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" />
+  <id>http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer</id>
   <updated>2015-01-23T00:00:00-00:00</updated>
   <published>2015-01-23T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Within hours of publishing my last post on &lt;a href=&quot;http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue/&quot;&gt;Baltimore’s parking (etc.) citation dataset&lt;/a&gt;, the issues were corrected thanks to Sharon Paley at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt; and Heather Hudson, Baltimore’s Chief Data Officer in the &lt;a href=&quot;http://moit.baltimorecity.gov/Home.aspx&quot;&gt;Mayor’s Office of Information Technology&lt;/a&gt;.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Within hours of publishing my last post on &lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue/&quot;&gt;Baltimore’s parking (etc.) citation dataset&lt;/a&gt;, the issues were corrected thanks to Sharon Paley at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt; and Heather Hudson, Baltimore’s Chief Data Officer in the &lt;a href=&quot;http://moit.baltimorecity.gov/Home.aspx&quot;&gt;Mayor’s Office of Information Technology&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Sharon was kind enough to forward my work on to Heather, who removed old and extraneous data and added some description to some of the citation data fields.  With Heather’s permission I’ve excerpted her email below.&lt;/p&gt;
 
@@ -857,7 +925,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_NEW_2015-01-21.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations for top 10 revenue generators.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -880,23 +948,28 @@
 &lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and Microsoft Excel.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;Quick Response from Baltimore Chief Data Officer&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer&quot;&gt;Quick Response from Baltimore Chief Data Officer&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on January 23, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[The Lost Revenue of the Baltimore Traffic Cameras]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" />
-  <id>http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue" />
+  <id>http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue</id>
   <updated>2015-01-21T00:00:00-00:00</updated>
   <published>2015-01-21T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;The title of the dataset I’m working with on Baltimore’s &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;open data portal&lt;/a&gt; is “Parking Citations.”  I downloaded a snapshot of the dataset which ended up being 2,689,647 total citations through January 12, 2015. &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;The title of the dataset I’m working with on Baltimore’s &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;open data portal&lt;/a&gt; is “Parking Citations.”  I downloaded a snapshot of the dataset which ended up being 2,689,647 total citations through January 12, 2015. &lt;/p&gt;
 
 &lt;center&gt;
 &lt;div&gt;&lt;iframe width=&quot;500px&quot; title=&quot;Parking Citations&quot; height=&quot;425px&quot; src=&quot;https://data.baltimorecity.gov/w/n4ma-fj3m/ta62-x9wp?cur=i5SwBTR0Hvd&amp;amp;from=root&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;a href=&quot;https://data.baltimorecity.gov/Transportation/Parking-Citations/n4ma-fj3m&quot; title=&quot;Parking Citations&quot; target=&quot;_blank&quot;&gt;Parking Citations&lt;/a&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href=&quot;http://www.socrata.com/&quot; target=&quot;_blank&quot;&gt;Powered by Socrata&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
@@ -906,7 +979,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-01/citation_desc_date_range_OLD.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/citation_desc_date_range_OLD.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-01/citation_desc_date_range_OLD.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-01/citation_desc_date_range_OLD.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Citation descriptions sorted by total fines.  Highlighted in red are the least recent dates of the last recorded citation and the shortest data time spans, respectively.  Highlighted in green are the largest annual revenue generators.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -917,7 +990,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_OLD.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations for top 10 revenue generators.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -933,23 +1006,28 @@
 
 &lt;p&gt;&lt;em&gt;Inspiration from &lt;a href=&quot;http://iquantny.tumblr.com&quot;&gt;I Quant NY&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue&quot;&gt;The Lost Revenue of the Baltimore Traffic Cameras&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on January 21, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue&quot;&gt;The Lost Revenue of the Baltimore Traffic Cameras&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on January 21, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Importing Lots of CSV's]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Importing-CSV-Files" />
-  <id>http://localhost:4000/articles/Importing-CSV-Files</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Importing-CSV-Files" />
+  <id>http://www.thetrainingset.com/articles/Importing-CSV-Files</id>
   <updated>2015-01-08T00:00:00-00:00</updated>
   <published>2015-01-08T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.  &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.  &lt;/p&gt;
 
 &lt;p&gt;It’s uber-simple - just loops through all the csv’s in a directory, appends them to one Pandas dataframe, and saves the new csv.  It also tacks on the filenames of each file if separating into the original files is needed later.  This also assumes all the fields are named exactly the same in all the csv files.  Sure beats reading each individually and merging after.&lt;/p&gt;
 
@@ -972,60 +1050,70 @@
 &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;full_dataset.csv&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Importing-CSV-Files&quot;&gt;Importing Lots of CSV's&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on January 08, 2015.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Importing-CSV-Files&quot;&gt;Importing Lots of CSV&#39;s&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on January 08, 2015.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Excessive Data Visualization]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/More-Pointless-Data-Viz" />
-  <id>http://localhost:4000/articles/More-Pointless-Data-Viz</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/More-Pointless-Data-Viz" />
+  <id>http://www.thetrainingset.com/articles/More-Pointless-Data-Viz</id>
   <updated>2014-12-25T00:00:00-00:00</updated>
   <published>2014-12-25T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Christmas Day.  I’m bored.  &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Christmas Day.  I’m bored.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-12/Average_Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-12/Average_Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-12/Average_Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-12/Average_Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Average daily electricity usage.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-12/Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-12/Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-12/Days_thru_Nov_2014.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-12/Days_thru_Nov_2014.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;All days and average consumption.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/More-Pointless-Data-Viz&quot;&gt;Excessive Data Visualization&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on December 25, 2014.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/More-Pointless-Data-Viz&quot;&gt;Excessive Data Visualization&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on December 25, 2014.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Assessing Demand-Side Storage System Performance]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Assessing-System-Performance" />
-  <id>http://localhost:4000/articles/Assessing-System-Performance</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Assessing-System-Performance" />
+  <id>http://www.thetrainingset.com/articles/Assessing-System-Performance</id>
   <updated>2014-11-14T00:00:00-00:00</updated>
   <published>2014-11-14T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;By varying parameters of the &lt;a href=&quot;http://localhost:4000/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt; we can determine the economic plausibility and benefits of home grid-tied batteries.  &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;By varying parameters of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt; we can determine the economic plausibility and benefits of home grid-tied batteries.  &lt;/p&gt;
 
 &lt;p&gt;While the actual logic and functions are in separate Python modules, I’m doing this analysis in an &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb&quot;&gt;iPython notebook&lt;/a&gt; that you can check out for more detail and thought process.&lt;/p&gt;
 
-&lt;p&gt;I set up some of summary metrics I was interested in in the &lt;a href=&quot;http://localhost:4000/articles/Storage-Model-Details&quot;&gt;last post&lt;/a&gt; .  One that I didn’t have on that list that is an important economic indicator is the simple payback period, which is the number of years it would take to break even on the initial investment based on the yearly savings.&lt;/p&gt;
+&lt;p&gt;I set up some of summary metrics I was interested in in the &lt;a href=&quot;http://www.thetrainingset.com/articles/Storage-Model-Details&quot;&gt;last post&lt;/a&gt; .  One that I didn’t have on that list that is an important economic indicator is the simple payback period, which is the number of years it would take to break even on the initial investment based on the yearly savings.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;http://latex.codecogs.com/png.latex?PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}&quot; alt=&quot;PBP=\frac{Initial%20Investment}{Annual%20Variable%20Cost%20Savings}&quot; /&gt;
@@ -1054,7 +1142,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-11/metrics_snapshot_stor_cap.jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/metrics_snapshot_stor_cap.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/metrics_snapshot_stor_cap.jpg&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/metrics_snapshot_stor_cap.jpg&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Simple payback period for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1067,7 +1155,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-11/cost_savings_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/cost_savings_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/cost_savings_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/cost_savings_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Annual cost savings for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1076,7 +1164,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-11/PBP_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/PBP_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/PBP_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/PBP_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Simple payback period for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1087,7 +1175,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-11/peak_shaved_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/peak_shaved_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/peak_shaved_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/peak_shaved_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Peak load shaving for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1098,7 +1186,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-11/sys_eff_stor_cap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/sys_eff_stor_cap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/sys_eff_stor_cap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/sys_eff_stor_cap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total kWh purchased during year for demand-side storage (home battery) system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1106,56 +1194,66 @@
 &lt;p&gt;This is an important (albeit predictable) result since it means we’ve effectively increased the carbon footprint of the home, assuming the electricity mix is dominated by carbon-intensive power sources.  What such a system could allow for, however, is that intermittent renewable resources could more readily integrate with storage acting as a buffer between demand and intermittent supply.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Assessing-System-Performance&quot;&gt;Assessing Demand-Side Storage System Performance&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on November 14, 2014.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Assessing-System-Performance&quot;&gt;Assessing Demand-Side Storage System Performance&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on November 14, 2014.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Demand Heat Map]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Heat-Map" />
-  <id>http://localhost:4000/articles/Heat-Map</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Heat-Map" />
+  <id>http://www.thetrainingset.com/articles/Heat-Map</id>
   <updated>2014-11-11T00:00:00-00:00</updated>
   <published>2014-11-11T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Opower posted &lt;a href=&quot;http://blog.opower.com/2014/09/ami-data-integration/&quot;&gt;a heat map of hourly electricity demand&lt;/a&gt; that I wanted to replicate for our data. &lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;Opower posted &lt;a href=&quot;http://blog.opower.com/2014/09/ami-data-integration/&quot;&gt;a heat map of hourly electricity demand&lt;/a&gt; that I wanted to replicate for our data. &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-11/my_usage_heatmap.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-11/my_usage_heatmap.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-11/my_usage_heatmap.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-11/my_usage_heatmap.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Hourly heat map of our electricity usage.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
 &lt;p&gt;This makes changes in hourly trends over the course of the year readily apparent, and even highlights differences day to day.  The 6am/7am peak is pretty clear, as are the evening hours in the summer.  Between midnight a 4am, the usage is clearly higher (deeper yellow) in the summer as well due to AC load.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Heat-Map&quot;&gt;Demand Heat Map&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on November 11, 2014.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Heat-Map&quot;&gt;Demand Heat Map&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on November 11, 2014.&lt;/p&gt;
+
+  </content>
 </entry>
 
 
+  
+
 <entry>
   <title type="html"><![CDATA[Storage Model Details]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Storage-Model-Details" />
-  <id>http://localhost:4000/articles/Storage-Model-Details</id>
+  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Storage-Model-Details" />
+  <id>http://www.thetrainingset.com/articles/Storage-Model-Details</id>
   <updated>2014-10-09T00:00:00-00:00</updated>
   <published>2014-10-09T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.thetrainingset.com</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;This post fills in some more details of the &lt;a href=&quot;http://localhost:4000/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt;.&lt;/p&gt;
+  <content type="html">
+    &lt;p&gt;This post fills in some more details of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Intro-To-Storage-Model&quot;&gt;demand-side storage model&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In the last post I presented a flow chart of how the logic works but didn’t give a diagram of what the physical system might look like.  That’s below.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2014-10/physical_system.jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2014-10/physical_system.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2014-10/physical_system.jpg&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2014-10/physical_system.jpg&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Demand-side storage physical system.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1226,7 +1324,9 @@
 &lt;p&gt;For these initial values, what stood out to me was that I removed 54% of the residence’s annual peak demand from the grid (this is the ‘% Peak kWh Shaved’).  This is the reason utilities might want to think about incentivizing residential customers to purchase grid-tied battery systems such as this (beyond just the time-of-use-pricing incentive itself).  I should say that the current model is agnostic to exactly which peak hours load is being shaved from - it just uses the battery first until it’s depleted and then switches to grid during peak hours.  Utilities would want to be a bit more sensitive to this, since their peak time-of-use currently starts at 10am weekdays in the summer but the actual “peak” won’t hit until around 4pm.  In the current model I’ve created, the battery is used up first so I wouldn’t be shaving peak load at 4pm.  This could be addressed with some logic that is a bit more clever than what I’ve currently got.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Storage-Model-Details&quot;&gt;Storage Model Details&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on October 09, 2014.&lt;/p&gt;</content>
+    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Storage-Model-Details&quot;&gt;Storage Model Details&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on October 09, 2014.&lt;/p&gt;
+
+  </content>
 </entry>
 
 </feed>
