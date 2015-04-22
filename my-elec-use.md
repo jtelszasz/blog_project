@@ -1,17 +1,16 @@
 ---
-layout: page
+layout: my-elec-use
 permalink: /my-elec-use/index.html
-title: My Electricity Usage
+title: My Electricity Use
 tagline: 
 tags: [energy, electricity, data-viz]
 modified: 02-19-2015
 share: true
-image:
+<!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
-  creditlink: http://www.fudgegraphics.com
+  creditlink: http://www.fudgegraphics.com -->
 ---
-# Interactive Electricity Use Visualizations
 
 My electricity data are obtained via the <a href='http://energy.gov/data/green-button'>Green Button protocol</a> and I usually download the hourly data once a month and update these visualizations.  They're done using iPython notebooks and <a href='https://plot.ly/'>Plotly</a>.
 
@@ -26,7 +25,7 @@ My electricity data are obtained via the <a href='http://energy.gov/data/green-b
 
 <center>
 <figure>
-  <a href='{{ site.url }}/images/2015-02/Days_thru_15-Feb-2015.png'><img src='{{ site.url }}/images/2015-02/Days_thru_15-Feb-2015.png'></a>
+  <a href='{{ site.url }}/images/My_Elec_Use_Line_Plot.png'><img src='{{ site.url }}/images/My_Elec_Use_Line_Plot.png'></a>
 </figure>
 </center>
 
@@ -37,4 +36,14 @@ My electricity data are obtained via the <a href='http://energy.gov/data/green-b
     <script data-plotly="jtelszasz:120" src="https://plot.ly/embed.js" async></script>
 </div>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58835878-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 

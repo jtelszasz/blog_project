@@ -29,3 +29,14 @@ My name is Justin, and by education and background I'm a mechanical engineer.  I
 I did *not* design the website.  I'm using a gorgeous Jekyll template designed by <a href='https://twitter.com/mmistakes'>Michael Rose</a>.  You can find his other work at <a href='http://www.mademistakes.com'>Made Mistakes</a>.
 
 [^2]: Fancy avatars provided by [Brandon Mathis](http://brandonmathis.com/projects/fancy-avatars/demo/) under a [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/).
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58835878-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
