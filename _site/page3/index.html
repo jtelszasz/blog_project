@@ -134,6 +134,97 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-10-09T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Storage-Model-Details">October 09, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Storage-Model-Details" rel="bookmark" title="Storage Model Details" itemprop="url">Storage Model Details</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>This post fills in some more details of the <a href="http://www.thetrainingset.com/articles/Intro-To-Storage-Model">demand-side storage model</a>.</p>
+
+<p>In the last post I presented a flow chart of how the logic works but didn’t give a diagram of what the physical system might look like.  That’s below.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2014-10/physical_system.jpg"><img src="http://www.thetrainingset.com/images/2014-10/physical_system.jpg" /></a>
+  <figcaption>Demand-side storage physical system.</figcaption>
+</figure>
+</center>
+
+<p>I’ve illustrated the switch as being a separate component so we can see that electricity could bypass actually being inverted and stored (electricity from the grid sometimes goes directly to the demand).  In reality, the inverter/switch/charge controller would be one system.  This unit and the batteries would be the initial costs for the system.</p>
+
+<h2 id="model-parameters">Model Parameters</h2>
+
+<p>For electricity going straight to serve demand (not being stored first), there are essentially no additonal losses.  However, batteries only accept DC electricity, so we need an inverter to turn the AC off the grid to DC and back.  There are losses associated with this conversion, and the batteries themselves are lossy.  For now I’ve set these efficiencies as constants, but implemented them in functions so they could in the future get more sophisticated modeling (charging efficiency for batteries is dependent on depth of charge).  The nominal efficiency values are taken from <a href="http://www.amazon.com/Renewable-Efficient-Electric-Power-Systems/dp/0471280607/ref=sr_1_2?ie=UTF8&amp;qid=1412769771&amp;sr=8-2&amp;keywords=renewable+and+efficient+electric+power+systems">Renewable and Efficient Electric Power Systems by Gilbert Masters</a>.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">inverter_efficiency</span><span class="p">(</span><span class="n">direction</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&#39;charging&#39;</span><span class="p">:</span>
+        <span class="n">eff</span> <span class="o">=</span> <span class="o">.</span><span class="mi">85</span>
+    <span class="k">elif</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&#39;discharging&#39;</span><span class="p">:</span>
+        <span class="n">eff</span> <span class="o">=</span> <span class="o">.</span><span class="mi">85</span>
+    <span class="k">return</span> <span class="n">eff</span>
+
+<span class="k">def</span> <span class="nf">battery_efficiency</span><span class="p">(</span><span class="n">direction</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&#39;charging&#39;</span><span class="p">:</span>
+        <span class="n">eff</span> <span class="o">=</span> <span class="o">.</span><span class="mi">85</span>
+    <span class="k">elif</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&#39;discharging&#39;</span><span class="p">:</span>
+        <span class="n">eff</span> <span class="o">=</span> <span class="o">.</span><span class="mi">85</span>
+    <span class="k">return</span> <span class="n">eff</span></code></pre></div>
+
+<p>There are also several other system parameters that need to be initialized, including the size of the storage, costs, etc.  In future analyses these variables can be varied to assess the effects on costs and energy.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">inverter_controller_cost</span> <span class="o">=</span> <span class="mf">2000.</span> <span class="c"># ballpark</span>
+<span class="n">storage_cost_perkWh</span> <span class="o">=</span> <span class="mf">200.</span> <span class="o">/</span> <span class="mf">1.2</span> <span class="c"># cost per kWh; amazon.com lead-acid deep cycle</span>
+<span class="n">storage_size_kWh</span> <span class="o">=</span> <span class="mf">9.</span>  <span class="c"># storage size in kWh</span>
+<span class="n">P_max_charge</span> <span class="o">=</span> <span class="p">(</span><span class="mf">100.</span> <span class="o">/</span> <span class="mf">3.</span><span class="p">)</span> <span class="o">*</span> <span class="mf">12.</span> <span class="o">/</span> <span class="mf">1000.</span> <span class="c"># C/3 charge rate at 12 V (converted to kW)</span>
+<span class="n">E_min_depth</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c"># maximum depth of discharge in percent</span>
+<span class="n">E_min</span> <span class="o">=</span> <span class="n">E_min_depth</span> <span class="o">*</span> <span class="n">storage_size_kWh</span></code></pre></div>
+
+<h2 id="results">Results</h2>
+
+<p>Once the model has calculated all the energy flows for each hour over the course of the year, I calculate a set of key properties of the system behavior.  These results are shown in the table below.  These are the characteristics I’ll be interested in as the system parameters described above are varied (though I may modify this set).</p>
+
+<ul>
+  <li>’% Peak Demand Battery’: Percent of the total peak demand over the year served from the battery</li>
+  <li>’% Peak kWh Shaved’: Percent of the total demand during peak hours removed from the grid</li>
+  <li>’% Purchased During Off-Peak’: Percent of annual electricity purchased during off-peak hours</li>
+  <li>’% Purchased During Peak’: Percent of annual electricity purchased during peak hours</li>
+  <li>‘Annual System Eff’: Total annual demand divided by total annual electricity purchased</li>
+  <li>‘Annual Var Cost’: Annual electricity cost</li>
+  <li>‘Hours Battery Depleted’: Number of hours in the year that battery is drained to maximum depth of discharge</li>
+  <li>‘Hours Battery Full’: Number of hours in the year that battery is fully charged</li>
+  <li>‘Hours on Battery Only’: Number of hours in the year that demand is served by battery alone</li>
+  <li>‘Initial Cost’: Initial system cost (inverter + batteries)</li>
+  <li>‘Peak kWh Shaved’: Total electricity during peak hours removed from the grid</li>
+  <li>‘Total kWh Purchased’: Total annual electricity purchased</li>
+</ul>
+
+<p>Below are some initial values from the simulation with a storage size of 9 kWh.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="p">{</span>   <span class="s">&#39;% Peak Demand Battery&#39;</span><span class="p">:</span> <span class="mf">0.62841144933029902</span><span class="p">,</span>
+    <span class="s">&#39;% Peak kWh Shaved&#39;</span><span class="p">:</span> <span class="mf">0.54435814423603923</span><span class="p">,</span>
+    <span class="s">&#39;% Purchased During Off-Peak&#39;</span><span class="p">:</span> <span class="mf">0.90852312473716113</span><span class="p">,</span>
+    <span class="s">&#39;% Purchased During Peak&#39;</span><span class="p">:</span> <span class="mf">0.091476875262838833</span><span class="p">,</span>
+    <span class="s">&#39;Annual System Eff&#39;</span><span class="p">:</span> <span class="mf">0.93101271339465896</span><span class="p">,</span>
+    <span class="s">&#39;Annual Var Cost&#39;</span><span class="p">:</span> <span class="mf">572.33</span><span class="p">,</span>
+    <span class="s">&#39;Hours Battery Depleted&#39;</span><span class="p">:</span> <span class="mi">1087</span><span class="p">,</span>
+    <span class="s">&#39;Hours Battery Full&#39;</span><span class="p">:</span> <span class="mi">1863</span><span class="p">,</span>
+    <span class="s">&#39;Hours on Battery Only&#39;</span><span class="p">:</span> <span class="mi">1169</span><span class="p">,</span>
+    <span class="s">&#39;Initial Cost&#39;</span><span class="p">:</span> <span class="mf">3500.0</span><span class="p">,</span>
+    <span class="s">&#39;Peak kWh Shaved&#39;</span><span class="p">:</span> <span class="mf">979.38848750000284</span><span class="p">,</span>
+    <span class="s">&#39;Total kWh Purchased&#39;</span><span class="p">:</span> <span class="mf">8961.5382045414281</span>    <span class="p">}</span></code></pre></div>
+
+<p>For these initial values, what stood out to me was that I removed 54% of the residence’s annual peak demand from the grid (this is the ‘% Peak kWh Shaved’).  This is the reason utilities might want to think about incentivizing residential customers to purchase grid-tied battery systems such as this (beyond just the time-of-use-pricing incentive itself).  I should say that the current model is agnostic to exactly which peak hours load is being shaved from - it just uses the battery first until it’s depleted and then switches to grid during peak hours.  Utilities would want to be a bit more sensitive to this, since their peak time-of-use currently starts at 10am weekdays in the summer but the actual “peak” won’t hit until around 4pm.  In the current model I’ve created, the battery is used up first so I wouldn’t be shaving peak load at 4pm.  This could be addressed with some logic that is a bit more clever than what I’ve currently got.</p>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-09-23T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Intro-To-Storage-Model">September 23, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -689,66 +780,6 @@
 </figure>
 </center>
 
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-05-05T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Autocorrelation">May 05, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Autocorrelation" rel="bookmark" title="Electricity Usage Autocorrelation" itemprop="url">Electricity Usage Autocorrelation</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Here’s a quick look using historical data to predict the future.</p>
-
-<p>If the goal is to predict the next hour’s electricity consumption, a good predictor might be the consumption of the hour (or several hours) immediately prior.  One way to assess whether or not this is through the autocorrelation given by:</p>
-
-<center>
-<img src="http://latex.codecogs.com/png.latex?R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}  " alt="R_{h}=\frac{c_{h}}{c_{0}}=\frac{\sum_{t=1}^{N-h}(Y_{t}-\bar{Y})(Y_{t+h}-\bar{Y})}{\sum_{t=1}^{N}(Y_{t}-\bar{Y})^2}" />
-</center>
-
-<p>This measures the covariance between every point and a particular lag (or number of hours before) with respect to the overall variance.  This is calculated for every possible lag (for 1 hour all the way up to the length of the dataset) and plotted.  If the data were completely random, this would be zero at all time lags.  Again, I’m using the BGE smart meter data for my apartment for January 18 through March 31 of 2014.</p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2014-05/Elec_Autocorrelation.png"><img src="http://www.thetrainingset.com/images/2014-05/Elec_Autocorrelation.png" /></a>
-  <figcaption>Electricity consumption autocorrelation.</figcaption>
-</figure>
-</center>
-
-<p>Confidence intervals of 95% and 99% are also plotted (solid and dashed horizontal lines, respectively) and so points outside these intervals are statistically significant; that is, the null hypothesis that there is no correlation between the data and its a particular lag is rejected.  For the apartment’s electricity data there is statistically significant from 1 hour lag to approximately 500 hours of lag - the previous 20 days of electricity use are correlated with a typical hour’s elecricity use.</p>
-
-<p>There also appears to be a significant inverse relationship with lag times longer than 600 hours (25 days).  My guess is that this is due to the warming weather between February and March.  This relationship indicates that the electricity consumption for a given hour is typically less than in February - something common sense tells us, but this says that relationship is statistically significant.</p>
-
-<p>If we want to use history as a means for predicting the next hour of consumption, including the entire history would become unwieldy.  To train  model we’d be using an N x N array for training where N is the number of hours for which we’ve been recording data.  For predicting the next hour, we would need a 1 X N vector of all of the N previous hours.  Instead, it would be more computationally efficient if we could reduce the training data set to N x A where A is a small number of strongly correlated indicator hours, say the past 6 hours or so.  To get at this, I’ve plotted a few example lags against the hour’s electricity consumption.  There’s nothing to say that these relationships <em>must</em> be linear, but by plotting the scatter plot and checking the R^2 of the linear fit, it’s clear that for the most part the relationship (at least with immediate history) is linear.</p>
-
-<center>
-<figure class="half">
-  <a href="http://www.thetrainingset.com/images/2014-05/Elec_Lag_1hour.png"><img src="http://www.thetrainingset.com/images/2014-05/Elec_Lag_1hour.png" /></a>
-  <a href="http://www.thetrainingset.com/images/2014-05/Elec_Lag_6hour.png"><img src="http://www.thetrainingset.com/images/2014-05/Elec_Lag_6hour.png" /></a>
-  <figcaption>Lag plot and linear regression, 1 hour and 6 hour lag.</figcaption>
-</figure>
-
-<figure class="half">
-  <a href="http://www.thetrainingset.com/images/2014-05/Elec_Lag_12hour.png"><img src="http://www.thetrainingset.com/images/2014-05/Elec_Lag_12hour.png" /></a>
-  <a href="http://www.thetrainingset.com/images/2014-05/Elec_Lag_24hour.png"><img src="http://www.thetrainingset.com/images/2014-05/Elec_Lag_24hour.png" /></a>
-  <figcaption>Lag plot and linear regression, 12 hour and 24 hour lag.</figcaption>
-
-
-As expected, as the size of the lag increases, the R^2 decreases, meaning the consumption 1 hour before is more relevant than the consumption 24 hours (or more) immediately prior.  If we want to build a predictive model, including the 1 hour lag would be wise.
-
-
-
-
-
-
-
-</figure></center>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

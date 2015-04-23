@@ -12,9 +12,22 @@ image:
   creditlink: http://www.fudgegraphics.com
 ---
 
+# Publicity
 
+<a href='http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/'>Article at Technical.ly Baltimore about The Training Set.</a>
+
+# Presentations
+
+<script async class="speakerdeck-embed" data-id="6d34b86ef574473b9e673fb75b63f098" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 # iPython Notebooks
+
+### Baltimore Civic/Open data
+<a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb'>Baltimore Police Department Salaries and Overtime</a>
+
+<a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb'>Baltimore Vital Signs: A socio-economic map using Principal Component Analysis and K-Means Clustering</a>
+
+### Energy Analysis
 
 <a href='http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb'>Analysis of Demand-Side Storage Model</a>
 
@@ -30,16 +43,6 @@ image:
 
 <a href="http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy.ipynb?create=1">Smart Meter Data Exploratory Data Analysis
 
-# Tools
-
-### Python and Pandas
-
-I use Python with the Pandas library as my scientific programming language.  I used to do a lot of Matlab, but software licenses are a barrier for people to experiment and innovate.  The Pandas library is a really good toolkit for working with time series data.  I use iPython notebooks extensively for experimenting and documenting as I go.
-
-### Github
-
-I've been learning the ins and outs of Git and Github.  You can find most of my recent work <a href='http://www.github.com/jtelszasz'>over there</a>.
-
 # Datasets and Sources
  
 <a href="https://github.com/jtelszasz/my_energy/tree/master/raw_data">Electricity Usage Data for My Apartment(s)</a>
@@ -48,9 +51,17 @@ I've been learning the ins and outs of Git and Github.  You can find most of my 
 
 <a href="http://data.baltimorecity.gov">OpenBaltimore (Baltimore City Open Data)</a>
 
-# Presentations
+# Tools
 
-<script async class="speakerdeck-embed" data-id="6d34b86ef574473b9e673fb75b63f098" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+### Python and Pandas
+
+I use Python with the Pandas library as my scientific programming language.  I used to do a lot of Matlab, but software licenses are a barrier for people to experiment and innovate.  The Pandas library is a really good toolkit for working with time series data.  I use iPython notebooks extensively for experimenting and documenting as I go.
+
+### Github
+
+You can find most of my recent work <a href='http://www.github.com/jtelszasz'>on Github</a>.
+
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
