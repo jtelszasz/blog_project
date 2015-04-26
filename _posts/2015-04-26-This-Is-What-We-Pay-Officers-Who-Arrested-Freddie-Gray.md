@@ -5,7 +5,7 @@ description: "Open data reveal one officer earned a $40,000 bonus in FY 2014."
 modified: 2015-04-26
 category: articles
 share: true
-tags: [Baltimore, cities, police, budget, #FreddieGray]
+tags: [Baltimore, cities, police, budget, FreddieGray]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
