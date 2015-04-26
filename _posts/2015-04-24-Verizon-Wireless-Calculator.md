@@ -16,7 +16,13 @@ Last weekend, my 2-year contract came due for a phone upgrade.  Seeing as how I'
 
 Then I entered the Verizon Wireless store.
 
-I started by looking at phone options just for kicks, but within a few moments my name was called and I was paired with a sales rep.  Hovering over me, he quickly moved the conversation from the phone itself to something called the Edge plan.  
+Within a few moments of arrival and signing in my name was called and I was paired with a sales rep.  Hovering over me, he quickly moved the conversation from the phone itself to something called the Edge plan.  I hadn't bothered looking at the Edge plan before coming to the store - from the marketing material it seemed that it was targeted at customers interested in upgrading their phone more rapidly than every two years.  I do not count myself in that category, so I didn't bother looking into it.
+
+<center>
+
+	<iframe src="https://docs.google.com/spreadsheets/d/1uHdFLi_sEbyXN573mBUnqQPJdWCfkjuve-smumsCrXE/pubhtml?widget=true&amp;headers=false"></iframe>
+
+</center>
 
 
 
