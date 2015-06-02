@@ -134,6 +134,57 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-01-21T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue">January 21, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Baltimores-Lost-Traffic-Camera-Revenue" rel="bookmark" title="The Lost Revenue of the Baltimore Traffic Cameras" itemprop="url">The Lost Revenue of the Baltimore Traffic Cameras</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>The title of the dataset I’m working with on Baltimore’s <a href="http://data.baltimorecity.gov/">open data portal</a> is “Parking Citations.”  I downloaded a snapshot of the dataset which ended up being 2,689,647 total citations through January 12, 2015. </p>
+
+<center>
+<div><iframe width="500px" title="Parking Citations" height="425px" src="https://data.baltimorecity.gov/w/n4ma-fj3m/ta62-x9wp?cur=i5SwBTR0Hvd&amp;from=root" frameborder="0" scrolling="no"><a href="https://data.baltimorecity.gov/Transportation/Parking-Citations/n4ma-fj3m" title="Parking Citations" target="_blank">Parking Citations</a></iframe><p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a></p></div>
+</center>
+
+<p>But parking is not the only thing captured in this set. Traffic camera violations are also here (“Fixed Speed Cameras,” “Mobile Speed Cameras,” and probably some “Red Light Violations” and “Right on Red” citations) which were far and away the city’s largest revenue generator out of all of the infraction types captured here.  The fixed speed cameras alone issued nearly $28 million in citations over a three year period, until the <a href="http://www.baltimoresun.com/news/maryland/sun-investigates/bs-md-speed-camera-hearing-20141201-story.html">program was ended</a>.  The last two rows appear to be one-off citations.  It’s also curious that the last record of a “Snow Emergency Route Violation” was in August. In Baltimore.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2015-01/citation_desc_date_range_OLD.png"><img src="http://www.thetrainingset.com/images/2015-01/citation_desc_date_range_OLD.png" /></a>
+  <figcaption>Citation descriptions sorted by total fines.  Highlighted in red are the least recent dates of the last recorded citation and the shortest data time spans, respectively.  Highlighted in green are the largest annual revenue generators.</figcaption>
+</figure>
+</center>
+
+<p>This all isn’t quite syncing up with what the <a href="http://www.baltimoresun.com/news/maryland/sun-investigates/bs-md-speed-camera-hearing-20141201-story.html">Baltimore Sun reported</a> about the traffic camera program.  According to this article, the traffic camera program generated about $140 million over 10 years.  The data contained in Baltimore’s open data portal must be incomplete, since I’m seeing a total of about $127 million for all violation types, not just cameras.  </p>
+
+<p>To show this a bit more dramatically, here’s the time series of total monthly citations issued for the top 10 revenue generator categories.  It’s pretty clear that the data are incomplete since the traffic camera categories should have dominated for 10 years straight, and we’re seeing no significant records before 2007, even though the earliest start dates shown in the table above show dates typically starting in 2002-2003, with “Red Light Violations” starting in 1999.  Unfortunately, the Baltimore open data portal does not provide a data dictionary or substantive description of what all is contained in the dataset and what each field represents.  For example, in addition to “violFine,” there are “balance,” “openFine,” and “openPenalty” fields which all include “$” signs in the records to indicate currency.  These aren’t defined anywhere.</p>
+
+<center>
+<figure>
+  <a href="http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_OLD.png"><img src="http://www.thetrainingset.com/images/2015-01/Top10_Monthly_Citation_TS_OLD.png" /></a>
+  <figcaption>Total monthly citations for top 10 revenue generators.</figcaption>
+</figure>
+</center>
+
+<p>I wouldn’t say that the lack of definitions and descriptions of the data render them completely useless, but it does make it more difficult to make apples-to-apples comparisons and draw conclusions.</p>
+
+<hr />
+<p>This is a new section I’m adding, inspired by Ben Wellington’s excellent blog <a href="http://iquantny.tumblr.com">I Quant NY</a>.</p>
+
+<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore.</a></em></p>
+
+<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, and Microsoft Excel.</em></p>
+
+<p><em>Inspiration from <a href="http://iquantny.tumblr.com">I Quant NY</a>.</em></p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-01-08T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/Importing-CSV-Files">January 08, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -619,56 +670,6 @@
   <a href="http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Non-Summer.png"><img src="http://www.thetrainingset.com/images/2014-08/BGE_Pricing_Non-Summer.png" /></a>
   <figcaption>BGE residential pricing plans, non-summer weekday.</figcaption>
 </figure>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-08-01T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy">August 01, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/Mo-Apartment-Mo-Energy" rel="bookmark" title="Mo Apartment, Mo Problems" itemprop="url">Mo Apartment, Mo Problems</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Here’s a quick comparison of average weekdays and weekends in the new and old apartments.</p>
-
-<p>It would appear that we’ve been using more at the new place, but take a look at the daily totals. </p>
-
-<figure>
-  <a href="http://www.thetrainingset.com/images/2014-08/Average_Days_New_and_Old_Apts.png"><img src="http://www.thetrainingset.com/images/2014-08/Average_Days_New_and_Old_Apts.png" /></a>
-  <figcaption>Average hourly electric usage for new and old apartments, March and June.</figcaption>
-</figure>
-
-<p>Of course we don’t have apples-to-apples comparisons here.  Of course this is partly due to weather.  The old apartment is shown for March, where we left the thermostat on all day at 65 degrees F so Willow The Cat wouldn’t freeze to death.  At the new apartment, we’re shutting off the thermostat entirely during the day, and at night kicking it on to 75 degrees F.  So for weekdays, we’re consuming much less during the day but evenings are much higher.  </p>
-
-<p>However, the <a href="http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up">6am peak when we wake up</a> is also much higher.  I’m sure that this is due to our own dedicated electric water heater at the new place.  Our two showers in the morning plus lighting loads are the 6am peak, while the evening hours are the A/C and any dishwashing we’re doing after dinner.</p>
-
-<p>To do these average day plots I set up a quick function that uses groupby, that way I can reuse this for any time period.</p>
-
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Define a function to calculate average weekday and weekend</span>
-
-<span class="k">def</span> <span class="nf">avg_day</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">start_date</span><span class="p">,</span><span class="n">end_date</span><span class="p">):</span>
-    <span class="c"># df is pandas df, has &#39;USAGE&#39; and &#39;tempF&#39; fields, indexed by pandas datetime</span>
-    <span class="c"># date_range is string for .ix call</span>
-    <span class="c"># returns average_weekend and average_weekday</span>
-    
-    <span class="n">df_dates</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">start_date</span><span class="p">:</span><span class="n">end_date</span><span class="p">]</span>
-    
-    <span class="c"># First groupby weekday/weekend and hour of day</span>
-    <span class="n">weekday_weekend_hour</span> <span class="o">=</span> <span class="n">df_dates</span><span class="o">.</span><span class="n">groupby</span><span class="p">([(</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">6</span><span class="p">),</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">hour</span><span class="p">])</span>
-
-    <span class="c"># Calculate an average weekday and average weekend by hour (electricity and outdoor temp)</span>
-    <span class="n">average_day</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">weekday_weekend_hour</span><span class="p">[</span><span class="s">&#39;USAGE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="n">weekday_weekend_hour</span><span class="p">[</span><span class="s">&#39;tempF&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()])</span>
-    
-    <span class="n">average_weekend</span> <span class="o">=</span> <span class="n">average_day</span><span class="p">[</span><span class="bp">True</span><span class="p">]</span>
-    <span class="n">average_weekday</span> <span class="o">=</span> <span class="n">average_day</span><span class="p">[</span><span class="bp">False</span><span class="p">]</span>
-
-    <span class="k">return</span> <span class="n">average_weekday</span><span class="p">,</span> <span class="n">average_weekend</span></code></pre></div>
 
 
   </div><!-- /.entry-content -->
