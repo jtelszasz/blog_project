@@ -25,7 +25,7 @@ The school with the most vacant buildings within a quarter mile is an **elementa
 Here are the same data without the geospatial information and plotted for comparison and trends.
 
 <div>
-    <a href="https://plot.ly/~jtelszasz/261/" target="_blank" title="Baltimore City Schools Surrounded by Blight" style="display: block; text-align: center;"><img src="https://plot.ly/~jtelszasz/261.png" alt="Baltimore City Schools Surrounded by Blight" style="max-width: 100%;width: 500px;"  width="500" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <a href="https://plot.ly/~jtelszasz/261/" target="_blank" title="Baltimore City Schools Surrounded by Blight" style="display: block; text-align: center;"><img src="https://plot.ly/~jtelszasz/261.png" alt="Baltimore City Schools Surrounded by Blight" style="max-width: 100%;width: 500px;"  width="100%" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="jtelszasz:261" src="https://plot.ly/embed.js" async></script>
 </div>
 
