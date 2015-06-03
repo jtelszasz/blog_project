@@ -5,7 +5,7 @@ description: "Small scale urban systems comprised of schools and vacant lots, bu
 modified: 2015-06-02
 category: articles
 share: true
-tags: [Baltimore, buildings, urban]
+tags: [Baltimore, buildings, urban, schools, urban-planning, crime]
 ---
 
 Many small and midsize American cities have experienced decades of <a href='http://en.wikipedia.org/wiki/Shrinking_cities_in_the_United_States'>population shrinkage</a>, but as you can imagine, it's not so easy to shrink the physical footprint of a city.  Compound this with the housing bubble burst a few years ago and significant wealth inequality and it's no surprise that so many cities are wrestling with blight and abandonment.  Even though <a href='http://articles.baltimoresun.com/2011-12-06/news/bs-md-ci-srb-looks-ahead-20111202_1_mayor-stephanie-rawlings-blake-property-tax-rate-half-century-of-population-decline'>SRB wants to bring in 10,000 new families</a>, there's little chance the vacant property issue in Baltimore is going away anytime soon.  
