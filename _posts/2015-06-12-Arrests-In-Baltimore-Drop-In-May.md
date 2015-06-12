@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arrests in Baltimore Drop in May
-description: "After the Freddie Gray protests, officers arrest less.
+description: "After the Freddie Gray protests, officers arrest less."
 modified: 2015-06-12
 category: articles
 share: true
