@@ -39,7 +39,7 @@ Having the granular arrest data for Baltimore we can also take a look at whether
 
 *Analysis conducted using <a href='http://www.python.org'>Python</a>, <a href='http://pandas.pydata.org'>Pandas</a>, and <a href='http://www.plot.ly'>Plot.ly</a>.*
 
-*Full analysis IPython notebook can be found <a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_crime/blob/master/post_freddiegray_crime.ipynb'>here</a>.*
+*Full analysis IPython notebook can be found <a href='https://github.com/jtelszasz/baltimore_crime/blob/master/post_freddiegray_crime.ipynb'>here</a>.*
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
