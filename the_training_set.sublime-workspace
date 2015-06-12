@@ -1,0 +1,290 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"time",
+				"time_parser"
+			],
+			[
+				"d",
+				"datetime"
+			],
+			[
+				"date",
+				"date_data"
+			],
+			[
+				"tim",
+				"time_data"
+			],
+			[
+				"Dat",
+				"column_data"
+			],
+			[
+				"normali",
+				"normalize_data"
+			],
+			[
+				"normal",
+				"normal_data"
+			],
+			[
+				"column",
+				"column_data"
+			],
+			[
+				"col",
+				"column_data"
+			],
+			[
+				"tree",
+				"tree"
+			],
+			[
+				"out",
+				"output_format"
+			],
+			[
+				"seri",
+				"series_ID"
+			],
+			[
+				"D",
+				"Dropbox"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previe",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Justin/Google Drive/_the_training_set/baltimore_vacancy/README.md",
+		"/Users/Justin/Google Drive/_the_training_set/openBaltimoreParsers.py",
+		"/Users/Justin/Google Drive/_the_training_set/baltimore_crime/time_parser.py",
+		"/Users/Justin/Google Drive/_the_training_set/Python Project Skeleton.txt",
+		"/Users/Justin/Documents/website/the_training_set.sublime-project",
+		"/Users/Justin/Documents/website/_posts/2015-06-02-Vacant-Lots-and-Bldgs-Near-Schools.md",
+		"/Users/Justin/Documents/website/_config.yml",
+		"/Users/Justin/Library/Application Support/Sublime Text 2/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/Justin/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Justin/Documents/website/_posts/2015-03-30-Know-More-Bmore.md",
+		"/Users/Justin/Dropbox/notes_txt/TS_draft - Vacant Lots and Bldgs Near Schools - 2015-05-28.txt",
+		"/Users/Justin/Google Drive/_the_training_set/baltimore_vacancy/.gitignore",
+		"/Users/Justin/Dropbox/notes_txt/This is the title of a note.txt",
+		"/Users/Justin/Documents/website/_posts/2015-04-26-This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.md",
+		"/Users/Justin/Documents/website/_posts/2015-05-22-Verizon-Wireless-Calculator.md",
+		"/Users/Justin/Documents/website/_posts/2015-05-05-Upcoming-Events-You-Should-Attend.md",
+		"/Users/Justin/Documents/kasper-trial/subscribe.md",
+		"/Users/Justin/Documents/website/_posts/draft22015-04-24-Verizon-Wireless-Calculator.md",
+		"/Users/Justin/Documents/kasper-trial/index.html",
+		"/Users/Justin/Documents/kasper-trial/_layouts/page.html",
+		"/Users/Justin/Documents/kasper-trial/_layouts/default.html",
+		"/Users/Justin/Documents/kasper-trial/_config.yml",
+		"/Users/Justin/Documents/website/_posts/2015-04-24-Verizon-Wireless-Calculator.md",
+		"/Users/Justin/Google Drive/_the_training_set/Baltimore_Crime/import_funcs.py",
+		"/Users/Justin/Google Drive/_the_training_set/Baltimore_Crime/time_parser.py",
+		"/Users/Justin/Google Drive/_the_training_set/snippets_plots.txt",
+		"/Users/Justin/Documents/website/_posts/draft2015-01-14-Baltimore-Top-20-Parking-Fine-Locations.md",
+		"/Users/Justin/Documents/kasper-trial/about.md",
+		"/Users/Justin/Documents/kasper-trial/my-elec-use.md",
+		"/Users/Justin/Documents/kasper-trial/the-work.md",
+		"/Users/Justin/Documents/website/my-elec-use.md",
+		"/Users/Justin/Documents/website/_layouts/post.html",
+		"/Users/Justin/Documents/website/_layouts/my-elec-use.html",
+		"/Users/Justin/Documents/website/_posts/2015-04-12-A-City-Divided-In-N-Dimensions.md",
+		"/Users/Justin/Documents/website/_posts/2015-03-31-A-City-Divided-In-N-Dimensions.md",
+		"/Users/Justin/Documents/jtelszasz 2/html/friends.html",
+		"/Users/Justin/Documents/website/_posts/2015-03-26-Know-Your-Hood-Plot-1.md",
+		"/Users/Justin/Documents/website/_posts/2015-03-12-DOT-Needs-More-Citation-Categories.md",
+		"/Users/Justin/Documents/website/_posts/2015-03-07-When-Not-To-Park-On-Charles.md",
+		"/Users/Justin/Documents/website/_posts/draft2015-02-06-blah.md",
+		"/Users/Justin/Documents/website/about.md",
+		"/Users/Justin/Documents/website/index.html",
+		"/Users/Justin/Documents/website/README.md",
+		"/Users/Justin/Documents/website/_posts/2015-02-24-Rapid-Increase-In-Citations.md",
+		"/Users/Justin/Documents/website/_posts/2015-02-13-Paid-Off-Citations.md",
+		"/Users/Justin/Google Drive/_the_training_set/website/_config.yml",
+		"/Users/Justin/Google Drive/_the_training_set/plot_colors",
+		"/Users/Justin/Google Drive/_the_training_set/website/_posts/2015-02-10-My-Block-Is-A-Target.md",
+		"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six.py",
+		"/Users/Justin/Documents/website/website/_posts/2014-11-14-Assessing-System-Performance.md",
+		"/Users/Justin/Documents/website/website/_config.yml",
+		"/Users/Justin/Documents/website/website/_posts/2015-02-10-My-Block-Is-A-Target.md",
+		"/Users/Justin/Google Drive/_the_training_set/website/_posts/draft2015-01-14-Baltimore-Top-20-Parking-Fine-Locations.md",
+		"/Users/Justin/Dropbox/Modi Research/Vijay's House/predictive analytics/weather_download_observations.py",
+		"/Users/Justin/Dropbox/Blog and Data/Cycling Data/Cycling_Data_Aggregation.py",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201310.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201309.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201308.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201307.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201306.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201305.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201304.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201303.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201302.csv",
+		"/Users/Justin/Dropbox/Blog and Data/Baltimore Crime Data/bcWeather_201301",
+		"/Users/Justin/Documents/bm2evernote.py",
+		"/Users/Justin/Documents/README.markdown",
+		"/Users/Justin/Dropbox/Modi Research/Vijay's House/predictive analytics/house_analytics.py",
+		"/Users/Justin/Dropbox/Modi Research/Vijay's House/Monnit Data/monnit scripts/download_imonnit.py",
+		"/Users/Justin/Dropbox/Modi Research/Vijay's House/predictive analytics/loadRawSensorData.py",
+		"/Users/Justin/Dropbox/Modi Research/Vijay's House/Monnit Data/Data Aggregation/Monnit_Temp_Aggregation.py",
+		"/Users/Justin/Documents/Python Stuff/trial.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"split",
+			"N_Charles_by_Hour",
+			"Hour",
+			"by_Hour",
+			"4200_Wickford",
+			"google",
+			"Desc_Counts",
+			"5100_Roland_",
+			"Top_25_Increase_Citations_Sept13_Mar14_Locs",
+			"Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png",
+			"rrule",
+			"Top20_Target_Locations",
+			"return",
+			"if",
+			"item",
+			"for",
+			"i"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"i"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.markdown":
+	{
+		"height": 156.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": false
+}
