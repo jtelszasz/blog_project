@@ -35,7 +35,7 @@ Having the granular arrest data for Baltimore we can also take a look at whether
 
 
 ---
-*Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore</a>.
+*Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore</a>.*
 
 *Analysis conducted using <a href='http://www.python.org'>Python</a>, <a href='http://pandas.pydata.org'>Pandas</a>, and <a href='http://www.plot.ly'>Plot.ly</a>.*
 

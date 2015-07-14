@@ -4,7 +4,7 @@ permalink: /the-work/index.html
 title: The Work.
 tagline: 
 tags: [projects, previous-work]
-modified: 02-04-2015
+modified: 07-14-2015
 share: true
 image:
   feature: design/ny_concrete_10.JPG
@@ -14,10 +14,28 @@ image:
 
 # Publicity
 
-<a href='http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/'>Article at Technical.ly Baltimore about The Training Set.</a>
+**July 28, 2015.** [Talk] <a href='http://www.meetup.com/Transportation-Techies/events/222183536/'>DC Transportation Techies meetup.</a>
 
-# Presentations
+**July 13, 2015.** [Article] <a href='http://technical.ly/baltimore/2015/07/13/data-day-crime-data-bmoremapped-training-set/'>Technical.ly highlights BPD arrest data and Baltimore Data Day.</a>
 
+**July 10, 2015.** [Talk] <a href='http://bniajfi.org/data_day/2015agenda/'>Baltimore Data Day.</a>
+
+**June 8, 2015.** [Link] <a href='https://plot.ly/ipython-notebooks/baltimore-vital-signs/'>Analysis listed in Plot.ly sample iPython notebooks.</a>
+
+**June 4, 2015.**  [Article] <a href='http://technical.ly/baltimore/2015/06/04/baltimore-blight-maps-ouazad-elszasz/'>Technical.ly spotlights vacant lot and building analysis.</a>
+
+**May 21, 2015.**  [Talk] <a href='http://www.meetup.com/baltimore-python/events/221252779/'>"Bad Ass(umptions)" at Baltimore Python meetup.</a>
+
+**May 14, 2015.**  [Talk] <a href='http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/'>"Apps Are Not The Answer" at Hack Baltimore meetup.</a>
+ 
+**April 21, 2015.**  [Article] <a href='http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/'>Technical.ly article about The Training Set.</a>
+
+# Slide Decks
+
+### Apps Are Not The Answer
+<script async class="speakerdeck-embed" data-id="6a3450561253459c8e64518d4b387552" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### Should I Switch to Dynamic Electricity Pricing?
 <script async class="speakerdeck-embed" data-id="6d34b86ef574473b9e673fb75b63f098" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 # iPython Notebooks

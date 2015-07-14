@@ -134,6 +134,78 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-04-12T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions">April 12, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions" rel="bookmark" title="A City Divided (in N dimensions)" itemprop="url">A City Divided (in N dimensions)</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>It’s no secret that most American cities are segregated.</p>
+
+<p>When I tell people I live in Baltimore, that I love living there and that it’s a great American city, what I really mean is that the neighborhoods I typically experience are great.  Baltimore of course has its many ills, and it’s very easy for white, college-educated individuals like myself to find themselves experiencing a very different reality than most in the city.</p>
+
+<p>There are many socio-economic variables that would describe such segregation - something I hinted at with the <a href="http://www.thetrainingset.com/articles/Know-More-Bmore">last post</a>.  Luckily, the<a href="http://www.bniajfi.org/indicators"> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)</a> at the University of Baltimore has made it their mission to provide a clean, concise set of indicators that illustrate the health and wealth of the city.  There are 152 socio-economic indicators in the Vital Signs dataset, and some are reported for multiple years which results in 295 total variables for each of the 56 Baltimore neighborhoods captured.  For this analysis, I’m throwing them all in the mixer.</p>
+
+<p>As you can imagine, many of the variables are strongly correlated with each other (e.g. the percent of the population in a neighborhood that is white is inversely proportional to the percent that aren’t white, so you don’t necessarily need both depending on what you’re trying to do with the data).  Rather than try plotting all of these variables against one another, it’s possible to illustrate the degree to which the city is segregated by distilling the 295 variables into only a couple - in other words, teasing out the principal socio-economic “directions” in which communities may be close or far from each other.</p>
+
+<p>(If you want to know the technical details of the analysis, check out the link at the bottom of this post to the iPython notebook.  For the sake of anyone reading this I’ll try and minimize the jargon and explain some of the analysis below the result.)</p>
+
+<p><strong>This is the key: by reducing the 295 dimensions in the dataset to only two, we can visualize a socio-economic map of the city. Neighborhoods farther apart on the map are socio-economically dissimilar and neighborhoods close to one another on the map are socio-economically similar.</strong></p>
+
+<p>On the plot below, each bubble is a neighborhood in Baltimore and is sized by the population living in that neighborhood.  One can delineate groups or “clusters” of neighborhoods.  These are clusters of neighborhoods that are more socio-economically similar.  We can specify a number of clusters and using an algorithm (K-means clustering, described below) we can find the best way to divide the neighborhoods into clusters; each color represents a different cluster and the X’s are the centers of each cluster.  The number of clusters I’ve chosen (seven) is somewhat arbitrary.  No axes labels are shown since the actual values output from the principal component analysis (discussed below) are meaningless.</p>
+
+<p>What results is effectively a socio-economic map of Baltimore.  Use your cursor to hover over each bubble to see the name of the neighborhood.  <strong>Again, the farther apart one bubble is from another, the more socio-economically dissimilar those neighborhoods are.</strong>  For example, find the “Inner Harbor/Federal Hill” (upper right, grey) and “Greater Rosemont” (West Baltimore, adjacent to Gwynn Falls Park; lower left, light blue) neighborhoods.</p>
+
+<center>
+<div>
+    <a href="https://plot.ly/~jtelszasz/230/" target="_blank" title="Baltimore Vital Signs PCA w/ K-Means Clustering" style="display: block; text-align: center;"><img src="https://plot.ly/~jtelszasz/230.png" alt="Baltimore Vital Signs PCA w/ K-Means Clustering" style="max-width: 100%;width: 600px;" width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="jtelszasz:230" src="https://plot.ly/embed.js" async=""></script>
+</div>
+</center>
+
+<p><em>“Wait, there are seven clusters but I’m only counting six different colors.”</em> </p>
+
+<p>There’s one point that is its own cluster and it isn’t shown - it’s the “Downtown” neighborhood, and it was a clear outlier.  I’ll dig into this point and see what’s going on, but my guess is that it has to do with the fact that the area is nearly all business and hardly any residences.  </p>
+
+<h2 id="principle-component-analysis">Principle Component Analysis</h2>
+
+<p>We can reduce the number of variables using a technique known as <a href="http://en.wikipedia.org/wiki/Principal_component_analysis">Principal Component Analysis (PCA)</a>.  PCA reduces the full set of data (the variables of which may be correlated) to uncorrelated, or orthogonal, directions.  (Math folks: these are the eigenvectors of the covariance matrix.)  You can choose the number of dimensions in which you’d like to represent your data - the first dimension chosen will account for the most variance in the data, the next dimension (2nd principal axis) will account for the second highest portion of variance, and so on.  </p>
+
+<p>To steal an analogy from <a href="http://en.wikipedia.org/wiki/Brian_Greene">Brian Greene</a> on the topic of reducing higher dimensions (I think this was in The Elegant Universe), imagine an ant on a stretched out piece of rope.  From a far away distance, we would likely identify the position of the ant only in terms of its distance from one end of the rope.  If we zoom in closely though, we could describe the ant’s location in two dimensions: both its distance from one end of the rope and its location circumferentially around the rope (a third possible dimension would be the ant’s radial distance from the centerline axis of the rope, but that’s virtually constant unless the ant jumps off the rope).  This same concept can be applied for reducing higher dimensional data in order to visualize relationships in data.  </p>
+
+<p>We want to reduce the 295 variables in the Vital Signs dataset to two since we want to visualize this in a 2-D scatter plot.</p>
+
+<h2 id="k-means-clustering">K-Means Clustering</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/K-means_clustering">K-means clustering</a> is an algorithm that groups data points into clusters.  One could do this manually, but this algorithm automates the process by minimizing the distances from each data points to the center (centroid) of the cluster.  However, one has to specify the number of clusters for the algorithm to use.  One can imagine that to minimize the distances from each data point to the cluster center, one could set the number of clusters equal to the number of data points, i.e. each point is its own cluster, but this is a trivial solution.  Using a metric (called inertia) that measures the typical distance from points to centers, the algorithm can be run multiple times, each time using a different number of clusters, to try and achieve an acceptable result for the inertia.  I chose seven after plotting the inertia as a function of number of clusters.  This plot can be found in the iPython notebook (link below).</p>
+
+<hr />
+<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a> and the<a href="http://www.bniajfi.org/indicators"> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.</a></em></p>
+
+<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, and <a href="http://www.plot.ly">Plot.ly</a>.</em></p>
+
+<p><em>Full analysis IPython notebook can be found <a href="http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb">here</a>.</em></p>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58835878-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-03-30T00:00:00-04:00"><a href="http://www.thetrainingset.com/articles/Know-More-Bmore">March 30, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
       
     </div><!-- /.entry-meta -->
@@ -606,76 +678,6 @@
   </header>
   <div class="entry-content">
     <p>This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “<a href="http://www.thetrainingset.com/my-elec-use/">My Electricity Use</a>.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the <a href="http://plot.ly">Plotly</a> game, but I’ll be using it a lot more regularly going forward.</p>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-02-10T00:00:00-05:00"><a href="http://www.thetrainingset.com/articles/My-Block-Is-A-Target">February 10, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.thetrainingset.com/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://www.thetrainingset.com/articles/My-Block-Is-A-Target" rel="bookmark" title="My Block is a Target." itemprop="url">My Block is a Target.</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Now that we can be sure of having a <a href="http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer">complete data set</a> for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.</p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png"><img src="http://www.thetrainingset.com/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png" /></a>
-  <figcaption>Total monthly citations for top 10 types of citation fines issued.</figcaption>
-</figure>
-</center>
-
-<p>Since the <a href="http://www.baltimoresun.com/news/maryland/sun-investigates/bs-md-speed-camera-hearing-20141201-story.html">traffic camera program ended in Baltimore in 2013</a> it appears enforcement policies have taken a dramatic turn to make up some of the lost revenue.  Moreover, judging by the spike this past December, I’d hazard a guess that either year-end budgets were looking tight or that goals or quotas had been set at the beginning of the year and were not being met.</p>
-
-<h2 id="what-locations-are-they-targeting">What locations are they targeting?</h2>
-
-<p>Between January 20, 2013 and January 20, 2015, citations were issued at 38,597 unique locations.  <strong>1.2% of those locations account for 45.8% of the total value of fines issued.</strong>  What were the target locations?  Here are the top 20 locations in terms of total fines issued.</p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png"><img src="http://www.thetrainingset.com/images/2015-02/Top20_Target_Locations.png" /></a>
-  <figcaption>Top 20 Target Citation Locations.</figcaption>
-</figure>
-</center>
-
-<h3 id="university-of-baltimore">University of Baltimore</h3>
-
-<p>I would post a map, but I haven’t been able to confirm that “U/B” is University of Baltimore, especially since some of the street names aren’t near the university.  University students are prime candidates for parking tickets though, so it does make sense that so many citations are issued there.</p>
-
-<h3 id="block-of-n-charles-st">1200 Block of N. Charles St.</h3>
-
-<p>The 1200 block of N. Charles St. just happens to be the block I live on.  As soon as I discovered that, I had an inkling as to the reason why this would be the case and the data back this up.  This road turns into a major thoroughfare for commuters driving north out of downtown to head back to the ‘burbs, and as far as Charles St. goes this block is probably the block on which cars are most likely to be stopped and blocking traffic due to the number of businesses and close proximity of University of Baltimore.</p>
-
-<center>
-<figure>
-  <a href="http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png"><img src="http://www.thetrainingset.com/images/2015-02/1200_Block_N_Charles.png" /></a>
-  <figcaption>Total fines issued at 1200 block of N. Charles St. in Baltimore, MD between January 20, 2013 and January 20, 2015.</figcaption>
-</figure>
-</center>
-
-<p>There’s a Starbucks on one corner with a Chipotle next to it, immediately in front of which there is a bus stop.  In addition to the Starbucks and Chipotle, there are a number of other businesses (frozen yogurt, licquor store, other restaurants) that presumably all take deliveries at regular intervals.  On numerous occasions I’ve walked past and a large truck or semi is parked at the bus stop with a ticket on its windshield.  This would explain at least the “In Transit Zone/Stop,” but I do wonder at how consistent parking police are in their coding of citations.</p>
-
-<p>Street parking immediately behind the bus stop shown below is prohibited weekdays between 4pm and 6pm, which the data show is another large revenue generator.   </p>
-
-<center>
-<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1423505612169!6m8!1m7!1sfA92b-gWtpBw7_rLxBABSQ!2m2!1d39.30448!2d-76.616122!3f141.43900848353474!4f-17.57579463067043!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0"></iframe>
-<figcaption>Starbucks on 1200 block of N. Charles St. in Baltimore, MD with bus stop.</figcaption>
-</center>
-
-<p>It’s interesting that such a large number of fines are coded as “No Stopping/Parking Stadium Event Cambden”  since Cambden Yards isn’t nearby or even on Charles St.  Again, makes me wonder at how the parking police are trained to code the infractions.</p>
-
-<hr />
-<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore.</a></em></p>
-
-<p><em>Analysis conducted using <a href="http://www.python.org">Python</a> and <a href="http://pandas.pydata.org">Pandas</a></em></p>
-
-<p><em>I recently had my laptop stolen. I don’t feel like purchasing Microsoft Office, so I’m using a combination of Apple Numbers and Google Docs for spreadsheets now.</em></p>
 
 
   </div><!-- /.entry-content -->
