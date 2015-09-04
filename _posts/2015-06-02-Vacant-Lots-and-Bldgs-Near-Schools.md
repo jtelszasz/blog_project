@@ -18,7 +18,7 @@ But context is everything, and the story these data tells us about what it's lik
 
 Below you'll see just how rampant this issue is for children in Baltimore.  The map shows a quarter-mile radius around each city school and the vacant parcels (blue) and vacant buildings (orange) within those buffers (data from <a href='http://data.baltimorecity.gov'>Open Baltimore</a>).
 
-<iframe width='100%' height='520' frameborder='0' src='https://jtelszasz.cartodb.com/viz/fa7954a0-0410-11e5-983d-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width='100%' height='520' frameborder='0' src='https://jtelszasz.cartodb.com/viz/8d52d710-4ffc-11e5-b7d9-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 The school with the most vacant buildings within a quarter mile is an **elementary** school - Roots and Branches School - with a whopping **722 vacant buildings surrounding it**. Unfortunately it shouldn't come as a surprise that it's in West Baltimore, just a few blocks south of where Freddie Gray lived.
 
