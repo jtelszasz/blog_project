@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">The Training Set.</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://www.thetrainingset.com/feed.xml" />
-<link rel="alternate" type="text/html" href="http://www.thetrainingset.com" />
-<updated>2015-07-14T18:27:24-04:00</updated>
-<id>http://www.thetrainingset.com/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2015-11-12T13:17:54-05:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>Justin Elszasz</name>
-  <uri>http://www.thetrainingset.com/</uri>
+  <uri>http://localhost:4000/</uri>
   <email>thetrainingset@gmail.com</email>
 </author>
 
@@ -16,27 +16,76 @@
   
 
 <entry>
-  <title type="html"><![CDATA[What I'm Up To]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/What-Im-Up-To" />
-  <id>http://www.thetrainingset.com/articles/What-Im-Up-To</id>
-  <updated>2015-07-14T00:00:00-00:00</updated>
-  <published>2015-07-14T00:00:00-04:00</published>
+  <title type="html"><![CDATA[Baltimore Policing, Six Months After F.G.]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015" />
+  <id>http://localhost:4000/articles/Policing-In-Baltimore-In-2015</id>
+  <updated>2015-11-12T00:00:00-00:00</updated>
+  <published>2015-11-12T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;Just a quick note to highlight some recent publicity.&lt;/p&gt;
+    &lt;p&gt;We’re about six months out now from the Freddie Gray incident and subsequent unrest in Baltimore.  There have been a few dominant narratives about crime in Baltimore since, namely that we’ve had almost &lt;a href=&quot;http://data.baltimoresun.com/bing-maps/homicides/index.php?show_results=UPDATE+MAP&amp;amp;range=2015&amp;amp;district=all&amp;amp;zipcode=All&amp;amp;cause=all&amp;amp;age=all&amp;amp;gender=all&amp;amp;race=all&amp;amp;article=all&quot;&gt;300 homicides&lt;/a&gt;, that &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/bs-md-ci-comstat-meeting-20150616-story.html&quot;&gt;police stopped doing their jobs after the protests&lt;/a&gt;, and that enough prescription drugs had flooded the streets to “&lt;a href=&quot;http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html&quot;&gt;keep Baltimore high for a year&lt;/a&gt;.”  &lt;/p&gt;
 
-&lt;p&gt;In June, Technical.ly was kind enough to again shine a light on some of my analysis, this time &lt;a href=&quot;http://technical.ly/baltimore/2015/06/04/baltimore-blight-maps-ouazad-elszasz/&quot;&gt;on vacant buildings and lots in Baltimore&lt;/a&gt;.  &lt;a href=&quot;http://plot.ly&quot;&gt;Plot.ly&lt;/a&gt; also &lt;a href=&quot;https://plot.ly/ipython-notebooks/baltimore-vital-signs/&quot;&gt;used my iPython notebook&lt;/a&gt; for my &lt;a href=&quot;http://bniajfi.org/&quot;&gt;Baltimore Vital Signs&lt;/a&gt; analysis as an example of how to use the tool.&lt;/p&gt;
+&lt;p&gt;So what has actually gone on in Baltimore in the weeks and months since the spring of 2015?  I think there are a couple of important storylines in the data.&lt;/p&gt;
 
-&lt;p&gt;This past Friday I participated in &lt;a href=&quot;http://bniajfi.org/data_day/2015agenda/&quot;&gt;Baltimore Data Day&lt;/a&gt; hosted by &lt;a href=&quot;http://bniajfi.org/&quot;&gt;Baltimore Neighborhood Indicators Alliance&lt;/a&gt; at University of Baltimore.  I was invited to contribute to a panel on civic technology and I sincerely hope someone, anyone, in the room gained something from it.  &lt;a href=&quot;http://technical.ly/baltimore/2015/07/13/data-day-crime-data-bmoremapped-training-set/&quot;&gt;Technical.ly&lt;/a&gt; has a quick blurb about it as well as my quick glance at Baltimore police arrest data post-Freddie Gray.  Also be sure to check out Ryan Smith’s map work &lt;a href=&quot;http://www.bmoremapped.com/&quot;&gt;here&lt;/a&gt; and stay tuned for his new crime map.&lt;/p&gt;
+&lt;h2 id=&quot;precipitous-drop-in-police-productivity---on-track-for-10000-less-arrests-this-year-than-last&quot;&gt;Precipitous drop in police productivity - on track for 10,000 less arrests this year than last.&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Coming up July 28&lt;/strong&gt;, I’ll be at the &lt;a href=&quot;http://www.meetup.com/Transportation-Techies/events/222183536/&quot;&gt;DC Transportation Techies meetup&lt;/a&gt; which is making a cameo in Baltimore at the Hyatt Regency.&lt;/p&gt;
+&lt;p&gt;We’re on pace to record 10,000 less arrests this year compared to last.  Total arrests for 2013 and 2014 were both on the order of 36,000 and this year, looking at total records through September, it’s looking like it will be more like 26,000.  (The average daily arrests for January through September is extrapolated through the rest of the year.)  There’s a substantial downtick in arrests in the last quarter of the year for both 2013 and 2014 though, so the 26,000 number could in fact be high.&lt;/p&gt;
 
-&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;http://www.thetrainingset.com/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-11/Total_Monthly_Arrests.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Total_Monthly_Arrests.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Monthly arrests in Baltimore for 2013, 2014, and 2015.  Click image to enlarge.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This kind of output isn’t the result of a drastic change in the size of the police force either.  The number of officers for 2013, 2014, and 2015 are 2,316, 2,278, and 2,224 respectively, resulting in average annual arrests per officer going from just over 17, to just over 16, &lt;em&gt;down to 12 arrests per officer this year&lt;/em&gt;.  This means there had to have been a shift in policing tactics this year.&lt;/p&gt;
+
+&lt;h2 id=&quot;drug-related-arrests-have-continued-the-same-downward-trend-as-preceded-freddie-gray&quot;&gt;Drug-related arrests have continued the same downward trend as preceded Freddie Gray.&lt;/h2&gt;
+
+&lt;p&gt;Former Commissioner Batts also claimed that during the unrest, enough prescription drugs from pharmacies had been stolen to “&lt;a href=&quot;http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html&quot;&gt;keep Baltimore high for a year&lt;/a&gt;.”  If that were the case, I’d expect our police force to up their game and target known drug havens, resulting in more arrests.  That hasn’t happened, though.  In fact, the proportion of controlled dangerous substance charges as a proportion of total arrests has actually continued the same downward trend from the previous two years.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-11/Weekly_CDS_Arrests.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Weekly_CDS_Arrests.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Weekly arrests in Baltimore for 2015.  Click image to enlarge.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;during-the-week-following-the-riots-baltimore-police-focused-entirely-on-curfew-violations&quot;&gt;During the week following the “riots,” Baltimore Police focused &lt;em&gt;entirely&lt;/em&gt; on curfew violations.&lt;/h2&gt;
+
+&lt;p&gt;The total weekly arrests dropped dramatically in the weeks following the Freddie Gray unrest.  The head of the FOP said that cops were &lt;a href=&quot;http://baltimore.cbslocal.com/2015/06/02/commissioner-batts-stolen-prescription-drugs-partly-to-blame-for-surge-in-violence/&quot;&gt;“more hesitant” but that there was not a “slowdown”&lt;/a&gt; (a claim Former Commissioner Batts &lt;a href=&quot;http://www.thedailybeast.com/cheats/2015/09/03/ex-baltimore-top-cop-admits-to-slowdown.html&quot;&gt;later reversed&lt;/a&gt;).  This always sounded to me like a contradiction in terms: if someone is more hesitant to do something, they are less likely to do it.  We now know there was a slowdown, but it didn’t come until after officers were charged.  What were they up to prior to that?&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Top 5 charges before and after Monday, April 27 unrest.  Click image to enlarge.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In the week immediately following the &lt;a href=&quot;http://www.motherjones.com/politics/2015/04/how-baltimore-riots-began-mondawmin-purge&quot;&gt;police-induced rioting on Monday, April 27&lt;/a&gt;, cops were entirely focused on curfew violations.  It wasn’t until after that week that we saw the drop in total arrests.&lt;/p&gt;
+
+&lt;h2 id=&quot;besides-homicides-first-degree-assaults-and-gun-related-offenses-have-relatedly-increased&quot;&gt;Besides homicides, first degree assaults and gun-related offenses have relatedly increased.&lt;/h2&gt;
+
+&lt;p&gt;Much has been made of the increase in violence since the summer.  Indeed first degree assaults and gun-related offenses both increased over the summer and remain elevated compared to earlier in the year.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-11/Percent_Weekly_Guns.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Percent_Weekly_Guns.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Percent of weekly arrests that are gun-related.  Click image to enlarge.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;All data, including BPD arrests and city employee payrolls, obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -50,7 +99,50 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/What-Im-Up-To&quot;&gt;What I&#39;m Up To&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on July 14, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Policing-In-Baltimore-In-2015&quot;&gt;Baltimore Policing, Six Months After F.G.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on November 12, 2015.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[What I'm Up To]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/What-Im-Up-To" />
+  <id>http://localhost:4000/articles/What-Im-Up-To</id>
+  <updated>2015-07-14T00:00:00-00:00</updated>
+  <published>2015-07-14T00:00:00-04:00</published>
+  
+  <author>
+    <name>Justin Elszasz</name>
+    <uri>http://localhost:4000</uri>
+    <email>thetrainingset@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Just a quick note to highlight some recent publicity.&lt;/p&gt;
+
+&lt;p&gt;In June, Technical.ly was kind enough to again shine a light on some of my analysis, this time &lt;a href=&quot;http://technical.ly/baltimore/2015/06/04/baltimore-blight-maps-ouazad-elszasz/&quot;&gt;on vacant buildings and lots in Baltimore&lt;/a&gt;.  &lt;a href=&quot;http://plot.ly&quot;&gt;Plot.ly&lt;/a&gt; also &lt;a href=&quot;https://plot.ly/ipython-notebooks/baltimore-vital-signs/&quot;&gt;used my iPython notebook&lt;/a&gt; for my &lt;a href=&quot;http://bniajfi.org/&quot;&gt;Baltimore Vital Signs&lt;/a&gt; analysis as an example of how to use the tool.&lt;/p&gt;
+
+&lt;p&gt;This past Friday I participated in &lt;a href=&quot;http://bniajfi.org/data_day/2015agenda/&quot;&gt;Baltimore Data Day&lt;/a&gt; hosted by &lt;a href=&quot;http://bniajfi.org/&quot;&gt;Baltimore Neighborhood Indicators Alliance&lt;/a&gt; at University of Baltimore.  I was invited to contribute to a panel on civic technology and I sincerely hope someone, anyone, in the room gained something from it.  &lt;a href=&quot;http://technical.ly/baltimore/2015/07/13/data-day-crime-data-bmoremapped-training-set/&quot;&gt;Technical.ly&lt;/a&gt; has a quick blurb about it as well as my quick glance at Baltimore police arrest data post-Freddie Gray.  Also be sure to check out Ryan Smith’s map work &lt;a href=&quot;http://www.bmoremapped.com/&quot;&gt;here&lt;/a&gt; and stay tuned for his new crime map.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Coming up July 28&lt;/strong&gt;, I’ll be at the &lt;a href=&quot;http://www.meetup.com/Transportation-Techies/events/222183536/&quot;&gt;DC Transportation Techies meetup&lt;/a&gt; which is making a cameo in Baltimore at the Hyatt Regency.&lt;/p&gt;
+
+&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;http://localhost:4000/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/What-Im-Up-To&quot;&gt;What I&#39;m Up To&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on July 14, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -60,14 +152,14 @@
 
 <entry>
   <title type="html"><![CDATA[Arrests in Baltimore Drop in May]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Arrests-In-Baltimore-Drop-In-May" />
-  <id>http://www.thetrainingset.com/articles/Arrests-In-Baltimore-Drop-In-May</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May" />
+  <id>http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May</id>
   <updated>2015-06-12T00:00:00-00:00</updated>
   <published>2015-06-12T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -77,7 +169,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-06/baltimore_daily_arrest_count_around_FG.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-06/baltimore_daily_arrest_count_around_FG.png&quot; width=&quot;120%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-06/baltimore_daily_arrest_count_around_FG.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-06/baltimore_daily_arrest_count_around_FG.png&quot; width=&quot;120%&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Daily arrests in Baltimore for April and May 2015.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -85,7 +177,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Weekly arrests in Baltimore for 2015.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -111,7 +203,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Arrests-In-Baltimore-Drop-In-May&quot;&gt;Arrests in Baltimore Drop in May&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on June 12, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May&quot;&gt;Arrests in Baltimore Drop in May&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on June 12, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -121,14 +213,14 @@
 
 <entry>
   <title type="html"><![CDATA[B'More Schools Surrounded by Blight and Danger]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Vacant-Lots-and-Bldgs-Near-Schools" />
-  <id>http://www.thetrainingset.com/articles/Vacant-Lots-and-Bldgs-Near-Schools</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" />
+  <id>http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools</id>
   <updated>2015-06-02T00:00:00-00:00</updated>
   <published>2015-06-02T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -136,13 +228,13 @@
 
 &lt;p&gt;In addition to the safety hazard neglected structures can pose, vacant lots and buildings are magnets for &lt;a href=&quot;http://articles.chicagotribune.com/1992-02-10/news/9201130233_1_vacant-buildings-abandoned-demolishes&quot;&gt;serious&lt;/a&gt; &lt;a href=&quot;http://articles.baltimoresun.com/2014-08-07/news/bs-crime-vacants-20140806_1_property-crime-serious-crime-violent-crime&quot;&gt;crime&lt;/a&gt;, including &lt;em&gt;gang activity, drugs, murder, assault, and rape&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.  &lt;/p&gt;
+&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.  &lt;/p&gt;
 
 &lt;p&gt;But context is everything, and the story these data tells us about what it’s like to be a school-aged kid in Baltimore is harrowing. &lt;strong&gt;The analysis suggests that about 68% of all vacant buildings in Baltimore are within a quarter mile of a city school, while about 27% of all vacant parcel area is within the same distance.&lt;/strong&gt;  &lt;/p&gt;
 
 &lt;p&gt;Below you’ll see just how rampant this issue is for children in Baltimore.  The map shows a quarter-mile radius around each city school and the vacant parcels (blue) and vacant buildings (orange) within those buffers (data from &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt;).&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;520&quot; frameborder=&quot;0&quot; src=&quot;https://jtelszasz.cartodb.com/viz/fa7954a0-0410-11e5-983d-0e9d821ea90d/embed_map&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; oallowfullscreen=&quot;&quot; msallowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;520&quot; frameborder=&quot;0&quot; src=&quot;https://jtelszasz.cartodb.com/viz/8d52d710-4ffc-11e5-b7d9-0e018d66dc29/embed_map&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; oallowfullscreen=&quot;&quot; msallowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;The school with the most vacant buildings within a quarter mile is an &lt;strong&gt;elementary&lt;/strong&gt; school - Roots and Branches School - with a whopping &lt;strong&gt;722 vacant buildings surrounding it&lt;/strong&gt;. Unfortunately it shouldn’t come as a surprise that it’s in West Baltimore, just a few blocks south of where Freddie Gray lived.&lt;/p&gt;
 
@@ -191,7 +283,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Vacant-Lots-and-Bldgs-Near-Schools&quot;&gt;B&#39;More Schools Surrounded by Blight and Danger&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on June 02, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools&quot;&gt;B&#39;More Schools Surrounded by Blight and Danger&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on June 02, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -201,14 +293,14 @@
 
 <entry>
   <title type="html"><![CDATA[Baltimore Vacant Housing on The Atlantic's Citylab]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-Vacant-Houses-On-Citylab" />
-  <id>http://www.thetrainingset.com/articles/Baltimore-Vacant-Houses-On-Citylab</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab" />
+  <id>http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab</id>
   <updated>2015-06-01T00:00:00-00:00</updated>
   <published>2015-06-01T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -235,7 +327,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-Vacant-Houses-On-Citylab&quot;&gt;Baltimore Vacant Housing on The Atlantic&#39;s Citylab&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on June 01, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab&quot;&gt;Baltimore Vacant Housing on The Atlantic&#39;s Citylab&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on June 01, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -245,14 +337,14 @@
 
 <entry>
   <title type="html"><![CDATA[Verizon Wireless Cost Estimation]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Verizon-Wireless-Calculator" />
-  <id>http://www.thetrainingset.com/articles/Verizon-Wireless-Calculator</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Verizon-Wireless-Calculator" />
+  <id>http://localhost:4000/articles/Verizon-Wireless-Calculator</id>
   <updated>2015-05-21T00:00:00-00:00</updated>
   <published>2015-05-21T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -284,7 +376,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Verizon-Wireless-Calculator&quot;&gt;Verizon Wireless Cost Estimation&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Verizon-Wireless-Calculator&quot;&gt;Verizon Wireless Cost Estimation&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -294,14 +386,14 @@
 
 <entry>
   <title type="html"><![CDATA[Upcoming Events You Should Check Out]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Upcoming-Events-You-Should-Attend" />
-  <id>http://www.thetrainingset.com/articles/Upcoming-Events-You-Should-Attend</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Upcoming-Events-You-Should-Attend" />
+  <id>http://localhost:4000/articles/Upcoming-Events-You-Should-Attend</id>
   <updated>2015-05-05T00:00:00-00:00</updated>
   <published>2015-05-05T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -323,7 +415,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Upcoming-Events-You-Should-Attend&quot;&gt;Upcoming Events You Should Check Out&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on May 05, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Upcoming-Events-You-Should-Attend&quot;&gt;Upcoming Events You Should Check Out&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on May 05, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -333,14 +425,14 @@
 
 <entry>
   <title type="html"><![CDATA[This is How Much We Paid Officers Involved in the Freddie Gray Debacle]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" />
-  <id>http://www.thetrainingset.com/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" />
+  <id>http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</id>
   <updated>2015-04-26T00:00:00-00:00</updated>
   <published>2015-04-26T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -350,7 +442,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -358,7 +450,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 &lt;hr /&gt;
@@ -380,7 +472,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray&quot;&gt;This is How Much We Paid Officers Involved in the Freddie Gray Debacle&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 26, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray&quot;&gt;This is How Much We Paid Officers Involved in the Freddie Gray Debacle&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 26, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -390,14 +482,14 @@
 
 <entry>
   <title type="html"><![CDATA[Thanks Technical.ly Baltimore!]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Thanks-Technically-Baltimore" />
-  <id>http://www.thetrainingset.com/articles/Thanks-Technically-Baltimore</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Thanks-Technically-Baltimore" />
+  <id>http://localhost:4000/articles/Thanks-Technically-Baltimore</id>
   <updated>2015-04-23T00:00:00-00:00</updated>
   <published>2015-04-23T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -415,7 +507,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Thanks-Technically-Baltimore&quot;&gt;Thanks Technical.ly Baltimore!&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 23, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Thanks-Technically-Baltimore&quot;&gt;Thanks Technical.ly Baltimore!&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 23, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -425,14 +517,14 @@
 
 <entry>
   <title type="html"><![CDATA[Baltimore Police Department Overtime & Bonuses]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" />
-  <id>http://www.thetrainingset.com/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" />
+  <id>http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay</id>
   <updated>2015-04-22T00:00:00-00:00</updated>
   <published>2015-04-22T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -470,7 +562,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -488,7 +580,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -498,7 +590,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -508,7 +600,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -518,7 +610,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -548,7 +640,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay&quot;&gt;Baltimore Police Department Overtime &amp; Bonuses&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 22, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay&quot;&gt;Baltimore Police Department Overtime &amp; Bonuses&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 22, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -558,14 +650,14 @@
 
 <entry>
   <title type="html"><![CDATA[ShowYourWork Election Campaign]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Show-Your-Work" />
-  <id>http://www.thetrainingset.com/articles/Show-Your-Work</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Show-Your-Work" />
+  <id>http://localhost:4000/articles/Show-Your-Work</id>
   <updated>2015-04-14T00:00:00-00:00</updated>
   <published>2015-04-14T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -587,7 +679,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Show-Your-Work&quot;&gt;ShowYourWork Election Campaign&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 14, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Show-Your-Work&quot;&gt;ShowYourWork Election Campaign&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 14, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -597,14 +689,14 @@
 
 <entry>
   <title type="html"><![CDATA[A City Divided (in N dimensions)]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions" />
-  <id>http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" />
+  <id>http://localhost:4000/articles/A-City-Divided-In-N-Dimensions</id>
   <updated>2015-04-12T00:00:00-00:00</updated>
   <published>2015-04-12T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -612,7 +704,7 @@
 
 &lt;p&gt;When I tell people I live in Baltimore, that I love living there and that it’s a great American city, what I really mean is that the neighborhoods I typically experience are great.  Baltimore of course has its many ills, and it’s very easy for white, college-educated individuals like myself to find themselves experiencing a very different reality than most in the city.&lt;/p&gt;
 
-&lt;p&gt;There are many socio-economic variables that would describe such segregation - something I hinted at with the &lt;a href=&quot;http://www.thetrainingset.com/articles/Know-More-Bmore&quot;&gt;last post&lt;/a&gt;.  Luckily, the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore has made it their mission to provide a clean, concise set of indicators that illustrate the health and wealth of the city.  There are 152 socio-economic indicators in the Vital Signs dataset, and some are reported for multiple years which results in 295 total variables for each of the 56 Baltimore neighborhoods captured.  For this analysis, I’m throwing them all in the mixer.&lt;/p&gt;
+&lt;p&gt;There are many socio-economic variables that would describe such segregation - something I hinted at with the &lt;a href=&quot;http://localhost:4000/articles/Know-More-Bmore&quot;&gt;last post&lt;/a&gt;.  Luckily, the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore has made it their mission to provide a clean, concise set of indicators that illustrate the health and wealth of the city.  There are 152 socio-economic indicators in the Vital Signs dataset, and some are reported for multiple years which results in 295 total variables for each of the 56 Baltimore neighborhoods captured.  For this analysis, I’m throwing them all in the mixer.&lt;/p&gt;
 
 &lt;p&gt;As you can imagine, many of the variables are strongly correlated with each other (e.g. the percent of the population in a neighborhood that is white is inversely proportional to the percent that aren’t white, so you don’t necessarily need both depending on what you’re trying to do with the data).  Rather than try plotting all of these variables against one another, it’s possible to illustrate the degree to which the city is segregated by distilling the 295 variables into only a couple - in other words, teasing out the principal socio-economic “directions” in which communities may be close or far from each other.&lt;/p&gt;
 
@@ -666,7 +758,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/A-City-Divided-In-N-Dimensions&quot;&gt;A City Divided (in N dimensions)&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/A-City-Divided-In-N-Dimensions&quot;&gt;A City Divided (in N dimensions)&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -676,14 +768,14 @@
 
 <entry>
   <title type="html"><![CDATA[Know More, B'more.]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Know-More-Bmore" />
-  <id>http://www.thetrainingset.com/articles/Know-More-Bmore</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Know-More-Bmore" />
+  <id>http://localhost:4000/articles/Know-More-Bmore</id>
   <updated>2015-03-30T00:00:00-00:00</updated>
   <published>2015-03-30T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -721,7 +813,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Know-More-Bmore&quot;&gt;Know More, B&#39;more.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 30, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Know-More-Bmore&quot;&gt;Know More, B&#39;more.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 30, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -731,14 +823,14 @@
 
 <entry>
   <title type="html"><![CDATA[City Paper Bounces The Training Set Parking Analysis]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" />
-  <id>http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" />
+  <id>http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis</id>
   <updated>2015-03-19T00:00:00-00:00</updated>
   <published>2015-03-19T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -767,7 +859,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-City-Paper-Bounces-TTS-Analysis&quot;&gt;City Paper Bounces The Training Set Parking Analysis&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 19, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis&quot;&gt;City Paper Bounces The Training Set Parking Analysis&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 19, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -777,14 +869,14 @@
 
 <entry>
   <title type="html"><![CDATA[Which citations do people not care about paying?]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About" />
-  <id>http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" />
+  <id>http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
   <updated>2015-03-16T00:00:00-00:00</updated>
   <published>2015-03-16T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -796,7 +888,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Percent of total citations that have a balance as of February 28, 2015.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -809,7 +901,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_By_Year.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_By_Year.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_By_Year.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_By_Year.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total ticket counts by category and year.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -833,7 +925,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 16, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 16, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -843,14 +935,14 @@
 
 <entry>
   <title type="html"><![CDATA[DOT Needs More Citation Categories]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories" />
-  <id>http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" />
+  <id>http://localhost:4000/articles/DOT-Needs-More-Citation-Categories</id>
   <updated>2015-03-12T00:00:00-00:00</updated>
   <published>2015-03-12T00:00:00-04:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -860,7 +952,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citation counts in Baltimore by category.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -884,7 +976,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -894,14 +986,14 @@
 
 <entry>
   <title type="html"><![CDATA[When Not To Park On N. Charles St.]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles" />
-  <id>http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" />
+  <id>http://localhost:4000/articles/When-Not-To-Park-On-Charles</id>
   <updated>2015-03-07T00:00:00-00:00</updated>
   <published>2015-03-07T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -918,7 +1010,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -927,7 +1019,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -938,7 +1030,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total tickets issued on five blocks of N. Charles St. in Baltimore by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -962,7 +1054,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -972,14 +1064,14 @@
 
 <entry>
   <title type="html"><![CDATA[Investigating City Paper's Claims About 4200 Wickford]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford" />
-  <id>http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" />
+  <id>http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford</id>
   <updated>2015-03-03T00:00:00-00:00</updated>
   <published>2015-03-03T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -997,7 +1089,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -1005,11 +1097,11 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford_Citation_Table.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-03/4200_Wickford_Citation_Table.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
-&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
+&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -1030,7 +1122,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-City-Paper-Article-On-4200-Wickford&quot;&gt;Investigating City Paper&#39;s Claims About 4200 Wickford&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on March 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford&quot;&gt;Investigating City Paper&#39;s Claims About 4200 Wickford&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 03, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1040,22 +1132,22 @@
 
 <entry>
   <title type="html"><![CDATA[Biasing Citations Towards Those Who Pay]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Daily-Unpaid-Citations" />
-  <id>http://www.thetrainingset.com/articles/Daily-Unpaid-Citations</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Daily-Unpaid-Citations" />
+  <id>http://localhost:4000/articles/Daily-Unpaid-Citations</id>
   <updated>2015-02-27T00:00:00-00:00</updated>
   <published>2015-02-27T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://www.thetrainingset.com/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
+    &lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Daily_Citations_Unpaid.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Daily_Citations_Unpaid.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
 
@@ -1087,7 +1179,7 @@
 &lt;/script&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Daily-Unpaid-Citations&quot;&gt;Biasing Citations Towards Those Who Pay&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 27, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Daily-Unpaid-Citations&quot;&gt;Biasing Citations Towards Those Who Pay&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 27, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1097,14 +1189,14 @@
 
 <entry>
   <title type="html"><![CDATA[Rapid Increase in Citations]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations" />
-  <id>http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Rapid-Increase-In-Citations" />
+  <id>http://localhost:4000/articles/Rapid-Increase-In-Citations</id>
   <updated>2015-02-24T00:00:00-00:00</updated>
   <published>2015-02-24T00:00:00-05:00</published>
   
   <author>
     <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>thetrainingset@gmail.com</email>
   </author>
   <content type="html">
@@ -1112,7 +1204,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Total_Monthly_Citations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Total_Monthly_Citations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total monthly citations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1121,7 +1213,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 25 locations, difference in September 2013 and March 2014 total citations.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1140,7 +1232,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Citations.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Citations.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1149,7 +1241,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/5100_Roland_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1174,7 +1266,7 @@
 
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
   &lt;figcaption&gt;Total citations for last 2 years at 400 lot of Jones Falls Expressway (JFA) by description.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -1185,31 +1277,7 @@
 &lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Rapid-Increase-In-Citations&quot;&gt;Rapid Increase in Citations&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 24, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Introducing "My Electricity Use" Visualization Page]]></title>
-  <link rel="alternate" type="text/html" href="http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site" />
-  <id>http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site</id>
-  <updated>2015-02-16T00:00:00-00:00</updated>
-  <published>2015-02-16T00:00:00-05:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://www.thetrainingset.com</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “&lt;a href=&quot;http://www.thetrainingset.com/my-elec-use/&quot;&gt;My Electricity Use&lt;/a&gt;.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the &lt;a href=&quot;http://plot.ly&quot;&gt;Plotly&lt;/a&gt; game, but I’ll be using it a lot more regularly going forward.&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://www.thetrainingset.com/articles/Buiding-My-Elec-Use-Visualization-Site&quot;&gt;Introducing &quot;My Electricity Use&quot; Visualization Page&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://www.thetrainingset.com&quot;&gt;The Training Set.&lt;/a&gt; on February 16, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations&quot;&gt;Rapid Increase in Citations&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 24, 2015.&lt;/p&gt;
 
   </content>
 </entry>
