@@ -35,8 +35,8 @@ Former Commissioner Batts also claimed that during the unrest, enough prescripti
 
 <center>
 <figure>
-  <a href='{{ site.url }}/images/2015-11/Weekly_CDS_Arrests.png'><img src='{{ site.url }}/images/2015-11/Weekly_CDS_Arrests.png'></a>
-  <figcaption>Weekly arrests in Baltimore for 2015.  Click image to enlarge.</figcaption>
+  <a href='{{ site.url }}/images/2015-11/Percent_Weekly_CDS.png'><img src='{{ site.url }}/images/2015-11/Percent_Weekly_CDS.png'></a>
+  <figcaption>Percent weekly arrests that are CDS-related, Baltimore in 2015.  Click image to enlarge.</figcaption>
 </figure>
 </center>
 
