@@ -29,6 +29,15 @@ We're on pace to record 10,000 less arrests this year compared to last.  Total a
 
 This kind of output isn't the result of a drastic change in the size of the police force either.  The number of officers for 2013, 2014, and 2015 are 2,316, 2,278, and 2,224 respectively, resulting in average annual arrests per officer going from just over 17, to just over 16, *down to 12 arrests per officer this year*.  This means there had to have been a shift in policing tactics this year.
 
+*UPDATE* Quick bonus plot that better illustrates how far 2015 lags behind previous years in arrests.
+
+<center>
+<figure>
+  <a href='{{ site.url }}/images/2015-11/Total_Arrests_Cumsum.png'><img src='{{ site.url }}/images/2015-11/Total_Arrests_Cumsum.png'></a>
+  <figcaption>Cumulative arrests in Baltimore for 2013, 2014, and 2015.  Click image to enlarge.</figcaption>
+</figure>
+</center>
+
 ## Drug-related arrests have continued the same downward trend as preceded Freddie Gray.
 
 Former Commissioner Batts also claimed that during the unrest, enough prescription drugs from pharmacies had been stolen to "<a href="http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html">keep Baltimore high for a year</a>."  If that were the case, I'd expect our police force to up their game and target known drug havens, resulting in more arrests.  That hasn't happened, though.  In fact, the proportion of controlled dangerous substance charges as a proportion of total arrests has actually continued the same downward trend from the previous two years.
