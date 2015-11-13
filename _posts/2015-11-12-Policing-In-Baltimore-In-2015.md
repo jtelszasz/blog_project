@@ -29,7 +29,7 @@ We're on pace to record 10,000 less arrests this year compared to last.  Total a
 
 This kind of output isn't the result of a drastic change in the size of the police force either.  The number of officers for 2013, 2014, and 2015 are 2,316, 2,278, and 2,224 respectively, resulting in average annual arrests per officer going from just over 17, to just over 16, *down to 12 arrests per officer this year*.  This means there had to have been a shift in policing tactics this year.
 
-*UPDATE* Quick bonus plot that better illustrates how far 2015 lags behind previous years in arrests.
+**UPDATE**: Quick bonus plot that better illustrates how far 2015 lags behind previous years in arrests.
 
 <center>
 <figure>
