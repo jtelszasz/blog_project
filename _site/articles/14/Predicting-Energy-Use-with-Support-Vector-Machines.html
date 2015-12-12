@@ -21,8 +21,8 @@
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
-  <link rel="canonical" href="/articles/14/Predicting-Energy-Use-with-Support-Vector-Machines">
-  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="/feed.xml" />
+  <link rel="canonical" href="http://www.thetrainingset.com/articles/14/Predicting-Energy-Use-with-Support-Vector-Machines">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="http://www.thetrainingset.com/feed.xml" />
 </head>
 
   <body>
@@ -84,7 +84,7 @@
 
 <h3 id="i-thought-we-had-a-model">I Thought We Had a Model</h3>
 
-<p>In <a href="/articles/Energy-Use-and-Weather/">another post</a> I plotted electricity consumption against outdoor temperature and fit a straight line to the data.</p>
+<p>In <a href="http://www.thetrainingset.com/articles/Energy-Use-and-Weather/">another post</a> I plotted electricity consumption against outdoor temperature and fit a straight line to the data.</p>
 
 <figure><figcaption>Linear ordinary least squares regression model for electricity consumption using outdoor temperature.</figcaption><img src="/images/2014-04/Elec_and_Temp_OLS.png" /></figure>
 
@@ -102,7 +102,7 @@
 
 <h3 id="modeling">Modeling</h3>
 
-<p>Based on some of the <a href="/articles/Autocorrelation">previous explorations of the data</a>, it looked like one hour’s electricity usage could be a very good predictor of the next hour’s usage.  In fact, it looked like it was a much better indicator than the <a href="/articles/Energy-Use-and-Weather">outdoor temperature</a>.  I wonder how far that alone will get us.</p>
+<p>Based on some of the <a href="http://www.thetrainingset.com/articles/Autocorrelation">previous explorations of the data</a>, it looked like one hour’s electricity usage could be a very good predictor of the next hour’s usage.  In fact, it looked like it was a much better indicator than the <a href="http://www.thetrainingset.com/articles/Energy-Use-and-Weather">outdoor temperature</a>.  I wonder how far that alone will get us.</p>
 
 <p>Well, not completely alone.  There are two other easy time-related variables I’d like to include.  One is the hour of the day (1 through 24, though these each need a feature unto themselves to make each hour equal to a categorical 0 or 1) and a field for whether or not the day was a typical work day or not (“not” would include holidays, weekends, and days I worked from home).  I would expect there to be a pattern of electricity usage associated with both of these variables and we can include them at virtually no modeling expense.</p>
 

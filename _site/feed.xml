@@ -3,10 +3,10 @@
   <channel>
     <title>The Training Set</title>
     <description></description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Dec 2015 23:25:12 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Dec 2015 23:25:12 -0500</lastBuildDate>
+    <link>http://www.thetrainingset.com/</link>
+    <atom:link href="http://www.thetrainingset.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 11 Dec 2015 23:45:50 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Dec 2015 23:45:50 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -30,7 +30,7 @@
 &lt;!--
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&#39;/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;img src=&#39;/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;/a&gt;
   &lt;figcaption&gt;Cumulative arrests in Baltimore for 2013, 2014, and 2015.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -45,7 +45,7 @@
 &lt;!--
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&#39;/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;img src=&#39;/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;/a&gt;
   &lt;figcaption&gt;Percent weekly arrests that are CDS-related, Baltimore in 2015.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -59,7 +59,7 @@
 
 &lt;!-- &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&#39;/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;img src=&#39;/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 5 charges before and after Monday, April 27 unrest.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt; --&gt;
@@ -99,8 +99,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 </description>
         <pubDate>Thu, 12 Nov 2015 00:00:00 -0500</pubDate>
-        <link>/articles/15/Policing-In-Baltimore-In-2015</link>
-        <guid isPermaLink="true">/articles/15/Policing-In-Baltimore-In-2015</guid>
+        <link>http://www.thetrainingset.com/articles/15/Policing-In-Baltimore-In-2015</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Policing-In-Baltimore-In-2015</guid>
         
         <category>Baltimore</category>
         
@@ -127,7 +127,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 &lt;p&gt;&lt;strong&gt;Coming up July 28&lt;/strong&gt;, I’ll be at the &lt;a href=&quot;http://www.meetup.com/Transportation-Techies/events/222183536/&quot;&gt;DC Transportation Techies meetup&lt;/a&gt; which is making a cameo in Baltimore at the Hyatt Regency.&lt;/p&gt;
 
-&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;http://www.thetrainingset.com/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -142,8 +142,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 </description>
         <pubDate>Tue, 14 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/What-Im-Up-To</link>
-        <guid isPermaLink="true">/articles/15/What-Im-Up-To</guid>
+        <link>http://www.thetrainingset.com/articles/15/What-Im-Up-To</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/What-Im-Up-To</guid>
         
         <category>open-data</category>
         
@@ -190,8 +190,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 </description>
         <pubDate>Fri, 12 Jun 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/Arrests-In-Baltimore-Drop-In-May</link>
-        <guid isPermaLink="true">/articles/15/Arrests-In-Baltimore-Drop-In-May</guid>
+        <link>http://www.thetrainingset.com/articles/15/Arrests-In-Baltimore-Drop-In-May</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Arrests-In-Baltimore-Drop-In-May</guid>
         
         <category>Baltimore</category>
         
@@ -212,7 +212,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 &lt;p&gt;In addition to the safety hazard neglected structures can pose, vacant lots and buildings are magnets for &lt;a href=&quot;http://articles.chicagotribune.com/1992-02-10/news/9201130233_1_vacant-buildings-abandoned-demolishes&quot;&gt;serious&lt;/a&gt; &lt;a href=&quot;http://articles.baltimoresun.com/2014-08-07/news/bs-crime-vacants-20140806_1_property-crime-serious-crime-violent-crime&quot;&gt;crime&lt;/a&gt;, including &lt;em&gt;gang activity, drugs, murder, assault, and rape&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.&lt;/p&gt;
+&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.&lt;/p&gt;
 
 &lt;p&gt;But context is everything, and the story these data tells us about what it’s like to be a school-aged kid in Baltimore is harrowing. &lt;strong&gt;The analysis suggests that about 68% of all vacant buildings in Baltimore are within a quarter mile of a city school, while about 27% of all vacant parcel area is within the same distance.&lt;/strong&gt;&lt;/p&gt;
 
@@ -284,8 +284,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 </description>
         <pubDate>Tue, 02 Jun 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</link>
-        <guid isPermaLink="true">/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</guid>
+        <link>http://www.thetrainingset.com/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</guid>
         
         <category>Baltimore</category>
         
@@ -328,8 +328,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 </description>
         <pubDate>Mon, 01 Jun 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/Baltimore-Vacant-Houses-On-Citylab</link>
-        <guid isPermaLink="true">/articles/15/Baltimore-Vacant-Houses-On-Citylab</guid>
+        <link>http://www.thetrainingset.com/articles/15/Baltimore-Vacant-Houses-On-Citylab</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Baltimore-Vacant-Houses-On-Citylab</guid>
         
         <category>Baltimore</category>
         
@@ -373,8 +373,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 </description>
         <pubDate>Thu, 21 May 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/Verizon-Wireless-Calculator</link>
-        <guid isPermaLink="true">/articles/15/Verizon-Wireless-Calculator</guid>
+        <link>http://www.thetrainingset.com/articles/15/Verizon-Wireless-Calculator</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Verizon-Wireless-Calculator</guid>
         
         <category>Verizon</category>
         
@@ -406,8 +406,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 </description>
         <pubDate>Tue, 05 May 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/Upcoming-Events-You-Should-Attend</link>
-        <guid isPermaLink="true">/articles/15/Upcoming-Events-You-Should-Attend</guid>
+        <link>http://www.thetrainingset.com/articles/15/Upcoming-Events-You-Should-Attend</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Upcoming-Events-You-Should-Attend</guid>
         
         <category>Baltimore</category>
         
@@ -430,7 +430,7 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 &lt;!--
 &lt;figure&gt;
-  &lt;a href=&#39;/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;img src=&#39;/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;/a&gt;
 &lt;/figure&gt;
 --&gt;
 
@@ -442,7 +442,7 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 &lt;!--
 &lt;figure&gt;
-  &lt;a href=&#39;/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;img src=&#39;/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;/a&gt;
 &lt;/figure&gt;
 --&gt;
 
@@ -469,8 +469,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 26 Apr 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</link>
-        <guid isPermaLink="true">/articles/15/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</guid>
+        <link>http://www.thetrainingset.com/articles/15/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</guid>
         
         <category>Baltimore</category>
         
@@ -502,8 +502,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 
 </description>
         <pubDate>Thu, 23 Apr 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/Thanks-Technically-Baltimore</link>
-        <guid isPermaLink="true">/articles/15/Thanks-Technically-Baltimore</guid>
+        <link>http://www.thetrainingset.com/articles/15/Thanks-Technically-Baltimore</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Thanks-Technically-Baltimore</guid>
         
         <category>Baltimore</category>
         
@@ -551,7 +551,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 &lt;p&gt;One of my starting assumptions was that I should filter out any officers whose gross pay was less than their annual salary.  Well, it turns out that this was a majority of the Baltimore Police Department in FY2011, so that’s a bad idea.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Half of the BPD made less than 95% of their reported annual salary in 2011.  What gives?  After a little digging, I found &lt;a href=&quot;http://articles.baltimoresun.com/2011-01-07/news/bs-md-police-pay-cuts-20110107_1_robert-f-cherry-police-officers-bob-sledgeski&quot;&gt;this article&lt;/a&gt; and I think I have an answer: furloughs.  No doubt that situation must have been rough, but based on the analysis below they’ve made up for it over the last couple years.  In fact, the results below show that officers themselves didn’t bear the brunt of the hit - others in the BPD did.  I’m happy to be wrong and invite any Baltimore city officials to slice this a different way and let me know why 2011 payouts were smaller than salaries, but it doesn’t seem like this is a data quality issue.&lt;/p&gt;
@@ -565,7 +565,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 &lt;p&gt;Generally though, this certainly sets the backdrop for concerns regarding overtime pay that may be occuring at the casino.  Overtime payout has swelled to $30 million for each of the last two years and that’s without the casino.  Will the total overtime paid increase beyond $30 million for FY2015?  Or will the overtime budget stay the same, with overtime duties getting shifted from one location or another to the casino?  Neither sounds like a good idea.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;police-officers&quot;&gt;Police Officers&lt;/h2&gt;
@@ -573,7 +573,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 &lt;p&gt;What’s interesting here is that while the total bonus/overtime in 2011 was negative (furloughs) for all BPD, officers’ officers in general still made on average a $1,012 bonus, to the tune of more than $2 million for all officers.  In the next section, you’ll see that the &lt;strong&gt;rest of the department took a $3 million hit&lt;/strong&gt; on gross pay, resulting in the -$1 million total bonus/overtime in 2011 for the whole police department shown above.  It’s worth reminding ourselves here that police unions are a political force to be reckoned with.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;other-police-department-not-officers&quot;&gt;Other Police Department (Not Officers)&lt;/h2&gt;
@@ -581,7 +581,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 &lt;p&gt;On average salaries for non-officers in the BPD are comparable to police officers.  But of course, they make nowhere near the overtime and bonus available to officers.  &lt;strong&gt;Compare the 19%-of-salary bonus in 2014 for police officers above to the 2%-of-salary bonus for non-officers in 2014.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;top-20-bonus-earners&quot;&gt;Top 20 Bonus Earners&lt;/h2&gt;
@@ -589,7 +589,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 &lt;p&gt;Here’s what the top of the food chain looks like for the department.  Of course, these police employees didn’t have to worry during the recession - &lt;strong&gt;their average bonus when the department was suffering in 2011   was $52,827.  On average, the sizes of their bonuses were equal to their salary for fiscal years 2012 through 2014.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;future-work&quot;&gt;Future Work&lt;/h2&gt;
@@ -625,8 +625,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Apr 2015 00:00:00 -0400</pubDate>
-        <link>/articles/15/Baltimore-Police-Dept-OT-and-Bonus-Pay</link>
-        <guid isPermaLink="true">/articles/15/Baltimore-Police-Dept-OT-and-Bonus-Pay</guid>
+        <link>http://www.thetrainingset.com/articles/15/Baltimore-Police-Dept-OT-and-Bonus-Pay</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Baltimore-Police-Dept-OT-and-Bonus-Pay</guid>
         
         <category>Baltimore</category>
         
