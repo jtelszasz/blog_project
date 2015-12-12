@@ -5,9 +5,38 @@
     <description></description>
     <link>http://www.thetrainingset.com/</link>
     <atom:link href="http://www.thetrainingset.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Dec 2015 23:52:10 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Dec 2015 23:52:10 -0500</lastBuildDate>
+    <pubDate>Sat, 12 Dec 2015 09:53:57 -0500</pubDate>
+    <lastBuildDate>Sat, 12 Dec 2015 09:53:57 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Fresh Style</title>
+        <description>&lt;p&gt;I decided it was time to freshen up things around here.  My new look is a mashup of the &lt;a href=&quot;https://github.com/clayh53/tufte-jekyll&quot;&gt;Tufte&lt;/a&gt; and &lt;a href=&quot;https://github.com/rosario/kasper&quot;&gt;Kasper&lt;/a&gt; themes for Jekyll.  I’m a fan of &lt;a href=&quot;http://www.edwardtufte.com/tufte/&quot;&gt;Edward Tufte&lt;/a&gt;’s work and I think the layout gives more flexibility in presenting data and analysis.  It took quite a bit of time and tweaking and I’m sure I’ve broken some things but I’m happy with how it turned out.&lt;/p&gt;
+
+&lt;p&gt;Hope you all dig the new look!  Let me know what you think or if you found something broken with a &lt;a href=&quot;http://www.twitter.com/thetrainingset&quot;&gt;tweet&lt;/a&gt; or an &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#116;&amp;#104;&amp;#101;&amp;#116;&amp;#114;&amp;#097;&amp;#105;&amp;#110;&amp;#105;&amp;#110;&amp;#103;&amp;#115;&amp;#101;&amp;#116;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;email&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 12 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://www.thetrainingset.com/articles/15/New-Style</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/New-Style</guid>
+        
+        <category>The-Training-Set</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
     
       <item>
         <title>Baltimore Policing: Six Months After Freddie Gray Events</title>
@@ -508,133 +537,6 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
         <category>Baltimore</category>
         
         <category>civic-tech</category>
-        
-        <category>open-data</category>
-        
-        
-        <category>articles</category>
-        
-      </item>
-    
-      <item>
-        <title>Baltimore Police Department Overtime &amp; Bonuses</title>
-        <description>&lt;p&gt;As if the police haven’t been in the &lt;a href=&quot;https://twitter.com/search?q=%23blacklivesmatter&amp;amp;src=typd&quot;&gt;public eye&lt;/a&gt; enough lately, Baltimore Brew has been &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/26/police-overtime-declines-but-is-still-targeted-to-reach-record/&quot;&gt;beating the drum&lt;/a&gt; regarding police overtime budget.  &lt;!--more--&gt;  According to the Brew’s reporting, Mayor Stephanie Rawlings-Blake promised tax cuts for residents that would be paid for by incoming tax revenue from the casino.  The mayor &lt;a href=&quot;https://www.baltimorebrew.com/2015/04/13/its-now-official-sagging-casino-revenues-equal-no-property-tax-cut-this-year/&quot;&gt;recently announced&lt;/a&gt;, however, that these cuts would not come to fruition as planned, since revenues from the casino are &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/25/horseshoe-casino-will-pay-only-4-million-in-lease-revenues-this-year/&quot;&gt;nowhere near the levels predicted&lt;/a&gt;.  Meanwhile, police are able to rake in sweet, sweet overtime pay by providing a security detail at the casino.  We won’t be able to see the resulting change in overtime due to the casino yet since it opened in FY2015, but in the meantime it’s worth scrutinizing Baltimore police overtime and bonus closely given the broader discussion of cost-effectiveness in policing.&lt;/p&gt;
-
-&lt;p&gt;In fact, &lt;a href=&quot;http://articles.baltimoresun.com/2010-06-30/news/bs-md-ci-baltimore-overtime-20100602_1_overtime-earners-deputy-mayor-christopher-thomaskutty-councilwoman-belinda-conaway&quot;&gt;concerns about overtime pay predate&lt;/a&gt; the data we have through Open Baltimore, though older data might be available in &lt;a href=&quot;http://data.baltimoresun.com/salary_database/&quot;&gt;other forms&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To aid our investigation, &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; publishes annual salary and gross pay data for all of its employees.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div&gt;&lt;iframe width=&quot;90%&quot; title=&quot;Baltimore City Employee Salaries 2011&quot; height=&quot;425px&quot; src=&quot;https://data.baltimorecity.gov/w/ijfz-2v3c/ta62-x9wp?cur=94oSZGyyLCB&amp;amp;from=root&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;a href=&quot;https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-2011/ijfz-2v3c&quot; title=&quot;Baltimore City Employee Salaries 2011&quot; target=&quot;_blank&quot;&gt;Baltimore City Employee Salaries 2011&lt;/a&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;a href=&quot;http://www.socrata.com/&quot; target=&quot;_blank&quot;&gt;Powered by Socrata&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;salary--overtime-analysis&quot;&gt;Salary &amp;amp; Overtime Analysis&lt;/h2&gt;
-
-&lt;p&gt;I filtered the city salary data down to just the police department, and from there broke out a few different groups of police employees where we might be interested in changes in overtime pay.  The calculations I employ are as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Average Salary.&lt;/strong&gt; ($) The average salary for a group of employees.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Average Bonus.&lt;/strong&gt; ($) The average of the difference between gross pay and annual base salary (the average bonus &amp;amp; overtime payout) for a group of employees.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Average Bonus % of Salary.&lt;/strong&gt;  The average of the bonus/overtime divided by annual base salary for a group of employees.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Total Bonus Issued.&lt;/strong&gt; ($)  The total bonus and overtime paid to the group of employees.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Maximum Bonus in Group.&lt;/strong&gt; ($)  The maximum bonus/overtime paid in a group of employees.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Maximum Bonus % of Salary.&lt;/strong&gt;  The maximum ratio between the bonus/overtime paid and base salary for a group of employees.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Employee Count.&lt;/strong&gt;  The number of employees in the group being analyzed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Police officers are coded in the datasets as “Police Officer” or “Police Officer (EID).”  I’m not sure what “(EID)” stands for but they are certainly cops on the payroll.  Police officers in training are another possibility, but I am not including them in the list of actual officers for this analysis.&lt;/p&gt;
-
-&lt;h2 id=&quot;furloughs&quot;&gt;2011: Furloughs&lt;/h2&gt;
-
-&lt;p&gt;As so often happens to me when I’m plugging along on an analysis, I hit a snag, and have to backtrack to find out what’s going on.  More often than not, I retrace my steps and discover some strange artifact or issue in the city’s data.  This was the case here as well.&lt;/p&gt;
-
-&lt;p&gt;One of my starting assumptions was that I should filter out any officers whose gross pay was less than their annual salary.  Well, it turns out that this was a majority of the Baltimore Police Department in FY2011, so that’s a bad idea.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Half of the BPD made less than 95% of their reported annual salary in 2011.  What gives?  After a little digging, I found &lt;a href=&quot;http://articles.baltimoresun.com/2011-01-07/news/bs-md-police-pay-cuts-20110107_1_robert-f-cherry-police-officers-bob-sledgeski&quot;&gt;this article&lt;/a&gt; and I think I have an answer: furloughs.  No doubt that situation must have been rough, but based on the analysis below they’ve made up for it over the last couple years.  In fact, the results below show that officers themselves didn’t bear the brunt of the hit - others in the BPD did.  I’m happy to be wrong and invite any Baltimore city officials to slice this a different way and let me know why 2011 payouts were smaller than salaries, but it doesn’t seem like this is a data quality issue.&lt;/p&gt;
-
-&lt;p&gt;The following are some metrics for a few different slices of the BPD.&lt;/p&gt;
-
-&lt;h2 id=&quot;all-police&quot;&gt;All Police&lt;/h2&gt;
-
-&lt;p&gt;The furloughs in 2011 obviously stick out here, but what we don’t have is information on what overtime and bonuses were like before 2011 and the recession.&lt;/p&gt;
-
-&lt;p&gt;Generally though, this certainly sets the backdrop for concerns regarding overtime pay that may be occuring at the casino.  Overtime payout has swelled to $30 million for each of the last two years and that’s without the casino.  Will the total overtime paid increase beyond $30 million for FY2015?  Or will the overtime budget stay the same, with overtime duties getting shifted from one location or another to the casino?  Neither sounds like a good idea.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&quot;police-officers&quot;&gt;Police Officers&lt;/h2&gt;
-
-&lt;p&gt;What’s interesting here is that while the total bonus/overtime in 2011 was negative (furloughs) for all BPD, officers’ officers in general still made on average a $1,012 bonus, to the tune of more than $2 million for all officers.  In the next section, you’ll see that the &lt;strong&gt;rest of the department took a $3 million hit&lt;/strong&gt; on gross pay, resulting in the -$1 million total bonus/overtime in 2011 for the whole police department shown above.  It’s worth reminding ourselves here that police unions are a political force to be reckoned with.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&quot;other-police-department-not-officers&quot;&gt;Other Police Department (Not Officers)&lt;/h2&gt;
-
-&lt;p&gt;On average salaries for non-officers in the BPD are comparable to police officers.  But of course, they make nowhere near the overtime and bonus available to officers.  &lt;strong&gt;Compare the 19%-of-salary bonus in 2014 for police officers above to the 2%-of-salary bonus for non-officers in 2014.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&quot;top-20-bonus-earners&quot;&gt;Top 20 Bonus Earners&lt;/h2&gt;
-
-&lt;p&gt;Here’s what the top of the food chain looks like for the department.  Of course, these police employees didn’t have to worry during the recession - &lt;strong&gt;their average bonus when the department was suffering in 2011   was $52,827.  On average, the sizes of their bonuses were equal to their salary for fiscal years 2012 through 2014.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;http://www.thetrainingset.com/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&quot;future-work&quot;&gt;Future Work&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;The Horseshoe Casino.&lt;/strong&gt;  We’ll have to wait until the FY2015 data are released over at &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; in order to see what impact it has on bonuses/overtime.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Correlating bonus/overtime pay with crime/arrests.&lt;/strong&gt;  All else being equal, in a democracy our tax funds are supposed to go to the people’s priorities.  We should be having an open discussion about whether it is more important to fund overtime and bonus for incentivizing good policing or to hire more police and fund better training.  Neither option has an &lt;em&gt;a priori&lt;/em&gt; claim to efficacy, and we should be looking for empirical methods to show where to allocate funds.  We can try correlating crime and arrest data with these police salary data and see where we get.  Wearing my scientist/analyst/reporter hat, I’ll try to remain skeptical and neutral, but to be honest &lt;a href=&quot;http://www.thisamericanlife.org/radio-archives/episode/548/transcript&quot;&gt;my money is on better training.&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
-
-
-Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;br /&gt;
-
-Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;br /&gt;
-
-Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb&quot;&gt;here&lt;/a&gt;. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.&lt;br /&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-&lt;/p&gt;
-</description>
-        <pubDate>Wed, 22 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Baltimore-Police-Dept-OT-and-Bonus-Pay</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Baltimore-Police-Dept-OT-and-Bonus-Pay</guid>
-        
-        <category>Baltimore</category>
-        
-        <category>cities</category>
-        
-        <category>police</category>
-        
-        <category>budget</category>
         
         <category>open-data</category>
         
