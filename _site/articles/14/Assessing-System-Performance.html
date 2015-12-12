@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Assessing Demand-Side Storage System Performance</title>
+  <meta name="description" content="By varying parameters of the demand-side storage model we can determine the economic plausibility and benefits of home grid-tied batteries.">
+
+
+  <link rel="stylesheet" href="/css/tufte.css">	
+  
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="canonical" href="http://www.thetrainingset.com/articles/14/Assessing-System-Performance">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="http://www.thetrainingset.com/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>-->
+	
+		
+  	
+		
+		    
+		      <a href="/">The Training Set</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/my-elec-use/">My Electricity Use</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/tags/">Articles</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/the-work/">The Work</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/subscribe/">Subscribe</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Assessing Demand-Side Storage System Performance</h1>
+<p class="subtitle">November 14, 2014</p>
+
+
+<p>By varying parameters of the <a href="http://www.thetrainingset.com/articles/Intro-To-Storage-Model">demand-side storage model</a> we can determine the economic plausibility and benefits of home grid-tied batteries.  <!--more--></p>
+
+<p>While the actual logic and functions are in separate Python modules, I’m doing this analysis in an <a href="http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb">iPython notebook</a> that you can check out for more detail and thought process.</p>
+
+<p>I set up some of summary metrics I was interested in in the <a href="http://www.thetrainingset.com/articles/Storage-Model-Details">last post</a> .  One that I didn’t have on that list that is an important economic indicator is the simple payback period, which is the number of years it would take to break even on the initial investment based on the yearly savings.</p>
+
+<p><span>​<script type="math/tex">PBP=\frac{Initial\ Investment}{Annual\ Variable\ Cost\ Savings}</script></span></p>
+
+<p>The summary metrics I’ve calculated should indicate the benefits of having a home battery system to the consumer/household as well as the grid (system operator and grid).  Of course, these are going to be particular to the load profile I’m using (Green Button sample data), but another one-year hourly load profile could easily be supplanted to see how it would work out for other buildings.</p>
+
+<h2 id="summary-metrics-v-storage-capacity">Summary Metrics v. Storage Capacity</h2>
+
+<p>One question that can be asked of the model is how certain summary metrics vary with the total battery capacity.  For example, an increase in battery size would allow the building to purchase more of the cheaper electricity during off-peak hours increasing the annual savings, but the initial investment also increases.</p>
+
+<p>All of the other parameters are held constant, with battery and inverter efficiencies during charging and discharging all set to 0.85 (the “inverter_efficiency” and “battery_efficiency” below are function handles).  The charge rate estimate is assuming it take 8 hours to fully charge the battery.  I’ve estimated the cost of deep-discharge lead acid batteries as being about $166 per kilowatt-hour of storage (based on a quick Amazon.com search that dug up $200 for a 1.2 kWh battery).  The model currently isn’t sophisticated enough to vary the charge and discharge rates based on voltage and current as should be done, but this should suffice for a rough estimate.  For an initial estimate, I also have not factored in battery replacement to the payback period, though this should have a substantial effect and I’ll need to do this at some point.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+<span class="n">system_param</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'Inverter Cost'</span> <span class="p">:</span> <span class="mf">1500.</span><span class="p">,</span> <span class="c"># ballpark</span>
+    <span class="s">'Storage Cost'</span> <span class="p">:</span> <span class="mf">200.</span> <span class="o">/</span> <span class="mf">1.2</span><span class="p">,</span> <span class="c"># cost per kilowatt-hour based on link above</span>
+    <span class="s">'Storage Size'</span> <span class="p">:</span> <span class="n">bat_size</span><span class="p">,</span>  <span class="c"># storage size in kilowatt-hours</span>
+    <span class="s">'Max Charge Rate'</span> <span class="p">:</span> <span class="n">bat_size</span> <span class="o">/</span> <span class="mf">8.</span><span class="p">,</span>
+    <span class="s">'Max DOD'</span> <span class="p">:</span> <span class="n">max_dod</span><span class="p">,</span> <span class="c"># DOD</span>
+    <span class="s">'Bat Depleted'</span> <span class="p">:</span> <span class="n">max_dod</span> <span class="o">*</span> <span class="n">bat_size</span><span class="p">,</span>
+    <span class="s">'Inverter Efficiency'</span> <span class="p">:</span> <span class="n">inverter_efficiency</span><span class="p">,</span>
+    <span class="s">'Battery Efficiency'</span> <span class="p">:</span> <span class="n">battery_efficiency</span><span class="p">,</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+
+<p>In the <a href="http://nbviewer.ipython.org/github/jtelszasz/demandside_storage/blob/master/analysis.ipynb">analysis notebook</a> I create an array with all of the battery sizes, and loop through them each time setting the bat_size variable to the next size in the array.  Each time, the model creates the output over the entire year (all 8,760 hours) and then calculates the summary metrics.  The result is a dataframe of all the summary metrics indexed by summary size.</p>
+
+<div><figure class="fullwidth"><img src="/images/2014-11/metrics_snapshot_stor_cap.jpg" /><figcaption></figcaption></figure></div>
+
+<p>Now it’s easy to create some plots to illustrate how these metrics change with storage capacity.</p>
+
+<h3 id="cost-savings-and-payback-period">Cost Savings and Payback Period</h3>
+
+<p><label for="cost-savings" class="margin-toggle">⊕</label><input type="checkbox" id="cost-savings" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/images/2014-11/cost_savings_stor_cap.png" /><br /><strong>Annual cost savings</strong> for demand-side storage (home battery) system. <a href="/images/2014-11/cost_savings_stor_cap.png">Click here to enlarge</a>.</span>The expectation is that there are diminishing returns, since there is a limited number of peak hours energy demand that can be supplied by electricity purchased during off-peak hours, while of course the amount of battery storage we can purchase is unlimited.   Based on this plot, the most storage we should purchase is 15 kWh worth.  The percent savings calculated is with respect to the default static BGE residential electricity prices, in other words what this home would have paid over the course of the year in electricity supplied (not including fixed tariffs and charges).</p>
+
+<p><label for="PBP" class="margin-toggle">⊕</label><input type="checkbox" id="PBP" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/images/2014-11/PBP_stor_cap.png" /><br /><strong>Simple payback period</strong> for demand-side storage (home battery) system. <a href="/images/2014-11/PBP_stor_cap.png">Click here to enlarge</a>.</span>  In general, the payback periods are a bit longer than I thought they would be.  There’s a clear optimum solution at a storage capacity of 5 kWh with the payback period being about 14.5 years.  What’s really driving the cost effectiveness (I think) is the difference between the peak and off-peak cost of electricity.  A wider difference between these prices will make it more cost effective to purchase storage and electricity during off-peak hours.</p>
+
+<h3 id="grid-benefits-load-shaving">Grid Benefits (Load Shaving)</h3>
+
+<p>This pretty closely mirrors the cost savings, and understandably so since the costs are directly proportional to the amount of electricity being removed from peak-hours and purchased instead during off-peak hours.  <label for="PBP" class="margin-toggle">⊕</label><input type="checkbox" id="PBP" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/images/2014-11/peak_shaved_stor_cap.png" /><br /><strong>Peak load shaving</strong> for demand-side storage (home battery) system. <a href="/images/014-11/peak_shaved_stor_cap.png">Click here to enlarge</a>.</span> At 15 kWh of storage we’ve just about maxed out the amount of peak time kilowatt-hours we can shave, which is all off the electricity demand for this house occuring during peak hours.  This is about 1800 kWh for this house’s load profile.</p>
+
+<h3 id="efficiency">Efficiency</h3>
+
+<p>Since electricity purchased simultanesously with demand (not shifted using storage) doesn’t go through any other equipment, the system’s efficiency is effectively 100% since all the electricity purchased goes directly to the serve the demand.  However, electricity purchased during off-peak hours for use at a later time first goes through the inverter to become DC, then is stored in the battery (also lossy), and takes the opposite process on the way out.  That means that the quantity of kilowatt-hours purchased from the grid becomes higher as more electricity is bought and stored.  <label for="PBP" class="margin-toggle">⊕</label><input type="checkbox" id="PBP" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/images/2014-11/sys_eff_stor_cap.png" /><br /><strong>Total kWh purchased</strong> during year for demand-side storage (home battery) system. <a href="/images/2014-11/sys_eff_stor_cap.png">Click here to enlarge</a>.</span>For this reason, the “efficiency” (the total annual kWh demand divided by the total kWh purchased from the grid) drops as storage size increases.</p>
+
+<p>This is an important (albeit predictable) result since it means we’ve effectively increased the carbon footprint of the home, assuming the electricity mix is dominated by carbon-intensive power sources.  What such a system could allow for, however, is that intermittent renewable resources could more readily integrate with storage acting as a buffer between demand and intermittent supply.</p>
+
+
+
+
+    </article>
+    <span class="print-footer">Assessing Demand-Side Storage System Performance - November 14, 2014 - Justin Elszasz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:thetrainingset@gmail.com"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/thetrainingset"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/jtelszasz"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.linkedin.com/in/justinelszasz"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;JUSTIN ELSZASZ</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>
