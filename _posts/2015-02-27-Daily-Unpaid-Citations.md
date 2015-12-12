@@ -5,20 +5,22 @@ description: "Changes in the proportion of unpaid parking tickets over time."
 modified: 2015-02-27
 category: articles
 share: true
-tags: [Baltimore, cities, parking, transportation, police, civic-hacking]
+tags: [Baltimore, cities, transportation, open-data]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
   creditlink: http://www.fudgegraphics.com -->
 ---
 
-Unless this dataset is somehow <a href='{{ site.url }}/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/'>still screwed up</a>, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  
+Unless this dataset is somehow <a href='{{ site.url }}/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/'>still screwed up</a>, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  <!--more-->
 
-<center>
+{% maincolumn 'images/2015-02/Daily_Citations_Unpaid.png' '' %}
+
+<!-- <center>
 <figure>
-  <a href='{{ site.url }}/images/2015-02/Daily_Citations_Unpaid.png'><img src='{{ site.url }}/images/2015-02/Daily_Citations_Unpaid.png'></a>
+  <a href='{{ site.url }}/images/'><img src='{{ site.url }}/images/2015-02/Daily_Citations_Unpaid.png'></a>
 </figure>
-</center>
+</center> -->
 
 The plot above shows the perentage of tickets (daily) that remain unpaid over time.  The trend in 2014 makes sense: practically 100% of the tickets issued yesterday would be unpaid.  One would expect that the further back in time one looks, less tickets would have an outstanding balance.  This is certainly the case looking back as far as January 2014, and I've added a dashed line to continue the expected trend further backwards in time.
 
@@ -29,10 +31,15 @@ But what actually happens looking back further than January 2014 is quite differ
 3. **Parking ticket amnesty.** <a href='http://archive.baltimorecity.gov/portals/0/charter%20and%20Codes/code/Art%2031%20-%20Transit&Traff.pdf'> Article 31 Subtitle 36 of the Baltimore City Code</a> (§36-22 specifically) allows for the periodic offering of amnesty from penalties resulting from unpaid tickets.  The amnesty periods last 2 days.  This authority was established in 2003 at which time the first amnesty was offered.  The provisions also establish a ten-year moratorium on amnesties from the time of the first one, so the next one that could have been offered was 2013.  A parking ticket amnesty would certainly reduce the proportion of citations with an outstanding balance and could help explain the trend we see in 2013.  But another amnesty has not yet been offered as of February 2015, so this can't explain the change in proportion of unpaid tickets we're seeing.  Moreover, the trend we see in 2013 is across the entire year rather than a dramatic drop over a 2-day period that would result from such an amnesty period.
 4. **Change in sampling (behavior of those sampled).**  Having eliminated options 2 and 3 and assuming the data are clean and reliable, the last option I came up with is that the rapid increase of parking citations in certain locations drastically biased the sample.  It would appear that the strategy of targeting specific locations as I've shown in <a href=''>previous posts</a> has paid off, since the total fines issued has shot up while the proportion of tickets remaining unpaid has significantly dropped.  This is an indication of a much more effective parking policing policy (revenue generation) by the city, although it likely causes a lot of frustration for those living and parking in the targeted locations.
 
----
-*Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore.</a>*
+<br>
 
-*Analysis conducted using <a href='http://www.python.org'>Python</a> and <a href='http://pandas.pydata.org'>Pandas</a>*
+---
+
+<p style="width: 100%; font-style: italic;">
+
+Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore.</a><br>
+
+Analysis conducted using <a href='http://www.python.org'>Python</a> and <a href='http://pandas.pydata.org'>Pandas</a><br>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

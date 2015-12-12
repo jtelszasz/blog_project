@@ -5,30 +5,36 @@ description: "Baltimore parking citation data shows more coding options needed."
 modified: 2015-03-12
 category: articles
 share: true
-tags: [Baltimore, cities, parking, transportation, civic-hacking, data-journalism]
+tags: [Baltimore, cities, transportation, open-data]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
   creditlink: http://www.fudgegraphics.com -->
 ---
 
-Here's a suggestion directed at the Department of Transportation for improving their citation system.  
+Here's a suggestion directed at the Department of Transportation for improving their citation system.  <!--more-->
 
 I've alluded to this in previous posts, but this should make it clear as day.  Looking at all citations since February of 2013, the category "All Other Parking Meter Violations" trumps all of the other citation types by a wide margin.  My guess is that, given its prominence, these are citations for time expiring on a parking meter.  But why code it as "all other?"  An "other" option should be a last resort, when all other codes don't apply.  If parking enforcers are having to use this code so extensively, it suggests that they need more nuanced options for coding parking infringements.  This is essentially information about parking in the city that's up for grabs and we're leaving it on the table.
 
-<center>
-<figure>
+{% fullwidth 'images/2015-03/Ticket_Counts_by_Citation_Type.png' '' %}
+
+<br>
+
+<!-- <figure>
   <a href='{{ site.url }}/images/2015-03/Ticket_Counts_by_Citation_Type.png'><img src='{{ site.url }}/images/2015-03/Ticket_Counts_by_Citation_Type.png'></a>
   <figcaption>Total citation counts in Baltimore by category.</figcaption>
 </figure>
-</center>
+ -->
 
 ---
-*Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore.</a>*
 
-*Analysis conducted using <a href='http://www.python.org'>Python</a> and <a href='http://pandas.pydata.org'>Pandas</a>*
+<p style="width: 100%; font-style: italic;">
 
-*Full analysis IPython notebook can be found <a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb'>here</a>.*
+Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore.</a><br>
+
+Analysis conducted using <a href='http://www.python.org'>Python</a> and <a href='http://pandas.pydata.org'>Pandas</a><br>
+
+Full analysis IPython notebook can be found <a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb'>here</a>.<br>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

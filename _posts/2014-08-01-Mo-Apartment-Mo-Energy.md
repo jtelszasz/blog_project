@@ -4,21 +4,15 @@ title: Mo Apartment, Mo Problems
 description: "Average daily consumption for the new and old apartments."
 modified: 2014-08-01
 category: articles
-tags: [BGE, smart-meters, energy, data, electricity, behavior, apartments]
-<!-- image:
-  feature: design/ny_concrete_10.JPG
-  credit: Fudgegraphics
-  creditlink: http://www.fudgegraphics.com -->
+tags: [energy, electricity, buildings]
 ---
 
-Here's a quick comparison of average weekdays and weekends in the new and old apartments.
+Here's a quick comparison of average weekdays and weekends in the new and old apartments.<!--more-->
 
 It would appear that we've been using more at the new place, but take a look at the daily totals. 
 
-<figure>
-  <a href="{{ site.url }}/images/2014-08/Average_Days_New_and_Old_Apts.png"><img src="{{ site.url }}/images/2014-08/Average_Days_New_and_Old_Apts.png"></a>
-  <figcaption>Average hourly electric usage for new and old apartments, March and June.</figcaption>
-</figure>
+{% maincolumn 'images/2014-08/Average_Days_New_and_Old_Apts.png' 'Average hourly electric usage for new and old apartments, March and June.' %}
+
 
 Of course we don't have apples-to-apples comparisons here.  Of course this is partly due to weather.  The old apartment is shown for March, where we left the thermostat on all day at 65 degrees F so Willow The Cat wouldn't freeze to death.  At the new apartment, we're shutting off the thermostat entirely during the day, and at night kicking it on to 75 degrees F.  So for weekdays, we're consuming much less during the day but evenings are much higher.  
 
@@ -26,7 +20,7 @@ However, the <a href="{{ site.url }}/articles/Guess-What-Time-Justin-Wakes-Up">6
 
 To do these average day plots I set up a quick function that uses groupby, that way I can reuse this for any time period.
 
-{% highlight python %}
+``` python
 # Define a function to calculate average weekday and weekend
 
 def avg_day(df,start_date,end_date):
@@ -46,7 +40,7 @@ def avg_day(df,start_date,end_date):
     average_weekday = average_day[False]
 
     return average_weekday, average_weekend
-{% endhighlight %}
+```
 
 
 

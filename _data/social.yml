@@ -1,0 +1,12 @@
+- link: //www.twitter.com/thetrainingset
+  icon: icon-twitter
+#- link: //plus.google.com/+googlePlusName 
+#  icon: icon-googleplus
+- link: //github.com/jtelszasz
+  icon: icon-github
+#- link: //www.flickr.com/photos/FlickrUserID 
+#  icon: icon-flickr
+- link: /feed 
+  icon: icon-feed
+- link: //www.linkedin.com/in/justinelszasz 
+  icon: icon-feed

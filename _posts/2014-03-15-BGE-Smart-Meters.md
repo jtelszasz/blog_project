@@ -4,14 +4,10 @@ title: BGE Smart Meters
 description: "BGE roll out of smart meters in Baltimore metro area."
 modified: 2014-12-17
 category: articles
-tags: [BGE, smart-meters, energy, data, electricity]
-<!-- image:
-  feature: design/ny_concrete_10.JPG
-  credit: Fudgegraphics
-  creditlink: http://www.fudgegraphics.com -->
+tags: [energy, electricity]
 ---
 
-Citizens of Baltimore and captive customers of Baltimore Gas & Electric! 
+Citizens of Baltimore and captive customers of Baltimore Gas & Electric! <!--more-->
 
 In the words of Gabriel, I bring you good tidings of great joy and data and stuff. For the last year or so BGE has been rolling out smart meters to their electricity customers. Our neighborhood was <a href="http://www.bge.com/smartenergy/smartgrid/smartmeters/Pages/Installation-Schedule.aspx">slated for the second half of last year</a>, and lo, our data hath appeared unto us.
 
@@ -28,40 +24,22 @@ The BGE website does slightly more than just show you historical use, with the m
 
 In keeping with the data policy exclusion for aggregate data, they use an average of a hundred or so customers that share your characteristics, all within a two or three mile radius of your house (ours average 0.4 miles from us). The initial comparison with which I was presented was way off base because our heating comes from electric resistance, but once I answered a few questions on the website about what appliances we have and the like, the comparison made much more sense (I presume we're being compared against neighbors who all have electric resistance heating).
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-03/BGE-dashboard-01.png"><img src="{{ site.url }}/images/2014-03/BGE-dashboard-01.png"></a>
-  <figcaption>February comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient. (source: www.bge.com)</figcaption>
-</figure>
-</center>
+{% maincolumn 'images/2014-03/BGE-dashboard-01.png' 'February comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient. (source: www.bge.com)' %}
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-03/BGE-dashboard-02.png"><img src="{{ site.url }}/images/2014-03/BGE-dashboard-02.png"></a>
-  <figcaption>Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient (based on billing data, since smart meters weren't widespread for the shown timeframe). (source: www.bge.com)</figcaption>
-</figure>
-</center>
+{% maincolumn 'images/2014-03/BGE-dashboard-02.png' "Monthly comparison of our electricity use to an average of a hundred or so comparable neighbors and the top 20% most efficient (based on billing data, since smart meters weren't widespread for the shown timeframe). (source: www.bge.com)" %}
+
 
 Of course, the comparisons of your monthly energy use could have been done with the monthly billing they would have anyways, without the use of smart meters. Using the smart meter data, it looks like soon we'll be able to compare hour-to-hour use (lending what I would presume will be a more real-time competition feel to things) but this isn't operational yet. They are, however, displaying the hourly data along with the outdoor dry-bulb temperature for reference.
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-03/BGE-dashboard-04.png"><img src="{{ site.url }}/images/2014-03/BGE-dashboard-04.png"></a>
-  <figcaption>Hourly electricity consumption (kilowatt-hours) and outdoor temperature (degrees Fahrenheit) for March 11, 2014. (source: www.bge.com)</figcaption>
-</figure>
-</center>
+{% maincolumn 'images/2014-03/BGE-dashboard-04.png' 'Hourly electricity consumption (kilowatt-hours) and outdoor temperature (degrees Fahrenheit) for March 11, 2014. (source: www.bge.com)' %}
+
 My roommate was home this day. The drop in consumption in the afternoon could be from her leaving the house and shutting off lights and her computer, the weather, or both.  Later I'll be looking into our apartment's response to the weather so it might become a bit more apparent then.
 
 ### Disaggregation and Savings Suggestions
 
 Another feature they provide is an estimated breakdown of your electricity consumption into categories (heating, lighting, etc.) Currently, these would have to be static estimates based solely on the answers I provided about our appliances and the like. Farther down the road, the hourly data will have a larger role to play here. Electricity consumption (and energy use in general) is largely a function of two things: the weather and human behavior, both of which can change drastically hour to hour. They'll likely need about a year's worth of data to be able to tease out the portion of energy use that is your behavior and the portion that is your building's response to weather. This is because whatever algorithm they are using to disaggregate weather from behavior will need to have seen your electricity consumption during all climates.
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-03/BGE-dashboard-06.png"><img src="{{ site.url }}/images/2014-03/BGE-dashboard-06.png"></a>
-  <figcaption>Estimated breakdown of electricity consumption based on customer and building characteristics. Also shown, suggestions for reducing usage. (source: www.bge.com)</figcaption>
-</figure>
-</center>
+{% maincolumn 'images/2014-03/BGE-dashboard-06.png' 'Estimated breakdown of electricity consumption based on customer and building characteristics. Also shown, suggestions for reducing usage. (source: www.bge.com)' %}
 
 The disaggregation lends itself to targeted recommendations for how to reduce your electricity consumption. An interesting feature they've implemented for more social context is a counter of how many customers have indicated that they would try a particular recommendation (eg. "13,859 people will turn off their lights when not needed; 1,654 people will hang dry their laundry," etc.) In the same way that "like"-ing a post on Facebook along with many others is in some way a validation that one likes the "right" things, I can see this feature serving to validate one's choices about their energy consumption.
 

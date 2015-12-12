@@ -1,91 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">The Training Set.</title>
-<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2015-11-12T13:17:54-05:00</updated>
-<id>http://localhost:4000/</id>
-<author>
-  <name>Justin Elszasz</name>
-  <uri>http://localhost:4000/</uri>
-  <email>thetrainingset@gmail.com</email>
-</author>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Baltimore Policing, Six Months After F.G.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015" />
-  <id>http://localhost:4000/articles/Policing-In-Baltimore-In-2015</id>
-  <updated>2015-11-12T00:00:00-00:00</updated>
-  <published>2015-11-12T00:00:00-05:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;We’re about six months out now from the Freddie Gray incident and subsequent unrest in Baltimore.  There have been a few dominant narratives about crime in Baltimore since, namely that we’ve had almost &lt;a href=&quot;http://data.baltimoresun.com/bing-maps/homicides/index.php?show_results=UPDATE+MAP&amp;amp;range=2015&amp;amp;district=all&amp;amp;zipcode=All&amp;amp;cause=all&amp;amp;age=all&amp;amp;gender=all&amp;amp;race=all&amp;amp;article=all&quot;&gt;300 homicides&lt;/a&gt;, that &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/bs-md-ci-comstat-meeting-20150616-story.html&quot;&gt;police stopped doing their jobs after the protests&lt;/a&gt;, and that enough prescription drugs had flooded the streets to “&lt;a href=&quot;http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html&quot;&gt;keep Baltimore high for a year&lt;/a&gt;.”  &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Training Set</title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 11 Dec 2015 22:56:04 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Dec 2015 22:56:04 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Baltimore Policing: Six Months After Freddie Gray Events</title>
+        <description>&lt;p&gt;We’re about six months out now from the Freddie Gray incident and subsequent unrest in Baltimore.  There have been a few dominant narratives about crime in Baltimore since, namely that we’ve had almost &lt;a href=&quot;http://data.baltimoresun.com/bing-maps/homicides/index.php?show_results=UPDATE+MAP&amp;amp;range=2015&amp;amp;district=all&amp;amp;zipcode=All&amp;amp;cause=all&amp;amp;age=all&amp;amp;gender=all&amp;amp;race=all&amp;amp;article=all&quot;&gt;300 homicides&lt;/a&gt;, that &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/bs-md-ci-comstat-meeting-20150616-story.html&quot;&gt;police stopped doing their jobs after the protests&lt;/a&gt;, and that enough prescription drugs had flooded the streets to “&lt;a href=&quot;http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html&quot;&gt;keep Baltimore high for a year&lt;/a&gt;.” &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;So what has actually gone on in Baltimore in the weeks and months since the spring of 2015?  I think there are a couple of important storylines in the data.&lt;/p&gt;
 
-&lt;h2 id=&quot;precipitous-drop-in-police-productivity---on-track-for-10000-less-arrests-this-year-than-last&quot;&gt;Precipitous drop in police productivity - on track for 10,000 less arrests this year than last.&lt;/h2&gt;
+&lt;h3 id=&quot;precipitous-drop-in-police-productivity---on-track-for-10000-less-arrests-this-year-than-last&quot;&gt;Precipitous drop in police productivity - on track for 10,000 less arrests this year than last.&lt;/h3&gt;
 
-&lt;p&gt;We’re on pace to record 10,000 less arrests this year compared to last.  Total arrests for 2013 and 2014 were both on the order of 36,000 and this year, looking at total records through September, it’s looking like it will be more like 26,000.  (The average daily arrests for January through September is extrapolated through the rest of the year.)  There’s a substantial downtick in arrests in the last quarter of the year for both 2013 and 2014 though, so the 26,000 number could in fact be high.&lt;/p&gt;
+&lt;p&gt;We’re on pace to record 10,000 less arrests this year compared to last.&lt;/p&gt;
 
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-11/Total_Monthly_Arrests.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Total_Monthly_Arrests.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Monthly arrests in Baltimore for 2013, 2014, and 2015.  Click image to enlarge.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
+&lt;figure&gt;&lt;figcaption&gt;Monthly arrests in Baltimore for 2013, 2014, and 2015.&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-11/Total_Monthly_Arrests.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;Total arrests for 2013 and 2014 were both on the order of 36,000 and this year, looking at total records through September, it’s looking like it will be more like 26,000.  (The average daily arrests for January through September is extrapolated through the rest of the year.)  There’s a substantial downtick in arrests in the last quarter of the year for both 2013 and 2014 though, so the 26,000 number could in fact be high.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Cumulative arrests in Baltimore for 2013, 2014, and 2015.&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-11/Total_Arrests_Cumsum.png&quot; /&gt;&lt;/figure&gt;
 
 &lt;p&gt;This kind of output isn’t the result of a drastic change in the size of the police force either.  The number of officers for 2013, 2014, and 2015 are 2,316, 2,278, and 2,224 respectively, resulting in average annual arrests per officer going from just over 17, to just over 16, &lt;em&gt;down to 12 arrests per officer this year&lt;/em&gt;.  This means there had to have been a shift in policing tactics this year.&lt;/p&gt;
 
-&lt;h2 id=&quot;drug-related-arrests-have-continued-the-same-downward-trend-as-preceded-freddie-gray&quot;&gt;Drug-related arrests have continued the same downward trend as preceded Freddie Gray.&lt;/h2&gt;
+&lt;!--
+&lt;center&gt;
+&lt;figure&gt;
+  &lt;a href=&#39;/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;img src=&#39;/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Cumulative arrests in Baltimore for 2013, 2014, and 2015.  Click image to enlarge.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+--&gt;
+
+&lt;h3 id=&quot;drug-related-arrests-have-continued-the-same-downward-trend-as-preceded-freddie-gray&quot;&gt;Drug-related arrests have continued the same downward trend as preceded Freddie Gray.&lt;/h3&gt;
 
 &lt;p&gt;Former Commissioner Batts also claimed that during the unrest, enough prescription drugs from pharmacies had been stolen to “&lt;a href=&quot;http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html&quot;&gt;keep Baltimore high for a year&lt;/a&gt;.”  If that were the case, I’d expect our police force to up their game and target known drug havens, resulting in more arrests.  That hasn’t happened, though.  In fact, the proportion of controlled dangerous substance charges as a proportion of total arrests has actually continued the same downward trend from the previous two years.&lt;/p&gt;
 
+&lt;figure&gt;&lt;figcaption&gt;Percent weekly arrests that are CDS-related, Baltimore in 2015.&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-11/Percent_Weekly_CDS.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;!--
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-11/Weekly_CDS_Arrests.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Weekly_CDS_Arrests.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Weekly arrests in Baltimore for 2015.  Click image to enlarge.&lt;/figcaption&gt;
+  &lt;a href=&#39;/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;img src=&#39;/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Percent weekly arrests that are CDS-related, Baltimore in 2015.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
+--&gt;
 
-&lt;h2 id=&quot;during-the-week-following-the-riots-baltimore-police-focused-entirely-on-curfew-violations&quot;&gt;During the week following the “riots,” Baltimore Police focused &lt;em&gt;entirely&lt;/em&gt; on curfew violations.&lt;/h2&gt;
+&lt;h3 id=&quot;baltimore-police-focused-entirely-on-curfew-violations-during-the-week-following-the-riots&quot;&gt;Baltimore Police focused &lt;em&gt;entirely&lt;/em&gt; on curfew violations during the week following the riots.&lt;/h3&gt;
 
 &lt;p&gt;The total weekly arrests dropped dramatically in the weeks following the Freddie Gray unrest.  The head of the FOP said that cops were &lt;a href=&quot;http://baltimore.cbslocal.com/2015/06/02/commissioner-batts-stolen-prescription-drugs-partly-to-blame-for-surge-in-violence/&quot;&gt;“more hesitant” but that there was not a “slowdown”&lt;/a&gt; (a claim Former Commissioner Batts &lt;a href=&quot;http://www.thedailybeast.com/cheats/2015/09/03/ex-baltimore-top-cop-admits-to-slowdown.html&quot;&gt;later reversed&lt;/a&gt;).  This always sounded to me like a contradiction in terms: if someone is more hesitant to do something, they are less likely to do it.  We now know there was a slowdown, but it didn’t come until after officers were charged.  What were they up to prior to that?&lt;/p&gt;
 
-&lt;center&gt;
+&lt;figure&gt;&lt;figcaption&gt;Top 5 charges before and after Monday, April 27 unrest.&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-11/Top5_Arrest_Counts.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;!-- &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&#39;/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;img src=&#39;/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 5 charges before and after Monday, April 27 unrest.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
+&lt;/center&gt; --&gt;
 
 &lt;p&gt;In the week immediately following the &lt;a href=&quot;http://www.motherjones.com/politics/2015/04/how-baltimore-riots-began-mondawmin-purge&quot;&gt;police-induced rioting on Monday, April 27&lt;/a&gt;, cops were entirely focused on curfew violations.  It wasn’t until after that week that we saw the drop in total arrests.&lt;/p&gt;
 
-&lt;h2 id=&quot;besides-homicides-first-degree-assaults-and-gun-related-offenses-have-relatedly-increased&quot;&gt;Besides homicides, first degree assaults and gun-related offenses have relatedly increased.&lt;/h2&gt;
+&lt;h3 id=&quot;besides-homicides-first-degree-assaults-and-gun-related-offenses-have-relatedly-increased&quot;&gt;Besides homicides, first degree assaults and gun-related offenses have relatedly increased.&lt;/h3&gt;
 
 &lt;p&gt;Much has been made of the increase in violence since the summer.  Indeed first degree assaults and gun-related offenses both increased over the summer and remain elevated compared to earlier in the year.&lt;/p&gt;
 
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-11/Percent_Weekly_Guns.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-11/Percent_Weekly_Guns.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Percent of weekly arrests that are gun-related.  Click image to enlarge.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
+&lt;figure&gt;&lt;figcaption&gt;Percent of weekly arrests that are gun-related.&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-11/Percent_Weekly_Guns.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;All data, including BPD arrests and city employee payrolls, obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
 
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+All data, including BPD arrests and city employee payrolls, obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;br /&gt;
+
+Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;br /&gt;
+
+Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime/&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
+
+&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -98,29 +97,29 @@
 
 &lt;/script&gt;
 
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Policing-In-Baltimore-In-2015&quot;&gt;Baltimore Policing, Six Months After F.G.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on November 12, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[What I'm Up To]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/What-Im-Up-To" />
-  <id>http://localhost:4000/articles/What-Im-Up-To</id>
-  <updated>2015-07-14T00:00:00-00:00</updated>
-  <published>2015-07-14T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Just a quick note to highlight some recent publicity.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Nov 2015 00:00:00 -0500</pubDate>
+        <link>/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html</link>
+        <guid isPermaLink="true">/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>crime</category>
+        
+        <category>police</category>
+        
+        <category>open-data</category>
+        
+        <category>FreddieGray</category>
+        
+        
+        <category>open data</category>
+        
+      </item>
+    
+      <item>
+        <title>What I&#39;m Up To</title>
+        <description>&lt;p&gt;Just a quick note to highlight some recent publicity.&lt;/p&gt;
 
 &lt;p&gt;In June, Technical.ly was kind enough to again shine a light on some of my analysis, this time &lt;a href=&quot;http://technical.ly/baltimore/2015/06/04/baltimore-blight-maps-ouazad-elszasz/&quot;&gt;on vacant buildings and lots in Baltimore&lt;/a&gt;.  &lt;a href=&quot;http://plot.ly&quot;&gt;Plot.ly&lt;/a&gt; also &lt;a href=&quot;https://plot.ly/ipython-notebooks/baltimore-vital-signs/&quot;&gt;used my iPython notebook&lt;/a&gt; for my &lt;a href=&quot;http://bniajfi.org/&quot;&gt;Baltimore Vital Signs&lt;/a&gt; analysis as an example of how to use the tool.&lt;/p&gt;
 
@@ -128,7 +127,7 @@
 
 &lt;p&gt;&lt;strong&gt;Coming up July 28&lt;/strong&gt;, I’ll be at the &lt;a href=&quot;http://www.meetup.com/Transportation-Techies/events/222183536/&quot;&gt;DC Transportation Techies meetup&lt;/a&gt; which is making a cameo in Baltimore at the Hyatt Regency.&lt;/p&gt;
 
-&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;http://localhost:4000/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -141,55 +140,42 @@
 
 &lt;/script&gt;
 
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/What-Im-Up-To&quot;&gt;What I&#39;m Up To&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on July 14, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Arrests in Baltimore Drop in May]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May" />
-  <id>http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May</id>
-  <updated>2015-06-12T00:00:00-00:00</updated>
-  <published>2015-06-12T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;There’s been quite a bit of discussion about whether or not protests regarding police brutality have made it less likely that police are willing to do the hard work necessary to enforce the law and fight crime.  &lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Jul 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/07/14/What-Im-Up-To.html</link>
+        <guid isPermaLink="true">/articles/2015/07/14/What-Im-Up-To.html</guid>
+        
+        <category>open-data</category>
+        
+        <category>transportation</category>
+        
+        <category>civic-tech</category>
+        
+        <category>apps</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Arrests in Baltimore Drop in May</title>
+        <description>&lt;p&gt;There’s been quite a bit of discussion about whether or not protests regarding police brutality have made it less likely that police are willing to do the hard work necessary to enforce the law and fight crime.  &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;No matter which camp you’re in, it’s clear (at least as far as the published data are concerned) that &lt;a href=&quot;http://http://www.nytimes.com/2015/06/13/us/after-freddie-gray-death-west-baltimores-police-presence-drops-and-murders-soar.html?smid=tw-share&amp;amp;_r=0&quot;&gt;arrests have taken a dive in Baltimore&lt;/a&gt;.  Police Commissioner Batts can dodge or deflect all he wants, but as has been reported, arrests have dropped and the city data corroborate it.  Total arrests in the &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; data for April 2015 were 2,438 while in May there were 1,449, a drop of about 40%.&lt;/p&gt;
 
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-06/baltimore_daily_arrest_count_around_FG.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-06/baltimore_daily_arrest_count_around_FG.png&quot; width=&quot;120%&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Daily arrests in Baltimore for April and May 2015.  Click image to enlarge.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;/center&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Weekly arrests in Baltimore for 2015.  Click image to enlarge.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
+&lt;div&gt;&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/images/2015-06/baltimore_daily_arrest_count_around_FG.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
 
 &lt;p&gt;Having the granular arrest data for Baltimore we can also take a look at whether or not the decline in arrests was more pronounced in particular areas (like West Baltimore, as the NY Times article linked above describes).  At first glance a lot (around 45%) of arrest records are not geocoded with a lat-long pair and without knowing the reason for this exclusion it’s a safer assumption that there is some bias in the data available.  Stay tuned.&lt;/p&gt;
 
+&lt;div&gt;&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime/blob/master/post_freddiegray_crime.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime/blob/master/post_freddiegray_crime.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -202,48 +188,55 @@
 
 &lt;/script&gt;
 
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May&quot;&gt;Arrests in Baltimore Drop in May&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on June 12, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[B'More Schools Surrounded by Blight and Danger]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" />
-  <id>http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools</id>
-  <updated>2015-06-02T00:00:00-00:00</updated>
-  <published>2015-06-02T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Many small and midsize American cities have experienced decades of &lt;a href=&quot;http://en.wikipedia.org/wiki/Shrinking_cities_in_the_United_States&quot;&gt;population shrinkage&lt;/a&gt;, but as you can imagine, it’s not so easy to shrink the physical footprint of a city.  Compound this with the housing bubble burst a few years ago and significant wealth inequality and it’s no surprise that so many cities are wrestling with blight and abandonment.  Even though &lt;a href=&quot;http://articles.baltimoresun.com/2011-12-06/news/bs-md-ci-srb-looks-ahead-20111202_1_mayor-stephanie-rawlings-blake-property-tax-rate-half-century-of-population-decline&quot;&gt;SRB wants to bring in 10,000 new families&lt;/a&gt;, there’s little chance the vacant property issue in Baltimore is going away anytime soon.  &lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Jun 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/06/12/Arrests-In-Baltimore-Drop-In-May.html</link>
+        <guid isPermaLink="true">/articles/2015/06/12/Arrests-In-Baltimore-Drop-In-May.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>open-data</category>
+        
+        <category>police</category>
+        
+        <category>FreddieGray</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>B&#39;More Schools Surrounded by Blight and Danger</title>
+        <description>&lt;p&gt;Many small and midsize American cities have experienced decades of &lt;a href=&quot;http://en.wikipedia.org/wiki/Shrinking_cities_in_the_United_States&quot;&gt;population shrinkage&lt;/a&gt;, but as you can imagine, it’s not so easy to shrink the physical footprint of a city.   Compound this with the housing bubble burst a few years ago and significant wealth inequality and it’s no surprise that so many cities are wrestling with blight and abandonment.  Even though &lt;a href=&quot;http://articles.baltimoresun.com/2011-12-06/news/bs-md-ci-srb-looks-ahead-20111202_1_mayor-stephanie-rawlings-blake-property-tax-rate-half-century-of-population-decline&quot;&gt;SRB wants to bring in 10,000 new families&lt;/a&gt;, there’s little chance the vacant property issue in Baltimore is going away anytime soon.&lt;/p&gt;
 
 &lt;p&gt;In addition to the safety hazard neglected structures can pose, vacant lots and buildings are magnets for &lt;a href=&quot;http://articles.chicagotribune.com/1992-02-10/news/9201130233_1_vacant-buildings-abandoned-demolishes&quot;&gt;serious&lt;/a&gt; &lt;a href=&quot;http://articles.baltimoresun.com/2014-08-07/news/bs-crime-vacants-20140806_1_property-crime-serious-crime-violent-crime&quot;&gt;crime&lt;/a&gt;, including &lt;em&gt;gang activity, drugs, murder, assault, and rape&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.  &lt;/p&gt;
+&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.&lt;/p&gt;
 
-&lt;p&gt;But context is everything, and the story these data tells us about what it’s like to be a school-aged kid in Baltimore is harrowing. &lt;strong&gt;The analysis suggests that about 68% of all vacant buildings in Baltimore are within a quarter mile of a city school, while about 27% of all vacant parcel area is within the same distance.&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;But context is everything, and the story these data tells us about what it’s like to be a school-aged kid in Baltimore is harrowing. &lt;strong&gt;The analysis suggests that about 68% of all vacant buildings in Baltimore are within a quarter mile of a city school, while about 27% of all vacant parcel area is within the same distance.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Below you’ll see just how rampant this issue is for children in Baltimore.  The map shows a quarter-mile radius around each city school and the vacant parcels (blue) and vacant buildings (orange) within those buffers (data from &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt;).&lt;/p&gt;
 
+&lt;p style=&quot;width:90%;&quot;&gt;  
 &lt;iframe width=&quot;100%&quot; height=&quot;520&quot; frameborder=&quot;0&quot; src=&quot;https://jtelszasz.cartodb.com/viz/8d52d710-4ffc-11e5-b7d9-0e018d66dc29/embed_map&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; oallowfullscreen=&quot;&quot; msallowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;The school with the most vacant buildings within a quarter mile is an &lt;strong&gt;elementary&lt;/strong&gt; school - Roots and Branches School - with a whopping &lt;strong&gt;722 vacant buildings surrounding it&lt;/strong&gt;. Unfortunately it shouldn’t come as a surprise that it’s in West Baltimore, just a few blocks south of where Freddie Gray lived.&lt;/p&gt;
 
 &lt;p&gt;Here are the same data without the geospatial information and plotted for comparison and trends.&lt;/p&gt;
 
-&lt;div&gt;
-    &lt;a href=&quot;https://plot.ly/~jtelszasz/261/&quot; target=&quot;_blank&quot; title=&quot;Baltimore City Schools Surrounded by Blight&quot; style=&quot;display: block; text-align: center;&quot;&gt;&lt;img src=&quot;https://plot.ly/~jtelszasz/261.png&quot; alt=&quot;Baltimore City Schools Surrounded by Blight&quot; style=&quot;max-width: 100%;width: 500px;&quot; width=&quot;100%&quot; onerror=&quot;this.onerror=null;this.src=&#39;https://plot.ly/404.png&#39;;&quot; /&gt;&lt;/a&gt;
-    &lt;script data-plotly=&quot;jtelszasz:261&quot; src=&quot;https://plot.ly/embed.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
+&lt;!-- &lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;img src=&#39;https://plot.ly/~jtelszasz/261/&#39;/&gt;&lt;/figure&gt;   --&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;50%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;https://plot.ly/~jtelszasz/261.embed&quot;&gt;&lt;/iframe&gt;
+&lt;!-- &lt;div&gt;
+    &lt;a href=&quot;https://plot.ly/~jtelszasz/261/&quot; target=&quot;_blank&quot; title=&quot;Baltimore City Schools Surrounded by Blight&quot; style=&quot;display: block; text-align: left;&quot;&gt;&lt;img src=&quot;https://plot.ly/~jtelszasz/261.png&quot; alt=&quot;Baltimore City Schools Surrounded by Blight&quot; width=&quot;50%&quot; onerror=&quot;this.onerror=null;this.src=&#39;https://plot.ly/404.png&#39;;&quot; /&gt;&lt;/a&gt;
+    &lt;script data-plotly=&quot;jtelszasz:261&quot; src=&quot;https://plot.ly/embed.js&quot; async&gt;&lt;/script&gt;
+&lt;/div&gt; --&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;an-opportunity&quot;&gt;An opportunity?&lt;/h2&gt;
 
@@ -264,12 +257,19 @@
   &lt;li&gt;Invite the students to devise their own plans should they be given a plot of land or building.&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt; and the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;, &lt;a href=&quot;http://www.qgis.com&quot;&gt;QGIS&lt;/a&gt;, and &lt;a href=&quot;http://www.cartodb.com&quot;&gt;CartoDB&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
 
-&lt;p&gt;&lt;em&gt;Analysis files including any iPython notebooks can be found on &lt;a href=&quot;https://github.com/jtelszasz/baltimore-schools-blight&quot;&gt;Github&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt; and the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.&lt;/a&gt;&lt;br /&gt;
+
+Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;, &lt;a href=&quot;http://www.qgis.com&quot;&gt;QGIS&lt;/a&gt;, and &lt;a href=&quot;http://www.cartodb.com&quot;&gt;CartoDB&lt;/a&gt;.&lt;br /&gt;
+
+Analysis files including any iPython notebooks can be found on &lt;a href=&quot;https://github.com/jtelszasz/baltimore-schools-blight&quot;&gt;Github&lt;/a&gt;.&lt;br /&gt;
+
+&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -282,33 +282,33 @@
 
 &lt;/script&gt;
 
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools&quot;&gt;B&#39;More Schools Surrounded by Blight and Danger&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on June 02, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Baltimore Vacant Housing on The Atlantic's Citylab]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab" />
-  <id>http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab</id>
-  <updated>2015-06-01T00:00:00-00:00</updated>
-  <published>2015-06-01T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;&lt;a href=&quot;http://www.citylab.com/housing/2015/05/mapping-the-density-of-baltimores-vacant-housing-crisis/394196/&quot;&gt;Citylab from The Atlantic&lt;/a&gt; just bounced &lt;a href=&quot;https://citiesblogger.wordpress.com/2015/05/27/the-urban-blight-that-is-baltimores-inner-city/&quot;&gt;some work done&lt;/a&gt; by an economist named Amine Ouazad that maps the density of vacant housing in Baltimore.  The data Ouazad used are from the American Community Survey from the U.S. Census Bureau and &lt;a href=&quot;http://www.ouazad.com/Maps/Baltimore_Vacancies/index.html&quot;&gt;this is the resulting map&lt;/a&gt;.  Coincidently I had already been working with &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore’s&lt;/a&gt;vacant building and lot data for a different analysis but I figured I could quickly respond to Ouazad’s map.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Jun 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/06/02/Vacant-Lots-and-Bldgs-Near-Schools.html</link>
+        <guid isPermaLink="true">/articles/2015/06/02/Vacant-Lots-and-Bldgs-Near-Schools.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>cities</category>
+        
+        <category>buildings</category>
+        
+        <category>schools</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Baltimore Vacant Housing on The Atlantic&#39;s Citylab</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.citylab.com/housing/2015/05/mapping-the-density-of-baltimores-vacant-housing-crisis/394196/&quot;&gt;Citylab from The Atlantic&lt;/a&gt; just bounced &lt;a href=&quot;https://citiesblogger.wordpress.com/2015/05/27/the-urban-blight-that-is-baltimores-inner-city/&quot;&gt;some work done&lt;/a&gt; by an economist named Amine Ouazad that maps the density of vacant housing in Baltimore.  The data Ouazad used are from the American Community Survey from the U.S. Census Bureau and &lt;a href=&quot;http://www.ouazad.com/Maps/Baltimore_Vacancies/index.html&quot;&gt;this is the resulting map&lt;/a&gt;.  Coincidently I had already been working with &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore’s&lt;/a&gt;vacant building and lot data for a different analysis but I figured I could quickly respond to Ouazad’s map.&lt;/p&gt;
 
 &lt;p&gt;Perhaps it’s an artifact of the data used and the census tract samples, but a similar plot using data from &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; shows more clearly the divides within the city.  One commenter named “Jack” on the Citylab post indicated that the map showed high concentrations basically throughout the city, including wealthier and more business-centric neighborhoods like Mt. Vernon/Belvedere, Inner Harbor, Canton, and Federal Hill - comprising what we in Baltimore like to call &lt;a href=&quot;http://thebaltimorechop.com/tag/the-white-l/&quot;&gt;“The White L.”&lt;/a&gt;  On first glance at the Ouazad map my intuition agreed with Jack, and here’s what the Open Baltimore data actually look like.  There are two layers - a heat map and the actual vacant building footprints (in black) so when you zoom in you can see the actual vacant buildings.&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;520&quot; frameborder=&quot;0&quot; src=&quot;https://jtelszasz.cartodb.com/viz/26254996-084f-11e5-b31b-0e018d66dc29/embed_map&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; oallowfullscreen=&quot;&quot; msallowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;90%&quot; height=&quot;520&quot; frameborder=&quot;0&quot; src=&quot;https://jtelszasz.cartodb.com/viz/26254996-084f-11e5-b31b-0e018d66dc29/embed_map&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; oallowfullscreen=&quot;&quot; msallowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;!--more--&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -326,29 +326,25 @@
 
 &lt;/script&gt;
 
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab&quot;&gt;Baltimore Vacant Housing on The Atlantic&#39;s Citylab&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on June 01, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Verizon Wireless Cost Estimation]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Verizon-Wireless-Calculator" />
-  <id>http://localhost:4000/articles/Verizon-Wireless-Calculator</id>
-  <updated>2015-05-21T00:00:00-00:00</updated>
-  <published>2015-05-21T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;A few weeks ago, my 2-year contract came due for a phone upgrade.  Seeing as how I was on an iPhone 4 and Apple’s recent OS upgrades have sucked the life clean out of it, I was looking forward to purchasing a new phone with the hopes that the new one will last beyond the 2-year cycle.  I was going to purchase an iPhone 6, and I knew (or so I thought) what it would cost up front if I were to sign on a new 2-year contract.  Simple, straight-forward.  No sales pitches necessary.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jun 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/06/01/Baltimore-Vacant-Houses-On-Citylab.html</link>
+        <guid isPermaLink="true">/articles/2015/06/01/Baltimore-Vacant-Houses-On-Citylab.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>cities</category>
+        
+        <category>buildings</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Verizon Wireless Cost Estimation</title>
+        <description>&lt;p&gt;A few weeks ago, my 2-year contract came due for a phone upgrade.  Seeing as how I was on an iPhone 4 and Apple’s recent OS upgrades have sucked the life clean out of it, I was looking forward to purchasing a new phone with the hopes that the new one will last beyond the 2-year cycle.  I was going to purchase an iPhone 6, and I knew (or so I thought) what it would cost up front if I were to sign on a new 2-year contract.  Simple, straight-forward.  No sales pitches necessary.&lt;/p&gt;
 
 &lt;p&gt;Then I entered the Verizon Wireless store.&lt;/p&gt;
 
@@ -356,13 +352,13 @@
 
 &lt;p&gt;The salesman threw so many numbers at me that my head was spinning.  He was claiming that I could get some accessory package essentially for free by switching to the Edge program.  I couldn’t follow any of his logic, and I was only marginally clearer on the details when the manager attempted to explain the costs to me.  I walked out of the store frustrated and not wanting to commit there and then.&lt;/p&gt;
 
-&lt;p&gt;I figure I can’t have been the only Verizon customer to have experienced this recently.  In order to figure out what the actual costs were and whether I’d actually save money I made a quick calculator for my family and I to use.  I’m sharing it here in case it helps others.  &lt;/p&gt;
+&lt;p&gt;I figure I can’t have been the only Verizon customer to have experienced this recently.  In order to figure out what the actual costs were and whether I’d actually save money I made a quick calculator for my family and I to use.  I’m sharing it here in case it helps others.&lt;/p&gt;
 
 &lt;p&gt;It’s pretty simple for now, and assumes you aren’t taking the bait and trying to upgrade your phone more frequently than two years.  The white boxes are entry cells: select the phone you want, enter your typical monthly service costs, and enter the percent down payment on the phone you’d like to make if you’re considering the Edge program.  The box to the right gives your estimated monthly bill (bold black text) and the total cost over two years for your options (in bold red text).&lt;/p&gt;
 
-&lt;center&gt;
-&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/1uHdFLi_sEbyXN573mBUnqQPJdWCfkjuve-smumsCrXE/pubhtml?widget=true&amp;amp;headers=false&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;
+&lt;p&gt;
+&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/1uHdFLi_sEbyXN573mBUnqQPJdWCfkjuve-smumsCrXE/pubhtml?widget=true&amp;amp;headers=false&quot; width=&quot;90%&quot; height=&quot;400&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -375,29 +371,23 @@
 
 &lt;/script&gt;
 
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Verizon-Wireless-Calculator&quot;&gt;Verizon Wireless Cost Estimation&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on May 21, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Upcoming Events You Should Check Out]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Upcoming-Events-You-Should-Attend" />
-  <id>http://localhost:4000/articles/Upcoming-Events-You-Should-Attend</id>
-  <updated>2015-05-05T00:00:00-00:00</updated>
-  <published>2015-05-05T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;I’ll be giving a couple of talks in Baltimore in the next two weeks.  Would love for you to attend if you’re in the area!  Click on the title of the talk below to RSVP through Meetup.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 May 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/05/21/Verizon-Wireless-Calculator.html</link>
+        <guid isPermaLink="true">/articles/2015/05/21/Verizon-Wireless-Calculator.html</guid>
+        
+        <category>Verizon</category>
+        
+        <category>smart-phones</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Upcoming Events You Should Check Out</title>
+        <description>&lt;p&gt;I’ll be giving a couple of talks in Baltimore in the next two weeks.  Would love for you to attend if you’re in the area!  Click on the title of the talk below to RSVP through Meetup.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt; “Apps Are Not The Answer” on Thursday May 14 @ DreamIt Health Baltimore.&lt;/a&gt;&lt;/strong&gt;  I’ll describe how I’ve tried to engage city officials and journalists in order to address policy, problem-solving, and decision-making. I’ll be sharing examples of my work, as well as some reminders of the principles that should guide problem-solving, applied science, and engineering. Hosted by &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
 
@@ -414,51 +404,90 @@
 
 &lt;/script&gt;
 
+</description>
+        <pubDate>Tue, 05 May 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/05/05/Upcoming-Events-You-Should-Attend.html</link>
+        <guid isPermaLink="true">/articles/2015/05/05/Upcoming-Events-You-Should-Attend.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>apps</category>
+        
+        <category>python</category>
+        
+        <category>civic-tech</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>This is How Much We Paid Officers Involved in the Freddie Gray Debacle</title>
+        <description>&lt;p&gt;The city &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-ci-freddie-gray-officers-20150421-story.html&quot;&gt;released the names of the six officers involved in Freddie Gray’s arrest and subsequent death&lt;/a&gt;.  Below is how much each of them earned in fiscal year 2014 based on &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; data.  &lt;!--more--&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Upcoming-Events-You-Should-Attend&quot;&gt;Upcoming Events You Should Check Out&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on May 05, 2015.&lt;/p&gt;
+&lt;div&gt;&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/images/2015-04/Freddie_Gray_Cop_Pay.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
 
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[This is How Much We Paid Officers Involved in the Freddie Gray Debacle]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" />
-  <id>http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</id>
-  <updated>2015-04-26T00:00:00-00:00</updated>
-  <published>2015-04-26T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;The city &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-ci-freddie-gray-officers-20150421-story.html&quot;&gt;released the names of the six officers involved in Freddie Gray’s arrest and subsequent death&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Below is how much each of them earned in fiscal year 2014 based on &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; data.&lt;/p&gt;
-
-&lt;center&gt;
+&lt;!--
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&#39;/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;img src=&#39;/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;/a&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
+--&gt;
 
 &lt;p&gt;The six officers have been suspended &lt;strong&gt;with pay&lt;/strong&gt;.  Assuming a 40 hour work week and 48 working weeks in the year, below are these officers’ hourly wages, daily wages, and assuming a 50% ratio of salary for benefits and insurance (typical assumption for wage calculations), the six officers are costing Baltimore City taxpayers $2,151.44 every day of their suspension.  Today is April 26 and as far as I can tell from &lt;a href=&quot;http://www.huffingtonpost.com/2015/04/21/freddie-gray-death-baltimore-officers-suspended_n_7105368.html&quot;&gt;the earliest Associated Press announcement&lt;/a&gt; of their suspension, the officers have been suspended for six days, so the &lt;strong&gt;current bill to taxpayers is $12,908.63 and counting&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;center&gt;
+&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!--
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&#39;/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;img src=&#39;/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;/a&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
+--&gt;
+
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
 
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb&quot;&gt;here&lt;/a&gt;. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.&lt;/em&gt;&lt;/p&gt;
+Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;br /&gt;
+
+Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;br /&gt;
+
+Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb&quot;&gt;here&lt;/a&gt;. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.&lt;br /&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Apr 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/04/26/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.html</link>
+        <guid isPermaLink="true">/articles/2015/04/26/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>budget</category>
+        
+        <category>FreddieGray</category>
+        
+        <category>police</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Thanks Technical.ly Baltimore!</title>
+        <description>&lt;p&gt;Stephen Babcock over at &lt;a href=&quot;http://www.technical.ly/baltimore&quot;&gt;Technical.ly Baltimore&lt;/a&gt; was kind enough to give The Training Set a bit of publicity with a write-up about the work.  &lt;a href=&quot;http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -471,72 +500,33 @@
 
 &lt;/script&gt;
 
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray&quot;&gt;This is How Much We Paid Officers Involved in the Freddie Gray Debacle&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 26, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Thanks Technical.ly Baltimore!]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Thanks-Technically-Baltimore" />
-  <id>http://localhost:4000/articles/Thanks-Technically-Baltimore</id>
-  <updated>2015-04-23T00:00:00-00:00</updated>
-  <published>2015-04-23T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Stephen Babcock over at &lt;a href=&quot;http://www.technical.ly/baltimore&quot;&gt;Technical.ly Baltimore&lt;/a&gt; was kind enough to give The Training Set a bit of publicity with a write-up about the work.  &lt;a href=&quot;http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Thanks-Technically-Baltimore&quot;&gt;Thanks Technical.ly Baltimore!&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 23, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Baltimore Police Department Overtime & Bonuses]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" />
-  <id>http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay</id>
-  <updated>2015-04-22T00:00:00-00:00</updated>
-  <published>2015-04-22T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;As if the police haven’t been in the &lt;a href=&quot;https://twitter.com/search?q=%23blacklivesmatter&amp;amp;src=typd&quot;&gt;public eye&lt;/a&gt; enough lately, Baltimore Brew has been &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/26/police-overtime-declines-but-is-still-targeted-to-reach-record/&quot;&gt;beating the drum&lt;/a&gt; regarding police overtime budget.  According to the Brew’s reporting, Mayor Stephanie Rawlings-Blake promised tax cuts for residents that would be paid for by incoming tax revenue from the casino.  The mayor &lt;a href=&quot;https://www.baltimorebrew.com/2015/04/13/its-now-official-sagging-casino-revenues-equal-no-property-tax-cut-this-year/&quot;&gt;recently announced&lt;/a&gt;, however, that these cuts would not come to fruition as planned, since revenues from the casino are &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/25/horseshoe-casino-will-pay-only-4-million-in-lease-revenues-this-year/&quot;&gt;nowhere near the levels predicted&lt;/a&gt;.  Meanwhile, police are able to rake in sweet, sweet overtime pay by providing a security detail at the casino.  We won’t be able to see the resulting change in overtime due to the casino yet since it opened in FY2015, but in the meantime it’s worth scrutinizing Baltimore police overtime and bonus closely given the broader discussion of cost-effectiveness in policing.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Apr 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/04/23/Thanks-Technically-Baltimore.html</link>
+        <guid isPermaLink="true">/articles/2015/04/23/Thanks-Technically-Baltimore.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>civic-tech</category>
+        
+        <category>open-data</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Baltimore Police Department Overtime &amp; Bonuses</title>
+        <description>&lt;p&gt;As if the police haven’t been in the &lt;a href=&quot;https://twitter.com/search?q=%23blacklivesmatter&amp;amp;src=typd&quot;&gt;public eye&lt;/a&gt; enough lately, Baltimore Brew has been &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/26/police-overtime-declines-but-is-still-targeted-to-reach-record/&quot;&gt;beating the drum&lt;/a&gt; regarding police overtime budget.  &lt;!--more--&gt;  According to the Brew’s reporting, Mayor Stephanie Rawlings-Blake promised tax cuts for residents that would be paid for by incoming tax revenue from the casino.  The mayor &lt;a href=&quot;https://www.baltimorebrew.com/2015/04/13/its-now-official-sagging-casino-revenues-equal-no-property-tax-cut-this-year/&quot;&gt;recently announced&lt;/a&gt;, however, that these cuts would not come to fruition as planned, since revenues from the casino are &lt;a href=&quot;https://www.baltimorebrew.com/2015/03/25/horseshoe-casino-will-pay-only-4-million-in-lease-revenues-this-year/&quot;&gt;nowhere near the levels predicted&lt;/a&gt;.  Meanwhile, police are able to rake in sweet, sweet overtime pay by providing a security detail at the casino.  We won’t be able to see the resulting change in overtime due to the casino yet since it opened in FY2015, but in the meantime it’s worth scrutinizing Baltimore police overtime and bonus closely given the broader discussion of cost-effectiveness in policing.&lt;/p&gt;
 
 &lt;p&gt;In fact, &lt;a href=&quot;http://articles.baltimoresun.com/2010-06-30/news/bs-md-ci-baltimore-overtime-20100602_1_overtime-earners-deputy-mayor-christopher-thomaskutty-councilwoman-belinda-conaway&quot;&gt;concerns about overtime pay predate&lt;/a&gt; the data we have through Open Baltimore, though older data might be available in &lt;a href=&quot;http://data.baltimoresun.com/salary_database/&quot;&gt;other forms&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;To aid our investigation, &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; publishes annual salary and gross pay data for all of its employees.  &lt;/p&gt;
+&lt;p&gt;To aid our investigation, &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; publishes annual salary and gross pay data for all of its employees.&lt;/p&gt;
 
-&lt;center&gt;
-&lt;div&gt;&lt;iframe width=&quot;500px&quot; title=&quot;Baltimore City Employee Salaries 2011&quot; height=&quot;425px&quot; src=&quot;https://data.baltimorecity.gov/w/ijfz-2v3c/ta62-x9wp?cur=94oSZGyyLCB&amp;amp;from=root&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;a href=&quot;https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-2011/ijfz-2v3c&quot; title=&quot;Baltimore City Employee Salaries 2011&quot; target=&quot;_blank&quot;&gt;Baltimore City Employee Salaries 2011&lt;/a&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href=&quot;http://www.socrata.com/&quot; target=&quot;_blank&quot;&gt;Powered by Socrata&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div&gt;&lt;iframe width=&quot;90%&quot; title=&quot;Baltimore City Employee Salaries 2011&quot; height=&quot;425px&quot; src=&quot;https://data.baltimorecity.gov/w/ijfz-2v3c/ta62-x9wp?cur=94oSZGyyLCB&amp;amp;from=root&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;a href=&quot;https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-2011/ijfz-2v3c&quot; title=&quot;Baltimore City Employee Salaries 2011&quot; target=&quot;_blank&quot;&gt;Baltimore City Employee Salaries 2011&lt;/a&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;a href=&quot;http://www.socrata.com/&quot; target=&quot;_blank&quot;&gt;Powered by Socrata&lt;/a&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;salary--overtime-analysis&quot;&gt;Salary &amp;amp; Overtime Analysis&lt;/h2&gt;
 
@@ -560,59 +550,47 @@
 
 &lt;p&gt;One of my starting assumptions was that I should filter out any officers whose gross pay was less than their annual salary.  Well, it turns out that this was a majority of the Baltimore Police Department in FY2011, so that’s a bad idea.&lt;/p&gt;
 
-&lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Gross_Pay_Ratio_2011.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
 
 &lt;p&gt;Half of the BPD made less than 95% of their reported annual salary in 2011.  What gives?  After a little digging, I found &lt;a href=&quot;http://articles.baltimoresun.com/2011-01-07/news/bs-md-police-pay-cuts-20110107_1_robert-f-cherry-police-officers-bob-sledgeski&quot;&gt;this article&lt;/a&gt; and I think I have an answer: furloughs.  No doubt that situation must have been rough, but based on the analysis below they’ve made up for it over the last couple years.  In fact, the results below show that officers themselves didn’t bear the brunt of the hit - others in the BPD did.  I’m happy to be wrong and invite any Baltimore city officials to slice this a different way and let me know why 2011 payouts were smaller than salaries, but it doesn’t seem like this is a data quality issue.&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;p&gt;The following are some metrics for a few different slices of the BPD.&lt;/p&gt;
 
 &lt;h2 id=&quot;all-police&quot;&gt;All Police&lt;/h2&gt;
 
-&lt;p&gt;The furloughs in 2011 obviously stick out here, but what we don’t have is information on what overtime and bonuses were like before 2011 and the recession.  &lt;/p&gt;
+&lt;p&gt;The furloughs in 2011 obviously stick out here, but what we don’t have is information on what overtime and bonuses were like before 2011 and the recession.&lt;/p&gt;
 
 &lt;p&gt;Generally though, this certainly sets the backdrop for concerns regarding overtime pay that may be occuring at the casino.  Overtime payout has swelled to $30 million for each of the last two years and that’s without the casino.  Will the total overtime paid increase beyond $30 million for FY2015?  Or will the overtime budget stay the same, with overtime duties getting shifted from one location or another to the casino?  Neither sounds like a good idea.&lt;/p&gt;
 
-&lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/images/2015-04/BPD_Bonus_All_Police.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_All_Police.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
 
 &lt;h2 id=&quot;police-officers&quot;&gt;Police Officers&lt;/h2&gt;
 
 &lt;p&gt;What’s interesting here is that while the total bonus/overtime in 2011 was negative (furloughs) for all BPD, officers’ officers in general still made on average a $1,012 bonus, to the tune of more than $2 million for all officers.  In the next section, you’ll see that the &lt;strong&gt;rest of the department took a $3 million hit&lt;/strong&gt; on gross pay, resulting in the -$1 million total bonus/overtime in 2011 for the whole police department shown above.  It’s worth reminding ourselves here that police unions are a political force to be reckoned with.&lt;/p&gt;
 
-&lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/images/2015-04/BPD_Bonus_Officers.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
 
 &lt;h2 id=&quot;other-police-department-not-officers&quot;&gt;Other Police Department (Not Officers)&lt;/h2&gt;
 
 &lt;p&gt;On average salaries for non-officers in the BPD are comparable to police officers.  But of course, they make nowhere near the overtime and bonus available to officers.  &lt;strong&gt;Compare the 19%-of-salary bonus in 2014 for police officers above to the 2%-of-salary bonus for non-officers in 2014.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/images/2015-04/BPD_Bonus_Not_Officers.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_Not_Officers.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
 
 &lt;h2 id=&quot;top-20-bonus-earners&quot;&gt;Top 20 Bonus Earners&lt;/h2&gt;
 
 &lt;p&gt;Here’s what the top of the food chain looks like for the department.  Of course, these police employees didn’t have to worry during the recession - &lt;strong&gt;their average bonus when the department was suffering in 2011   was $52,827.  On average, the sizes of their bonuses were equal to their salary for fiscal years 2012 through 2014.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/images/2015-04/BPD_Bonus_Top20.png&quot;&gt;&lt;img src=&quot;/images/2015-04/BPD_Bonus_Top20.png&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
-&lt;/center&gt;
 
 &lt;h2 id=&quot;future-work&quot;&gt;Future Work&lt;/h2&gt;
 
@@ -621,12 +599,18 @@
   &lt;li&gt;&lt;strong&gt;Correlating bonus/overtime pay with crime/arrests.&lt;/strong&gt;  All else being equal, in a democracy our tax funds are supposed to go to the people’s priorities.  We should be having an open discussion about whether it is more important to fund overtime and bonus for incentivizing good policing or to hire more police and fund better training.  Neither option has an &lt;em&gt;a priori&lt;/em&gt; claim to efficacy, and we should be looking for empirical methods to show where to allocate funds.  We can try correlating crime and arrest data with these police salary data and see where we get.  Wearing my scientist/analyst/reporter hat, I’ll try to remain skeptical and neutral, but to be honest &lt;a href=&quot;http://www.thisamericanlife.org/radio-archives/episode/548/transcript&quot;&gt;my money is on better training.&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
 
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb&quot;&gt;here&lt;/a&gt;. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.&lt;/em&gt;&lt;/p&gt;
+
+Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;br /&gt;
+
+Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;br /&gt;
+
+Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb&quot;&gt;here&lt;/a&gt;. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.&lt;br /&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -638,648 +622,26 @@
   ga(&#39;send&#39;, &#39;pageview&#39;);
 
 &lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay&quot;&gt;Baltimore Police Department Overtime &amp; Bonuses&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 22, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[ShowYourWork Election Campaign]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Show-Your-Work" />
-  <id>http://localhost:4000/articles/Show-Your-Work</id>
-  <updated>2015-04-14T00:00:00-00:00</updated>
-  <published>2015-04-14T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Here’s a small idea that I think would make the upcoming election cycle incrementally more bearable.  &lt;/p&gt;
-
-&lt;p&gt;Politicians seemingly pick numbers, figures, statistics, and trends out of thin air.  This can be infuriating no matter where you fall on the political spectrum.  Why don’t we push politicians to post annotated transcripts of their speeches and debates that provide citations?  Surely they have an intern or two that they can promote from sticking signs on front lawns to transcribing and footnoting.  This would be a big step in the direction of transparency and a substantive way to keep politicians honest.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I’d propose we call it the &lt;a href=&quot;https://twitter.com/search?q=%23showyourwork&amp;amp;src=typd&quot;&gt;#ShowYourWork&lt;/a&gt; campaign.&lt;/strong&gt;  If elementary school kids can show their work on math problems and high schoolers can cite their references in English papers, surely our politicians can follow their lead.  Moreover, it would signal a commitment to and appreciation for the STEM fields that politicians like to pay lip service to when it comes to job growth.&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Show-Your-Work&quot;&gt;ShowYourWork Election Campaign&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 14, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[A City Divided (in N dimensions)]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" />
-  <id>http://localhost:4000/articles/A-City-Divided-In-N-Dimensions</id>
-  <updated>2015-04-12T00:00:00-00:00</updated>
-  <published>2015-04-12T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;It’s no secret that most American cities are segregated.&lt;/p&gt;
-
-&lt;p&gt;When I tell people I live in Baltimore, that I love living there and that it’s a great American city, what I really mean is that the neighborhoods I typically experience are great.  Baltimore of course has its many ills, and it’s very easy for white, college-educated individuals like myself to find themselves experiencing a very different reality than most in the city.&lt;/p&gt;
-
-&lt;p&gt;There are many socio-economic variables that would describe such segregation - something I hinted at with the &lt;a href=&quot;http://localhost:4000/articles/Know-More-Bmore&quot;&gt;last post&lt;/a&gt;.  Luckily, the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore has made it their mission to provide a clean, concise set of indicators that illustrate the health and wealth of the city.  There are 152 socio-economic indicators in the Vital Signs dataset, and some are reported for multiple years which results in 295 total variables for each of the 56 Baltimore neighborhoods captured.  For this analysis, I’m throwing them all in the mixer.&lt;/p&gt;
-
-&lt;p&gt;As you can imagine, many of the variables are strongly correlated with each other (e.g. the percent of the population in a neighborhood that is white is inversely proportional to the percent that aren’t white, so you don’t necessarily need both depending on what you’re trying to do with the data).  Rather than try plotting all of these variables against one another, it’s possible to illustrate the degree to which the city is segregated by distilling the 295 variables into only a couple - in other words, teasing out the principal socio-economic “directions” in which communities may be close or far from each other.&lt;/p&gt;
-
-&lt;p&gt;(If you want to know the technical details of the analysis, check out the link at the bottom of this post to the iPython notebook.  For the sake of anyone reading this I’ll try and minimize the jargon and explain some of the analysis below the result.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;This is the key: by reducing the 295 dimensions in the dataset to only two, we can visualize a socio-economic map of the city. Neighborhoods farther apart on the map are socio-economically dissimilar and neighborhoods close to one another on the map are socio-economically similar.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;On the plot below, each bubble is a neighborhood in Baltimore and is sized by the population living in that neighborhood.  One can delineate groups or “clusters” of neighborhoods.  These are clusters of neighborhoods that are more socio-economically similar.  We can specify a number of clusters and using an algorithm (K-means clustering, described below) we can find the best way to divide the neighborhoods into clusters; each color represents a different cluster and the X’s are the centers of each cluster.  The number of clusters I’ve chosen (seven) is somewhat arbitrary.  No axes labels are shown since the actual values output from the principal component analysis (discussed below) are meaningless.&lt;/p&gt;
-
-&lt;p&gt;What results is effectively a socio-economic map of Baltimore.  Use your cursor to hover over each bubble to see the name of the neighborhood.  &lt;strong&gt;Again, the farther apart one bubble is from another, the more socio-economically dissimilar those neighborhoods are.&lt;/strong&gt;  For example, find the “Inner Harbor/Federal Hill” (upper right, grey) and “Greater Rosemont” (West Baltimore, adjacent to Gwynn Falls Park; lower left, light blue) neighborhoods.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;div&gt;
-    &lt;a href=&quot;https://plot.ly/~jtelszasz/230/&quot; target=&quot;_blank&quot; title=&quot;Baltimore Vital Signs PCA w/ K-Means Clustering&quot; style=&quot;display: block; text-align: center;&quot;&gt;&lt;img src=&quot;https://plot.ly/~jtelszasz/230.png&quot; alt=&quot;Baltimore Vital Signs PCA w/ K-Means Clustering&quot; style=&quot;max-width: 100%;width: 600px;&quot; width=&quot;600&quot; onerror=&quot;this.onerror=null;this.src=&#39;https://plot.ly/404.png&#39;;&quot; /&gt;&lt;/a&gt;
-    &lt;script data-plotly=&quot;jtelszasz:230&quot; src=&quot;https://plot.ly/embed.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;/center&gt;
-
-&lt;p&gt;&lt;em&gt;“Wait, there are seven clusters but I’m only counting six different colors.”&lt;/em&gt; &lt;/p&gt;
-
-&lt;p&gt;There’s one point that is its own cluster and it isn’t shown - it’s the “Downtown” neighborhood, and it was a clear outlier.  I’ll dig into this point and see what’s going on, but my guess is that it has to do with the fact that the area is nearly all business and hardly any residences.  &lt;/p&gt;
-
-&lt;h2 id=&quot;principle-component-analysis&quot;&gt;Principle Component Analysis&lt;/h2&gt;
-
-&lt;p&gt;We can reduce the number of variables using a technique known as &lt;a href=&quot;http://en.wikipedia.org/wiki/Principal_component_analysis&quot;&gt;Principal Component Analysis (PCA)&lt;/a&gt;.  PCA reduces the full set of data (the variables of which may be correlated) to uncorrelated, or orthogonal, directions.  (Math folks: these are the eigenvectors of the covariance matrix.)  You can choose the number of dimensions in which you’d like to represent your data - the first dimension chosen will account for the most variance in the data, the next dimension (2nd principal axis) will account for the second highest portion of variance, and so on.  &lt;/p&gt;
-
-&lt;p&gt;To steal an analogy from &lt;a href=&quot;http://en.wikipedia.org/wiki/Brian_Greene&quot;&gt;Brian Greene&lt;/a&gt; on the topic of reducing higher dimensions (I think this was in The Elegant Universe), imagine an ant on a stretched out piece of rope.  From a far away distance, we would likely identify the position of the ant only in terms of its distance from one end of the rope.  If we zoom in closely though, we could describe the ant’s location in two dimensions: both its distance from one end of the rope and its location circumferentially around the rope (a third possible dimension would be the ant’s radial distance from the centerline axis of the rope, but that’s virtually constant unless the ant jumps off the rope).  This same concept can be applied for reducing higher dimensional data in order to visualize relationships in data.  &lt;/p&gt;
-
-&lt;p&gt;We want to reduce the 295 variables in the Vital Signs dataset to two since we want to visualize this in a 2-D scatter plot.&lt;/p&gt;
-
-&lt;h2 id=&quot;k-means-clustering&quot;&gt;K-Means Clustering&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/K-means_clustering&quot;&gt;K-means clustering&lt;/a&gt; is an algorithm that groups data points into clusters.  One could do this manually, but this algorithm automates the process by minimizing the distances from each data points to the center (centroid) of the cluster.  However, one has to specify the number of clusters for the algorithm to use.  One can imagine that to minimize the distances from each data point to the cluster center, one could set the number of clusters equal to the number of data points, i.e. each point is its own cluster, but this is a trivial solution.  Using a metric (called inertia) that measures the typical distance from points to centers, the algorithm can be run multiple times, each time using a different number of clusters, to try and achieve an acceptable result for the inertia.  I chose seven after plotting the inertia as a function of number of clusters.  This plot can be found in the iPython notebook (link below).&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt; and the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/A-City-Divided-In-N-Dimensions&quot;&gt;A City Divided (in N dimensions)&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Know More, B'more.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Know-More-Bmore" />
-  <id>http://localhost:4000/articles/Know-More-Bmore</id>
-  <updated>2015-03-30T00:00:00-00:00</updated>
-  <published>2015-03-30T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;I took a quick look at the Vital Signs dataset from the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)&lt;/a&gt; at the University of Baltimore (data also available at &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;) and created some &lt;a href=&quot;http://www.gapminder.org/&quot;&gt;Hans Rosling-style plots&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;These are clean datasets of socio-economic indicators derived from the U.S. Census Bureau, American Community Survey and Baltimore agencies, among other sources.  The BNIA has built a &lt;a href=&quot;http://bniajfi.org/vital_signs/&quot;&gt;website for mapping data&lt;/a&gt; and they were rightly lauded for cleaning and opening up this data for public use, but I’ve seen only a handful of analyses based on the Vital Signs datasets.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;div&gt;
-    &lt;a href=&quot;https://plot.ly/~jtelszasz/211/&quot; target=&quot;_blank&quot; title=&quot;Baltimore: Too Many Kids in Poverty&quot; style=&quot;display: block; text-align: center;&quot;&gt;&lt;img src=&quot;https://plot.ly/~jtelszasz/211.png&quot; alt=&quot;Baltimore: Too Many Kids in Poverty&quot; style=&quot;max-width: 100%;width: 500px;&quot; width=&quot;500&quot; onerror=&quot;this.onerror=null;this.src=&#39;https://plot.ly/404.png&#39;;&quot; /&gt;&lt;/a&gt;
-    &lt;script data-plotly=&quot;jtelszasz:211&quot; src=&quot;https://plot.ly/embed.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;/center&gt;
-
-&lt;p&gt;In this first plot, the bubbles are sized according to the total number of children between the ages of 5 and 18 (school age) living in each neighborhood.&lt;/p&gt;
-
-&lt;p&gt;Definitely check out BNIA’s website, and &lt;a href=&quot;http://www.urban.org/UploadedPDF/413219-NNIP-an-Open-Data-in-Baltimore.pdf&quot;&gt;this&lt;/a&gt; is a good synopsis of open data in Baltimore.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt; and the&lt;a href=&quot;http://www.bniajfi.org/indicators&quot;&gt; Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Know-More-Bmore&quot;&gt;Know More, B&#39;more.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 30, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[City Paper Bounces The Training Set Parking Analysis]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" />
-  <id>http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis</id>
-  <updated>2015-03-19T00:00:00-00:00</updated>
-  <published>2015-03-19T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;I was able to get in contact with Edward Ericson Jr. over at Baltimore’s City Paper concerning the &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;parking investigation at 4200 Wickford Rd&lt;/a&gt;.  Ed was kind enough to bounce my findings in a &lt;a href=&quot;http://www.citypaper.com/blogs/the-news-hole/bcp-wandering-eye-a-neonoir-crime-blotter-date-on-parking-in-baltimore-and-more-20150305,0,1269875.story&quot;&gt;quick update blurb&lt;/a&gt;.  Full text is below.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Parking being what it is in Baltimore, it’s not surprising that a light-hearted look at the lengths city councilmembers are required to go on behalf of constituents who are inconvenienced by tickets—which City Paper published in December—would be met by data hounds. Now comes Justin Elszasz, who analyzed the city’s parking ticket database to conclude that—surprise—the issue is not so big, in the grand scheme of things. “What is curious is that the open data for parking citations at the 4200 block of Wickford Rd. are not showing a rampant citation issue as the article or residents suggest,” the blog post says, above a bar graph depicting more than 20 citations in April of 2014 and 15 in November-December. But the data looks like exactly the sort of thing the residents complained (and CP wrote) about—sporatic, complaint-driven hard-assery. We were careful not to quantify the damage because we did not have the tools or time to do the analysis Elszasz did. And he confirms what City Paper reported, right down to our tone. We said the residents—who actually have garages on their back alley—are inconvenienced by the law prohibiting them from parking on the curb, facing the wrong way. Elszasz says: “It truly pales in comparison to some of the blocks I’ve been looking at recently. The article claims that parking tickets have appeared in the middle of the night, ‘depicting the parking enforcement agents as thieves in the night.’ It looks like that actually was the case a couple few times - around 4:30am on April 4 and 8, 2014, and around 2:30am on April 18, 2014. But overall, this article and the residents on this block appear to be making something out of nothing. The grand total of fines issued for the 41 citations above is $1,312.” - Edward Ericson Jr.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis&quot;&gt;City Paper Bounces The Training Set Parking Analysis&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 19, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Which citations do people not care about paying?]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" />
-  <id>http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About</id>
-  <updated>2015-03-16T00:00:00-00:00</updated>
-  <published>2015-03-16T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;The Baltimore citation open data also includes a field for open balance, meaning the amount still owed to the city for each citation.&lt;/p&gt;
-
-&lt;p&gt;With this information we can look at the rates of unpaid citations by citation type.  Below I’ve calculated these ratios for all description types, but have only included for comparison those categories that had more than 100 citations in the database (so we hopefully have meaningful comparisons).&lt;/p&gt;
-
-&lt;h3 id=&quot;news-flash-abandoned-vehicle-citations-are-more-likely-to-be-unpaid&quot;&gt;News flash: abandoned vehicle citations are more likely to be unpaid.&lt;/h3&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Percent_Citations_Open_Bal.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Percent of total citations that have a balance as of February 28, 2015.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;!--The red light violations, however, should be of particular concern since they pose a safety risk.  While many of us in Baltimore have independently come to the same conclusion that the red lights are poorly timed, this does not excuse ignoring them.  The fact that red light violations have a higher portion of unpaid citations seems to indicate that the perhaps a stiffer penalty increase is warranted in order to curb this behavior.--&gt;
-
-&lt;h2 id=&quot;another-suggestion-for-baltimore-dot-and-mayors-office-of-it&quot;&gt;Another suggestion for Baltimore DOT and Mayor’s Office of IT&lt;/h2&gt;
-
-&lt;p&gt;The dataset that gets posted on &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;the Open Baltimore data portal&lt;/a&gt; could really use better documenatation.  Here’s another example of why.  Since the speed camera program was halted in Baltimore, certain citations are no longer captured by this dataset, since parking enforcers don’t issue any kind of moving violations.  Some of those types are still in this dataset, however - a hold over from when the camera program was still in effect.  They should be removed before any analysis or comparisons.  &lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_By_Year.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_By_Year.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total ticket counts by category and year.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About&quot;&gt;Which citations do people not care about paying?&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 16, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[DOT Needs More Citation Categories]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" />
-  <id>http://localhost:4000/articles/DOT-Needs-More-Citation-Categories</id>
-  <updated>2015-03-12T00:00:00-00:00</updated>
-  <published>2015-03-12T00:00:00-04:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Here’s a suggestion directed at the Department of Transportation for improving their citation system.  &lt;/p&gt;
-
-&lt;p&gt;I’ve alluded to this in previous posts, but this should make it clear as day.  Looking at all citations since February of 2013, the category “All Other Parking Meter Violations” trumps all of the other citation types by a wide margin.  My guess is that, given its prominence, these are citations for time expiring on a parking meter.  But why code it as “all other?”  An “other” option should be a last resort, when all other codes don’t apply.  If parking enforcers are having to use this code so extensively, it suggests that they need more nuanced options for coding parking infringements.  This is essentially information about parking in the city that’s up for grabs and we’re leaving it on the table.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/Ticket_Counts_by_Citation_Type.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total citation counts in Baltimore by category.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/DOT-Needs-More-Citation-Categories&quot;&gt;DOT Needs More Citation Categories&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 12, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[When Not To Park On N. Charles St.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" />
-  <id>http://localhost:4000/articles/When-Not-To-Park-On-Charles</id>
-  <updated>2015-03-07T00:00:00-00:00</updated>
-  <published>2015-03-07T00:00:00-05:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;In a recent post I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-&lt;iframe src=&quot;https://www.google.com/maps/d/embed?mid=z14mtc2vy9S0.k5pYuRXb6j84&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
-&lt;figcaption&gt;Five blocks on North Charles Street that have increasingly become target parking enforcement locations.  Blocks are colored and labeled by difference between September 2013 and March 2014 citation totals.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;So when is that stretch being targeted?  Here are the hourly total citation counts for those five blocks on North Charles St.  Looks like you’re safe before 10am on the weekends, and maybe have a shot if you need a quick spot around 3pm.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Hour.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Hourly total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;You’re also probably safer on Sundays.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_by_Day.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Daily total tickets since January 2013 for five blocks of North Charles Street in the Mt. Vernon neighborhood of Baltimore.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;h2 id=&quot;dot--baltimore-it-should-provide-new-citation-description-options&quot;&gt;DOT &amp;amp; Baltimore IT Should Provide New Citation Description Options&lt;/h2&gt;
-
-&lt;p&gt;Of course as we’ve seen in the past, parking police are using the “All Other Parking Meter Violations” predominantly, which masks the true cause of the citation.  In this instance, these are metered parking spots so my guess is their time has expired.  This is something that DOT and Baltimore Mayor’s Office of IT could easily provide a new description code for so we know that this is the cause.  &lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/N_Charles_Descriptions.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total tickets issued on five blocks of N. Charles St. in Baltimore by description.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/When-Not-To-Park-On-Charles&quot;&gt;When Not To Park On N. Charles St.&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 07, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Investigating City Paper's Claims About 4200 Wickford]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" />
-  <id>http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford</id>
-  <updated>2015-03-03T00:00:00-00:00</updated>
-  <published>2015-03-03T00:00:00-05:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Baltimore’s City Paper recently &lt;a href=&quot;http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story&quot;&gt;took a look at a unique parking situation&lt;/a&gt; in Baltimore at the 4200 block of Wickford Road.  Unfortunately, they didn’t take a peek at the same open data for parking citations I’ve been investigating lately.&lt;/p&gt;
-
-&lt;p&gt;This road is a small two-way street in a quiet, wealthy neighborhood adjacent to the Johns Hopkins University campus called Keswick.  The street is narrow, and so vehicles typically park on either side with their tires past the curb which is illegal.  Apparently they also occasionally park on the left facing the wrong direction.  &lt;/p&gt;
-
-&lt;p&gt;Start here in Google Street View and work your way north - the street is indeed quite narrow and most cars (save for maybe the Smart car) are parked with their two right tires over the curb.  The Smart car and several others are parked on the left side facing the wrong direction.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1425404187666!6m8!1m7!1sgYu398RNv4HjfPUXZxCNiQ!2m2!1d39.339469!2d-76.627132!3f28.763235779444777!4f-26.84351693465949!5f0.7820865974627469&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-
-&lt;p&gt;What is curious is that the &lt;a href=&quot;https://data.baltimorecity.gov/Transportation/Parking-Citations/n4ma-fj3m&quot;&gt;open data for parking citations&lt;/a&gt; at the 4200 block of Wickford Rd. are not showing a rampant citation issue as the article or residents suggest.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;In fact, here is the full list of citations at the 4200 block of Wickford Rd. from the parking citation data.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-03/4200_Wickford_Citation_Table.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;It truly pales in comparison to some of the &lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations/&quot;&gt;blocks I’ve been looking at recently&lt;/a&gt;.  The article claims that parking tickets have appeared in the middle of the night, “depicting the parking enforcement agents as thieves in the night.”  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford&quot;&gt;Investigating City Paper&#39;s Claims About 4200 Wickford&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on March 03, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Biasing Citations Towards Those Who Pay]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Daily-Unpaid-Citations" />
-  <id>http://localhost:4000/articles/Daily-Unpaid-Citations</id>
-  <updated>2015-02-27T00:00:00-00:00</updated>
-  <published>2015-02-27T00:00:00-05:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Unless this dataset is somehow &lt;a href=&quot;http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/&quot;&gt;still screwed up&lt;/a&gt;, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.  &lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Daily_Citations_Unpaid.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The plot above shows the perentage of tickets (daily) that remain unpaid over time.  The trend in 2014 makes sense: practically 100% of the tickets issued yesterday would be unpaid.  One would expect that the further back in time one looks, less tickets would have an outstanding balance.  This is certainly the case looking back as far as January 2014, and I’ve added a dashed line to continue the expected trend further backwards in time.&lt;/p&gt;
-
-&lt;p&gt;But what actually happens looking back further than January 2014 is quite different.  According to these data, the proportion of unpaid tickets increases almost to almost 70% when looking back the full two years.  70% of tickets from 2 years ago unpaid, while 10% from a year ago unpaid?  This seems fishy.  I can imagine four possibilities as to why we see this in the data.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Dataset is still screwed up.&lt;/strong&gt; Occam’s razor.  Q.E.D.  I asked Baltimore Chief Data Officer to check it out and will follow up soon.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Increase in penalties that incentivized prompt payment.&lt;/strong&gt;  &lt;a href=&quot;http://archive.baltimorecity.gov/portals/0/charter%20and%20Codes/code/Art%2031%20-%20Transit&amp;amp;Traff.pdf&quot;&gt; Article 31 Subtitle 36 of the Baltimore City Code&lt;/a&gt; establishes the fines for parking violations, and §36-22   in particular sets forth the penalties that accrue when deliquent.  Right now the penalties are set at the lesser of $16 per month delinquent or ten times the amount of the original fine.  It looks like the last time this section was modified was through Ordinance 10-302, but as far as I can tell this actually added the 10X cap on penalties so this can’t be it. &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Parking ticket amnesty.&lt;/strong&gt; &lt;a href=&quot;http://archive.baltimorecity.gov/portals/0/charter%20and%20Codes/code/Art%2031%20-%20Transit&amp;amp;Traff.pdf&quot;&gt; Article 31 Subtitle 36 of the Baltimore City Code&lt;/a&gt; (§36-22 specifically) allows for the periodic offering of amnesty from penalties resulting from unpaid tickets.  The amnesty periods last 2 days.  This authority was established in 2003 at which time the first amnesty was offered.  The provisions also establish a ten-year moratorium on amnesties from the time of the first one, so the next one that could have been offered was 2013.  A parking ticket amnesty would certainly reduce the proportion of citations with an outstanding balance and could help explain the trend we see in 2013.  But another amnesty has not yet been offered as of February 2015, so this can’t explain the change in proportion of unpaid tickets we’re seeing.  Moreover, the trend we see in 2013 is across the entire year rather than a dramatic drop over a 2-day period that would result from such an amnesty period.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Change in sampling (behavior of those sampled).&lt;/strong&gt;  Having eliminated options 2 and 3 and assuming the data are clean and reliable, the last option I came up with is that the rapid increase of parking citations in certain locations drastically biased the sample.  It would appear that the strategy of targeting specific locations as I’ve shown in &lt;a href=&quot;&quot;&gt;previous posts&lt;/a&gt; has paid off, since the total fines issued has shot up while the proportion of tickets remaining unpaid has significantly dropped.  This is an indication of a much more effective parking policing policy (revenue generation) by the city, although it likely causes a lot of frustration for those living and parking in the targeted locations.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Daily-Unpaid-Citations&quot;&gt;Biasing Citations Towards Those Who Pay&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 27, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Rapid Increase in Citations]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/Rapid-Increase-In-Citations" />
-  <id>http://localhost:4000/articles/Rapid-Increase-In-Citations</id>
-  <updated>2015-02-24T00:00:00-00:00</updated>
-  <published>2015-02-24T00:00:00-05:00</published>
-  
-  <author>
-    <name>Justin Elszasz</name>
-    <uri>http://localhost:4000</uri>
-    <email>thetrainingset@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;The total number of parking citations in Baltimore exploded between September 2013 and March 2014.  &lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Total_Monthly_Citations.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total monthly citations.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;One can imagine that this explosion resulted from particular areas being targeted, rather than every block in Baltimore experiencing a proportional increase in citations issued.  Below are the top 25 blocks in terms of the difference between parking citations issued in the month of September 2013 and March 2014.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/Top_25_Increase_Citations_Sept13_Mar14_Locs.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Top 25 locations, difference in September 2013 and March 2014 total citations.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;I’ve removed the “U/B” locations from the map below because it isn’t clear exactly which block those were issued on.  I tried reaching out to the Baltimore data people about it but haven’t had luck yet.  I believe they’re University of Baltimore locations, so suffice it to say that University of Baltimore has also become a target for parking enforcement.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;iframe src=&quot;https://www.google.com/maps/d/embed?mid=z14mtc2vy9S0.kY9jDpceZb5g&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-
-&lt;p&gt;The locations are wholly predictable.  The stretch of North Charles Street through Mt. Vernon, Light Street in Federal Hill, Harbor East, Fells Point, and some spots near hospitals.  &lt;/p&gt;
-
-&lt;h2 id=&quot;roland-ave&quot;&gt;5100 Roland Ave.&lt;/h2&gt;
-
-&lt;p&gt;The only one that appears somewhat random is the 5100 block of Roland Avenue.  Citations clearly exploded here…&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Citations.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;…and here are the counts of the total citations for the last two years at 5100 Roland Ave. by citation type.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/5100_Roland_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total citations for last 2 years at 5100 Roland Ave. by description.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;p&gt;“All other parking meter violations” really doesn’t help sort out what the cause is, but looking at the Google Map street view one can see a 2 hour parking sign.  The curb also looks like it’s non-existent, so I’m wondering if people put their tires into the grass and then get cited.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1424798998803!6m8!1m7!1soBC2bNc1uJIKNHPSkBn7ug!2m2!1d39.35523!2d-76.634564!3f223.74393718454644!4f-16.088865868843556!5f0.7820865974627469&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-
-&lt;h2 id=&quot;lot-jfa&quot;&gt;“400 LOT JFA”&lt;/h2&gt;
-
-&lt;p&gt;I’ve also manually located the “400 LOT JFA” location on the map - I believe this is a parking lot under the Jones Falls Expressway, and the only one near a 400 block address is the one I’ve located.  Looking at the data, the police didn’t even start ticketing at this location until February 2014.  Again, “All other parking meter violations” is the dominant mode of citation, so I really don’t have a clue what might be going on.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-&lt;iframe src=&quot;http://en.parkopedia.com/parking/garage/jones_falls_expressway_jfa/21202/baltimore/?embed=600x400&amp;amp;l=1&amp;amp;tc=1&amp;amp;zc=1&amp;amp;country=US&amp;amp;ts[]=4&amp;amp;ts[]=3&amp;amp;ts[]=2&quot; frameborder=&quot;0&quot; width=&quot;600&quot; height=&quot;400&quot; scrolling=&quot;no&quot;&gt;&lt;a href=&quot;http://en.parkopedia.com/parking/garage/jones_falls_expressway_jfa/21202/baltimore/&quot; title=&quot;Jones Falls Expressway (JFA) - Parking Garage&quot;&gt;Jones Falls Expressway (JFA) - Parking Garage&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;figcaption&gt;Parking lot map courtesy &lt;a href=&quot;http://www.parkopedia.com&quot;&gt;Parkopeida.com&lt;/a&gt;&lt;/figcaption&gt;	
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;center&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/2015-02/400_Lot_JFA_Desc_Counts.png&quot; /&gt;&lt;/a&gt;
-  &lt;figcaption&gt;Total citations for last 2 years at 400 lot of Jones Falls Expressway (JFA) by description.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/center&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/Rapid-Increase-In-Citations&quot;&gt;Rapid Increase in Citations&lt;/a&gt; was originally published by Justin Elszasz at &lt;a href=&quot;http://localhost:4000&quot;&gt;The Training Set.&lt;/a&gt; on February 24, 2015.&lt;/p&gt;
-
-  </content>
-</entry>
-
-</feed>
+&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Apr 2015 00:00:00 -0400</pubDate>
+        <link>/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html</link>
+        <guid isPermaLink="true">/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>cities</category>
+        
+        <category>police</category>
+        
+        <category>budget</category>
+        
+        <category>open-data</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+  </channel>
+</rss>

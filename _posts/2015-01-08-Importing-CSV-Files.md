@@ -5,7 +5,7 @@ description: "Code snippet for importing a lot of csv's out of a directory."
 modified: 2015-01-08
 category: articles
 share: true
-tags: [python, Pandas]
+tags: [python, code]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
@@ -16,7 +16,7 @@ I find myself importing a slew of comma-separated value (csv) files quite often 
 
 It's uber-simple - just loops through all the csv's in a directory, appends them to one Pandas dataframe, and saves the new csv.  It also tacks on the filenames of each file if separating into the original files is needed later.  This also assumes all the fields are named exactly the same in all the csv files.  Sure beats reading each individually and merging after.
 
-{% highlight python %}
+```python
 
 import pandas as pd
 import glob
@@ -36,5 +36,5 @@ for i, filename in enumerate(allFiles):
 
 df.to_csv('full_dataset.csv')
  
-{% endhighlight %}
+```
 

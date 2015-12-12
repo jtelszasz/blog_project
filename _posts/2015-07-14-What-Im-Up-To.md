@@ -5,7 +5,7 @@ description: "Busy lately."
 modified: 2015-07-14
 category: articles
 share: true
-tags: [publicity, open-data]
+tags: [open-data, transportation, civic-tech, apps]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics

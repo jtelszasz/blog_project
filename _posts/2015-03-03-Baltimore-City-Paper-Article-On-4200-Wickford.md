@@ -5,7 +5,7 @@ description: "Following up on a recent City Paper article."
 modified: 2015-03-03
 category: articles
 share: true
-tags: [Baltimore, cities, parking, transportation, police, civic-hacking, data-journalism]
+tags: [Baltimore, cities, transportation, open-data]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
@@ -16,36 +16,45 @@ Baltimore's City Paper recently <a href='http://www.citypaper.com/news/mobtownbe
 
 This road is a small two-way street in a quiet, wealthy neighborhood adjacent to the Johns Hopkins University campus called Keswick.  The street is narrow, and so vehicles typically park on either side with their tires past the curb which is illegal.  Apparently they also occasionally park on the left facing the wrong direction.  
 
-Start here in Google Street View and work your way north - the street is indeed quite narrow and most cars (save for maybe the Smart car) are parked with their two right tires over the curb.  The Smart car and several others are parked on the left side facing the wrong direction.
+Start here in Google Street View and work your way north - the street is indeed quite narrow and most cars (save for maybe the Smart car) are parked with their two right tires over the curb.  The Smart car and several others are parked on the left side facing the wrong direction.  
 
-<center>
-<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1425404187666!6m8!1m7!1sgYu398RNv4HjfPUXZxCNiQ!2m2!1d39.339469!2d-76.627132!3f28.763235779444777!4f-26.84351693465949!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0"></iframe>
-</center>
+<br>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1425404187666!6m8!1m7!1sgYu398RNv4HjfPUXZxCNiQ!2m2!1d39.339469!2d-76.627132!3f28.763235779444777!4f-26.84351693465949!5f0.7820865974627469" width="550" height="450" frameborder="0" style="border:0"></iframe> <!--more-->
 
 What is curious is that the <a href='https://data.baltimorecity.gov/Transportation/Parking-Citations/n4ma-fj3m'>open data for parking citations</a> at the 4200 block of Wickford Rd. are not showing a rampant citation issue as the article or residents suggest.
 
-<center>
+{% maincolumn 'images/2015-03/4200_Wickford.png' '' %}
+
+<!-- <center>
 <figure>
   <a href='{{ site.url }}/images/2015-03/4200_Wickford.png'><img src='{{ site.url }}/images/2015-03/4200_Wickford.png'></a>
 </figure>
-</center>
+</center> -->
 
 In fact, here is the full list of citations at the 4200 block of Wickford Rd. from the parking citation data.
 
-<center>
+{% maincolumn 'images/2015-03/4200_Wickford_Citation_Table.png' '' %}
+
+<!-- <center>
 <figure>
   <a href='{{ site.url }}/images/2015-03/4200_Wickford_Citation_Table.png'><img src='{{ site.url }}/images/2015-03/4200_Wickford_Citation_Table.png'></a>
 </figure>
-</center>
+</center> -->
 
 It truly pales in comparison to some of the <a href='{{ site.url }}/articles/Rapid-Increase-In-Citations/'>blocks I've been looking at recently</a>.  The article claims that parking tickets have appeared in the middle of the night, "depicting the parking enforcement agents as thieves in the night."  It looks like that actually was the case a couple few times - around 4:30am on April 4 and 10, 2014, and around 2:30am on April 18, 2014.  But overall, this article and the residents on this block appear to be making something out of nothing.  The grand total of fines issued for the 41 citations above is $1,312.
 
+<br>
+
 ---
-*Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore.</a>*
 
-*Analysis conducted using <a href='http://www.python.org'>Python</a> and <a href='http://pandas.pydata.org'>Pandas</a>*
+<p style="width: 100%; font-style: italic;">
 
-*Full analysis IPython notebook can be found <a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb'>here</a>.*
+Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore.</a><br>
+
+Analysis conducted using <a href='http://www.python.org'>Python</a> and <a href='http://pandas.pydata.org'>Pandas</a><br>
+
+Full analysis IPython notebook can be found <a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb'>here</a>.<br>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

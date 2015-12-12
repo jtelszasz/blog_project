@@ -4,7 +4,7 @@ title: Introducing "My Electricity Use" Visualization Page
 description: "Building a page for interactive visualizations of my electricity use data."
 modified: 2015-02-16
 category: articles
-tags: [BGE, electricity, data-viz]
+tags: [energy, electricity, data-viz]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics

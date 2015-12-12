@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mo Apartment, Mo Problems</title>
+  <meta name="description" content="Here’s a quick comparison of average weekdays and weekends in the new and old apartments.">
+
+
+  <link rel="stylesheet" href="/css/tufte.css">	
+  
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="canonical" href="/articles/2014/08/01/Mo-Apartment-Mo-Energy.html">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>-->
+	
+		
+  	
+		
+		    
+		      <a href="/">The Training Set</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/my-elec-use/">My Electricity Use</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/tags/">Articles</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/the-work/">The Work</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/subscribe/">Subscribe</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Mo Apartment, Mo Problems</h1>
+<p class="subtitle">August 1, 2014</p>
+
+
+<p>Here’s a quick comparison of average weekdays and weekends in the new and old apartments.<!--more--></p>
+
+<p>It would appear that we’ve been using more at the new place, but take a look at the daily totals.</p>
+
+<figure><figcaption>Average hourly electric usage for new and old apartments, March and June.</figcaption><img src="/images/2014-08/Average_Days_New_and_Old_Apts.png" /></figure>
+
+<p>Of course we don’t have apples-to-apples comparisons here.  Of course this is partly due to weather.  The old apartment is shown for March, where we left the thermostat on all day at 65 degrees F so Willow The Cat wouldn’t freeze to death.  At the new apartment, we’re shutting off the thermostat entirely during the day, and at night kicking it on to 75 degrees F.  So for weekdays, we’re consuming much less during the day but evenings are much higher.</p>
+
+<p>However, the <a href="/articles/Guess-What-Time-Justin-Wakes-Up">6am peak when we wake up</a> is also much higher.  I’m sure that this is due to our own dedicated electric water heater at the new place.  Our two showers in the morning plus lighting loads are the 6am peak, while the evening hours are the A/C and any dishwashing we’re doing after dinner.</p>
+
+<p>To do these average day plots I set up a quick function that uses groupby, that way I can reuse this for any time period.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># Define a function to calculate average weekday and weekend</span>
+
+<span class="k">def</span> <span class="nf">avg_day</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">start_date</span><span class="p">,</span><span class="n">end_date</span><span class="p">):</span>
+    <span class="c"># df is pandas df, has 'USAGE' and 'tempF' fields, indexed by pandas datetime</span>
+    <span class="c"># date_range is string for .ix call</span>
+    <span class="c"># returns average_weekend and average_weekday</span>
+    
+    <span class="n">df_dates</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">start_date</span><span class="p">:</span><span class="n">end_date</span><span class="p">]</span>
+    
+    <span class="c"># First groupby weekday/weekend and hour of day</span>
+    <span class="n">weekday_weekend_hour</span> <span class="o">=</span> <span class="n">df_dates</span><span class="o">.</span><span class="n">groupby</span><span class="p">([(</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">6</span><span class="p">),</span><span class="n">df_dates</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">hour</span><span class="p">])</span>
+
+    <span class="c"># Calculate an average weekday and average weekend by hour (electricity and outdoor temp)</span>
+    <span class="n">average_day</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">weekday_weekend_hour</span><span class="p">[</span><span class="s">'USAGE'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="n">weekday_weekend_hour</span><span class="p">[</span><span class="s">'tempF'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()])</span>
+    
+    <span class="n">average_weekend</span> <span class="o">=</span> <span class="n">average_day</span><span class="p">[</span><span class="bp">True</span><span class="p">]</span>
+    <span class="n">average_weekday</span> <span class="o">=</span> <span class="n">average_day</span><span class="p">[</span><span class="bp">False</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">average_weekday</span><span class="p">,</span> <span class="n">average_weekend</span>
+</code></pre>
+</div>
+
+
+
+
+    </article>
+    <span class="print-footer">Mo Apartment, Mo Problems - August 1, 2014 - Justin Elszasz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:thetrainingset@gmail.com"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/thetrainingset"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/jtelszasz"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.linkedin.com/in/justinelszasz"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;JUSTIN ELSZASZ</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

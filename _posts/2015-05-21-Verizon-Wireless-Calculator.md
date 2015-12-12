@@ -5,7 +5,7 @@ description: "Some help that Verizon doesn't provide on what the Edge plan is."
 modified: 2015-05-21
 category: articles
 share: true
-tags: [Verizon, cell-phones]
+tags: [Verizon, smart-phones]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
@@ -24,9 +24,9 @@ I figure I can't have been the only Verizon customer to have experienced this re
 
 It's pretty simple for now, and assumes you aren't taking the bait and trying to upgrade your phone more frequently than two years.  The white boxes are entry cells: select the phone you want, enter your typical monthly service costs, and enter the percent down payment on the phone you'd like to make if you're considering the Edge program.  The box to the right gives your estimated monthly bill (bold black text) and the total cost over two years for your options (in bold red text).
 
-<center>
-<iframe src="https://docs.google.com/spreadsheets/d/1uHdFLi_sEbyXN573mBUnqQPJdWCfkjuve-smumsCrXE/pubhtml?widget=true&amp;headers=false" width="600" height="400"></iframe>
-</center>
+<p>
+<iframe src="https://docs.google.com/spreadsheets/d/1uHdFLi_sEbyXN573mBUnqQPJdWCfkjuve-smumsCrXE/pubhtml?widget=true&amp;headers=false" width="90%" height="400"></iframe>
+</p>
 
 
 <script>

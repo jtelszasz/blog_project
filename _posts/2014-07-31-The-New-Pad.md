@@ -4,33 +4,24 @@ title: The New Pad
 description: "Comparing electricity usage at the old and new apartments."
 modified: 2014-12-17
 category: articles
-tags: [BGE, smart-meters, energy, data, electricity]
+tags: [energy, electricity, buildings]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
   creditlink: http://www.fudgegraphics.com -->
 ---
 
-Steph and I moved on May 23.  
-
-I didn't manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we've now been there just over two months and so we've got some A/C load data to work with.
+Steph and I moved on May 23.  I didn't manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we've now been there just over two months and so we've got some A/C load data to work with. 
 
 The differences in the data are pretty staggering.  One issue is that we moved at the beginning of summer so our previous apartment with electric resistance heating has all the heating loads and the new apartment with central A/C has all the cooling loads.  The rest of the differences are described below.
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-07/New-Old-TS.png"><img src="{{ site.url }}/images/2014-07/New-Old-TS.png"></a>
-  <figcaption>Time series of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
-</figure>
-</center>
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-07/New-Old-Elec-Temp.png"><img src="{{ site.url }}/images/2014-07/New-Old-Elec-Temp.png"></a>
-  <figcaption>Scatter plot of hourly electricity consumption and outdoor temperature for new and old apartments.</figcaption>
-</figure>
-</center>
+{% maincolumn 'images/2014-07/New-Old-TS.png' '' %}
 
+
+{% maincolumn 'images/2014-07/New-Old-Elec-Temp.png' '' %}
+
+<!--more-->
 ### Physical Differences in Apartments
 
 Our old and new apartments are less than half a mile apart on the same street that runs north and south (St. Paul Street in Baltimore).  There are some important differences of note between the two apartments.

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Which citations do people not care about paying?</title>
+  <meta name="description" content="The Baltimore citation open data includes a field for open balance, meaning the amount still owed to the city for each citation.  With this information we ca...">
+
+
+  <link rel="stylesheet" href="/css/tufte.css">	
+  
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="canonical" href="/articles/2015/03/16/Which-Citation-Types-Do-People-Not-Care-About.html">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>-->
+	
+		
+  	
+		
+		    
+		      <a href="/">The Training Set</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/my-elec-use/">My Electricity Use</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/tags/">Articles</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/the-work/">The Work</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/subscribe/">Subscribe</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Which citations do people not care about paying?</h1>
+<p class="subtitle">March 16, 2015</p>
+
+
+<p>The Baltimore citation open data includes a field for open balance, meaning the amount still owed to the city for each citation.  With this information we can look at the rates of unpaid citations by citation type.</p>
+
+<!--more-->
+<p>Below I’ve calculated these ratios for all description types, but have only included for comparison those categories that had more than 100 citations in the database (so we hopefully have meaningful comparisons).</p>
+
+<p><strong>News flash: abandoned vehicle citations are more likely to be unpaid.</strong></p>
+<figure><figcaption>Percent of total citations that have a balance as of February 28, 2015.</figcaption><img src="/images/2015-03/Percent_Citations_Open_Bal.png" /></figure>
+
+<!-- <figure>
+  <a href='/images/2015-03/Percent_Citations_Open_Bal.png'><img src='/images/2015-03/Percent_Citations_Open_Bal.png'></a>
+  <figcaption>Percent of total citations that have a balance as of February 28, 2015.</figcaption>
+</figure> -->
+
+<!--The red light violations, however, should be of particular concern since they pose a safety risk.  While many of us in Baltimore have independently come to the same conclusion that the red lights are poorly timed, this does not excuse ignoring them.  The fact that red light violations have a higher portion of unpaid citations seems to indicate that the perhaps a stiffer penalty increase is warranted in order to curb this behavior.-->
+
+<h2 id="another-suggestion-for-baltimore-dot-and-mayors-office-of-it">Another suggestion for Baltimore DOT and Mayor’s Office of IT</h2>
+
+<p>The dataset that gets posted on <a href="http://data.baltimorecity.gov">the Open Baltimore data portal</a> could really use better documenatation.  Here’s another example of why.  Since the speed camera program was halted in Baltimore, certain citations are no longer captured by this dataset, since parking enforcers don’t issue any kind of moving violations.  Some of those types are still in this dataset, however - a hold over from when the camera program was still in effect.  They should be removed before any analysis or comparisons.</p>
+
+<figure><figcaption>Total ticket counts by category and year.</figcaption><img src="/images/2015-03/Ticket_Counts_By_Year.png" /></figure>
+
+<!-- <center>
+<figure>
+  <a href='/images/2015-03/Ticket_Counts_By_Year.png'><img src='/images/2015-03/Ticket_Counts_By_Year.png'></a>
+  <figcaption>Total ticket counts by category and year.</figcaption>
+</figure>
+</center> -->
+<p><br /></p>
+
+<hr />
+
+<p style="width: 100%; font-style: italic;">
+
+Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore.</a><br />
+
+Analysis conducted using <a href="http://www.python.org">Python</a> and <a href="http://pandas.pydata.org">Pandas</a><br />
+
+Full analysis IPython notebook can be found <a href="http://nbviewer.ipython.org/github/jtelszasz/baltimore_citations/blob/master/citation_analysis.ipynb">here</a>.
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58835878-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</p>
+
+
+
+    </article>
+    <span class="print-footer">Which citations do people not care about paying? - March 16, 2015 - Justin Elszasz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:thetrainingset@gmail.com"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/thetrainingset"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/jtelszasz"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.linkedin.com/in/justinelszasz"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;JUSTIN ELSZASZ</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

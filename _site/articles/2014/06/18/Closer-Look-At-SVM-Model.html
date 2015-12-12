@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Closer Look at the Electricity SVR Forecast</title>
+  <meta name="description" content="First a disclaimer on cross-validation:In the previous post I trained a support vector machine model using electricity demand data.  I should state that this...">
+
+
+  <link rel="stylesheet" href="/css/tufte.css">	
+  
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="canonical" href="/articles/2014/06/18/Closer-Look-At-SVM-Model.html">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>-->
+	
+		
+  	
+		
+		    
+		      <a href="/">The Training Set</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/my-elec-use/">My Electricity Use</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/tags/">Articles</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/the-work/">The Work</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/subscribe/">Subscribe</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Closer Look at the Electricity SVR Forecast</h1>
+<p class="subtitle">June 18, 2014</p>
+
+
+<p>First a disclaimer on cross-validation:</p>
+
+<p>In the <a href="/articles/Predicting-Energy-Use-with-Support-Vector-Machines">previous post</a> I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized. <!--more--></p>
+
+<p>The data I’m using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.</p>
+
+<figure><figcaption>Predicted (SVR, next-hour) and actual hourly electricity usage, March 25 and 26.</figcaption><img src="/images/2014-06/SVM_predict_TS_zoom.png" /></figure>
+
+<p>It looks like, with some exceptions, the prediction is generally one hour behind what the actual electricity demand is doing, especially looking at most of the peaks.  At first I thought (hoped) that this was an issue with how I was date indexing the predicted values after calculating them (assigning a timestamp one hour behind what it should have been). But after closer inspection and thinking about it, this actually makes sense.  In the post on <a href="/articles/Autocorrelation">autocorrelation</a> I showed the following lag plot:</p>
+
+<figure><figcaption>Lag plot, 1 hour.</figcaption><img src="/images/2014-06/Elec_Lag_1hour.png" /></figure>
+
+<p>The slope of the linear fit is about 0.97 and the constant (y-intercept) is about 0.04.  In other words, the ratio between any hour’s electricity demand and the hour previous is about one.  So unless the time of day or workday-non-workday indicator is <em>very</em> influential at any hour (like <a href="/articles/Guess-What-Time-Justin-Wakes-Up">6am</a>), the model will likely just predict the next hour to be the same as the current hour demand.  This will result in missing peaks by an hour, which if you’re a utility trying to schedule enough generation in the summer to meet the next hour’s air conditioning loads in a city, this is not so bueno.  I think the reason this is a product of the model is that a large fraction of the training samples used to build the model are <em>not</em> peaks, save for the <a href="/articles/Guess-What-Time-Justin-Wakes-Up">6am wake-up time</a>.</p>
+
+<p>Below are the same results, just resampled to daily instead of hourly.</p>
+
+<figure><figcaption>Hourly demand (actual and predicted) resampled to daily totals.</figcaption><img src="/images/2014-06/SVM_predict_DailyTotal.png" /></figure>
+
+<h3 id="accuracy-measures">Accuracy Measures</h3>
+
+<p>In order to compare the accuracy of any models, the following measures can be used.  The file <a href="http://www.github.com/jtelszasz/my_energy/forecasts/">“errors.py”</a> has all of these functions for future use.</p>
+
+<p>I’ve calculated and reported the values below and while some do have some absolute meaning, we’ll need to test out some more models to see the relative performance of the model.</p>
+
+<h4 id="root-mean-sqaure-error">Root Mean Sqaure Error</h4>
+
+<p>This is effectively the standard error of the model, and is in the same units as those of the predicted variable (or kilowatt-hours here).</p>
+
+<p><span>​<script type="math/tex">RMSE=\sqrt{\frac{\sum_{1}^{N}(y-\hat{y})^{2}}{N}} </script></span></p>
+
+<p>The standard error for the <a href="/articles/Predicting-Energy-Use-with-Support-Vector-Machines">initial SVM model</a> is 0.17 kilowatt-hours.</p>
+
+<h4 id="mean-absolute-percent-error">Mean Absolute Percent Error</h4>
+
+<p>With this measure, the absolute percent error between each predicted value and actual value is calculated and the average is taken; the unit of measure is a percentage. If the absolute value wasn’t taken and there was little bias in the model, you’d end up with something close to zero and the measure would be worthless.  (No I couldn’t get the damn absolute value brackets working in the equation editor and I stopped caring.)</p>
+
+<p><span>​<script type="math/tex">MAPE=\frac{1}{N}\sum_{1}^{N}\frac{abs(y-\hat{y})}{y} </script></span></p>
+
+<p>The mean absolute percent error for the SVM model is 19%.</p>
+
+<h4 id="coefficient-of-variation">Coefficient of Variation</h4>
+
+<p>This is similar to the RMSE measure, except it is normalized to the mean.  It indicates how much variation there is with respect to the mean.</p>
+
+<p><span>​<script type="math/tex">CV=\sqrt{\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})^{2}}{\bar{y}}} </script></span></p>
+
+<p>The coefficient of variation for the SVM model is 0.21.</p>
+
+<h4 id="mean-bias-error">Mean Bias Error</h4>
+
+<p>The mean bias error gives an indication of how the model over- or underestimates.</p>
+
+<p><span>​<script type="math/tex">MBE=\frac{\frac{1}{N-1}\sum_{1}^{N}(y-\hat{y})}{\bar{y}} </script></span></p>
+
+<p>The mean bias error for the initial SVM model is -0.02, which indicates the model isn’t systematically over- or underestimating the hourly kilowatt-hour consumption.</p>
+
+
+
+    </article>
+    <span class="print-footer">Closer Look at the Electricity SVR Forecast - June 18, 2014 - Justin Elszasz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:thetrainingset@gmail.com"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/thetrainingset"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/jtelszasz"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.linkedin.com/in/justinelszasz"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;JUSTIN ELSZASZ</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

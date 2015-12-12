@@ -5,21 +5,15 @@ description: "Using Green Button sample data and BGE residential pricing plans."
 modified: 2014-08-03
 category: articles
 share: true
-tags: [BGE, Green-Button, data, electricity, cost, dynamic-pricing]
-<!-- image:
-  feature: design/ny_concrete_10.JPG
-  credit: Fudgegraphics
-  creditlink: http://www.fudgegraphics.com -->
+tags: [energy, electricity]
 ---
 
-A quick blurb on a couple of pieces of the demand-side storage puzzle I'm working on.
+A quick blurb on a couple of pieces of the demand-side storage puzzle I'm working on. <!--more-->
 
 First, turns out I'm going to use the Green Button sample data that I <a href='{{ site.url }}/articles/feeding-the-data-monster'>previously found</a>.  They have <a href='http://services.greenbuttondata.org/sample-data.html'>several of these datasets posted</a> that may be interesting for comparison later.  It took an embarassing amount of time to sort out my first time parsing an XML file.  Word of advice for you data/Python peoples: don't use ElementTree, I used BeautifulSoup and it was much simpler.
 
-<figure>
-  <a href="{{ site.url }}/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png"><img src="{{ site.url }}/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png"></a>
-  <figcaption>Green Button sample hourly data for inland single family residence, resampled to daily.</figcaption>
-</figure>
+{% maincolumn 'images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png' 'Green Button sample hourly data for inland single family residence, resampled to daily. <a href="/images/2014-08/Green_Button_Sample_Inland_Single_Family_Daily.png">Click here to enlarge</a>.' %}
+
 
 Definitely nice to have a full year worth of clean data.  You can also clearly see the bump up in summer usage from A/C loads.
 
@@ -27,15 +21,11 @@ In sorting out the demand-side storage question, I also took a look at what pric
 
 Here's what the three pricing plans look like for weekdays in summer and non-summer periods.
 
-<figure>
-  <a href="{{ site.url }}/images/2014-08/BGE_Pricing_Summer.png"><img src="{{ site.url }}/images/2014-08/BGE_Pricing_Summer.png"></a>
-  <figcaption>BGE residential pricing plans, summer weekday.</figcaption>
-</figure>
+{% maincolumn 'images/2014-08/BGE_Pricing_Summer.png' "BGE residential pricing plans, summer weekday." %}
 
-<figure>
-  <a href="{{ site.url }}/images/2014-08/BGE_Pricing_Non-Summer.png"><img src="{{ site.url }}/images/2014-08/BGE_Pricing_Non-Summer.png"></a>
-  <figcaption>BGE residential pricing plans, non-summer weekday.</figcaption>
-</figure>
+{% maincolumn 'images/2014-08/BGE_Pricing_Non-Summer.png' "BGE residential pricing plans, non-summer weekday." %}
+
+
 
 
 

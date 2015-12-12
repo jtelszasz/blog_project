@@ -5,12 +5,13 @@ description: "An idea for upcoming political races."
 modified: 2015-04-14
 category: articles
 share: true
-tags: [elections, STEM, ShowYourWork]
+tags: [elections, politics]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
   creditlink: http://www.fudgegraphics.com -->
 ---
+
 
 Here's a small idea that I think would make the upcoming election cycle incrementally more bearable.  
 

@@ -5,16 +5,10 @@ description: "Summer delays and using an IDE."
 modified: 2014-09-22
 category: articles
 share: true
-tags: [Python]
-<!-- image:
-  feature: design/ny_concrete_10.JPG
-  credit: Fudgegraphics
-  creditlink: http://www.fudgegraphics.com -->
+tags: [python, code]
 ---
 
-It's been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.
-
-I didn't have much time over the summer for this stuff.  My real job got pretty busy.  You don't care about that though.
+It's been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.  I didn't have much time over the summer for this stuff.  My real job got pretty busy.  You don't care about that though.  <!--more-->
 
 I did get a bit stalled.  As I've discussed previously, I've used iPython notebooks <a href='{{ site.url }}/the-work'>quite a bit</a> for conducting analyses.  These only got me so far.  I've been working on a demand-side storage model to figure out how to take advantage of time-of-use pricing now available from utility companies.  While the notebooks work great for documenting analyses and creating plots, building a model is nearly impossible with them.  They aren't really useful if you need multiple functions and scripts.  I was encountering bugs early on in building the model and couldn't fix them.  It was frustrating.
 

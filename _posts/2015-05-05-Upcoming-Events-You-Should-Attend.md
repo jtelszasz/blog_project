@@ -5,7 +5,7 @@ description: "I'll be giving a couple of public talks about my work on this webs
 modified: 2015-05-05
 category: articles
 share: true
-tags: [Baltimore, publicity, presentations]
+tags: [Baltimore, apps, python, civic-tech]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics

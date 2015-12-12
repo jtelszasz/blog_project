@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Guess What Time Justin Wakes Up</title>
+  <meta name="description" content="First, a little bit on my tools.">
+
+
+  <link rel="stylesheet" href="/css/tufte.css">	
+  
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="canonical" href="/articles/2014/04/16/Guess-What-Time-Justin-Wakes-Up.html">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>-->
+	
+		
+  	
+		
+		    
+		      <a href="/">The Training Set</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/my-elec-use/">My Electricity Use</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/tags/">Articles</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/the-work/">The Work</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/subscribe/">Subscribe</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Guess What Time Justin Wakes Up</h1>
+<p class="subtitle">April 16, 2014</p>
+
+
+<p>First, a little bit on my tools.  <!--more--></p>
+
+<p>For analysis tools, I’m mainly using Python (in the form of iPython notebooks) with the <a href="http://pandas.pydata.org/">Pandas</a> module for data analysis (the sklearn module for machine learning later). Suffice it to say it’s rad.  I also use <a href="https://github.com/jtelszasz">Github</a>, both for my analysis and modeling as well as this blog itself (as you can tell from the current web address), so you’re welcome to peruse or use any of my code from there.  I’ll try to keep my iPython notebooks pretty clean and explained well as a supplement to the blog.  You can find the notebook for the analysis below <a href="http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy.ipynb?create=1">here</a>.  (Just click the link - you don’t need anything special to be able to view the notebook.)</p>
+
+<p>Pandas has been great for data analysis and makes things intuitive and quick.  As a mechanical engineer, a lot of my previous work was in Matlab.  It of course has its strengths but for data analysis it always took quite a bit of manual data munging, especially when it came to time series.</p>
+
+<p>Anyways, using the Python groupby function I can manipulate the time series of my hourly electricity consumption from my BGE smart data.  The data starts from January 18 and I now have a few full months of data.  Below is a quick code snipet of how I’m using groupby in this case.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># elec_and_weather: hourly electricity usage</span>
+<span class="n">elec_and_weather</span><span class="o">.</span><span class="n">groupby</span><span class="p">([(</span><span class="n">elec_and_weather</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">elec_and_weather</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">==</span><span class="mi">6</span><span class="p">),</span><span class="n">elec_and_weather</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">hour</span><span class="p">])</span>
+</code></pre>
+</div>
+
+<h3 id="the-correct-answer-is">The correct answer is…</h3>
+
+<p>To arrive at the plot below, I actually first sliced the data by month and then applied the groupby shown above.</p>
+
+<figure><figcaption>Average weekday and weekend electricity consumption for February and March of 2014.</figcaption><img src="/images/2014-04/AvgDays_Elec_Feb_March.png" /></figure>
+
+<p>This is the “guess what time Justin wakes up for work” plot. The coffee pot consumes 900 W, and we typically have it on for about 20 minutes or so, which would amount to a spike of .3 kWh for that hour. The roommate’s hair dryer consumes 1,875 W and she uses it for about 5 minutes (so she claims, I think I want to see data for that), so that would make for about a .15 kWh spike. Of course that’s what I think a typical day looks like. Not every weekday looked like that (if I worked from home, I probably used the french press instead of the coffee maker, and sometimes the roommate showers the night before and so doesn’t blow dry the hair in the morn). Therefore, the 6am peak in the weekday averages is not quite that high.</p>
+
+<p>Since this spike should be strictly due to behavior, we don’t need to look at the difference between February and March.  We can look at the 5am-6am difference over all the weekday samples thusly:</p>
+
+<figure><figcaption>5am to 6am difference across all weekday samples.</figcaption><img src="/images/2014-04/Wkday_5am6amDiff - Feb_March.png" /></figure>
+
+<p>The average weekday difference over this time period between 5am and 6am is .253 kWh.  The 20 minute coffee maker run and the 5 minute blow dryer would amount to .45 kWh.  Looks like that was the case at least a couple of times.</p>
+
+<p>This is a good illustration of privacy concerns around ubiquitous data capture.  Measuring energy consumption is a proxy for measuring human behavior, and while I don’t share a lot of the privacy concerns that many out there do, I can understand why this is problematic.  Suffice it to say, I don’t care that a reader of this blog (are there any?) knows when I wake up (among other things).  Moreover, at larger scales than individual households - say at city block levels - these concerns should start to fade away, as aggregated data can effectively anonymize the information.</p>
+
+
+
+
+    </article>
+    <span class="print-footer">Guess What Time Justin Wakes Up - April 16, 2014 - Justin Elszasz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:thetrainingset@gmail.com"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/thetrainingset"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/jtelszasz"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.linkedin.com/in/justinelszasz"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;JUSTIN ELSZASZ</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

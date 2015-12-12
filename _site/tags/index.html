@@ -1,382 +1,220 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<title>Tag Archive &#8211; The Training Set.</title>
-<meta name="description" content="An archive of posts sorted by tag.">
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Articles</title>
+  <meta name="description" content="">
 
 
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://localhost:4000/images/">
-<meta name="twitter:title" content="Tag Archive">
-<meta name="twitter:description" content="An archive of posts sorted by tag.">
-<meta name="twitter:creator" content="@jtelszasz">
+  <link rel="stylesheet" href="/css/tufte.css">	
+  
 
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Tag Archive">
-<meta property="og:description" content="An archive of posts sorted by tag.">
-<meta property="og:url" content="http://localhost:4000/tags/">
-<meta property="og:site_name" content="The Training Set.">
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
 
-
-
-
-
-<link rel="canonical" href="http://localhost:4000/tags/">
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set. Feed">
-
-
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
-<!-- Webfonts -->
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- Load Modernizr -->
-<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
-
-
-
+  <link rel="canonical" href="/tags/">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="/feed.xml" />
 </head>
 
-<body id="post-index" >
-
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-	<button class="dl-trigger">Open Menu</button>
-	<ul class="dl-menu">
-		<li><a href="http://localhost:4000">Home</a></li>
-		<li>
-			<a href="#">About</a>
-			<ul class="dl-submenu">
-				<li>
-					<img src="http://localhost:4000/images/bio-photo.jpg" alt="Justin Elszasz photo" class="author-photo">
-					<h4>Justin Elszasz</h4>
-					<p>Engineering background, indeterminate foreground.</p>
-				</li>
-				<li><a href="http://localhost:4000/about/">Learn More</a></li>
-				<li>
-					<a href="mailto:thetrainingset@gmail.com"><i class="fa fa-envelope"></i> Email</a>
-				</li>
-				<li>
-					<a href="http://twitter.com/jtelszasz"><i class="fa fa-twitter"></i> Twitter</a>
-				</li>
-				
-				
-				<li>
-					<a href="http://linkedin.com/in/justinelszasz"><i class="fa fa-linkedin"></i> LinkedIn</a>
-				</li>
-				<li>
-					<a href="http://github.com/jtelszasz"><i class="fa fa-github"></i> GitHub</a>
-				</li>
-				
-				
-				
-				
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
-				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
-			</ul>
-		</li>
-		<li><a href="http://localhost:4000/the-work/">The Work</a></li><li><a href="http://localhost:4000/my-elec-use/">My Electricity Use</a></li><li><a href="http://localhost:4000/subscribe/">Subscribe</a></li>
-	</ul><!-- /.dl-menu -->
-</nav><!-- /.dl-menuwrapper -->
-
-
-<div class="entry-header">
-  
-  
-  <div class="header-title">
-    <div class="header-title-wrap">
-      <h1>The Training Set.</h1>
-      <h2>Tag Archive</h2>
-    </div><!-- /.header-title-wrap -->
-  </div><!-- /.header-title -->
-</div><!-- /.entry-header -->
-
-<div id="main" role="main">
-  
+  <body class="full-width">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>-->
+	
+		
+  	
+		
+		    
+		      <a href="/">The Training Set</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/my-elec-use/">My Electricity Use</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/tags/" class="active">Articles</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/the-work/">The Work</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/subscribe/">Subscribe</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    
+      <h1>Articles</h1>
+    
+    <article>
+      <!-- <h1 class="post-title">Articles</h1> -->
 
 
-<ul class="entry-meta inline-list">
+
+
+<ul class="tag-articles">
   
     
-  	<li><a href="#BGE" class="tag">BGE <span>16</span></a></li>
+  	<li style="line-height: .5em;"><a href="#Baltimore">Baltimore <span>20</span></a></li>
   
     
-  	<li><a href="#Baltimore" class="tag">Baltimore <span>19</span></a></li>
+  	<li style="line-height: .5em;"><a href="#FreddieGray">FreddieGray <span>3</span></a></li>
   
     
-  	<li><a href="#FreddieGray" class="tag">FreddieGray <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#Verizon">Verizon <span>1</span></a></li>
   
     
-  	<li><a href="#Green-Button" class="tag">Green-Button <span>5</span></a></li>
+  	<li style="line-height: .5em;"><a href="#apps">apps <span>2</span></a></li>
   
     
-  	<li><a href="#PCA" class="tag">PCA <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#budget">budget <span>2</span></a></li>
   
     
-  	<li><a href="#Pandas" class="tag">Pandas <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#buildings">buildings <span>4</span></a></li>
   
     
-  	<li><a href="#Python" class="tag">Python <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#cities">cities <span>15</span></a></li>
   
     
-  	<li><a href="#STEM" class="tag">STEM <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#civic-tech">civic-tech <span>3</span></a></li>
   
     
-  	<li><a href="#ShowYourWork" class="tag">ShowYourWork <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#code">code <span>3</span></a></li>
   
     
-  	<li><a href="#Verizon" class="tag">Verizon <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#crime">crime <span>1</span></a></li>
   
     
-  	<li><a href="#apartments" class="tag">apartments <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#data-viz">data-viz <span>5</span></a></li>
   
     
-  	<li><a href="#behavior" class="tag">behavior <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#elections">elections <span>1</span></a></li>
   
     
-  	<li><a href="#blight" class="tag">blight <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#electricity">electricity <span>19</span></a></li>
   
     
-  	<li><a href="#budget" class="tag">budget <span>2</span></a></li>
+  	<li style="line-height: .5em;"><a href="#energy">energy <span>19</span></a></li>
   
     
-  	<li><a href="#buildings" class="tag">buildings <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#energy-storage">energy-storage <span>3</span></a></li>
   
     
-  	<li><a href="#cell-phones" class="tag">cell-phones <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#futbol">futbol <span>1</span></a></li>
   
     
-  	<li><a href="#ciites" class="tag">ciites <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#know-more-bmore">know-more-bmore <span>2</span></a></li>
   
     
-  	<li><a href="#cities" class="tag">cities <span>14</span></a></li>
+  	<li style="line-height: .5em;"><a href="#machine-learning">machine-learning <span>3</span></a></li>
   
     
-  	<li><a href="#civic-hacking" class="tag">civic-hacking <span>10</span></a></li>
+  	<li style="line-height: .5em;"><a href="#open-data">open-data <span>18</span></a></li>
   
     
-  	<li><a href="#cost" class="tag">cost <span>2</span></a></li>
+  	<li style="line-height: .5em;"><a href="#police">police <span>4</span></a></li>
   
     
-  	<li><a href="#crime" class="tag">crime <span>3</span></a></li>
+  	<li style="line-height: .5em;"><a href="#politics">politics <span>1</span></a></li>
   
     
-  	<li><a href="#data" class="tag">data <span>14</span></a></li>
+  	<li style="line-height: .5em;"><a href="#poverty">poverty <span>2</span></a></li>
   
     
-  	<li><a href="#data-journalism" class="tag">data-journalism <span>7</span></a></li>
+  	<li style="line-height: .5em;"><a href="#predictive-analytics">predictive-analytics <span>2</span></a></li>
   
     
-  	<li><a href="#data-visualization" class="tag">data-visualization <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#python">python <span>4</span></a></li>
   
     
-  	<li><a href="#data-viz" class="tag">data-viz <span>2</span></a></li>
+  	<li style="line-height: .5em;"><a href="#schools">schools <span>1</span></a></li>
   
     
-  	<li><a href="#demand-side" class="tag">demand-side <span>5</span></a></li>
+  	<li style="line-height: .5em;"><a href="#smart-phones">smart-phones <span>1</span></a></li>
   
     
-  	<li><a href="#dynamic-pricing" class="tag">dynamic-pricing <span>5</span></a></li>
-  
-    
-  	<li><a href="#elections" class="tag">elections <span>1</span></a></li>
-  
-    
-  	<li><a href="#electricity" class="tag">electricity <span>18</span></a></li>
-  
-    
-  	<li><a href="#energy" class="tag">energy <span>8</span></a></li>
-  
-    
-  	<li><a href="#goalkeeper" class="tag">goalkeeper <span>1</span></a></li>
-  
-    
-  	<li><a href="#home-monitoring" class="tag">home-monitoring <span>1</span></a></li>
-  
-    
-  	<li><a href="#k-means" class="tag">k-means <span>1</span></a></li>
-  
-    
-  	<li><a href="#know-more-bmore" class="tag">know-more-bmore <span>2</span></a></li>
-  
-    
-  	<li><a href="#machine-learning" class="tag">machine-learning <span>2</span></a></li>
-  
-    
-  	<li><a href="#mcfc-data" class="tag">mcfc-data <span>1</span></a></li>
-  
-    
-  	<li><a href="#model" class="tag">model <span>3</span></a></li>
-  
-    
-  	<li><a href="#open-data" class="tag">open-data <span>3</span></a></li>
-  
-    
-  	<li><a href="#parking" class="tag">parking <span>10</span></a></li>
-  
-    
-  	<li><a href="#police" class="tag">police <span>11</span></a></li>
-  
-    
-  	<li><a href="#poverty" class="tag">poverty <span>2</span></a></li>
-  
-    
-  	<li><a href="#predictive-analytics" class="tag">predictive-analytics <span>2</span></a></li>
-  
-    
-  	<li><a href="#presentations" class="tag">presentations <span>1</span></a></li>
-  
-    
-  	<li><a href="#publicity" class="tag">publicity <span>3</span></a></li>
-  
-    
-  	<li><a href="#python" class="tag">python <span>1</span></a></li>
-  
-    
-  	<li><a href="#schools" class="tag">schools <span>1</span></a></li>
-  
-    
-  	<li><a href="#smart-meters" class="tag">smart-meters <span>11</span></a></li>
-  
-    
-  	<li><a href="#soccer" class="tag">soccer <span>1</span></a></li>
-  
-    
-  	<li><a href="#storage" class="tag">storage <span>3</span></a></li>
-  
-    
-  	<li><a href="#support-vector-machine" class="tag">support-vector-machine <span>2</span></a></li>
-  
-    
-  	<li><a href="#transportation" class="tag">transportation <span>10</span></a></li>
-  
-    
-  	<li><a href="#urban" class="tag">urban <span>1</span></a></li>
-  
-    
-  	<li><a href="#urban-planning" class="tag">urban-planning <span>1</span></a></li>
-  
-    
-  	<li><a href="#vacant" class="tag">vacant <span>1</span></a></li>
+  	<li style="line-height: .5em;"><a href="#transportation">transportation <span>11</span></a></li>
   
 </ul>
 
 
-  
-	<article>
-	<h2 id="BGE">BGE</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site" title="Introducing "My Electricity Use" Visualization Page">Introducing "My Electricity Use" Visualization Page</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Pointless-Data-Viz" title="Excessive Data Visualization">Excessive Data Visualization</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Heat-Map" title="Demand Heat Map">Demand Heat Map</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Pricing" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Autocorrelation" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Energy-Use-and-Weather" title="Energy Use and Weather">Energy Use and Weather</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Smart-Meter-Data" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" title="My Electricity Use">My Electricity Use</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Smart-Meters" title="BGE Smart Meters">BGE Smart Meters</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
+<hr style="margin-top: 4rem;">
+
 
   
 	<article>
 	<h2 id="Baltimore">Baltimore</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015" title="Baltimore Policing, Six Months After F.G.">Baltimore Policing, Six Months After F.G.</a></li>
+      <li><a href="/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html" title="Baltimore Policing: Six Months After Freddie Gray Events">Baltimore Policing: Six Months After Freddie Gray Events</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
+      <li><a href="/articles/2015/06/12/Arrests-In-Baltimore-Drop-In-May.html" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
+      <li><a href="/articles/2015/06/02/Vacant-Lots-and-Bldgs-Near-Schools.html" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab" title="Baltimore Vacant Housing on The Atlantic's Citylab">Baltimore Vacant Housing on The Atlantic's Citylab</a></li>
+      <li><a href="/articles/2015/06/01/Baltimore-Vacant-Houses-On-Citylab.html" title="Baltimore Vacant Housing on The Atlantic's Citylab">Baltimore Vacant Housing on The Atlantic's Citylab</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Upcoming-Events-You-Should-Attend" title="Upcoming Events You Should Check Out">Upcoming Events You Should Check Out</a></li>
+      <li><a href="/articles/2015/05/05/Upcoming-Events-You-Should-Attend.html" title="Upcoming Events You Should Check Out">Upcoming Events You Should Check Out</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
+      <li><a href="/articles/2015/04/26/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.html" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
+      <li><a href="/articles/2015/04/23/Thanks-Technically-Baltimore.html" title="Thanks Technical.ly Baltimore!">Thanks Technical.ly Baltimore!</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
+      <li><a href="/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Know-More-Bmore" title="Know More, B'more.">Know More, B'more.</a></li>
+      <li><a href="/articles/2015/04/12/A-City-Divided-In-N-Dimensions.html" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
+      <li><a href="/articles/2015/03/30/Know-More-Bmore.html" title="Know More, B'more.">Know More, B'more.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
+      <li><a href="/articles/2015/03/19/Baltimore-City-Paper-Bounces-TTS-Analysis.html" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
+      <li><a href="/articles/2015/03/16/Which-Citation-Types-Do-People-Not-Care-About.html" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
+      <li><a href="/articles/2015/03/12/DOT-Needs-More-Citation-Categories.html" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
+      <li><a href="/articles/2015/03/07/When-Not-To-Park-On-Charles.html" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Daily-Unpaid-Citations" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
+      <li><a href="/articles/2015/03/03/Baltimore-City-Paper-Article-On-4200-Wickford.html" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Rapid-Increase-In-Citations" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
+      <li><a href="/articles/2015/02/27/Daily-Unpaid-Citations.html" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-Block-Is-A-Target" title="My Block is a Target.">My Block is a Target.</a></li>
+      <li><a href="/articles/2015/02/24/Rapid-Increase-In-Citations.html" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
+      <li><a href="/articles/2015/02/10/My-Block-Is-A-Target.html" title="My Block is a Target.">My Block is a Target.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
+      <li><a href="/articles/2015/01/23/Quick-Response-From-Baltimore-Chief-Data-Officer.html" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
+    
+      <li><a href="/articles/2015/01/21/Baltimores-Lost-Traffic-Camera-Revenue.html" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -384,77 +222,13 @@
   
 	<article>
 	<h2 id="FreddieGray">FreddieGray</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
+      <li><a href="/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html" title="Baltimore Policing: Six Months After Freddie Gray Events">Baltimore Policing: Six Months After Freddie Gray Events</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="Green-Button">Green-Button</h2>
-		<ul>
+      <li><a href="/articles/2015/06/12/Arrests-In-Baltimore-Drop-In-May.html" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Pricing" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="PCA">PCA</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="Pandas">Pandas</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Importing-CSV-Files" title="Importing Lots of CSV's">Importing Lots of CSV's</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="Python">Python</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Summer-Update" title="Summer Updates">Summer Updates</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="STEM">STEM</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Show-Your-Work" title="ShowYourWork Election Campaign">ShowYourWork Election Campaign</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="ShowYourWork">ShowYourWork</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Show-Your-Work" title="ShowYourWork Election Campaign">ShowYourWork Election Campaign</a></li>
+      <li><a href="/articles/2015/04/26/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.html" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -462,39 +236,21 @@
   
 	<article>
 	<h2 id="Verizon">Verizon</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Verizon-Wireless-Calculator" title="Verizon Wireless Cost Estimation">Verizon Wireless Cost Estimation</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="apartments">apartments</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
+      <li><a href="/articles/2015/05/21/Verizon-Wireless-Calculator.html" title="Verizon Wireless Cost Estimation">Verizon Wireless Cost Estimation</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
 
   
 	<article>
-	<h2 id="behavior">behavior</h2>
-		<ul>
+	<h2 id="apps">apps</h2>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
+      <li><a href="/articles/2015/07/14/What-Im-Up-To.html" title="What I'm Up To">What I'm Up To</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="blight">blight</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab" title="Baltimore Vacant Housing on The Atlantic's Citylab">Baltimore Vacant Housing on The Atlantic's Citylab</a></li>
+      <li><a href="/articles/2015/05/05/Upcoming-Events-You-Should-Attend.html" title="Upcoming Events You Should Check Out">Upcoming Events You Should Check Out</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -502,11 +258,11 @@
   
 	<article>
 	<h2 id="budget">budget</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
+      <li><a href="/articles/2015/04/26/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.html" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
+      <li><a href="/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -514,29 +270,15 @@
   
 	<article>
 	<h2 id="buildings">buildings</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
+      <li><a href="/articles/2015/06/02/Vacant-Lots-and-Bldgs-Near-Schools.html" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="cell-phones">cell-phones</h2>
-		<ul>
+      <li><a href="/articles/2015/06/01/Baltimore-Vacant-Houses-On-Citylab.html" title="Baltimore Vacant Housing on The Atlantic's Citylab">Baltimore Vacant Housing on The Atlantic's Citylab</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Verizon-Wireless-Calculator" title="Verizon Wireless Cost Estimation">Verizon Wireless Cost Estimation</a></li>
+      <li><a href="/articles/2014/08/01/Mo-Apartment-Mo-Energy.html" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="ciites">ciites</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab" title="Baltimore Vacant Housing on The Atlantic's Citylab">Baltimore Vacant Housing on The Atlantic's Citylab</a></li>
+      <li><a href="/articles/2014/07/31/The-New-Pad.html" title="The New Pad">The New Pad</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -544,75 +286,65 @@
   
 	<article>
 	<h2 id="cities">cities</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
+      <li><a href="/articles/2015/06/02/Vacant-Lots-and-Bldgs-Near-Schools.html" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
+      <li><a href="/articles/2015/06/01/Baltimore-Vacant-Houses-On-Citylab.html" title="Baltimore Vacant Housing on The Atlantic's Citylab">Baltimore Vacant Housing on The Atlantic's Citylab</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
+      <li><a href="/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Know-More-Bmore" title="Know More, B'more.">Know More, B'more.</a></li>
+      <li><a href="/articles/2015/04/12/A-City-Divided-In-N-Dimensions.html" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
+      <li><a href="/articles/2015/03/30/Know-More-Bmore.html" title="Know More, B'more.">Know More, B'more.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
+      <li><a href="/articles/2015/03/19/Baltimore-City-Paper-Bounces-TTS-Analysis.html" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
+      <li><a href="/articles/2015/03/16/Which-Citation-Types-Do-People-Not-Care-About.html" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
+      <li><a href="/articles/2015/03/12/DOT-Needs-More-Citation-Categories.html" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
+      <li><a href="/articles/2015/03/07/When-Not-To-Park-On-Charles.html" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Daily-Unpaid-Citations" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
+      <li><a href="/articles/2015/03/03/Baltimore-City-Paper-Article-On-4200-Wickford.html" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Rapid-Increase-In-Citations" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
+      <li><a href="/articles/2015/02/27/Daily-Unpaid-Citations.html" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-Block-Is-A-Target" title="My Block is a Target.">My Block is a Target.</a></li>
+      <li><a href="/articles/2015/02/24/Rapid-Increase-In-Citations.html" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
+      <li><a href="/articles/2015/02/10/My-Block-Is-A-Target.html" title="My Block is a Target.">My Block is a Target.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
+      <li><a href="/articles/2015/01/23/Quick-Response-From-Baltimore-Chief-Data-Officer.html" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="civic-hacking">civic-hacking</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Know-More-Bmore" title="Know More, B'more.">Know More, B'more.</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Daily-Unpaid-Citations" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Rapid-Increase-In-Citations" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-Block-Is-A-Target" title="My Block is a Target.">My Block is a Target.</a></li>
+      <li><a href="/articles/2015/01/21/Baltimores-Lost-Traffic-Camera-Revenue.html" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
 
   
 	<article>
-	<h2 id="cost">cost</h2>
-		<ul>
+	<h2 id="civic-tech">civic-tech</h2>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
+      <li><a href="/articles/2015/07/14/What-Im-Up-To.html" title="What I'm Up To">What I'm Up To</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Pricing" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
+      <li><a href="/articles/2015/05/05/Upcoming-Events-You-Should-Attend.html" title="Upcoming Events You Should Check Out">Upcoming Events You Should Check Out</a></li>
+    
+      <li><a href="/articles/2015/04/23/Thanks-Technically-Baltimore.html" title="Thanks Technical.ly Baltimore!">Thanks Technical.ly Baltimore!</a></li>
+    
+		</ul>
+	</article><!-- /.hentry -->
+
+  
+	<article>
+	<h2 id="code">code</h2>
+		<ul class="tag-articles">
+    
+      <li><a href="/articles/2015/01/08/Importing-CSV-Files.html" title="Importing Lots of CSV's">Importing Lots of CSV's</a></li>
+    
+      <li><a href="/articles/2014/09/22/Summer-Update.html" title="Summer Updates">Summer Updates</a></li>
+    
+      <li><a href="/articles/2014/04/16/Guess-What-Time-Justin-Wakes-Up.html" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -620,81 +352,9 @@
   
 	<article>
 	<h2 id="crime">crime</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015" title="Baltimore Policing, Six Months After F.G.">Baltimore Policing, Six Months After F.G.</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="data">data</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Pricing" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Feeding-The-Data-Monster" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Autocorrelation" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Energy-Use-and-Weather" title="Energy Use and Weather">Energy Use and Weather</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Smart-Meter-Data" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" title="My Electricity Use">My Electricity Use</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Smart-Meters" title="BGE Smart Meters">BGE Smart Meters</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="data-journalism">data-journalism</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Know-More-Bmore" title="Know More, B'more.">Know More, B'more.</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="data-visualization">data-visualization</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Heat-Map" title="Demand Heat Map">Demand Heat Map</a></li>
+      <li><a href="/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html" title="Baltimore Policing: Six Months After Freddie Gray Events">Baltimore Policing: Six Months After Freddie Gray Events</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -702,47 +362,17 @@
   
 	<article>
 	<h2 id="data-viz">data-viz</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site" title="Introducing "My Electricity Use" Visualization Page">Introducing "My Electricity Use" Visualization Page</a></li>
+      <li><a href="/articles/2015/02/16/Buiding-My-Elec-Use-Visualization-Site.html" title="Introducing "My Electricity Use" Visualization Page">Introducing "My Electricity Use" Visualization Page</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Pointless-Data-Viz" title="Excessive Data Visualization">Excessive Data Visualization</a></li>
+      <li><a href="/articles/2014/12/25/More-Pointless-Data-Viz.html" title="Excessive Data Visualization">Excessive Data Visualization</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="demand-side">demand-side</h2>
-		<ul>
+      <li><a href="/articles/2014/11/11/Heat-Map.html" title="Demand Heat Map">Demand Heat Map</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
+      <li><a href="/articles/2014/04/17/More-Smart-Meter-Data.html" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="dynamic-pricing">dynamic-pricing</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Pricing" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
+      <li><a href="/articles/2014/03/16/My-BGE-Smart-Meter-Data.html" title="My Electricity Use">My Electricity Use</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -750,9 +380,9 @@
   
 	<article>
 	<h2 id="elections">elections</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Show-Your-Work" title="ShowYourWork Election Campaign">ShowYourWork Election Campaign</a></li>
+      <li><a href="/articles/2015/04/14/Show-Your-Work.html" title="ShowYourWork Election Campaign">ShowYourWork Election Campaign</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -760,43 +390,45 @@
   
 	<article>
 	<h2 id="electricity">electricity</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Buiding-My-Elec-Use-Visualization-Site" title="Introducing "My Electricity Use" Visualization Page">Introducing "My Electricity Use" Visualization Page</a></li>
+      <li><a href="/articles/2015/02/16/Buiding-My-Elec-Use-Visualization-Site.html" title="Introducing "My Electricity Use" Visualization Page">Introducing "My Electricity Use" Visualization Page</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Pointless-Data-Viz" title="Excessive Data Visualization">Excessive Data Visualization</a></li>
+      <li><a href="/articles/2014/12/25/More-Pointless-Data-Viz.html" title="Excessive Data Visualization">Excessive Data Visualization</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
+      <li><a href="/articles/2014/11/14/Assessing-System-Performance.html" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
+      <li><a href="/articles/2014/11/11/Heat-Map.html" title="Demand Heat Map">Demand Heat Map</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
+      <li><a href="/articles/2014/10/09/Storage-Model-Details.html" title="Storage Model Details">Storage Model Details</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Should-I-Switch-to-TOU-Pricing" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
+      <li><a href="/articles/2014/09/23/Intro-To-Storage-Model.html" title="Intro to Storage Model">Intro to Storage Model</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Pricing" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
+      <li><a href="/articles/2014/08/12/Should-I-Switch-to-TOU-Pricing.html" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
+      <li><a href="/articles/2014/08/03/BGE-Pricing.html" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></li>
+      <li><a href="/articles/2014/08/01/Mo-Apartment-Mo-Energy.html" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Feeding-The-Data-Monster" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
+      <li><a href="/articles/2014/07/31/The-New-Pad.html" title="The New Pad">The New Pad</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
+      <li><a href="/articles/2014/07/31/Feeding-The-Data-Monster.html" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
+      <li><a href="/articles/2014/06/18/Closer-Look-At-SVM-Model.html" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Autocorrelation" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
+      <li><a href="/articles/2014/05/08/Predicting-Energy-Use-with-Support-Vector-Machines.html" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Energy-Use-and-Weather" title="Energy Use and Weather">Energy Use and Weather</a></li>
+      <li><a href="/articles/2014/05/05/Autocorrelation.html" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Smart-Meter-Data" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
+      <li><a href="/articles/2014/04/18/Energy-Use-and-Weather.html" title="Energy Use and Weather">Energy Use and Weather</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
+      <li><a href="/articles/2014/04/17/More-Smart-Meter-Data.html" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" title="My Electricity Use">My Electricity Use</a></li>
+      <li><a href="/articles/2014/04/16/Guess-What-Time-Justin-Wakes-Up.html" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Smart-Meters" title="BGE Smart Meters">BGE Smart Meters</a></li>
+      <li><a href="/articles/2014/03/16/My-BGE-Smart-Meter-Data.html" title="My Electricity Use">My Electricity Use</a></li>
+    
+      <li><a href="/articles/2014/03/15/BGE-Smart-Meters.html" title="BGE Smart Meters">BGE Smart Meters</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -804,53 +436,69 @@
   
 	<article>
 	<h2 id="energy">energy</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
+      <li><a href="/articles/2015/02/16/Buiding-My-Elec-Use-Visualization-Site.html" title="Introducing "My Electricity Use" Visualization Page">Introducing "My Electricity Use" Visualization Page</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></li>
+      <li><a href="/articles/2014/12/25/More-Pointless-Data-Viz.html" title="Excessive Data Visualization">Excessive Data Visualization</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Autocorrelation" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
+      <li><a href="/articles/2014/11/14/Assessing-System-Performance.html" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Energy-Use-and-Weather" title="Energy Use and Weather">Energy Use and Weather</a></li>
+      <li><a href="/articles/2014/11/11/Heat-Map.html" title="Demand Heat Map">Demand Heat Map</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Smart-Meter-Data" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
+      <li><a href="/articles/2014/10/09/Storage-Model-Details.html" title="Storage Model Details">Storage Model Details</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
+      <li><a href="/articles/2014/09/23/Intro-To-Storage-Model.html" title="Intro to Storage Model">Intro to Storage Model</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" title="My Electricity Use">My Electricity Use</a></li>
+      <li><a href="/articles/2014/08/12/Should-I-Switch-to-TOU-Pricing.html" title="Should I Switch to Time-of-Use Pricing?">Should I Switch to Time-of-Use Pricing?</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Smart-Meters" title="BGE Smart Meters">BGE Smart Meters</a></li>
+      <li><a href="/articles/2014/08/03/BGE-Pricing.html" title="BGE Residential Pricing Plans">BGE Residential Pricing Plans</a></li>
+    
+      <li><a href="/articles/2014/08/01/Mo-Apartment-Mo-Energy.html" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
+    
+      <li><a href="/articles/2014/07/31/The-New-Pad.html" title="The New Pad">The New Pad</a></li>
+    
+      <li><a href="/articles/2014/07/31/Feeding-The-Data-Monster.html" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
+    
+      <li><a href="/articles/2014/06/18/Closer-Look-At-SVM-Model.html" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
+    
+      <li><a href="/articles/2014/05/08/Predicting-Energy-Use-with-Support-Vector-Machines.html" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
+    
+      <li><a href="/articles/2014/05/05/Autocorrelation.html" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
+    
+      <li><a href="/articles/2014/04/18/Energy-Use-and-Weather.html" title="Energy Use and Weather">Energy Use and Weather</a></li>
+    
+      <li><a href="/articles/2014/04/17/More-Smart-Meter-Data.html" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
+    
+      <li><a href="/articles/2014/04/16/Guess-What-Time-Justin-Wakes-Up.html" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
+    
+      <li><a href="/articles/2014/03/16/My-BGE-Smart-Meter-Data.html" title="My Electricity Use">My Electricity Use</a></li>
+    
+      <li><a href="/articles/2014/03/15/BGE-Smart-Meters.html" title="BGE Smart Meters">BGE Smart Meters</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
 
   
 	<article>
-	<h2 id="goalkeeper">goalkeeper</h2>
-		<ul>
+	<h2 id="energy-storage">energy-storage</h2>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/GK-Performance-Stats" title="Goalkeeper Performance Stats">Goalkeeper Performance Stats</a></li>
+      <li><a href="/articles/2014/11/14/Assessing-System-Performance.html" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="home-monitoring">home-monitoring</h2>
-		<ul>
+      <li><a href="/articles/2014/10/09/Storage-Model-Details.html" title="Storage Model Details">Storage Model Details</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Feeding-The-Data-Monster" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
+      <li><a href="/articles/2014/09/23/Intro-To-Storage-Model.html" title="Intro to Storage Model">Intro to Storage Model</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
 
   
 	<article>
-	<h2 id="k-means">k-means</h2>
-		<ul>
+	<h2 id="futbol">futbol</h2>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
+      <li><a href="/articles/2014/03/05/GK-Performance-Stats.html" title="Goalkeeper Performance Stats">Goalkeeper Performance Stats</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -858,11 +506,11 @@
   
 	<article>
 	<h2 id="know-more-bmore">know-more-bmore</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
+      <li><a href="/articles/2015/04/12/A-City-Divided-In-N-Dimensions.html" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Know-More-Bmore" title="Know More, B'more.">Know More, B'more.</a></li>
+      <li><a href="/articles/2015/03/30/Know-More-Bmore.html" title="Know More, B'more.">Know More, B'more.</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -870,35 +518,13 @@
   
 	<article>
 	<h2 id="machine-learning">machine-learning</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
+      <li><a href="/articles/2015/04/12/A-City-Divided-In-N-Dimensions.html" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
+      <li><a href="/articles/2014/06/18/Closer-Look-At-SVM-Model.html" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="mcfc-data">mcfc-data</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/GK-Performance-Stats" title="Goalkeeper Performance Stats">Goalkeeper Performance Stats</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="model">model</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
+      <li><a href="/articles/2014/05/08/Predicting-Energy-Use-with-Support-Vector-Machines.html" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -906,41 +532,43 @@
   
 	<article>
 	<h2 id="open-data">open-data</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015" title="Baltimore Policing, Six Months After F.G.">Baltimore Policing, Six Months After F.G.</a></li>
+      <li><a href="/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html" title="Baltimore Policing: Six Months After Freddie Gray Events">Baltimore Policing: Six Months After Freddie Gray Events</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/What-Im-Up-To" title="What I'm Up To">What I'm Up To</a></li>
+      <li><a href="/articles/2015/07/14/What-Im-Up-To.html" title="What I'm Up To">What I'm Up To</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
+      <li><a href="/articles/2015/06/12/Arrests-In-Baltimore-Drop-In-May.html" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="parking">parking</h2>
-		<ul>
+      <li><a href="/articles/2015/04/23/Thanks-Technically-Baltimore.html" title="Thanks Technical.ly Baltimore!">Thanks Technical.ly Baltimore!</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
+      <li><a href="/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
+      <li><a href="/articles/2015/04/12/A-City-Divided-In-N-Dimensions.html" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
+      <li><a href="/articles/2015/03/30/Know-More-Bmore.html" title="Know More, B'more.">Know More, B'more.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
+      <li><a href="/articles/2015/03/19/Baltimore-City-Paper-Bounces-TTS-Analysis.html" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
+      <li><a href="/articles/2015/03/16/Which-Citation-Types-Do-People-Not-Care-About.html" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Daily-Unpaid-Citations" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
+      <li><a href="/articles/2015/03/12/DOT-Needs-More-Citation-Categories.html" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Rapid-Increase-In-Citations" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
+      <li><a href="/articles/2015/03/07/When-Not-To-Park-On-Charles.html" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-Block-Is-A-Target" title="My Block is a Target.">My Block is a Target.</a></li>
+      <li><a href="/articles/2015/03/03/Baltimore-City-Paper-Article-On-4200-Wickford.html" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
+      <li><a href="/articles/2015/02/27/Daily-Unpaid-Citations.html" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
+      <li><a href="/articles/2015/02/24/Rapid-Increase-In-Citations.html" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
+    
+      <li><a href="/articles/2015/02/10/My-Block-Is-A-Target.html" title="My Block is a Target.">My Block is a Target.</a></li>
+    
+      <li><a href="/articles/2015/01/23/Quick-Response-From-Baltimore-Chief-Data-Officer.html" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
+    
+      <li><a href="/articles/2015/01/21/Baltimores-Lost-Traffic-Camera-Revenue.html" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
+    
+      <li><a href="/articles/2014/07/31/Feeding-The-Data-Monster.html" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -948,29 +576,25 @@
   
 	<article>
 	<h2 id="police">police</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015" title="Baltimore Policing, Six Months After F.G.">Baltimore Policing, Six Months After F.G.</a></li>
+      <li><a href="/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html" title="Baltimore Policing: Six Months After Freddie Gray Events">Baltimore Policing: Six Months After Freddie Gray Events</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
+      <li><a href="/articles/2015/06/12/Arrests-In-Baltimore-Drop-In-May.html" title="Arrests in Baltimore Drop in May">Arrests in Baltimore Drop in May</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
+      <li><a href="/articles/2015/04/26/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.html" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
+      <li><a href="/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html" title="Baltimore Police Department Overtime & Bonuses">Baltimore Police Department Overtime & Bonuses</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
+		</ul>
+	</article><!-- /.hentry -->
+
+  
+	<article>
+	<h2 id="politics">politics</h2>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Daily-Unpaid-Citations" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Rapid-Increase-In-Citations" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-Block-Is-A-Target" title="My Block is a Target.">My Block is a Target.</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
+      <li><a href="/articles/2015/04/14/Show-Your-Work.html" title="ShowYourWork Election Campaign">ShowYourWork Election Campaign</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -978,11 +602,11 @@
   
 	<article>
 	<h2 id="poverty">poverty</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/A-City-Divided-In-N-Dimensions" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
+      <li><a href="/articles/2015/04/12/A-City-Divided-In-N-Dimensions.html" title="A City Divided (in N dimensions)">A City Divided (in N dimensions)</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Know-More-Bmore" title="Know More, B'more.">Know More, B'more.</a></li>
+      <li><a href="/articles/2015/03/30/Know-More-Bmore.html" title="Know More, B'more.">Know More, B'more.</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -990,35 +614,11 @@
   
 	<article>
 	<h2 id="predictive-analytics">predictive-analytics</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
+      <li><a href="/articles/2014/06/18/Closer-Look-At-SVM-Model.html" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="presentations">presentations</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Upcoming-Events-You-Should-Attend" title="Upcoming Events You Should Check Out">Upcoming Events You Should Check Out</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="publicity">publicity</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/What-Im-Up-To" title="What I'm Up To">What I'm Up To</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Upcoming-Events-You-Should-Attend" title="Upcoming Events You Should Check Out">Upcoming Events You Should Check Out</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Thanks-Technically-Baltimore" title="Thanks Technical.ly Baltimore!">Thanks Technical.ly Baltimore!</a></li>
+      <li><a href="/articles/2014/05/08/Predicting-Energy-Use-with-Support-Vector-Machines.html" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -1026,9 +626,15 @@
   
 	<article>
 	<h2 id="python">python</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Importing-CSV-Files" title="Importing Lots of CSV's">Importing Lots of CSV's</a></li>
+      <li><a href="/articles/2015/05/05/Upcoming-Events-You-Should-Attend.html" title="Upcoming Events You Should Check Out">Upcoming Events You Should Check Out</a></li>
+    
+      <li><a href="/articles/2015/01/08/Importing-CSV-Files.html" title="Importing Lots of CSV's">Importing Lots of CSV's</a></li>
+    
+      <li><a href="/articles/2014/09/22/Summer-Update.html" title="Summer Updates">Summer Updates</a></li>
+    
+      <li><a href="/articles/2014/04/16/Guess-What-Time-Justin-Wakes-Up.html" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -1036,75 +642,19 @@
   
 	<article>
 	<h2 id="schools">schools</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="smart-meters">smart-meters</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Mo-Apartment-Mo-Energy" title="Mo Apartment, Mo Problems">Mo Apartment, Mo Problems</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/The-New-Pad" title="The New Pad">The New Pad</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Feeding-The-Data-Monster" title="Feeding the Data Monster">Feeding the Data Monster</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Autocorrelation" title="Electricity Usage Autocorrelation">Electricity Usage Autocorrelation</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Energy-Use-and-Weather" title="Energy Use and Weather">Energy Use and Weather</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/More-Smart-Meter-Data" title="More Smart Meter Data...">More Smart Meter Data...</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up" title="Guess What Time Justin Wakes Up">Guess What Time Justin Wakes Up</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-BGE-Smart-Meter-Data" title="My Electricity Use">My Electricity Use</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/BGE-Smart-Meters" title="BGE Smart Meters">BGE Smart Meters</a></li>
+      <li><a href="/articles/2015/06/02/Vacant-Lots-and-Bldgs-Near-Schools.html" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
 
   
 	<article>
-	<h2 id="soccer">soccer</h2>
-		<ul>
+	<h2 id="smart-phones">smart-phones</h2>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/GK-Performance-Stats" title="Goalkeeper Performance Stats">Goalkeeper Performance Stats</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="storage">storage</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Assessing-System-Performance" title="Assessing Demand-Side Storage System Performance">Assessing Demand-Side Storage System Performance</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Storage-Model-Details" title="Storage Model Details">Storage Model Details</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Intro-To-Storage-Model" title="Intro to Storage Model">Intro to Storage Model</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="support-vector-machine">support-vector-machine</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Closer-Look-At-SVM-Model" title="Closer Look at the Electricity SVR Forecast">Closer Look at the Electricity SVR Forecast</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines" title="Forecasting with Machine Learning">Forecasting with Machine Learning</a></li>
+      <li><a href="/articles/2015/05/21/Verizon-Wireless-Calculator.html" title="Verizon Wireless Cost Estimation">Verizon Wireless Cost Estimation</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
@@ -1112,86 +662,61 @@
   
 	<article>
 	<h2 id="transportation">transportation</h2>
-		<ul>
+		<ul class="tag-articles">
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Bounces-TTS-Analysis" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
+      <li><a href="/articles/2015/07/14/What-Im-Up-To.html" title="What I'm Up To">What I'm Up To</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Which-Citation-Types-Do-People-Not-Care-About" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
+      <li><a href="/articles/2015/03/19/Baltimore-City-Paper-Bounces-TTS-Analysis.html" title="City Paper Bounces The Training Set Parking Analysis">City Paper Bounces The Training Set Parking Analysis</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/DOT-Needs-More-Citation-Categories" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
+      <li><a href="/articles/2015/03/16/Which-Citation-Types-Do-People-Not-Care-About.html" title="Which citations do people not care about paying?">Which citations do people not care about paying?</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/When-Not-To-Park-On-Charles" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
+      <li><a href="/articles/2015/03/12/DOT-Needs-More-Citation-Categories.html" title="DOT Needs More Citation Categories">DOT Needs More Citation Categories</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-City-Paper-Article-On-4200-Wickford" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
+      <li><a href="/articles/2015/03/07/When-Not-To-Park-On-Charles.html" title="When Not To Park On N. Charles St.">When Not To Park On N. Charles St.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Daily-Unpaid-Citations" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
+      <li><a href="/articles/2015/03/03/Baltimore-City-Paper-Article-On-4200-Wickford.html" title="Investigating City Paper's Claims About 4200 Wickford">Investigating City Paper's Claims About 4200 Wickford</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Rapid-Increase-In-Citations" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
+      <li><a href="/articles/2015/02/27/Daily-Unpaid-Citations.html" title="Biasing Citations Towards Those Who Pay">Biasing Citations Towards Those Who Pay</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/My-Block-Is-A-Target" title="My Block is a Target.">My Block is a Target.</a></li>
+      <li><a href="/articles/2015/02/24/Rapid-Increase-In-Citations.html" title="Rapid Increase in Citations">Rapid Increase in Citations</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Quick-Response-From-Baltimore-Chief-Data-Officer" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
+      <li><a href="/articles/2015/02/10/My-Block-Is-A-Target.html" title="My Block is a Target.">My Block is a Target.</a></li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimores-Lost-Traffic-Camera-Revenue" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
+      <li><a href="/articles/2015/01/23/Quick-Response-From-Baltimore-Chief-Data-Officer.html" title="Quick Response from Baltimore Chief Data Officer">Quick Response from Baltimore Chief Data Officer</a></li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="urban">urban</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
+      <li><a href="/articles/2015/01/21/Baltimores-Lost-Traffic-Camera-Revenue.html" title="The Lost Revenue of the Baltimore Traffic Cameras">The Lost Revenue of the Baltimore Traffic Cameras</a></li>
     
 		</ul>
 	</article><!-- /.hentry -->
 
-  
-	<article>
-	<h2 id="urban-planning">urban-planning</h2>
-		<ul>
+    </article>
+    <span class="print-footer">Articles - Justin Elszasz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:thetrainingset@gmail.com"><span class="icon-mail"></span></a></li>    
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" title="B'More Schools Surrounded by Blight and Danger">B'More Schools Surrounded by Blight and Danger</a></li>
+      <li>
+        <a href="//www.twitter.com/thetrainingset"><span class="icon-twitter"></span></a>
+      </li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-  
-	<article>
-	<h2 id="vacant">vacant</h2>
-		<ul>
+      <li>
+        <a href="//github.com/jtelszasz"><span class="icon-github"></span></a>
+      </li>
     
-      <li class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab" title="Baltimore Vacant Housing on The Atlantic's Citylab">Baltimore Vacant Housing on The Atlantic's Citylab</a></li>
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
     
-		</ul>
-	</article><!-- /.hentry -->
-
-</div><!-- /#main -->
-
-<div class="footer-wrapper">
-  <footer role="contentinfo">
-    <span>&copy; 2015 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
-
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');  
-  ga('require', 'linkid', 'linkid.js');
-  ga('send', 'pageview');
-</script>
-
-          
-
-</body>
+      <li>
+        <a href="//www.linkedin.com/in/justinelszasz"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;JUSTIN ELSZASZ</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
 </html>

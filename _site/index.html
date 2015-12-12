@@ -1,233 +1,98 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<title>Latest Posts &#8211; The Training Set.</title>
-<meta name="description" content="Energy and data, coming at you live from the MARC train.">
-<meta name="keywords" content="energy, open-data, hacking">
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:4000/images/design/ny_concrete_10.JPG">
-
-<meta name="twitter:title" content="Latest Posts">
-<meta name="twitter:description" content="Energy and data, coming at you live from the MARC train.">
-<meta name="twitter:creator" content="@jtelszasz">
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Latest Posts">
-<meta property="og:description" content="Energy and data, coming at you live from the MARC train.">
-<meta property="og:url" content="http://localhost:4000/index.html">
-<meta property="og:site_name" content="The Training Set.">
+  <title>The Training Set</title>
+  <meta name="description" content="">
 
 
+  <link rel="stylesheet" href="/css/tufte.css">	
+  
 
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
 
-
-<link rel="canonical" href="http://localhost:4000/">
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="The Training Set. Feed">
-
-
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
-<!-- Webfonts -->
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- Load Modernizr -->
-<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
-
-
-
+  <link rel="canonical" href="/">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="/feed.xml" />
 </head>
 
-<body id="post-index" class="feature">
-
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-	<button class="dl-trigger">Open Menu</button>
-	<ul class="dl-menu">
-		<li><a href="http://localhost:4000">Home</a></li>
-		<li>
-			<a href="#">About</a>
-			<ul class="dl-submenu">
-				<li>
-					<img src="http://localhost:4000/images/bio-photo.jpg" alt="Justin Elszasz photo" class="author-photo">
-					<h4>Justin Elszasz</h4>
-					<p>Engineering background, indeterminate foreground.</p>
-				</li>
-				<li><a href="http://localhost:4000/about/">Learn More</a></li>
-				<li>
-					<a href="mailto:thetrainingset@gmail.com"><i class="fa fa-envelope"></i> Email</a>
-				</li>
-				<li>
-					<a href="http://twitter.com/jtelszasz"><i class="fa fa-twitter"></i> Twitter</a>
-				</li>
-				
-				
-				<li>
-					<a href="http://linkedin.com/in/justinelszasz"><i class="fa fa-linkedin"></i> LinkedIn</a>
-				</li>
-				<li>
-					<a href="http://github.com/jtelszasz"><i class="fa fa-github"></i> GitHub</a>
-				</li>
-				
-				
-				
-				
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
-				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
-			</ul>
-		</li>
-		<li><a href="http://localhost:4000/the-work/">The Work</a></li><li><a href="http://localhost:4000/my-elec-use/">My Electricity Use</a></li><li><a href="http://localhost:4000/subscribe/">Subscribe</a></li>
-	</ul><!-- /.dl-menu -->
-</nav><!-- /.dl-menuwrapper -->
-
-
-<div class="entry-header">
-  <div class="image-credit">Image source: <a href="http://www.fudgegraphics.com">Fudgegraphics</a></div><!-- /.image-credit -->
-  
-    <div class="entry-image">
-      <img src="http://localhost:4000/images/design/ny_concrete_10.JPG" alt="Latest Posts">
-    </div><!-- /.entry-image -->
-  
-  <div class="header-title">
-    <div class="header-title-wrap">
-      <h1>The Training Set.</h1>
-      <h2>Latest Posts</h2>
-    </div><!-- /.header-title-wrap -->
-  </div><!-- /.header-title -->
-</div><!-- /.entry-header -->
-
-<div id="main" role="main">
-  
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-11-12T00:00:00-05:00"><a href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015">November 12, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
+  <body class="full-width">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>-->
+	
+		
+  	
+		
+		    
+		      <a class="active" href="/" class="active">The Training Set</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/my-elec-use/">My Electricity Use</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/tags/">Articles</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/the-work/">The Work</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/subscribe/">Subscribe</a>
+		    
+	    
+  	
+	</nav>
+</header>
     
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Policing-In-Baltimore-In-2015" rel="bookmark" title="Baltimore Policing, Six Months After F.G." itemprop="url">Baltimore Policing, Six Months After F.G.</a></h1>
+      <h1 style="color: #ff3700">The Training Set</h1>
+      <div style="padding-top: 0.75rem; padding-bottom: 0.75em;"> Data analysis coming at you live from the train between Baltimore and DC. </div>
     
-  </header>
-  <div class="entry-content">
-    <p>We’re about six months out now from the Freddie Gray incident and subsequent unrest in Baltimore.  There have been a few dominant narratives about crime in Baltimore since, namely that we’ve had almost <a href="http://data.baltimoresun.com/bing-maps/homicides/index.php?show_results=UPDATE+MAP&amp;range=2015&amp;district=all&amp;zipcode=All&amp;cause=all&amp;age=all&amp;gender=all&amp;race=all&amp;article=all">300 homicides</a>, that <a href="http://www.baltimoresun.com/news/maryland/bs-md-ci-comstat-meeting-20150616-story.html">police stopped doing their jobs after the protests</a>, and that enough prescription drugs had flooded the streets to “<a href="http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html">keep Baltimore high for a year</a>.”  </p>
+    <article>
+              
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/open%20data/2015/11/12/Policing-In-Baltimore-In-2015.html"><h1 class="contrast">Baltimore Policing: Six Months After Freddie Gray Events</h1></a>
+        <span class="smaller">November 12, 2015</span>
+        <div><p>We’re about six months out now from the Freddie Gray incident and subsequent unrest in Baltimore.  There have been a few dominant narratives about crime in Baltimore since, namely that we’ve had almost <a href="http://data.baltimoresun.com/bing-maps/homicides/index.php?show_results=UPDATE+MAP&amp;range=2015&amp;district=all&amp;zipcode=All&amp;cause=all&amp;age=all&amp;gender=all&amp;race=all&amp;article=all">300 homicides</a>, that <a href="http://www.baltimoresun.com/news/maryland/bs-md-ci-comstat-meeting-20150616-story.html">police stopped doing their jobs after the protests</a>, and that enough prescription drugs had flooded the streets to “<a href="http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html">keep Baltimore high for a year</a>.”</p>
 
-<p>So what has actually gone on in Baltimore in the weeks and months since the spring of 2015?  I think there are a couple of important storylines in the data.</p>
-
-<h2 id="precipitous-drop-in-police-productivity---on-track-for-10000-less-arrests-this-year-than-last">Precipitous drop in police productivity - on track for 10,000 less arrests this year than last.</h2>
-
-<p>We’re on pace to record 10,000 less arrests this year compared to last.  Total arrests for 2013 and 2014 were both on the order of 36,000 and this year, looking at total records through September, it’s looking like it will be more like 26,000.  (The average daily arrests for January through September is extrapolated through the rest of the year.)  There’s a substantial downtick in arrests in the last quarter of the year for both 2013 and 2014 though, so the 26,000 number could in fact be high.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-11/Total_Monthly_Arrests.png"><img src="http://localhost:4000/images/2015-11/Total_Monthly_Arrests.png" /></a>
-  <figcaption>Monthly arrests in Baltimore for 2013, 2014, and 2015.  Click image to enlarge.</figcaption>
-</figure>
-</center>
-
-<p>This kind of output isn’t the result of a drastic change in the size of the police force either.  The number of officers for 2013, 2014, and 2015 are 2,316, 2,278, and 2,224 respectively, resulting in average annual arrests per officer going from just over 17, to just over 16, <em>down to 12 arrests per officer this year</em>.  This means there had to have been a shift in policing tactics this year.</p>
-
-<h2 id="drug-related-arrests-have-continued-the-same-downward-trend-as-preceded-freddie-gray">Drug-related arrests have continued the same downward trend as preceded Freddie Gray.</h2>
-
-<p>Former Commissioner Batts also claimed that during the unrest, enough prescription drugs from pharmacies had been stolen to “<a href="http://www.baltimoresun.com/news/maryland/baltimore-riots/bal-drugs-on-baltimore-streets-could-keep-it-high-for-a-year-batts-says-20150604-story.html">keep Baltimore high for a year</a>.”  If that were the case, I’d expect our police force to up their game and target known drug havens, resulting in more arrests.  That hasn’t happened, though.  In fact, the proportion of controlled dangerous substance charges as a proportion of total arrests has actually continued the same downward trend from the previous two years.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-11/Weekly_CDS_Arrests.png"><img src="http://localhost:4000/images/2015-11/Weekly_CDS_Arrests.png" /></a>
-  <figcaption>Weekly arrests in Baltimore for 2015.  Click image to enlarge.</figcaption>
-</figure>
-</center>
-
-<h2 id="during-the-week-following-the-riots-baltimore-police-focused-entirely-on-curfew-violations">During the week following the “riots,” Baltimore Police focused <em>entirely</em> on curfew violations.</h2>
-
-<p>The total weekly arrests dropped dramatically in the weeks following the Freddie Gray unrest.  The head of the FOP said that cops were <a href="http://baltimore.cbslocal.com/2015/06/02/commissioner-batts-stolen-prescription-drugs-partly-to-blame-for-surge-in-violence/">“more hesitant” but that there was not a “slowdown”</a> (a claim Former Commissioner Batts <a href="http://www.thedailybeast.com/cheats/2015/09/03/ex-baltimore-top-cop-admits-to-slowdown.html">later reversed</a>).  This always sounded to me like a contradiction in terms: if someone is more hesitant to do something, they are less likely to do it.  We now know there was a slowdown, but it didn’t come until after officers were charged.  What were they up to prior to that?</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png"><img src="http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png" /></a>
-  <figcaption>Top 5 charges before and after Monday, April 27 unrest.  Click image to enlarge.</figcaption>
-</figure>
-</center>
-
-<p>In the week immediately following the <a href="http://www.motherjones.com/politics/2015/04/how-baltimore-riots-began-mondawmin-purge">police-induced rioting on Monday, April 27</a>, cops were entirely focused on curfew violations.  It wasn’t until after that week that we saw the drop in total arrests.</p>
-
-<h2 id="besides-homicides-first-degree-assaults-and-gun-related-offenses-have-relatedly-increased">Besides homicides, first degree assaults and gun-related offenses have relatedly increased.</h2>
-
-<p>Much has been made of the increase in violence since the summer.  Indeed first degree assaults and gun-related offenses both increased over the summer and remain elevated compared to earlier in the year.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-11/Percent_Weekly_Guns.png"><img src="http://localhost:4000/images/2015-11/Percent_Weekly_Guns.png" /></a>
-  <figcaption>Percent of weekly arrests that are gun-related.  Click image to enlarge.</figcaption>
-</figure>
-</center>
-
-<hr />
-<p><em>All data, including BPD arrests and city employee payrolls, obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a>.</em></p>
-
-<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, and <a href="http://www.plot.ly">Plot.ly</a>.</em></p>
-
-<p><em>Full analysis IPython notebook can be found <a href="https://github.com/jtelszasz/baltimore_crime/">here</a>.</em></p>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-07-14T00:00:00-04:00"><a href="http://localhost:4000/articles/What-Im-Up-To">July 14, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/What-Im-Up-To" rel="bookmark" title="What I'm Up To" itemprop="url">What I'm Up To</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Just a quick note to highlight some recent publicity.</p>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/07/14/What-Im-Up-To.html"><h1 class="contrast">What I'm Up To</h1></a>
+        <span class="smaller">July 14, 2015</span>
+        <div><p>Just a quick note to highlight some recent publicity.</p>
 
 <p>In June, Technical.ly was kind enough to again shine a light on some of my analysis, this time <a href="http://technical.ly/baltimore/2015/06/04/baltimore-blight-maps-ouazad-elszasz/">on vacant buildings and lots in Baltimore</a>.  <a href="http://plot.ly">Plot.ly</a> also <a href="https://plot.ly/ipython-notebooks/baltimore-vital-signs/">used my iPython notebook</a> for my <a href="http://bniajfi.org/">Baltimore Vital Signs</a> analysis as an example of how to use the tool.</p>
 
@@ -235,7 +100,7 @@
 
 <p><strong>Coming up July 28</strong>, I’ll be at the <a href="http://www.meetup.com/Transportation-Techies/events/222183536/">DC Transportation Techies meetup</a> which is making a cameo in Baltimore at the Hyatt Regency.</p>
 
-<p>I’ve added all this stuff to <a href="http://localhost:4000/The-Work">The Work</a> page (upper left corner) as well as my slide deck from my <a href="http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/">“Apps Are Not The Answer”</a> talk at <a href="http://www.hackbaltimore.org">Hack Baltimore</a>.</p>
+<p>I’ve added all this stuff to <a href="/The-Work">The Work</a> page (upper left corner) as well as my slide deck from my <a href="http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/">“Apps Are Not The Answer”</a> talk at <a href="http://www.hackbaltimore.org">Hack Baltimore</a>.</p>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -248,186 +113,57 @@
 
 </script>
 
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/06/12/Arrests-In-Baltimore-Drop-In-May.html"><h1 class="contrast">Arrests in Baltimore Drop in May</h1></a>
+        <span class="smaller">June 12, 2015</span>
+        <div><p>There’s been quite a bit of discussion about whether or not protests regarding police brutality have made it less likely that police are willing to do the hard work necessary to enforce the law and fight crime.</p>
 
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-06-12T00:00:00-04:00"><a href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May">June 12, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Arrests-In-Baltimore-Drop-In-May" rel="bookmark" title="Arrests in Baltimore Drop in May" itemprop="url">Arrests in Baltimore Drop in May</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>There’s been quite a bit of discussion about whether or not protests regarding police brutality have made it less likely that police are willing to do the hard work necessary to enforce the law and fight crime.  </p>
-
-<p>No matter which camp you’re in, it’s clear (at least as far as the published data are concerned) that <a href="http://http://www.nytimes.com/2015/06/13/us/after-freddie-gray-death-west-baltimores-police-presence-drops-and-murders-soar.html?smid=tw-share&amp;_r=0">arrests have taken a dive in Baltimore</a>.  Police Commissioner Batts can dodge or deflect all he wants, but as has been reported, arrests have dropped and the city data corroborate it.  Total arrests in the <a href="http://data.baltimorecity.gov">Open Baltimore</a> data for April 2015 were 2,438 while in May there were 1,449, a drop of about 40%.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-06/baltimore_daily_arrest_count_around_FG.png"><img src="http://localhost:4000/images/2015-06/baltimore_daily_arrest_count_around_FG.png" width="120%" /></a>
-  <figcaption>Daily arrests in Baltimore for April and May 2015.  Click image to enlarge.</figcaption>
-</figure>
-
-</center>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png"><img src="http://localhost:4000/images/2015-06/baltimore_2015_weekly_arrest_count_thru_may.png" /></a>
-  <figcaption>Weekly arrests in Baltimore for 2015.  Click image to enlarge.</figcaption>
-</figure>
-</center>
-
-<p>Having the granular arrest data for Baltimore we can also take a look at whether or not the decline in arrests was more pronounced in particular areas (like West Baltimore, as the NY Times article linked above describes).  At first glance a lot (around 45%) of arrest records are not geocoded with a lat-long pair and without knowing the reason for this exclusion it’s a safer assumption that there is some bias in the data available.  Stay tuned.</p>
-
-<hr />
-<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a>.</em></p>
-
-<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, and <a href="http://www.plot.ly">Plot.ly</a>.</em></p>
-
-<p><em>Full analysis IPython notebook can be found <a href="https://github.com/jtelszasz/baltimore_crime/blob/master/post_freddiegray_crime.ipynb">here</a>.</em></p>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-06-02T00:00:00-04:00"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools">June 02, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Vacant-Lots-and-Bldgs-Near-Schools" rel="bookmark" title="B'More Schools Surrounded by Blight and Danger" itemprop="url">B'More Schools Surrounded by Blight and Danger</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Many small and midsize American cities have experienced decades of <a href="http://en.wikipedia.org/wiki/Shrinking_cities_in_the_United_States">population shrinkage</a>, but as you can imagine, it’s not so easy to shrink the physical footprint of a city.  Compound this with the housing bubble burst a few years ago and significant wealth inequality and it’s no surprise that so many cities are wrestling with blight and abandonment.  Even though <a href="http://articles.baltimoresun.com/2011-12-06/news/bs-md-ci-srb-looks-ahead-20111202_1_mayor-stephanie-rawlings-blake-property-tax-rate-half-century-of-population-decline">SRB wants to bring in 10,000 new families</a>, there’s little chance the vacant property issue in Baltimore is going away anytime soon.  </p>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/06/02/Vacant-Lots-and-Bldgs-Near-Schools.html"><h1 class="contrast">B'More Schools Surrounded by Blight and Danger</h1></a>
+        <span class="smaller">June 2, 2015</span>
+        <div><p>Many small and midsize American cities have experienced decades of <a href="http://en.wikipedia.org/wiki/Shrinking_cities_in_the_United_States">population shrinkage</a>, but as you can imagine, it’s not so easy to shrink the physical footprint of a city.   Compound this with the housing bubble burst a few years ago and significant wealth inequality and it’s no surprise that so many cities are wrestling with blight and abandonment.  Even though <a href="http://articles.baltimoresun.com/2011-12-06/news/bs-md-ci-srb-looks-ahead-20111202_1_mayor-stephanie-rawlings-blake-property-tax-rate-half-century-of-population-decline">SRB wants to bring in 10,000 new families</a>, there’s little chance the vacant property issue in Baltimore is going away anytime soon.</p>
 
 <p>In addition to the safety hazard neglected structures can pose, vacant lots and buildings are magnets for <a href="http://articles.chicagotribune.com/1992-02-10/news/9201130233_1_vacant-buildings-abandoned-demolishes">serious</a> <a href="http://articles.baltimoresun.com/2014-08-07/news/bs-crime-vacants-20140806_1_property-crime-serious-crime-violent-crime">crime</a>, including <em>gang activity, drugs, murder, assault, and rape</em>.</p>
 
-<p>In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the <a href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab/">last post</a>, and this work has been <a href="http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/">done before</a>.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.  </p>
+<p>In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the <a href="/articles/Baltimore-Vacant-Houses-On-Citylab/">last post</a>, and this work has been <a href="http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/">done before</a>.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.</p>
 
-<p>But context is everything, and the story these data tells us about what it’s like to be a school-aged kid in Baltimore is harrowing. <strong>The analysis suggests that about 68% of all vacant buildings in Baltimore are within a quarter mile of a city school, while about 27% of all vacant parcel area is within the same distance.</strong>  </p>
+<p>But context is everything, and the story these data tells us about what it’s like to be a school-aged kid in Baltimore is harrowing. <strong>The analysis suggests that about 68% of all vacant buildings in Baltimore are within a quarter mile of a city school, while about 27% of all vacant parcel area is within the same distance.</strong></p>
 
 <p>Below you’ll see just how rampant this issue is for children in Baltimore.  The map shows a quarter-mile radius around each city school and the vacant parcels (blue) and vacant buildings (orange) within those buffers (data from <a href="http://data.baltimorecity.gov">Open Baltimore</a>).</p>
 
+<p style="width:90%;">  
 <iframe width="100%" height="520" frameborder="0" src="https://jtelszasz.cartodb.com/viz/8d52d710-4ffc-11e5-b7d9-0e018d66dc29/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
+</p>
 
-<p>The school with the most vacant buildings within a quarter mile is an <strong>elementary</strong> school - Roots and Branches School - with a whopping <strong>722 vacant buildings surrounding it</strong>. Unfortunately it shouldn’t come as a surprise that it’s in West Baltimore, just a few blocks south of where Freddie Gray lived.</p>
-
-<p>Here are the same data without the geospatial information and plotted for comparison and trends.</p>
-
-<div>
-    <a href="https://plot.ly/~jtelszasz/261/" target="_blank" title="Baltimore City Schools Surrounded by Blight" style="display: block; text-align: center;"><img src="https://plot.ly/~jtelszasz/261.png" alt="Baltimore City Schools Surrounded by Blight" style="max-width: 100%;width: 500px;" width="100%" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="jtelszasz:261" src="https://plot.ly/embed.js" async=""></script>
-</div>
-
-<h2 id="an-opportunity">An opportunity?</h2>
-
-<p>The obvious concern is the exposure of children to serious hazards in and around these lots and buildings, and based on the numbers this is nothing short of <strong>an emergency</strong> of the highest order.</p>
-
-<p>But I’d like to suggest that with a little bit of ingenuity this presents an opportunity as well.  What if the city just handed over some of these lots and buildings to schools?  What could they do with them?  Of course abandoned structures would need to undergo inspection and clean up first.  Some schools obviously might be closer to more ideal structures while others might be closer to more open parcels of land that they could take over.  Obviously this would hardly put a dent in the approximately 17,000 vacant buildings in Baltimore, but at least we’d be doing something with a few.</p>
-
-<p>I think this could become an interesting study in urban planning, with multiple layers from the city-system scale down to the architectural-site scale.  I’m envisioning a network of nodes made up of school-affiliated parcels and structures that provide a rich learning network.  Students could visit each other’s sites and learn and exchange ideas.</p>
-
-<p>Just a few ideas I’ve had are:</p>
-
-<ol>
-  <li>Greenhouses, gardens, or urban ecology/farming.</li>
-  <li>Renewable energy generation.  (Maybe a next step in analysis is solar or wind potential modeling?)</li>
-  <li>High school shop class/Habitat for Humanity collaboration for rebuilding and construction.</li>
-  <li>Urban art classes: graffiti, sculpture, etc. (My personal favorite.)</li>
-  <li>Parks, playgrounds, basketball courts, etc.</li>
-  <li>Invite the students to devise their own plans should they be given a plot of land or building.</li>
-</ol>
-
-<hr />
-<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a> and the<a href="http://www.bniajfi.org/indicators"> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.</a></em></p>
-
-<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, <a href="http://www.plot.ly">Plot.ly</a>, <a href="http://www.qgis.com">QGIS</a>, and <a href="http://www.cartodb.com">CartoDB</a>.</em></p>
-
-<p><em>Analysis files including any iPython notebooks can be found on <a href="https://github.com/jtelszasz/baltimore-schools-blight">Github</a>.</em></p>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-06-01T00:00:00-04:00"><a href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab">June 01, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab" rel="bookmark" title="Baltimore Vacant Housing on The Atlantic's Citylab" itemprop="url">Baltimore Vacant Housing on The Atlantic's Citylab</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p><a href="http://www.citylab.com/housing/2015/05/mapping-the-density-of-baltimores-vacant-housing-crisis/394196/">Citylab from The Atlantic</a> just bounced <a href="https://citiesblogger.wordpress.com/2015/05/27/the-urban-blight-that-is-baltimores-inner-city/">some work done</a> by an economist named Amine Ouazad that maps the density of vacant housing in Baltimore.  The data Ouazad used are from the American Community Survey from the U.S. Census Bureau and <a href="http://www.ouazad.com/Maps/Baltimore_Vacancies/index.html">this is the resulting map</a>.  Coincidently I had already been working with <a href="http://data.baltimorecity.gov">Open Baltimore’s</a>vacant building and lot data for a different analysis but I figured I could quickly respond to Ouazad’s map.</p>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/06/01/Baltimore-Vacant-Houses-On-Citylab.html"><h1 class="contrast">Baltimore Vacant Housing on The Atlantic's Citylab</h1></a>
+        <span class="smaller">June 1, 2015</span>
+        <div><p><a href="http://www.citylab.com/housing/2015/05/mapping-the-density-of-baltimores-vacant-housing-crisis/394196/">Citylab from The Atlantic</a> just bounced <a href="https://citiesblogger.wordpress.com/2015/05/27/the-urban-blight-that-is-baltimores-inner-city/">some work done</a> by an economist named Amine Ouazad that maps the density of vacant housing in Baltimore.  The data Ouazad used are from the American Community Survey from the U.S. Census Bureau and <a href="http://www.ouazad.com/Maps/Baltimore_Vacancies/index.html">this is the resulting map</a>.  Coincidently I had already been working with <a href="http://data.baltimorecity.gov">Open Baltimore’s</a>vacant building and lot data for a different analysis but I figured I could quickly respond to Ouazad’s map.</p>
 
 <p>Perhaps it’s an artifact of the data used and the census tract samples, but a similar plot using data from <a href="http://data.baltimorecity.gov">Open Baltimore</a> shows more clearly the divides within the city.  One commenter named “Jack” on the Citylab post indicated that the map showed high concentrations basically throughout the city, including wealthier and more business-centric neighborhoods like Mt. Vernon/Belvedere, Inner Harbor, Canton, and Federal Hill - comprising what we in Baltimore like to call <a href="http://thebaltimorechop.com/tag/the-white-l/">“The White L.”</a>  On first glance at the Ouazad map my intuition agreed with Jack, and here’s what the Open Baltimore data actually look like.  There are two layers - a heat map and the actual vacant building footprints (in black) so when you zoom in you can see the actual vacant buildings.</p>
 
-<iframe width="100%" height="520" frameborder="0" src="https://jtelszasz.cartodb.com/viz/26254996-084f-11e5-b31b-0e018d66dc29/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
+<iframe width="90%" height="520" frameborder="0" src="https://jtelszasz.cartodb.com/viz/26254996-084f-11e5-b31b-0e018d66dc29/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
 
-<hr />
-<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a>.</em></p>
-
-<p><em>Plots obtained using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, <a href="http://www.qgis.com">QGIS</a>, and <a href="http://www.cartodb.com">Carto.db</a>.</em></p>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-05-21T00:00:00-04:00"><a href="http://localhost:4000/articles/Verizon-Wireless-Calculator">May 21, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Verizon-Wireless-Calculator" rel="bookmark" title="Verizon Wireless Cost Estimation" itemprop="url">Verizon Wireless Cost Estimation</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>A few weeks ago, my 2-year contract came due for a phone upgrade.  Seeing as how I was on an iPhone 4 and Apple’s recent OS upgrades have sucked the life clean out of it, I was looking forward to purchasing a new phone with the hopes that the new one will last beyond the 2-year cycle.  I was going to purchase an iPhone 6, and I knew (or so I thought) what it would cost up front if I were to sign on a new 2-year contract.  Simple, straight-forward.  No sales pitches necessary.</p>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/05/21/Verizon-Wireless-Calculator.html"><h1 class="contrast">Verizon Wireless Cost Estimation</h1></a>
+        <span class="smaller">May 21, 2015</span>
+        <div><p>A few weeks ago, my 2-year contract came due for a phone upgrade.  Seeing as how I was on an iPhone 4 and Apple’s recent OS upgrades have sucked the life clean out of it, I was looking forward to purchasing a new phone with the hopes that the new one will last beyond the 2-year cycle.  I was going to purchase an iPhone 6, and I knew (or so I thought) what it would cost up front if I were to sign on a new 2-year contract.  Simple, straight-forward.  No sales pitches necessary.</p>
 
 <p>Then I entered the Verizon Wireless store.</p>
 
@@ -435,13 +171,13 @@
 
 <p>The salesman threw so many numbers at me that my head was spinning.  He was claiming that I could get some accessory package essentially for free by switching to the Edge program.  I couldn’t follow any of his logic, and I was only marginally clearer on the details when the manager attempted to explain the costs to me.  I walked out of the store frustrated and not wanting to commit there and then.</p>
 
-<p>I figure I can’t have been the only Verizon customer to have experienced this recently.  In order to figure out what the actual costs were and whether I’d actually save money I made a quick calculator for my family and I to use.  I’m sharing it here in case it helps others.  </p>
+<p>I figure I can’t have been the only Verizon customer to have experienced this recently.  In order to figure out what the actual costs were and whether I’d actually save money I made a quick calculator for my family and I to use.  I’m sharing it here in case it helps others.</p>
 
 <p>It’s pretty simple for now, and assumes you aren’t taking the bait and trying to upgrade your phone more frequently than two years.  The white boxes are entry cells: select the phone you want, enter your typical monthly service costs, and enter the percent down payment on the phone you’d like to make if you’re considering the Edge program.  The box to the right gives your estimated monthly bill (bold black text) and the total cost over two years for your options (in bold red text).</p>
 
-<center>
-<iframe src="https://docs.google.com/spreadsheets/d/1uHdFLi_sEbyXN573mBUnqQPJdWCfkjuve-smumsCrXE/pubhtml?widget=true&amp;headers=false" width="600" height="400"></iframe>
-</center>
+<p>
+<iframe src="https://docs.google.com/spreadsheets/d/1uHdFLi_sEbyXN573mBUnqQPJdWCfkjuve-smumsCrXE/pubhtml?widget=true&amp;headers=false" width="90%" height="400"></iframe>
+</p>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -454,22 +190,14 @@
 
 </script>
 
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-05-05T00:00:00-04:00"><a href="http://localhost:4000/articles/Upcoming-Events-You-Should-Attend">May 05, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Upcoming-Events-You-Should-Attend" rel="bookmark" title="Upcoming Events You Should Check Out" itemprop="url">Upcoming Events You Should Check Out</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>I’ll be giving a couple of talks in Baltimore in the next two weeks.  Would love for you to attend if you’re in the area!  Click on the title of the talk below to RSVP through Meetup.</p>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/05/05/Upcoming-Events-You-Should-Attend.html"><h1 class="contrast">Upcoming Events You Should Check Out</h1></a>
+        <span class="smaller">May 5, 2015</span>
+        <div><p>I’ll be giving a couple of talks in Baltimore in the next two weeks.  Would love for you to attend if you’re in the area!  Click on the title of the talk below to RSVP through Meetup.</p>
 
 <p><strong><a href="http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/"> “Apps Are Not The Answer” on Thursday May 14 @ DreamIt Health Baltimore.</a></strong>  I’ll describe how I’ve tried to engage city officials and journalists in order to address policy, problem-solving, and decision-making. I’ll be sharing examples of my work, as well as some reminders of the principles that should guide problem-solving, applied science, and engineering. Hosted by <a href="http://www.hackbaltimore.org">Hack Baltimore</a>.</p>
 
@@ -486,44 +214,23 @@
 
 </script>
 
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/04/26/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray.html"><h1 class="contrast">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</h1></a>
+        <span class="smaller">April 26, 2015</span>
+        <div><p>The city <a href="http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-ci-freddie-gray-officers-20150421-story.html">released the names of the six officers involved in Freddie Gray’s arrest and subsequent death</a>.  Below is how much each of them earned in fiscal year 2014 based on <a href="http://data.baltimorecity.gov">Open Baltimore</a> data.</p>
 
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-04-26T00:00:00-04:00"><a href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray">April 26, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray" rel="bookmark" title="This is How Much We Paid Officers Involved in the Freddie Gray Debacle" itemprop="url">This is How Much We Paid Officers Involved in the Freddie Gray Debacle</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>The city <a href="http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-ci-freddie-gray-officers-20150421-story.html">released the names of the six officers involved in Freddie Gray’s arrest and subsequent death</a>.</p>
-
-<p>Below is how much each of them earned in fiscal year 2014 based on <a href="http://data.baltimorecity.gov">Open Baltimore</a> data.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay.png"><img src="http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay.png" /></a>
-</figure>
-</center>
-
-<p>The six officers have been suspended <strong>with pay</strong>.  Assuming a 40 hour work week and 48 working weeks in the year, below are these officers’ hourly wages, daily wages, and assuming a 50% ratio of salary for benefits and insurance (typical assumption for wage calculations), the six officers are costing Baltimore City taxpayers $2,151.44 every day of their suspension.  Today is April 26 and as far as I can tell from <a href="http://www.huffingtonpost.com/2015/04/21/freddie-gray-death-baltimore-officers-suspended_n_7105368.html">the earliest Associated Press announcement</a> of their suspension, the officers have been suspended for six days, so the <strong>current bill to taxpayers is $12,908.63 and counting</strong>.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png"><img src="http://localhost:4000/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png" /></a>
-</figure>
-</center>
-<hr />
-<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a>.</em></p>
-
-<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, and <a href="http://www.plot.ly">Plot.ly</a>.</em></p>
-
-<p><em>Full analysis IPython notebook can be found <a href="http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb">here</a>. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.</em></p>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/04/23/Thanks-Technically-Baltimore.html"><h1 class="contrast">Thanks Technical.ly Baltimore!</h1></a>
+        <span class="smaller">April 23, 2015</span>
+        <div><p>Stephen Babcock over at <a href="http://www.technical.ly/baltimore">Technical.ly Baltimore</a> was kind enough to give The Training Set a bit of publicity with a write-up about the work.  <a href="http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/">Check it out!</a></p>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -536,148 +243,27 @@
 
 </script>
 
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/04/22/Baltimore-Police-Dept-OT-and-Bonus-Pay.html"><h1 class="contrast">Baltimore Police Department Overtime & Bonuses</h1></a>
+        <span class="smaller">April 22, 2015</span>
+        <div><p>As if the police haven’t been in the <a href="https://twitter.com/search?q=%23blacklivesmatter&amp;src=typd">public eye</a> enough lately, Baltimore Brew has been <a href="https://www.baltimorebrew.com/2015/03/26/police-overtime-declines-but-is-still-targeted-to-reach-record/">beating the drum</a> regarding police overtime budget.</p>
 
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/04/14/Show-Your-Work.html"><h1 class="contrast">ShowYourWork Election Campaign</h1></a>
+        <span class="smaller">April 14, 2015</span>
+        <div><p>Here’s a small idea that I think would make the upcoming election cycle incrementally more bearable.</p>
 
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-04-23T00:00:00-04:00"><a href="http://localhost:4000/articles/Thanks-Technically-Baltimore">April 23, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Thanks-Technically-Baltimore" rel="bookmark" title="Thanks Technical.ly Baltimore!" itemprop="url">Thanks Technical.ly Baltimore!</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Stephen Babcock over at <a href="http://www.technical.ly/baltimore">Technical.ly Baltimore</a> was kind enough to give The Training Set a bit of publicity with a write-up about the work.  <a href="http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/">Check it out!</a></p>
+<p>Politicians seemingly pick numbers, figures, statistics, and trends out of thin air.  This can be infuriating no matter where you fall on the political spectrum.  Why don’t we push politicians to post annotated transcripts of their speeches and debates that provide citations?  Surely they have an intern or two that they can promote from sticking signs on front lawns to transcribing and footnoting.  This would be a big step in the direction of transparency and a substantive way to keep politicians honest.</p>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-04-22T00:00:00-04:00"><a href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay">April 22, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Justin Elszasz">Justin Elszasz</a></span></span>
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/articles/Baltimore-Police-Dept-OT-and-Bonus-Pay" rel="bookmark" title="Baltimore Police Department Overtime & Bonuses" itemprop="url">Baltimore Police Department Overtime & Bonuses</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>As if the police haven’t been in the <a href="https://twitter.com/search?q=%23blacklivesmatter&amp;src=typd">public eye</a> enough lately, Baltimore Brew has been <a href="https://www.baltimorebrew.com/2015/03/26/police-overtime-declines-but-is-still-targeted-to-reach-record/">beating the drum</a> regarding police overtime budget.  According to the Brew’s reporting, Mayor Stephanie Rawlings-Blake promised tax cuts for residents that would be paid for by incoming tax revenue from the casino.  The mayor <a href="https://www.baltimorebrew.com/2015/04/13/its-now-official-sagging-casino-revenues-equal-no-property-tax-cut-this-year/">recently announced</a>, however, that these cuts would not come to fruition as planned, since revenues from the casino are <a href="https://www.baltimorebrew.com/2015/03/25/horseshoe-casino-will-pay-only-4-million-in-lease-revenues-this-year/">nowhere near the levels predicted</a>.  Meanwhile, police are able to rake in sweet, sweet overtime pay by providing a security detail at the casino.  We won’t be able to see the resulting change in overtime due to the casino yet since it opened in FY2015, but in the meantime it’s worth scrutinizing Baltimore police overtime and bonus closely given the broader discussion of cost-effectiveness in policing.</p>
-
-<p>In fact, <a href="http://articles.baltimoresun.com/2010-06-30/news/bs-md-ci-baltimore-overtime-20100602_1_overtime-earners-deputy-mayor-christopher-thomaskutty-councilwoman-belinda-conaway">concerns about overtime pay predate</a> the data we have through Open Baltimore, though older data might be available in <a href="http://data.baltimoresun.com/salary_database/">other forms</a>.</p>
-
-<p>To aid our investigation, <a href="http://data.baltimorecity.gov">Open Baltimore</a> publishes annual salary and gross pay data for all of its employees.  </p>
-
-<center>
-<div><iframe width="500px" title="Baltimore City Employee Salaries 2011" height="425px" src="https://data.baltimorecity.gov/w/ijfz-2v3c/ta62-x9wp?cur=94oSZGyyLCB&amp;from=root" frameborder="0" scrolling="no"><a href="https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-2011/ijfz-2v3c" title="Baltimore City Employee Salaries 2011" target="_blank">Baltimore City Employee Salaries 2011</a></iframe><p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a></p></div>
-</center>
-
-<h2 id="salary--overtime-analysis">Salary &amp; Overtime Analysis</h2>
-
-<p>I filtered the city salary data down to just the police department, and from there broke out a few different groups of police employees where we might be interested in changes in overtime pay.  The calculations I employ are as follows:</p>
-
-<ul>
-  <li><strong>Average Salary.</strong> ($) The average salary for a group of employees.</li>
-  <li><strong>Average Bonus.</strong> ($) The average of the difference between gross pay and annual base salary (the average bonus &amp; overtime payout) for a group of employees.</li>
-  <li><strong>Average Bonus % of Salary.</strong>  The average of the bonus/overtime divided by annual base salary for a group of employees.</li>
-  <li><strong>Total Bonus Issued.</strong> ($)  The total bonus and overtime paid to the group of employees.</li>
-  <li><strong>Maximum Bonus in Group.</strong> ($)  The maximum bonus/overtime paid in a group of employees.</li>
-  <li><strong>Maximum Bonus % of Salary.</strong>  The maximum ratio between the bonus/overtime paid and base salary for a group of employees.</li>
-  <li><strong>Employee Count.</strong>  The number of employees in the group being analyzed.</li>
-</ul>
-
-<p>Police officers are coded in the datasets as “Police Officer” or “Police Officer (EID).”  I’m not sure what “(EID)” stands for but they are certainly cops on the payroll.  Police officers in training are another possibility, but I am not including them in the list of actual officers for this analysis.</p>
-
-<h2 id="furloughs">2011: Furloughs</h2>
-
-<p>As so often happens to me when I’m plugging along on an analysis, I hit a snag, and have to backtrack to find out what’s going on.  More often than not, I retrace my steps and discover some strange artifact or issue in the city’s data.  This was the case here as well.</p>
-
-<p>One of my starting assumptions was that I should filter out any officers whose gross pay was less than their annual salary.  Well, it turns out that this was a majority of the Baltimore Police Department in FY2011, so that’s a bad idea.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png"><img src="http://localhost:4000/images/2015-04/BPD_Gross_Pay_Ratio_2011.png" /></a>
-</figure>
-</center>
-
-<p>Half of the BPD made less than 95% of their reported annual salary in 2011.  What gives?  After a little digging, I found <a href="http://articles.baltimoresun.com/2011-01-07/news/bs-md-police-pay-cuts-20110107_1_robert-f-cherry-police-officers-bob-sledgeski">this article</a> and I think I have an answer: furloughs.  No doubt that situation must have been rough, but based on the analysis below they’ve made up for it over the last couple years.  In fact, the results below show that officers themselves didn’t bear the brunt of the hit - others in the BPD did.  I’m happy to be wrong and invite any Baltimore city officials to slice this a different way and let me know why 2011 payouts were smaller than salaries, but it doesn’t seem like this is a data quality issue.</p>
-
-<hr />
-
-<p>The following are some metrics for a few different slices of the BPD.</p>
-
-<h2 id="all-police">All Police</h2>
-
-<p>The furloughs in 2011 obviously stick out here, but what we don’t have is information on what overtime and bonuses were like before 2011 and the recession.  </p>
-
-<p>Generally though, this certainly sets the backdrop for concerns regarding overtime pay that may be occuring at the casino.  Overtime payout has swelled to $30 million for each of the last two years and that’s without the casino.  Will the total overtime paid increase beyond $30 million for FY2015?  Or will the overtime budget stay the same, with overtime duties getting shifted from one location or another to the casino?  Neither sounds like a good idea.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png"><img src="http://localhost:4000/images/2015-04/BPD_Bonus_All_Police.png" /></a>
-</figure>
-</center>
-
-<h2 id="police-officers">Police Officers</h2>
-
-<p>What’s interesting here is that while the total bonus/overtime in 2011 was negative (furloughs) for all BPD, officers’ officers in general still made on average a $1,012 bonus, to the tune of more than $2 million for all officers.  In the next section, you’ll see that the <strong>rest of the department took a $3 million hit</strong> on gross pay, resulting in the -$1 million total bonus/overtime in 2011 for the whole police department shown above.  It’s worth reminding ourselves here that police unions are a political force to be reckoned with.</p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png"><img src="http://localhost:4000/images/2015-04/BPD_Bonus_Officers.png" /></a>
-</figure>
-</center>
-
-<h2 id="other-police-department-not-officers">Other Police Department (Not Officers)</h2>
-
-<p>On average salaries for non-officers in the BPD are comparable to police officers.  But of course, they make nowhere near the overtime and bonus available to officers.  <strong>Compare the 19%-of-salary bonus in 2014 for police officers above to the 2%-of-salary bonus for non-officers in 2014.</strong></p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png"><img src="http://localhost:4000/images/2015-04/BPD_Bonus_Not_Officers.png" /></a>
-</figure>
-</center>
-
-<h2 id="top-20-bonus-earners">Top 20 Bonus Earners</h2>
-
-<p>Here’s what the top of the food chain looks like for the department.  Of course, these police employees didn’t have to worry during the recession - <strong>their average bonus when the department was suffering in 2011   was $52,827.  On average, the sizes of their bonuses were equal to their salary for fiscal years 2012 through 2014.</strong></p>
-
-<center>
-<figure>
-  <a href="http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png"><img src="http://localhost:4000/images/2015-04/BPD_Bonus_Top20.png" /></a>
-</figure>
-</center>
-
-<h2 id="future-work">Future Work</h2>
-
-<ol>
-  <li><strong>The Horseshoe Casino.</strong>  We’ll have to wait until the FY2015 data are released over at <a href="http://data.baltimorecity.gov">Open Baltimore</a> in order to see what impact it has on bonuses/overtime.</li>
-  <li><strong>Correlating bonus/overtime pay with crime/arrests.</strong>  All else being equal, in a democracy our tax funds are supposed to go to the people’s priorities.  We should be having an open discussion about whether it is more important to fund overtime and bonus for incentivizing good policing or to hire more police and fund better training.  Neither option has an <em>a priori</em> claim to efficacy, and we should be looking for empirical methods to show where to allocate funds.  We can try correlating crime and arrest data with these police salary data and see where we get.  Wearing my scientist/analyst/reporter hat, I’ll try to remain skeptical and neutral, but to be honest <a href="http://www.thisamericanlife.org/radio-archives/episode/548/transcript">my money is on better training.</a></li>
-</ol>
-
-<hr />
-<p><em>Data obtained from <a href="http://data.baltimorecity.gov/">Open Baltimore</a>.</em></p>
-
-<p><em>Analysis conducted using <a href="http://www.python.org">Python</a>, <a href="http://pandas.pydata.org">Pandas</a>, and <a href="http://www.plot.ly">Plot.ly</a>.</em></p>
-
-<p><em>Full analysis IPython notebook can be found <a href="http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb">here</a>. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.</em></p>
+<p><strong>I’d propose we call it the <a href="https://twitter.com/search?q=%23showyourwork&amp;src=typd">#ShowYourWork</a> campaign.</strong>  If elementary school kids can show their work on math problems and high schoolers can cite their references in English papers, surely our politicians can follow their lead.  Moreover, it would signal a commitment to and appreciation for the STEM fields that politicians like to pay lip service to when it comes to job growth.</p>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -690,87 +276,408 @@
 
 </script>
 
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/04/12/A-City-Divided-In-N-Dimensions.html"><h1 class="contrast">A City Divided (in N dimensions)</h1></a>
+        <span class="smaller">April 12, 2015</span>
+        <div><p>It’s no secret that most American cities are segregated.</p>
 
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
+<p>When I tell people I live in Baltimore, that I love living there and that it’s a great American city, what I really mean is that the neighborhoods I typically experience are great.  Baltimore of course has its many ills, and it’s very easy for white, college-educated individuals like myself to find themselves experiencing a very different reality than most in the city.</p>
 
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/03/30/Know-More-Bmore.html"><h1 class="contrast">Know More, B'more.</h1></a>
+        <span class="smaller">March 30, 2015</span>
+        <div><p>I took a quick look at the Vital Signs dataset from the<a href="http://www.bniajfi.org/indicators"> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)</a> at the University of Baltimore (data also available at <a href="http://data.baltimorecity.gov/">Open Baltimore</a>) and created some <a href="http://www.gapminder.org/">Hans Rosling-style plots</a>.</p>
 
-<div class="pagination">
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/03/19/Baltimore-City-Paper-Bounces-TTS-Analysis.html"><h1 class="contrast">City Paper Bounces The Training Set Parking Analysis</h1></a>
+        <span class="smaller">March 19, 2015</span>
+        <div><p>I was able to get in contact with Edward Ericson Jr. over at Baltimore’s City Paper concerning the <a href="http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story">parking investigation at 4200 Wickford Rd</a>.  Ed was kind enough to bounce my findings in a <a href="http://www.citypaper.com/blogs/the-news-hole/bcp-wandering-eye-a-neonoir-crime-blotter-date-on-parking-in-baltimore-and-more-20150305,0,1269875.story">quick update blurb</a>.  Full text is below.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/03/16/Which-Citation-Types-Do-People-Not-Care-About.html"><h1 class="contrast">Which citations do people not care about paying?</h1></a>
+        <span class="smaller">March 16, 2015</span>
+        <div><p>The Baltimore citation open data includes a field for open balance, meaning the amount still owed to the city for each citation.  With this information we can look at the rates of unpaid citations by citation type.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/03/12/DOT-Needs-More-Citation-Categories.html"><h1 class="contrast">DOT Needs More Citation Categories</h1></a>
+        <span class="smaller">March 12, 2015</span>
+        <div><p>Here’s a suggestion directed at the Department of Transportation for improving their citation system.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/03/07/When-Not-To-Park-On-Charles.html"><h1 class="contrast">When Not To Park On N. Charles St.</h1></a>
+        <span class="smaller">March 7, 2015</span>
+        <div><p>In a recent post I’ve shown particular blocks that became targets for parking enforcement.  The short five block stretch on North Charles Street right around the corner from my apartment is one of those target locations.</p>
+
+<figure>
+<iframe src="https://www.google.com/maps/d/embed?mid=z14mtc2vy9S0.k5pYuRXb6j84" width="550" height="480"></iframe>
+
+</figure>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/03/03/Baltimore-City-Paper-Article-On-4200-Wickford.html"><h1 class="contrast">Investigating City Paper's Claims About 4200 Wickford</h1></a>
+        <span class="smaller">March 3, 2015</span>
+        <div><p>Baltimore’s City Paper recently <a href="http://www.citypaper.com/news/mobtownbeat/bcp-victims-of-a-unique-baltimore-parking-problem-fight-the-law-and-the-law-wins-20141216,0,5288351.story">took a look at a unique parking situation</a> in Baltimore at the 4200 block of Wickford Road.  Unfortunately, they didn’t take a peek at the same open data for parking citations I’ve been investigating lately.</p>
+
+<p>This road is a small two-way street in a quiet, wealthy neighborhood adjacent to the Johns Hopkins University campus called Keswick.  The street is narrow, and so vehicles typically park on either side with their tires past the curb which is illegal.  Apparently they also occasionally park on the left facing the wrong direction.</p>
+
+<p>Start here in Google Street View and work your way north - the street is indeed quite narrow and most cars (save for maybe the Smart car) are parked with their two right tires over the curb.  The Smart car and several others are parked on the left side facing the wrong direction.</p>
+
+<p><br /></p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1425404187666!6m8!1m7!1sgYu398RNv4HjfPUXZxCNiQ!2m2!1d39.339469!2d-76.627132!3f28.763235779444777!4f-26.84351693465949!5f0.7820865974627469" width="550" height="450" frameborder="0" style="border:0"></iframe>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/02/27/Daily-Unpaid-Citations.html"><h1 class="contrast">Biasing Citations Towards Those Who Pay</h1></a>
+        <span class="smaller">February 27, 2015</span>
+        <div><p>Unless this dataset is somehow <a href="/articles/Quick-Response-From-Baltimore-Chief-Data-Officer/">still screwed up</a>, there was a stark shift in behavior that coincided with the explosion of parking citations issued in Baltimore.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/02/24/Rapid-Increase-In-Citations.html"><h1 class="contrast">Rapid Increase in Citations</h1></a>
+        <span class="smaller">February 24, 2015</span>
+        <div><p>The total number of parking citations in Baltimore exploded between September 2013 and March 2014.</p>
+
+<figure><figcaption>Total monthly citations in Baltimore, Maryland.</figcaption><img src="/images/2015-02/Total_Monthly_Citations.png" /></figure>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/02/16/Buiding-My-Elec-Use-Visualization-Site.html"><h1 class="contrast">Introducing "My Electricity Use" Visualization Page</h1></a>
+        <span class="smaller">February 16, 2015</span>
+        <div><p>This is just a quick blurb to say I’m building a new page for my website for visualizing my electricity usage data.  You can find it in the upper left menu panel by clicking on “<a href="/my-elec-use/">My Electricity Use</a>.”  Right now I’ve just got an interactive heat map up for the hourly data (based on this post).  I’m admittedly slow to the <a href="http://plot.ly">Plotly</a> game, but I’ll be using it a lot more regularly going forward.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/02/10/My-Block-Is-A-Target.html"><h1 class="contrast">My Block is a Target.</h1></a>
+        <span class="smaller">February 10, 2015</span>
+        <div><p>Now that we can be sure of having a <a href="/articles/Quick-Response-From-Baltimore-Chief-Data-Officer">complete data set</a> for the immediately preceding two years, we can take a closer look at parking citation policies and compliance.</p>
+
+<figure><figcaption>Total monthly citations for top 10 types of citation fines issued.</figcaption><img src="/images/2015-02/Top 10 Monthly Citation Plot 2013-02-01 to 2014-12-31.png" /></figure>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/01/23/Quick-Response-From-Baltimore-Chief-Data-Officer.html"><h1 class="contrast">Quick Response from Baltimore Chief Data Officer</h1></a>
+        <span class="smaller">January 23, 2015</span>
+        <div><p>Within hours of publishing my last post on <a href="/articles/Baltimores-Lost-Traffic-Camera-Revenue/">Baltimore’s parking (etc.) citation dataset</a>, the issues were corrected thanks to Sharon Paley at <a href="http://www.hackbaltimore.org">Hack Baltimore</a> and Heather Hudson, Baltimore’s Chief Data Officer in the <a href="http://moit.baltimorecity.gov/Home.aspx">Mayor’s Office of Information Technology</a>.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/01/21/Baltimores-Lost-Traffic-Camera-Revenue.html"><h1 class="contrast">The Lost Revenue of the Baltimore Traffic Cameras</h1></a>
+        <span class="smaller">January 21, 2015</span>
+        <div><p>The title of the dataset I’m working with on Baltimore’s <a href="http://data.baltimorecity.gov/">open data portal</a> is “Parking Citations.”  I downloaded a snapshot of the dataset which ended up being 2,689,647 total citations through January 12, 2015.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2015/01/08/Importing-CSV-Files.html"><h1 class="contrast">Importing Lots of CSV's</h1></a>
+        <span class="smaller">January 8, 2015</span>
+        <div><p>I find myself importing a slew of comma-separated value (csv) files quite often so I wrote up a quick bit of code to handle it.</p>
+
+<p>It’s uber-simple - just loops through all the csv’s in a directory, appends them to one Pandas dataframe, and saves the new csv.  It also tacks on the filenames of each file if separating into the original files is needed later.  This also assumes all the fields are named exactly the same in all the csv files.  Sure beats reading each individually and merging after.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+
+<span class="n">path</span> <span class="o">=</span> <span class="s">'data_csv'</span>
+
+<span class="n">allFiles</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s">'/*.csv'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">allFiles</span><span class="p">):</span>
+
+    <span class="n">df_file</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">df_file</span><span class="p">[</span><span class="s">'filename'</span><span class="p">]</span> <span class="o">=</span> <span class="n">filename</span>
+    <span class="n">df_file</span><span class="p">[</span><span class="s">'file_ID'</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_file</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">'full_dataset.csv'</span><span class="p">)</span>
+ 
+</code></pre>
+</div>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/12/25/More-Pointless-Data-Viz.html"><h1 class="contrast">Excessive Data Visualization</h1></a>
+        <span class="smaller">December 25, 2014</span>
+        <div><p>Christmas Day.  I’m bored.</p>
+
+<div><figure class="fullwidth"><img src="/images/2014-12/Average_Days_thru_Nov_2014.png" /><figcaption></figcaption></figure></div>
+
+<div><figure class="fullwidth"><img src="/images/2014-12/Days_thru_Nov_2014.png" /><figcaption></figcaption></figure></div>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/11/14/Assessing-System-Performance.html"><h1 class="contrast">Assessing Demand-Side Storage System Performance</h1></a>
+        <span class="smaller">November 14, 2014</span>
+        <div><p>By varying parameters of the <a href="/articles/Intro-To-Storage-Model">demand-side storage model</a> we can determine the economic plausibility and benefits of home grid-tied batteries.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/11/11/Heat-Map.html"><h1 class="contrast">Demand Heat Map</h1></a>
+        <span class="smaller">November 11, 2014</span>
+        <div><p>Opower posted <a href="http://blog.opower.com/2014/09/ami-data-integration/">a heat map of hourly electricity demand</a> that I wanted to replicate for our data.</p>
+
+<figure><figcaption></figcaption><img src="/images/2014-11/my_usage_heatmap.png" /></figure>
+
+<p>This makes changes in hourly trends over the course of the year readily apparent, and even highlights differences day to day.  The 6am/7am peak is pretty clear, as are the evening hours in the summer.  Between midnight a 4am, the usage is clearly higher (deeper yellow) in the summer as well due to AC load.</p>
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/10/09/Storage-Model-Details.html"><h1 class="contrast">Storage Model Details</h1></a>
+        <span class="smaller">October 9, 2014</span>
+        <div><p>This post fills in some more details of the <a href="/articles/Intro-To-Storage-Model">demand-side storage model</a>. In the last post I presented a flow chart of how the logic works but didn’t give a diagram of what the physical system might look like.  That’s below.</p>
+
+<figure><figcaption>Demand-side storage physical system.</figcaption><img src="/images/2014-10/physical_system.jpg" /></figure>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/09/23/Intro-To-Storage-Model.html"><h1 class="contrast">Intro to Storage Model</h1></a>
+        <span class="smaller">September 23, 2014</span>
+        <div><p>Buying lead-acid batteries and switching to one of <a href="/articles/BGE-Pricing">BGE’s time-of-use pricing plans</a> may be a very good idea indeed.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/09/22/Summer-Update.html"><h1 class="contrast">Summer Updates</h1></a>
+        <span class="smaller">September 22, 2014</span>
+        <div><p>It’s been a bit.  Work got busy, I got stalled and needed an IDE, and I developed a new model.  I didn’t have much time over the summer for this stuff.  My real job got pretty busy.  You don’t care about that though.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/08/12/Should-I-Switch-to-TOU-Pricing.html"><h1 class="contrast">Should I Switch to Time-of-Use Pricing?</h1></a>
+        <span class="smaller">August 12, 2014</span>
+        <div><p>Now that I’ve got BGE’s available <a href="/articles/BGE-Pricing">residential time-of-use plans</a>, I can evaluate whether I would save money by switching to one.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/08/03/BGE-Pricing.html"><h1 class="contrast">BGE Residential Pricing Plans</h1></a>
+        <span class="smaller">August 3, 2014</span>
+        <div><p>A quick blurb on a couple of pieces of the demand-side storage puzzle I’m working on.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/08/01/Mo-Apartment-Mo-Energy.html"><h1 class="contrast">Mo Apartment, Mo Problems</h1></a>
+        <span class="smaller">August 1, 2014</span>
+        <div><p>Here’s a quick comparison of average weekdays and weekends in the new and old apartments.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/07/31/The-New-Pad.html"><h1 class="contrast">The New Pad</h1></a>
+        <span class="smaller">July 31, 2014</span>
+        <div><p>Steph and I moved on May 23.  I didn’t manage to grab the data for the last three weeks of May before changing apartments (and therefore BGE accounts), so I missed out on those three weeks of data.  However, we’ve now been there just over two months and so we’ve got some A/C load data to work with.</p>
+
+<p>The differences in the data are pretty staggering.  One issue is that we moved at the beginning of summer so our previous apartment with electric resistance heating has all the heating loads and the new apartment with central A/C has all the cooling loads.  The rest of the differences are described below.</p>
+
+<figure><figcaption></figcaption><img src="/images/2014-07/New-Old-TS.png" /></figure>
+
+<figure><figcaption></figcaption><img src="/images/2014-07/New-Old-Elec-Temp.png" /></figure>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/07/31/Feeding-The-Data-Monster.html"><h1 class="contrast">Feeding the Data Monster</h1></a>
+        <span class="smaller">July 31, 2014</span>
+        <div><p>Scouring the interwebz for some data.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/06/18/Closer-Look-At-SVM-Model.html"><h1 class="contrast">Closer Look at the Electricity SVR Forecast</h1></a>
+        <span class="smaller">June 18, 2014</span>
+        <div><p>First a disclaimer on cross-validation:</p>
+
+<p>In the <a href="/articles/Predicting-Energy-Use-with-Support-Vector-Machines">previous post</a> I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/05/08/Predicting-Energy-Use-with-Support-Vector-Machines.html"><h1 class="contrast">Forecasting with Machine Learning</h1></a>
+        <span class="smaller">May 8, 2014</span>
+        <div><p>Taking a big jump into machine learning now.</p>
+
+<p>As part of my research in grad school I had started getting interested in the use of machine learning tools for predicting energy consumption.  I went so far as to enroll in a machine learning class, but lacking the some of the statistical/mathematical knowledge for what they were teaching I ended up dropping about three-quarters of the way through.  I’ve since gone back on my own time and learned more statisical inference through online coursework, and am taking a stab at some analysis and coding.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/05/05/Autocorrelation.html"><h1 class="contrast">Electricity Usage Autocorrelation</h1></a>
+        <span class="smaller">May 5, 2014</span>
+        <div><p>Here’s a quick look using historical data to predict the future.  If the goal is to predict the next hour’s electricity consumption, a good predictor might be the consumption of the hour (or several hours) immediately prior.  One way to assess whether or not this is through the autocorrelation given by:</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/04/18/Energy-Use-and-Weather.html"><h1 class="contrast">Energy Use and Weather</h1></a>
+        <span class="smaller">April 18, 2014</span>
+        <div><p>Stepping back, let’s take a look at what the actual time series of the smart meter electricity data looks like for my apartment.</p>
+
+<p>I’ll bring in the hourly outdoor temperature as measured at Baltimore-Washington International Airport (less than 10 miles away as the crow flies).  The data are obtained via the API at <a href="http://www.wunderground.com/weather/api">Weather Underground</a>.  Again, you can follow along my line (curve, circle, some other obscure geometry) of thinking by taking a look at the <a href="http://nbviewer.ipython.org/github/jtelszasz/my_energy/blob/master/My_Energy_And_Weather.ipynb?create=1">iPython notebook</a>.</p>
+
+<figure><figcaption>Time series of hourly electricity consumption and outdoor temperature.</figcaption><img src="/images/2014-04/Elec_and_Temp_TS.png" /></figure>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/04/17/More-Smart-Meter-Data.html"><h1 class="contrast">More Smart Meter Data...</h1></a>
+        <span class="smaller">April 17, 2014</span>
+        <div><p>In an  <a href="/articles/My-BGE-Smart-Meter-Data">earlier post</a>, I showed initial descriptive plots for my electricity use.  Now that we have some more data, we can break these up to see differences as the spring season progresses.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/04/16/Guess-What-Time-Justin-Wakes-Up.html"><h1 class="contrast">Guess What Time Justin Wakes Up</h1></a>
+        <span class="smaller">April 16, 2014</span>
+        <div><p>First, a little bit on my tools.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/03/16/My-BGE-Smart-Meter-Data.html"><h1 class="contrast">My Electricity Use</h1></a>
+        <span class="smaller">March 16, 2014</span>
+        <div><p>Previously, I laid out what BGE’s smart meters are doing in Baltimore. Below is a quick snapshot of the downloaded data for my apartment electricity usage.</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/03/15/BGE-Smart-Meters.html"><h1 class="contrast">BGE Smart Meters</h1></a>
+        <span class="smaller">March 15, 2014</span>
+        <div><p>Citizens of Baltimore and captive customers of Baltimore Gas &amp; Electric!</p>
+
+</div> 
+      </li>
+        
+      <li class="listing">
+        <!--<hr class="slender">-->
+        <a href="/articles/2014/03/05/GK-Performance-Stats.html"><h1 class="contrast">Goalkeeper Performance Stats</h1></a>
+        <span class="smaller">March 5, 2014</span>
+        <div><p>Starting off by looking at some footy data.</p>
+
+</div> 
+      </li>
   
-    Previous
-  
-  <ul class="inline-list">
-    <li>
+    </article>
+    <span class="print-footer">The Training Set - Justin Elszasz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:thetrainingset@gmail.com"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/thetrainingset"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/jtelszasz"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.linkedin.com/in/justinelszasz"><span class="icon-feed"></span></a>
+      </li>
       
-        <span class="current-page">1</span>
-      
-    </li>
-    
-      <li>
-        
-          <a href="http://localhost:4000/page2">2</a>
-        
-      </li>
-    
-      <li>
-        
-          <a href="http://localhost:4000/page3">3</a>
-        
-      </li>
-    
-      <li>
-        
-          <a href="http://localhost:4000/page4">4</a>
-        
-      </li>
-    
-      <li>
-        
-          <a href="http://localhost:4000/page5">5</a>
-        
-      </li>
-    
   </ul>
-  
-    <a href="http://localhost:4000/page2" class="btn">Next</a>
-  
-</div><!-- /.pagination -->
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</div><!-- /#main -->
-
-<div class="footer-wrapper">
-  <footer role="contentinfo">
-    <span>&copy; 2015 Justin Elszasz. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
-
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58835878-1', 'auto');  
-  ga('require', 'linkid', 'linkid.js');
-  ga('send', 'pageview');
-</script>
-
-          
-
-</body>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;JUSTIN ELSZASZ</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
 </html>

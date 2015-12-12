@@ -5,7 +5,7 @@ description: "Analyzing segregation in Baltimore."
 modified: 2015-04-12
 category: articles
 share: true
-tags: [Baltimore, cities, poverty, know-more-bmore, civic-hacking, data-journalism, PCA, k-means]
+tags: [Baltimore, cities, poverty, know-more-bmore, open-data, machine-learning]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics
@@ -14,7 +14,7 @@ tags: [Baltimore, cities, poverty, know-more-bmore, civic-hacking, data-journali
 
 It's no secret that most American cities are segregated.
 
-When I tell people I live in Baltimore, that I love living there and that it's a great American city, what I really mean is that the neighborhoods I typically experience are great.  Baltimore of course has its many ills, and it's very easy for white, college-educated individuals like myself to find themselves experiencing a very different reality than most in the city.
+When I tell people I live in Baltimore, that I love living there and that it's a great American city, what I really mean is that the neighborhoods I typically experience are great.  Baltimore of course has its many ills, and it's very easy for white, college-educated individuals like myself to find themselves experiencing a very different reality than most in the city. <!--more-->
 
 There are many socio-economic variables that would describe such segregation - something I hinted at with the <a href='{{ site.url }}/articles/Know-More-Bmore'>last post</a>.  Luckily, the<a href='http://www.bniajfi.org/indicators'> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute (BNIA)</a> at the University of Baltimore has made it their mission to provide a clean, concise set of indicators that illustrate the health and wealth of the city.  There are 152 socio-economic indicators in the Vital Signs dataset, and some are reported for multiple years which results in 295 total variables for each of the 56 Baltimore neighborhoods captured.  For this analysis, I'm throwing them all in the mixer.
 
@@ -28,12 +28,7 @@ On the plot below, each bubble is a neighborhood in Baltimore and is sized by th
 
 What results is effectively a socio-economic map of Baltimore.  Use your cursor to hover over each bubble to see the name of the neighborhood.  **Again, the farther apart one bubble is from another, the more socio-economically dissimilar those neighborhoods are.**  For example, find the "Inner Harbor/Federal Hill" (upper right, grey) and "Greater Rosemont" (West Baltimore, adjacent to Gwynn Falls Park; lower left, light blue) neighborhoods.
 
-<center>
-<div>
-    <a href="https://plot.ly/~jtelszasz/230/" target="_blank" title="Baltimore Vital Signs PCA w/ K-Means Clustering" style="display: block; text-align: center;"><img src="https://plot.ly/~jtelszasz/230.png" alt="Baltimore Vital Signs PCA w/ K-Means Clustering" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="jtelszasz:230" src="https://plot.ly/embed.js" async></script>
-</div>
-</center>
+<iframe width="50%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jtelszasz/230.embed"></iframe>
 
 *"Wait, there are seven clusters but I'm only counting six different colors."* 
 
@@ -52,13 +47,18 @@ We want to reduce the 295 variables in the Vital Signs dataset to two since we w
 
 <a href='http://en.wikipedia.org/wiki/K-means_clustering'>K-means clustering</a> is an algorithm that groups data points into clusters.  One could do this manually, but this algorithm automates the process by minimizing the distances from each data points to the center (centroid) of the cluster.  However, one has to specify the number of clusters for the algorithm to use.  One can imagine that to minimize the distances from each data point to the cluster center, one could set the number of clusters equal to the number of data points, i.e. each point is its own cluster, but this is a trivial solution.  Using a metric (called inertia) that measures the typical distance from points to centers, the algorithm can be run multiple times, each time using a different number of clusters, to try and achieve an acceptable result for the inertia.  I chose seven after plotting the inertia as a function of number of clusters.  This plot can be found in the iPython notebook (link below).
 
+<br>
 
 ---
-*Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore</a> and the<a href='http://www.bniajfi.org/indicators'> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.</a>*
 
-*Analysis conducted using <a href='http://www.python.org'>Python</a>, <a href='http://pandas.pydata.org'>Pandas</a>, and <a href='http://www.plot.ly'>Plot.ly</a>.*
+<p style="width: 100%; font-style: italic;">
 
-*Full analysis IPython notebook can be found <a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb'>here</a>.*
+
+Data obtained from <a href='http://data.baltimorecity.gov/'>Open Baltimore</a> and the<a href='http://www.bniajfi.org/indicators'> Baltimore Neighborhoods Indicators Alliance - Jacob France Institute.</a><br>
+
+Analysis conducted using <a href='http://www.python.org'>Python</a>, <a href='http://pandas.pydata.org'>Pandas</a>, and <a href='http://www.plot.ly'>Plot.ly</a>.<br>
+
+Full analysis IPython notebook can be found <a href='http://nbviewer.ipython.org/github/jtelszasz/baltimore_vital_signs/blob/master/vital_signs_viz.ipynb'>here</a>.<br>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

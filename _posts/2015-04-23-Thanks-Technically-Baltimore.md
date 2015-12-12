@@ -5,7 +5,7 @@ description: "A little bit of publicity."
 modified: 2015-04-23
 category: articles
 share: true
-tags: [publicity]
+tags: [Baltimore, civic-tech, open-data]
 <!-- image:
   feature: design/ny_concrete_10.JPG
   credit: Fudgegraphics

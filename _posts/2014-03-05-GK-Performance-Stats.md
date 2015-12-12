@@ -4,14 +4,12 @@ title: Goalkeeper Performance Stats
 description: "Introduction to the MCFC/Opta data and some initial stats for keepers."
 modified: 2014-12-17
 category: articles
-tags: [soccer, mcfc-data, goalkeeper]
-<!-- image:
-  feature: design/ny_concrete_10.JPG
-  credit: Fudgegraphics
-  creditlink: http://www.fudgegraphics.com -->
+tags: [futbol]
 --- 
 
 Starting off by looking at some footy data.
+
+<!--more-->
 
 In 2012, Manchester City FC and <a href="http://www.optasports.com" title="Opta">Opta</a> (a sports analytics company) teamed up to release a season's worth of granular data for the 2011-2012 season. Two datasets were released - one with 206 fields containing total game events by player, and another that included x-y locations for passes and shots for each player for the Bolton-Manchester City match on August 21, 2011. There are plenty of other blogs that have been doing football analytics and looking at this data, and I'm likely not to break any new ground. I thought it would be a fun dataset to look at.
 
@@ -23,12 +21,7 @@ This would also be a good time to mention the "P90" measures. Since not all play
 
 ### Saves
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-03/Saves_Table.png"><img src="{{ site.url }}/images/2014-03/Saves_Table.png"></a>
-  <figcaption>Goalkeeper saves tables, 2011-2012 season .</figcaption>
-</figure>
-<center>
+{% fullwidth 'images/2014-03/Saves_Table.png' '' %}
 
 The simplest way of measuring keeper performance is just to rate them on save percentage (number of shots saved out of number of conceded shots on target). The dataset is also kind enough to us in that they provide short range saves/shots conceded and long range saves/shots conceded. This starts to drill down a bit more into the qualities of the goalkeeper. This is especially true of short range.  For long range shots in the Premier League it should take a true screamer to beat a goalkeeper, so these numbers *should* all be at or near 100%, and are likely more reflective of the number of long-range blinders the team conceded than the keeper's performance.
 
@@ -40,12 +33,7 @@ You also see the performance of Mignolet and Begovic starting to stand out. Both
 
 ### Distribution
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-03/Dist_Table.png"><img src="{{ site.url }}/images/2014-03/Dist_Table.png"></a>
-  <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
-</figure>
-</center>
+{% fullwidth 'images/2014-03/Dist_Table.png' '' %}
 
 As in all of these top level stats, the distribution numbers are confounded as well. I think team tactics has a pretty big role to play here. For a possession team, a goalkeeper is going to be picking out short balls and throws and trying to keep his numbers up. Other more direct or counter-attacking sides will want a goalkeeper to quickly get long balls down the field or to the flanks, possibly with lesser rates of success.
 
@@ -54,12 +42,7 @@ I definitely want to do some more work on distribution. You won't get through a 
 
 ### Crosses
 
-<center>
-<figure>
-  <a href="{{ site.url }}/images/2014-03/Cross_Table.png"><img src="{{ site.url }}/images/2014-03/Cross_Table.png"></a>
-  <figcaption>Goalkeeper distribution tables, 2011-2012 season.</figcaption>
-</figure>
-</center>
+{% fullwidth 'images/2014-03/Cross_Table.png' '' %}
 
 De Gea and Reina quite clearly prefer punching or not challenging for the ball at all to catching. De Gea got quite a bit of flack in this, his first season in the Premier League. From a goalkeeper's prospective, I'd be flaky as all get out on crosses if I started in the Premier League at 23 (granted he was a product of the Atletico Madrid youth academy and was first choice for the first team for about a season and a half there). It's much easier to build confidence on shot-stopping (especially when you are as good and as agile as de Gea) but it's hard to duplicate high pressure, game-like cross scenarios in training.
 
