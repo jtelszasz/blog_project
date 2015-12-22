@@ -5,9 +5,64 @@
     <description></description>
     <link>http://www.thetrainingset.com/</link>
     <atom:link href="http://www.thetrainingset.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Dec 2015 09:53:57 -0500</pubDate>
-    <lastBuildDate>Sat, 12 Dec 2015 09:53:57 -0500</lastBuildDate>
+    <pubDate>Tue, 22 Dec 2015 10:18:16 -0500</pubDate>
+    <lastBuildDate>Tue, 22 Dec 2015 10:18:16 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Two Way Streets: Parking on St. Paul and Calvert</title>
+        <description>&lt;p&gt;The Baltimore Department of Transportation is toying with the idea of converting St. Paul and Calvert streets to two-way traffic.  These streets are components of a north-south corridor that bring northern Baltimore and Baltimore County residents directly into the heart of the city.  Based on Baltimore Brew’s reporting the response at even exploring the notion has been negative&lt;label for=&quot;brew-meetings&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;brew-meetings&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;See Baltimore Brew articles on DOT’s three meetings &lt;a href=&quot;https://www.baltimorebrew.com/2015/11/19/one-way-or-two-for-st-paul-and-calvert-streets/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://www.baltimorebrew.com/2015/12/02/doomsday-scenario-described-if-st-paul-and-calvert-streets-are-converted-to-two-way-traffic/&quot;&gt;here&lt;/a&gt;, and &lt;a href=&quot;https://www.baltimorebrew.com/2015/12/10/anxiety-about-two-way-street-conversion-and-frustration-with-city-life/&quot;&gt;here&lt;/a&gt;. &lt;/span&gt;. Frankly, I had no earthly idea so many in Baltimore City were clairvoyant, though I have no choice but to concede this is the case what with the adamant declarations that two-way conversion for these streets will simply never work. &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;on-two-way-complete-streets&quot;&gt;On two-way complete streets&lt;/h3&gt;
+
+&lt;p&gt;My understanding of the urban planning literature of late is that &lt;a href=&quot;http://www.governing.com/topics/transportation-infrastructure/The-Return-of-the.html&quot;&gt;conversion to two-way complete streets&lt;/a&gt; &lt;a href=&quot;http://www.citylab.com/cityfixer/2015/07/the-many-benefits-of-making-one-way-streets-two-way/398960/&quot;&gt;supports business, improves safety, and makes for a generally more lively neighborhood&lt;/a&gt;&lt;label for=&quot;two-way-eff&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;two-way-eff&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Not to mention that two-way streets may make for &lt;a href=&quot;http://www.accessmagazine.org/articles/fall-2012/two-way-street-networks-efficient-previously-thought/&quot;&gt;more efficient within-network travel&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Thoroughfares with high vehicle throughputs, on the other hand, tend to bifurcate communities.  We don’t have to look any farther than Baltimore itself - Orleans provides direct access from downtown to Johns Hopkins but destroys any sense of a livable community along that dangerous corridor.  I-83, a federal interstate that reaches from the northern suburbs into the downtown heart of Baltimore, forms a clear demarcation between Mt. Vernon/downtown and East Baltimore.  Even the now upper middle class (read: yuppie) neighborhood of Canton would do well to slow Boston street and make it more pedestrian friendly - as it stands, you still have to get in a car to get to the Target or the restaurants on the waterfront.  Despite thriving business it isn’t exactly a pedestrian friendly corridor.&lt;/p&gt;
+
+&lt;p&gt;&lt;label for=&quot;speeding&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;speeding&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Perhaps worth noting here that the &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/baltimore-city/bs-md-ci-speed-camera-council-20150601-story.html&quot;&gt;defunct red-light camera program&lt;/a&gt; in Baltimore didn’t include any intersections on the St. Paul/Calvert corridor, and though I have no data to support it I’ve never once seen any speeding enforcement on either of these streets, nor Baltimore in general. &lt;/span&gt; Perhaps economic activity isn’t the goal on St. Paul and Calvert - that’s largely left to North Charles St. a block west in terms of businesses - but a gentle 2% downhill grade from the north all the way to downtown and lights timed just poorly enough to encourage hitting the gas instead of the brake makes for regular 40 mph speedersflying through a residential neighborhood.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-look-at-parking-on-st-paul-and-calvert&quot;&gt;A look at parking on St. Paul and Calvert&lt;/h3&gt;
+
+&lt;p&gt;Nevertheless, I’m curious as to whether any of the public datasets from &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; can suggest a path forward.  One aspect that city-dwellers are sure to complain of in light of potential street changes is parking.  We can first take a look at the parking citation data I had dug into a while back.  &lt;label for=&quot;morethan10&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;morethan10&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Only blocks with ten or more citations are shown. &lt;/span&gt;Presented below are the total parking citations on these blocks between January 1, 2014 and November 30, 2015.  It’s probably no surprise that the areas near Johns Hopkins and University of Baltimore/Maryland Institute College of Art (part of a dense residential neighborhood) have particularly high citation counts.&lt;/p&gt;
+
+&lt;p style=&quot;width:90%;&quot;&gt;  
+&lt;iframe width=&quot;100%&quot; height=&quot;520&quot; frameborder=&quot;0&quot; src=&quot;https://jtelszasz.cartodb.com/viz/875acdb2-a7e1-11e5-8f59-0ecfd53eb7d3/embed_map&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; oallowfullscreen=&quot;&quot; msallowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Total ticket counts for St. Paul and Calvert from January 1, 2014 through November 30, 2015 are practically equivalent: 19,500 tickets on St. Paul and 20,184 on Calvert.  20,000 citations over about 600 days is about 33 citations a day for each of these approximately three mile stretches of street - or about 10 citations per mile per day.  &lt;label for=&quot;enforcement&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;enforcement&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;It could be that one parking cop is making his or her way up Calvert from downtown and then down St. Paul. &lt;/span&gt;Judging by the hourly totals presented below, it appears that enforcement on St. Paul falls behind Calvert by about an hour or two.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Total parking citations by hour, January 1, 2014 through November 30, 2015.&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-12/st_paul_calvert_citations_hourly.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;Parking is just one aspect of the multi-faceted question of converting one-way streets to two-way.  It’s hard to read too much into these top-level data on citations without additional information, like how many actual parking spots are on each block, but the design would certainly have to consider what to do at each of these dense university spots.  My hope is that the &lt;a href=&quot;http://mta.maryland.gov/baltimorelink&quot;&gt;upcoming MTA bus route redesign&lt;/a&gt; will be integrated with these potential two-way conversions and will provide good alternatives to car dependency in Baltimore.  Especially for college kids.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bonus:&lt;/strong&gt; fun anecdote from one of the public meetings.  I attended the third of DOT’s public meeting on December 15.  A gentleman in a pinstripe suit graced us with his presence and personal tragedy.  Holding up two pictures, one of his office “with a beautiful view in downtown Baltimore” and the other, the neighboring office with similar view and being used, to his dismay, for storage, he claimed that “all” of his coworkers had moved out of Baltimore because it had conspired to make life difficult for them.  He was the last holdout of his cohort, bunkered in his perpetually under-siege residence in &lt;a href=&quot;https://www.google.com/search?q=guilford+baltimore&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ved=0ahUKEwjO6aD20-_JAhVGOj4KHejQBJUQ_AUICSgD&amp;amp;biw=1196&amp;amp;bih=728&quot;&gt;Guilford&lt;/a&gt;.  Converting these streets to two-way, he claimed was the proverbial last straw (beyond paying “$9,000 in taxes and $20,000 a year to put [his] kids in private school”), and he’d be forced to once and for all move out of Baltimore.  Ignoring the fact that slowing traffic and building complete streets would actually benefit the residents on these streets, he was fed up with Baltimore’s personal attacks on his well being.&lt;/p&gt;
+
+&lt;p&gt;His story is certainly at one end of the spectrum, but it at least points at the question of for whom cities and its infrastructure are designed.&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+</description>
+        <pubDate>Tue, 22 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://www.thetrainingset.com/articles/15/Parking-and-2-Way-Conversion</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Parking-and-2-Way-Conversion</guid>
+        
+        <category>parking</category>
+        
+        <category>two-way-streets</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
     
       <item>
         <title>Fresh Style</title>
@@ -508,37 +563,6 @@ Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipy
         <category>FreddieGray</category>
         
         <category>police</category>
-        
-        
-        <category>articles</category>
-        
-      </item>
-    
-      <item>
-        <title>Thanks Technical.ly Baltimore!</title>
-        <description>&lt;p&gt;Stephen Babcock over at &lt;a href=&quot;http://www.technical.ly/baltimore&quot;&gt;Technical.ly Baltimore&lt;/a&gt; was kind enough to give The Training Set a bit of publicity with a write-up about the work.  &lt;a href=&quot;http://technical.ly/baltimore/2015/04/21/justin-elszasz-training-set-parking-ticket-open-data/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-</description>
-        <pubDate>Thu, 23 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Thanks-Technically-Baltimore</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Thanks-Technically-Baltimore</guid>
-        
-        <category>Baltimore</category>
-        
-        <category>civic-tech</category>
-        
-        <category>open-data</category>
         
         
         <category>articles</category>
