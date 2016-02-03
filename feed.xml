@@ -5,13 +5,71 @@
     <description></description>
     <link>http://www.thetrainingset.com/</link>
     <atom:link href="http://www.thetrainingset.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Dec 2015 10:18:16 -0500</pubDate>
-    <lastBuildDate>Tue, 22 Dec 2015 10:18:16 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Feb 2016 07:47:16 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2016 07:47:16 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
+        <title>Maryland Marijuana Policy Only Accounts for 17% of Drop in Baltimore Arrests</title>
+        <description>&lt;p&gt;When looking at Baltimore Police Department (BPD) arrest statistics it’s important to note that in Maryland possession of less than 10 grams of marijuana is no longer grounds for arrest, &lt;a href=&quot;https://www.washingtonpost.com/local/md-politics/maryland-senate-expected-to-take-vote-on-decriminalizing-marijuana/2014/03/14/ca64eb28-ab22-11e3-98f6-8e3c562f9996_story.html?tid=a_inl&quot;&gt;effective October 1, 2014&lt;/a&gt;.  When looking at the drop in arrests from 2014 to 2015 we can at least expect to attribute a portion of the drop to the change in marijuana policy.  But exactly how much? &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fewer-arrests-in-2015&quot;&gt;10,616 fewer arrests in 2015&lt;/h2&gt;
+
+&lt;p&gt;&lt;label for=&quot;marijuana-totals&quot; class=&quot;margin-toggle&quot;&gt;⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;marijuana-totals&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;img class=&quot;fullwidth&quot; src=&quot;/images/2016-02/Totals Marijuana.png&quot; /&gt;&lt;br /&gt;&lt;/span&gt;  &lt;a href=&quot;http://www.thetrainingset.com/articles/15/Policing-In-Baltimore-In-2015&quot;&gt;My previous estimate&lt;/a&gt; was that we’d finish the year with about 10,000 fewer arrests in Baltimore in 2015 compared to 2014.  The final tally is shown at right, indicating the &lt;strong&gt;drop between 2014 and 2015 was 10,616&lt;/strong&gt;, or a 28.8% decrease.&lt;/p&gt;
+
+&lt;p&gt;Marijuana-related arrests have been declining since 2013, falling from 13.6% of all arrests to just under 2%.&lt;/p&gt;
+
+&lt;h2 id=&quot;policy-change-effect-on-arrests&quot;&gt;Policy change effect on arrests&lt;/h2&gt;
+
+&lt;p&gt;Out of the 10,616 fewer arrests in 2015, what portion are due to the drop in marijuana arrests?  Looking at all marijuana-related arrests, the number is about 25.9%.  Looking at only the charge for possession of less than 10 grams (which is the charge that we should see practically zero of in 2015 due to the policy change), the portion is only about 17%.  (There were about 1,812 fewer arrests for this charge in 2015 which is about 17% of the 10,616 fewer total arrests.)&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;img src=&quot;/images/2016-02/Marijuana Breakouts.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;This is of course only the arrests for which possession of 10 grams of marijuana was the charge.  I’m guessing that possession of marijuana used to be the open door for police to nab people for other offenses (or potentially trump up charges).  So while only 17% is directly attributable, a larger portion of the drop in arrests might be attributed indirectly to the change in marijuana policy.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
+
+BPD arrests data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;, data downloaded January 7, 2016.&lt;br /&gt;
+
+Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;br /&gt;
+
+Full analysis Jupyter (iPython) notebook can be found &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime/blob/master/marijuana.ipynb&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
+
+&lt;/p&gt;
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 03 Feb 2016 00:00:00 -0500</pubDate>
+        <link>http://www.thetrainingset.com/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests</link>
+        <guid isPermaLink="true">http://www.thetrainingset.com/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>marijuana</category>
+        
+        <category>police</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
         <title>Two Way Streets: Parking on St. Paul and Calvert</title>
-        <description>&lt;p&gt;The Baltimore Department of Transportation is toying with the idea of converting St. Paul and Calvert streets to two-way traffic.  These streets are components of a north-south corridor that bring northern Baltimore and Baltimore County residents directly into the heart of the city.  Based on Baltimore Brew’s reporting the response at even exploring the notion has been negative&lt;label for=&quot;brew-meetings&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;brew-meetings&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;See Baltimore Brew articles on DOT’s three meetings &lt;a href=&quot;https://www.baltimorebrew.com/2015/11/19/one-way-or-two-for-st-paul-and-calvert-streets/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://www.baltimorebrew.com/2015/12/02/doomsday-scenario-described-if-st-paul-and-calvert-streets-are-converted-to-two-way-traffic/&quot;&gt;here&lt;/a&gt;, and &lt;a href=&quot;https://www.baltimorebrew.com/2015/12/10/anxiety-about-two-way-street-conversion-and-frustration-with-city-life/&quot;&gt;here&lt;/a&gt;. &lt;/span&gt;. Frankly, I had no earthly idea so many in Baltimore City were clairvoyant, though I have no choice but to concede this is the case what with the adamant declarations that two-way conversion for these streets will simply never work. &lt;!--more--&gt;&lt;/p&gt;
+        <description>&lt;p&gt;The Baltimore Department of Transportation is toying with the idea of converting St. Paul and Calvert streets to two-way traffic.  These streets are components of a north-south corridor that bring northern Baltimore and Baltimore County residents directly into the heart of the city.  &lt;!--more--&gt;Based on Baltimore Brew’s reporting the response at even exploring the notion has been negative&lt;label for=&quot;brew-meetings&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;brew-meetings&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;See Baltimore Brew articles on DOT’s three meetings &lt;a href=&quot;https://www.baltimorebrew.com/2015/11/19/one-way-or-two-for-st-paul-and-calvert-streets/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://www.baltimorebrew.com/2015/12/02/doomsday-scenario-described-if-st-paul-and-calvert-streets-are-converted-to-two-way-traffic/&quot;&gt;here&lt;/a&gt;, and &lt;a href=&quot;https://www.baltimorebrew.com/2015/12/10/anxiety-about-two-way-street-conversion-and-frustration-with-city-life/&quot;&gt;here&lt;/a&gt;. &lt;/span&gt;. Frankly, I had no earthly idea so many in Baltimore City were clairvoyant, though I have no choice but to concede this is the case what with the adamant declarations that two-way conversion for these streets will simply never work.&lt;/p&gt;
 
 &lt;h3 id=&quot;on-two-way-complete-streets&quot;&gt;On two-way complete streets&lt;/h3&gt;
 
@@ -58,6 +116,8 @@
         <category>parking</category>
         
         <category>two-way-streets</category>
+        
+        <category>urban-planning</category>
         
         
         <category>articles</category>
@@ -379,6 +439,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
         
         <category>schools</category>
         
+        <category>urban-planning</category>
+        
         
         <category>articles</category>
         
@@ -420,6 +482,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
         <category>cities</category>
         
         <category>buildings</category>
+        
+        <category>urban-planning</category>
         
         
         <category>articles</category>
@@ -500,69 +564,6 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
         <category>python</category>
         
         <category>civic-tech</category>
-        
-        
-        <category>articles</category>
-        
-      </item>
-    
-      <item>
-        <title>This is How Much We Paid Officers Involved in the Freddie Gray Debacle</title>
-        <description>&lt;p&gt;The city &lt;a href=&quot;http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-ci-freddie-gray-officers-20150421-story.html&quot;&gt;released the names of the six officers involved in Freddie Gray’s arrest and subsequent death&lt;/a&gt;.  Below is how much each of them earned in fiscal year 2014 based on &lt;a href=&quot;http://data.baltimorecity.gov&quot;&gt;Open Baltimore&lt;/a&gt; data.  &lt;!--more--&gt;&lt;/p&gt;
-
-&lt;div&gt;&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/images/2015-04/Freddie_Gray_Cop_Pay.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
-
-&lt;!--
-&lt;figure&gt;
-  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay.png&#39;&gt;&lt;/a&gt;
-&lt;/figure&gt;
---&gt;
-
-&lt;p&gt;The six officers have been suspended &lt;strong&gt;with pay&lt;/strong&gt;.  Assuming a 40 hour work week and 48 working weeks in the year, below are these officers’ hourly wages, daily wages, and assuming a 50% ratio of salary for benefits and insurance (typical assumption for wage calculations), the six officers are costing Baltimore City taxpayers $2,151.44 every day of their suspension.  Today is April 26 and as far as I can tell from &lt;a href=&quot;http://www.huffingtonpost.com/2015/04/21/freddie-gray-death-baltimore-officers-suspended_n_7105368.html&quot;&gt;the earliest Associated Press announcement&lt;/a&gt; of their suspension, the officers have been suspended for six days, so the &lt;strong&gt;current bill to taxpayers is $12,908.63 and counting&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;img src=&quot;/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&quot; /&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;!--
-&lt;figure&gt;
-  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-04/Freddie_Gray_Cop_Pay_During_Susp.png&#39;&gt;&lt;/a&gt;
-&lt;/figure&gt;
---&gt;
-
-&lt;hr /&gt;
-
-&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
-
-Data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;.&lt;br /&gt;
-
-Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.plot.ly&quot;&gt;Plot.ly&lt;/a&gt;.&lt;br /&gt;
-
-Full analysis IPython notebook can be found &lt;a href=&quot;http://nbviewer.ipython.org/github/jtelszasz/baltimore_salaries/blob/master/BPD_overtime.ipynb&quot;&gt;here&lt;/a&gt;. Admittedly, at the time of posting these notebooks are often sloppy and not well documented, but everything is there and I do make an effort to go back and clean it up.&lt;br /&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-&lt;/p&gt;
-</description>
-        <pubDate>Sun, 26 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/This-Is-What-We-Pay-Officers-Who-Arrested-Freddie-Gray</guid>
-        
-        <category>Baltimore</category>
-        
-        <category>budget</category>
-        
-        <category>FreddieGray</category>
-        
-        <category>police</category>
         
         
         <category>articles</category>
