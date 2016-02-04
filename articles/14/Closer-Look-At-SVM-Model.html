@@ -21,8 +21,8 @@
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
-  <link rel="canonical" href="http://www.thetrainingset.com/articles/14/Closer-Look-At-SVM-Model">
-  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="http://www.thetrainingset.com/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/articles/14/Closer-Look-At-SVM-Model">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="http://localhost:4000/feed.xml" />
 </head>
 
   <body>
@@ -80,17 +80,17 @@
 
 <p>First a disclaimer on cross-validation:</p>
 
-<p>In the <a href="http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines">previous post</a> I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized. <!--more--></p>
+<p>In the <a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines">previous post</a> I trained a support vector machine model using electricity demand data.  I should state that this is not the end of the analysis nor a robust model ready for release into the wild.  The model would need to undergo cross-validation to forge it into something more robust and generalized. <!--more--></p>
 
 <p>The data I’m using are the hourly electricity consumption in my apartment between January 18 and March 31, 2014, measured by a smart meter and provided by BGE. The following plot is a closer look at the predicted demand and actual demand over two days from the testing period.</p>
 
 <figure><figcaption>Predicted (SVR, next-hour) and actual hourly electricity usage, March 25 and 26.</figcaption><img src="/images/2014-06/SVM_predict_TS_zoom.png" /></figure>
 
-<p>It looks like, with some exceptions, the prediction is generally one hour behind what the actual electricity demand is doing, especially looking at most of the peaks.  At first I thought (hoped) that this was an issue with how I was date indexing the predicted values after calculating them (assigning a timestamp one hour behind what it should have been). But after closer inspection and thinking about it, this actually makes sense.  In the post on <a href="http://www.thetrainingset.com/articles/Autocorrelation">autocorrelation</a> I showed the following lag plot:</p>
+<p>It looks like, with some exceptions, the prediction is generally one hour behind what the actual electricity demand is doing, especially looking at most of the peaks.  At first I thought (hoped) that this was an issue with how I was date indexing the predicted values after calculating them (assigning a timestamp one hour behind what it should have been). But after closer inspection and thinking about it, this actually makes sense.  In the post on <a href="http://localhost:4000/articles/Autocorrelation">autocorrelation</a> I showed the following lag plot:</p>
 
 <figure><figcaption>Lag plot, 1 hour.</figcaption><img src="/images/2014-06/Elec_Lag_1hour.png" /></figure>
 
-<p>The slope of the linear fit is about 0.97 and the constant (y-intercept) is about 0.04.  In other words, the ratio between any hour’s electricity demand and the hour previous is about one.  So unless the time of day or workday-non-workday indicator is <em>very</em> influential at any hour (like <a href="http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up">6am</a>), the model will likely just predict the next hour to be the same as the current hour demand.  This will result in missing peaks by an hour, which if you’re a utility trying to schedule enough generation in the summer to meet the next hour’s air conditioning loads in a city, this is not so bueno.  I think the reason this is a product of the model is that a large fraction of the training samples used to build the model are <em>not</em> peaks, save for the <a href="http://www.thetrainingset.com/articles/Guess-What-Time-Justin-Wakes-Up">6am wake-up time</a>.</p>
+<p>The slope of the linear fit is about 0.97 and the constant (y-intercept) is about 0.04.  In other words, the ratio between any hour’s electricity demand and the hour previous is about one.  So unless the time of day or workday-non-workday indicator is <em>very</em> influential at any hour (like <a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up">6am</a>), the model will likely just predict the next hour to be the same as the current hour demand.  This will result in missing peaks by an hour, which if you’re a utility trying to schedule enough generation in the summer to meet the next hour’s air conditioning loads in a city, this is not so bueno.  I think the reason this is a product of the model is that a large fraction of the training samples used to build the model are <em>not</em> peaks, save for the <a href="http://localhost:4000/articles/Guess-What-Time-Justin-Wakes-Up">6am wake-up time</a>.</p>
 
 <p>Below are the same results, just resampled to daily instead of hourly.</p>
 
@@ -108,7 +108,7 @@
 
 <p><span>​<script type="math/tex">RMSE=\sqrt{\frac{\sum_{1}^{N}(y-\hat{y})^{2}}{N}} </script></span></p>
 
-<p>The standard error for the <a href="http://www.thetrainingset.com/articles/Predicting-Energy-Use-with-Support-Vector-Machines">initial SVM model</a> is 0.17 kilowatt-hours.</p>
+<p>The standard error for the <a href="http://localhost:4000/articles/Predicting-Energy-Use-with-Support-Vector-Machines">initial SVM model</a> is 0.17 kilowatt-hours.</p>
 
 <h4 id="mean-absolute-percent-error">Mean Absolute Percent Error</h4>
 

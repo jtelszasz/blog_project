@@ -3,11 +3,81 @@
   <channel>
     <title>The Training Set</title>
     <description></description>
-    <link>http://www.thetrainingset.com/</link>
-    <atom:link href="http://www.thetrainingset.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Feb 2016 07:47:16 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Feb 2016 07:47:16 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 04 Feb 2016 18:41:51 -0500</pubDate>
+    <lastBuildDate>Thu, 04 Feb 2016 18:41:51 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Changes in Baltimore Neighborhood Policing</title>
+        <description>&lt;p&gt;With the massive change in Baltimore Police Department arrests in 2015 I thought it might be worth investigating how each neighborhood was affected.  Thankfully it appears the &lt;a href=&quot;https://data.baltimorecity.gov/Public-Safety/BPD-Arrests/3i3v-ibrt&quot;&gt;BPD arrest dataset on Open Baltimore&lt;/a&gt; and the &lt;a href=&quot;http://bniajfi.org&quot;&gt;Baltimore Neighborhood Indicators Alliance “Vital Signs” composite dataset&lt;/a&gt; use the same Census neighborhood definitions so we can look at the arrest rates in each neighborhood as it relates to the population and demograhpics.  I’ve mapped two indicators by neighbohood that you can toggle between: the percent change in the number of arrests from 2014 to 2015 and the change in the arrest rate per 1,000 people in each neighbohood from 2014 to 2015.  I’ve only included neighborhoods with more than 200 people in the population to try and remove some of the (numerically) noisier neighborhoods.  Like I mentioned in the &lt;a href=&quot;/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests&quot;&gt;last post&lt;/a&gt;, these changes are not all directly tied to the change in marijuana policy; indeed it would be hard to imagine 10,000 fewer arrests in Baltimore, a drop of about 29%, due to marijuana policy alone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Select&lt;/strong&gt; from the “Visible Layers” in the upper right corner which layer you want to view.  &lt;br /&gt;
+&lt;strong&gt;Hover&lt;/strong&gt; over each neighborhood to get the arrest counts from 2013, 2014, and 2015.  &lt;br /&gt;
+&lt;strong&gt;Click&lt;/strong&gt; on a neighborhood to get additional statistics about the arrests.&lt;/p&gt;
+
+&lt;p style=&quot;width:90%;&quot;&gt;  
+&lt;iframe width=&quot;100%&quot; height=&quot;520&quot; frameborder=&quot;0&quot; src=&quot;https://jtelszasz.cartodb.com/viz/cb985822-b92b-11e5-9421-0ecd1babdde5/embed_map&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; oallowfullscreen=&quot;&quot; msallowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;In general the neighborhoods with higher arrest rates to begin with stood to experience larger changes in 2015.  For example, in 2013, &lt;strong&gt;Freddie Gray’s neighborhood of Sandtown-Windchester&lt;/strong&gt; on the near west side had an &lt;strong&gt;arrest rate of more than 100 arrests per 1,000 people&lt;/strong&gt;.  That number in 2015 is now about 57 arrests per 1,000 people.&lt;/p&gt;
+
+&lt;p&gt;&lt;label for=&quot;monthly-totals&quot; class=&quot;margin-toggle&quot;&gt;⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;monthly-totals&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;img class=&quot;fullwidth&quot; src=&quot;/images/2016-02/Total_Monthly_Arrests_2014_2015.png&quot; /&gt;&lt;br /&gt;Monthly total arrests in Baltimore, 2015 in orange. &lt;a href=&quot;/images/2016-02/Total_Monthly_Arrests_2014_2015.png&quot;&gt;Click here to enlarge&lt;/a&gt;.&lt;/span&gt;The big changes in arrest numbers could be good or bad - if the drop was because of abandoning a stop-and-frisk or broken windows-type policing approach in lieu of fairer community policing tactics I think we could live with that.  I’m not convinced that’s the case, especially considering Freddie Gray was arrested and died in police custody well after the slow down had begun.&lt;/p&gt;
+
+&lt;p&gt;For a more methodical look at these changes in Baltimore, here are the number of Baltimore neighborhoods by their change in arrest rate.  Again, total arrests in Baltimore dropped by about 29% between 2014 and 2015.  The mean for the neighborhoods is slightly different (about 20% drop) because I’ve excluded neighborhoods with less than 200 people in the population.  Some neighborhoods with more than that population have very small arrest counts (Roland Park, Guilford) so those are the ones that have 200% or 300% increases.&lt;/p&gt;
+
+&lt;div&gt;&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/images/2016-02/Histogram - Percent Change in Arrests by Nhood.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;The average Baltimore neighborhood saw about 14 arrests fewer per 1,000 people in 2015.&lt;/p&gt;
+
+&lt;div&gt;&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/images/2016-02/Histogram - Change in Arrest Rate by Nhood.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p style=&quot;width: 100%; font-style: italic;&quot;&gt;
+
+BPD arrests data obtained from &lt;a href=&quot;http://data.baltimorecity.gov/&quot;&gt;Open Baltimore&lt;/a&gt;, data downloaded January 7, 2016.&lt;br /&gt;
+
+Thanks as always to &lt;a href=&quot;http://bniajfi.org&quot;&gt;BNIA-JFI&lt;/a&gt; for compiling the &quot;Vital Signs&quot; indicators for Baltimore.&lt;br /&gt;
+
+Analysis conducted using &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org&quot;&gt;Pandas&lt;/a&gt;, and &lt;a href=&quot;http://www.qgis.org&quot;&gt;QGIS&lt;/a&gt;, and &lt;a href=&quot;http://www.cartodb.com&quot;&gt;CartoDB&lt;/a&gt;.&lt;br /&gt;
+
+Analysis Jupyter (iPython) notebooks can be found &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime/blob/master/neighborhood_arrest_changes.ipynb&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
+
+QGIS project and shapefiles can also be found on &lt;a href=&quot;https://github.com/jtelszasz/baltimore_crime&quot;&gt;Github&lt;/a&gt;.&lt;br /&gt;
+
+&lt;/p&gt;
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+</description>
+        <pubDate>Thu, 04 Feb 2016 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/articles/16/Changes-In-Neighborhood-Policing</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/16/Changes-In-Neighborhood-Policing</guid>
+        
+        <category>Baltimore</category>
+        
+        <category>marijuana</category>
+        
+        <category>police</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
     
       <item>
         <title>Maryland Marijuana Policy Only Accounts for 17% of Drop in Baltimore Arrests</title>
@@ -53,8 +123,8 @@ Full analysis Jupyter (iPython) notebook can be found &lt;a href=&quot;https://g
 
 </description>
         <pubDate>Wed, 03 Feb 2016 00:00:00 -0500</pubDate>
-        <link>http://www.thetrainingset.com/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests</guid>
+        <link>http://localhost:4000/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests</guid>
         
         <category>Baltimore</category>
         
@@ -110,8 +180,8 @@ Full analysis Jupyter (iPython) notebook can be found &lt;a href=&quot;https://g
 
 </description>
         <pubDate>Tue, 22 Dec 2015 00:00:00 -0500</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Parking-and-2-Way-Conversion</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Parking-and-2-Way-Conversion</guid>
+        <link>http://localhost:4000/articles/15/Parking-and-2-Way-Conversion</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/Parking-and-2-Way-Conversion</guid>
         
         <category>parking</category>
         
@@ -143,8 +213,8 @@ Full analysis Jupyter (iPython) notebook can be found &lt;a href=&quot;https://g
 
 </description>
         <pubDate>Sat, 12 Dec 2015 00:00:00 -0500</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/New-Style</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/New-Style</guid>
+        <link>http://localhost:4000/articles/15/New-Style</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/New-Style</guid>
         
         <category>The-Training-Set</category>
         
@@ -174,7 +244,7 @@ Full analysis Jupyter (iPython) notebook can be found &lt;a href=&quot;https://g
 &lt;!--
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://localhost:4000/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;img src=&#39;http://localhost:4000/images/2015-11/Total_Arrests_Cumsum.png&#39;&gt;&lt;/a&gt;
   &lt;figcaption&gt;Cumulative arrests in Baltimore for 2013, 2014, and 2015.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -189,7 +259,7 @@ Full analysis Jupyter (iPython) notebook can be found &lt;a href=&quot;https://g
 &lt;!--
 &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://localhost:4000/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;img src=&#39;http://localhost:4000/images/2015-11/Percent_Weekly_CDS.png&#39;&gt;&lt;/a&gt;
   &lt;figcaption&gt;Percent weekly arrests that are CDS-related, Baltimore in 2015.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt;
@@ -203,7 +273,7 @@ Full analysis Jupyter (iPython) notebook can be found &lt;a href=&quot;https://g
 
 &lt;!-- &lt;center&gt;
 &lt;figure&gt;
-  &lt;a href=&#39;http://www.thetrainingset.com/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;img src=&#39;http://www.thetrainingset.com/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;/a&gt;
+  &lt;a href=&#39;http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;img src=&#39;http://localhost:4000/images/2015-11/Top5_Arrest_Counts.png&#39;&gt;&lt;/a&gt;
   &lt;figcaption&gt;Top 5 charges before and after Monday, April 27 unrest.  Click image to enlarge.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/center&gt; --&gt;
@@ -243,8 +313,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 </description>
         <pubDate>Thu, 12 Nov 2015 00:00:00 -0500</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Policing-In-Baltimore-In-2015</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Policing-In-Baltimore-In-2015</guid>
+        <link>http://localhost:4000/articles/15/Policing-In-Baltimore-In-2015</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/Policing-In-Baltimore-In-2015</guid>
         
         <category>Baltimore</category>
         
@@ -271,7 +341,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 &lt;p&gt;&lt;strong&gt;Coming up July 28&lt;/strong&gt;, I’ll be at the &lt;a href=&quot;http://www.meetup.com/Transportation-Techies/events/222183536/&quot;&gt;DC Transportation Techies meetup&lt;/a&gt; which is making a cameo in Baltimore at the Hyatt Regency.&lt;/p&gt;
 
-&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;http://www.thetrainingset.com/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’ve added all this stuff to &lt;a href=&quot;http://localhost:4000/The-Work&quot;&gt;The Work&lt;/a&gt; page (upper left corner) as well as my slide deck from my &lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt;“Apps Are Not The Answer”&lt;/a&gt; talk at &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
 
 &lt;script&gt;
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -286,8 +356,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 </description>
         <pubDate>Tue, 14 Jul 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/What-Im-Up-To</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/What-Im-Up-To</guid>
+        <link>http://localhost:4000/articles/15/What-Im-Up-To</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/What-Im-Up-To</guid>
         
         <category>open-data</category>
         
@@ -334,8 +404,8 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 </description>
         <pubDate>Fri, 12 Jun 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Arrests-In-Baltimore-Drop-In-May</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Arrests-In-Baltimore-Drop-In-May</guid>
+        <link>http://localhost:4000/articles/15/Arrests-In-Baltimore-Drop-In-May</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/Arrests-In-Baltimore-Drop-In-May</guid>
         
         <category>Baltimore</category>
         
@@ -356,7 +426,7 @@ Full analysis IPython notebook can be found &lt;a href=&quot;https://github.com/
 
 &lt;p&gt;In addition to the safety hazard neglected structures can pose, vacant lots and buildings are magnets for &lt;a href=&quot;http://articles.chicagotribune.com/1992-02-10/news/9201130233_1_vacant-buildings-abandoned-demolishes&quot;&gt;serious&lt;/a&gt; &lt;a href=&quot;http://articles.baltimoresun.com/2014-08-07/news/bs-crime-vacants-20140806_1_property-crime-serious-crime-violent-crime&quot;&gt;crime&lt;/a&gt;, including &lt;em&gt;gang activity, drugs, murder, assault, and rape&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;http://www.thetrainingset.com/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.&lt;/p&gt;
+&lt;p&gt;In order to get a look at how blight is affecting Baltimore one pretty straightforward exercise is to map all of these abandoned buildings and parcels to see what the city looks like.  I did this in the &lt;a href=&quot;http://localhost:4000/articles/Baltimore-Vacant-Houses-On-Citylab/&quot;&gt;last post&lt;/a&gt;, and this work has been &lt;a href=&quot;http://technical.ly/baltimore/2012/08/09/15928-vacant-buildings-baltimore-city-map/&quot;&gt;done before&lt;/a&gt;.  It should come as no surprise to anyone living in Baltimore where the neighborhoods hardest hit with blight are.&lt;/p&gt;
 
 &lt;p&gt;But context is everything, and the story these data tells us about what it’s like to be a school-aged kid in Baltimore is harrowing. &lt;strong&gt;The analysis suggests that about 68% of all vacant buildings in Baltimore are within a quarter mile of a city school, while about 27% of all vacant parcel area is within the same distance.&lt;/strong&gt;&lt;/p&gt;
 
@@ -428,8 +498,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 </description>
         <pubDate>Tue, 02 Jun 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</guid>
+        <link>http://localhost:4000/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/Vacant-Lots-and-Bldgs-Near-Schools</guid>
         
         <category>Baltimore</category>
         
@@ -474,8 +544,8 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 </description>
         <pubDate>Mon, 01 Jun 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Baltimore-Vacant-Houses-On-Citylab</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Baltimore-Vacant-Houses-On-Citylab</guid>
+        <link>http://localhost:4000/articles/15/Baltimore-Vacant-Houses-On-Citylab</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/Baltimore-Vacant-Houses-On-Citylab</guid>
         
         <category>Baltimore</category>
         
@@ -521,49 +591,12 @@ Analysis files including any iPython notebooks can be found on &lt;a href=&quot;
 
 </description>
         <pubDate>Thu, 21 May 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Verizon-Wireless-Calculator</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Verizon-Wireless-Calculator</guid>
+        <link>http://localhost:4000/articles/15/Verizon-Wireless-Calculator</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/Verizon-Wireless-Calculator</guid>
         
         <category>Verizon</category>
         
         <category>smart-phones</category>
-        
-        
-        <category>articles</category>
-        
-      </item>
-    
-      <item>
-        <title>Upcoming Events You Should Check Out</title>
-        <description>&lt;p&gt;I’ll be giving a couple of talks in Baltimore in the next two weeks.  Would love for you to attend if you’re in the area!  Click on the title of the talk below to RSVP through Meetup.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.meetup.com/Baltimore-Civic-Hacking-Meetup/events/222166589/&quot;&gt; “Apps Are Not The Answer” on Thursday May 14 @ DreamIt Health Baltimore.&lt;/a&gt;&lt;/strong&gt;  I’ll describe how I’ve tried to engage city officials and journalists in order to address policy, problem-solving, and decision-making. I’ll be sharing examples of my work, as well as some reminders of the principles that should guide problem-solving, applied science, and engineering. Hosted by &lt;a href=&quot;http://www.hackbaltimore.org&quot;&gt;Hack Baltimore&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.meetup.com/baltimore-python/events/221252779/&quot;&gt;“Bad Ass(umptions)” on Wednesday May 20 @ Social Growth Technologies in Columbia, MD.”&lt;/a&gt;&lt;/strong&gt;  I’ll examine the false premises and assumptions that I’ve made and subsequently obliterated through my data analysis work on The Training Set.  Hosted by &lt;a href=&quot;http://www.meetup.com/baltimore-python/&quot;&gt;the Baltimore Python crew&lt;/a&gt;.&lt;/p&gt;
-
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-58835878-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-</description>
-        <pubDate>Tue, 05 May 2015 00:00:00 -0400</pubDate>
-        <link>http://www.thetrainingset.com/articles/15/Upcoming-Events-You-Should-Attend</link>
-        <guid isPermaLink="true">http://www.thetrainingset.com/articles/15/Upcoming-Events-You-Should-Attend</guid>
-        
-        <category>Baltimore</category>
-        
-        <category>apps</category>
-        
-        <category>python</category>
-        
-        <category>civic-tech</category>
         
         
         <category>articles</category>
