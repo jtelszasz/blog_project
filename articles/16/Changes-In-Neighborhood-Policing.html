@@ -21,8 +21,8 @@
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
-  <link rel="canonical" href="http://localhost:4000/articles/16/Changes-In-Neighborhood-Policing">
-  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="http://localhost:4000/feed.xml" />
+  <link rel="canonical" href="http://www.thetrainingset.com/articles/16/Changes-In-Neighborhood-Policing">
+  <link rel="alternate" type="application/rss+xml" title="The Training Set" href="http://www.thetrainingset.com/feed.xml" />
 </head>
 
   <body>
@@ -78,7 +78,7 @@
 <p class="subtitle">February 4, 2016</p>
 
 
-<p>With the massive change in Baltimore Police Department arrests in 2015 I thought it might be worth investigating how each neighborhood was affected.  Thankfully it appears the <a href="https://data.baltimorecity.gov/Public-Safety/BPD-Arrests/3i3v-ibrt">BPD arrest dataset on Open Baltimore</a> and the <a href="http://bniajfi.org">Baltimore Neighborhood Indicators Alliance “Vital Signs” composite dataset</a> use the same Census neighborhood definitions so we can look at the arrest rates in each neighborhood as it relates to the population and demograhpics.  I’ve mapped two indicators by neighbohood that you can toggle between: the percent change in the number of arrests from 2014 to 2015 and the change in the arrest rate per 1,000 people in each neighbohood from 2014 to 2015.  I’ve only included neighborhoods with more than 200 people in the population to try and remove some of the (numerically) noisier neighborhoods.  Like I mentioned in the <a href="/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests">last post</a>, these changes are not all directly tied to the change in marijuana policy; indeed it would be hard to imagine 10,000 fewer arrests in Baltimore, a drop of about 29%, due to marijuana policy alone.</p>
+<p>With the massive change in Baltimore Police Department arrests in 2015 I thought it might be worth investigating how each neighborhood was affected.  Thankfully it appears the <a href="https://data.baltimorecity.gov/Public-Safety/BPD-Arrests/3i3v-ibrt">BPD arrest dataset on Open Baltimore</a> and the <a href="http://bniajfi.org">Baltimore Neighborhood Indicators Alliance “Vital Signs” composite dataset</a> use the same Census neighborhood definitions so we can look at the arrest rates in each neighborhood as it relates to the population and demograhpics.  I’ve mapped two indicators by neighbohood that you can toggle between: the percent change in the number of arrests from 2014 to 2015 and the change in the arrest rate per 1,000 people in each neighbohood from 2014 to 2015.  I’ve only included neighborhoods with more than 200 people in the population to try and remove some of the (numerically) noisier neighborhoods.  Like I mentioned in the <a href="http://www.thetrainingset.com/articles/16/Marijuana-Policy-Only-Part-of-Drop-in-Arrests">last post</a>, these changes are not all directly tied to the change in marijuana policy; indeed it would be hard to imagine 10,000 fewer arrests in Baltimore, a drop of about 29%, due to marijuana policy alone.</p>
 
 <p><strong>Select</strong> from the “Visible Layers” in the upper right corner which layer you want to view.  <br />
 <strong>Hover</strong> over each neighborhood to get the arrest counts from 2013, 2014, and 2015.  <br />
@@ -92,15 +92,15 @@
 
 <p>In general the neighborhoods with higher arrest rates to begin with stood to experience larger changes in 2015.  For example, in 2013, <strong>Freddie Gray’s neighborhood of Sandtown-Windchester</strong> on the near west side had an <strong>arrest rate of more than 100 arrests per 1,000 people</strong>.  That number in 2015 is now about 57 arrests per 1,000 people.</p>
 
-<p><label for="monthly-totals" class="margin-toggle">⊕</label><input type="checkbox" id="monthly-totals" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/images/2016-02/Total_Monthly_Arrests_2014_2015.png" /><br />Monthly total arrests in Baltimore, 2015 in orange. <a href="/images/2016-02/Total_Monthly_Arrests_2014_2015.png">Click here to enlarge</a>.</span>The big changes in arrest numbers could be good or bad - if the drop was because of abandoning a stop-and-frisk or broken windows-type policing approach in lieu of fairer community policing tactics I think we could live with that.  I’m not convinced that’s the case, especially considering Freddie Gray was arrested and died in police custody well after the slow down had begun.</p>
+<p><label for="monthly-totals" class="margin-toggle">⊕</label><input type="checkbox" id="monthly-totals" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/images/2016-02/Total_Monthly_Arrests_2014_2015.png" /><br />Monthly total arrests in Baltimore, 2015 in orange. <a href="{{ site.url }}/images/2016-02/Total_Monthly_Arrests_2014_2015.png">Click here to enlarge</a>.</span>The big changes in arrest numbers could be good or bad - if the drop was because of abandoning a stop-and-frisk or broken windows-type policing approach in lieu of fairer community policing tactics I think we could live with that.  I’m not convinced that’s the case, especially considering Freddie Gray was arrested and died in police custody well after the slow down had begun.</p>
 
 <p>For a more methodical look at these changes in Baltimore, here are the number of Baltimore neighborhoods by their change in arrest rate.  Again, total arrests in Baltimore dropped by about 29% between 2014 and 2015.  The mean for the neighborhoods is slightly different (about 20% drop) because I’ve excluded neighborhoods with less than 200 people in the population.  Some neighborhoods with more than that population have very small arrest counts (Roland Park, Guilford) so those are the ones that have 200% or 300% increases.</p>
 
-<div><figure class="fullwidth"><img src="/images/2016-02/Histogram - Percent Change in Arrests by Nhood.png" /><figcaption></figcaption></figure></div>
+<figure class="fullwidth"><img src="http://thetrainingset.com/images/2016-02/Histogram - Percent Change in Arrests by Nhood.png" /><figcaption></figcaption></figure>
 
 <p>The average Baltimore neighborhood saw about 14 arrests fewer per 1,000 people in 2015.</p>
 
-<div><figure class="fullwidth"><img src="/images/2016-02/Histogram - Change in Arrest Rate by Nhood.png" /><figcaption></figcaption></figure></div>
+<div><figure class="fullwidth"><img src="/{{ site.url }}/images/2016-02/Histogram - Change in Arrest Rate by Nhood.png" /><figcaption></figcaption></figure></div>
 
 <p><br /></p>
 
